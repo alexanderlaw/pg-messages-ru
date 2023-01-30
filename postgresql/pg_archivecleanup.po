@@ -1,0 +1,345 @@
+# Russian message translation file for pg_archivecleanup
+# Copyright (C) 2017 PostgreSQL Global Development Group
+# This file is distributed under the same license as the PostgreSQL package.
+# Alexander Lakhin <a.lakhin@postgrespro.ru>, 2017, 2019, 2020, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: pg_archivecleanup (PostgreSQL) 10\n"
+"Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
+"POT-Creation-Date: 2023-01-24 12:54+0300\n"
+"PO-Revision-Date: 2022-09-05 13:34+0300\n"
+"Last-Translator: Alexander Lakhin <a.lakhin@postgrespro.ru>\n"
+"Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 21.12.3\n"
+
+#. +> 15 14 13 12
+#: ../../../src/common/logging.c:276
+#, c-format
+msgid "error: "
+msgstr "ошибка: "
+
+#. +> 15 14 13 12
+#: ../../../src/common/logging.c:283
+#, c-format
+msgid "warning: "
+msgstr "предупреждение: "
+
+#. +> 15
+#: ../../../src/common/logging.c:294
+#, c-format
+msgid "detail: "
+msgstr "подробности: "
+
+#. +> 14 13 12
+#: ../../../src/common/logging.c:259
+#, c-format
+msgid "fatal: "
+msgstr "важно: "
+
+#. +> 15
+#: ../../../src/common/logging.c:301
+#, c-format
+msgid "hint: "
+msgstr "подсказка: "
+
+#. +> 15 14 13 12
+#: pg_archivecleanup.c:66
+#, c-format
+msgid "archive location \"%s\" does not exist"
+msgstr "расположение архива \"%s\" не существует"
+
+#. +> 11
+#: pg_archivecleanup.c:72
+#, c-format
+msgid "%s: archive location \"%s\" does not exist\n"
+msgstr "%s: расположение архива \"%s\" не существует\n"
+
+#. +> 11
+#: pg_archivecleanup.c:148
+#, c-format
+msgid "%s: file \"%s\" would be removed\n"
+msgstr "%s: файл \"%s\" не будет удалён\n"
+
+#. +> 15 14 13 12
+#: pg_archivecleanup.c:151
+#, c-format
+msgid "could not remove file \"%s\": %m"
+msgstr "не удалось стереть файл \"%s\": %m"
+
+#. +> 11
+#: pg_archivecleanup.c:154
+#, c-format
+msgid "%s: removing file \"%s\"\n"
+msgstr "%s: удаление файла \"%s\"\n"
+
+#. +> 11
+#: pg_archivecleanup.c:160
+#, c-format
+msgid "%s: ERROR: could not remove file \"%s\": %s\n"
+msgstr "%s: ОШИБКА: не удалось стереть файл \"%s\": %s\n"
+
+#. +> 15 14 13 12
+#: pg_archivecleanup.c:157
+#, c-format
+msgid "could not read archive location \"%s\": %m"
+msgstr "не удалось прочитать расположение архива \"%s\": %m"
+
+#. +> 11
+#: pg_archivecleanup.c:168
+#, c-format
+msgid "%s: could not read archive location \"%s\": %s\n"
+msgstr "%s: не удалось прочитать расположение архива \"%s\": %s\n"
+
+#. +> 15 14 13 12
+#: pg_archivecleanup.c:160
+#, c-format
+msgid "could not close archive location \"%s\": %m"
+msgstr "не удалось закрыть расположение архива \"%s\": %m"
+
+#. +> 11
+#: pg_archivecleanup.c:171
+#, c-format
+msgid "%s: could not close archive location \"%s\": %s\n"
+msgstr "%s: не удалось закрыть расположение архива \"%s\": %s\n"
+
+#. +> 15 14 13 12
+#: pg_archivecleanup.c:164
+#, c-format
+msgid "could not open archive location \"%s\": %m"
+msgstr "не удалось открыть расположение архива \"%s\": %m"
+
+#. +> 11
+#: pg_archivecleanup.c:175
+#, c-format
+msgid "%s: could not open archive location \"%s\": %s\n"
+msgstr "%s: не удалось открыть расположение архива \"%s\": %s\n"
+
+#. +> 15 14 13 12
+#: pg_archivecleanup.c:237
+#, c-format
+msgid "invalid file name argument"
+msgstr "неверный аргумент с именем файла"
+
+#. +> 11
+#: pg_archivecleanup.c:248
+#, c-format
+msgid "%s: invalid file name argument\n"
+msgstr "%s: неверный аргумент с именем файла\n"
+
+#. +> 15
+#: pg_archivecleanup.c:238 pg_archivecleanup.c:313 pg_archivecleanup.c:333
+#: pg_archivecleanup.c:345 pg_archivecleanup.c:352
+#, c-format
+msgid "Try \"%s --help\" for more information."
+msgstr "Для дополнительной информации попробуйте \"%s --help\"."
+
+#. +> 14 13 12 11
+#: pg_archivecleanup.c:241 pg_archivecleanup.c:315 pg_archivecleanup.c:336
+#: pg_archivecleanup.c:348 pg_archivecleanup.c:355
+#, c-format
+msgid "Try \"%s --help\" for more information.\n"
+msgstr "Для дополнительной информации попробуйте \"%s --help\".\n"
+
+#. +> 15 14 13 12 11
+#: pg_archivecleanup.c:251
+#, c-format
+msgid ""
+"%s removes older WAL files from PostgreSQL archives.\n"
+"\n"
+msgstr ""
+"%s удаляет старые файлы WAL из архивов PostgreSQL.\n"
+"\n"
+
+#. +> 15 14 13 12 11
+#: pg_archivecleanup.c:252
+#, c-format
+msgid "Usage:\n"
+msgstr "Использование:\n"
+
+#. +> 15 14 13 12 11
+#: pg_archivecleanup.c:253
+#, c-format
+msgid "  %s [OPTION]... ARCHIVELOCATION OLDESTKEPTWALFILE\n"
+msgstr ""
+"  %s [ПАРАМЕТР]... РАСПОЛОЖЕНИЕ_АРХИВА СТАРЕЙШИЙ_СОХРАНЯЕМЫЙ_ФАЙЛ_WAL\n"
+
+#. +> 15 14 13 12 11
+#: pg_archivecleanup.c:254
+#, c-format
+msgid ""
+"\n"
+"Options:\n"
+msgstr ""
+"\n"
+"Параметры:\n"
+
+#. +> 15 14 13 12 11
+#: pg_archivecleanup.c:255
+#, c-format
+msgid "  -d             generate debug output (verbose mode)\n"
+msgstr "  -d             генерировать подробные сообщения (отладочный режим)\n"
+
+#. +> 15 14 13 12 11
+#: pg_archivecleanup.c:256
+#, c-format
+msgid ""
+"  -n             dry run, show the names of the files that would be removed\n"
+msgstr ""
+"  -n             холостой запуск, только показать имена файлов, которые "
+"будут удалены\n"
+
+#. +> 15 14 13 12 11
+#: pg_archivecleanup.c:257
+#, c-format
+msgid "  -V, --version  output version information, then exit\n"
+msgstr "  -V, --version  показать версию и выйти\n"
+
+# well-spelled: РСШ
+#. +> 15 14 13 12 11
+#: pg_archivecleanup.c:258
+#, c-format
+msgid "  -x EXT         clean up files if they have this extension\n"
+msgstr "  -x РСШ         убрать файлы с заданным расширением\n"
+
+#. +> 15 14 13 12 11
+#: pg_archivecleanup.c:259
+#, c-format
+msgid "  -?, --help     show this help, then exit\n"
+msgstr "  -?, --help     показать эту справку и выйти\n"
+
+#. +> 15 14 13 12
+#: pg_archivecleanup.c:260
+#, c-format
+msgid ""
+"\n"
+"For use as archive_cleanup_command in postgresql.conf:\n"
+"  archive_cleanup_command = 'pg_archivecleanup [OPTION]... ARCHIVELOCATION "
+"%%r'\n"
+"e.g.\n"
+"  archive_cleanup_command = 'pg_archivecleanup /mnt/server/archiverdir %%r'\n"
+msgstr ""
+"\n"
+"Для использования в качестве archive_cleanup_command в postgresql.conf:\n"
+"  archive_cleanup_command = 'pg_archivecleanup [ПАРАМЕТР]... "
+"РАСПОЛОЖЕНИЕ_АРХИВА %%r'\n"
+"например:\n"
+"  archive_cleanup_command = 'pg_archivecleanup /mnt/server/archiverdir %%r'\n"
+
+#. +> 11
+#: pg_archivecleanup.c:271
+#, c-format
+msgid ""
+"\n"
+"For use as archive_cleanup_command in recovery.conf when standby_mode = on:\n"
+"  archive_cleanup_command = 'pg_archivecleanup [OPTION]... ARCHIVELOCATION "
+"%%r'\n"
+"e.g.\n"
+"  archive_cleanup_command = 'pg_archivecleanup /mnt/server/archiverdir %%r'\n"
+msgstr ""
+"\n"
+"Для использования в качестве archive_cleanup_command в recovery.conf при "
+"standby_mode = on:\n"
+"  archive_cleanup_command = 'pg_archivecleanup [ПАРАМЕТР]... "
+"РАСПОЛОЖЕНИЕ_АРХИВА %%r'\n"
+"например:\n"
+"  archive_cleanup_command = 'pg_archivecleanup /mnt/server/archiverdir %%r'\n"
+
+#. +> 15 14 13 12 11
+#: pg_archivecleanup.c:265
+#, c-format
+msgid ""
+"\n"
+"Or for use as a standalone archive cleaner:\n"
+"e.g.\n"
+"  pg_archivecleanup /mnt/server/archiverdir "
+"000000010000000000000010.00000020.backup\n"
+msgstr ""
+"\n"
+"Либо для использования в качестве отдельного средства очистки архива,\n"
+"например:\n"
+"  pg_archivecleanup /mnt/server/archiverdir "
+"000000010000000000000010.00000020.backup\n"
+
+#. +> 15 14 13
+#: pg_archivecleanup.c:269
+#, c-format
+msgid ""
+"\n"
+"Report bugs to <%s>.\n"
+msgstr ""
+"\n"
+"Об ошибках сообщайте по адресу <%s>.\n"
+
+#. +> 15 14 13
+#: pg_archivecleanup.c:270
+#, c-format
+msgid "%s home page: <%s>\n"
+msgstr "Домашняя страница %s: <%s>\n"
+
+#. +> 12
+#: pg_archivecleanup.c:274
+#, c-format
+msgid ""
+"\n"
+"Report bugs to <pgsql-bugs@lists.postgresql.org>.\n"
+msgstr ""
+"\n"
+"Об ошибках сообщайте по адресу <pgsql-bugs@lists.postgresql.org>.\n"
+
+#. +> 11
+#: pg_archivecleanup.c:280
+#, c-format
+msgid ""
+"\n"
+"Report bugs to <pgsql-bugs@postgresql.org>.\n"
+msgstr ""
+"\n"
+"Об ошибках сообщайте по адресу <pgsql-bugs@postgresql.org>.\n"
+
+#. +> 15 14 13 12
+#: pg_archivecleanup.c:332
+#, c-format
+msgid "must specify archive location"
+msgstr "необходимо задать расположение архива"
+
+#. +> 11
+#: pg_archivecleanup.c:341
+#, c-format
+msgid "%s: must specify archive location\n"
+msgstr "%s: необходимо задать расположение архива\n"
+
+#. +> 15 14 13 12
+#: pg_archivecleanup.c:344
+#, c-format
+msgid "must specify oldest kept WAL file"
+msgstr "необходимо задать имя старейшего сохраняемого файла WAL"
+
+#. +> 11
+#: pg_archivecleanup.c:353
+#, c-format
+msgid "%s: must specify oldest kept WAL file\n"
+msgstr "%s: необходимо задать имя старейшего сохраняемого файла WAL\n"
+
+#. +> 15 14 13 12
+#: pg_archivecleanup.c:351
+#, c-format
+msgid "too many command-line arguments"
+msgstr "слишком много аргументов командной строки"
+
+#. +> 11
+#: pg_archivecleanup.c:360
+#, c-format
+msgid "%s: too many command-line arguments\n"
+msgstr "%s: слишком много аргументов командной строки\n"
+
+#. +> 11
+#: pg_archivecleanup.c:379
+#, c-format
+msgid "%s: keeping WAL file \"%s\" and later\n"
+msgstr "%s: будет сохранён файл WAL \"%s\" и последующие\n"

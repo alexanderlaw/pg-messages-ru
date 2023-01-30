@@ -1,0 +1,2240 @@
+# Russian message translation file for pg_rewind
+# Copyright (C) 2015-2016 PostgreSQL Global Development Group
+# This file is distributed under the same license as the PostgreSQL package.
+# Alexander Lakhin <exclusion@gmail.com>, 2015-2017, 2018, 2019, 2020, 2021, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: pg_rewind (PostgreSQL current)\n"
+"Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
+"POT-Creation-Date: 2023-01-24 12:54+0300\n"
+"PO-Revision-Date: 2022-09-29 14:17+0300\n"
+"Last-Translator: Alexander Lakhin <a.lakhin@postgrespro.ru>\n"
+"Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 21.12.3\n"
+
+#. +> 15 14 13 12
+#: ../../../src/common/logging.c:276
+#, c-format
+msgid "error: "
+msgstr "ошибка: "
+
+#. +> 15 14 13 12
+#: ../../../src/common/logging.c:283
+#, c-format
+msgid "warning: "
+msgstr "предупреждение: "
+
+#. +> 15
+#: ../../../src/common/logging.c:294
+#, c-format
+msgid "detail: "
+msgstr "подробности: "
+
+#. +> 14 13 12
+#: ../../../src/common/logging.c:259
+#, c-format
+msgid "fatal: "
+msgstr "важно: "
+
+#. +> 15
+#: ../../../src/common/logging.c:301
+#, c-format
+msgid "hint: "
+msgstr "подсказка: "
+
+#. +> 15 14 13 12 11
+#: ../../common/fe_memutils.c:35 ../../common/fe_memutils.c:75
+#: ../../common/fe_memutils.c:98 ../../common/fe_memutils.c:162
+#, c-format
+msgid "out of memory\n"
+msgstr "нехватка памяти\n"
+
+#. +> 15 14 13 12 11
+#: ../../common/fe_memutils.c:92 ../../common/fe_memutils.c:154
+#, c-format
+msgid "cannot duplicate null pointer (internal error)\n"
+msgstr "попытка дублирования нулевого указателя (внутренняя ошибка)\n"
+
+#. +> 15 14 13
+#: ../../common/restricted_token.c:64
+#, c-format
+msgid "could not load library \"%s\": error code %lu"
+msgstr "не удалось загрузить библиотеку \"%s\" (код ошибки: %lu)"
+
+#. +> 15 14 13
+#: ../../common/restricted_token.c:73
+#, c-format
+msgid "cannot create restricted tokens on this platform: error code %lu"
+msgstr "в этой ОС нельзя создавать ограниченные маркеры (код ошибки: %lu)"
+
+#. +> 12
+#: ../../common/restricted_token.c:69
+#, c-format
+msgid "cannot create restricted tokens on this platform"
+msgstr "в этой ОС нельзя создавать ограниченные маркеры"
+
+#. +> 11
+#: ../../common/restricted_token.c:68
+#, c-format
+msgid "%s: WARNING: cannot create restricted tokens on this platform\n"
+msgstr "%s: ПРЕДУПРЕЖДЕНИЕ: в этой ОС нельзя создавать ограниченные маркеры\n"
+
+#. +> 15 14 13 12
+#: ../../common/restricted_token.c:82
+#, c-format
+msgid "could not open process token: error code %lu"
+msgstr "не удалось открыть маркер процесса (код ошибки: %lu)"
+
+#. +> 11
+#: ../../common/restricted_token.c:77
+#, c-format
+msgid "%s: could not open process token: error code %lu\n"
+msgstr "%s: не удалось открыть маркер процесса (код ошибки: %lu)\n"
+
+#. +> 15 14 13 12
+#: ../../common/restricted_token.c:97
+#, c-format
+msgid "could not allocate SIDs: error code %lu"
+msgstr "не удалось подготовить структуры SID (код ошибки: %lu)"
+
+#. +> 11
+#: ../../common/restricted_token.c:90
+#, c-format
+msgid "%s: could not allocate SIDs: error code %lu\n"
+msgstr "%s: не удалось подготовить структуры SID (код ошибки: %lu)\n"
+
+#. +> 15 14 13 12
+#: ../../common/restricted_token.c:119
+#, c-format
+msgid "could not create restricted token: error code %lu"
+msgstr "не удалось создать ограниченный маркер (код ошибки: %lu)"
+
+#. +> 11
+#: ../../common/restricted_token.c:110
+#, c-format
+msgid "%s: could not create restricted token: error code %lu\n"
+msgstr "%s: не удалось создать ограниченный маркер (код ошибки: %lu)\n"
+
+#. +> 15 14 13 12
+#: ../../common/restricted_token.c:140
+#, c-format
+msgid "could not start process for command \"%s\": error code %lu"
+msgstr "не удалось запустить процесс для команды \"%s\" (код ошибки: %lu)"
+
+#. +> 11
+#: ../../common/restricted_token.c:132
+#, c-format
+msgid "%s: could not start process for command \"%s\": error code %lu\n"
+msgstr ""
+"%s: не удалось запустить процесс для команды \"%s\" (код ошибки: %lu)\n"
+
+#. +> 15 14 13 12
+#: ../../common/restricted_token.c:178
+#, c-format
+msgid "could not re-execute with restricted token: error code %lu"
+msgstr "не удалось перезапуститься с ограниченным маркером (код ошибки: %lu)"
+
+#. +> 11
+#: ../../common/restricted_token.c:170
+#, c-format
+msgid "%s: could not re-execute with restricted token: error code %lu\n"
+msgstr ""
+"%s: не удалось перезапуститься с ограниченным маркером (код ошибки: %lu)\n"
+
+#. +> 15 14 13 12
+#: ../../common/restricted_token.c:193
+#, c-format
+msgid "could not get exit code from subprocess: error code %lu"
+msgstr "не удалось получить код выхода от подпроцесса (код ошибки: %lu)"
+
+#. +> 11
+#: ../../common/restricted_token.c:186
+#, c-format
+msgid "%s: could not get exit code from subprocess: error code %lu\n"
+msgstr "%s: не удалось получить код выхода от подпроцесса (код ошибки: %lu)\n"
+
+#. +> 15 14 13
+#: ../../fe_utils/archive.c:52
+#, c-format
+msgid "cannot use restore_command with %%r placeholder"
+msgstr "нельзя использовать restore_command со знаком подстановки %%r"
+
+#. +> 15 14
+#: ../../fe_utils/archive.c:70
+#, c-format
+msgid "unexpected file size for \"%s\": %lld instead of %lld"
+msgstr "неподходящий размер файла \"%s\": %lld вместо %lld байт"
+
+#. +> 13
+#: ../../fe_utils/archive.c:74
+#, c-format
+msgid "unexpected file size for \"%s\": %lu instead of %lu"
+msgstr "неподходящий размер файла \"%s\": %lu вместо %lu байт"
+
+#. +> 15 14 13
+#: ../../fe_utils/archive.c:78
+#, c-format
+msgid "could not open file \"%s\" restored from archive: %m"
+msgstr "не удалось открыть файл \"%s\", восстановленный из архива: %m"
+
+#. +> 15 14 13 12
+#: ../../fe_utils/archive.c:87 file_ops.c:417
+#, c-format
+msgid "could not stat file \"%s\": %m"
+msgstr "не удалось получить информацию о файле \"%s\": %m"
+
+#. +> 15 14 13
+#: ../../fe_utils/archive.c:99
+#, c-format
+msgid "restore_command failed: %s"
+msgstr "ошибка при выполнении restore_command: %s"
+
+#. +> 15 14 13
+#: ../../fe_utils/archive.c:106
+#, c-format
+msgid "could not restore file \"%s\" from archive"
+msgstr "восстановить файл \"%s\" из архива не удалось"
+
+#. +> 15 14 13 12
+#: ../../fe_utils/recovery_gen.c:34 ../../fe_utils/recovery_gen.c:45
+#: ../../fe_utils/recovery_gen.c:70 ../../fe_utils/recovery_gen.c:90
+#: ../../fe_utils/recovery_gen.c:149
+#, c-format
+msgid "out of memory"
+msgstr "нехватка памяти"
+
+#. +> 15 14 13 12
+#: ../../fe_utils/recovery_gen.c:121 parsexlog.c:312
+#, c-format
+msgid "could not open file \"%s\": %m"
+msgstr "не удалось открыть файл \"%s\": %m"
+
+#. +> 15 14 13
+#: ../../fe_utils/recovery_gen.c:124
+#, c-format
+msgid "could not write to file \"%s\": %m"
+msgstr "не удалось записать в файл \"%s\": %m"
+
+#. +> 15 14 13
+#: ../../fe_utils/recovery_gen.c:133
+#, c-format
+msgid "could not create file \"%s\": %m"
+msgstr "не удалось создать файл \"%s\": %m"
+
+#. +> 15 14 13 12
+#: file_ops.c:67
+#, c-format
+msgid "could not open target file \"%s\": %m"
+msgstr "не удалось открыть целевой файл \"%s\": %m"
+
+#. +> 11
+#: file_ops.c:63
+#, c-format
+msgid "could not open target file \"%s\": %s\n"
+msgstr "не удалось открыть целевой файл \"%s\": %s\n"
+
+#. +> 15 14 13 12
+#: file_ops.c:81
+#, c-format
+msgid "could not close target file \"%s\": %m"
+msgstr "не удалось закрыть целевой файл \"%s\": %m"
+
+#. +> 11
+#: file_ops.c:77
+#, c-format
+msgid "could not close target file \"%s\": %s\n"
+msgstr "не удалось закрыть целевой файл \"%s\": %s\n"
+
+#. +> 15 14 13 12
+#: file_ops.c:101
+#, c-format
+msgid "could not seek in target file \"%s\": %m"
+msgstr "не удалось переместиться в целевом файле \"%s\": %m"
+
+#. +> 11
+#: file_ops.c:97
+#, c-format
+msgid "could not seek in target file \"%s\": %s\n"
+msgstr "не удалось переместиться в целевом файле \"%s\": %s\n"
+
+#. +> 15 14 13 12
+#: file_ops.c:117
+#, c-format
+msgid "could not write file \"%s\": %m"
+msgstr "не удалось записать файл \"%s\": %m"
+
+#. +> 11
+#: file_ops.c:113
+#, c-format
+msgid "could not write file \"%s\": %s\n"
+msgstr "не удалось записать файл \"%s\": %s\n"
+
+#. +> 15 14
+#: file_ops.c:150 file_ops.c:177
+#, c-format
+msgid "undefined file type for \"%s\""
+msgstr "неопределённый тип файла \"%s\""
+
+#. +> 15 14 13 12
+#: file_ops.c:173
+#, c-format
+msgid "invalid action (CREATE) for regular file"
+msgstr "неверное действие (CREATE) для обычного файла"
+
+#. +> 11
+#: file_ops.c:163
+#, c-format
+msgid "invalid action (CREATE) for regular file\n"
+msgstr "неверное действие (CREATE) для обычного файла\n"
+
+#. +> 15 14 13 12
+#: file_ops.c:200
+#, c-format
+msgid "could not remove file \"%s\": %m"
+msgstr "не удалось стереть файл \"%s\": %m"
+
+#. +> 11
+#: file_ops.c:186
+#, c-format
+msgid "could not remove file \"%s\": %s\n"
+msgstr "не удалось стереть файл \"%s\": %s\n"
+
+#. +> 15 14 13 12
+#: file_ops.c:218
+#, c-format
+msgid "could not open file \"%s\" for truncation: %m"
+msgstr "не удалось открыть файл \"%s\" для усечения: %m"
+
+#. +> 11
+#: file_ops.c:204
+#, c-format
+msgid "could not open file \"%s\" for truncation: %s\n"
+msgstr "не удалось открыть файл \"%s\" для усечения: %s\n"
+
+#. +> 15 14 13 12
+#: file_ops.c:222
+#, c-format
+msgid "could not truncate file \"%s\" to %u: %m"
+msgstr "не удалось обрезать файл \"%s\" до нужного размера (%u): %m"
+
+#. +> 11
+#: file_ops.c:208
+#, c-format
+msgid "could not truncate file \"%s\" to %u: %s\n"
+msgstr "не удалось усечь файл \"%s\" до нужного размера (%u): %s\n"
+
+#. +> 15 14 13 12
+#: file_ops.c:238
+#, c-format
+msgid "could not create directory \"%s\": %m"
+msgstr "не удалось создать каталог \"%s\": %m"
+
+#. +> 11
+#: file_ops.c:224
+#, c-format
+msgid "could not create directory \"%s\": %s\n"
+msgstr "не удалось создать каталог \"%s\": %s\n"
+
+#. +> 15 14 13 12
+#: file_ops.c:252
+#, c-format
+msgid "could not remove directory \"%s\": %m"
+msgstr "ошибка при удалении каталога \"%s\": %m"
+
+#. +> 11
+#: file_ops.c:238
+#, c-format
+msgid "could not remove directory \"%s\": %s\n"
+msgstr "ошибка при удалении каталога \"%s\": %s\n"
+
+#. +> 15 14 13 12
+#: file_ops.c:266
+#, c-format
+msgid "could not create symbolic link at \"%s\": %m"
+msgstr "не удалось создать символическую ссылку \"%s\": %m"
+
+#. +> 11
+#: file_ops.c:252
+#, c-format
+msgid "could not create symbolic link at \"%s\": %s\n"
+msgstr "не удалось создать символическую ссылку \"%s\": %s\n"
+
+#. +> 15 14 13 12
+#: file_ops.c:280
+#, c-format
+msgid "could not remove symbolic link \"%s\": %m"
+msgstr "ошибка при удалении символической ссылки \"%s\": %m"
+
+#. +> 11
+#: file_ops.c:266
+#, c-format
+msgid "could not remove symbolic link \"%s\": %s\n"
+msgstr "ошибка при удалении символической ссылки \"%s\": %s\n"
+
+#. +> 15 14 13 12
+#: file_ops.c:326 file_ops.c:330
+#, c-format
+msgid "could not open file \"%s\" for reading: %m"
+msgstr "не удалось открыть файл \"%s\" для чтения: %m"
+
+#. +> 11
+#: file_ops.c:296 file_ops.c:300
+#, c-format
+msgid "could not open file \"%s\" for reading: %s\n"
+msgstr "не удалось открыть файл \"%s\" для чтения: %s\n"
+
+#. +> 15 14 13 12
+#: file_ops.c:341 local_source.c:104 local_source.c:163 parsexlog.c:350
+#, c-format
+msgid "could not read file \"%s\": %m"
+msgstr "не удалось прочитать файл \"%s\": %m"
+
+#. +> 15 14 13 12
+#: file_ops.c:344 parsexlog.c:352
+#, c-format
+msgid "could not read file \"%s\": read %d of %zu"
+msgstr "не удалось прочитать файл \"%s\" (прочитано байт: %d из %zu)"
+
+#. +> 15 14 13 12
+#: file_ops.c:388
+#, c-format
+msgid "could not open directory \"%s\": %m"
+msgstr "не удалось открыть каталог \"%s\": %m"
+
+#. +> 15 14 13 12
+#: file_ops.c:446
+#, c-format
+msgid "could not read symbolic link \"%s\": %m"
+msgstr "не удалось прочитать символическую ссылку \"%s\": %m"
+
+#. +> 15 14 13 12
+#: file_ops.c:449
+#, c-format
+msgid "symbolic link \"%s\" target is too long"
+msgstr "целевой путь символической ссылки \"%s\" слишком длинный"
+
+#. +> 15 14 13 12
+#: file_ops.c:464
+#, c-format
+msgid ""
+"\"%s\" is a symbolic link, but symbolic links are not supported on this "
+"platform"
+msgstr ""
+"\"%s\" — символическая ссылка, но в этой ОС символические ссылки не "
+"поддерживаются"
+
+#. +> 15 14 13 12
+#: file_ops.c:471
+#, c-format
+msgid "could not read directory \"%s\": %m"
+msgstr "не удалось прочитать каталог \"%s\": %m"
+
+#. +> 15 14 13 12
+#: file_ops.c:475
+#, c-format
+msgid "could not close directory \"%s\": %m"
+msgstr "не удалось закрыть каталог \"%s\": %m"
+
+#. +> 13 12
+#: filemap.c:222
+#, c-format
+msgid "\"%s\" is not a directory"
+msgstr "\"%s\" не является каталогом"
+
+#. +> 11
+#: filemap.c:216
+#, c-format
+msgid "\"%s\" is not a directory\n"
+msgstr "\"%s\" не является каталогом\n"
+
+#. +> 15 14 13 12
+#: filemap.c:236
+#, c-format
+msgid "data file \"%s\" in source is not a regular file"
+msgstr "файл данных \"%s\" в источнике не является обычным файлом"
+
+#. +> 11
+#: filemap.c:194
+#, c-format
+msgid "data file \"%s\" in source is not a regular file\n"
+msgstr "файл данных \"%s\" в источнике не является обычным файлом\n"
+
+#. +> 13 12
+#: filemap.c:257
+#, c-format
+msgid "\"%s\" is not a regular file"
+msgstr "\"%s\" не является обычным файлом"
+
+#. +> 11
+#: filemap.c:251
+#, c-format
+msgid "\"%s\" is not a regular file\n"
+msgstr "\"%s\" не является обычным файлом\n"
+
+#. +> 15 14
+#: filemap.c:241 filemap.c:274
+#, c-format
+msgid "duplicate source file \"%s\""
+msgstr "повторный исходный файл \"%s\""
+
+#. +> 13 12
+#: filemap.c:245
+#, c-format
+msgid "\"%s\" is not a symbolic link"
+msgstr "\"%s\" не является символической ссылкой"
+
+#. +> 11
+#: filemap.c:239
+#, c-format
+msgid "\"%s\" is not a symbolic link\n"
+msgstr "\"%s\" не является символической ссылкой\n"
+
+#. +> 15 14
+#: filemap.c:329
+#, c-format
+msgid "unexpected page modification for non-regular file \"%s\""
+msgstr "неожиданная модификация страницы для файла особого вида \"%s\""
+
+#. +> 13 12
+#: filemap.c:369
+#, c-format
+msgid "source file list is empty"
+msgstr "список файлов в источнике пуст"
+
+#. +> 11
+#: filemap.c:363
+#, c-format
+msgid "source file list is empty\n"
+msgstr "список файлов в источнике пуст\n"
+
+#. +> 13 12
+#: filemap.c:484
+#, c-format
+msgid "unexpected page modification for directory or symbolic link \"%s\""
+msgstr ""
+"неожиданная модификация страницы для каталога или символической ссылки \"%s\""
+
+#. +> 11
+#: filemap.c:478
+#, c-format
+msgid "unexpected page modification for directory or symbolic link \"%s\"\n"
+msgstr ""
+"неожиданная модификация страницы для каталога или символической ссылки "
+"\"%s\"\n"
+
+#. +> 11
+#: filemap.c:518 filemap.c:538
+#, c-format
+msgid "entry \"%s\" excluded from source file list\n"
+msgstr "\"%s\" исключён из списка исходных файлов\n"
+
+#. +> 11
+#: filemap.c:521 filemap.c:541
+#, c-format
+msgid "entry \"%s\" excluded from target file list\n"
+msgstr "\"%s\" исключён из списка целевых файлов\n"
+
+#. translator: first %s is a file path, second is a keyword such as COPY
+#. +> 11
+#: filemap.c:672
+#, c-format
+msgid "%s (%s)\n"
+msgstr "%s (%s)\n"
+
+#. +> 15 14
+#: filemap.c:679 filemap.c:773
+#, c-format
+msgid "unknown file type for \"%s\""
+msgstr "неизвестный тип файла \"%s\""
+
+#. +> 15 14
+#: filemap.c:706
+#, c-format
+msgid "file \"%s\" is of different type in source and target"
+msgstr "файл \"%s\" имеет разный тип в исходном и целевом кластере"
+
+#. +> 15 14
+#: filemap.c:778
+#, c-format
+msgid "could not decide what to do with file \"%s\""
+msgstr "не удалось определить, что делать с файлом \"%s\""
+
+#. +> 11
+#: libpq_fetch.c:55
+#, c-format
+msgid "connected to server\n"
+msgstr "подключение к серверу установлено\n"
+
+#. +> 13 12
+#: libpq_fetch.c:74
+#, c-format
+msgid "source server must not be in recovery mode"
+msgstr "исходный сервер должен выйти из режима восстановления"
+
+#. +> 11
+#: libpq_fetch.c:76
+#, c-format
+msgid "source server must not be in recovery mode\n"
+msgstr "исходный сервер должен выйти из режима восстановления\n"
+
+#. +> 15 14 13 12 11
+#: libpq_source.c:130
+#, c-format
+msgid "could not clear search_path: %s"
+msgstr "не удалось очистить search_path: %s"
+
+#. +> 15 14 13 12
+#: libpq_source.c:141
+#, c-format
+msgid "full_page_writes must be enabled in the source server"
+msgstr "на исходном сервере должен быть включён режим full_page_writes"
+
+#. +> 15 14
+#: libpq_source.c:152
+#, c-format
+msgid "could not prepare statement to fetch file contents: %s"
+msgstr "не удалось подготовить оператор для извлечения содержимого файла: %s"
+
+#. +> 15 14 13
+#: libpq_source.c:171
+#, c-format
+msgid "error running query (%s) on source server: %s"
+msgstr "ошибка выполнения запроса (%s) на исходном сервере: %s"
+
+#. +> 15 14 13 12
+#: libpq_source.c:176
+#, c-format
+msgid "unexpected result set from query"
+msgstr "неожиданный результат запроса"
+
+#. +> 15 14 13 12 11
+#: libpq_source.c:198
+#, c-format
+msgid "error running query (%s) in source server: %s"
+msgstr "ошибка выполнения запроса (%s) на исходном сервере: %s"
+
+#. +> 15 14 13 12
+#: libpq_source.c:219
+#, c-format
+msgid "unrecognized result \"%s\" for current WAL insert location"
+msgstr ""
+"нераспознанный результат \"%s\" вместо текущей позиции добавления в WAL"
+
+#. +> 15 14 13 12 11
+#: libpq_source.c:270
+#, c-format
+msgid "could not fetch file list: %s"
+msgstr "не удалось получить список файлов: %s"
+
+#. +> 11
+#: libpq_fetch.c:86
+#, c-format
+msgid "full_page_writes must be enabled in the source server\n"
+msgstr "на исходном сервере должен быть включён режим full_page_writes\n"
+
+#. +> 11
+#: libpq_fetch.c:158
+#, c-format
+msgid "unrecognized result \"%s\" for current WAL insert location\n"
+msgstr ""
+"нераспознанный результат \"%s\" вместо текущей позиции добавления в WAL\n"
+
+#. +> 11
+#: libpq_fetch.c:268
+#, c-format
+msgid "getting file chunks\n"
+msgstr "получение сегментов файлов\n"
+
+#. +> 11
+#: libpq_fetch.c:271
+#, c-format
+msgid "could not set libpq connection to single row mode\n"
+msgstr "не удалось перевести подключение libpq в однострочный режим\n"
+
+#. +> 11
+#: libpq_fetch.c:347
+#, c-format
+msgid "received null value for chunk for file \"%s\", file has been deleted\n"
+msgstr "для файла \"%s\" вместо сегмента получено NULL-значение, файл удалён\n"
+
+#. +> 11
+#: libpq_fetch.c:360
+#, c-format
+msgid "received chunk for file \"%s\", offset %s, size %d\n"
+msgstr "получен сегмент файла \"%s\": смещение %s, размер %d\n"
+
+#. +> 11
+#: libpq_fetch.c:405
+#, c-format
+msgid "fetched file \"%s\", length %d\n"
+msgstr "получен файл \"%s\", длина %d\n"
+
+#. +> 13 12 11
+#: libpq_fetch.c:458
+#, c-format
+msgid "could not send file list: %s"
+msgstr "не удалось отправить список файлов: %s"
+
+#. +> 15 14 13 12
+#: libpq_source.c:275
+#, c-format
+msgid "unexpected result set while fetching file list"
+msgstr "неожиданный результат при получении списка файлов"
+
+#. +> 13 12 11
+#: libpq_fetch.c:506
+#, c-format
+msgid "unexpected result while sending file list: %s"
+msgstr "неожиданный результат при передаче списка: %s"
+
+#. +> 11
+#: libpq_fetch.c:117
+#, c-format
+msgid "unexpected result set from query\n"
+msgstr "неожиданный результат запроса\n"
+
+#. +> 11
+#: libpq_fetch.c:213
+#, c-format
+msgid "unexpected result set while fetching file list\n"
+msgstr "неожиданный результат при получении списка файлов\n"
+
+#. +> 11
+#: libpq_fetch.c:298
+#, c-format
+msgid "unexpected result set size while fetching remote files\n"
+msgstr "неожиданный размер набора результатов при получении файлов с сервера\n"
+
+#. +> 11
+#: libpq_fetch.c:304
+#, c-format
+msgid ""
+"unexpected data types in result set while fetching remote files: %u %u %u\n"
+msgstr ""
+"неожиданные типы данных в наборе результатов при получении файлов с сервера: "
+"%u %u %u\n"
+
+#. +> 11
+#: libpq_fetch.c:312
+#, c-format
+msgid "unexpected result format while fetching remote files\n"
+msgstr "неожиданный формат результата при получении файлов с сервера\n"
+
+#. +> 11
+#: libpq_fetch.c:318
+#, c-format
+msgid "unexpected null values in result while fetching remote files\n"
+msgstr ""
+"неожиданные значения NULL в результате при получении файлов с сервера\n"
+
+#. +> 11
+#: libpq_fetch.c:322
+#, c-format
+msgid "unexpected result length while fetching remote files\n"
+msgstr "неожиданная длина результата при получении файлов с сервера\n"
+
+#. +> 11
+#: libpq_fetch.c:394
+#, c-format
+msgid "unexpected result set while fetching remote file \"%s\"\n"
+msgstr "неожиданный набор результатов при получении файла \"%s\" с сервера\n"
+
+#. +> 15 14 13 12 11
+#: libpq_source.c:467
+#, c-format
+msgid "could not send query: %s"
+msgstr "не удалось отправить запрос: %s"
+
+#. +> 13 12 11
+#: libpq_fetch.c:429
+#, c-format
+msgid "could not send COPY data: %s"
+msgstr "не удалось отправить данные COPY: %s"
+
+#. +> 13 12 11
+#: libpq_fetch.c:500
+#, c-format
+msgid "could not send end-of-COPY: %s"
+msgstr "не удалось отправить сообщение о завершении копирования: %s"
+
+#. +> 15 14 13 12
+#: libpq_source.c:470
+#, c-format
+msgid "could not set libpq connection to single row mode"
+msgstr "не удалось перевести подключение libpq в однострочный режим"
+
+#. +> 15 14 13 12 11
+#: libpq_source.c:500
+#, c-format
+msgid "unexpected result while fetching remote files: %s"
+msgstr "неожиданный результат при получении файлов с сервера: %s"
+
+#. +> 15 14
+#: libpq_source.c:505
+#, c-format
+msgid "received more data chunks than requested"
+msgstr "получено больше сегментов данных, чем запрошено"
+
+#. +> 15 14 13 12
+#: libpq_source.c:509
+#, c-format
+msgid "unexpected result set size while fetching remote files"
+msgstr "неожиданный размер набора результатов при получении файлов с сервера"
+
+#. +> 15 14 13 12
+#: libpq_source.c:515
+#, c-format
+msgid ""
+"unexpected data types in result set while fetching remote files: %u %u %u"
+msgstr ""
+"неожиданные типы данных в наборе результатов при получении файлов с сервера: "
+"%u %u %u"
+
+#. +> 15 14 13 12
+#: libpq_source.c:523
+#, c-format
+msgid "unexpected result format while fetching remote files"
+msgstr "неожиданный формат результата при получении файлов с сервера"
+
+#. +> 15 14 13 12
+#: libpq_source.c:529
+#, c-format
+msgid "unexpected null values in result while fetching remote files"
+msgstr "неожиданные значения NULL в результате при получении файлов с сервера"
+
+#. +> 15 14 13 12
+#: libpq_source.c:533
+#, c-format
+msgid "unexpected result length while fetching remote files"
+msgstr "неожиданная длина результата при получении файлов с сервера"
+
+#. +> 15 14
+#: libpq_source.c:566
+#, c-format
+msgid "received data for file \"%s\", when requested for \"%s\""
+msgstr "получены данные для файла \"%s\", а запрашивались данные для \"%s\""
+
+#. +> 15 14
+#: libpq_source.c:570
+#, c-format
+msgid ""
+"received data at offset %lld of file \"%s\", when requested for offset %lld"
+msgstr ""
+"получены данные по смещению %lld в файле \"%s\", а запрашивались по смещению "
+"%lld"
+
+#. +> 15 14
+#: libpq_source.c:582
+#, c-format
+msgid "received more than requested for file \"%s\""
+msgstr "получено больше данных, чем запрошено для файла \"%s\""
+
+#. +> 15 14
+#: libpq_source.c:595
+#, c-format
+msgid "unexpected number of data chunks received"
+msgstr "получено неожиданное количество сегментов данных"
+
+#. +> 15 14 13 12 11
+#: libpq_source.c:638
+#, c-format
+msgid "could not fetch remote file \"%s\": %s"
+msgstr "не удалось получить с сервера файл \"%s\": %s"
+
+#. +> 15 14 13 12
+#: libpq_source.c:643
+#, c-format
+msgid "unexpected result set while fetching remote file \"%s\""
+msgstr "неожиданный набор результатов при получении файла \"%s\" с сервера"
+
+#. +> 15 14 13 12
+#: local_source.c:90 local_source.c:142
+#, c-format
+msgid "could not open source file \"%s\": %m"
+msgstr "не удалось открыть исходный файл \"%s\": %m"
+
+#. +> 15
+#: local_source.c:117
+#, c-format
+msgid ""
+"size of source file \"%s\" changed concurrently: %d bytes expected, %d copied"
+msgstr ""
+"размер исходного файла \"%s\" изменился, ожидалось байт: %d, скопировано: %d"
+
+#. +> 15 14 13 12
+#: local_source.c:121 local_source.c:172
+#, c-format
+msgid "could not close file \"%s\": %m"
+msgstr "не удалось закрыть файл \"%s\": %m"
+
+#. +> 15 14 13 12
+#: local_source.c:146
+#, c-format
+msgid "could not seek in source file: %m"
+msgstr "не удалось переместиться в исходном файле: %m"
+
+#. +> 15 14 13 12
+#: local_source.c:165
+#, c-format
+msgid "unexpected EOF while reading file \"%s\""
+msgstr "неожиданный конец файла при чтении \"%s\""
+
+#. +> 15
+#: parsexlog.c:80 parsexlog.c:139 parsexlog.c:199
+#, c-format
+msgid "out of memory while allocating a WAL reading processor"
+msgstr "не удалось выделить память для чтения WAL"
+
+#. +> 15 14 13 12
+#: parsexlog.c:92 parsexlog.c:146
+#, c-format
+msgid "could not read WAL record at %X/%X: %s"
+msgstr "не удалось прочитать запись WAL в позиции %X/%X: %s"
+
+#. +> 11
+#: parsexlog.c:91 parsexlog.c:147
+#, c-format
+msgid "could not read WAL record at %X/%X: %s\n"
+msgstr "не удалось прочитать запись WAL в позиции %X/%X: %s\n"
+
+#. +> 15 14 13 12
+#: parsexlog.c:96 parsexlog.c:149
+#, c-format
+msgid "could not read WAL record at %X/%X"
+msgstr "не удалось прочитать запись WAL в позиции %X/%X"
+
+#. +> 11
+#: parsexlog.c:95 parsexlog.c:150
+#, c-format
+msgid "could not read WAL record at %X/%X\n"
+msgstr "не удалось прочитать запись WAL в позиции %X/%X\n"
+
+#. +> 15 14 13 12 11
+#: parsexlog.c:108
+#, c-format
+msgid "end pointer %X/%X is not a valid end point; expected %X/%X"
+msgstr ""
+"конечный указатель %X/%X неверно задаёт конечную точку; ожидается %X/%X"
+
+#. +> 15 14 13 12
+#: parsexlog.c:212
+#, c-format
+msgid "could not find previous WAL record at %X/%X: %s"
+msgstr "не удалось найти предыдущую запись WAL в позиции %X/%X: %s"
+
+#. +> 11
+#: parsexlog.c:211
+#, c-format
+msgid "could not find previous WAL record at %X/%X: %s\n"
+msgstr "не удалось найти предыдущую запись WAL в позиции %X/%X: %s\n"
+
+#. +> 15 14 13 12
+#: parsexlog.c:216
+#, c-format
+msgid "could not find previous WAL record at %X/%X"
+msgstr "не удалось найти предыдущую запись WAL в позиции %X/%X"
+
+#. +> 11
+#: parsexlog.c:215
+#, c-format
+msgid "could not find previous WAL record at %X/%X\n"
+msgstr "не удалось найти предыдущую запись WAL в позиции %X/%X\n"
+
+#. +> 15 14 13 12
+#: parsexlog.c:341
+#, c-format
+msgid "could not seek in file \"%s\": %m"
+msgstr "не удалось переместиться в файле \"%s\": %m"
+
+#. +> 11
+#: parsexlog.c:305
+#, c-format
+msgid "could not open file \"%s\": %s\n"
+msgstr "не удалось открыть файл \"%s\": %s\n"
+
+#. +> 11
+#: parsexlog.c:319
+#, c-format
+msgid "could not seek in file \"%s\": %s\n"
+msgstr "не удалось переместиться в файле \"%s\": %s\n"
+
+#. +> 11
+#: parsexlog.c:326
+#, c-format
+msgid "could not read from file \"%s\": %s\n"
+msgstr "не удалось прочитать файл \"%s\": %s\n"
+
+#. +> 15
+#: parsexlog.c:440
+#, c-format
+msgid ""
+"WAL record modifies a relation, but record type is not recognized: lsn: %X/"
+"%X, rmid: %d, rmgr: %s, info: %02X"
+msgstr ""
+"Запись WAL модифицирует отношение, но тип записи не распознан: lsn: %X/%X, "
+"rmid: %d, rmgr: %s, info: %02X"
+
+#. +> 14 13 12
+#: parsexlog.c:431
+#, c-format
+msgid ""
+"WAL record modifies a relation, but record type is not recognized: lsn: %X/"
+"%X, rmgr: %s, info: %02X"
+msgstr ""
+"Запись WAL модифицирует отношение, но тип записи не распознан: lsn: %X/%X, "
+"rmgr: %s, info: %02X"
+
+#. +> 11
+#: parsexlog.c:394
+#, c-format
+msgid ""
+"WAL record modifies a relation, but record type is not recognized\n"
+"lsn: %X/%X, rmgr: %s, info: %02X\n"
+msgstr ""
+"Запись WAL модифицирует отношение, но тип записи не распознан\n"
+"lsn: %X/%X, rmgr: %s, info: %02X\n"
+
+#. +> 12
+#: pg_rewind.c:85
+#, c-format
+msgid ""
+"\n"
+"Report bugs to <pgsql-bugs@lists.postgresql.org>.\n"
+msgstr ""
+"\n"
+"Об ошибках сообщайте по адресу <pgsql-bugs@lists.postgresql.org>.\n"
+
+#. +> 11
+#: pg_rewind.c:77
+#, c-format
+msgid ""
+"\n"
+"Report bugs to <pgsql-bugs@postgresql.org>.\n"
+msgstr ""
+"\n"
+"Об ошибках сообщайте по адресу <pgsql-bugs@postgresql.org>.\n"
+
+#. +> 15 14 13 12 11
+#: pg_rewind.c:86
+#, c-format
+msgid ""
+"%s resynchronizes a PostgreSQL cluster with another copy of the cluster.\n"
+"\n"
+msgstr ""
+"%s синхронизирует кластер PostgreSQL с другой копией кластера.\n"
+"\n"
+
+#. +> 15 14 13 12 11
+#: pg_rewind.c:87
+#, c-format
+msgid ""
+"Usage:\n"
+"  %s [OPTION]...\n"
+"\n"
+msgstr ""
+"Использование:\n"
+"  %s [ПАРАМЕТР]...\n"
+"\n"
+
+#. +> 15 14 13 12 11
+#: pg_rewind.c:88
+#, c-format
+msgid "Options:\n"
+msgstr "Параметры:\n"
+
+#. +> 15 14 13
+#: pg_rewind.c:89
+#, c-format
+msgid ""
+"  -c, --restore-target-wal       use restore_command in target configuration "
+"to\n"
+"                                 retrieve WAL files from archives\n"
+msgstr ""
+"  -c, --restore-target-wal       использовать для получения файлов WAL из\n"
+"                                 архива команду restore_command из целевой\n"
+"                                 конфигурации\n"
+
+#. +> 15 14 13 12 11
+#: pg_rewind.c:91
+#, c-format
+msgid "  -D, --target-pgdata=DIRECTORY  existing data directory to modify\n"
+msgstr ""
+"  -D, --target-pgdata=КАТАЛОГ    существующий каталог, куда будут записаны "
+"данные\n"
+
+#. +> 15 14 13 12 11
+#: pg_rewind.c:92
+#, c-format
+msgid ""
+"      --source-pgdata=DIRECTORY  source data directory to synchronize with\n"
+msgstr ""
+"      --source-pgdata=КАТАЛОГ    исходный каталог, с которым будет проведена "
+"синхронизация\n"
+
+# well-spelled: ПОДКЛ
+#. +> 15 14 13 12 11
+#: pg_rewind.c:93
+#, c-format
+msgid "      --source-server=CONNSTR    source server to synchronize with\n"
+msgstr ""
+"      --source-server=СТР_ПОДКЛ  сервер, с которым будет проведена "
+"синхронизация\n"
+
+#. +> 15 14 13 12 11
+#: pg_rewind.c:94
+#, c-format
+msgid "  -n, --dry-run                  stop before modifying anything\n"
+msgstr ""
+"  -n, --dry-run                  остановиться до внесения каких-либо "
+"изменений\n"
+
+#. +> 15 14 13 12
+#: pg_rewind.c:95
+#, c-format
+msgid ""
+"  -N, --no-sync                  do not wait for changes to be written\n"
+"                                 safely to disk\n"
+msgstr ""
+"  -N, --no-sync                  не ждать завершения сохранения данных на "
+"диске\n"
+
+#. +> 15 14 13 12 11
+#: pg_rewind.c:97
+#, c-format
+msgid "  -P, --progress                 write progress messages\n"
+msgstr "  -P, --progress                 выводить сообщения о ходе процесса\n"
+
+#. +> 15 14 13
+#: pg_rewind.c:98
+#, c-format
+msgid ""
+"  -R, --write-recovery-conf      write configuration for replication\n"
+"                                 (requires --source-server)\n"
+msgstr ""
+"  -R, --write-recovery-conf      записать конфигурацию для репликации\n"
+"                                 (требуется указание --source-server)\n"
+
+#. +> 15
+#: pg_rewind.c:100
+#, c-format
+msgid ""
+"      --config-file=FILENAME     use specified main server configuration\n"
+"                                 file when running target cluster\n"
+msgstr ""
+"      --config-file=ИМЯ_ФАЙЛА    использовать указанный основной файл\n"
+"                                 конфигурации сервера при запуске целевого\n"
+"                                 кластера\n"
+
+#. +> 15 14 13 12 11
+#: pg_rewind.c:102
+#, c-format
+msgid "      --debug                    write a lot of debug messages\n"
+msgstr ""
+"      --debug                    выдавать множество отладочных сообщений\n"
+
+#. +> 15 14 13
+#: pg_rewind.c:103
+#, c-format
+msgid ""
+"      --no-ensure-shutdown       do not automatically fix unclean shutdown\n"
+msgstr ""
+"      --no-ensure-shutdown       не исправлять автоматически состояние,\n"
+"                                 возникающее при нештатном отключении\n"
+
+#. +> 15 14 13 12 11
+#: pg_rewind.c:104
+#, c-format
+msgid ""
+"  -V, --version                  output version information, then exit\n"
+msgstr "  -V, --version                  показать версию и выйти\n"
+
+#. +> 15 14 13 12 11
+#: pg_rewind.c:105
+#, c-format
+msgid "  -?, --help                     show this help, then exit\n"
+msgstr "  -?, --help                     показать эту справку и выйти\n"
+
+#. +> 15 14 13
+#: pg_rewind.c:106
+#, c-format
+msgid ""
+"\n"
+"Report bugs to <%s>.\n"
+msgstr ""
+"\n"
+"Об ошибках сообщайте по адресу <%s>.\n"
+
+#. +> 15 14 13
+#: pg_rewind.c:107
+#, c-format
+msgid "%s home page: <%s>\n"
+msgstr "Домашняя страница %s: <%s>\n"
+
+#. +> 15
+#: pg_rewind.c:215 pg_rewind.c:223 pg_rewind.c:230 pg_rewind.c:237
+#: pg_rewind.c:244 pg_rewind.c:252
+#, c-format
+msgid "Try \"%s --help\" for more information."
+msgstr "Для дополнительной информации попробуйте \"%s --help\"."
+
+#. +> 14 13 12 11
+#: pg_rewind.c:164 pg_rewind.c:213 pg_rewind.c:220 pg_rewind.c:227
+#: pg_rewind.c:234 pg_rewind.c:242
+#, c-format
+msgid "Try \"%s --help\" for more information.\n"
+msgstr "Для дополнительной информации попробуйте \"%s --help\".\n"
+
+#. +> 15 14 13 12
+#: pg_rewind.c:222
+#, c-format
+msgid "no source specified (--source-pgdata or --source-server)"
+msgstr "источник не указан (требуется --source-pgdata или --source-server)"
+
+#. +> 11
+#: pg_rewind.c:163
+#, c-format
+msgid "%s: no source specified (--source-pgdata or --source-server)\n"
+msgstr ""
+"%s: источник не указан (требуется --source-pgdata или --source-server)\n"
+
+#. +> 15 14 13 12
+#: pg_rewind.c:229
+#, c-format
+msgid "only one of --source-pgdata or --source-server can be specified"
+msgstr "указать можно только --source-pgdata либо --source-server"
+
+#. +> 11
+#: pg_rewind.c:170
+#, c-format
+msgid "%s: only one of --source-pgdata or --source-server can be specified\n"
+msgstr "%s: указать можно только --source-pgdata либо --source-server\n"
+
+#. +> 15 14 13 12
+#: pg_rewind.c:236
+#, c-format
+msgid "no target data directory specified (--target-pgdata)"
+msgstr "целевой каталог данных не указан (--target-pgdata)"
+
+#. +> 11
+#: pg_rewind.c:177
+#, c-format
+msgid "%s: no target data directory specified (--target-pgdata)\n"
+msgstr "%s: целевой каталог данных не указан (--target-pgdata)\n"
+
+#. +> 15 14 13
+#: pg_rewind.c:243
+#, c-format
+msgid ""
+"no source server information (--source-server) specified for --write-"
+"recovery-conf"
+msgstr ""
+"отсутствует информация об исходном сервере (--source-server) для --write-"
+"recovery-conf"
+
+#. +> 15 14 13 12
+#: pg_rewind.c:250
+#, c-format
+msgid "too many command-line arguments (first is \"%s\")"
+msgstr "слишком много аргументов командной строки (первый: \"%s\")"
+
+#. +> 11
+#: pg_rewind.c:184
+#, c-format
+msgid "%s: too many command-line arguments (first is \"%s\")\n"
+msgstr "%s: слишком много аргументов командной строки (первый: \"%s\")\n"
+
+#. +> 15 14 13 12
+#: pg_rewind.c:265
+#, c-format
+msgid "cannot be executed by \"root\""
+msgstr "программу не должен запускать root"
+
+#. +> 11
+#: pg_rewind.c:199
+#, c-format
+msgid "cannot be executed by \"root\"\n"
+msgstr "программу не должен запускать root\n"
+
+#. +> 15
+#: pg_rewind.c:266
+#, c-format
+msgid "You must run %s as the PostgreSQL superuser."
+msgstr "Запускать %s нужно от имени суперпользователя PostgreSQL."
+
+#. +> 14 13 12 11
+#: pg_rewind.c:256
+#, c-format
+msgid "You must run %s as the PostgreSQL superuser.\n"
+msgstr "Запускать %s нужно от имени суперпользователя PostgreSQL.\n"
+
+#. +> 15 14 13 12
+#: pg_rewind.c:276
+#, c-format
+msgid "could not read permissions of directory \"%s\": %m"
+msgstr "не удалось считать права на каталог \"%s\": %m"
+
+#. +> 11
+#: pg_rewind.c:211
+#, c-format
+msgid "%s: could not read permissions of directory \"%s\": %s\n"
+msgstr "%s: не удалось считать права на каталог \"%s\": %s\n"
+
+#. +> 15 14 13 12 11
+#: pg_rewind.c:294
+#, c-format
+msgid "%s"
+msgstr "%s"
+
+#. +> 15 14 13 12
+#: pg_rewind.c:297
+#, c-format
+msgid "connected to server"
+msgstr "подключение к серверу установлено"
+
+#. +> 15 14 13 12
+#: pg_rewind.c:344
+#, c-format
+msgid "source and target cluster are on the same timeline"
+msgstr "исходный и целевой кластер уже на одной линии времени"
+
+#. +> 11
+#: pg_rewind.c:242
+#, c-format
+msgid "source and target cluster are on the same timeline\n"
+msgstr "исходный и целевой кластер уже на одной линии времени\n"
+
+#. +> 15 14 13 12
+#: pg_rewind.c:353
+#, c-format
+msgid "servers diverged at WAL location %X/%X on timeline %u"
+msgstr "серверы разошлись в позиции WAL %X/%X на линии времени %u"
+
+#. +> 11
+#: pg_rewind.c:251
+#, c-format
+msgid "servers diverged at WAL location %X/%X on timeline %u\n"
+msgstr "серверы разошлись в позиции WAL %X/%X на линии времени %u\n"
+
+#. +> 15 14 13 12
+#: pg_rewind.c:401
+#, c-format
+msgid "no rewind required"
+msgstr "перемотка не требуется"
+
+#. +> 11
+#: pg_rewind.c:298
+#, c-format
+msgid "no rewind required\n"
+msgstr "перемотка не требуется\n"
+
+#. +> 15 14 13 12
+#: pg_rewind.c:410
+#, c-format
+msgid "rewinding from last common checkpoint at %X/%X on timeline %u"
+msgstr ""
+"перемотка от последней общей контрольной точки в позиции %X/%X на линии "
+"времени %u"
+
+#. +> 11
+#: pg_rewind.c:305
+#, c-format
+msgid "rewinding from last common checkpoint at %X/%X on timeline %u\n"
+msgstr ""
+"перемотка от последней общей контрольной точки в позиции %X/%X на линии "
+"времени %u\n"
+
+#. +> 15 14 13 12
+#: pg_rewind.c:420
+#, c-format
+msgid "reading source file list"
+msgstr "чтение списка исходных файлов"
+
+#. +> 11
+#: pg_rewind.c:313
+#, c-format
+msgid "reading source file list\n"
+msgstr "чтение списка исходных файлов\n"
+
+#. +> 15 14 13 12
+#: pg_rewind.c:424
+#, c-format
+msgid "reading target file list"
+msgstr "чтение списка целевых файлов"
+
+#. +> 11
+#: pg_rewind.c:315
+#, c-format
+msgid "reading target file list\n"
+msgstr "чтение списка целевых файлов\n"
+
+#. +> 15 14 13 12
+#: pg_rewind.c:433
+#, c-format
+msgid "reading WAL in target"
+msgstr "чтение WAL в целевом кластере"
+
+#. +> 11
+#: pg_rewind.c:323
+#, c-format
+msgid "reading WAL in target\n"
+msgstr "чтение WAL в целевом кластере\n"
+
+#. +> 15 14 13 12
+#: pg_rewind.c:454
+#, c-format
+msgid "need to copy %lu MB (total source directory size is %lu MB)"
+msgstr "требуется скопировать %lu МБ (общий размер исходного каталога: %lu МБ)"
+
+#. +> 11
+#: pg_rewind.c:340
+#, c-format
+msgid "need to copy %lu MB (total source directory size is %lu MB)\n"
+msgstr ""
+"требуется скопировать %lu МБ (общий размер исходного каталога: %lu МБ)\n"
+
+#. +> 15 14 13 12
+#: pg_rewind.c:472
+#, c-format
+msgid "syncing target data directory"
+msgstr "синхронизация целевого каталога данных"
+
+#. +> 11
+#: pg_rewind.c:385
+#, c-format
+msgid "syncing target data directory\n"
+msgstr "синхронизация целевого каталога данных\n"
+
+#. +> 11
+#: pg_rewind.c:761
+#, c-format
+msgid "sync of target directory failed\n"
+msgstr "сбой синхронизации целевого каталога\n"
+
+#. +> 15 14 13 12
+#: pg_rewind.c:488
+#, c-format
+msgid "Done!"
+msgstr "Готово!"
+
+#. +> 11
+#: pg_rewind.c:388
+#, c-format
+msgid "Done!\n"
+msgstr "Готово!\n"
+
+#. +> 11
+#: pg_rewind.c:505
+#, c-format
+msgid "Source timeline history:\n"
+msgstr "История линии времени источника:\n"
+
+#. +> 11
+#: pg_rewind.c:507
+#, c-format
+msgid "Target timeline history:\n"
+msgstr "История линии времени получателя:\n"
+
+#. translator: %d is a timeline number, others are LSN positions
+#. +> 11
+#: pg_rewind.c:521
+#, c-format
+msgid "%d: %X/%X - %X/%X\n"
+msgstr "%d: %X/%X - %X/%X\n"
+
+#. +> 15 14
+#: pg_rewind.c:568
+#, c-format
+msgid "no action decided for file \"%s\""
+msgstr "действие не определено для файла \"%s\""
+
+#. +> 15 14
+#: pg_rewind.c:600
+#, c-format
+msgid "source system was modified while pg_rewind was running"
+msgstr "в исходной системе произошли изменения в процессе работы pg_rewind"
+
+#. +> 15 14 13 12
+#: pg_rewind.c:604
+#, c-format
+msgid "creating backup label and updating control file"
+msgstr "создание метки копии и модификация управляющего файла"
+
+#. +> 11
+#: pg_rewind.c:357
+#, c-format
+msgid ""
+"\n"
+"creating backup label and updating control file\n"
+msgstr ""
+"\n"
+"создание метки копии и модификация управляющего файла\n"
+
+#. +> 15 14
+#: pg_rewind.c:654
+#, c-format
+msgid "source system was in unexpected state at end of rewind"
+msgstr "исходная система оказалась в неожиданном состоянии после перемотки"
+
+#. +> 15 14 13 12
+#: pg_rewind.c:685
+#, c-format
+msgid "source and target clusters are from different systems"
+msgstr "исходный и целевой кластеры относятся к разным системам"
+
+#. +> 11
+#: pg_rewind.c:400
+#, c-format
+msgid "source and target clusters are from different systems\n"
+msgstr "исходный и целевой кластеры относятся к разным системам\n"
+
+#. +> 15 14 13 12
+#: pg_rewind.c:693
+#, c-format
+msgid "clusters are not compatible with this version of pg_rewind"
+msgstr "кластеры несовместимы с этой версией pg_rewind"
+
+#. +> 11
+#: pg_rewind.c:408
+#, c-format
+msgid "clusters are not compatible with this version of pg_rewind\n"
+msgstr "кластеры несовместимы с этой версией pg_rewind\n"
+
+#. +> 15 14 13 12
+#: pg_rewind.c:703
+#, c-format
+msgid ""
+"target server needs to use either data checksums or \"wal_log_hints = on\""
+msgstr ""
+"на целевом сервере должны быть контрольные суммы данных или \"wal_log_hints "
+"= on\""
+
+#. +> 11
+#: pg_rewind.c:418
+#, c-format
+msgid ""
+"target server needs to use either data checksums or \"wal_log_hints = on\"\n"
+msgstr ""
+"на целевом сервере должны быть контрольные суммы данных или \"wal_log_hints "
+"= on\"\n"
+
+#. +> 15 14 13 12
+#: pg_rewind.c:714
+#, c-format
+msgid "target server must be shut down cleanly"
+msgstr "целевой сервер должен быть выключен штатно"
+
+#. +> 11
+#: pg_rewind.c:429
+#, c-format
+msgid "target server must be shut down cleanly\n"
+msgstr "целевой сервер должен быть выключен штатно\n"
+
+#. +> 15 14 13 12
+#: pg_rewind.c:724
+#, c-format
+msgid "source data directory must be shut down cleanly"
+msgstr "работа с исходным каталогом данных должна быть завершена штатно"
+
+#. +> 11
+#: pg_rewind.c:439
+#, c-format
+msgid "source data directory must be shut down cleanly\n"
+msgstr "работа с исходным каталогом данных должна быть завершена штатно\n"
+
+#. +> 15 14 13 12 11
+#: pg_rewind.c:771
+#, c-format
+msgid "%*s/%s kB (%d%%) copied"
+msgstr "%*s/%s КБ (%d%%) скопировано"
+
+#. +> 15 14 13 12
+#: pg_rewind.c:834
+#, c-format
+msgid "invalid control file"
+msgstr "неверный управляющий файл"
+
+#. +> 11
+#: pg_rewind.c:494
+#, c-format
+msgid "invalid control file\n"
+msgstr "неверный управляющий файл\n"
+
+#. +> 15 14 13 12
+#: pg_rewind.c:918
+#, c-format
+msgid ""
+"could not find common ancestor of the source and target cluster's timelines"
+msgstr ""
+"не удалось найти общего предка линий времени исходного и целевого кластеров"
+
+#. +> 11
+#: pg_rewind.c:580
+#, c-format
+msgid ""
+"could not find common ancestor of the source and target cluster's timelines\n"
+msgstr ""
+"не удалось найти общего предка линий времени исходного и целевого кластеров\n"
+
+#. +> 15 14 13 12
+#: pg_rewind.c:959
+#, c-format
+msgid "backup label buffer too small"
+msgstr "буфер для метки копии слишком мал"
+
+#. +> 11
+#: pg_rewind.c:621
+#, c-format
+msgid "backup label buffer too small\n"
+msgstr "буфер для метки копии слишком мал\n"
+
+#. +> 15 14 13 12
+#: pg_rewind.c:982
+#, c-format
+msgid "unexpected control file CRC"
+msgstr "неверная контрольная сумма управляющего файла"
+
+#. +> 11
+#: pg_rewind.c:644
+#, c-format
+msgid "unexpected control file CRC\n"
+msgstr "неверная контрольная сумма управляющего файла\n"
+
+#. +> 15 14 13 12
+#: pg_rewind.c:994
+#, c-format
+msgid "unexpected control file size %d, expected %d"
+msgstr "неверный размер управляющего файла (%d), ожидалось: %d"
+
+#. +> 11
+#: pg_rewind.c:654
+#, c-format
+msgid "unexpected control file size %d, expected %d\n"
+msgstr "неверный размер управляющего файла (%d), ожидалось: %d\n"
+
+#. +> 15 14 13 12
+#: pg_rewind.c:1003
+#, c-format
+msgid ""
+"WAL segment size must be a power of two between 1 MB and 1 GB, but the "
+"control file specifies %d byte"
+msgid_plural ""
+"WAL segment size must be a power of two between 1 MB and 1 GB, but the "
+"control file specifies %d bytes"
+msgstr[0] ""
+"размер сегмента WAL должен задаваться степенью 2 в интервале от 1 МБ до 1 "
+"ГБ, но в управляющем файле указано значение: %d"
+msgstr[1] ""
+"Размер сегмента WAL должен задаваться степенью 2 в интервале от 1 МБ до 1 "
+"ГБ, но в управляющем файле указано значение: %d"
+msgstr[2] ""
+"Размер сегмента WAL должен задаваться степенью 2 в интервале от 1 МБ до 1 "
+"ГБ, но в управляющем файле указано значение: %d"
+
+#. +> 11
+#: pg_rewind.c:663
+#, c-format
+msgid ""
+"WAL segment size must be a power of two between 1 MB and 1 GB, but the "
+"control file specifies %d byte\n"
+msgid_plural ""
+"WAL segment size must be a power of two between 1 MB and 1 GB, but the "
+"control file specifies %d bytes\n"
+msgstr[0] ""
+"Размер сегмента WAL должен задаваться степенью 2 в интервале от 1 МБ до 1 "
+"ГБ, но в управляющем файле указано значение: %d\n"
+msgstr[1] ""
+"Размер сегмента WAL должен задаваться степенью 2 в интервале от 1 МБ до 1 "
+"ГБ, но в управляющем файле указано значение: %d\n"
+msgstr[2] ""
+"Размер сегмента WAL должен задаваться степенью 2 в интервале от 1 МБ до 1 "
+"ГБ, но в управляющем файле указано значение: %d\n"
+
+#. +> 15
+#: pg_rewind.c:1042 pg_rewind.c:1112
+#, c-format
+msgid ""
+"program \"%s\" is needed by %s but was not found in the same directory as "
+"\"%s\""
+msgstr "программа \"%s\" нужна для %s, но она не найдена в каталоге \"%s\""
+
+#. +> 14 13
+#: pg_rewind.c:1043 pg_rewind.c:1101
+#, c-format
+msgid ""
+"The program \"%s\" is needed by %s but was not found in the\n"
+"same directory as \"%s\".\n"
+"Check your installation."
+msgstr ""
+"Программа \"%s\" нужна для %s, но она не найдена\n"
+"в каталоге \"%s\".\n"
+"Проверьте правильность установки СУБД."
+
+#. +> 11
+#: pg_rewind.c:739
+#, c-format
+msgid ""
+"The program \"initdb\" is needed by %s but was\n"
+"not found in the same directory as \"%s\".\n"
+"Check your installation.\n"
+msgstr ""
+"Для %s необходима программа \"initdb\", но она не найдена\n"
+"в каталоге \"%s\".\n"
+"Проверьте правильность установки СУБД.\n"
+
+#. +> 15
+#: pg_rewind.c:1045 pg_rewind.c:1115
+#, c-format
+msgid "program \"%s\" was found by \"%s\" but was not the same version as %s"
+msgstr ""
+"программа \"%s\" найдена программой \"%s\", но её версия отличается от "
+"версии %s"
+
+#. +> 14 13
+#: pg_rewind.c:1048 pg_rewind.c:1106
+#, c-format
+msgid ""
+"The program \"%s\" was found by \"%s\"\n"
+"but was not the same version as %s.\n"
+"Check your installation."
+msgstr ""
+"Программа \"%s\" найдена программой \"%s\",\n"
+"но её версия отличается от версии %s.\n"
+"Проверьте правильность установки СУБД."
+
+#. +> 11
+#: pg_rewind.c:743
+#, c-format
+msgid ""
+"The program \"initdb\" was found by \"%s\"\n"
+"but was not the same version as %s.\n"
+"Check your installation.\n"
+msgstr ""
+"Программа \"initdb\" найдена программой \"%s\",\n"
+"но её версия отличается от версии %s.\n"
+"Проверьте правильность установки СУБД.\n"
+
+#. +> 15 14 13
+#: pg_rewind.c:1078
+#, c-format
+msgid "restore_command is not set in the target cluster"
+msgstr "команда restore_command в целевом кластере не определена"
+
+#. +> 15 14 13
+#: pg_rewind.c:1119
+#, c-format
+msgid "executing \"%s\" for target server to complete crash recovery"
+msgstr ""
+"выполнение \"%s\" для восстановления согласованности на целевом сервере"
+
+#. +> 15 14 13
+#: pg_rewind.c:1156
+#, c-format
+msgid "postgres single-user mode in target cluster failed"
+msgstr ""
+"не удалось запустить postgres в целевом кластере в однопользовательском "
+"режиме"
+
+#. +> 15 14 13
+#: pg_rewind.c:1157
+#, c-format
+msgid "Command was: %s"
+msgstr "Выполнялась команда: %s"
+
+#. +> 15 14 13 12
+#: timeline.c:75 timeline.c:81
+#, c-format
+msgid "syntax error in history file: %s"
+msgstr "синтаксическая ошибка в файле истории: %s"
+
+#. +> 11
+#: timeline.c:76 timeline.c:82
+#, c-format
+msgid "syntax error in history file: %s\n"
+msgstr "синтаксическая ошибка в файле истории: %s\n"
+
+#. +> 15 14 13 12
+#: timeline.c:76
+#, c-format
+msgid "Expected a numeric timeline ID."
+msgstr "Ожидается числовой идентификатор линии времени."
+
+#. +> 11
+#: timeline.c:77
+#, c-format
+msgid "Expected a numeric timeline ID.\n"
+msgstr "Ожидается числовой идентификатор линии времени.\n"
+
+#. +> 15 14 13 12
+#: timeline.c:82
+#, c-format
+msgid "Expected a write-ahead log switchpoint location."
+msgstr "Ожидается положение точки переключения журнала предзаписи."
+
+#. +> 11
+#: timeline.c:83
+#, c-format
+msgid "Expected a write-ahead log switchpoint location.\n"
+msgstr "Ожидается положение точки переключения журнала предзаписи.\n"
+
+#. +> 15 14 13 12
+#: timeline.c:87
+#, c-format
+msgid "invalid data in history file: %s"
+msgstr "неверные данные в файле истории: %s"
+
+#. +> 11
+#: timeline.c:88
+#, c-format
+msgid "invalid data in history file: %s\n"
+msgstr "неверные данные в файле истории: %s\n"
+
+#. +> 15 14 13 12
+#: timeline.c:88
+#, c-format
+msgid "Timeline IDs must be in increasing sequence."
+msgstr "Идентификаторы линий времени должны возрастать."
+
+#. +> 11
+#: timeline.c:89
+#, c-format
+msgid "Timeline IDs must be in increasing sequence.\n"
+msgstr "Идентификаторы линий времени должны возрастать.\n"
+
+#. +> 15 14 13 12
+#: timeline.c:108
+#, c-format
+msgid "invalid data in history file"
+msgstr "неверные данные в файле истории"
+
+#. +> 11
+#: timeline.c:109
+#, c-format
+msgid "invalid data in history file\n"
+msgstr "неверные данные в файле истории\n"
+
+#. +> 15 14 13 12
+#: timeline.c:109
+#, c-format
+msgid "Timeline IDs must be less than child timeline's ID."
+msgstr ""
+"Идентификаторы линий времени должны быть меньше идентификатора линии-потомка."
+
+#. +> 11
+#: timeline.c:110
+#, c-format
+msgid "Timeline IDs must be less than child timeline's ID.\n"
+msgstr ""
+"Идентификаторы линий времени должны быть меньше идентификатора линии-"
+"потомка.\n"
+
+#. +> 15 14 13 12 11
+#: xlogreader.c:625
+#, c-format
+msgid "invalid record offset at %X/%X"
+msgstr "неверное смещение записи: %X/%X"
+
+#. +> 15 14 13 12 11
+#: xlogreader.c:633
+#, c-format
+msgid "contrecord is requested by %X/%X"
+msgstr "по смещению %X/%X запрошено продолжение записи"
+
+#. +> 15 14 13 12 11
+#: xlogreader.c:674 xlogreader.c:1121
+#, c-format
+msgid "invalid record length at %X/%X: wanted %u, got %u"
+msgstr "неверная длина записи по смещению %X/%X: ожидалось %u, получено %u"
+
+#. +> 15
+#: xlogreader.c:703
+#, c-format
+msgid "out of memory while trying to decode a record of length %u"
+msgstr "не удалось выделить память для декодирования записи длины %u"
+
+#. +> 15 14 13 12 11
+#: xlogreader.c:725
+#, c-format
+msgid "record length %u at %X/%X too long"
+msgstr "длина записи %u по смещению %X/%X слишком велика"
+
+#. +> 15 14 13 12 11
+#: xlogreader.c:774
+#, c-format
+msgid "there is no contrecord flag at %X/%X"
+msgstr "нет флага contrecord в позиции %X/%X"
+
+#. +> 15 14
+#: xlogreader.c:787
+#, c-format
+msgid "invalid contrecord length %u (expected %lld) at %X/%X"
+msgstr "неверная длина contrecord: %u (ожидалась %lld) в позиции %X/%X"
+
+#. +> 13 12 11
+#: xlogreader.c:491
+#, c-format
+msgid "invalid contrecord length %u at %X/%X"
+msgstr "неверная длина contrecord (%u) в позиции %X/%X"
+
+#. +> 15
+#: xlogreader.c:922
+#, c-format
+msgid "missing contrecord at %X/%X"
+msgstr "нет записи contrecord в %X/%X"
+
+#. +> 15 14 13 12 11
+#: xlogreader.c:1129
+#, c-format
+msgid "invalid resource manager ID %u at %X/%X"
+msgstr "неверный ID менеджера ресурсов %u по смещению %X/%X"
+
+#. +> 15 14 13 12 11
+#: xlogreader.c:1142 xlogreader.c:1158
+#, c-format
+msgid "record with incorrect prev-link %X/%X at %X/%X"
+msgstr "запись с неверной ссылкой назад %X/%X по смещению %X/%X"
+
+#. +> 15 14 13 12 11
+#: xlogreader.c:1194
+#, c-format
+msgid "incorrect resource manager data checksum in record at %X/%X"
+msgstr ""
+"некорректная контрольная сумма данных менеджера ресурсов в записи по "
+"смещению %X/%X"
+
+#. +> 15 14 13 12 11
+#: xlogreader.c:1231
+#, c-format
+msgid "invalid magic number %04X in log segment %s, offset %u"
+msgstr "неверное магическое число %04X в сегменте журнала %s, смещение %u"
+
+#. +> 15 14 13 12 11
+#: xlogreader.c:1245 xlogreader.c:1286
+#, c-format
+msgid "invalid info bits %04X in log segment %s, offset %u"
+msgstr "неверные информационные биты %04X в сегменте журнала %s, смещение %u"
+
+#. +> 15 14 13
+#: xlogreader.c:1260
+#, c-format
+msgid ""
+"WAL file is from different database system: WAL file database system "
+"identifier is %llu, pg_control database system identifier is %llu"
+msgstr ""
+"файл WAL принадлежит другой СУБД: в нём указан идентификатор системы БД "
+"%llu, а идентификатор системы pg_control: %llu"
+
+#. +> 12 11
+#: xlogreader.c:836
+#, c-format
+msgid ""
+"WAL file is from different database system: WAL file database system "
+"identifier is %s, pg_control database system identifier is %s"
+msgstr ""
+"файл WAL принадлежит другой СУБД: в нём указан идентификатор системы БД %s, "
+"а идентификатор системы pg_control: %s"
+
+#. +> 15 14 13 12 11
+#: xlogreader.c:1268
+#, c-format
+msgid ""
+"WAL file is from different database system: incorrect segment size in page "
+"header"
+msgstr ""
+"файл WAL принадлежит другой СУБД: некорректный размер сегмента в заголовке "
+"страницы"
+
+#. +> 15 14 13 12 11
+#: xlogreader.c:1274
+#, c-format
+msgid ""
+"WAL file is from different database system: incorrect XLOG_BLCKSZ in page "
+"header"
+msgstr ""
+"файл WAL принадлежит другой СУБД: некорректный XLOG_BLCKSZ в заголовке "
+"страницы"
+
+#. +> 15 14 13 12 11
+#: xlogreader.c:1305
+#, c-format
+msgid "unexpected pageaddr %X/%X in log segment %s, offset %u"
+msgstr "неожиданный pageaddr %X/%X в сегменте журнала %s, смещение %u"
+
+#. +> 15 14 13 12 11
+#: xlogreader.c:1330
+#, c-format
+msgid "out-of-sequence timeline ID %u (after %u) in log segment %s, offset %u"
+msgstr ""
+"нарушение последовательности ID линии времени %u (после %u) в сегменте "
+"журнала %s, смещение %u"
+
+#. +> 15 14 13 12 11
+#: xlogreader.c:1735
+#, c-format
+msgid "out-of-order block_id %u at %X/%X"
+msgstr "идентификатор блока %u идёт не по порядку в позиции %X/%X"
+
+#. +> 15 14 13 12 11
+#: xlogreader.c:1759
+#, c-format
+msgid "BKPBLOCK_HAS_DATA set, but no data included at %X/%X"
+msgstr "BKPBLOCK_HAS_DATA установлен, но данных в позиции %X/%X нет"
+
+#. +> 15 14 13 12 11
+#: xlogreader.c:1766
+#, c-format
+msgid "BKPBLOCK_HAS_DATA not set, but data length is %u at %X/%X"
+msgstr ""
+"BKPBLOCK_HAS_DATA не установлен, но длина данных равна %u в позиции %X/%X"
+
+#. +> 15 14 13 12 11
+#: xlogreader.c:1802
+#, c-format
+msgid ""
+"BKPIMAGE_HAS_HOLE set, but hole offset %u length %u block image length %u at "
+"%X/%X"
+msgstr ""
+"BKPIMAGE_HAS_HOLE установлен, но для пропуска заданы смещение %u и длина %u "
+"при длине образа блока %u в позиции %X/%X"
+
+#. +> 15 14 13 12 11
+#: xlogreader.c:1818
+#, c-format
+msgid "BKPIMAGE_HAS_HOLE not set, but hole offset %u length %u at %X/%X"
+msgstr ""
+"BKPIMAGE_HAS_HOLE не установлен, но для пропуска заданы смещение %u и длина "
+"%u в позиции %X/%X"
+
+#. +> 15
+#: xlogreader.c:1832
+#, c-format
+msgid "BKPIMAGE_COMPRESSED set, but block image length %u at %X/%X"
+msgstr ""
+"BKPIMAGE_COMPRESSED установлен, но длина образа блока равна %u в позиции %X/"
+"%X"
+
+#. +> 14 13 12 11
+#: xlogreader.c:1383
+#, c-format
+msgid "BKPIMAGE_IS_COMPRESSED set, but block image length %u at %X/%X"
+msgstr ""
+"BKPIMAGE_IS_COMPRESSED установлен, но длина образа блока равна %u в позиции "
+"%X/%X"
+
+#. +> 15
+#: xlogreader.c:1847
+#, c-format
+msgid ""
+"neither BKPIMAGE_HAS_HOLE nor BKPIMAGE_COMPRESSED set, but block image "
+"length is %u at %X/%X"
+msgstr ""
+"ни BKPIMAGE_HAS_HOLE, ни BKPIMAGE_COMPRESSED не установлены, но длина образа "
+"блока равна %u в позиции %X/%X"
+
+#. +> 14 13 12 11
+#: xlogreader.c:1398
+#, c-format
+msgid ""
+"neither BKPIMAGE_HAS_HOLE nor BKPIMAGE_IS_COMPRESSED set, but block image "
+"length is %u at %X/%X"
+msgstr ""
+"ни BKPIMAGE_HAS_HOLE, ни BKPIMAGE_IS_COMPRESSED не установлены, но длина "
+"образа блока равна %u в позиции %X/%X"
+
+#. +> 15 14 13 12 11
+#: xlogreader.c:1863
+#, c-format
+msgid "BKPBLOCK_SAME_REL set but no previous rel at %X/%X"
+msgstr ""
+"BKPBLOCK_SAME_REL установлен, но предыдущее значение не задано в позиции %X/"
+"%X"
+
+#. +> 15 14 13 12 11
+#: xlogreader.c:1875
+#, c-format
+msgid "invalid block_id %u at %X/%X"
+msgstr "неверный идентификатор блока %u в позиции %X/%X"
+
+#. +> 15 14 13 12 11
+#: xlogreader.c:1942
+#, c-format
+msgid "record with invalid length at %X/%X"
+msgstr "запись с неверной длиной в позиции %X/%X"
+
+#. +> 15
+#: xlogreader.c:1967
+#, c-format
+msgid "could not locate backup block with ID %d in WAL record"
+msgstr "не удалось найти копию блока с ID %d в записи журнала WAL"
+
+#. +> 15
+#: xlogreader.c:2051
+#, c-format
+msgid "could not restore image at %X/%X with invalid block %d specified"
+msgstr ""
+"не удалось восстановить образ в позиции %X/%X с указанным неверным блоком %d"
+
+#. +> 15
+#: xlogreader.c:2058
+#, c-format
+msgid "could not restore image at %X/%X with invalid state, block %d"
+msgstr ""
+"не удалось восстановить образ в позиции %X/%X с неверным состоянием, блок %d"
+
+#. +> 15
+#: xlogreader.c:2085 xlogreader.c:2102
+#, c-format
+msgid ""
+"could not restore image at %X/%X compressed with %s not supported by build, "
+"block %d"
+msgstr ""
+"не удалось восстановить образ в позиции %X/%X, сжатый методом %s, который не "
+"поддерживается этой сборкой, блок %d"
+
+#. +> 15
+#: xlogreader.c:2111
+#, c-format
+msgid ""
+"could not restore image at %X/%X compressed with unknown method, block %d"
+msgstr ""
+"не удалось восстановить образ в позиции %X/%X, сжатый неизвестным методом, "
+"блок %d"
+
+#. +> 15
+#: xlogreader.c:2119
+#, c-format
+msgid "could not decompress image at %X/%X, block %d"
+msgstr "не удалось развернуть образ в позиции %X/%X, блок %d"
+
+#. +> 14 13 12 11
+#: xlogreader.c:1602
+#, c-format
+msgid "invalid compressed image at %X/%X, block %d"
+msgstr "неверный сжатый образ в позиции %X/%X, блок %d"
+
+#. +> 11
+#: copy_fetch.c:60
+#, c-format
+msgid "could not open directory \"%s\": %s\n"
+msgstr "не удалось открыть каталог \"%s\": %s\n"
+
+#. +> 11
+#: copy_fetch.c:89 filemap.c:202
+#, c-format
+msgid "could not stat file \"%s\": %s\n"
+msgstr "не удалось получить информацию о файле \"%s\": %s\n"
+
+#. +> 11
+#: copy_fetch.c:118
+#, c-format
+msgid "could not read symbolic link \"%s\": %s\n"
+msgstr "не удалось прочитать символическую ссылку \"%s\": %s\n"
+
+#. +> 11
+#: copy_fetch.c:121
+#, c-format
+msgid "symbolic link \"%s\" target is too long\n"
+msgstr "целевой путь символической ссылки \"%s\" слишком длинный\n"
+
+#. +> 11
+#: copy_fetch.c:136
+#, c-format
+msgid ""
+"\"%s\" is a symbolic link, but symbolic links are not supported on this "
+"platform\n"
+msgstr ""
+"\"%s\" — символическая ссылка, но в этой ОС символические ссылки не "
+"поддерживаются\n"
+
+#. +> 11
+#: copy_fetch.c:143
+#, c-format
+msgid "could not read directory \"%s\": %s\n"
+msgstr "не удалось прочитать каталог \"%s\": %s\n"
+
+#. +> 11
+#: copy_fetch.c:147
+#, c-format
+msgid "could not close directory \"%s\": %s\n"
+msgstr "не удалось закрыть каталог \"%s\": %s\n"
+
+#. +> 11
+#: copy_fetch.c:167
+#, c-format
+msgid "could not open source file \"%s\": %s\n"
+msgstr "не удалось открыть исходный файл \"%s\": %s\n"
+
+#. +> 11
+#: copy_fetch.c:171
+#, c-format
+msgid "could not seek in source file: %s\n"
+msgstr "не удалось переместиться в исходном файле: %s\n"
+
+#. +> 11
+#: copy_fetch.c:188 file_ops.c:308
+#, c-format
+msgid "could not read file \"%s\": %s\n"
+msgstr "не удалось прочитать файл \"%s\": %s\n"
+
+#. +> 11
+#: copy_fetch.c:191
+#, c-format
+msgid "unexpected EOF while reading file \"%s\"\n"
+msgstr "неожиданный конец файла при чтении \"%s\"\n"
+
+#. +> 11
+#: copy_fetch.c:198
+#, c-format
+msgid "could not close file \"%s\": %s\n"
+msgstr "не удалось закрыть файл \"%s\": %s\n"
+
+#. +> 11
+#: datapagemap.c:124
+#, c-format
+msgid "  block %u\n"
+msgstr "  блок %u\n"
+
+#. +> 11
+#: logging.c:57
+msgid "Failure, exiting\n"
+msgstr "Ошибка, выполняется выход\n"
+
+#, c-format
+#~ msgid ""
+#~ "WAL file is from different database system: incorrect XLOG_SEG_SIZE in "
+#~ "page header"
+#~ msgstr ""
+#~ "файл WAL принадлежит другой СУБД: некорректный XLOG_SEG_SIZE в заголовке "
+#~ "страницы"
+
+#~ msgid "servers diverged at WAL position %X/%X on timeline %u\n"
+#~ msgstr "Серверы разошлись в позиции WAL %X/%X на линии времени %u.\n"
+
+#~ msgid "Expected a transaction log switchpoint location.\n"
+#~ msgstr "Ожидается положение точки переключения журнала транзакций.\n"
+
+#~ msgid ""
+#~ "The program \"initdb\" is needed by %s but was \n"
+#~ "not found in the same directory as \"%s\".\n"
+#~ "Check your installation.\n"
+#~ msgstr ""
+#~ "Для %s необходима программа \"initdb\", но она не найдена\n"
+#~ "в каталоге \"%s\".\n"
+#~ "Проверьте правильность установки СУБД.\n"
+
+#~ msgid "invalid record length at %X/%X"
+#~ msgstr "неверная длина записи по смещению %X/%X"
+
+#~ msgid "could not connect to server: %s"
+#~ msgstr "не удалось подключиться к серверу: %s"
+
+#~ msgid "could not set up connection context: %s"
+#~ msgstr "не удалось настроить контекст подключения: %s"
+
+#~ msgid "could not create temporary table: %s"
+#~ msgstr "не удалось создать временную таблицу: %s"

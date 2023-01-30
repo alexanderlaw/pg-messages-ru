@@ -1,0 +1,10 @@
+[General]
+GlossaryTbx=../postgres-doc/translation/postgres-ru.tbx
+LangCode=ru
+MailingList=pgsql-ru-general@postgresql.org
+ProjectID=pg-messages
+TargetLangCode=ru
+
+[Identity]
+authorEmail=exclusion@gmail.com
+authorName=Alexander Lakhin

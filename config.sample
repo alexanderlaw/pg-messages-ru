@@ -1,0 +1,5 @@
+MSG_LANG=ru
+POLOGY_PATH=../postgres-doc/translation/tools/pology
+TTPATH=../postgres-doc/translation/tools
+CUR_MESSAGES_PATH=$HM/postgresql
+PGSQL_MESSAGES_GIT_URL=ssh://git@git.postgresql.org/pgtranslation/messages.git

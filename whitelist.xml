@@ -1,0 +1,42 @@
+<whitelist>
+  <file filename="pg_test_fsync.po">
+    <check name="PrefixWhitespace">
+      <item msgid=" 1 * 16kB open_sync write" msgstr="запись с open_sync  1 * 16 КБ" />
+      <item msgid=" 2 *  8kB open_sync writes" msgstr="запись с open_sync  2 *  8 КБ" />
+      <item msgid=" 4 *  4kB open_sync writes" msgstr="запись с open_sync  4 *  4 КБ" />
+      <item msgid=" 8 *  2kB open_sync writes" msgstr="запись с open_sync  8 *  2 КБ" />
+    </check>
+  </file>
+  <file filename="pg_controldata.po">
+    <check name="SuffixWhitespace">
+      <item msgid="Latest checkpoint's NextXID:          " msgstr="NextXID последней конт. точки:        " />
+      <item msgid="Latest checkpoint's oldestXID:        " msgstr="oldestXID последней конт. точки:      " />
+      <item msgid="Latest checkpoint's oldestActiveXID:  " msgstr="oldestActiveXID последней к. т.:      " />
+      <item msgid="Latest checkpoint's oldestMultiXid:   " msgstr="oldestMultiXid последней конт. точки: " />
+    </check>
+    <check name="SuffixWhitespacePedantic">
+      <item msgid="Latest checkpoint's NextXID:          " msgstr="NextXID последней конт. точки:        " />
+      <item msgid="Latest checkpoint's oldestXID:        " msgstr="oldestXID последней конт. точки:      " />
+      <item msgid="Latest checkpoint's oldestActiveXID:  " msgstr="oldestActiveXID последней к. т.:      " />
+      <item msgid="Latest checkpoint's oldestMultiXid:   " msgstr="oldestMultiXid последней конт. точки: " />
+      <item msgid="Latest checkpoint's oldestCommitTsXid:" msgstr="oldestCommitTsXid последней к. т.:    " />
+      <item msgid="Latest checkpoint's newestCommitTsXid:" msgstr="newestCommitTsXid последней к. т.:    " />
+    </check>
+  </file>
+  <file filename="pg_resetxlog.po">
+    <check name="SuffixWhitespace">
+      <item msgid="Latest checkpoint's NextXID:          " msgstr="NextXID последней конт. точки:        " />
+      <item msgid="Latest checkpoint's oldestXID:        " msgstr="oldestXID последней конт. точки:      " />
+      <item msgid="Latest checkpoint's oldestActiveXID:  " msgstr="oldestActiveXID последней к. т.:      " />
+      <item msgid="Latest checkpoint's oldestMultiXid:   " msgstr="oldestMultiXid последней конт. точки: " />
+    </check>
+    <check name="SuffixWhitespacePedantic">
+      <item msgid="Latest checkpoint's NextXID:          " msgstr="NextXID последней конт. точки:        " />
+      <item msgid="Latest checkpoint's oldestXID:        " msgstr="oldestXID последней конт. точки:      " />
+      <item msgid="Latest checkpoint's oldestActiveXID:  " msgstr="oldestActiveXID последней к. т.:      " />
+      <item msgid="Latest checkpoint's oldestMultiXid:   " msgstr="oldestMultiXid последней конт. точки: " />
+      <item msgid="Latest checkpoint's oldestCommitTsXid:" msgstr="oldestCommitTsXid последней к. т.:    " />
+      <item msgid="Latest checkpoint's newestCommitTsXid:" msgstr="newestCommitTsXid последней к. т.:    " />
+    </check>
+  </file>
+</whitelist>
