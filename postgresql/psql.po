@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: psql (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2023-01-24 12:54+0300\n"
+"POT-Creation-Date: 2023-02-02 08:44+0300\n"
 "PO-Revision-Date: 2022-09-05 13:41+0300\n"
 "Last-Translator: Alexander Lakhin <a.lakhin@postgrespro.ru>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -6962,13 +6962,6 @@ msgstr "выражение_границ_секции"
 msgid "numeric_literal"
 msgstr "числовая_константа"
 
-#. +> 11
-#: sql_help.c:1334 sql_help.c:1336 sql_help.c:1338 sql_help.c:2267
-#: sql_help.c:2269 sql_help.c:2271 sql_help.c:2834 sql_help.c:2836
-#: sql_help.c:2838
-msgid "string_literal"
-msgstr "строковая_константа"
-
 #. +> 15 14 13 12 11
 #: sql_help.c:1389
 msgid "and column_constraint is:"
@@ -7193,9 +7186,9 @@ msgid "rule_name"
 msgstr "имя_правила"
 
 #. +> 15 14 13 12 11
-#: sql_help.c:1909
-msgid "text"
-msgstr "текст"
+#: sql_help.c:1909 sql_help.c:4485
+msgid "string_literal"
+msgstr "строковая_константа"
 
 #. +> 15 14 13 12 11
 #: sql_help.c:1934 sql_help.c:4152 sql_help.c:4399
@@ -7674,7 +7667,7 @@ msgid "arguments"
 msgstr "аргументы"
 
 #. +> 15 14 13 12 11
-#: sql_help.c:3170 sql_help.c:4485
+#: sql_help.c:3170
 msgid "label"
 msgstr "метка"
 
@@ -9246,6 +9239,9 @@ msgid ""
 msgstr ""
 "нераспознанное значение \"%s\" для \"%s\"\n"
 "Допустимые значения: %s.\n"
+
+#~ msgid "text"
+#~ msgstr "текст"
 
 #, c-format
 #~ msgid "\\df only takes [antwS+] as options\n"
