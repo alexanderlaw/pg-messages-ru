@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: postgres (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2023-01-30 08:17+0300\n"
+"POT-Creation-Date: 2023-02-03 15:09+0300\n"
 "PO-Revision-Date: 2023-01-30 07:55+0300\n"
 "Last-Translator: Alexander Lakhin <a.lakhin@postgrespro.ru>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -33033,7 +33033,7 @@ msgstr "тип входных данных не является массиво�
 #: utils/adt/int.c:1024 utils/adt/int.c:1057 utils/adt/int.c:1071
 #: utils/adt/int.c:1085 utils/adt/int.c:1116 utils/adt/int.c:1198
 #: utils/adt/int.c:1262 utils/adt/int.c:1330 utils/adt/int.c:1336
-#: utils/adt/int8.c:1257 utils/adt/numeric.c:1830 utils/adt/numeric.c:4265
+#: utils/adt/int8.c:1257 utils/adt/numeric.c:1830 utils/adt/numeric.c:4293
 #: utils/adt/varbit.c:1195 utils/adt/varbit.c:1596 utils/adt/varlena.c:1113
 #: utils/adt/varlena.c:3391
 #, c-format
@@ -33455,8 +33455,8 @@ msgstr "преобразование кодировки из %s в ASCII не п
 #: utils/adt/int.c:185 utils/adt/jsonpath.c:182 utils/adt/mac.c:93
 #: utils/adt/mac8.c:93 utils/adt/mac8.c:166 utils/adt/mac8.c:184
 #: utils/adt/mac8.c:202 utils/adt/mac8.c:221 utils/adt/network.c:99
-#: utils/adt/numeric.c:698 utils/adt/numeric.c:717 utils/adt/numeric.c:6854
-#: utils/adt/numeric.c:6878 utils/adt/numeric.c:6902 utils/adt/numeric.c:7904
+#: utils/adt/numeric.c:698 utils/adt/numeric.c:717 utils/adt/numeric.c:6882
+#: utils/adt/numeric.c:6906 utils/adt/numeric.c:6930 utils/adt/numeric.c:7932
 #: utils/adt/numutils.c:158 utils/adt/numutils.c:234 utils/adt/numutils.c:318
 #: utils/adt/oid.c:44 utils/adt/oid.c:58 utils/adt/oid.c:64 utils/adt/oid.c:86
 #: utils/adt/pg_lsn.c:74 utils/adt/tid.c:76 utils/adt/tid.c:84
@@ -33484,8 +33484,8 @@ msgstr "значение \"%s\" вне диапазона для типа %s"
 #: utils/adt/int8.c:943 utils/adt/int8.c:1023 utils/adt/int8.c:1085
 #: utils/adt/int8.c:1165 utils/adt/numeric.c:3093 utils/adt/numeric.c:3116
 #: utils/adt/numeric.c:3201 utils/adt/numeric.c:3219 utils/adt/numeric.c:3315
-#: utils/adt/numeric.c:8453 utils/adt/numeric.c:8743 utils/adt/numeric.c:9068
-#: utils/adt/numeric.c:10525 utils/adt/timestamp.c:3337
+#: utils/adt/numeric.c:8481 utils/adt/numeric.c:8771 utils/adt/numeric.c:9096
+#: utils/adt/numeric.c:10553 utils/adt/timestamp.c:3337
 #, c-format
 msgid "division by zero"
 msgstr "деление на ноль"
@@ -33913,13 +33913,13 @@ msgstr "\"%s\" вне диапазона для типа double precision"
 #: utils/adt/float.c:1259 utils/adt/float.c:1333 utils/adt/int.c:354
 #: utils/adt/int.c:892 utils/adt/int.c:914 utils/adt/int.c:928
 #: utils/adt/int.c:942 utils/adt/int.c:974 utils/adt/int.c:1212
-#: utils/adt/int8.c:1278 utils/adt/numeric.c:4377 utils/adt/numeric.c:4382
+#: utils/adt/int8.c:1278 utils/adt/numeric.c:4405 utils/adt/numeric.c:4410
 #, c-format
 msgid "smallint out of range"
 msgstr "smallint вне диапазона"
 
 #. +> 15 14 13 12 11
-#: utils/adt/float.c:1459 utils/adt/numeric.c:3611 utils/adt/numeric.c:9482
+#: utils/adt/float.c:1459 utils/adt/numeric.c:3611 utils/adt/numeric.c:9510
 #, c-format
 msgid "cannot take square root of a negative number"
 msgstr "извлечь квадратный корень отрицательного числа нельзя"
@@ -33931,21 +33931,21 @@ msgid "zero raised to a negative power is undefined"
 msgstr "ноль в отрицательной степени даёт неопределённость"
 
 #. +> 15 14 13 12 11
-#: utils/adt/float.c:1531 utils/adt/numeric.c:3890 utils/adt/numeric.c:10378
+#: utils/adt/float.c:1531 utils/adt/numeric.c:3890 utils/adt/numeric.c:10406
 #, c-format
 msgid "a negative number raised to a non-integer power yields a complex result"
 msgstr "отрицательное число в дробной степени даёт комплексный результат"
 
 #. +> 15 14 13 12 11
 #: utils/adt/float.c:1707 utils/adt/float.c:1740 utils/adt/numeric.c:3798
-#: utils/adt/numeric.c:10153
+#: utils/adt/numeric.c:10181
 #, c-format
 msgid "cannot take logarithm of zero"
 msgstr "вычислить логарифм нуля нельзя"
 
 #. +> 15 14 13 12 11
 #: utils/adt/float.c:1711 utils/adt/float.c:1744 utils/adt/numeric.c:3736
-#: utils/adt/numeric.c:3793 utils/adt/numeric.c:10157
+#: utils/adt/numeric.c:3793 utils/adt/numeric.c:10185
 #, c-format
 msgid "cannot take logarithm of a negative number"
 msgstr "вычислить логарифм отрицательного числа нельзя"
@@ -34537,7 +34537,7 @@ msgstr "неверное значение для целого числа: \"%s\"
 #: utils/adt/int8.c:995 utils/adt/int8.c:1009 utils/adt/int8.c:1042
 #: utils/adt/int8.c:1056 utils/adt/int8.c:1070 utils/adt/int8.c:1101
 #: utils/adt/int8.c:1123 utils/adt/int8.c:1137 utils/adt/int8.c:1151
-#: utils/adt/int8.c:1313 utils/adt/int8.c:1348 utils/adt/numeric.c:4336
+#: utils/adt/int8.c:1313 utils/adt/int8.c:1348 utils/adt/numeric.c:4364
 #: utils/adt/varbit.c:1676
 #, c-format
 msgid "bigint out of range"
@@ -35663,16 +35663,16 @@ msgid "factorial of a negative number is undefined"
 msgstr "факториал отрицательного числа даёт неопределённость"
 
 #. +> 15 14 13 12 11
-#: utils/adt/numeric.c:3561 utils/adt/numeric.c:6917 utils/adt/numeric.c:7432
-#: utils/adt/numeric.c:9956 utils/adt/numeric.c:10435 utils/adt/numeric.c:10561
-#: utils/adt/numeric.c:10634
+#: utils/adt/numeric.c:3561 utils/adt/numeric.c:6945 utils/adt/numeric.c:7460
+#: utils/adt/numeric.c:9984 utils/adt/numeric.c:10463 utils/adt/numeric.c:10589
+#: utils/adt/numeric.c:10662
 #, c-format
 msgid "value overflows numeric format"
 msgstr "значение переполняет формат numeric"
 
 #. +> 15 14
-#: utils/adt/numeric.c:4243 utils/adt/numeric.c:4323 utils/adt/numeric.c:4364
-#: utils/adt/numeric.c:4558
+#: utils/adt/numeric.c:4271 utils/adt/numeric.c:4351 utils/adt/numeric.c:4392
+#: utils/adt/numeric.c:4586
 #, c-format
 msgid "cannot convert NaN to %s"
 msgstr "нельзя преобразовать NaN в %s"
@@ -35696,8 +35696,8 @@ msgid "cannot convert NaN to smallint"
 msgstr "нельзя преобразовать NaN в smallint"
 
 #. +> 15 14
-#: utils/adt/numeric.c:4247 utils/adt/numeric.c:4327 utils/adt/numeric.c:4368
-#: utils/adt/numeric.c:4562
+#: utils/adt/numeric.c:4275 utils/adt/numeric.c:4355 utils/adt/numeric.c:4396
+#: utils/adt/numeric.c:4590
 #, c-format
 msgid "cannot convert infinity to %s"
 msgstr "нельзя представить бесконечность в %s"
@@ -35709,19 +35709,19 @@ msgid "cannot convert infinity to numeric"
 msgstr "нельзя представить бесконечность в numeric"
 
 #. +> 15 14
-#: utils/adt/numeric.c:4571
+#: utils/adt/numeric.c:4599
 #, c-format
 msgid "pg_lsn out of range"
 msgstr "pg_lsn вне диапазона"
 
 #. +> 15 14 13 12 11
-#: utils/adt/numeric.c:7519 utils/adt/numeric.c:7565
+#: utils/adt/numeric.c:7547 utils/adt/numeric.c:7593
 #, c-format
 msgid "numeric field overflow"
 msgstr "переполнение поля numeric"
 
 #. +> 15 14 13 12 11
-#: utils/adt/numeric.c:7520
+#: utils/adt/numeric.c:7548
 #, c-format
 msgid ""
 "A field with precision %d, scale %d must round to an absolute value less "
@@ -35731,7 +35731,7 @@ msgstr ""
 "меньше чем %s%d."
 
 #. +> 15 14
-#: utils/adt/numeric.c:7566
+#: utils/adt/numeric.c:7594
 #, c-format
 msgid "A field with precision %d, scale %d cannot hold an infinite value."
 msgstr ""
