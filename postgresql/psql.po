@@ -4,14 +4,14 @@
 # Serguei A. Mokhov <mokhov@cs.concordia.ca>, 2001-2005.
 # Oleg Bartunov <oleg@sai.msu.su>, 2004-2005.
 # Sergey Burladyan <eshkinkot@gmail.com>, 2012.
-# Alexander Lakhin <exclusion@gmail.com>, 2012-2017, 2018, 2019, 2020, 2021, 2022.
+# Alexander Lakhin <exclusion@gmail.com>, 2012-2017, 2018, 2019, 2020, 2021, 2022, 2023.
 # Maxim Yablokov <m.yablokov@postgrespro.ru>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: psql (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2023-02-03 15:09+0300\n"
-"PO-Revision-Date: 2022-09-05 13:41+0300\n"
+"PO-Revision-Date: 2023-02-03 15:12+0300\n"
 "Last-Translator: Alexander Lakhin <a.lakhin@postgrespro.ru>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -7850,10 +7850,9 @@ msgstr "направление"
 
 #. +> 15 14 13 12 11
 #: sql_help.c:3780 sql_help.c:4118
-#, fuzzy
 #| msgid "where option can be one of:"
 msgid "where direction can be one of:"
-msgstr "где допустимый параметр:"
+msgstr "где допустимое направление:"
 
 #. +> 15 14 13 12 11
 #: sql_help.c:3781 sql_help.c:3782 sql_help.c:3783 sql_help.c:3784
