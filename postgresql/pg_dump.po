@@ -6,13 +6,14 @@
 # Sergey Burladyan <eshkinkot@gmail.com>, 2012.
 # Dmitriy Olshevskiy <olshevskiy87@bk.ru>, 2014.
 # Alexander Lakhin <exclusion@gmail.com>, 2012-2017, 2018, 2019, 2020, 2021, 2022.
+# Maxim Yablokov <m.yablokov@postgrespro.ru>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: pg_dump (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2023-01-24 12:54+0300\n"
-"PO-Revision-Date: 2022-09-05 13:35+0300\n"
-"Last-Translator: Alexander Lakhin <a.lakhin@postgrespro.ru>\n"
+"PO-Revision-Date: 2023-03-17 12:36+0300\n"
+"Last-Translator: Maxim Yablokov <m.yablokov@postgrespro.ru>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
@@ -1934,7 +1935,7 @@ msgstr "триггер \"%s\" не найден\n"
 #: pg_backup_archiver.c:3148
 #, c-format
 msgid "could not set session user to \"%s\": %s"
-msgstr "не удалось переключить пользователя сессии на \"%s\": %s"
+msgstr "не удалось переключить пользователя сеанса на \"%s\": %s"
 
 #. +> 15 14 13 12 11
 #: pg_backup_archiver.c:3285
