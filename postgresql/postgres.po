@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2023-05-03 05:58+0300\n"
-"PO-Revision-Date: 2023-01-30 07:55+0300\n"
+"PO-Revision-Date: 2023-05-03 06:17+0300\n"
 "Last-Translator: Alexander Lakhin <a.lakhin@postgrespro.ru>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -15994,10 +15994,10 @@ msgstr "столбец \"%s\", указанный в ограничении вн
 
 #. +> 15 14 13 12
 #: commands/tablecmds.c:11293
-#, fuzzy, c-format
+#, c-format
 #| msgid "Generated columns cannot be used in COPY."
 msgid "system columns cannot be used in foreign keys"
-msgstr "Генерируемые столбцы нельзя использовать в COPY."
+msgstr "системные столбцы нельзя использовать во внешних ключах"
 
 #. +> 15 14 13 12 11
 #: commands/tablecmds.c:11297

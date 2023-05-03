@@ -5,15 +5,15 @@
 # Oleg Bartunov <oleg@sai.msu.su>, 2004.
 # Sergey Burladyan <eshkinkot@gmail.com>, 2012.
 # Dmitriy Olshevskiy <olshevskiy87@bk.ru>, 2014.
-# Alexander Lakhin <exclusion@gmail.com>, 2012-2017, 2018, 2019, 2020, 2021, 2022.
+# Alexander Lakhin <exclusion@gmail.com>, 2012-2017, 2018, 2019, 2020, 2021, 2022, 2023.
 # Maxim Yablokov <m.yablokov@postgrespro.ru>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: pg_dump (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2023-05-03 05:57+0300\n"
-"PO-Revision-Date: 2023-03-17 12:36+0300\n"
-"Last-Translator: Maxim Yablokov <m.yablokov@postgrespro.ru>\n"
+"PO-Revision-Date: 2023-05-03 06:17+0300\n"
+"Last-Translator: Alexander Lakhin <a.lakhin@postgrespro.ru>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
@@ -541,10 +541,10 @@ msgstr "пометка наследованных столбцов в подта
 
 #. +> 15 14 13 12 11
 #: common.c:233
-#, fuzzy, c-format
+#, c-format
 #| msgid "reading dependency data"
 msgid "reading partitioning data"
-msgstr "чтение информации о зависимостях"
+msgstr "чтение информации о секционировании"
 
 #. +> 15 14 13 12
 #: common.c:236
@@ -4493,19 +4493,19 @@ msgstr ""
 
 #. +> 15 14 13 12
 #: pg_dump.c:6756
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "failed sanity check, parent table OID %u of pg_rewrite entry OID %u not "
 #| "found\n"
 msgid ""
 "failed sanity check, table OID %u appearing in pg_partitioned_table not found"
 msgstr ""
-"нарушение целостности: по OID %u не удалось найти родительскую таблицу для "
-"записи pg_rewrite с OID %u\n"
+"нарушение целостности: таблица с OID %u, фигурирующим в "
+"pg_partitioned_table, не найдена"
 
 #. +> 11
 #: pg_dump.c:6898
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "failed sanity check, parent table OID %u of pg_rewrite entry OID %u not "
 #| "found\n"
@@ -4513,8 +4513,8 @@ msgid ""
 "failed sanity check, table OID %u appearing in pg_partitioned_table not "
 "found\n"
 msgstr ""
-"нарушение целостности: по OID %u не удалось найти родительскую таблицу для "
-"записи pg_rewrite с OID %u\n"
+"нарушение целостности: таблица с OID %u, фигурирующим в "
+"pg_partitioned_table, не найдена\n"
 
 #. +> 15
 #: pg_dump.c:6987 pg_dump.c:7254 pg_dump.c:7725 pg_dump.c:8392 pg_dump.c:8513
