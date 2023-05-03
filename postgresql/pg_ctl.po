@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_ctl (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2023-01-24 12:54+0300\n"
+"POT-Creation-Date: 2023-05-03 05:57+0300\n"
 "PO-Revision-Date: 2022-09-05 13:35+0300\n"
 "Last-Translator: Alexander Lakhin <a.lakhin@postgrespro.ru>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -84,7 +84,7 @@ msgid "%s() failed: %m"
 msgstr "ошибка в %s(): %m"
 
 #. +> 13 12
-#: ../../common/exec.c:415
+#: ../../common/exec.c:423
 #, c-format
 msgid "pclose failed: %m"
 msgstr "ошибка pclose: %m"
@@ -251,7 +251,7 @@ msgid ""
 msgstr "программа \"%s\" нужна для %s, но она не найдена в каталоге \"%s\"\n"
 
 #. +> 14 13 12 11
-#: pg_ctl.c:885
+#: pg_ctl.c:889
 #, c-format
 msgid ""
 "The program \"%s\" is needed by %s but was not found in the\n"
@@ -271,7 +271,7 @@ msgstr ""
 "версии %s\n"
 
 #. +> 14 13 12 11
-#: pg_ctl.c:890
+#: pg_ctl.c:894
 #, c-format
 msgid ""
 "The program \"%s\" was found by \"%s\"\n"
@@ -385,8 +385,13 @@ msgstr ""
 "ПОДСКАЗКА: Параметр \"-m fast\" может сбросить сеансы принудительно,\n"
 "не дожидаясь, пока они завершатся сами.\n"
 
+#. +> 15 14 13 12 11
+#: pg_ctl.c:1070 pg_ctl.c:1132
+msgid "server stopped\n"
+msgstr "сервер остановлен\n"
+
 #. +> 14 13 12 11
-#: pg_ctl.c:1067 pg_ctl.c:1143
+#: pg_ctl.c:1071 pg_ctl.c:1147
 msgid ""
 "WARNING: online backup mode is active\n"
 "Shutdown will not complete until pg_stop_backup() is called.\n"
@@ -395,11 +400,6 @@ msgstr ""
 "ПРЕДУПРЕЖДЕНИЕ: активен режим копирования \"на ходу\"\n"
 "Выключение произойдёт только при вызове pg_stop_backup().\n"
 "\n"
-
-#. +> 15 14 13 12 11
-#: pg_ctl.c:1070 pg_ctl.c:1132
-msgid "server stopped\n"
-msgstr "сервер остановлен\n"
 
 #. +> 15 14 13 12 11
 #: pg_ctl.c:1091
@@ -1125,7 +1125,7 @@ msgid "%s: unrecognized shutdown mode \"%s\"\n"
 msgstr "%s: неизвестный режим остановки \"%s\"\n"
 
 #. +> 12
-#: pg_ctl.c:2156
+#: pg_ctl.c:2160
 #, c-format
 msgid ""
 "\n"

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: psql (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2023-02-03 15:09+0300\n"
+"POT-Creation-Date: 2023-05-03 05:58+0300\n"
 "PO-Revision-Date: 2023-02-03 15:12+0300\n"
 "Last-Translator: Alexander Lakhin <a.lakhin@postgrespro.ru>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -113,7 +113,7 @@ msgid "%s() failed: %m"
 msgstr "ошибка в %s(): %m"
 
 #. +> 13 12
-#: ../../common/exec.c:415
+#: ../../common/exec.c:423
 #, c-format
 msgid "pclose failed: %m"
 msgstr "ошибка pclose: %m"
@@ -7850,7 +7850,6 @@ msgstr "направление"
 
 #. +> 15 14 13 12 11
 #: sql_help.c:3780 sql_help.c:4118
-#| msgid "where option can be one of:"
 msgid "where direction can be one of:"
 msgstr "где допустимое направление:"
 
