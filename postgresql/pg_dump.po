@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_dump (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2023-05-03 05:57+0300\n"
+"POT-Creation-Date: 2023-05-05 05:24+0300\n"
 "PO-Revision-Date: 2023-05-03 06:17+0300\n"
 "Last-Translator: Alexander Lakhin <a.lakhin@postgrespro.ru>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -542,7 +542,6 @@ msgstr "пометка наследованных столбцов в подта
 #. +> 15 14 13 12 11
 #: common.c:233
 #, c-format
-#| msgid "reading dependency data"
 msgid "reading partitioning data"
 msgstr "чтение информации о секционировании"
 
@@ -4494,9 +4493,6 @@ msgstr ""
 #. +> 15 14 13 12
 #: pg_dump.c:6756
 #, c-format
-#| msgid ""
-#| "failed sanity check, parent table OID %u of pg_rewrite entry OID %u not "
-#| "found\n"
 msgid ""
 "failed sanity check, table OID %u appearing in pg_partitioned_table not found"
 msgstr ""
@@ -4506,9 +4502,6 @@ msgstr ""
 #. +> 11
 #: pg_dump.c:6898
 #, c-format
-#| msgid ""
-#| "failed sanity check, parent table OID %u of pg_rewrite entry OID %u not "
-#| "found\n"
 msgid ""
 "failed sanity check, table OID %u appearing in pg_partitioned_table not "
 "found\n"

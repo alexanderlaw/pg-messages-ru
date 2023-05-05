@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: postgres (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2023-05-03 05:58+0300\n"
+"POT-Creation-Date: 2023-05-05 05:24+0300\n"
 "PO-Revision-Date: 2023-05-03 06:17+0300\n"
 "Last-Translator: Alexander Lakhin <a.lakhin@postgrespro.ru>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -15995,7 +15995,6 @@ msgstr "столбец \"%s\", указанный в ограничении вн
 #. +> 15 14 13 12
 #: commands/tablecmds.c:11293
 #, c-format
-#| msgid "Generated columns cannot be used in COPY."
 msgid "system columns cannot be used in foreign keys"
 msgstr "системные столбцы нельзя использовать во внешних ключах"
 
@@ -19418,8 +19417,8 @@ msgstr "параллельное удаление; следует повторн
 
 #. +> 15 14 13 12 11
 #: executor/execReplication.c:276 parser/parse_cte.c:308
-#: parser/parse_oper.c:233 utils/adt/array_userfuncs.c:720
-#: utils/adt/array_userfuncs.c:859 utils/adt/arrayfuncs.c:3653
+#: parser/parse_oper.c:233 utils/adt/array_userfuncs.c:724
+#: utils/adt/array_userfuncs.c:867 utils/adt/arrayfuncs.c:3653
 #: utils/adt/arrayfuncs.c:4208 utils/adt/arrayfuncs.c:6200
 #: utils/adt/rowtypes.c:1203
 #, c-format
@@ -33089,13 +33088,13 @@ msgid "Arrays with differing dimensions are not compatible for concatenation."
 msgstr "Массивы с разными размерностями несовместимы для соединения."
 
 #. +> 15 14 13 12 11
-#: utils/adt/array_userfuncs.c:663 utils/adt/array_userfuncs.c:815
+#: utils/adt/array_userfuncs.c:662 utils/adt/array_userfuncs.c:816
 #, c-format
 msgid "searching for elements in multidimensional arrays is not supported"
 msgstr "поиск элементов в многомерных массивах не поддерживается"
 
 #. +> 15 14 13 12 11
-#: utils/adt/array_userfuncs.c:687
+#: utils/adt/array_userfuncs.c:691
 #, c-format
 msgid "initial position must not be null"
 msgstr "начальная позиция не может быть NULL"
