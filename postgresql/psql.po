@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: psql (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2023-05-03 05:58+0300\n"
+"POT-Creation-Date: 2023-08-07 16:42+0300\n"
 "PO-Revision-Date: 2023-02-03 15:12+0300\n"
 "Last-Translator: Alexander Lakhin <a.lakhin@postgrespro.ru>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -403,7 +403,7 @@ msgid "no query buffer\n"
 msgstr "нет буфера запросов\n"
 
 #. +> 15 14 13 12
-#: command.c:1063 command.c:5491
+#: command.c:1063 command.c:5497
 #, c-format
 msgid "invalid line number: %s"
 msgstr "неверный номер строки: %s"
@@ -465,7 +465,7 @@ msgstr ""
 "перекодировки\n"
 
 #. +> 15 14 13 12 11
-#: command.c:1317 command.c:2120 command.c:3306 command.c:3505 command.c:5597
+#: command.c:1317 command.c:2120 command.c:3306 command.c:3505 command.c:5603
 #: common.c:181 common.c:230 common.c:399 common.c:1082 common.c:1100
 #: common.c:1174 common.c:1281 common.c:1319 common.c:1407 common.c:1443
 #: copy.c:488 copy.c:722 help.c:66 large_obj.c:157 large_obj.c:192
@@ -1269,25 +1269,25 @@ msgid "could not set timer: %m"
 msgstr "не удалось установить таймер: %m"
 
 #. +> 15 14 13 12 11
-#: command.c:5078
+#: command.c:5084
 #, c-format
 msgid "%s\t%s (every %gs)\n"
 msgstr "%s\t%s (обновление: %g с)\n"
 
 #. +> 15 14 13 12 11
-#: command.c:5081
+#: command.c:5087
 #, c-format
 msgid "%s (every %gs)\n"
 msgstr "%s (обновление: %g с)\n"
 
 #. +> 15
-#: command.c:5142
+#: command.c:5148
 #, c-format
 msgid "could not wait for signals: %m"
 msgstr "сбой при ожидании сигналов: %m"
 
 #. +> 15 14 13 12 11
-#: command.c:5200 command.c:5207 common.c:572 common.c:579 common.c:1063
+#: command.c:5206 command.c:5213 common.c:572 common.c:579 common.c:1063
 #, c-format
 msgid ""
 "********* QUERY **********\n"
@@ -1301,7 +1301,7 @@ msgstr ""
 "\n"
 
 #. +> 15 14 13 12
-#: command.c:5386
+#: command.c:5392
 #, c-format
 msgid "\"%s.%s\" is not a view"
 msgstr "\"%s.%s\" — не представление"
@@ -1313,7 +1313,7 @@ msgid "\"%s.%s\" is not a view\n"
 msgstr "\"%s.%s\" — не представление\n"
 
 #. +> 15 14 13 12
-#: command.c:5402
+#: command.c:5408
 #, c-format
 msgid "could not parse reloptions array"
 msgstr "не удалось разобрать массив reloptions"
