@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2023-08-07 16:41+0300\n"
-"PO-Revision-Date: 2023-05-03 06:17+0300\n"
-"Last-Translator: Alexander Lakhin <a.lakhin@postgrespro.ru>\n"
+"PO-Revision-Date: 2023-08-07 17:06+0300\n"
+"Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
@@ -3225,10 +3225,10 @@ msgstr "испорчено состояние 2PC в памяти для тра�
 
 #. +> 15 14 13 12 11
 #: access/transam/twophase.c:2502
-#, fuzzy, c-format
+#, c-format
 #| msgid "corrupted two-phase state file for transaction %u"
 msgid "could not recover two-phase state file for transaction %u"
-msgstr "испорчен файл состояния 2PC для транзакции %u"
+msgstr "не удалось восстановить файл состояния 2PC для транзакции %u"
 
 #. +> 11
 #: access/transam/twophase.c:1716
@@ -3255,6 +3255,8 @@ msgid ""
 "Two-phase state file has been found in WAL record %X/%X, but this "
 "transaction has already been restored from disk."
 msgstr ""
+"Для WAL-записи %X/%X найден файл состояния двухфазной фиксации, но эта "
+"транзакция уже была восстановлена с диска."
 
 #. +> 15 14 13 12 11
 #: access/transam/twophase.c:2512 jit/jit.c:205 utils/fmgr/dfmgr.c:209
@@ -10921,18 +10923,18 @@ msgstr "шаблон базы данных \"%s\" не существует"
 
 #. +> 15 14 13 12 11
 #: commands/dbcommands.c:975
-#, fuzzy, c-format
+#, c-format
 #| msgid "cannot use invalid index \"%s\" as replica identity"
 msgid "cannot use invalid database \"%s\" as template"
-msgstr "для идентификации реплики нельзя использовать нерабочий индекс \"%s\""
+msgstr "использовать некорректную базу \"%s\" в качестве шаблона нельзя"
 
 #. +> 15 14 13 12 11
 #: commands/dbcommands.c:976 commands/dbcommands.c:2320
 #: utils/init/postinit.c:1062
-#, fuzzy, c-format
+#, c-format
 #| msgid "Use DROP TABLE to remove a table."
 msgid "Use DROP DATABASE to drop invalid databases."
-msgstr "Выполните DROP TABLE для удаления таблицы."
+msgstr "Выполните DROP DATABASE для удаления некорректных баз данных."
 
 #. +> 15 14 13 12 11
 #: commands/dbcommands.c:987
@@ -11296,10 +11298,10 @@ msgstr "параметр \"%s\" нельзя задать с другими па
 
 #. +> 15 14 13 12 11
 #: commands/dbcommands.c:2319
-#, fuzzy, c-format
+#, c-format
 #| msgid "cannot cluster on invalid index \"%s\""
 msgid "cannot alter invalid database \"%s\""
-msgstr "нельзя кластеризовать таблицу по неверному индексу \"%s\""
+msgstr "изменить свойства некорректной базы \"%s\" нельзя"
 
 #. +> 15 14 13 12 11
 #: commands/dbcommands.c:2336
@@ -11884,18 +11886,22 @@ msgstr "Для изменения этого расширения нужно б�
 
 #. +> 15 14 13
 #: commands/extension.c:1018
-#, fuzzy, c-format
+#, c-format
 #| msgid "invalid mode character: must be one of \"%s\""
 msgid "invalid character in extension owner: must not contain any of \"%s\""
-msgstr "неверный символ режима: должен быть один из \"%s\""
+msgstr ""
+"недопустимый символ в имени владельца расширения: имя не должно содержать "
+"\"%s\""
 
 #. +> 15 14 13 12 11
 #: commands/extension.c:1042
-#, fuzzy, c-format
+#, c-format
 #| msgid "invalid mode character: must be one of \"%s\""
 msgid ""
 "invalid character in extension \"%s\" schema: must not contain any of \"%s\""
-msgstr "неверный символ режима: должен быть один из \"%s\""
+msgstr ""
+"недопустимый символ в имени схемы расширения \"%s\": имя не должно содержать "
+"\"%s\""
 
 #. +> 15 14 13 12 11
 #: commands/extension.c:1237
@@ -14744,12 +14750,14 @@ msgstr ""
 #. translator: %s is an SQL ALTER command
 #. +> 15 14 13 12 11
 #: commands/subscriptioncmds.c:1863
-#, fuzzy, c-format
+#, c-format
 #| msgid "Use %s to disassociate the subscription from the slot."
 msgid ""
 "Use %s to disable the subscription, and then use %s to disassociate it from "
 "the slot."
-msgstr "Выполните %s, чтобы отвязать подписку от слота."
+msgstr ""
+"Выполните %s, чтобы отключить подписку, а затем выполните %s, чтобы отвязать "
+"её от слота."
 
 #. +> 15 14 13 12 11
 #: commands/subscriptioncmds.c:1894
@@ -29103,10 +29111,10 @@ msgstr ""
 
 #. +> 15
 #: replication/logical/worker.c:2582
-#, fuzzy, c-format
+#, c-format
 #| msgid "invalid logical replication message type \"%c\""
 msgid "invalid logical replication message type \"??? (%d)\""
-msgstr "неверный тип сообщения логической репликации \"%c\""
+msgstr "неверный тип сообщения логической репликации \"??? (%d)\""
 
 #. +> 13 12 11
 #: replication/logical/worker.c:1464
@@ -38410,10 +38418,10 @@ msgstr "Похоже, она только что была удалена или 
 
 #. +> 15 14 13 12 11
 #: utils/init/postinit.c:1061
-#, fuzzy, c-format
+#, c-format
 #| msgid "cannot cluster on invalid index \"%s\""
 msgid "cannot connect to invalid database \"%s\""
-msgstr "нельзя кластеризовать таблицу по неверному индексу \"%s\""
+msgstr "подключиться к некорректной базе \"%s\" нельзя"
 
 #. +> 15 14 13 12 11
 #: utils/init/postinit.c:1081
@@ -43097,10 +43105,10 @@ msgstr ""
 
 #. +> 15
 #: gram.y:18450
-#, fuzzy, c-format
+#, c-format
 #| msgid "invalid table name at or near"
 msgid "invalid table name"
-msgstr "неверное имя таблицы:"
+msgstr "неверное имя таблицы"
 
 #. +> 15
 #: gram.y:18471
@@ -43116,10 +43124,10 @@ msgstr "указание столбца не допускается для сх�
 
 #. +> 15
 #: gram.y:18492
-#, fuzzy, c-format
+#, c-format
 #| msgid "invalid schema name at or near"
 msgid "invalid schema name"
-msgstr "неверное имя схемы:"
+msgstr "неверное имя схемы"
 
 #. +> 15 14
 #: guc-file.l:314
