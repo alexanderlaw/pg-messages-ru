@@ -1,13 +1,13 @@
 # Russian message translation file for pg_waldump
 # Copyright (C) 2017 PostgreSQL Global Development Group
 # This file is distributed under the same license as the PostgreSQL package.
-# Alexander Lakhin <a.lakhin@postgrespro.ru>, 2017, 2018, 2019, 2020, 2022.
+# Alexander Lakhin <a.lakhin@postgrespro.ru>, 2017, 2018, 2019, 2020, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: pg_waldump (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2023-08-28 08:23+0300\n"
-"PO-Revision-Date: 2022-09-29 14:17+0300\n"
+"PO-Revision-Date: 2023-08-28 17:53+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -16,6 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 21.12.3\n"
 
 #. +> 16 15 14 13 12
 #: ../../../src/common/logging.c:276
@@ -55,21 +56,21 @@ msgstr "%s: СБОЙ:  "
 
 #. +> 16
 #: pg_waldump.c:137
-#, fuzzy, c-format
+#, c-format
 msgid "could not create directory \"%s\": %m"
-msgstr "не удалось открыть каталог \"%s\": %m"
+msgstr "не удалось создать каталог \"%s\": %m"
 
 #. +> 16
 #: pg_waldump.c:146
 #, c-format
 msgid "directory \"%s\" exists but is not empty"
-msgstr ""
+msgstr "каталог \"%s\" существует, но он не пуст"
 
 #. +> 16
 #: pg_waldump.c:150
-#, fuzzy, c-format
+#, c-format
 msgid "could not access directory \"%s\": %m"
-msgstr "не удалось открыть каталог \"%s\": %m"
+msgstr "ошибка доступа к каталогу \"%s\": %m"
 
 #. +> 16 15 14 13
 #: pg_waldump.c:199 pg_waldump.c:528
@@ -240,7 +241,7 @@ msgstr ""
 #: pg_waldump.c:511
 #, c-format
 msgid "%s"
-msgstr ""
+msgstr "%s"
 
 #. +> 16
 #: pg_waldump.c:519
@@ -250,15 +251,15 @@ msgstr "неверное имя слоя: \"%s\""
 
 #. +> 16
 #: pg_waldump.c:531
-#, fuzzy, c-format
+#, c-format
 msgid "could not write file \"%s\": %m"
-msgstr "не удалось прочитать файл \"%s\": %m"
+msgstr "не удалось записать файл \"%s\": %m"
 
 #. +> 16
 #: pg_waldump.c:534
-#, fuzzy, c-format
+#, c-format
 msgid "could not close file \"%s\": %m"
-msgstr "не удалось открыть файл \"%s\": %m"
+msgstr "не удалось закрыть файл \"%s\": %m"
 
 #. +> 16 15 14 13 12 11
 #: pg_waldump.c:754
@@ -577,7 +578,7 @@ msgstr ""
 #: pg_waldump.c:1036
 #, c-format
 msgid "%s must be in range %u..%u"
-msgstr ""
+msgstr "значение %s должно быть в диапазоне %u..%u"
 
 #. +> 14 13 12 11
 #: pg_waldump.c:1048

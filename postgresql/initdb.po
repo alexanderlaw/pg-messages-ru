@@ -6,13 +6,13 @@
 # Sergey Burladyan <eshkinkot@gmail.com>, 2009.
 # Andrey Sudnik <sudnikand@yandex.ru>, 2010.
 # Dmitriy Olshevskiy <olshevskiy87@bk.ru>, 2014.
-# Alexander Lakhin <exclusion@gmail.com>, 2012-2017, 2018, 2019, 2020, 2021, 2022.
+# Alexander Lakhin <exclusion@gmail.com>, 2012-2017, 2018, 2019, 2020, 2021, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: initdb (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2023-08-28 08:23+0300\n"
-"PO-Revision-Date: 2022-09-29 11:39+0300\n"
+"PO-Revision-Date: 2023-08-28 17:47+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -21,6 +21,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 21.12.3\n"
 
 #. +> 16 15 14 13 12
 #: ../../../src/common/logging.c:276
@@ -66,9 +67,9 @@ msgstr "не удалось определить текущий каталог: 
 
 #. +> 16
 #: ../../common/exec.c:172
-#, fuzzy, c-format
+#, c-format
 msgid "invalid binary \"%s\": %m"
-msgstr "неверный исполняемый файл \"%s\""
+msgstr "неверный исполняемый файл \"%s\": %m"
 
 #. +> 15 14 13 12 11
 #: ../../common/exec.c:168
@@ -78,9 +79,9 @@ msgstr "неверный исполняемый файл \"%s\""
 
 #. +> 16
 #: ../../common/exec.c:215
-#, fuzzy, c-format
+#, c-format
 msgid "could not read binary \"%s\": %m"
-msgstr "не удалось прочитать исполняемый файл \"%s\""
+msgstr "не удалось прочитать исполняемый файл \"%s\": %m"
 
 #. +> 15 14 13 12 11
 #: ../../common/exec.c:218
@@ -362,15 +363,15 @@ msgstr "%s: не удалось получить код выхода от под
 
 #. +> 16
 #: ../../common/rmtree.c:95
-#, fuzzy, c-format
+#, c-format
 msgid "could not remove file \"%s\": %m"
-msgstr "не удалось открыть файл \"%s\": %m"
+msgstr "не удалось стереть файл \"%s\": %m"
 
 #. +> 16
 #: ../../common/rmtree.c:122
-#, fuzzy, c-format
+#, c-format
 msgid "could not remove directory \"%s\": %m"
-msgstr "не удалось создать каталог \"%s\": %m"
+msgstr "ошибка при удалении каталога \"%s\": %m"
 
 #. +> 15 14 13 12
 #: ../../common/rmtree.c:79
@@ -1004,9 +1005,9 @@ msgstr "Выбранная вами кодировка (%s) не поддерж�
 
 #. +> 16
 #: initdb.c:2279
-#, fuzzy, c-format
+#, c-format
 msgid "could not convert locale name \"%s\" to language tag: %s"
-msgstr "не удалось открыть файл \"%s\" для чтения: %m"
+msgstr "не удалось получить из названия локали \"%s\" метку языка: %s"
 
 #. +> 16 15
 #: initdb.c:2285 initdb.c:2337 initdb.c:2416
@@ -1977,7 +1978,7 @@ msgstr "выполняется заключительная инициализа
 #: initdb.c:3175
 #, c-format
 msgid "-c %s requires a value"
-msgstr ""
+msgstr "для -c %s требуется значение"
 
 #. +> 16 15 14 13 12 11
 #: initdb.c:3200

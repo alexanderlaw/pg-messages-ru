@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pg_upgrade (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2023-08-28 08:23+0300\n"
-"PO-Revision-Date: 2023-08-28 16:54+0300\n"
+"PO-Revision-Date: 2023-08-28 17:52+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -1927,9 +1927,9 @@ msgstr "Добавление расширения \".old\" к старому ф�
 
 #. +> 16
 #: controldata.c:723
-#, fuzzy, c-format
+#, c-format
 msgid "could not rename file \"%s\" to \"%s\": %m"
-msgstr "не удалось создать файл \"%s\": %s\n"
+msgstr "не удалось переименовать файл \"%s\" в \"%s\": %m"
 
 #. +> 16
 #: controldata.c:727

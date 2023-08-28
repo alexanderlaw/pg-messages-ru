@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2023-08-28 08:24+0300\n"
-"PO-Revision-Date: 2023-01-30 07:55+0300\n"
+"PO-Revision-Date: 2023-08-28 18:04+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -20,6 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 21.12.3\n"
 
 #. +> 16 15
 #: ../common/compression.c:132 ../common/compression.c:141
@@ -333,9 +334,9 @@ msgstr "не удалось определить текущий каталог: 
 
 #. +> 16
 #: ../common/exec.c:172
-#, fuzzy, c-format
+#, c-format
 msgid "invalid binary \"%s\": %m"
-msgstr "неверный исполняемый файл \"%s\""
+msgstr "неверный исполняемый файл \"%s\": %m"
 
 #. +> 15 14 13 12 11
 #: ../common/exec.c:168
@@ -345,9 +346,9 @@ msgstr "неверный исполняемый файл \"%s\""
 
 #. +> 16
 #: ../common/exec.c:215
-#, fuzzy, c-format
+#, c-format
 msgid "could not read binary \"%s\": %m"
-msgstr "не удалось прочитать исполняемый файл \"%s\""
+msgstr "не удалось прочитать исполняемый файл \"%s\": %m"
 
 #. +> 11
 #: ../common/exec.c:262 ../common/exec.c:298
@@ -16672,7 +16673,7 @@ msgstr ""
 
 #. +> 16
 #: commands/tablecmds.c:10914
-#, fuzzy, c-format
+#, c-format
 msgid "You may alter the constraint it derives from instead."
 msgstr "Вместо этого вы можете изменить родительское ограничение."
 
@@ -16904,7 +16905,7 @@ msgstr "сменить владельца индекса \"%s\" нельзя"
 
 #. +> 16
 #: commands/tablecmds.c:13863 commands/tablecmds.c:13875
-#, fuzzy, c-format
+#, c-format
 msgid "Change the ownership of the index's table instead."
 msgstr "Однако возможно сменить владельца таблицы, содержащей этот индекс."
 
@@ -22615,9 +22616,8 @@ msgstr ""
 
 #. +> 16
 #: libpq/be-secure-openssl.c:1190
-#, fuzzy
 msgid "unknown"
-msgstr "[н/д]"
+msgstr "н/д"
 
 #. +> 16 15 14 13 12 11
 #: libpq/be-secure-openssl.c:1281
@@ -23987,9 +23987,9 @@ msgstr "отношение \"%s\" не имеет составного типа"
 
 #. +> 16
 #: nodes/makefuncs.c:879
-#, fuzzy, c-format
+#, c-format
 msgid "unrecognized JSON encoding: %s"
-msgstr "нераспознанная кодировка: \"%s\""
+msgstr "нераспознанная кодировка JSON: %s"
 
 #. +> 16 15 14 13 12 11
 #: nodes/nodeFuncs.c:116 nodes/nodeFuncs.c:147 parser/parse_coerce.c:2567
@@ -26088,12 +26088,14 @@ msgstr ""
 #, c-format
 msgid "JSON ENCODING clause is only allowed for bytea input type"
 msgstr ""
+"предложение JSON ENCODING можно добавить только для входного типа bytea"
 
 #. +> 16
 #: parser/parse_expr.c:3261
 #, c-format
 msgid "cannot use non-string types with implicit FORMAT JSON clause"
 msgstr ""
+"с неявным предложением FORMAT JSON можно использовать только строковые типы"
 
 #. +> 16
 #: parser/parse_expr.c:3262
@@ -26103,33 +26105,34 @@ msgstr ""
 
 #. +> 16
 #: parser/parse_expr.c:3335
-#, fuzzy, c-format
+#, c-format
 msgid "cannot use JSON format with non-string output types"
-msgstr "привести строку jsonb к типу %s нельзя"
+msgstr "формат JSON можно использовать, только если возвращаемый тип строковый"
 
 #. +> 16
 #: parser/parse_expr.c:3348
-#, fuzzy, c-format
+#, c-format
 msgid "cannot set JSON encoding for non-bytea output types"
-msgstr "привести строку jsonb к типу %s нельзя"
+msgstr ""
+"кодировку JSON можно использовать, только если возвращаемый тип — bytea"
 
 #. +> 16
 #: parser/parse_expr.c:3353
-#, fuzzy, c-format
+#, c-format
 msgid "unsupported JSON encoding"
-msgstr "неподдерживаемый код формата: %d"
+msgstr "неподдерживаемая кодировка JSON"
 
 #. +> 16
 #: parser/parse_expr.c:3354
 #, c-format
 msgid "Only UTF8 JSON encoding is supported."
-msgstr ""
+msgstr "Для JSON поддерживается только кодировка UTF-8."
 
 #. +> 16
 #: parser/parse_expr.c:3391
-#, fuzzy, c-format
+#, c-format
 msgid "returning SETOF types is not supported in SQL/JSON functions"
-msgstr "для SQL-функций тип возврата %s не поддерживается"
+msgstr "функции SQL/JSON не могут возвращать типы SETOF"
 
 #. +> 13 12 11
 #: parser/parse_expr.c:3461 parser/parse_expr.c:3479
@@ -26146,15 +26149,16 @@ msgstr "агрегатное предложение ORDER BY для оконны
 
 #. +> 16
 #: parser/parse_expr.c:3934
-#, fuzzy, c-format
+#, c-format
 msgid "cannot use JSON FORMAT ENCODING clause for non-bytea input types"
-msgstr "привести строку jsonb к типу %s нельзя"
+msgstr ""
+"предложение JSON FORMAT ENCODING можно использовать только с типом bytea"
 
 #. +> 16
 #: parser/parse_expr.c:3954
-#, fuzzy, c-format
+#, c-format
 msgid "cannot use type %s in IS JSON predicate"
-msgstr "в предикате индекса нельзя использовать агрегатные функции"
+msgstr "в предикате IS JSON нельзя использовать тип %s"
 
 #. +> 16 15 14 13 12 11
 #: parser/parse_func.c:194
@@ -31804,12 +31808,12 @@ msgstr ""
 
 #. +> 16
 #: rewrite/rewriteHandler.c:610
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "INSERT ... SELECT rule actions are not supported for queries having data-"
 "modifying statements in WITH"
 msgstr ""
-"правила INSERT...SELECT не поддерживаются для запросов с операторами, "
+"правила INSERT ... SELECT не поддерживаются для запросов с операторами, "
 "изменяющими данные, в WITH"
 
 #. +> 15 14 13 12 11
@@ -36315,9 +36319,9 @@ msgstr "неподходящие размерности массива"
 
 #. +> 16
 #: utils/adt/json.c:1764 utils/adt/jsonb_util.c:1958
-#, fuzzy, c-format
+#, c-format
 msgid "duplicate JSON object key value"
-msgstr "Данные содержат дублирующиеся ключи."
+msgstr "повторяющиеся ключи в объекте JSON"
 
 #. +> 16 15 14 13 12 11
 #: utils/adt/jsonb.c:294
@@ -45147,9 +45151,8 @@ msgstr "неверный запрос"
 
 #. +> 16
 #: jsonpath_scan.l:583
-#, fuzzy
 msgid "invalid hexadecimal digit"
-msgstr "неверная шестнадцатеричная цифра: \"%c\""
+msgstr "неверная шестнадцатеричная цифра"
 
 #. +> 16
 #: jsonpath_scan.l:614

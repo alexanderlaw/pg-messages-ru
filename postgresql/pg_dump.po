@@ -5,13 +5,13 @@
 # Oleg Bartunov <oleg@sai.msu.su>, 2004.
 # Sergey Burladyan <eshkinkot@gmail.com>, 2012.
 # Dmitriy Olshevskiy <olshevskiy87@bk.ru>, 2014.
-# Alexander Lakhin <exclusion@gmail.com>, 2012-2017, 2018, 2019, 2020, 2021, 2022.
+# Alexander Lakhin <exclusion@gmail.com>, 2012-2017, 2018, 2019, 2020, 2021, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: pg_dump (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2023-08-28 08:23+0300\n"
-"PO-Revision-Date: 2022-09-05 13:35+0300\n"
+"PO-Revision-Date: 2023-08-28 18:18+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -20,6 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 21.12.3\n"
 
 #. +> 16 15 14 13 12
 #: ../../../src/common/logging.c:276
@@ -56,32 +57,32 @@ msgstr "подсказка: "
 #: ../../common/compression.c:150 compress_gzip.c:413 compress_gzip.c:420
 #: compress_io.c:109 compress_lz4.c:780 compress_lz4.c:787 compress_zstd.c:25
 #: compress_zstd.c:31
-#, fuzzy, c-format
+#, c-format
 msgid "this build does not support compression with %s"
-msgstr "не удалось закрыть поток сжатых данных: %s"
+msgstr "эта сборка программы не поддерживает сжатие %s"
 
 #. +> 16
 #: ../../common/compression.c:205
 msgid "found empty string where a compression option was expected"
-msgstr ""
+msgstr "вместо указания параметра сжатия получена пустая строка"
 
 #. +> 16
 #: ../../common/compression.c:244
-#, fuzzy, c-format
+#, c-format
 msgid "unrecognized compression option: \"%s\""
-msgstr "нераспознанное имя раздела: \"%s\""
+msgstr "нераспознанный параметр сжатия: \"%s\""
 
 #. +> 16
 #: ../../common/compression.c:283
 #, c-format
 msgid "compression option \"%s\" requires a value"
-msgstr ""
+msgstr "для параметра сжатия \"%s\" требуется значение"
 
 #. +> 16
 #: ../../common/compression.c:292
 #, c-format
 msgid "value for compression option \"%s\" must be an integer"
-msgstr ""
+msgstr "значение параметра сжатия \"%s\" должно быть целочисленным"
 
 #. +> 16
 #: ../../common/compression.c:331
@@ -93,7 +94,7 @@ msgstr ""
 #: ../../common/compression.c:379
 #, c-format
 msgid "compression algorithm \"%s\" does not accept a compression level"
-msgstr ""
+msgstr "для алгоритма сжатия \"%s\" нельзя задать уровень сжатия"
 
 #. +> 16
 #: ../../common/compression.c:386
@@ -102,12 +103,14 @@ msgid ""
 "compression algorithm \"%s\" expects a compression level between %d and %d "
 "(default at %d)"
 msgstr ""
+"для алгоритма сжатия \"%s\" ожидается уровень сжатия от %d до %d (по "
+"умолчанию %d)"
 
 #. +> 16
 #: ../../common/compression.c:397
 #, c-format
 msgid "compression algorithm \"%s\" does not accept a worker count"
-msgstr ""
+msgstr "для алгоритма сжатия \"%s\" нельзя задать число потоков"
 
 #. +> 16
 #: ../../common/compression.c:408
@@ -129,9 +132,9 @@ msgstr "не удалось определить текущий каталог: 
 
 #. +> 16
 #: ../../common/exec.c:172
-#, fuzzy, c-format
+#, c-format
 msgid "invalid binary \"%s\": %m"
-msgstr "неверный исполняемый файл \"%s\""
+msgstr "неверный исполняемый файл \"%s\": %m"
 
 #. +> 15 14 13 12 11
 #: ../../common/exec.c:168
@@ -141,9 +144,9 @@ msgstr "неверный исполняемый файл \"%s\""
 
 #. +> 16
 #: ../../common/exec.c:215
-#, fuzzy, c-format
+#, c-format
 msgid "could not read binary \"%s\": %m"
-msgstr "не удалось прочитать исполняемый файл \"%s\""
+msgstr "не удалось прочитать исполняемый файл \"%s\": %m"
 
 #. +> 15 14 13 12 11
 #: ../../common/exec.c:218
@@ -850,9 +853,9 @@ msgstr "не удалось прочитать входной файл: коне
 
 #. +> 16
 #: compress_lz4.c:157
-#, fuzzy, c-format
+#, c-format
 msgid "could not create LZ4 decompression context: %s"
-msgstr "не удалось закрыть поток сжатых данных: %s"
+msgstr "не удалось создать контекст распаковки LZ4: %s"
 
 #. +> 16
 #: compress_lz4.c:180
@@ -862,9 +865,9 @@ msgstr "не удалось сжать данные: %s"
 
 #. +> 16
 #: compress_lz4.c:193
-#, fuzzy, c-format
+#, c-format
 msgid "could not free LZ4 decompression context: %s"
-msgstr "не удалось закрыть поток сжатых данных: %s"
+msgstr "не удалось освободить контекст распаковки LZ4: %s"
 
 #. +> 16
 #: compress_lz4.c:259 compress_lz4.c:266 compress_lz4.c:680 compress_lz4.c:690
@@ -893,15 +896,15 @@ msgstr "не удалось переключить пользователя се
 #. +> 16
 #: compress_zstd.c:78 compress_zstd.c:231 compress_zstd.c:490
 #: compress_zstd.c:498
-#, fuzzy, c-format
+#, c-format
 msgid "could not initialize compression library"
-msgstr "не удалось инициализировать библиотеку сжатия: %s"
+msgstr "не удалось инициализировать библиотеку сжатия"
 
 #. +> 16
 #: compress_zstd.c:194 compress_zstd.c:308
-#, fuzzy, c-format
+#, c-format
 msgid "could not decompress data: %s"
-msgstr "не удалось сжать данные: %s"
+msgstr "не удалось распаковать данные: %s"
 
 #. +> 16 15 14 13 12
 #: compress_zstd.c:373 pg_backup_custom.c:655
@@ -3373,15 +3376,15 @@ msgstr ""
 
 #. +> 16
 #: pg_dump.c:744
-#, fuzzy, c-format
+#, c-format
 msgid "unrecognized compression algorithm: \"%s\""
-msgstr "нераспознанное имя раздела: \"%s\""
+msgstr "нераспознанный алгоритм сжатия: \"%s\""
 
 #. +> 16
 #: pg_dump.c:751
-#, fuzzy, c-format
+#, c-format
 msgid "invalid compression specification: %s"
-msgstr "неверный код сжатия: %d"
+msgstr "неправильное указание сжатия: %s"
 
 #. +> 16
 #: pg_dump.c:764
@@ -3560,6 +3563,7 @@ msgstr "  -v, --verbose                режим подробных сообщ�
 msgid "  -V, --version                output version information, then exit\n"
 msgstr "  -V, --version                показать версию и выйти\n"
 
+# well-spelled: ИНФО
 #. +> 16
 #: pg_dump.c:1067
 #, c-format
@@ -3567,6 +3571,8 @@ msgid ""
 "  -Z, --compress=METHOD[:DETAIL]\n"
 "                               compress as specified\n"
 msgstr ""
+"  -Z, --compress=МЕТОД[:ДОП_ИНФО]\n"
+"                               выполнять сжатие как указано\n"
 
 #. +> 16 15 14 13 12 11
 #: pg_dump.c:1069 pg_dumpall.c:637

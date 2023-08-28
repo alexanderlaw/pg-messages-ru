@@ -1,13 +1,13 @@
 # Russian message translation file for pg_rewind
 # Copyright (C) 2015-2016 PostgreSQL Global Development Group
 # This file is distributed under the same license as the PostgreSQL package.
-# Alexander Lakhin <exclusion@gmail.com>, 2015-2017, 2018, 2019, 2020, 2021, 2022.
+# Alexander Lakhin <exclusion@gmail.com>, 2015-2017, 2018, 2019, 2020, 2021, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: pg_rewind (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2023-08-28 08:23+0300\n"
-"PO-Revision-Date: 2022-09-29 14:17+0300\n"
+"PO-Revision-Date: 2023-08-28 17:51+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -16,6 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 21.12.3\n"
 
 #. +> 16 15 14 13 12
 #: ../../../src/common/logging.c:276
@@ -64,7 +65,7 @@ msgstr "попытка дублирования нулевого указате�
 #: ../../common/percentrepl.c:79 ../../common/percentrepl.c:118
 #, c-format
 msgid "invalid value for parameter \"%s\": \"%s\""
-msgstr ""
+msgstr "неверное значение для параметра \"%s\": \"%s\""
 
 #. +> 16
 #: ../../common/percentrepl.c:80
