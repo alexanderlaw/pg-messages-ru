@@ -1,33 +1,30 @@
 # Alexander Lakhin <a.lakhin@postgrespro.ru>, 2019, 2020, 2021, 2022.
 msgid ""
 msgstr ""
-"Project-Id-Version: pg_checksums (PostgreSQL) 12\n"
+"Project-Id-Version: pg_verify_checksums (PostgreSQL) 11\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2022-09-29 10:22+0300\n"
+"POT-Creation-Date: 2023-08-28 08:23+0300\n"
 "PO-Revision-Date: 2022-09-05 13:34+0300\n"
-"Last-Translator: Alexander Lakhin <a.lakhin@postgrespro.ru>\n"
+"Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Lokalize 21.12.3\n"
 
-#. +> 15 14 13 12
+#. +> 16 15 14 13 12
 #: ../../../src/common/logging.c:276
 #, c-format
 msgid "error: "
 msgstr "ошибка: "
 
-#. +> 15 14 13 12
+#. +> 16 15 14 13 12
 #: ../../../src/common/logging.c:283
 #, c-format
 msgid "warning: "
 msgstr "предупреждение: "
 
-#. +> 15
+#. +> 16 15
 #: ../../../src/common/logging.c:294
 #, c-format
 msgid "detail: "
@@ -39,25 +36,25 @@ msgstr "подробности: "
 msgid "fatal: "
 msgstr "важно: "
 
-#. +> 15
+#. +> 16 15
 #: ../../../src/common/logging.c:301
 #, c-format
 msgid "hint: "
 msgstr "подсказка: "
 
-#. +> 15
+#. +> 16 15
 #: ../../fe_utils/option_utils.c:69
 #, c-format
 msgid "invalid value \"%s\" for option %s"
 msgstr "неверное значение \"%s\" для параметра %s"
 
-#. +> 15
+#. +> 16 15
 #: ../../fe_utils/option_utils.c:76
 #, c-format
 msgid "%s must be in range %d..%d"
 msgstr "значение %s должно быть в диапазоне %d..%d"
 
-#. +> 15 14 13 12
+#. +> 16 15 14 13 12
 #: pg_checksums.c:79
 #, c-format
 msgid ""
@@ -69,19 +66,19 @@ msgstr ""
 "PostgreSQL.\n"
 "\n"
 
-#. +> 15 14 13 12
+#. +> 16 15 14 13 12
 #: pg_checksums.c:80
 #, c-format
 msgid "Usage:\n"
 msgstr "Использование:\n"
 
-#. +> 15 14 13 12
+#. +> 16 15 14 13 12
 #: pg_checksums.c:81
 #, c-format
 msgid "  %s [OPTION]... [DATADIR]\n"
 msgstr "  %s [ПАРАМЕТР]... [КАТАЛОГ]\n"
 
-#. +> 15 14 13 12
+#. +> 16 15 14 13 12
 #: pg_checksums.c:82
 #, c-format
 msgid ""
@@ -91,13 +88,13 @@ msgstr ""
 "\n"
 "Параметры:\n"
 
-#. +> 15 14 13 12
+#. +> 16 15 14 13 12
 #: pg_checksums.c:83
 #, c-format
 msgid " [-D, --pgdata=]DATADIR    data directory\n"
 msgstr " [-D, --pgdata=]КАТ_ДАННЫХ каталог данных\n"
 
-#. +> 15 14 13 12
+#. +> 16 15 14 13 12
 #: pg_checksums.c:84
 #, c-format
 msgid "  -c, --check              check data checksums (default)\n"
@@ -105,19 +102,19 @@ msgstr ""
 "  -c, --check              проверить контрольные суммы данных (по "
 "умолчанию)\n"
 
-#. +> 15 14 13 12
+#. +> 16 15 14 13 12
 #: pg_checksums.c:85
 #, c-format
 msgid "  -d, --disable            disable data checksums\n"
 msgstr "  -d, --disable            отключить контрольные суммы\n"
 
-#. +> 15 14 13 12
+#. +> 16 15 14 13 12
 #: pg_checksums.c:86
 #, c-format
 msgid "  -e, --enable             enable data checksums\n"
 msgstr "  -e, --enable             включить контрольные суммы\n"
 
-#. +> 15 14 13 12
+#. +> 16 15 14 13 12
 #: pg_checksums.c:87
 #, c-format
 msgid ""
@@ -126,7 +123,7 @@ msgstr ""
 "  -f, --filenode=ФАЙЛ_УЗЕЛ проверить только отношение с заданным файловым "
 "узлом\n"
 
-#. +> 15 14 13 12
+#. +> 16 15 14 13 12
 #: pg_checksums.c:88
 #, c-format
 msgid ""
@@ -135,19 +132,19 @@ msgid ""
 msgstr ""
 "  -N, --no-sync            не ждать завершения сохранения данных на диске\n"
 
-#. +> 15 14 13 12
+#. +> 16 15 14 13 12
 #: pg_checksums.c:89
 #, c-format
 msgid "  -P, --progress           show progress information\n"
 msgstr "  -P, --progress           показывать прогресс операции\n"
 
-#. +> 15 14 13 12
+#. +> 16 15 14 13 12
 #: pg_checksums.c:90
 #, c-format
 msgid "  -v, --verbose            output verbose messages\n"
 msgstr "  -v, --verbose            выводить подробные сообщения\n"
 
-#. +> 15 14 13 12
+#. +> 16 15 14 13 12
 #: pg_checksums.c:91
 #, c-format
 msgid "  -V, --version            output version information, then exit\n"
@@ -159,13 +156,13 @@ msgstr "  -V, --version            показать версию и выйти\n
 msgid "Report bugs to <pgsql-bugs@lists.postgresql.org>.\n"
 msgstr "Об ошибках сообщайте по адресу <pgsql-bugs@lists.postgresql.org>.\n"
 
-#. +> 15 14 13 12
+#. +> 16 15 14 13 12
 #: pg_checksums.c:92
 #, c-format
 msgid "  -?, --help               show this help, then exit\n"
 msgstr "  -?, --help               показать эту справку и выйти\n"
 
-#. +> 15 14 13 12
+#. +> 16 15 14 13 12
 #: pg_checksums.c:93
 #, c-format
 msgid ""
@@ -180,19 +177,19 @@ msgstr ""
 "переменной окружения PGDATA.\n"
 "\n"
 
-#. +> 15 14 13
+#. +> 16 15 14 13
 #: pg_checksums.c:95
 #, c-format
 msgid "Report bugs to <%s>.\n"
 msgstr "Об ошибках сообщайте по адресу <%s>.\n"
 
-#. +> 15 14 13
+#. +> 16 15 14 13
 #: pg_checksums.c:96
 #, c-format
 msgid "%s home page: <%s>\n"
 msgstr "Домашняя страница %s: <%s>\n"
 
-#. +> 15
+#. +> 16 15
 #: pg_checksums.c:153
 #, c-format
 msgid "%lld/%lld MB (%d%%) computed"
@@ -204,25 +201,25 @@ msgstr "%lld/%lld МБ (%d%%) обработано"
 msgid "%*s/%s MB (%d%%) computed"
 msgstr "%*s/%s МБ (%d%%) обработано"
 
-#. +> 15 14 13 12
+#. +> 16 15 14 13 12
 #: pg_checksums.c:200
 #, c-format
 msgid "could not open file \"%s\": %m"
 msgstr "не удалось открыть файл \"%s\": %m"
 
-#. +> 15 14 13 12
+#. +> 16 15 14 13 12
 #: pg_checksums.c:214
 #, c-format
 msgid "could not read block %u in file \"%s\": %m"
 msgstr "не удалось прочитать блок %u в файле \"%s\": %m"
 
-#. +> 15 14 13 12
+#. +> 16 15 14 13 12
 #: pg_checksums.c:217
 #, c-format
 msgid "could not read block %u in file \"%s\": read %d of %d"
 msgstr "не удалось прочитать блок %u в файле \"%s\" (прочитано байт: %d из %d)"
 
-#. +> 15 14 13 12
+#. +> 16 15 14 13 12
 #: pg_checksums.c:240
 #, c-format
 msgid ""
@@ -232,49 +229,49 @@ msgstr ""
 "ошибка контрольных сумм в файле \"%s\", блоке %u: вычислена контрольная "
 "сумма %X, но блок содержит %X"
 
-#. +> 15 14 13 12
+#. +> 16 15 14 13 12
 #: pg_checksums.c:263
 #, c-format
 msgid "seek failed for block %u in file \"%s\": %m"
 msgstr "ошибка при переходе к блоку %u в файле \"%s\": %m"
 
-#. +> 15 14 13 12
+#. +> 16 15 14 13 12
 #: pg_checksums.c:270
 #, c-format
 msgid "could not write block %u in file \"%s\": %m"
 msgstr "не удалось записать блок %u в файл \"%s\": %m"
 
-#. +> 15 14 13 12
+#. +> 16 15 14 13 12
 #: pg_checksums.c:273
 #, c-format
 msgid "could not write block %u in file \"%s\": wrote %d of %d"
 msgstr "не удалось записать блок %u в файле \"%s\" (записано байт: %d из %d)"
 
-#. +> 15 14 13 12
+#. +> 16 15 14 13 12
 #: pg_checksums.c:285
 #, c-format
 msgid "checksums verified in file \"%s\""
 msgstr "контрольные суммы в файле \"%s\" проверены"
 
-#. +> 15 14 13 12
+#. +> 16 15 14 13 12
 #: pg_checksums.c:287
 #, c-format
 msgid "checksums enabled in file \"%s\""
 msgstr "контрольные суммы в файле \"%s\" включены"
 
-#. +> 15 14 13 12
+#. +> 16 15 14 13 12
 #: pg_checksums.c:318
 #, c-format
 msgid "could not open directory \"%s\": %m"
 msgstr "не удалось открыть каталог \"%s\": %m"
 
-#. +> 15 14 13 12
-#: pg_checksums.c:342 pg_checksums.c:415
+#. +> 16 15 14 13 12
+#: pg_checksums.c:342 pg_checksums.c:411
 #, c-format
 msgid "could not stat file \"%s\": %m"
 msgstr "не удалось получить информацию о файле \"%s\": %m"
 
-#. +> 15 14 13 12
+#. +> 16 15 14 13 12
 #: pg_checksums.c:366
 #, c-format
 msgid "invalid segment number %d in file name \"%s\""
@@ -286,8 +283,8 @@ msgstr "неверный номер сегмента %d в имени файла
 msgid "invalid filenode specification, must be numeric: %s"
 msgstr "неверное указание файлового узла, требуется число: %s"
 
-#. +> 15
-#: pg_checksums.c:512 pg_checksums.c:528 pg_checksums.c:538 pg_checksums.c:546
+#. +> 16 15
+#: pg_checksums.c:508 pg_checksums.c:524 pg_checksums.c:534 pg_checksums.c:542
 #, c-format
 msgid "Try \"%s --help\" for more information."
 msgstr "Для дополнительной информации попробуйте \"%s --help\"."
@@ -298,44 +295,44 @@ msgstr "Для дополнительной информации попробу�
 msgid "Try \"%s --help\" for more information.\n"
 msgstr "Для дополнительной информации попробуйте \"%s --help\".\n"
 
-#. +> 15 14 13 12
-#: pg_checksums.c:527
+#. +> 16 15 14 13 12
+#: pg_checksums.c:523
 #, c-format
 msgid "no data directory specified"
 msgstr "каталог данных не указан"
 
-#. +> 15 14 13 12
-#: pg_checksums.c:536
+#. +> 16 15 14 13 12
+#: pg_checksums.c:532
 #, c-format
 msgid "too many command-line arguments (first is \"%s\")"
 msgstr "слишком много аргументов командной строки (первый: \"%s\")"
 
-#. +> 15 14 13 12
-#: pg_checksums.c:545
+#. +> 16 15 14 13 12
+#: pg_checksums.c:541
 #, c-format
 msgid "option -f/--filenode can only be used with --check"
 msgstr "параметр -f/--filenode можно использовать только с --check"
 
-#. +> 15 14 13 12
-#: pg_checksums.c:553
+#. +> 16 15 14 13 12
+#: pg_checksums.c:549
 #, c-format
 msgid "pg_control CRC value is incorrect"
 msgstr "ошибка контрольного значения в pg_control"
 
-#. +> 15 14 13 12
-#: pg_checksums.c:556
+#. +> 16 15 14 13 12
+#: pg_checksums.c:552
 #, c-format
 msgid "cluster is not compatible with this version of pg_checksums"
 msgstr "кластер несовместим с этой версией pg_checksums"
 
-#. +> 15 14 13 12
-#: pg_checksums.c:560
+#. +> 16 15 14 13 12
+#: pg_checksums.c:556
 #, c-format
 msgid "database cluster is not compatible"
 msgstr "несовместимый кластер баз данных"
 
-#. +> 15
-#: pg_checksums.c:561
+#. +> 16 15
+#: pg_checksums.c:557
 #, c-format
 msgid ""
 "The database cluster was initialized with block size %u, but pg_checksums "
@@ -354,38 +351,38 @@ msgstr ""
 "Кластер баз данных был инициализирован с размером блока %u, а утилита "
 "pg_checksums скомпилирована для размера блока %u.\n"
 
-#. +> 15 14 13 12
-#: pg_checksums.c:573
+#. +> 16 15 14 13 12
+#: pg_checksums.c:569
 #, c-format
 msgid "cluster must be shut down"
 msgstr "кластер должен быть отключён"
 
-#. +> 15 14 13 12
-#: pg_checksums.c:577
+#. +> 16 15 14 13 12
+#: pg_checksums.c:573
 #, c-format
 msgid "data checksums are not enabled in cluster"
 msgstr "контрольные суммы в кластере не включены"
 
-#. +> 15 14 13 12
-#: pg_checksums.c:581
+#. +> 16 15 14 13 12
+#: pg_checksums.c:577
 #, c-format
 msgid "data checksums are already disabled in cluster"
 msgstr "контрольные суммы в кластере уже отключены"
 
-#. +> 15 14 13 12
-#: pg_checksums.c:585
+#. +> 16 15 14 13 12
+#: pg_checksums.c:581
 #, c-format
 msgid "data checksums are already enabled in cluster"
 msgstr "контрольные суммы в кластере уже включены"
 
-#. +> 15 14 13 12
-#: pg_checksums.c:609
+#. +> 16 15 14 13 12
+#: pg_checksums.c:605
 #, c-format
 msgid "Checksum operation completed\n"
 msgstr "Обработка контрольных сумм завершена\n"
 
-#. +> 15
-#: pg_checksums.c:610
+#. +> 16 15
+#: pg_checksums.c:606
 #, c-format
 msgid "Files scanned:   %lld\n"
 msgstr "Просканировано файлов: %lld\n"
@@ -396,8 +393,8 @@ msgstr "Просканировано файлов: %lld\n"
 msgid "Files scanned:  %s\n"
 msgstr "Просканировано файлов: %s\n"
 
-#. +> 15
-#: pg_checksums.c:611
+#. +> 16 15
+#: pg_checksums.c:607
 #, c-format
 msgid "Blocks scanned:  %lld\n"
 msgstr "Просканировано блоков: %lld\n"
@@ -408,8 +405,8 @@ msgstr "Просканировано блоков: %lld\n"
 msgid "Blocks scanned: %s\n"
 msgstr "Просканировано блоков: %s\n"
 
-#. +> 15
-#: pg_checksums.c:614
+#. +> 16 15
+#: pg_checksums.c:610
 #, c-format
 msgid "Bad checksums:  %lld\n"
 msgstr "Неверные контрольные суммы: %lld\n"
@@ -420,44 +417,44 @@ msgstr "Неверные контрольные суммы: %lld\n"
 msgid "Bad checksums:  %s\n"
 msgstr "Неверные контрольные суммы: %s\n"
 
-#. +> 15 14 13 12
-#: pg_checksums.c:615 pg_checksums.c:647
+#. +> 16 15 14 13 12
+#: pg_checksums.c:611 pg_checksums.c:643
 #, c-format
 msgid "Data checksum version: %u\n"
 msgstr "Версия контрольных сумм данных: %u\n"
 
-#. +> 15
-#: pg_checksums.c:622
+#. +> 16 15
+#: pg_checksums.c:618
 #, c-format
 msgid "Files written:  %lld\n"
 msgstr "Записано файлов: %lld\n"
 
-#. +> 15
-#: pg_checksums.c:623
+#. +> 16 15
+#: pg_checksums.c:619
 #, c-format
 msgid "Blocks written: %lld\n"
 msgstr "Записано блоков: %lld\n"
 
-#. +> 15 14 13 12
-#: pg_checksums.c:639
+#. +> 16 15 14 13 12
+#: pg_checksums.c:635
 #, c-format
 msgid "syncing data directory"
 msgstr "синхронизация каталога данных"
 
-#. +> 15 14 13 12
-#: pg_checksums.c:643
+#. +> 16 15 14 13 12
+#: pg_checksums.c:639
 #, c-format
 msgid "updating control file"
 msgstr "модификация управляющего файла"
 
-#. +> 15 14 13 12
-#: pg_checksums.c:649
+#. +> 16 15 14 13 12
+#: pg_checksums.c:645
 #, c-format
 msgid "Checksums enabled in cluster\n"
 msgstr "Контрольные суммы в кластере включены\n"
 
-#. +> 15 14 13 12
-#: pg_checksums.c:651
+#. +> 16 15 14 13 12
+#: pg_checksums.c:647
 #, c-format
 msgid "Checksums disabled in cluster\n"
 msgstr "Контрольные суммы в кластере отключены\n"
