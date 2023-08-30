@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: pg_waldump (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2023-08-28 08:23+0300\n"
-"PO-Revision-Date: 2023-08-30 12:47+0300\n"
+"PO-Revision-Date: 2023-08-30 15:41+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -790,7 +790,7 @@ msgstr ""
 #: xlogreader.c:635
 #, c-format
 msgid "contrecord is requested by %X/%X"
-msgstr "по смещению %X/%X запрошено продолжение записи"
+msgstr "в позиции %X/%X запрошено продолжение записи"
 
 #. +> 16
 #: xlogreader.c:676 xlogreader.c:1119
@@ -803,7 +803,7 @@ msgstr ""
 #: xlogreader.c:674 xlogreader.c:1117
 #, c-format
 msgid "invalid record length at %X/%X: wanted %u, got %u"
-msgstr "неверная длина записи по смещению %X/%X: ожидалось %u, получено %u"
+msgstr "неверная длина записи в позиции %X/%X: ожидалось %u, получено %u"
 
 #. +> 16 15
 #: xlogreader.c:705
@@ -815,7 +815,7 @@ msgstr "не удалось выделить память для декодир�
 #: xlogreader.c:727
 #, c-format
 msgid "record length %u at %X/%X too long"
-msgstr "длина записи %u по смещению %X/%X слишком велика"
+msgstr "длина записи %u в позиции %X/%X слишком велика"
 
 #. +> 16 15 14 13 12 11
 #: xlogreader.c:776
@@ -839,21 +839,21 @@ msgstr "неверная длина contrecord (%u) в позиции %X/%X"
 #: xlogreader.c:1127
 #, c-format
 msgid "invalid resource manager ID %u at %X/%X"
-msgstr "неверный ID менеджера ресурсов %u по смещению %X/%X"
+msgstr "неверный ID менеджера ресурсов %u в позиции %X/%X"
 
 #. +> 16 15 14 13 12 11
 #: xlogreader.c:1140 xlogreader.c:1156
 #, c-format
 msgid "record with incorrect prev-link %X/%X at %X/%X"
-msgstr "запись с неверной ссылкой назад %X/%X по смещению %X/%X"
+msgstr "запись с неверной ссылкой назад %X/%X в позиции %X/%X"
 
 #. +> 16 15 14 13 12 11
 #: xlogreader.c:1192
 #, c-format
 msgid "incorrect resource manager data checksum in record at %X/%X"
 msgstr ""
-"некорректная контрольная сумма данных менеджера ресурсов в записи по "
-"смещению %X/%X"
+"некорректная контрольная сумма данных менеджера ресурсов в записи в позиции "
+"%X/%X"
 
 #. +> 16
 #: xlogreader.c:1226
@@ -1042,7 +1042,7 @@ msgstr "неверный идентификатор блока %u в позиц�
 #: xlogreader.c:625
 #, c-format
 msgid "invalid record offset at %X/%X"
-msgstr "неверное смещение записи: %X/%X"
+msgstr "неверное смещение записи в позиции %X/%X"
 
 #. +> 16 15 14 13 12 11
 #: xlogreader.c:1942

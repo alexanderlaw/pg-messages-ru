@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pg_upgrade (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2023-08-28 08:23+0300\n"
-"PO-Revision-Date: 2023-08-30 12:41+0300\n"
+"PO-Revision-Date: 2023-08-30 15:47+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -227,13 +227,13 @@ msgstr ""
 #: check.c:310
 #, c-format
 msgid "This utility can only upgrade to PostgreSQL version %s."
-msgstr "Эта утилита может только повышать версию PostgreSQL до %s."
+msgstr "Эта утилита может повышать версию PostgreSQL только до %s."
 
 #. +> 15 14 13 12 11
 #: check.c:307
 #, c-format
 msgid "This utility can only upgrade to PostgreSQL version %s.\n"
-msgstr "Эта утилита может только повышать версию PostgreSQL до %s.\n"
+msgstr "Эта утилита может повышать версию PostgreSQL только до %s.\n"
 
 #. +> 16
 #: check.c:319
@@ -570,7 +570,7 @@ msgid ""
 "template0 must not allow connections, i.e. its pg_database.datallowconn must "
 "be false"
 msgstr ""
-"База template0 не должна допускать подключения, то есть её свойство "
+"база template0 не должна допускать подключения, то есть её свойство "
 "pg_database.datallowconn должно быть false"
 
 #. +> 15 14 13 12 11
@@ -580,7 +580,7 @@ msgid ""
 "template0 must not allow connections, i.e. its pg_database.datallowconn must "
 "be false\n"
 msgstr ""
-"База template0 не должна допускать подключения, то есть её свойство "
+"база template0 не должна допускать подключения, то есть её свойство "
 "pg_database.datallowconn должно быть false\n"
 
 #. +> 14 13 12 11
@@ -647,7 +647,8 @@ msgstr ""
 "базы (не считая template0), у которых pg_database.datallowconn — false.\n"
 "Имеет смысл разрешить подключения для всех баз данных, кроме template0,\n"
 "или удалить базы, к которым нельзя подключаться. Список баз данных\n"
-"с этой проблемой содержится в файле:    %s\n"
+"с этой проблемой содержится в файле:\n"
+"    %s\n"
 "\n"
 
 #. +> 16 15 14 13 12 11
@@ -1443,14 +1444,14 @@ msgstr "В целевом кластере не хватает необходи�
 #: controldata.c:585
 #, c-format
 msgid "  checkpoint next XID"
-msgstr "  следующий XID последней конт. точки"
+msgstr "  следующий XID конт. точки"
 
 # skip-rule: capital-letter-first
 #. +> 15 14 13 12 11
 #: controldata.c:577
 #, c-format
 msgid "  checkpoint next XID\n"
-msgstr "  следующий XID последней конт. точки\n"
+msgstr "  следующий XID конт. точки\n"
 
 # skip-rule: capital-letter-first
 #. +> 16
@@ -3892,13 +3893,15 @@ msgstr "нехватка памяти\n"
 #: server.c:370
 #, c-format
 msgid "libpq environment variable %s has a non-local server value: %s"
-msgstr "в переменной окружения для libpq %s задано не локальное значение: %s"
+msgstr ""
+"в переменной окружения %s для libpq указан адрес не локального сервера: %s"
 
 #. +> 15 14 13 12 11
 #: server.c:373
 #, c-format
 msgid "libpq environment variable %s has a non-local server value: %s\n"
-msgstr "в переменной окружения для libpq %s задано не локальное значение: %s\n"
+msgstr ""
+"в переменной окружения %s для libpq указан адрес не локального сервера: %s\n"
 
 #. +> 16
 #: tablespace.c:28
