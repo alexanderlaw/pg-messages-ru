@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2023-08-28 08:24+0300\n"
-"PO-Revision-Date: 2023-08-28 18:04+0300\n"
+"PO-Revision-Date: 2023-08-30 15:00+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -54,9 +54,9 @@ msgstr "значение параметра сжатия \"%s\" должно б�
 
 #. +> 16
 #: ../common/compression.c:331
-#, fuzzy, c-format
+#, c-format
 msgid "value for compression option \"%s\" must be a Boolean value"
-msgstr "значение параметра сжатия \"%s\" должно быть целочисленным"
+msgstr "значение параметра сжатия \"%s\" должно быть булевским"
 
 #. +> 16 15
 #: ../common/compression.c:379
@@ -82,9 +82,9 @@ msgstr "для алгоритма сжатия \"%s\" нельзя задать 
 
 #. +> 16
 #: ../common/compression.c:408
-#, fuzzy, c-format
+#, c-format
 msgid "compression algorithm \"%s\" does not support long-distance mode"
-msgstr "для алгоритма сжатия \"%s\" нельзя задать число потоков"
+msgstr "алгоритм сжатия \"%s\" не поддерживает режим большой дистанции"
 
 #. +> 16 15 14 13 12 11
 #: ../common/config_info.c:134 ../common/config_info.c:142
@@ -376,9 +376,9 @@ msgstr "не удалось найти запускаемый файл \"%s\""
 
 #. +> 16
 #: ../common/exec.c:250
-#, fuzzy, c-format
+#, c-format
 msgid "could not resolve path \"%s\" to absolute form: %m"
-msgstr "открыть файл \"%s\" как stderr не удалось: %m"
+msgstr "не удалось преобразовать относительный путь \"%s\" в абсолютный: %m"
 
 #. +> 16 15 14
 #: ../common/exec.c:412 libpq/pqcomm.c:728 storage/ipc/latch.c:1128
@@ -592,12 +592,10 @@ msgstr ""
 
 #. +> 16
 #: ../common/jsonapi.c:1187
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Unicode escape value could not be translated to the server's encoding %s."
-msgstr ""
-"Спецкоды Unicode для значений выше 007F можно использовать только с "
-"серверной кодировкой UTF8"
+msgstr "Спецкод Unicode нельзя преобразовать в серверную кодировку %s."
 
 #. +> 16 15 14 13 12 11
 #: ../common/jsonapi.c:1190 jsonpath_scan.l:630
@@ -656,15 +654,15 @@ msgstr "неверное значение для параметра \"%s\": \"%s
 # skip-rule: capital-letter-first
 #. +> 16
 #: ../common/percentrepl.c:80 ../common/percentrepl.c:86
-#, fuzzy, c-format
+#, c-format
 msgid "String ends unexpectedly after escape character \"%%\"."
-msgstr "нет спец. символа \"%s\""
+msgstr "Строка неожиданно закончилась после спецсимвола \"%%\"."
 
 #. +> 16
 #: ../common/percentrepl.c:119 ../common/percentrepl.c:125
 #, c-format
 msgid "String contains unexpected placeholder \"%%%c\"."
-msgstr ""
+msgstr "Строка содержит неожиданный местозаполнитель \"%%%c\"."
 
 #. +> 16 15 14 13 12
 #: ../common/pgfnames.c:74
@@ -1401,15 +1399,15 @@ msgstr "неверное значение для параметра-перечи
 
 #. +> 16
 #: access/common/reloptions.c:1991
-#, fuzzy, c-format
+#, c-format
 msgid "cannot specify storage parameters for a partitioned table"
-msgstr "менять метод доступа для секционированной таблицы нельзя"
+msgstr "задать параметры хранения для секционированной таблицы нельзя"
 
 #. +> 16
 #: access/common/reloptions.c:1992
 #, c-format
 msgid "Specify storage parameters for its leaf partitions instead."
-msgstr ""
+msgstr "Задайте параметры хранения для её конечных секций."
 
 #. +> 16 15 14
 #: access/common/toast_compression.c:33
@@ -1433,9 +1431,9 @@ msgstr "Необходимо перекомпилировать PostgreSQL с к
 #. +> 16
 #: access/common/tupdesc.c:837 commands/tablecmds.c:6953
 #: commands/tablecmds.c:12973
-#, fuzzy, c-format
+#, c-format
 msgid "too many array dimensions"
-msgstr "неподходящие размерности массива"
+msgstr "слишком много размерностей массива"
 
 #. +> 16 15 14 13 12 11
 #: access/common/tupdesc.c:842 parser/parse_clause.c:772
@@ -1937,11 +1935,10 @@ msgstr ""
 
 #. +> 16
 #: access/heap/vacuumlazy.c:699
-#, fuzzy, c-format
+#, c-format
 msgid "frozen: %u pages from table (%.2f%% of total) had %lld tuples frozen\n"
 msgstr ""
-"на страницах таблицы (%u, %.2f%% от общего числа) удалено мёртвых "
-"идентификаторов элементов: %lld\n"
+"на страницах таблицы (%u, %.2f%% от общего числа) заморожено кортежей: %lld\n"
 
 #. +> 16 15 14
 #: access/heap/vacuumlazy.c:707
@@ -4283,7 +4280,7 @@ msgstr "начата контрольная точка:%s%s%s%s%s%s%s%s"
 # well-spelled: синхр
 #. +> 16
 #: access/transam/xlog.c:6305
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "restartpoint complete: wrote %d buffers (%.1f%%); %d WAL file(s) added, %d "
 "removed, %d recycled; write=%ld.%03d s, sync=%ld.%03d s, total=%ld.%03d s; "
@@ -4293,7 +4290,8 @@ msgstr ""
 "точка перезапуска завершена: записано буферов: %d (%.1f%%); добавлено файлов "
 "WAL %d, удалено: %d, переработано: %d; запись=%ld.%03d сек., синхр.=%ld.%03d "
 "сек., всего=%ld.%03d сек.; синхронизировано_файлов=%d, самая_долгая_синхр."
-"=%ld.%03d сек., средняя=%ld.%03d сек.; расстояние=%d kB, ожидалось=%d kB"
+"=%ld.%03d сек., средняя=%ld.%03d сек.; расстояние=%d kB, ожидалось=%d kB; "
+"lsn=%X/%X, lsn redo=%X/%X"
 
 # well-spelled: синхр
 #. +> 15 14
@@ -4313,7 +4311,7 @@ msgstr ""
 # well-spelled: синхр
 #. +> 16
 #: access/transam/xlog.c:6328
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "checkpoint complete: wrote %d buffers (%.1f%%); %d WAL file(s) added, %d "
 "removed, %d recycled; write=%ld.%03d s, sync=%ld.%03d s, total=%ld.%03d s; "
@@ -4323,7 +4321,8 @@ msgstr ""
 "контрольная точка завершена: записано буферов: %d (%.1f%%); добавлено файлов "
 "WAL %d, удалено: %d, переработано: %d; запись=%ld.%03d сек., синхр.=%ld.%03d "
 "сек., всего=%ld.%03d сек.; синхронизировано_файлов=%d, самая_долгая_синхр."
-"=%ld.%03d сек., средняя=%ld.%03d сек.; расстояние=%d kB, ожидалось=%d kB"
+"=%ld.%03d сек., средняя=%ld.%03d сек.; расстояние=%d kB, ожидалось=%d kB; "
+"lsn=%X/%X, lsn redo=%X/%X"
 
 # well-spelled: синхр
 #. +> 15 14
@@ -4891,9 +4890,11 @@ msgstr "Функцию pg_walfile_name() нельзя вызывать в про
 
 #. +> 16
 #: access/transam/xlogfuncs.c:221
-#, fuzzy, c-format
+#, c-format
 msgid "pg_log_standby_snapshot() can only be used if wal_level >= replica"
-msgstr "слоты репликации можно использовать, только если wal_level >= replica"
+msgstr ""
+"pg_log_standby_snapshot() можно использовать, только если wal_level >= "
+"replica"
 
 #. +> 16 15 14 13 12 11
 #: access/transam/xlogfuncs.c:253
@@ -4910,9 +4911,9 @@ msgstr "значение для точки восстановления прев
 
 #. +> 16
 #: access/transam/xlogfuncs.c:496
-#, fuzzy, c-format
+#, c-format
 msgid "invalid WAL file name \"%s\""
-msgstr "неправильное имя файла часовых поясов: \"%s\""
+msgstr "неправильное имя файла WAL \"%s\""
 
 #. +> 16 15 14 13 12 11
 #: access/transam/xlogfuncs.c:532 access/transam/xlogfuncs.c:562
@@ -4982,9 +4983,10 @@ msgstr ""
 
 #. +> 16
 #: access/transam/xlogreader.c:626
-#, fuzzy, c-format
+#, c-format
 msgid "invalid record offset at %X/%X: expected at least %u, got %u"
-msgstr "неверная длина записи по смещению %X/%X: ожидалось %u, получено %u"
+msgstr ""
+"неверное смещение записи в позиции %X/%X: ожидалось минимум %u, получено %u"
 
 #. +> 16 15 14 13 12 11
 #: access/transam/xlogreader.c:635
@@ -4994,9 +4996,10 @@ msgstr "по смещению %X/%X запрошено продолжение з
 
 #. +> 16
 #: access/transam/xlogreader.c:676 access/transam/xlogreader.c:1119
-#, fuzzy, c-format
+#, c-format
 msgid "invalid record length at %X/%X: expected at least %u, got %u"
-msgstr "неверная длина записи по смещению %X/%X: ожидалось %u, получено %u"
+msgstr ""
+"неверная длина записи в позиции %X/%X: ожидалось минимум %u, получено %u"
 
 #. +> 15 14 13 12 11
 #: access/transam/xlogreader.c:674 access/transam/xlogreader.c:1117
@@ -5056,9 +5059,10 @@ msgstr ""
 
 #. +> 16
 #: access/transam/xlogreader.c:1226
-#, fuzzy, c-format
+#, c-format
 msgid "invalid magic number %04X in WAL segment %s, LSN %X/%X, offset %u"
-msgstr "неверное магическое число %04X в сегменте журнала %s, смещение %u"
+msgstr ""
+"неверное магическое число %04X в сегменте WAL %s, LSN %X/%X, смещение %u"
 
 #. +> 15 14 13 12 11
 #: access/transam/xlogreader.c:1227
@@ -5068,9 +5072,10 @@ msgstr "неверное магическое число %04X в сегмент�
 
 #. +> 16
 #: access/transam/xlogreader.c:1241 access/transam/xlogreader.c:1283
-#, fuzzy, c-format
+#, c-format
 msgid "invalid info bits %04X in WAL segment %s, LSN %X/%X, offset %u"
-msgstr "неверные информационные биты %04X в сегменте журнала %s, смещение %u"
+msgstr ""
+"неверные информационные биты %04X в сегменте WAL %s, LSN %X/%X, смещение %u"
 
 #. +> 15 14 13 12 11
 #: access/transam/xlogreader.c:1241 access/transam/xlogreader.c:1282
@@ -5120,9 +5125,9 @@ msgstr ""
 
 #. +> 16
 #: access/transam/xlogreader.c:1303
-#, fuzzy, c-format
+#, c-format
 msgid "unexpected pageaddr %X/%X in WAL segment %s, LSN %X/%X, offset %u"
-msgstr "неожиданный pageaddr %X/%X в сегменте журнала %s, смещение %u"
+msgstr "неожиданный pageaddr %X/%X в сегменте WAL %s, LSN %X/%X, смещение %u"
 
 #. +> 15 14 13 12 11
 #: access/transam/xlogreader.c:1301
@@ -5132,13 +5137,13 @@ msgstr "неожиданный pageaddr %X/%X в сегменте журнала
 
 #. +> 16
 #: access/transam/xlogreader.c:1329
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "out-of-sequence timeline ID %u (after %u) in WAL segment %s, LSN %X/%X, "
 "offset %u"
 msgstr ""
-"нарушение последовательности ID линии времени %u (после %u) в сегменте "
-"журнала %s, смещение %u"
+"нарушение последовательности ID линии времени %u (после %u) в сегменте WAL "
+"%s, LSN %X/%X, смещение %u"
 
 #. +> 15 14 13 12 11
 #: access/transam/xlogreader.c:1326
@@ -5742,9 +5747,10 @@ msgstr "Выполните pg_wal_replay_resume() для продолжения.
 
 #. +> 16
 #: access/transam/xlogrecovery.c:3121
-#, fuzzy, c-format
+#, c-format
 msgid "unexpected timeline ID %u in WAL segment %s, LSN %X/%X, offset %u"
-msgstr "неожиданный ID линии времени %u в сегменте журнала %s, смещение %u"
+msgstr ""
+"неожиданный ID линии времени %u в сегменте WAL %s, LSN %X/%X, смещение %u"
 
 #. +> 15 14 13 12 11
 #: access/transam/xlogrecovery.c:3101
@@ -5754,9 +5760,9 @@ msgstr "неожиданный ID линии времени %u в сегмент
 
 #. +> 16
 #: access/transam/xlogrecovery.c:3329
-#, fuzzy, c-format
+#, c-format
 msgid "could not read from WAL segment %s, LSN %X/%X, offset %u: %m"
-msgstr "не удалось прочитать сегмент журнала %s, смещение %u: %m"
+msgstr "не удалось прочитать сегмент WAL %s, LSN %X/%X, смещение %u: %m"
 
 #. +> 15 14 13 12 11
 #: access/transam/xlogrecovery.c:3306
@@ -5766,11 +5772,11 @@ msgstr "не удалось прочитать сегмент журнала %s,
 
 #. +> 16
 #: access/transam/xlogrecovery.c:3336
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "could not read from WAL segment %s, LSN %X/%X, offset %u: read %d of %zu"
 msgstr ""
-"не удалось прочитать из сегмента журнала %s по смещению %u (прочитано байт: "
+"не удалось прочитать сегмент WAL %s, LSN %X/%X, смещение %u (прочитано байт: "
 "%d из %zu)"
 
 #. +> 15 14 13 12
@@ -5783,9 +5789,9 @@ msgstr ""
 
 #. +> 16
 #: access/transam/xlogrecovery.c:3976
-#, fuzzy, c-format
+#, c-format
 msgid "invalid checkpoint location"
-msgstr "неверная запись контрольной точки"
+msgstr "неверное положение контрольной точки"
 
 #. +> 15 14 13 12 11
 #: access/transam/xlogrecovery.c:3965
@@ -5983,9 +5989,9 @@ msgstr "recovery_target_timeline не является допустимым чи
 
 #. +> 16
 #: access/transam/xlogutils.c:1039
-#, fuzzy, c-format
+#, c-format
 msgid "could not read from WAL segment %s, offset %d: %m"
-msgstr "не удалось прочитать сегмент журнала %s, смещение %d: %m"
+msgstr "не удалось прочитать из сегмента WAL %s по смещению %d: %m"
 
 #. +> 15
 #: access/transam/xlogutils.c:1053
@@ -6008,11 +6014,11 @@ msgstr "не удалось прочитать сегмент журнала %s 
 
 #. +> 16
 #: access/transam/xlogutils.c:1046
-#, fuzzy, c-format
+#, c-format
 msgid "could not read from WAL segment %s, offset %d: read %d of %d"
 msgstr ""
-"не удалось прочитать из сегмента журнала %s по смещению %d (прочитано байт: "
-"%d из %d)"
+"не удалось прочитать из сегмента WAL %s по смещению %d (прочитано байт: %d "
+"из %d)"
 
 #. +> 15
 #: access/transam/xlogutils.c:1060
@@ -6361,19 +6367,19 @@ msgstr "сжатие lz4 не поддерживается в данной сб�
 
 #. +> 16
 #: backup/basebackup_server.c:75
-#, fuzzy, c-format
+#, c-format
 msgid "permission denied to create backup stored on server"
-msgstr "нет прав для создания роли"
+msgstr "нет прав для создания копии, сохраняемой на сервере"
 
 #. +> 16
 #: backup/basebackup_server.c:76
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Only roles with privileges of the \"%s\" role may create a backup stored on "
 "the server."
 msgstr ""
-"для создания копии, сохраняемой на стороне сервера, нужно быть "
-"суперпользователем или иметь права роли pg_write_server_files"
+"Создавать копии, сохраняемые на сервере, могут только роли с правами роли "
+"\"%s\"."
 
 #. +> 15
 #: backup/basebackup_server.c:75
@@ -6457,9 +6463,9 @@ msgstr "не удалось установить для zstd число пото
 
 #. +> 16
 #: backup/basebackup_zstd.c:129
-#, fuzzy, c-format
+#, c-format
 msgid "could not enable long-distance mode: %s"
-msgstr "не удалось создать принимающий сокет для \"%s\""
+msgstr "не удалось включить режим большой дистанции: %s"
 
 #. +> 16 15 14 13 12 11
 #: bootstrap/bootstrap.c:243 postmaster/postmaster.c:721 tcop/postgres.c:3819
@@ -6666,9 +6672,9 @@ msgstr "права по умолчанию нельзя определить д�
 
 #. +> 16
 #: catalog/aclchk.c:1138
-#, fuzzy, c-format
+#, c-format
 msgid "permission denied to change default privileges"
-msgstr "нет прав для создания роли"
+msgstr "нет полномочий для изменения прав доступа по умолчанию"
 
 #. +> 16 15 14 13 12 11
 #: catalog/aclchk.c:1256
@@ -7190,9 +7196,9 @@ msgstr "нет доступа к столбцу \"%s\" отношения \"%s\"
 
 #. +> 16
 #: catalog/aclchk.c:3104 catalog/aclchk.c:3979 catalog/aclchk.c:4011
-#, fuzzy, c-format
+#, c-format
 msgid "%s with OID %u does not exist"
-msgstr "схема с OID %u не существует"
+msgstr "%s с OID %u не существует"
 
 #. +> 16 15 14 13 12 11
 #: catalog/aclchk.c:3188 catalog/aclchk.c:3207
@@ -7555,9 +7561,10 @@ msgstr ""
 
 #. +> 16
 #: catalog/heap.c:1205
-#, fuzzy, c-format
+#, c-format
 msgid "toast relfilenumber value not set when in binary upgrade mode"
-msgstr "значение relfilenode для TOAST не задано в режиме двоичного обновления"
+msgstr ""
+"значение relfilenumber для TOAST не задано в режиме двоичного обновления"
 
 #. +> 15
 #: catalog/heap.c:1205
@@ -7573,9 +7580,9 @@ msgstr "значение OID кучи в pg_class не задано в режи�
 
 #. +> 16
 #: catalog/heap.c:1226
-#, fuzzy, c-format
+#, c-format
 msgid "relfilenumber value not set when in binary upgrade mode"
-msgstr "значение relfilenode не задано в режиме двоичного обновления"
+msgstr "значение relfilenumber не задано в режиме двоичного обновления"
 
 #. +> 15
 #: catalog/heap.c:1226
@@ -7638,9 +7645,9 @@ msgstr "слияние ограничения \"%s\" с унаследованн
 #: catalog/heap.c:2622 catalog/pg_constraint.c:811 commands/tablecmds.c:2672
 #: commands/tablecmds.c:3199 commands/tablecmds.c:6858
 #: commands/tablecmds.c:15208 commands/tablecmds.c:15349
-#, fuzzy, c-format
+#, c-format
 msgid "too many inheritance parents"
-msgstr "слишком много элементов RTE"
+msgstr "слишком много родителей в иерархии наследования"
 
 #. +> 16 15 14 13 12
 #: catalog/heap.c:2706
@@ -7745,9 +7752,9 @@ msgstr "таблица \"%s\" не может иметь несколько пе
 
 #. +> 16
 #: catalog/index.c:239
-#, fuzzy, c-format
+#, c-format
 msgid "primary keys cannot use NULLS NOT DISTINCT indexes"
-msgstr "первичные ключи не могут быть выражениями"
+msgstr "для первичных ключей нельзя использовать индексы с NULLS NOT DISTINCT"
 
 #. +> 16 15 14 13 12 11
 #: catalog/index.c:256
@@ -7813,10 +7820,10 @@ msgstr ""
 
 #. +> 16
 #: catalog/index.c:939 utils/cache/relcache.c:3731
-#, fuzzy, c-format
+#, c-format
 msgid "index relfilenumber value not set when in binary upgrade mode"
 msgstr ""
-"значение relfilenode для индекса не задано в режиме двоичного обновления"
+"значение relfilenumber для индекса не задано в режиме двоичного обновления"
 
 #. +> 15
 #: catalog/index.c:927 utils/cache/relcache.c:3744
@@ -8239,13 +8246,13 @@ msgstr "нет доступа"
 #: catalog/objectaddress.c:2551 catalog/objectaddress.c:2560
 #, c-format
 msgid "The current user must have the %s attribute."
-msgstr ""
+msgstr "Текущий пользователь должен иметь атрибут %s."
 
 #. +> 16
 #: catalog/objectaddress.c:2566
-#, fuzzy, c-format
+#, c-format
 msgid "The current user must have the %s option on role \"%s\"."
-msgstr "требуется право admin для роли \"%s\""
+msgstr "Текущий пользователь должен иметь привилегию %s для роли \"%s\"."
 
 #. +> 16 15 14 13 12 11
 #: catalog/objectaddress.c:2580
@@ -8432,7 +8439,7 @@ msgstr "роль %s"
 #: catalog/objectaddress.c:3653 catalog/objectaddress.c:5505
 #, c-format
 msgid "membership of role %s in role %s"
-msgstr ""
+msgstr "членство роли %s в роли %s"
 
 #. +> 16 15 14 13 12 11
 #: catalog/objectaddress.c:3674
@@ -9846,7 +9853,7 @@ msgstr "переименовать \"%s\" может только суперпо
 #: commands/subscriptioncmds.c:1830
 #, c-format
 msgid "password_required=false is superuser-only"
-msgstr ""
+msgstr "задать password_required=false может только суперпользователь"
 
 #. +> 16
 #: commands/alter.c:260 commands/subscriptioncmds.c:637
@@ -9857,6 +9864,8 @@ msgid ""
 "Subscriptions with the password_required option set to false may only be "
 "created or modified by the superuser."
 msgstr ""
+"Подписки с параметром password_required option, равным false, могут "
+"создавать или изменять только суперпользователи."
 
 #. +> 16 15 14 13 12 11
 #: commands/alter.c:775
@@ -10228,7 +10237,7 @@ msgstr "необходимо указать параметр \"locale\""
 #: commands/collationcmds.c:279 commands/dbcommands.c:1091
 #, c-format
 msgid "using standard form \"%s\" for ICU locale \"%s\""
-msgstr ""
+msgstr "используется стандартная форма \"%s\" локали ICU \"%s\""
 
 #. +> 16 15 14 13 12
 #: commands/collationcmds.c:298
@@ -10239,9 +10248,9 @@ msgstr ""
 
 #. +> 16
 #: commands/collationcmds.c:303 commands/dbcommands.c:1110
-#, fuzzy, c-format
+#, c-format
 msgid "ICU rules cannot be specified unless locale provider is ICU"
-msgstr "локаль ICU можно указать, только если выбран провайдер локали ICU"
+msgstr "правила ICU можно указать, только если выбран провайдер локали ICU"
 
 #. +> 16 15 14 13 12 11
 #: commands/collationcmds.c:322
@@ -10266,14 +10275,13 @@ msgstr "правило сортировки \"%s\" уже существует �
 #: commands/collationcmds.c:418
 #, c-format
 msgid "cannot refresh version of default collation"
-msgstr ""
+msgstr "нельзя обновить версию правила сортировки по умолчанию"
 
 #. +> 16
 #: commands/collationcmds.c:419
-#, fuzzy, c-format
+#, c-format
 msgid "Use ALTER DATABASE ... REFRESH COLLATION VERSION instead."
-msgstr ""
-"Вместо этого выполните ALTER TABLE ... ALTER COLUMN ... DROP EXPRESSION."
+msgstr "Вместо этого выполните ALTER DATABASE ... REFRESH COLLATION VERSION."
 
 #. +> 16 15 14 13 12 11
 #: commands/collationcmds.c:446 commands/dbcommands.c:2488
@@ -10399,19 +10407,19 @@ msgstr ""
 
 #. +> 16
 #: commands/copy.c:86
-#, fuzzy, c-format
+#, c-format
 msgid "permission denied to COPY to or from an external program"
-msgstr "нет прав для создания роли"
+msgstr "нет прав для выполнения COPY с внешней программой"
 
 #. +> 16
 #: commands/copy.c:87
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Only roles with privileges of the \"%s\" role may COPY to or from an "
 "external program."
 msgstr ""
-"для использования COPY с внешними программами нужно быть суперпользователем "
-"или иметь права роли pg_execute_server_program"
+"Использовать COPY с внешними программами могут только роли с правами роли "
+"\"%s\"."
 
 #. +> 15
 #: commands/copy.c:86
@@ -10445,17 +10453,16 @@ msgstr ""
 
 #. +> 16
 #: commands/copy.c:97
-#, fuzzy, c-format
+#, c-format
 msgid "permission denied to COPY from a file"
-msgstr "нет прав для удаления роли"
+msgstr "нет прав для выполнения COPY с чтением файла"
 
 #. +> 16
 #: commands/copy.c:98
-#, fuzzy, c-format
+#, c-format
 msgid "Only roles with privileges of the \"%s\" role may COPY from a file."
 msgstr ""
-"для выполнения COPY с чтением файла нужно быть суперпользователем или иметь "
-"права роли pg_read_server_files"
+"Выполнять COPY с чтением файла могут только роли с правами роли \"%s\"."
 
 #. +> 15
 #: commands/copy.c:95
@@ -10499,17 +10506,16 @@ msgstr ""
 
 #. +> 16
 #: commands/copy.c:106
-#, fuzzy, c-format
+#, c-format
 msgid "permission denied to COPY to a file"
-msgstr "нет прав для удаления роли"
+msgstr "нет прав для выполнения COPY с записью в файл"
 
 #. +> 16
 #: commands/copy.c:107
-#, fuzzy, c-format
+#, c-format
 msgid "Only roles with privileges of the \"%s\" role may COPY to a file."
 msgstr ""
-"для выполнения COPY с записью в файл нужно быть суперпользователем или иметь "
-"права роли pg_write_server_files"
+"Выполнять COPY с записью в файл могут только роли с правами роли \"%s\"."
 
 #. +> 16 15 14 13 12 11
 #: commands/copy.c:195
@@ -10592,9 +10598,9 @@ msgstr "в режиме BINARY нельзя указывать NULL"
 
 #. +> 16
 #: commands/copy.c:595
-#, fuzzy, c-format
+#, c-format
 msgid "cannot specify DEFAULT in BINARY mode"
-msgstr "в режиме BINARY нельзя указывать NULL"
+msgstr "в режиме BINARY нельзя указывать DEFAULT"
 
 #. +> 16 15 14 13 12 11
 #: commands/copy.c:617
@@ -10619,10 +10625,10 @@ msgstr ""
 
 #. +> 16
 #: commands/copy.c:640
-#, fuzzy, c-format
+#, c-format
 msgid "COPY default representation cannot use newline or carriage return"
 msgstr ""
-"представление NULL для COPY не может включать символ новой строки или "
+"представление DEFAULT для COPY не может включать символ новой строки или "
 "возврата каретки"
 
 #. +> 16 15 14 13 12 11
@@ -10724,27 +10730,27 @@ msgstr "символ кавычек в CSV не должен присутств�
 
 #. +> 16
 #: commands/copy.c:742
-#, fuzzy, c-format
+#, c-format
 msgid "COPY DEFAULT only available using COPY FROM"
-msgstr "параметр force null для COPY можно использовать только с COPY FROM"
+msgstr "параметр DEFAULT для COPY можно использовать только с COPY FROM"
 
 #. +> 16
 #: commands/copy.c:748
-#, fuzzy, c-format
+#, c-format
 msgid "COPY delimiter must not appear in the DEFAULT specification"
-msgstr "разделитель для COPY не должен присутствовать в представлении NULL"
+msgstr "разделитель для COPY не должен присутствовать в представлении DEFAULT"
 
 #. +> 16
 #: commands/copy.c:755
-#, fuzzy, c-format
+#, c-format
 msgid "CSV quote character must not appear in the DEFAULT specification"
-msgstr "символ кавычек в CSV не должен присутствовать в представлении NULL"
+msgstr "символ кавычек в CSV не должен присутствовать в представлении DEFAULT"
 
 #. +> 16
 #: commands/copy.c:763
 #, c-format
 msgid "NULL specification and DEFAULT specification cannot be the same"
-msgstr ""
+msgstr "представления NULL и DEFAULT не могут быть одинаковыми"
 
 #. +> 16 15 14 13 12
 #: commands/copy.c:825
@@ -10832,7 +10838,7 @@ msgstr "неверный OID в данных COPY"
 #: commands/copyfrom.c:122
 #, c-format
 msgid "COPY %s"
-msgstr ""
+msgstr "COPY %s"
 
 #. +> 16 15
 #: commands/copyfrom.c:130
@@ -11162,15 +11168,15 @@ msgstr "маркер \"конец копии\" испорчен"
 
 #. +> 16
 #: commands/copyfromparse.c:1704 commands/copyfromparse.c:1919
-#, fuzzy, c-format
+#, c-format
 msgid "unexpected default marker in COPY data"
-msgstr "неожиданный конец данных COPY"
+msgstr "неожиданный маркер DEFAULT в данных COPY"
 
 #. +> 16
 #: commands/copyfromparse.c:1705 commands/copyfromparse.c:1920
-#, fuzzy, c-format
+#, c-format
 msgid "Column \"%s\" has no default value."
-msgstr "столбец \"%s\" наследует конфликтующие значения по умолчанию"
+msgstr "Для столбца \"%s\" не определено значение по умолчанию."
 
 #. +> 16 15 14 13 12 11
 #: commands/copyfromparse.c:1852
@@ -11428,21 +11434,21 @@ msgstr "неверная кодировка для сервера: %d"
 
 #. +> 16
 #: commands/dbcommands.c:1049
-#, fuzzy, c-format
+#, c-format
 msgid "invalid LC_COLLATE locale name: \"%s\""
-msgstr "неверное имя локали: \"%s\""
+msgstr "неверное имя локали LC_COLLATE: \"%s\""
 
 #. +> 16
 #: commands/dbcommands.c:1050 commands/dbcommands.c:1056
 #, c-format
 msgid "If the locale name is specific to ICU, use ICU_LOCALE."
-msgstr ""
+msgstr "Если эта локаль свойственна ICU, используйте ICU_LOCALE."
 
 #. +> 16
 #: commands/dbcommands.c:1055
-#, fuzzy, c-format
+#, c-format
 msgid "invalid LC_CTYPE locale name: \"%s\""
-msgstr "неверное имя локали: \"%s\""
+msgstr "неверное имя локали LC_CTYPE: \"%s\""
 
 #. +> 15 14 13 12 11
 #: commands/dbcommands.c:1030 commands/dbcommands.c:1035
@@ -11458,9 +11464,9 @@ msgstr "кодировка \"%s\" не поддерживается провай
 
 #. +> 16
 #: commands/dbcommands.c:1076
-#, fuzzy, c-format
+#, c-format
 msgid "LOCALE or ICU_LOCALE must be specified"
-msgstr "необходимо задать локаль ICU"
+msgstr "необходимо задать LOCALE или ICU_LOCALE"
 
 #. +> 15
 #: commands/dbcommands.c:1055
@@ -11573,22 +11579,22 @@ msgstr ""
 
 #. +> 16
 #: commands/dbcommands.c:1177
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "new ICU collation rules (%s) are incompatible with the ICU collation rules "
 "of the template database (%s)"
 msgstr ""
-"новое правило сортировки (%s) несовместимо с правилом в шаблоне базы данных "
-"(%s)"
+"новые правила сортировки ICU (%s) несовместимы с правилами сортировки в "
+"шаблоне базы данных (%s)"
 
 #. +> 16
 #: commands/dbcommands.c:1179
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Use the same ICU collation rules as in the template database, or use "
 "template0 as template."
 msgstr ""
-"Используйте то же правило сортировки, что и в шаблоне базы данных, или "
+"Используйте те же правила сортировки, что и в шаблоне базы данных, или "
 "выберите в качестве шаблона template0."
 
 #. +> 16 15
@@ -12220,9 +12226,11 @@ msgstr "параметр TIMING оператора EXPLAIN требует ука
 
 #. +> 16
 #: commands/explain.c:251
-#, fuzzy, c-format
+#, c-format
 msgid "EXPLAIN options ANALYZE and GENERIC_PLAN cannot be used together"
-msgstr "параметры %s и %s исключают друг друга"
+msgstr ""
+"параметры ANALYZE и GENERIC_PLAN оператора EXPLAIN нельзя использовать "
+"одновременно"
 
 #. +> 16 15 14 13 12 11
 #: commands/extension.c:177 commands/extension.c:3033
@@ -12557,16 +12565,18 @@ msgstr "расширение \"%s\" не поддерживает SET SCHEMA"
 
 #. +> 16
 #: commands/extension.c:2915
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "cannot SET SCHEMA of extension \"%s\" because other extensions prevent it"
-msgstr "удалить расширение \"%s\" нельзя, так как это модифицируемый объект"
+msgstr ""
+"выполнить SET SCHEMA для расширения \"%s\" нельзя, так как этому "
+"препятствуют другие расширения"
 
 #. +> 16
 #: commands/extension.c:2917
-#, fuzzy, c-format
+#, c-format
 msgid "Extension \"%s\" requests no relocation of extension \"%s\"."
-msgstr "отношение \"%s\" не является секцией отношения \"%s\""
+msgstr "Расширение \"%s\" не допускает перемещения расширения \"%s\"."
 
 #. +> 16 15 14 13 12 11
 #: commands/extension.c:2954
@@ -14990,9 +15000,9 @@ msgstr "нераспознанный параметр подписки: \"%s\""
 
 #. +> 16
 #: commands/subscriptioncmds.c:327 replication/pgoutput/pgoutput.c:398
-#, fuzzy, c-format
+#, c-format
 msgid "unrecognized origin value: \"%s\""
-msgstr "нераспознанное значение \"publish\": \"%s\""
+msgstr "нераспознанное значение origin: \"%s\""
 
 #. +> 16 15
 #: commands/subscriptioncmds.c:350
@@ -15082,9 +15092,9 @@ msgstr[2] "публикации %s не существуют на публику
 
 #. +> 16
 #: commands/subscriptioncmds.c:614
-#, fuzzy, c-format
+#, c-format
 msgid "permission denied to create subscription"
-msgstr "нет доступа к подписке %s"
+msgstr "нет прав для создания подписки"
 
 #. +> 15 14 13 12 11
 #: commands/subscriptioncmds.c:547
@@ -15109,7 +15119,7 @@ msgstr "нет прав на изменение владельца подпис�
 #: commands/subscriptioncmds.c:615
 #, c-format
 msgid "Only roles with privileges of the \"%s\" role may create subscriptions."
-msgstr ""
+msgstr "Создавать подписки могут только роли с правами роли \"%s\"."
 
 #. translator: %s is an SQL ALTER statement
 #. +> 15 14 13 12
@@ -15146,9 +15156,9 @@ msgstr "на сервере публикации создан слот репл�
 
 #. +> 16
 #: commands/subscriptioncmds.c:828
-#, fuzzy, c-format
+#, c-format
 msgid "subscription was created, but is not connected"
-msgstr "для подписки не задан слот репликации"
+msgstr "подписка создана, но не подключена"
 
 #. +> 16
 #: commands/subscriptioncmds.c:829
@@ -15157,6 +15167,8 @@ msgid ""
 "To initiate replication, you must manually create the replication slot, "
 "enable the subscription, and refresh the subscription."
 msgstr ""
+"Чтобы начать репликацию, вы должны вручную создать слот репликации, включить "
+"подписку, а затем обновить её."
 
 #. +> 16 15 14 13 12 11
 #: commands/subscriptioncmds.c:1096 commands/subscriptioncmds.c:1502
@@ -15326,6 +15338,8 @@ msgid ""
 "subscription \"%s\" requested copy_data with origin = NONE but might copy "
 "data that had a different origin"
 msgstr ""
+"для подписки \"%s\" выбран режим copy_data с origin = NONE, но в неё могут "
+"попасть данные из другого источника"
 
 #. +> 16
 #: commands/subscriptioncmds.c:2026
@@ -15337,8 +15351,14 @@ msgid_plural ""
 "The subscription being created subscribes to publications (%s) that contain "
 "tables that are written to by other subscriptions."
 msgstr[0] ""
+"Создаваемая подписка связана с публикацией (%s), содержащей таблицы, в "
+"которые записывают другие подписки."
 msgstr[1] ""
+"Создаваемая подписка связана с публикациями (%s), содержащими таблицы, в "
+"которые записывают другие подписки."
 msgstr[2] ""
+"Создаваемая подписка связана с публикациями (%s), содержащими таблицы, в "
+"которые записывают другие подписки."
 
 #. +> 16
 #: commands/subscriptioncmds.c:2029
@@ -15347,6 +15367,8 @@ msgid ""
 "Verify that initial data copied from the publisher tables did not come from "
 "other origins."
 msgstr ""
+"Убедитесь, что начальные данные, скопированные из таблиц публикации, "
+"поступили не из других источников."
 
 #. +> 16 15
 #: commands/subscriptioncmds.c:2135 replication/logical/tablesync.c:876
@@ -15428,9 +15450,9 @@ msgstr "удалить все публикации из подписки нел�
 
 #. +> 16
 #: commands/subscriptioncmds.c:2345
-#, fuzzy, c-format
+#, c-format
 msgid "%s requires a Boolean value or \"parallel\""
-msgstr "%s требует логическое значение или \"match\""
+msgstr "%s требует логическое значение или \"parallel\""
 
 #. +> 16 15 14 13 12 11
 #: commands/tablecmds.c:246 commands/tablecmds.c:288
@@ -15918,10 +15940,11 @@ msgstr "для дочернего столбца \"%s\" указано гене�
 
 #. +> 16
 #: commands/tablecmds.c:3014 commands/tablecmds.c:3101
-#, fuzzy, c-format
+#, c-format
 msgid "A child table column cannot be generated unless its parent column is."
 msgstr ""
-"Генерируемый столбец не может ссылаться на другой генерируемый столбец."
+"Дочерний столбец может быть генерируемым, только если родительский столбец "
+"является таковым."
 
 #. +> 16 15 14 13 12
 #: commands/tablecmds.c:3147
@@ -15952,9 +15975,9 @@ msgstr ""
 
 #. +> 16
 #: commands/tablecmds.c:3149
-#, fuzzy, c-format
+#, c-format
 msgid "To resolve the conflict, specify a generation expression explicitly."
-msgstr "Для решения конфликта укажите желаемое значение по умолчанию."
+msgstr "Для разрешения конфликта укажите генерирующее выражение явно."
 
 #. +> 16 15 14 13 12 11
 #: commands/tablecmds.c:3153
@@ -17064,9 +17087,9 @@ msgstr "столбец \"%s\" в дочерней таблице должен б
 
 #. +> 16
 #: commands/tablecmds.c:15197
-#, fuzzy, c-format
+#, c-format
 msgid "column \"%s\" in child table must not be a generated column"
-msgstr "столбец \"%s\" в дочерней таблице должен быть генерируемым"
+msgstr "столбец \"%s\" в дочерней таблице должен быть не генерируемым"
 
 #. +> 16 15 14 13 12 11
 #: commands/tablecmds.c:15228
@@ -18875,7 +18898,7 @@ msgstr "нет прав для создания роли"
 #: commands/user.c:320
 #, c-format
 msgid "Only roles with the %s attribute may create roles."
-msgstr ""
+msgstr "Создавать роли могут только роли с атрибутом %s."
 
 #. +> 16
 #: commands/user.c:326 commands/user.c:332 commands/user.c:338
@@ -18883,7 +18906,7 @@ msgstr ""
 #, c-format
 msgid ""
 "Only roles with the %s attribute may create roles with the %s attribute."
-msgstr ""
+msgstr "Создавать роли с атрибутом %s могут только роли с атрибутом %s."
 
 #. +> 16 15 14 13 12 11
 #: commands/user.c:355 commands/user.c:1393 commands/user.c:1400
@@ -18951,22 +18974,22 @@ msgstr "Изменять зарезервированные роли нельз�
 #: commands/user.c:790 commands/user.c:804 commands/user.c:810
 #: commands/user.c:816 commands/user.c:825 commands/user.c:870
 #: commands/user.c:1033 commands/user.c:1044
-#, fuzzy, c-format
+#, c-format
 msgid "permission denied to alter role"
-msgstr "нет прав для создания роли"
+msgstr "нет прав для изменения роли"
 
 #. +> 16
 #: commands/user.c:761 commands/user.c:1034
 #, c-format
 msgid "Only roles with the %s attribute may alter roles with the %s attribute."
-msgstr ""
+msgstr "Изменять роли с атрибутом %s могут только роли с атрибутом %s."
 
 #. +> 16
 #: commands/user.c:767 commands/user.c:805 commands/user.c:811
 #: commands/user.c:817
 #, c-format
 msgid "Only roles with the %s attribute may change the %s attribute."
-msgstr ""
+msgstr "Изменять атрибут %s могут только роли с атрибутом %s."
 
 #. +> 16
 #: commands/user.c:783 commands/user.c:1045
@@ -18975,6 +18998,8 @@ msgid ""
 "Only roles with the %s attribute and the %s option on role \"%s\" may alter "
 "this role."
 msgstr ""
+"Изменять эту роль могут только роли с атрибутом %s и привилегией %s для роли "
+"\"%s\"."
 
 #. +> 16
 #: commands/user.c:791
@@ -18983,12 +19008,14 @@ msgid ""
 "To change another role's password, the current user must have the %s "
 "attribute and the %s option on the role."
 msgstr ""
+"Чтобы сменить пароль другой роли, текущий пользователь должен иметь атрибут "
+"%s и привилегию %s для этой роли."
 
 #. +> 16
 #: commands/user.c:826
 #, c-format
 msgid "Only roles with the %s option on role \"%s\" may add members."
-msgstr ""
+msgstr "Добавлять членов могут только роли с привилегией %s для роли \"%s\"."
 
 #. +> 15 14 13 12 11
 #: commands/user.c:859 commands/user.c:1400 commands/user.c:1573
@@ -19000,7 +19027,7 @@ msgstr "для модификации суперпользователей ну�
 #: commands/user.c:871
 #, c-format
 msgid "The bootstrap user must have the %s attribute."
-msgstr ""
+msgstr "Стартовый пользователь должен иметь атрибут %s."
 
 #. +> 15 14 13 12 11
 #: commands/user.c:989
@@ -19010,15 +19037,15 @@ msgstr "для удаления суперпользователей нужно 
 
 #. +> 16
 #: commands/user.c:1076
-#, fuzzy, c-format
+#, c-format
 msgid "permission denied to alter setting"
-msgstr "нет прав для создания роли"
+msgstr "нет прав для изменения параметров"
 
 #. +> 16
 #: commands/user.c:1077
-#, fuzzy, c-format
+#, c-format
 msgid "Only roles with the %s attribute may alter settings globally."
-msgstr "для глобального изменения параметров нужно быть суперпользователем"
+msgstr "Изменять параметры глобально могут только роли с атрибутом %s."
 
 #. +> 15 14 13 12 11
 #: commands/user.c:896
@@ -19039,6 +19066,8 @@ msgid ""
 "Only roles with the %s attribute and the %s option on the target roles may "
 "drop roles."
 msgstr ""
+"Удалять роли могут только роли с атрибутом %s и с привилегией %s для целевых "
+"ролей."
 
 #. +> 16 15 14 13 12 11
 #: commands/user.c:1127
@@ -19084,7 +19113,7 @@ msgstr "для переименования суперпользователей
 #: commands/user.c:1174
 #, c-format
 msgid "Only roles with the %s attribute may drop roles with the %s attribute."
-msgstr ""
+msgstr "Только роли с атрибутом %s могут удалять роли с атрибутом %s."
 
 #. +> 16
 #: commands/user.c:1180
@@ -19093,6 +19122,8 @@ msgid ""
 "Only roles with the %s attribute and the %s option on role \"%s\" may drop "
 "this role."
 msgstr ""
+"Эту роль могут удалить только роли с атрибутом %s и привилегией %s для роли "
+"\"%s\"."
 
 #. +> 16 15 14 13 12 11
 #: commands/user.c:1306
@@ -19123,7 +19154,7 @@ msgstr "нет прав на переименование роли"
 #, c-format
 msgid ""
 "Only roles with the %s attribute may rename roles with the %s attribute."
-msgstr ""
+msgstr "Только роли с атрибутом %s могут переименовывать роли с атрибутом %s."
 
 #. +> 15 14 13 12 11
 #: commands/user.c:1432
@@ -19138,6 +19169,8 @@ msgid ""
 "Only roles with the %s attribute and the %s option on role \"%s\" may rename "
 "this role."
 msgstr ""
+"Переименовать эту роль могут только роли с атрибутом %s и привилегией %s для "
+"роли \"%s\"."
 
 #. +> 16 15 14 13 12 11
 #: commands/user.c:1461
@@ -19153,9 +19186,9 @@ msgstr "нераспознанный параметр роли \"%s\""
 
 #. +> 16
 #: commands/user.c:1530
-#, fuzzy, c-format
+#, c-format
 msgid "unrecognized value for role option \"%s\": \"%s\""
-msgstr "нераспознанное значение параметра EXPLAIN \"%s\": \"%s\""
+msgstr "нераспознанное значение для параметра роли \"%s\": \"%s\""
 
 #. +> 16 15 14 13 12 11
 #: commands/user.c:1563
@@ -19174,6 +19207,7 @@ msgstr "нет прав на удаление объектов"
 #, c-format
 msgid "Only roles with privileges of role \"%s\" may drop objects owned by it."
 msgstr ""
+"Только роли с правами роли \"%s\" могут удалять принадлежащие ей объекты."
 
 #. +> 16 15 14 13 12 11
 #: commands/user.c:1632 commands/user.c:1643
@@ -19187,12 +19221,15 @@ msgstr "нет прав для переназначения объектов"
 msgid ""
 "Only roles with privileges of role \"%s\" may reassign objects owned by it."
 msgstr ""
+"Только роли с правами роли \"%s\" могут поменять владельца принадлежащих ей "
+"объектов."
 
 #. +> 16
 #: commands/user.c:1644
 #, c-format
 msgid "Only roles with privileges of role \"%s\" may reassign objects to it."
 msgstr ""
+"Только роли с правами роли \"%s\" могут назначать её владельцем объектов."
 
 #. +> 16 15 14
 #: commands/user.c:1740
@@ -19220,23 +19257,23 @@ msgstr "роль \"%s\" не включена в роль \"%s\""
 
 #. +> 16
 #: commands/user.c:1793 commands/user.c:1819
-#, fuzzy, c-format
+#, c-format
 msgid "%s option cannot be granted back to your own grantor"
-msgstr "привилегию назначения прав нельзя вернуть тому, кто назначил её вам"
+msgstr "привилегию %s нельзя вернуть тому, кто назначил её вам"
 
 #. +> 16
 #: commands/user.c:1896
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "role \"%s\" has already been granted membership in role \"%s\" by role \"%s\""
-msgstr "роль \"%s\" уже включена в роль \"%s\""
+msgstr "роль \"%s\" уже назначена членом роли \"%s\" ролью \"%s\""
 
 #. +> 16
 #: commands/user.c:2031
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "role \"%s\" has not been granted membership in role \"%s\" by role \"%s\""
-msgstr "роль \"%s\" не включена в роль \"%s\""
+msgstr "роль \"%s\" не была назначена членом роли \"%s\" ролью \"%s\""
 
 #. +> 16 15 14
 #: commands/user.c:2131
@@ -19246,21 +19283,22 @@ msgstr "роль \"%s\" не может содержать явных члено
 
 #. +> 16
 #: commands/user.c:2142 commands/user.c:2165
-#, fuzzy, c-format
+#, c-format
 msgid "permission denied to grant role \"%s\""
-msgstr "нет прав установить роль \"%s\""
+msgstr "нет прав для назначения членства в роли \"%s\""
 
 #. +> 16
 #: commands/user.c:2144
 #, c-format
 msgid "Only roles with the %s attribute may grant roles with the %s attribute."
 msgstr ""
+"Только роли с атрибутом %s могут назначать членов в ролях с атрибутов %s."
 
 #. +> 16
 #: commands/user.c:2149 commands/user.c:2172
-#, fuzzy, c-format
+#, c-format
 msgid "permission denied to revoke role \"%s\""
-msgstr "нет прав установить роль \"%s\""
+msgstr "нет прав для лишения членства в роли \"%s\""
 
 #. +> 16
 #: commands/user.c:2151
@@ -19268,24 +19306,27 @@ msgstr "нет прав установить роль \"%s\""
 msgid ""
 "Only roles with the %s attribute may revoke roles with the %s attribute."
 msgstr ""
+"Только роли с атрибутом %s могут лишать членства в ролях с атрибутом %s."
 
 #. +> 16
 #: commands/user.c:2167
 #, c-format
 msgid "Only roles with the %s option on role \"%s\" may grant this role."
 msgstr ""
+"Только роли с привилегией %s для роли \"%s\" могут назначать членов в ней."
 
 #. +> 16
 #: commands/user.c:2174
 #, c-format
 msgid "Only roles with the %s option on role \"%s\" may revoke this role."
 msgstr ""
+"Только роли с привилегией %s для роли \"%s\" могут лишать членства в ней."
 
 #. +> 16
 #: commands/user.c:2254 commands/user.c:2263
-#, fuzzy, c-format
+#, c-format
 msgid "permission denied to grant privileges as role \"%s\""
-msgstr "нет прав установить роль \"%s\""
+msgstr "нет прав для назначения прав доступа роли \"%s\""
 
 #. +> 16
 #: commands/user.c:2256
@@ -19293,12 +19334,13 @@ msgstr "нет прав установить роль \"%s\""
 msgid ""
 "Only roles with privileges of role \"%s\" may grant privileges as this role."
 msgstr ""
+"Только роли с правами роли \"%s\" могут назначать права от имени этой роли."
 
 #. +> 16
 #: commands/user.c:2265
-#, fuzzy, c-format
+#, c-format
 msgid "The grantor must have the %s option on role \"%s\"."
-msgstr "требуется право admin для роли \"%s\""
+msgstr "Праводатель должен иметь привилегию %s для роли \"%s\"."
 
 #. +> 15 14 13 12 11
 #: commands/user.c:1408 commands/user.c:1581
@@ -19308,9 +19350,9 @@ msgstr "требуется право admin для роли \"%s\""
 
 #. +> 16
 #: commands/user.c:2273
-#, fuzzy, c-format
+#, c-format
 msgid "permission denied to revoke privileges granted by role \"%s\""
-msgstr "нет прав установить роль \"%s\""
+msgstr "нет прав для отзыва прав доступа, назначенных ролью \"%s\""
 
 #. +> 16
 #: commands/user.c:2275
@@ -19319,6 +19361,7 @@ msgid ""
 "Only roles with privileges of role \"%s\" may revoke privileges granted by "
 "this role."
 msgstr ""
+"Только роли с правами роли \"%s\" могут отзывать права от имени этой роли."
 
 #. +> 16 15 14 13 12 11
 #: commands/user.c:2498 utils/adt/acl.c:1309
@@ -19337,12 +19380,16 @@ msgstr "Используйте CASCADE, чтобы отозвать и их."
 #, c-format
 msgid "\"vacuum_buffer_usage_limit\" must be 0 or between %d kB and %d kB"
 msgstr ""
+"значение \"vacuum_buffer_usage_limit\" должно быть нулевым или лежать в "
+"диапазоне от %d kB до %d kB"
 
 #. +> 16
 #: commands/vacuum.c:209
-#, fuzzy, c-format
+#, c-format
 msgid "BUFFER_USAGE_LIMIT option must be 0 or between %d kB and %d kB"
-msgstr "точность NUMERIC %d должна быть между 1 и %d"
+msgstr ""
+"параметр BUFFER_USAGE_LIMIT должен быть нулевым или лежать в диапазоне от %d "
+"kB до %d kB"
 
 #. +> 16 15 14 13 12
 #: commands/vacuum.c:219
@@ -19379,7 +19426,7 @@ msgstr "VACUUM FULL нельзя выполнять в параллельном 
 #: commands/vacuum.c:329
 #, c-format
 msgid "BUFFER_USAGE_LIMIT cannot be specified for VACUUM FULL"
-msgstr ""
+msgstr "параметр BUFFER_USAGE_LIMIT нельзя задавать для VACUUM FULL"
 
 #. +> 16 15 14 13 12 11
 #: commands/vacuum.c:343
@@ -19401,15 +19448,15 @@ msgstr "VACUUM FULL работает только с PROCESS_TOAST"
 
 #. +> 16
 #: commands/vacuum.c:371
-#, fuzzy, c-format
+#, c-format
 msgid "ONLY_DATABASE_STATS cannot be specified with a list of tables"
-msgstr "OLD TABLE нельзя задать несколько раз"
+msgstr "ONLY_DATABASE_STATS нельзя задавать со списком таблиц"
 
 #. +> 16
 #: commands/vacuum.c:380
-#, fuzzy, c-format
+#, c-format
 msgid "ONLY_DATABASE_STATS cannot be specified with other VACUUM options"
-msgstr "параметр \"%s\" нельзя задать с другими параметрами"
+msgstr "ONLY_DATABASE_STATS нельзя задавать с другими параметрами VACUUM"
 
 #. +> 16 15 14 13 12 11
 #: commands/vacuum.c:515
@@ -19466,15 +19513,15 @@ msgstr ""
 
 #. +> 16
 #: commands/vacuum.c:733
-#, fuzzy, c-format
+#, c-format
 msgid "permission denied to vacuum \"%s\", skipping it"
-msgstr "нет доступа к столбцу %s"
+msgstr "нет доступа для очистки отношения \"%s\", оно пропускается"
 
 #. +> 16
 #: commands/vacuum.c:746
-#, fuzzy, c-format
+#, c-format
 msgid "permission denied to analyze \"%s\", skipping it"
-msgstr "нет прав установить роль \"%s\""
+msgstr "нет доступа для анализа отношения \"%s\", оно пропускается"
 
 #. +> 16 15 14 13 12 11
 #: commands/vacuum.c:824 commands/vacuum.c:921
@@ -19513,7 +19560,7 @@ msgstr ""
 #: commands/vacuum.c:1161
 #, c-format
 msgid "cutoff for removing and freezing tuples is far in the past"
-msgstr ""
+msgstr "момент отсечки для удаления и замораживания кортежей далеко в прошлом"
 
 #. +> 16 15 14 13 12 11
 #: commands/vacuum.c:1162 commands/vacuum.c:1167
@@ -19530,9 +19577,9 @@ msgstr ""
 
 #. +> 16
 #: commands/vacuum.c:1166
-#, fuzzy, c-format
+#, c-format
 msgid "cutoff for freezing multixacts is far in the past"
-msgstr "самый старый multixact далеко в прошлом"
+msgstr "момент отсечки для замораживания мультитранзакций далеко в прошлом"
 
 #. +> 15 14 13 12 11
 #: commands/vacuum.c:1042
@@ -21144,9 +21191,9 @@ msgstr "неверный параметр \"%s\""
 
 #. +> 16
 #: foreign/foreign.c:649
-#, fuzzy, c-format
+#, c-format
 msgid "Perhaps you meant the option \"%s\"."
-msgstr "Возможно, предполагалась ссылка на столбец \"%s.%s\"."
+msgstr "Возможно, предполагался параметр \"%s\"."
 
 #. +> 16 15
 #: foreign/foreign.c:651
@@ -21465,9 +21512,9 @@ msgstr ""
 
 #. +> 16
 #: libpq/auth.c:315
-#, fuzzy, c-format
+#, c-format
 msgid "Connection matched file \"%s\" line %d: \"%s\""
-msgstr "Подключение соответствует строке %d в pg_hba.conf: \"%s\""
+msgstr "Подключение соответствует строке %2$d в \"%1$s\": \"%s\""
 
 #. +> 15 14 13 12 11
 #: libpq/auth.c:319
@@ -22602,9 +22649,9 @@ msgstr ""
 
 #. +> 16
 #: libpq/be-secure-openssl.c:1152
-#, fuzzy, c-format
+#, c-format
 msgid "Client certificate verification failed at depth %d: %s."
-msgstr "пользователь \"%s\" не прошёл проверку подлинности (по сертификату)"
+msgstr "Ошибка при проверке клиентского сертификата на глубине %d: %s."
 
 #. +> 16
 #: libpq/be-secure-openssl.c:1189
@@ -22613,6 +22660,8 @@ msgid ""
 "Failed certificate data (unverified): subject \"%s\", serial number %s, "
 "issuer \"%s\"."
 msgstr ""
+"Данные ошибочного сертификата (непроверенные): субъект \"%s\", серийный "
+"номер %s, издатель \"%s\"."
 
 #. +> 16
 #: libpq/be-secure-openssl.c:1190
@@ -22770,16 +22819,15 @@ msgstr ""
 
 #. +> 16
 #: libpq/hba.c:462
-#, fuzzy, c-format
+#, c-format
 msgid "skipping missing authentication file \"%s\""
-msgstr "отсутствующий файл конфигурации \"%s\" пропускается"
+msgstr "отсутствующий файл настройки аутентификации \"%s\" пропускается"
 
 #. +> 16
 #: libpq/hba.c:614
-#, fuzzy, c-format
+#, c-format
 msgid "could not open file \"%s\": maximum nesting depth exceeded"
-msgstr ""
-"открыть файл конфигурации \"%s\" не удалось: превышен предел вложенности"
+msgstr "открыть файл \"%s\" не удалось: превышен предел вложенности"
 
 #. +> 14
 #: libpq/hba.c:1042
@@ -22822,9 +22870,9 @@ msgstr ""
 
 #. +> 16
 #: libpq/hba.c:1292
-#, fuzzy, c-format
+#, c-format
 msgid "missing entry at end of line"
-msgstr "отсутствует запись в файле \"%s\" в конце строки %d"
+msgstr "отсутствует запись в конце строки"
 
 #. +> 15 14 13 12 11
 #: libpq/hba.c:903
@@ -23644,9 +23692,10 @@ msgstr "  -h ИМЯ             имя или IP-адрес для приёма 
 
 #. +> 16
 #: main/main.c:340
-#, fuzzy, c-format
+#, c-format
 msgid "  -i                 enable TCP/IP connections (deprecated)\n"
-msgstr "  -i                 включить соединения TCP/IP\n"
+msgstr ""
+"  -i                 включить соединения TCP/IP (устаревший параметр)\n"
 
 #. +> 16 15 14 13 12 11
 #: main/main.c:341
@@ -23751,11 +23800,11 @@ msgstr "  -t pa|pl|ex        показать время каждого запр
 
 #. +> 16
 #: main/main.c:359
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "  -T                 send SIGABRT to all backend processes if one dies\n"
 msgstr ""
-"  -T                 посылать сигнал SIGSTOP всем серверным процессам\n"
+"  -T                 посылать сигнал SIGABRT всем серверным процессам\n"
 "                     при отключении одного\n"
 
 #. +> 15 14 13 12 11
@@ -26102,6 +26151,7 @@ msgstr ""
 #, c-format
 msgid "cannot use non-string types with explicit FORMAT JSON clause"
 msgstr ""
+"с явным предложением FORMAT JSON можно использовать только строковые типы"
 
 #. +> 16
 #: parser/parse_expr.c:3335
@@ -26983,6 +27033,8 @@ msgstr "Возможно, предполагалась ссылка на псе�
 #, c-format
 msgid "To reference that table, you must mark this subquery with LATERAL."
 msgstr ""
+"Чтобы обратиться к этой таблице, нужно добавить для данного подзапроса "
+"пометку LATERAL."
 
 #. +> 16 15 14 13 12 11
 #: parser/parse_relation.c:3650
@@ -26992,19 +27044,19 @@ msgstr "таблица \"%s\" отсутствует в предложении F
 
 #. +> 16
 #: parser/parse_relation.c:3690
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "There are columns named \"%s\", but they are in tables that cannot be "
 "referenced from this part of the query."
 msgstr ""
-"Столбец \"%s\" есть в таблице \"%s\", но на него нельзя ссылаться из этой "
-"части запроса."
+"Имеются столбцы с именем \"%s\", но они относятся к таблицам, к которым "
+"нельзя обратиться из этой части запроса."
 
 #. +> 16
 #: parser/parse_relation.c:3692
 #, c-format
 msgid "Try using a table-qualified name."
-msgstr ""
+msgstr "Попробуйте использовать имя с указанием таблицы."
 
 #. +> 16 15 14 13 12 11
 #: parser/parse_relation.c:3700
@@ -27021,12 +27073,15 @@ msgstr ""
 #, c-format
 msgid "To reference that column, you must mark this subquery with LATERAL."
 msgstr ""
+"Чтобы обратиться к этому столбцу, нужно добавить для данного подзапроса "
+"пометку LATERAL."
 
 #. +> 16
 #: parser/parse_relation.c:3705
 #, c-format
 msgid "To reference that column, you must use a table-qualified name."
 msgstr ""
+"Чтобы обратиться к этому столбцу, нужно использовать имя с указанием таблицы."
 
 #. +> 16 15 14 13 12 11
 #: parser/parse_relation.c:3725
@@ -28419,13 +28474,15 @@ msgstr ""
 #: postmaster/pgarch.c:791 postmaster/pgarch.c:830
 #, c-format
 msgid "both archive_command and archive_library set"
-msgstr ""
+msgstr "archive_command и archive_library заданы одновременно"
 
 #. +> 16
 #: postmaster/pgarch.c:792 postmaster/pgarch.c:831
 #, c-format
 msgid "Only one of archive_command, archive_library may be set."
 msgstr ""
+"Только один из параметров archive_command, archive_library может иметь "
+"значение."
 
 #. +> 16 15
 #: postmaster/pgarch.c:809
@@ -28468,13 +28525,13 @@ msgstr "%s: неверный аргумент: \"%s\"\n"
 
 #. +> 16
 #: postmaster/postmaster.c:923
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "%s: superuser_reserved_connections (%d) plus reserved_connections (%d) must "
 "be less than max_connections (%d)\n"
 msgstr ""
-"%s: значение superuser_reserved_connections (%d) должно быть меньше "
-"max_connections (%d)\n"
+"%s: значение superuser_reserved_connections (%d) плюс reserved_connections "
+"(%d) должно быть меньше max_connections (%d)\n"
 
 #. +> 11
 #: postmaster/postmaster.c:918
@@ -28593,9 +28650,9 @@ msgstr "%s: не удалось записать внешний файл PID \"%
 #. translator: %s is a configuration file
 #. +> 16
 #: postmaster/postmaster.c:1405 utils/init/postinit.c:221
-#, fuzzy, c-format
+#, c-format
 msgid "could not load %s"
-msgstr "не удалось загрузить локаль \"%s\""
+msgstr "не удалось загрузить %s"
 
 #. +> 15 14 13 12 11
 #: postmaster/postmaster.c:1420 utils/init/postinit.c:220
@@ -28659,9 +28716,9 @@ msgstr "сбой select() в postmaster'е: %m"
 #. translator: %s is SIGKILL or SIGABRT
 #. +> 16
 #: postmaster/postmaster.c:1887
-#, fuzzy, c-format
+#, c-format
 msgid "issuing %s to recalcitrant children"
-msgstr "неподчиняющимся потомкам посылается SIGKILL"
+msgstr "неподчиняющимся потомкам посылается %s"
 
 # well-spelled: неподчиняющимся
 #. +> 15 14
@@ -29362,15 +29419,16 @@ msgstr ""
 #. +> 16
 #: replication/libpqwalreceiver/libpqwalreceiver.c:197
 #: replication/libpqwalreceiver/libpqwalreceiver.c:280
-#, fuzzy, c-format
+#, c-format
 msgid "password is required"
-msgstr "данные REDO не требуются"
+msgstr "требуется пароль"
 
 #. +> 16
 #: replication/libpqwalreceiver/libpqwalreceiver.c:198
 #, c-format
 msgid "Non-superuser cannot connect if the server does not request a password."
 msgstr ""
+"Только суперпользователи могут подключаться к серверу, не требующему пароль."
 
 #. +> 16
 #: replication/libpqwalreceiver/libpqwalreceiver.c:199
@@ -29379,6 +29437,8 @@ msgid ""
 "Target server's authentication method must be changed, or set "
 "password_required=false in the subscription parameters."
 msgstr ""
+"Необходимо сменить метод аутентификации на целевом сервере или задать "
+"password_required=false в параметрах подписки."
 
 #. +> 16 15 14 13 12 11
 #: replication/libpqwalreceiver/libpqwalreceiver.c:211
@@ -29397,6 +29457,8 @@ msgstr "ошибочный синтаксис строки подключени�
 #, c-format
 msgid "Non-superusers must provide a password in the connection string."
 msgstr ""
+"Пользователи, не являющиеся суперпользователями, должны задавать пароль в "
+"строке соединения."
 
 #. +> 16 15 14 13 12 11
 #: replication/libpqwalreceiver/libpqwalreceiver.c:307
@@ -29532,61 +29594,65 @@ msgstr "неожиданный режим канала"
 
 #. +> 16
 #: replication/logical/applyparallelworker.c:719
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "logical replication parallel apply worker for subscription \"%s\" has "
 "finished"
 msgstr ""
-"запускается применяющий процесс логической репликации для подписки \"%s\""
+"параллельный применяющий процесс логической репликации для подписки \"%s\" "
+"завершён"
 
 #. +> 16
 #: replication/logical/applyparallelworker.c:825
-#, fuzzy, c-format
+#, c-format
 msgid "lost connection to the logical replication apply worker"
-msgstr "потеряно подключение к параллельному исполнителю"
+msgstr "потеряна связь с применяющим процессом логической репликации"
 
 #. +> 16
 #: replication/logical/applyparallelworker.c:1027
 #: replication/logical/applyparallelworker.c:1029
-#, fuzzy
 msgid "logical replication parallel apply worker"
-msgstr "процесс запуска логической репликации запущен"
+msgstr "параллельный применяющий процесс логической репликации"
 
 #. +> 16
 #: replication/logical/applyparallelworker.c:1043
-#, fuzzy, c-format
+#, c-format
 msgid "logical replication parallel apply worker exited due to error"
-msgstr "завершение обработчика логической репликации из-за тайм-аута"
+msgstr ""
+"параллельный применяющий процесс логической репликации завершён из-за ошибки"
 
 #. +> 16
 #: replication/logical/applyparallelworker.c:1130
 #: replication/logical/applyparallelworker.c:1303
-#, fuzzy, c-format
+#, c-format
 msgid "lost connection to the logical replication parallel apply worker"
-msgstr "потеряно подключение к параллельному исполнителю"
+msgstr ""
+"потеряна связь с параллельным применяющим процессом логическим репликации"
 
 #. +> 16
 #: replication/logical/applyparallelworker.c:1183
-#, fuzzy, c-format
+#, c-format
 msgid "could not send data to shared-memory queue"
-msgstr "не удалось передать кортеж в очередь в разделяемой памяти"
+msgstr "не удалось передать данные в очередь в разделяемой памяти"
 
 #. +> 16
 #: replication/logical/applyparallelworker.c:1218
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "logical replication apply worker will serialize the remaining changes of "
 "remote transaction %u to a file"
 msgstr ""
-"применяющий процесс логической репликации для подписки %u не будет запущен, "
-"так как подписка была удалена при старте"
+"применяющий процесс логической репликации будет сериализовывать остальное "
+"содержимое удалённой транзакции %u в файл"
 
 #. +> 16
 #: replication/logical/decode.c:180 replication/logical/logical.c:140
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "logical decoding on standby requires wal_level >= logical on the primary"
-msgstr "для логического декодирования требуется wal_level >= logical"
+msgstr ""
+"для логического декодирования на ведомом сервере требуется wal_level >= "
+"logical на ведущем"
 
 #. +> 16 15 14 13 12 11
 #: replication/logical/launcher.c:331
@@ -29621,9 +29687,9 @@ msgstr "процесс запуска логической репликации 
 #: storage/lmgr/lock.c:2787 storage/lmgr/lock.c:4172 storage/lmgr/lock.c:4237
 #: storage/lmgr/lock.c:4587 storage/lmgr/predicate.c:2413
 #: storage/lmgr/predicate.c:2428 storage/lmgr/predicate.c:3825
-#, fuzzy, c-format
+#, c-format
 msgid "You might need to increase %s."
-msgstr "Возможно, вам нужно выполнить initdb."
+msgstr "Возможно, следует увеличить параметр %s."
 
 #. +> 15 14 13 12 11
 #: replication/logical/launcher.c:366
@@ -29717,12 +29783,10 @@ msgstr ""
 
 #. +> 16
 #: replication/logical/logical.c:543
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "This slot has been invalidated because it was conflicting with recovery."
-msgstr ""
-"Этот слот был аннулирован из-за превышения максимального зарезервированного "
-"размера."
+msgstr "Этот слот был аннулирован из-за конфликта с восстановлением."
 
 #. +> 16 15 14 13 12 11
 #: replication/logical/logical.c:608
@@ -29982,10 +30046,12 @@ msgstr "имя источника репликации \"%s\" зарезерви
 
 #. +> 16
 #: replication/logical/origin.c:1284
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Origin names \"%s\", \"%s\", and names starting with \"pg_\" are reserved."
-msgstr "Имена источников, начинающиеся с \"pg_\", зарезервированы."
+msgstr ""
+"Имена источников \"%s\", \"%s\", а также имена, начинающиеся с \"pg_\", "
+"зарезервированы."
 
 #. +> 15 14 13 12
 #: replication/logical/origin.c:1253
@@ -30311,11 +30377,12 @@ msgstr ""
 
 #. +> 16
 #: replication/logical/worker.c:499
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "logical replication parallel apply worker for subscription \"%s\" will stop"
 msgstr ""
-"запускается применяющий процесс логической репликации для подписки \"%s\""
+"параллельный применяющий процесс логической репликации для подписки \"%s\" "
+"будет остановлен"
 
 #. +> 16
 #: replication/logical/worker.c:501
@@ -30324,6 +30391,9 @@ msgid ""
 "Cannot handle streamed replication transactions using parallel apply workers "
 "until all tables have been synchronized."
 msgstr ""
+"Параллельные применяющие процессы не могут использоваться для обработки "
+"транзакций репликации, передаваемых в потоке, пока все таблицы не "
+"синхронизированы."
 
 #. +> 13 12 11
 #: replication/logical/worker.c:597
@@ -30406,13 +30476,13 @@ msgstr "завершение обработчика логической реп�
 
 #. +> 16
 #: replication/logical/worker.c:3907
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "logical replication worker for subscription \"%s\" will stop because the "
 "subscription was removed"
 msgstr ""
-"применяющий процесс логической репликации для подписки \"%s\" будет "
-"остановлен, так как подписка была удалена"
+"процесс логической репликации для подписки \"%s\" будет остановлен, так как "
+"подписка была удалена"
 
 #. +> 15 14 13 12 11
 #: replication/logical/worker.c:3059
@@ -30436,13 +30506,13 @@ msgstr ""
 
 #. +> 16
 #: replication/logical/worker.c:3920
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "logical replication worker for subscription \"%s\" will stop because the "
 "subscription was disabled"
 msgstr ""
-"применяющий процесс логической репликации для подписки \"%s\" будет "
-"остановлен, так как подписка была отключена"
+"процесс логической репликации для подписки \"%s\" будет остановлен, так как "
+"подписка была отключена"
 
 #. +> 15 14 13 12 11
 #: replication/logical/worker.c:3070
@@ -30466,23 +30536,23 @@ msgstr ""
 
 #. +> 16
 #: replication/logical/worker.c:3951
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "logical replication parallel apply worker for subscription \"%s\" will stop "
 "because of a parameter change"
 msgstr ""
-"применяющий процесс логической репликации для подписки \"%s\" будет "
-"перезапущен вследствие изменения параметров"
+"параллельный применяющий процесс логической репликации для подписки \"%s\" "
+"будет остановлен вследствие изменения параметров"
 
 #. +> 16
 #: replication/logical/worker.c:3955
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "logical replication worker for subscription \"%s\" will restart because of a "
 "parameter change"
 msgstr ""
-"применяющий процесс логической репликации для подписки \"%s\" будет "
-"перезапущен вследствие изменения параметров"
+"процесс логической репликации для подписки \"%s\" будет перезапущен "
+"вследствие изменения параметров"
 
 #. +> 15 14
 #: replication/logical/worker.c:3096
@@ -30516,13 +30586,13 @@ msgstr ""
 
 #. +> 16
 #: replication/logical/worker.c:4478
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "logical replication worker for subscription %u will not start because the "
 "subscription was removed during startup"
 msgstr ""
-"применяющий процесс логической репликации для подписки %u не будет запущен, "
-"так как подписка была удалена при старте"
+"процесс логической репликации для подписки %u не будет запущен, так как "
+"подписка была удалена при старте"
 
 #. +> 15 14 13 12 11
 #: replication/logical/worker.c:3645
@@ -30536,13 +30606,13 @@ msgstr ""
 
 #. +> 16
 #: replication/logical/worker.c:4493
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "logical replication worker for subscription \"%s\" will not start because "
 "the subscription was disabled during startup"
 msgstr ""
-"применяющий процесс логической репликации для подписки \"%s\" не будет "
-"запущен, так как подписка была отключена при старте"
+"процесс логической репликации для подписки \"%s\" не будет запущен, так как "
+"подписка была отключена при старте"
 
 #. +> 15 14 13 12 11
 #: replication/logical/worker.c:3657
@@ -30645,14 +30715,14 @@ msgstr ""
 
 #. +> 16
 #: replication/logical/worker.c:4948
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "processing remote data for replication origin \"%s\" during message type "
 "\"%s\" for replication target relation \"%s.%s\" in transaction %u"
 msgstr ""
 "обработка внешних данных для источника репликации \"%s\" в контексте "
 "сообщения типа \"%s\" для целевого отношения репликации \"%s.%s\" в "
-"транзакции %u завершена в %X/%X"
+"транзакции %u"
 
 #. +> 16 15
 #: replication/logical/worker.c:4955
@@ -30668,7 +30738,7 @@ msgstr ""
 
 #. +> 16
 #: replication/logical/worker.c:4966
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "processing remote data for replication origin \"%s\" during message type "
 "\"%s\" for replication target relation \"%s.%s\" column \"%s\" in "
@@ -30676,7 +30746,7 @@ msgid ""
 msgstr ""
 "обработка внешних данных для источника репликации \"%s\" в контексте "
 "сообщения типа \"%s\" для целевого отношения репликации \"%s.%s\", столбца "
-"\"%s\", в транзакции %u завершена в %X/%X"
+"\"%s\", в транзакции %u"
 
 #. +> 14 13 12 11
 #: replication/logical/worker.c:518
@@ -30720,11 +30790,12 @@ msgstr "неверный синтаксис publication_names"
 
 #. +> 16
 #: replication/pgoutput/pgoutput.c:443
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "client sent proto_version=%d but server only supports protocol %d or lower"
 msgstr ""
-"клиент передал proto_version=%d, но мы поддерживаем только протокол %d и ниже"
+"клиент передал proto_version=%d, но сервер поддерживает только протокол %d и "
+"ниже"
 
 #. +> 15 14 13 12 11
 #: replication/pgoutput/pgoutput.c:426
@@ -30735,7 +30806,7 @@ msgstr ""
 
 #. +> 16
 #: replication/pgoutput/pgoutput.c:449
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "client sent proto_version=%d but server only supports protocol %d or higher"
 msgstr ""
@@ -30765,13 +30836,13 @@ msgstr ""
 
 #. +> 16
 #: replication/pgoutput/pgoutput.c:475
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "requested proto_version=%d does not support parallel streaming, need %d or "
 "higher"
 msgstr ""
-"запрошенная версия proto_version=%d не поддерживает потоковую передачу, "
-"требуется версия %d или выше"
+"запрошенная версия proto_version=%d не поддерживает параллельную потоковую "
+"передачу, требуется версия %d или выше"
 
 #. +> 16 15 14
 #: replication/pgoutput/pgoutput.c:480
@@ -30875,9 +30946,9 @@ msgstr "слоты репликации можно использовать, т�
 
 #. +> 16
 #: replication/slot.c:1162
-#, fuzzy, c-format
+#, c-format
 msgid "permission denied to use replication slots"
-msgstr "нет доступа к публикации %s"
+msgstr "нет прав для использования слотов репликации"
 
 #. +> 15 14 13 12 11
 #: replication/slot.c:1145
@@ -30891,30 +30962,31 @@ msgstr ""
 #: replication/slot.c:1163
 #, c-format
 msgid "Only roles with the %s attribute may use replication slots."
-msgstr ""
+msgstr "Использовать слоты репликации могут только роли с атрибутом %s."
 
 #. +> 16
 #: replication/slot.c:1271
 #, c-format
 msgid "The slot's restart_lsn %X/%X exceeds the limit by %llu byte."
 msgid_plural "The slot's restart_lsn %X/%X exceeds the limit by %llu bytes."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Позиция restart_lsn %X/%X слота превысила предел на %llu Б."
+msgstr[1] "Позиция restart_lsn %X/%X слота превысила предел на %llu Б."
+msgstr[2] "Позиция restart_lsn %X/%X слота превысила предел на %llu Б."
 
 #. +> 16
 #: replication/slot.c:1279
-#, fuzzy, c-format
+#, c-format
 msgid "The slot conflicted with xid horizon %u."
-msgstr "Ключ %s конфликтует с существующим ключом %s."
+msgstr "Слот конфликтует с горизонтом xid %u."
 
 #. +> 16
 #: replication/slot.c:1284
-#, fuzzy
 msgid ""
 "Logical decoding on standby requires wal_level >= logical on the primary "
 "server."
-msgstr "для логического декодирования требуется wal_level >= logical"
+msgstr ""
+"Для логического декодирования на ведомом сервере требуется wal_level >= "
+"logical на ведущем."
 
 #. +> 16 15 14 13
 #: replication/slot.c:1292
@@ -30924,9 +30996,9 @@ msgstr "завершение процесса %d для освобождения
 
 #. +> 16
 #: replication/slot.c:1294
-#, fuzzy, c-format
+#, c-format
 msgid "invalidating obsolete replication slot \"%s\""
-msgstr "завершение процесса %d для освобождения слота репликации \"%s\""
+msgstr "аннулирование устаревшего слота репликации \"%s\""
 
 #. +> 15 14 13
 #: replication/slot.c:1368
@@ -31234,9 +31306,9 @@ msgstr ""
 
 #. +> 16
 #: replication/walreceiver.c:640 replication/walreceiver.c:1066
-#, fuzzy, c-format
+#, c-format
 msgid "could not close WAL segment %s: %m"
-msgstr "не удалось закрыть сегмент журнала %s: %m"
+msgstr "не удалось закрыть сегмент WAL %s: %m"
 
 #. +> 15 14 13 12 11
 #: replication/walreceiver.c:619 replication/walreceiver.c:1045
@@ -31252,9 +31324,9 @@ msgstr "загрузка файла истории для линии време�
 
 #. +> 16
 #: replication/walreceiver.c:954
-#, fuzzy, c-format
+#, c-format
 msgid "could not write to WAL segment %s at offset %u, length %lu: %m"
-msgstr "не удалось записать в сегмент журнала %s (смещение %u, длина %lu): %m"
+msgstr "не удалось записать в сегмент WAL %s (смещение %u, длина %lu): %m"
 
 #. +> 15 14 13 12 11
 #: replication/walreceiver.c:933
@@ -31383,9 +31455,9 @@ msgstr ""
 #. translator: %s is a CREATE_REPLICATION_SLOT statement
 #. +> 16
 #: replication/walsender.c:1116
-#, fuzzy, c-format
+#, c-format
 msgid "%s must be called in a read-only transaction"
-msgstr "%s требуется выполнять внутри транзакции"
+msgstr "%s требуется выполнять внутри транзакции только для чтения"
 
 #. translator: %s is a CREATE_REPLICATION_SLOT statement
 #. +> 16 15 14 13 12
@@ -31533,9 +31605,9 @@ msgstr "Воспользуйтесь триггерами."
 
 #. +> 16
 #: rewrite/rewriteDefine.c:319
-#, fuzzy, c-format
+#, c-format
 msgid "relation \"%s\" cannot have ON SELECT rules"
-msgstr "к отношению \"%s\" не могут применяться правила"
+msgstr "к отношению \"%s\" не могут применяться правила ON SELECT"
 
 #. +> 16 15 14 13 12 11
 #: rewrite/rewriteDefine.c:329
@@ -32279,9 +32351,10 @@ msgstr ""
 
 #. +> 16
 #: storage/file/buffile.c:632
-#, fuzzy, c-format
+#, c-format
 msgid "could not read from file set \"%s\": read only %zu of %zu bytes"
-msgstr "не удалось прочитать временный файл (прочитано байт: %zu из %zu)"
+msgstr ""
+"не удалось прочитать файловый набор \"%s\" (прочитано байт: %zu из %zu)"
 
 #. +> 16 15 14 13
 #: storage/file/buffile.c:634
@@ -32348,9 +32421,9 @@ msgstr "недостаточно дескрипторов файлов для з
 
 #. +> 16
 #: storage/file/fd.c:1028
-#, fuzzy, c-format
+#, c-format
 msgid "System allows %d, server needs at least %d."
-msgstr "Система выделяет: %d, а требуется минимум: %d."
+msgstr "Система может выделить: %d, серверу требуется минимум: %d."
 
 #. +> 15 14 13 12 11
 #: storage/file/fd.c:1058
@@ -32493,9 +32566,9 @@ msgstr ""
 
 #. +> 16
 #: storage/file/fd.c:3897
-#, fuzzy, c-format
+#, c-format
 msgid "debug_io_direct is not supported on this platform."
-msgstr "огромные страницы на этой платформе не поддерживаются"
+msgstr "Параметр debug_io_direct на этой платформе не поддерживается."
 
 #. +> 16
 #: storage/file/fd.c:3944
@@ -32503,12 +32576,16 @@ msgstr "огромные страницы на этой платформе не 
 msgid ""
 "debug_io_direct is not supported for WAL because XLOG_BLCKSZ is too small"
 msgstr ""
+"режим debug_io_direct не поддерживается для WAL из-за слишком маленького "
+"размера XLOG_BLCKSZ"
 
 #. +> 16
 #: storage/file/fd.c:3951
 #, c-format
 msgid "debug_io_direct is not supported for data because BLCKSZ is too small"
 msgstr ""
+"режим debug_io_direct не поддерживается для данных из-за слишком маленького "
+"размера BLCKSZ"
 
 #. +> 16 15
 #: storage/file/reinit.c:145
@@ -32642,9 +32719,9 @@ msgstr "база \"%s\" используется подготовленными 
 #. +> 16
 #: storage/ipc/procarray.c:3828 storage/ipc/procarray.c:3837
 #: storage/ipc/signalfuncs.c:230 storage/ipc/signalfuncs.c:237
-#, fuzzy, c-format
+#, c-format
 msgid "permission denied to terminate process"
-msgstr "нет прав для создания роли"
+msgstr "нет прав для завершения процесса"
 
 #. +> 15 14 13 12 11
 #: storage/ipc/procarray.c:3878 storage/ipc/signalfuncs.c:226
@@ -32659,6 +32736,8 @@ msgid ""
 "Only roles with the %s attribute may terminate processes of roles with the "
 "%s attribute."
 msgstr ""
+"Только роли с атрибутом %s могут завершать процессы, принадлежащие ролям с "
+"атрибутом %s."
 
 #. +> 16
 #: storage/ipc/procarray.c:3838 storage/ipc/signalfuncs.c:238
@@ -32667,6 +32746,8 @@ msgid ""
 "Only roles with privileges of the role whose process is being terminated or "
 "with privileges of the \"%s\" role may terminate this process."
 msgstr ""
+"Только роли с правами роли, которой принадлежит процесс, или с правами роли "
+"\"%s\" могут завершить этот процесс."
 
 #. +> 15 14 13 12 11
 #: storage/ipc/procarray.c:3885 storage/ipc/signalfuncs.c:231
@@ -32680,11 +32761,11 @@ msgstr ""
 
 #. +> 16
 #: storage/ipc/procsignal.c:420
-#, fuzzy, c-format
+#, c-format
 msgid "still waiting for backend with PID %d to accept ProcSignalBarrier"
 msgstr ""
 "продолжается ожидание получения сигнала ProcSignalBarrier обслуживающим "
-"процессом с PID %lu"
+"процессом с PID %d"
 
 #. +> 15
 #: storage/ipc/procsignal.c:419
@@ -32770,9 +32851,9 @@ msgstr "отправить сигнал процессу %d не удалось:
 
 #. +> 16
 #: storage/ipc/signalfuncs.c:124 storage/ipc/signalfuncs.c:131
-#, fuzzy, c-format
+#, c-format
 msgid "permission denied to cancel query"
-msgstr "нет прав для создания роли"
+msgstr "нет прав для отмены запроса"
 
 #. +> 15 14 13 12 11
 #: storage/ipc/signalfuncs.c:124
@@ -32787,6 +32868,7 @@ msgid ""
 "Only roles with the %s attribute may cancel queries of roles with the %s "
 "attribute."
 msgstr ""
+"Только роли с атрибутом %s могут отменять запросы ролей с атрибутом %s."
 
 #. +> 15 14 13 12 11
 #: storage/ipc/signalfuncs.c:129
@@ -32805,6 +32887,8 @@ msgid ""
 "Only roles with privileges of the role whose query is being canceled or with "
 "privileges of the \"%s\" role may cancel this query."
 msgstr ""
+"Только роли с правами роли, которая выполняет запрос, или с правами роли "
+"\"%s\" могут отменить этот запрос."
 
 #. +> 16 15 14
 #: storage/ipc/signalfuncs.c:174
@@ -32903,9 +32987,8 @@ msgstr "конфликт восстановления при получении 
 
 #. +> 16
 #: storage/ipc/standby.c:1505
-#, fuzzy
 msgid "recovery conflict on replication slot"
-msgstr "конфликт восстановления при получении снимка"
+msgstr "конфликт восстановления со слотом репликации"
 
 #. +> 16 15 14
 #: storage/ipc/standby.c:1508
@@ -33084,9 +33167,9 @@ msgstr "рекомендательная блокировка [%u,%u,%u,%u]"
 
 #. +> 16
 #: storage/lmgr/lmgr.c:1246
-#, fuzzy, c-format
+#, c-format
 msgid "remote transaction %u of subscription %u of database %u"
-msgstr "расширение отношения %u базы данных %u"
+msgstr "удалённая транзакция %u подписки %u в базе данных %u"
 
 #. +> 16 15 14 13 12 11
 #: storage/lmgr/lmgr.c:1253
@@ -33365,9 +33448,9 @@ msgstr "не удалось увеличить файл \"%s\" (записано
 
 #. +> 16
 #: storage/smgr/md.c:591
-#, fuzzy, c-format
+#, c-format
 msgid "could not extend file \"%s\" with FileFallocate(): %m"
-msgstr "не удалось увеличить файл \"%s\": %m"
+msgstr "не удалось увеличить файл \"%s\" посредством FileFallocate(): %m"
 
 #. +> 16 15 14 13 12 11
 #: storage/smgr/md.c:782
@@ -33661,10 +33744,11 @@ msgstr ""
 
 #. +> 16
 #: tcop/postgres.c:2530
-#, fuzzy, c-format
+#, c-format
 msgid "User was using a logical replication slot that must be invalidated."
 msgstr ""
-"слот логической репликации нельзя использовать для физической репликации"
+"Пользователь использовал слот логической репликации, который должен быть "
+"аннулирован."
 
 #. +> 16 15 14 13 12 11
 #: tcop/postgres.c:2536
@@ -34023,15 +34107,15 @@ msgstr "для выполнения CHECKPOINT нужно быть суперп�
 #. translator: %s is name of a SQL command, eg CHECKPOINT
 #. +> 16
 #: tcop/utility.c:954
-#, fuzzy, c-format
+#, c-format
 msgid "permission denied to execute %s command"
-msgstr "нет доступа к последовательности %s"
+msgstr "нет прав для выполнения команды %s"
 
 #. +> 16
 #: tcop/utility.c:956
-#, fuzzy, c-format
+#, c-format
 msgid "Only roles with privileges of the \"%s\" role may execute this command."
-msgstr "Вместо этого установите права для типа элемента."
+msgstr "Выполнять эту команду могут только роли с правами роли \"%s\"."
 
 #. +> 16 15 14 13 12 11
 #: tsearch/dict_ispell.c:52 tsearch/dict_thesaurus.c:616
@@ -34666,9 +34750,9 @@ msgstr "нужно быть членом роли \"%s\""
 
 #. +> 16
 #: utils/adt/acl.c:5023
-#, fuzzy, c-format
+#, c-format
 msgid "must be able to SET ROLE \"%s\""
-msgstr "нужно быть членом роли \"%s\""
+msgstr "нужны права для выполнения SET ROLE \"%s\""
 
 #. +> 16 15 14 13 12 11
 #: utils/adt/array_userfuncs.c:102 utils/adt/array_userfuncs.c:489
@@ -34764,9 +34848,9 @@ msgstr "начальная позиция не может быть NULL"
 
 #. +> 16
 #: utils/adt/array_userfuncs.c:1688
-#, fuzzy, c-format
+#, c-format
 msgid "sample size must be between 0 and %d"
-msgstr "процент выборки должен задаваться числом от 0 до 100"
+msgstr "размер выборки должен задаваться числом от 0 до %d"
 
 #. +> 16 15 14 13 12 11
 #: utils/adt/arrayfuncs.c:273 utils/adt/arrayfuncs.c:287
@@ -35416,12 +35500,12 @@ msgstr "Неверная единица измерения величины: \"%
 
 #. +> 16
 #: utils/adt/dbsize.c:839
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Valid units are \"bytes\", \"B\", \"kB\", \"MB\", \"GB\", \"TB\", and \"PB\"."
 msgstr ""
-"Допустимые единицы измерения: \"bytes\", \"kB\", \"MB\", \"GB\", \"TB\" и "
-"\"PB\"."
+"Допустимые единицы измерения: \"bytes\", \"B\", \"kB\", \"MB\", \"GB\", "
+"\"TB\" и \"PB\"."
 
 #. +> 15
 #: utils/adt/dbsize.c:815
@@ -36028,9 +36112,9 @@ msgstr "абсолютный путь недопустим"
 
 #. +> 16
 #: utils/adt/genfile.c:89
-#, fuzzy, c-format
+#, c-format
 msgid "path must be in or below the data directory"
-msgstr "путь должен указывать в текущий или вложенный каталог"
+msgstr "путь должен указывать на каталог данных или вложенный в него"
 
 #. +> 15 14 13 12 11
 #: utils/adt/genfile.c:89
@@ -36280,9 +36364,9 @@ msgstr "значение null не может быть ключом объект
 
 #. +> 16
 #: utils/adt/json.c:1189 utils/adt/json.c:1352
-#, fuzzy, c-format
+#, c-format
 msgid "duplicate JSON object key value: %s"
-msgstr "Данные содержат дублирующиеся ключи."
+msgstr "повторяющийся ключ в объекте JSON: %s"
 
 #. +> 16 15 14 13 12 11
 #: utils/adt/json.c:1297 utils/adt/jsonb.c:1233
@@ -36421,9 +36505,9 @@ msgstr "число элементов массива jsonb превышает п
 
 #. +> 16
 #: utils/adt/jsonb_util.c:1673 utils/adt/jsonb_util.c:1693
-#, fuzzy, c-format
+#, c-format
 msgid "total size of jsonb array elements exceeds the maximum of %d bytes"
-msgstr "общий размер элементов массива jsonb превышает предел (%u байт)"
+msgstr "общий размер элементов массива jsonb превышает предел (%d байт)"
 
 #. +> 15 14 13 12 11
 #: utils/adt/jsonb_util.c:1667 utils/adt/jsonb_util.c:1687
@@ -36434,9 +36518,9 @@ msgstr "общий размер элементов массива jsonb прев
 #. +> 16
 #: utils/adt/jsonb_util.c:1754 utils/adt/jsonb_util.c:1789
 #: utils/adt/jsonb_util.c:1809
-#, fuzzy, c-format
+#, c-format
 msgid "total size of jsonb object elements exceeds the maximum of %d bytes"
-msgstr "общий размер элементов объекта jsonb превышает предел (%u байт)"
+msgstr "общий размер элементов объекта jsonb превышает предел (%d байт)"
 
 #. +> 15 14 13 12 11
 #: utils/adt/jsonb_util.c:1748 utils/adt/jsonb_util.c:1783
@@ -37513,9 +37597,10 @@ msgstr "Обновите пакет с системной библиотекой
 
 #. +> 16
 #: utils/adt/pg_locale.c:1406
-#, fuzzy, c-format
+#, c-format
 msgid "could not open collator for locale \"%s\" with rules \"%s\": %s"
-msgstr "не удалось открыть сортировщик для локали \"%s\": %s"
+msgstr ""
+"не удалось открыть сортировщик для локали \"%s\" с правилами \"%s\": %s"
 
 #. +> 16 15 14 13 12 11
 #: utils/adt/pg_locale.c:1417 utils/adt/pg_locale.c:2831
@@ -37647,9 +37732,9 @@ msgstr "не удалось сгенерировать ключ сортиров
 
 #. +> 16
 #: utils/adt/pg_locale.c:2474
-#, fuzzy, c-format
+#, c-format
 msgid "could not get language from locale \"%s\": %s"
-msgstr "не удалось получить отображаемое название локали \"%s\": %s"
+msgstr "не удалось определить язык для локали \"%s\": %s"
 
 #. +> 16 15 14 13 12 11
 #: utils/adt/pg_locale.c:2495 utils/adt/pg_locale.c:2511
@@ -37696,21 +37781,23 @@ msgstr "не удалось получить из названия локали 
 
 #. +> 16
 #: utils/adt/pg_locale.c:2863
-#, fuzzy, c-format
+#, c-format
 msgid "could not get language from ICU locale \"%s\": %s"
-msgstr "не удалось получить отображаемое название локали \"%s\": %s"
+msgstr "не удалось определить язык для локали ICU \"%s\": %s"
 
 #. +> 16
 #: utils/adt/pg_locale.c:2865 utils/adt/pg_locale.c:2894
-#, fuzzy, c-format
+#, c-format
 msgid "To disable ICU locale validation, set the parameter \"%s\" to \"%s\"."
-msgstr "при назначении параметру \"%s\" значения \"%s\""
+msgstr ""
+"Чтобы отключить проверку локалей ICU, установите для параметра \"%s\" "
+"значение \"%s\"."
 
 #. +> 16
 #: utils/adt/pg_locale.c:2892
 #, c-format
 msgid "ICU locale \"%s\" has unknown language \"%s\""
-msgstr ""
+msgstr "для локали ICU \"%s\" получен неизвестный язык \"%s\""
 
 #. +> 16 15 14 13 12 11
 #: utils/adt/pg_locale.c:3073
@@ -37760,13 +37847,13 @@ msgstr "запрошен сброс неизвестного счётчика: \
 
 #. +> 16
 #: utils/adt/pgstatfuncs.c:1775
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Target must be \"archiver\", \"bgwriter\", \"io\", \"recovery_prefetch\", or "
 "\"wal\"."
 msgstr ""
-"Допустимый счётчик: \"archiver\", \"bgwriter\", \"recovery_prefetch\" или "
-"\"wal\"."
+"Допустимые счётчики: \"archiver\", \"bgwriter\", \"io\", "
+"\"recovery_prefetch\" и \"wal\"."
 
 #. +> 15
 #: utils/adt/pgstatfuncs.c:2116
@@ -39185,9 +39272,10 @@ msgstr "в кешированном плане не должен изменят�
 
 #. +> 16
 #: utils/cache/relcache.c:3741
-#, fuzzy, c-format
+#, c-format
 msgid "heap relfilenumber value not set when in binary upgrade mode"
-msgstr "значение relfilenode для кучи не задано в режиме двоичного обновления"
+msgstr ""
+"значение relfilenumber для кучи не задано в режиме двоичного обновления"
 
 #. +> 15
 #: utils/cache/relcache.c:3754
@@ -39197,10 +39285,11 @@ msgstr "значение relfilenode для кучи не задано в реж
 
 #. +> 16
 #: utils/cache/relcache.c:3749
-#, fuzzy, c-format
+#, c-format
 msgid "unexpected request for new relfilenumber in binary upgrade mode"
 msgstr ""
-"неожиданный запрос нового значения relfilenode в режиме двоичного обновления"
+"неожиданный запрос нового значения relfilenumber в режиме двоичного "
+"обновления"
 
 #. +> 15
 #: utils/cache/relcache.c:3762
@@ -39297,9 +39386,9 @@ msgstr "ЛОВУШКА: Исключительное условие: невер�
 
 #. +> 16
 #: utils/error/assert.c:40
-#, fuzzy, c-format
+#, c-format
 msgid "TRAP: failed Assert(\"%s\"), File: \"%s\", Line: %d, PID: %d\n"
-msgstr "ЛОВУШКА: %s(\"%s\", файл: \"%s\", строка: %d, PID: %d)\n"
+msgstr "ЛОВУШКА: нарушение Assert(\"%s\"), файл: \"%s\", строка: %d, PID: %d\n"
 
 #. +> 15 14
 #: utils/error/assert.c:42
@@ -39943,10 +40032,12 @@ msgstr ""
 
 #. +> 16
 #: utils/init/postinit.c:285
-#, fuzzy, c-format
+#, c-format
 msgid ""
 " GSS (authenticated=%s, encrypted=%s, delegated_credentials=%s, principal=%s)"
-msgstr " GSS (аутентификация=%s, шифрование=%s, принципал=%s)"
+msgstr ""
+" GSS (аутентификация=%s, шифрование=%s, делегированное_удостоверение=%s, "
+"принципал=%s)"
 
 #. +> 16 15 14 13 12
 #: utils/init/postinit.c:286 utils/init/postinit.c:287
@@ -39974,9 +40065,10 @@ msgstr "да"
 
 #. +> 16
 #: utils/init/postinit.c:292
-#, fuzzy, c-format
+#, c-format
 msgid " GSS (authenticated=%s, encrypted=%s, delegated_credentials=%s)"
-msgstr " GSS (аутентификация=%s, шифрование=%s, принципал=%s)"
+msgstr ""
+" GSS (аутентификация=%s, шифрование=%s, делегированное_удостоверение=%s)"
 
 #. +> 15 14 13 12
 #: utils/init/postinit.c:284
@@ -40133,11 +40225,11 @@ msgstr ""
 
 #. +> 16
 #: utils/init/postinit.c:949
-#, fuzzy, c-format
+#, c-format
 msgid "remaining connection slots are reserved for roles with the %s attribute"
 msgstr ""
-"оставшиеся слоты подключений зарезервированы для подключений "
-"суперпользователя (не для репликации)"
+"оставшиеся слоты подключений зарезервированы для подключений ролей с "
+"атрибутом %s"
 
 #. +> 15 14 13 12 11
 #: utils/init/postinit.c:885
@@ -40151,25 +40243,25 @@ msgstr ""
 
 #. +> 16
 #: utils/init/postinit.c:955
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "remaining connection slots are reserved for roles with privileges of the "
 "\"%s\" role"
 msgstr ""
-"оставшиеся слоты подключений зарезервированы для подключений "
-"суперпользователя (не для репликации)"
+"оставшиеся слоты подключений зарезервированы для подключений ролей с правами "
+"роли \"%s\""
 
 #. +> 16
 #: utils/init/postinit.c:967
-#, fuzzy, c-format
+#, c-format
 msgid "permission denied to start WAL sender"
-msgstr "нет прав на переименование роли"
+msgstr "нет прав для запуска процесса, передающего WAL"
 
 #. +> 16
 #: utils/init/postinit.c:968
 #, c-format
 msgid "Only roles with the %s attribute may start a WAL sender process."
-msgstr ""
+msgstr "Только роли с атрибутом %s могут запускать процессы, передающие WAL."
 
 #. +> 16 15 14 13 12 11
 #: utils/init/postinit.c:1038
@@ -40197,9 +40289,9 @@ msgstr "Подкаталог базы данных \"%s\" отсутствует
 
 #. +> 16
 #: utils/init/usercontext.c:43
-#, fuzzy, c-format
+#, c-format
 msgid "role \"%s\" cannot SET ROLE to \"%s\""
-msgstr "Версия \"%s\" не может быть выше \"%s\""
+msgstr "роль \"%s\" не может переключиться на \"%s\""
 
 #. +> 16 15 14 13 12 11
 #: utils/mb/conv.c:522 utils/mb/conv.c:733
@@ -40629,15 +40721,15 @@ msgstr ""
 
 #. +> 16
 #: utils/misc/guc.c:3561
-#, fuzzy, c-format
+#, c-format
 msgid "parameter \"%s\" cannot be reset"
-msgstr "параметр \"%s\" нельзя установить"
+msgstr "параметр \"%s\" нельзя сбросить"
 
 #. +> 16
 #: utils/misc/guc.c:3568
-#, fuzzy, c-format
+#, c-format
 msgid "parameter \"%s\" cannot be set locally in functions"
-msgstr "параметр \"%s\" нельзя задать после установления соединения"
+msgstr "параметр \"%s\" нельзя задавать локально в функциях"
 
 #. +> 15 14 13 12
 #: utils/misc/guc.c:4053
@@ -40653,16 +40745,16 @@ msgstr "Показывает правило классификации симв�
 
 #. +> 16
 #: utils/misc/guc.c:4212 utils/misc/guc.c:4259 utils/misc/guc.c:5266
-#, fuzzy, c-format
+#, c-format
 msgid "permission denied to examine \"%s\""
-msgstr "нет прав для создания отношения \"%s.%s\""
+msgstr "нет прав для просмотра параметра \"%s\""
 
 #. +> 16
 #: utils/misc/guc.c:4213 utils/misc/guc.c:4260 utils/misc/guc.c:5267
 #, c-format
 msgid ""
 "Only roles with privileges of the \"%s\" role may examine this parameter."
-msgstr ""
+msgstr "Просматривать этот параметр могут только роли с правами роли \"%s\"."
 
 #. +> 16 15
 #: utils/misc/guc.c:4496
@@ -40774,9 +40866,8 @@ msgstr "Подключения и аутентификация / Парамет�
 
 #. +> 16
 #: utils/misc/guc_tables.c:668
-#, fuzzy
 msgid "Connections and Authentication / TCP Settings"
-msgstr "Подключения и аутентификация / Параметры подключений"
+msgstr "Подключения и аутентификация / Параметры TCP"
 
 #. +> 16 15 14 13 12 11
 #: utils/misc/guc_tables.c:670
@@ -41161,6 +41252,8 @@ msgid ""
 "Enables the planner's ability to produce plans that provide presorted input "
 "for ORDER BY / DISTINCT aggregate functions."
 msgstr ""
+"Включает в планировщике возможность формировать планы, подающие ранее "
+"сортированные данные на вход агрегирующим функциям с ORDER BY / DISTINCT."
 
 #. +> 16
 #: utils/misc/guc_tables.c:1000
@@ -41169,6 +41262,10 @@ msgid ""
 "aggregate functions with an ORDER BY / DISTINCT clause.  When disabled, "
 "implicit sorts are always performed during execution."
 msgstr ""
+"Разрешает планировщику строить планы, в которых на вход агрегирующим "
+"функциям с предложением ORDER BY / DISTINCT подаются ранее сортированные "
+"данные. Когда этот параметр отключён, во время выполнения всегда неявно "
+"производится сортировка."
 
 #. +> 16 15 14
 #: utils/misc/guc_tables.c:1012
@@ -41388,11 +41485,13 @@ msgstr "Удалять временные файлы после аварии о�
 #: utils/misc/guc_tables.c:1268
 msgid "Send SIGABRT not SIGQUIT to child processes after backend crash."
 msgstr ""
+"Посылать дочерним процессам SIGABRT, а не SIGQUIT при сбое серверного "
+"процесса."
 
 #. +> 16
 #: utils/misc/guc_tables.c:1278
 msgid "Send SIGABRT not SIGKILL to stuck child processes."
-msgstr ""
+msgstr "Посылать SIGABRT, а не SIGKILL зависшим дочерним процессам."
 
 #. +> 16 15 14 13 12 11
 #: utils/misc/guc_tables.c:1289
@@ -41699,10 +41798,8 @@ msgstr ""
 
 #. +> 16
 #: utils/misc/guc_tables.c:1727
-#, fuzzy
 msgid "Sets whether GSSAPI delegation should be accepted from the client."
-msgstr ""
-"Включает регистронезависимую обработку имён пользователей Kerberos и GSSAPI."
+msgstr "Разрешает принимать от клиентов делегированные учётные данные GSSAPI."
 
 #. +> 16 15 14 13 12 11
 #: utils/misc/guc_tables.c:1737
@@ -42049,12 +42146,12 @@ msgstr ""
 
 #. +> 16
 #: utils/misc/guc_tables.c:2198
-#, fuzzy
 msgid ""
 "Sets the number of connection slots reserved for roles with privileges of "
 "pg_use_reserved_connections."
 msgstr ""
-"Определяет, сколько слотов подключений забронировано для суперпользователей."
+"Определяет, сколько слотов подключений забронировано для ролей с правом "
+"pg_use_reserved_connections."
 
 #. +> 16 15 14
 #: utils/misc/guc_tables.c:2209
@@ -42069,7 +42166,7 @@ msgstr "Задаёт количество буферов в разделяемо
 #. +> 16
 #: utils/misc/guc_tables.c:2235
 msgid "Sets the buffer pool size for VACUUM, ANALYZE, and autovacuum."
-msgstr ""
+msgstr "Задаёт размер пула буферов для операций VACUUM, ANALYZE и автоочистки."
 
 #. +> 16 15
 #: utils/misc/guc_tables.c:2246
@@ -42355,15 +42452,15 @@ msgstr "Задаёт предельное число блокировок на �
 
 #. +> 16
 #: utils/misc/guc_tables.c:2599
-#, fuzzy
 msgid ""
 "The shared lock table is sized on the assumption that at most "
 "max_locks_per_transaction objects per server process or prepared transaction "
 "will need to be locked at any one time."
 msgstr ""
 "Размер разделяемой таблицы блокировок выбирается из предположения, что в "
-"один момент времени потребуется заблокировать не больше чем "
-"max_locks_per_transaction * max_connections различных объектов."
+"один момент времени потребуется заблокировать не более "
+"max_locks_per_transaction объектов для одного серверного процесса или "
+"подготовленной транзакции."
 
 #. +> 15 14 13 12 11
 #: utils/misc/guc.c:2761
@@ -42383,15 +42480,15 @@ msgstr "Задаёт предельное число предикатных бл
 
 #. +> 16
 #: utils/misc/guc_tables.c:2611
-#, fuzzy
 msgid ""
 "The shared predicate lock table is sized on the assumption that at most "
 "max_pred_locks_per_transaction objects per server process or prepared "
 "transaction will need to be locked at any one time."
 msgstr ""
 "Размер разделяемой таблицы предикатных блокировок выбирается из "
-"предположения, что в один момент времени потребуется заблокировать не больше "
-"чем max_pred_locks_per_transaction * max_connections различных объектов."
+"предположения, что в один момент времени потребуется заблокировать не более "
+"max_pred_locks_per_transaction объектов для одного серверного процесса или "
+"подготовленной транзакции."
 
 #. +> 15 14 13 12 11
 #: utils/misc/guc.c:2773
@@ -42767,11 +42864,10 @@ msgstr ""
 
 #. +> 16
 #: utils/misc/guc_tables.c:3047
-#, fuzzy
 msgid "Maximum number of parallel apply workers per subscription."
 msgstr ""
-"Задаёт максимально возможное число процессов синхронизации таблиц для одной "
-"подписки."
+"Задаёт максимально возможное число параллельных применяющих процессов для "
+"одной подписки."
 
 #. +> 16 15
 #: utils/misc/guc_tables.c:3057
@@ -43092,9 +43188,8 @@ msgstr "При 0 эта функциональность отключается.
 
 #. +> 16
 #: utils/misc/guc_tables.c:3499
-#, fuzzy
 msgid "Sets the iteration count for SCRAM secret generation."
-msgstr "Задаёт отправное значение для генератора случайных чисел."
+msgstr "Задаёт количество итераций для формирования секрета SCRAM."
 
 #. +> 16 15 14 13 12 11
 #: utils/misc/guc_tables.c:3519
@@ -43503,6 +43598,8 @@ msgid ""
 "Sets whether a CREATEROLE user automatically grants the role to themselves, "
 "and with which options."
 msgstr ""
+"Определяет, будет ли пользователь CREATEROLE автоматически включать себя в "
+"создаваемую роль, и с какими параметрами."
 
 #. +> 16 15 14 13 12 11
 #: utils/misc/guc_tables.c:4015
@@ -43824,7 +43921,7 @@ msgstr "Записывать в журнал стек в случае ошибо
 #. +> 16
 #: utils/misc/guc_tables.c:4543
 msgid "Use direct I/O for file access."
-msgstr ""
+msgstr "Использовать прямой ввод/вывод для работы с файлами."
 
 #. +> 16 15 14 13 12 11
 #: utils/misc/guc_tables.c:4563
@@ -43904,7 +44001,7 @@ msgstr "Задаёт формат отображения для внутренн
 #. +> 16
 #: utils/misc/guc_tables.c:4659
 msgid "Log level for reporting invalid ICU locale strings."
-msgstr ""
+msgstr "Уровень протоколирования сообщений о некорректных строках локалей ICU."
 
 #. +> 16 15 14 13 12 11
 #: utils/misc/guc_tables.c:4669
@@ -44042,9 +44139,8 @@ msgstr "Прочитывать WAL наперёд для вычисления е
 
 #. +> 16
 #: utils/misc/guc_tables.c:4891
-#, fuzzy
 msgid "Forces the planner's use parallel query nodes."
-msgstr "Разрешает планировщику использовать планы параллельного добавления."
+msgstr "Принудительно включает в планировщике узлы параллельного выполнения."
 
 #. +> 15 14 13 12 11
 #: utils/misc/guc.c:5047
@@ -44058,6 +44154,9 @@ msgid ""
 "the planner to generate plans that contain nodes that perform tuple "
 "communication between workers and the main process."
 msgstr ""
+"Это может быть полезно для тестирования инфраструктуры параллельного "
+"выполнения, так как планировщик будет строить планы с передачей кортежей "
+"между параллельными исполнителями и основным процессом."
 
 #. +> 16 15 14 13 12 11
 #: utils/misc/guc_tables.c:4904
@@ -44102,7 +44201,7 @@ msgstr ""
 #. +> 16
 #: utils/misc/guc_tables.c:4960
 msgid "Controls when to replicate or apply each change."
-msgstr ""
+msgstr "Определяет, когда реплицировать или применять каждое изменение."
 
 #. +> 16
 #: utils/misc/guc_tables.c:4961
@@ -44112,6 +44211,11 @@ msgid ""
 "and notifies the parallel apply workers to read and apply them at the end of "
 "the transaction."
 msgstr ""
+"На стороне публикации этот параметр определяет выбор между потоковой "
+"передачей и сериализацией в логическом декодировании для каждого изменения. "
+"На стороне подписки он позволяет включить сериализацию всех изменений в "
+"файлы и уведомления применяющих процессов о необходимости прочитать и "
+"применить изменения в конце транзакции."
 
 #. +> 14 13 12 11
 #: utils/misc/guc.c:8499
@@ -45090,21 +45194,18 @@ msgstr ""
 
 #. +> 16
 #: jsonpath_scan.l:174
-#, fuzzy
 msgid "invalid Unicode escape sequence"
-msgstr "неверное значение спецкода Unicode"
+msgstr "неверная последовательность спецкодов Unicode"
 
 #. +> 16
 #: jsonpath_scan.l:180
-#, fuzzy
 msgid "invalid hexadecimal character sequence"
-msgstr "неверная шестнадцатеричная цифра: \"%c\""
+msgstr "неверная последовательность шестнадцатеричных цифр"
 
 #. +> 16
 #: jsonpath_scan.l:195
-#, fuzzy
 msgid "unexpected end after backslash"
-msgstr "неожиданный конец строки"
+msgstr "неожиданный конец строки после обратной косой черты"
 
 #. +> 16 15 14 13 12 11
 #: jsonpath_scan.l:201 repl_scanner.l:209 scan.l:741
@@ -45113,15 +45214,13 @@ msgstr "незавершённая строка в кавычках"
 
 #. +> 16
 #: jsonpath_scan.l:228
-#, fuzzy
 msgid "unexpected end of comment"
-msgstr "неожиданный конец строки"
+msgstr "неожиданный конец комментария"
 
 #. +> 16
 #: jsonpath_scan.l:319
-#, fuzzy
 msgid "invalid numeric literal"
-msgstr "неверный указатель Datum"
+msgstr "неверная числовая строка"
 
 #. +> 16 15
 #: jsonpath_scan.l:325 jsonpath_scan.l:331 jsonpath_scan.l:337 scan.l:1049
@@ -45145,9 +45244,8 @@ msgstr "%s в строке jsonpath (примерное положение: \"%s
 
 #. +> 16
 #: jsonpath_scan.l:557
-#, fuzzy
 msgid "invalid input"
-msgstr "неверный запрос"
+msgstr "некорректные входные данные"
 
 #. +> 16
 #: jsonpath_scan.l:583
@@ -45156,9 +45254,9 @@ msgstr "неверная шестнадцатеричная цифра"
 
 #. +> 16
 #: jsonpath_scan.l:614
-#, fuzzy, c-format
+#, c-format
 msgid "could not convert Unicode to server encoding"
-msgstr "не удалось закодировать ключ сервера"
+msgstr "не удалось преобразовать символ Unicode в серверную кодировку"
 
 #. +> 16 15 14 13 12 11
 #: repl_gram.y:301 repl_gram.y:333
@@ -45256,21 +45354,18 @@ msgstr "мусорное содержимое после параметра"
 
 #. +> 16
 #: scan.l:1021
-#, fuzzy
 msgid "invalid hexadecimal integer"
-msgstr "неверная шестнадцатеричная цифра: \"%c\""
+msgstr "неверное шестнадцатеричное целое"
 
 #. +> 16
 #: scan.l:1025
-#, fuzzy
 msgid "invalid octal integer"
-msgstr "неверный указатель Datum"
+msgstr "неверное восьмеричное целое"
 
 #. +> 16
 #: scan.l:1029
-#, fuzzy
 msgid "invalid binary integer"
-msgstr "неверный исполняемый файл \"%s\""
+msgstr "неверное двоичное целое"
 
 #. translator: %s is typically the translation of "syntax error"
 #. +> 16 15 14 13 12 11

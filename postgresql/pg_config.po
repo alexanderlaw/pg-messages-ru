@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: pg_config (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2023-08-28 08:23+0300\n"
-"PO-Revision-Date: 2023-08-28 17:48+0300\n"
+"PO-Revision-Date: 2023-08-29 10:19+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -98,9 +98,9 @@ msgstr "не удалось найти запускаемый файл \"%s\""
 
 #. +> 16
 #: ../../common/exec.c:250
-#, fuzzy, c-format
+#, c-format
 msgid "could not resolve path \"%s\" to absolute form: %m"
-msgstr "не удалось найти запускаемый файл \"%s\""
+msgstr "не удалось преобразовать относительный путь \"%s\" в абсолютный: %m"
 
 #. +> 16 15 14
 #: ../../common/exec.c:412

@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: pg_verifybackup (PostgreSQL) 13\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2023-08-28 08:23+0300\n"
-"PO-Revision-Date: 2023-08-28 17:52+0300\n"
+"PO-Revision-Date: 2023-08-30 12:42+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -150,12 +150,10 @@ msgstr ""
 
 #. +> 16
 #: ../../common/jsonapi.c:1187
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Unicode escape value could not be translated to the server's encoding %s."
-msgstr ""
-"Спецкоды Unicode для значений выше 007F можно использовать только с "
-"кодировкой UTF8."
+msgstr "Спецкод Unicode нельзя преобразовать в серверную кодировку %s."
 
 #. +> 16 15 14 13
 #: ../../common/jsonapi.c:1190
@@ -579,7 +577,7 @@ msgstr "не удалось разобрать WAL для линии време�
 #: pg_verifybackup.c:965
 #, c-format
 msgid "%*s/%s kB (%d%%) verified"
-msgstr ""
+msgstr "%*s/%s КБ (%d%%) проверено"
 
 #. +> 16 15 14 13
 #: pg_verifybackup.c:982

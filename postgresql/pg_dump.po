@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: pg_dump (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2023-08-28 08:23+0300\n"
-"PO-Revision-Date: 2023-08-28 18:18+0300\n"
+"PO-Revision-Date: 2023-08-30 14:18+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -88,7 +88,7 @@ msgstr "значение параметра сжатия \"%s\" должно б�
 #: ../../common/compression.c:331
 #, c-format
 msgid "value for compression option \"%s\" must be a Boolean value"
-msgstr ""
+msgstr "значение параметра сжатия \"%s\" должно быть булевским"
 
 #. +> 16
 #: ../../common/compression.c:379
@@ -116,7 +116,7 @@ msgstr "для алгоритма сжатия \"%s\" нельзя задать 
 #: ../../common/compression.c:408
 #, c-format
 msgid "compression algorithm \"%s\" does not support long-distance mode"
-msgstr ""
+msgstr "алгоритм сжатия \"%s\" не поддерживает режим большой дистанции"
 
 #. +> 15 14 13 12
 #: ../../common/exec.c:149 ../../common/exec.c:266 ../../common/exec.c:312
@@ -186,9 +186,9 @@ msgstr "не удалось найти запускаемый файл \"%s\""
 
 #. +> 16
 #: ../../common/exec.c:250
-#, fuzzy, c-format
+#, c-format
 msgid "could not resolve path \"%s\" to absolute form: %m"
-msgstr "не удалось переподключиться к базе: %s"
+msgstr "не удалось преобразовать относительный путь \"%s\" в абсолютный: %m"
 
 #. +> 16 15 14
 #: ../../common/exec.c:412 parallel.c:1609
@@ -859,9 +859,9 @@ msgstr "не удалось создать контекст распаковки
 
 #. +> 16
 #: compress_lz4.c:180
-#, fuzzy, c-format
+#, c-format
 msgid "could not decompress: %s"
-msgstr "не удалось сжать данные: %s"
+msgstr "не удалось распаковать данные: %s"
 
 #. +> 16
 #: compress_lz4.c:193
@@ -871,27 +871,27 @@ msgstr "не удалось освободить контекст распако
 
 #. +> 16
 #: compress_lz4.c:259 compress_lz4.c:266 compress_lz4.c:680 compress_lz4.c:690
-#, fuzzy, c-format
+#, c-format
 msgid "could not end compression: %s"
-msgstr "не удалось закрыть поток сжатых данных: %s"
+msgstr "не удалось завершить сжатие: %s"
 
 #. +> 16
 #: compress_lz4.c:301
-#, fuzzy, c-format
+#, c-format
 msgid "could not initialize LZ4 compression: %s"
-msgstr "не удалось инициализировать библиотеку сжатия: %s"
+msgstr "не удалось инициализировать LZ4: %s"
 
 #. +> 16
 #: compress_lz4.c:697
-#, fuzzy, c-format
+#, c-format
 msgid "could not end decompression: %s"
-msgstr "не удалось закрыть поток сжатых данных: %s"
+msgstr "не удалось завершить распаковку: %s"
 
 #. +> 16
 #: compress_zstd.c:66
-#, fuzzy, c-format
+#, c-format
 msgid "could not set compression parameter \"%s\": %s"
-msgstr "не удалось переключить пользователя сессии на \"%s\": %s"
+msgstr "не удалось задать параметр сжатия \"%s\": %s"
 
 #. +> 16
 #: compress_zstd.c:78 compress_zstd.c:231 compress_zstd.c:490
@@ -916,7 +916,7 @@ msgstr "не удалось прочитать входной файл: %m"
 #: compress_zstd.c:501
 #, c-format
 msgid "unhandled mode \"%s\""
-msgstr ""
+msgstr "необрабатываемый режим \"%s\""
 
 #. +> 11
 #: parallel.c:205
@@ -1234,11 +1234,9 @@ msgstr ""
 
 #. +> 16
 #: pg_backup_archiver.c:392
-#, fuzzy, c-format
+#, c-format
 msgid "cannot restore from compressed archive (%s)"
-msgstr ""
-"восстановить данные из сжатого архива нельзя (установленная версия не "
-"поддерживает сжатие)"
+msgstr "восстановить данные из сжатого архива нельзя (%s)"
 
 #. +> 15 14 13 12
 #: pg_backup_archiver.c:393
@@ -1867,9 +1865,9 @@ msgstr "не удалось закрыть входной файл: %s\n"
 
 #. +> 16
 #: pg_backup_archiver.c:2297
-#, fuzzy, c-format
+#, c-format
 msgid "could not open stdout for appending: %m"
-msgstr "не удалось открыть выходной файл: %m"
+msgstr "не удалось открыть stdout для добавления вывода: %m"
 
 #. +> 11
 #: pg_backup_archiver.c:2297
@@ -2140,13 +2138,13 @@ msgstr "ожидаемый формат (%d) отличается от форм�
 
 #. +> 16
 #: pg_backup_archiver.c:3807
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "archive is compressed, but this installation does not support compression "
 "(%s) -- no data will be available"
 msgstr ""
-"архив сжат, но установленная версия не поддерживает сжатие -- данные "
-"недоступны"
+"архив сжат, но установленная версия не поддерживает сжатие (%s) -- данные "
+"будут недоступны"
 
 #. +> 15 14 13 12
 #: pg_backup_archiver.c:3862
@@ -2857,15 +2855,15 @@ msgstr "не удалось закрыть файл оглавления бол�
 
 #. +> 16
 #: pg_backup_directory.c:694
-#, fuzzy, c-format
+#, c-format
 msgid "could not close LO data file: %m"
-msgstr "не удалось закрыть файл данных: %m"
+msgstr "не удалось закрыть файл данных LO: %m"
 
 #. +> 16
 #: pg_backup_directory.c:704
-#, fuzzy, c-format
+#, c-format
 msgid "could not write to LOs TOC file: %s"
-msgstr "не удалось записать в файл оглавления больших объектов"
+msgstr "не удалось записать в файл оглавления LO: %s"
 
 #. +> 15 14 13 12
 #: pg_backup_directory.c:691
@@ -2881,9 +2879,9 @@ msgstr "не удалось записать в файл оглавления б
 
 #. +> 16
 #: pg_backup_directory.c:720
-#, fuzzy, c-format
+#, c-format
 msgid "could not close LOs TOC file: %m"
-msgstr "не удалось закрыть файл оглавления: %m"
+msgstr "не удалось закрыть файл оглавления LO: %m"
 
 #. +> 15 14 13 12
 #: pg_backup_directory.c:705
@@ -3390,7 +3388,7 @@ msgstr "неправильное указание сжатия: %s"
 #: pg_dump.c:764
 #, c-format
 msgid "compression option \"%s\" is not currently supported by pg_dump"
-msgstr ""
+msgstr "pg_dump в настоящее время не поддерживает параметр сжатия \"%s\""
 
 #. +> 16 15 14 13 12
 #: pg_dump.c:776
@@ -3627,9 +3625,9 @@ msgstr "  -a, --data-only              выгрузить только данн�
 
 #. +> 16
 #: pg_dump.c:1075
-#, fuzzy, c-format
+#, c-format
 msgid "  -b, --large-objects          include large objects in dump\n"
-msgstr "  -b, --blobs                  выгрузить также большие объекты\n"
+msgstr "  -b, --large-objects          выгрузить большие объекты\n"
 
 #. +> 15 14 13 12 11
 #: pg_dump.c:1008
@@ -3645,15 +3643,16 @@ msgstr "  -o, --oids                   выгружать данные с OID\n"
 
 #. +> 16
 #: pg_dump.c:1076
-#, fuzzy, c-format
+#, c-format
 msgid "  --blobs                      (same as --large-objects, deprecated)\n"
-msgstr "  -b, --blobs                  выгрузить также большие объекты\n"
+msgstr ""
+"  --blobs                      (устаревшая альтернатива --large-objects)\n"
 
 #. +> 16
 #: pg_dump.c:1077
-#, fuzzy, c-format
+#, c-format
 msgid "  -B, --no-large-objects       exclude large objects in dump\n"
-msgstr "  -B, --no-blobs               исключить из выгрузки большие объекты\n"
+msgstr "  -B, --no-large-objects       исключить из выгрузки большие объекты\n"
 
 #. +> 15 14 13 12 11
 #: pg_dump.c:1009
@@ -3663,10 +3662,11 @@ msgstr "  -B, --no-blobs               исключить из выгрузки 
 
 #. +> 16
 #: pg_dump.c:1078
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "  --no-blobs                   (same as --no-large-objects, deprecated)\n"
-msgstr "  -b, --blobs                  выгрузить также большие объекты\n"
+msgstr ""
+"  --no-blobs                   (устаревшая альтернатива --no-large-objects)\n"
 
 #. +> 16 15 14 13 12 11
 #: pg_dump.c:1079 pg_restore.c:447
@@ -3752,7 +3752,7 @@ msgstr ""
 
 #. +> 16
 #: pg_dump.c:1089
-#, fuzzy, c-format
+#, c-format
 msgid "  -t, --table=PATTERN          dump only the specified table(s)\n"
 msgstr "  -t, --table=ШАБЛОН           выгрузить только указанную таблицу(ы)\n"
 
@@ -3835,16 +3835,16 @@ msgstr ""
 
 #. +> 16
 #: pg_dump.c:1098
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "  --exclude-table-and-children=PATTERN\n"
 "                               do NOT dump the specified table(s), "
 "including\n"
 "                               child and partition tables\n"
 msgstr ""
-"  --include-foreign-data=ШАБЛОН\n"
-"                               включать в копию данные сторонних таблиц с\n"
-"                               серверов с именами, подпадающими под ШАБЛОН\n"
+"  --exclude-table-and-children=ШАБЛОН\n"
+"                               НЕ выгружать указанную таблицу(ы), а также\n"
+"                               её секции и дочерние таблицы\n"
 
 #. +> 16 15 14 13 12
 #: pg_dump.c:1101
@@ -3866,15 +3866,16 @@ msgstr ""
 
 #. +> 16
 #: pg_dump.c:1102
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "  --exclude-table-data-and-children=PATTERN\n"
 "                               do NOT dump data for the specified table(s),\n"
 "                               including child and partition tables\n"
 msgstr ""
-"  --include-foreign-data=ШАБЛОН\n"
-"                               включать в копию данные сторонних таблиц с\n"
-"                               серверов с именами, подпадающими под ШАБЛОН\n"
+"  --exclude-table-data-and-children=ШАБЛОН\n"
+"                               НЕ выгружать данные указанной таблицы "
+"(таблиц),\n"
+"                               а также её секций и дочерних таблиц\n"
 
 #. +> 16 15 14 13 12
 #: pg_dump.c:1105 pg_dumpall.c:655
@@ -4049,6 +4050,9 @@ msgid ""
 "  --table-and-children=PATTERN dump only the specified table(s), including\n"
 "                               child and partition tables\n"
 msgstr ""
+"  --table-and-children=ШАБЛОН  выгрузить только указанную таблицу(ы), а "
+"также\n"
+"                               её секции и дочерние таблицы\n"
 
 #. +> 16 15 14 13 12 11
 #: pg_dump.c:1130 pg_dumpall.c:672 pg_restore.c:478
@@ -5185,15 +5189,15 @@ msgstr "нераспознанный провайдер правил сорти�
 
 #. +> 16 15
 #: pg_dump.c:13464 pg_dump.c:13473 pg_dump.c:13483 pg_dump.c:13498
-#, fuzzy, c-format
+#, c-format
 msgid "invalid collation \"%s\""
-msgstr "неверный исполняемый файл \"%s\""
+msgstr "неверное правило сортировки \"%s\""
 
 #. +> 16 15
 #: pg_dump.c:13514
-#, fuzzy, c-format
+#, c-format
 msgid "unrecognized collation provider '%c'"
-msgstr "нераспознанный провайдер правил сортировки: %s"
+msgstr "нераспознанный провайдер правил сортировки '%c'"
 
 #. +> 16 15 14 13 12
 #: pg_dump.c:13904
@@ -6007,7 +6011,7 @@ msgstr "%s: имя роли, начинающееся с \"pg_\", пропуще
 #: pg_dumpall.c:1050
 #, c-format
 msgid "could not find a legal dump ordering for memberships in role \"%s\""
-msgstr ""
+msgstr "не удалось найти подходящий порядок выгрузки для членов роли \"%s\""
 
 #. +> 16 15
 #: pg_dumpall.c:1185

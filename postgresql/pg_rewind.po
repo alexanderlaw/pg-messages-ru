@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: pg_rewind (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2023-08-28 08:23+0300\n"
-"PO-Revision-Date: 2023-08-28 17:51+0300\n"
+"PO-Revision-Date: 2023-08-29 11:16+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -71,13 +71,13 @@ msgstr "неверное значение для параметра \"%s\": \"%s
 #: ../../common/percentrepl.c:80
 #, c-format
 msgid "String ends unexpectedly after escape character \"%%\"."
-msgstr ""
+msgstr "Строка неожиданно закончилась после спецсимвола \"%%\"."
 
 #. +> 16
 #: ../../common/percentrepl.c:119
 #, c-format
 msgid "String contains unexpected placeholder \"%%%c\"."
-msgstr ""
+msgstr "Строка содержит неожиданный местозаполнитель \"%%%c\"."
 
 #. +> 16 15 14 13 12
 #: ../../common/restricted_token.c:60
@@ -1853,9 +1853,10 @@ msgstr ""
 
 #. +> 16
 #: xlogreader.c:626
-#, fuzzy, c-format
+#, c-format
 msgid "invalid record offset at %X/%X: expected at least %u, got %u"
-msgstr "неверная длина записи по смещению %X/%X: ожидалось %u, получено %u"
+msgstr ""
+"неверное смещение записи в позиции %X/%X: ожидалось минимум %u, получено %u"
 
 #. +> 16 15 14 13 12 11
 #: xlogreader.c:635
@@ -1865,9 +1866,10 @@ msgstr "по смещению %X/%X запрошено продолжение з
 
 #. +> 16
 #: xlogreader.c:676 xlogreader.c:1119
-#, fuzzy, c-format
+#, c-format
 msgid "invalid record length at %X/%X: expected at least %u, got %u"
-msgstr "неверная длина записи по смещению %X/%X: ожидалось %u, получено %u"
+msgstr ""
+"неверная длина записи в позиции %X/%X: ожидалось минимум %u, получено %u"
 
 #. +> 15 14 13 12 11
 #: xlogreader.c:674 xlogreader.c:1117
@@ -1927,9 +1929,10 @@ msgstr ""
 
 #. +> 16
 #: xlogreader.c:1226
-#, fuzzy, c-format
+#, c-format
 msgid "invalid magic number %04X in WAL segment %s, LSN %X/%X, offset %u"
-msgstr "неверное магическое число %04X в сегменте журнала %s, смещение %u"
+msgstr ""
+"неверное магическое число %04X в сегменте WAL %s, LSN %X/%X, смещение %u"
 
 #. +> 15 14 13 12 11
 #: xlogreader.c:1227
@@ -1939,9 +1942,10 @@ msgstr "неверное магическое число %04X в сегмент�
 
 #. +> 16
 #: xlogreader.c:1241 xlogreader.c:1283
-#, fuzzy, c-format
+#, c-format
 msgid "invalid info bits %04X in WAL segment %s, LSN %X/%X, offset %u"
-msgstr "неверные информационные биты %04X в сегменте журнала %s, смещение %u"
+msgstr ""
+"неверные информационные биты %04X в сегменте WAL %s, LSN %X/%X, смещение %u"
 
 #. +> 15 14 13 12 11
 #: xlogreader.c:1241 xlogreader.c:1282
@@ -1991,9 +1995,9 @@ msgstr ""
 
 #. +> 16
 #: xlogreader.c:1303
-#, fuzzy, c-format
+#, c-format
 msgid "unexpected pageaddr %X/%X in WAL segment %s, LSN %X/%X, offset %u"
-msgstr "неожиданный pageaddr %X/%X в сегменте журнала %s, смещение %u"
+msgstr "неожиданный pageaddr %X/%X в сегменте WAL %s, LSN %X/%X, смещение %u"
 
 #. +> 15 14 13 12 11
 #: xlogreader.c:1301
@@ -2003,13 +2007,13 @@ msgstr "неожиданный pageaddr %X/%X в сегменте журнала
 
 #. +> 16
 #: xlogreader.c:1329
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "out-of-sequence timeline ID %u (after %u) in WAL segment %s, LSN %X/%X, "
 "offset %u"
 msgstr ""
-"нарушение последовательности ID линии времени %u (после %u) в сегменте "
-"журнала %s, смещение %u"
+"нарушение последовательности ID линии времени %u (после %u) в сегменте WAL "
+"%s, LSN %X/%X, смещение %u"
 
 #. +> 15 14 13 12 11
 #: xlogreader.c:1326

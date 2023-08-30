@@ -6,13 +6,13 @@
 # Sergey Burladyan <eshkinkot@gmail.com>, 2009, 2012.
 # Andrey Sudnik <sudnikand@gmail.com>, 2010.
 # Dmitriy Olshevskiy <olshevskiy87@bk.ru>, 2014.
-# Alexander Lakhin <exclusion@gmail.com>, 2012-2017, 2018, 2019, 2020, 2021, 2022.
+# Alexander Lakhin <exclusion@gmail.com>, 2012-2017, 2018, 2019, 2020, 2021, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: pg_ctl (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2023-08-28 08:23+0300\n"
-"PO-Revision-Date: 2023-04-24 09:19+0200\n"
+"PO-Revision-Date: 2023-08-29 10:20+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -21,6 +21,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 21.12.3\n"
 
 #. +> 15 14 13 12
 #: ../../common/exec.c:149 ../../common/exec.c:266 ../../common/exec.c:312
@@ -90,9 +91,9 @@ msgstr "не удалось найти запускаемый файл \"%s\""
 
 #. +> 16
 #: ../../common/exec.c:250
-#, fuzzy, c-format
+#, c-format
 msgid "could not resolve path \"%s\" to absolute form: %m"
-msgstr "открыть файл \"%s\" как stderr не удалось: %m"
+msgstr "не удалось преобразовать относительный путь \"%s\" в абсолютный: %m"
 
 #. +> 16 15 14
 #: ../../common/exec.c:412

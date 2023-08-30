@@ -1,13 +1,13 @@
 # Russian message translation file for pg_basebackup
 # Copyright (C) 2012-2016 PostgreSQL Global Development Group
 # This file is distributed under the same license as the PostgreSQL package.
-# Alexander Lakhin <exclusion@gmail.com>, 2012-2017, 2018, 2019, 2020, 2021, 2022.
+# Alexander Lakhin <exclusion@gmail.com>, 2012-2017, 2018, 2019, 2020, 2021, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: pg_basebackup (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2023-08-28 08:23+0300\n"
-"PO-Revision-Date: 2022-09-29 12:01+0300\n"
+"PO-Revision-Date: 2023-08-29 09:42+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -16,6 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Lokalize 21.12.3\n"
 
 #. +> 16 15 14 13 12
 #: ../../../src/common/logging.c:276
@@ -81,9 +82,9 @@ msgstr "значение параметра сжатия \"%s\" должно б�
 
 #. +> 16
 #: ../../common/compression.c:331
-#, fuzzy, c-format
+#, c-format
 msgid "value for compression option \"%s\" must be a Boolean value"
-msgstr "значение параметра сжатия \"%s\" должно быть целочисленным"
+msgstr "значение параметра сжатия \"%s\" должно быть булевским"
 
 #. +> 16 15
 #: ../../common/compression.c:379
@@ -109,9 +110,9 @@ msgstr "для алгоритма сжатия \"%s\" нельзя задать 
 
 #. +> 16
 #: ../../common/compression.c:408
-#, fuzzy, c-format
+#, c-format
 msgid "compression algorithm \"%s\" does not support long-distance mode"
-msgstr "для алгоритма сжатия \"%s\" нельзя задать число потоков"
+msgstr "алгоритм сжатия \"%s\" не поддерживает режим большой дистанции"
 
 #. +> 16 15 14 13 12 11
 #: ../../common/fe_memutils.c:35 ../../common/fe_memutils.c:75
@@ -421,9 +422,9 @@ msgstr "не удалось установить для zstd число пото
 
 #. +> 16
 #: bbstreamer_zstd.c:116
-#, fuzzy, c-format
+#, c-format
 msgid "could not enable long-distance mode: %s"
-msgstr "не удалось отправить пакет \"конец COPY\": %s"
+msgstr "не удалось включить режим большой дистанции: %s"
 
 #. +> 16 15
 #: bbstreamer_zstd.c:275

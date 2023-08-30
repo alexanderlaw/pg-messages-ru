@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: initdb (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2023-08-28 08:23+0300\n"
-"PO-Revision-Date: 2023-08-28 17:47+0300\n"
+"PO-Revision-Date: 2023-08-29 13:38+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -121,9 +121,9 @@ msgstr "не удалось найти запускаемый файл \"%s\""
 
 #. +> 16
 #: ../../common/exec.c:250
-#, fuzzy, c-format
+#, c-format
 msgid "could not resolve path \"%s\" to absolute form: %m"
-msgstr "не удалось переименовать файл \"%s\" в \"%s\": %m"
+msgstr "не удалось преобразовать относительный путь \"%s\" в абсолютный: %m"
 
 #. +> 16 15 14
 #: ../../common/exec.c:412
@@ -931,7 +931,7 @@ msgstr "%s: ошибочное имя локали \"%s\"\n"
 #: initdb.c:2164
 #, c-format
 msgid "If the locale name is specific to ICU, use --icu-locale."
-msgstr ""
+msgstr "Если эта локаль свойственна ICU, укажите --icu-locale."
 
 #. +> 16 15 14 13 12
 #: initdb.c:2177
@@ -1049,15 +1049,15 @@ msgstr "%s: символические ссылки не поддерживаю�
 
 #. +> 16
 #: initdb.c:2308
-#, fuzzy, c-format
+#, c-format
 msgid "could not get language from locale \"%s\": %s"
-msgstr "не удалось получить связь для каталога \"%s\": %s\n"
+msgstr "не удалось определить язык для локали \"%s\": %s"
 
 #. +> 16
 #: initdb.c:2334
-#, fuzzy, c-format
+#, c-format
 msgid "locale \"%s\" has unknown language \"%s\""
-msgstr "для локали \"%s\" требуется неподдерживаемая кодировка \"%s\""
+msgstr "для локали \"%s\" получен неизвестный язык \"%s\""
 
 #. +> 16 15
 #: initdb.c:2400
@@ -1069,7 +1069,7 @@ msgstr "необходимо задать локаль ICU"
 #: initdb.c:2404
 #, c-format
 msgid "Using language tag \"%s\" for ICU locale \"%s\".\n"
-msgstr ""
+msgstr "Для локали ICU \"%s\" используется метка языка \"%s\".\n"
 
 #. +> 16 15 14 13 12 11
 #: initdb.c:2427
@@ -1163,11 +1163,13 @@ msgstr "      --icu-locale=ЛОКАЛЬ   идентификатор локал�
 
 #. +> 16
 #: initdb.c:2438
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "      --icu-rules=RULES     set additional ICU collation rules for new "
 "databases\n"
-msgstr "      --icu-locale=ЛОКАЛЬ   идентификатор локали ICU для новых баз\n"
+msgstr ""
+"      --icu-rules=ПРАВИЛА   дополнительные правила сортировки ICU для новых "
+"баз\n"
 
 #. +> 16 15 14 13 12 11
 #: initdb.c:2439
@@ -1272,6 +1274,8 @@ msgstr ""
 msgid ""
 "  -c, --set NAME=VALUE      override default setting for server parameter\n"
 msgstr ""
+"  -c, --set ИМЯ=ЗНАЧЕНИЕ    переопределить значение серверного параметра по\n"
+"                            умолчанию\n"
 
 #. +> 16 15 14 13 12 11
 #: initdb.c:2457

@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the PostgreSQL package.
 # Serguei A. Mokhov, <mokhov@cs.concordia.ca>, 2003-2004.
 # Oleg Bartunov <oleg@sai.msu.su>, 2004.
-# Alexander Lakhin <exclusion@gmail.com>, 2012-2017, 2019, 2020, 2021, 2022.
+# Alexander Lakhin <exclusion@gmail.com>, 2012-2017, 2019, 2020, 2021, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: pgscripts (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2023-08-28 08:23+0300\n"
-"PO-Revision-Date: 2022-09-05 13:37+0300\n"
+"PO-Revision-Date: 2023-08-30 12:51+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -18,6 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 21.12.3\n"
 
 #. +> 16 15 14 13 12
 #: ../../../src/common/logging.c:276
@@ -651,9 +652,11 @@ msgstr "      --icu-locale=ЛОКАЛЬ      локаль ICU для базы д
 
 #. +> 16
 #: createdb.c:298
-#, fuzzy, c-format
+#, c-format
 msgid "      --icu-rules=RULES        ICU rules setting for the database\n"
-msgstr "      --icu-locale=ЛОКАЛЬ      локаль ICU для базы данных\n"
+msgstr ""
+"      --icu-rules=ПРАВИЛА      настройка правил сортировки ICU для базы "
+"данных\n"
 
 #. +> 16 15
 #: createdb.c:299
@@ -846,6 +849,9 @@ msgid ""
 "  -a, --with-admin=ROLE     ROLE will be a member of new role with admin\n"
 "                            option\n"
 msgstr ""
+"  -a, --with-admin=РОЛЬ     заданная роль будет членом новой роли с "
+"привилегией\n"
+"                            ADMIN\n"
 
 #. +> 16 15 14 13 12 11
 #: createuser.c:420
@@ -872,9 +878,9 @@ msgstr ""
 
 #. +> 16
 #: createuser.c:424
-#, fuzzy, c-format
+#, c-format
 msgid "  -g, --member-of=ROLE      new role will be a member of ROLE\n"
-msgstr "  -g, --role=РОЛЬ           новая роль будет включена в эту роль\n"
+msgstr "  -g, --member-of=РОЛЬ      новая роль будет членом заданной роли\n"
 
 #. +> 15 14 13 12 11
 #: createuser.c:353
@@ -884,9 +890,9 @@ msgstr "  -g, --role=РОЛЬ           новая роль будет вклю�
 
 #. +> 16
 #: createuser.c:425
-#, fuzzy, c-format
+#, c-format
 msgid "  --role=ROLE               (same as --member-of, deprecated)\n"
-msgstr "  -g, --role=РОЛЬ           новая роль будет включена в эту роль\n"
+msgstr "  --role=РОЛЬ               (устаревшая альтернатива --member-of)\n"
 
 #. +> 16 15 14 13 12 11
 #: createuser.c:426
@@ -921,9 +927,9 @@ msgstr "  -L, --no-login            роль без права подключе�
 
 #. +> 16
 #: createuser.c:431
-#, fuzzy, c-format
+#, c-format
 msgid "  -m, --with-member=ROLE    ROLE will be a member of new role\n"
-msgstr "  -g, --role=РОЛЬ           новая роль будет включена в эту роль\n"
+msgstr "  -m, --with-member=РОЛЬ    заданная роль будет членом новой роли\n"
 
 #. +> 16 15 14 13 12 11
 #: createuser.c:432
@@ -965,6 +971,8 @@ msgid ""
 "  -v, --valid-until=TIMESTAMP\n"
 "                            password expiration date and time for role\n"
 msgstr ""
+"  -v, --valid-until=ДАТА_ВРЕМЯ\n"
+"                            дата и время истечения срока пароля для роли\n"
 
 #. +> 16 15 14 13 12 11
 #: createuser.c:440
@@ -983,18 +991,19 @@ msgstr ""
 msgid ""
 "  --bypassrls               role can bypass row-level security (RLS) policy\n"
 msgstr ""
+"  --bypassrls               роль не будет подчиняться политикам защиты на\n"
+"                            уровне строк (RLS)\n"
 
 #. +> 16
 #: createuser.c:443
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "  --no-bypassrls            role cannot bypass row-level security (RLS) "
 "policy\n"
 "                            (default)\n"
 msgstr ""
-"  -i, --inherit             роль наследует права ролей (групп), в которые "
-"она\n"
-"                            включена (по умолчанию)\n"
+"  --no-bypassrls            роль будет подчиняться политикам защиты на\n"
+"                            уровне строк (по умолчанию)\n"
 
 #. +> 16 15 14 13 12 11
 #: createuser.c:445
@@ -1010,10 +1019,12 @@ msgstr "  --no-replication          роль не может иницииров�
 
 #. +> 16
 #: createuser.c:446
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "  --no-replication          role cannot initiate replication (default)\n"
-msgstr "  --no-replication          роль не может инициировать репликацию\n"
+msgstr ""
+"  --no-replication          роль не может инициировать репликацию\n"
+"                            (по умолчанию)\n"
 
 #. +> 16 15 14 13 12 11
 #: createuser.c:451
@@ -1744,37 +1755,39 @@ msgstr "%s: нельзя очистить только указанную таб
 
 #. +> 16
 #: vacuumdb.c:436
-#, fuzzy, c-format
+#, c-format
 msgid "cannot vacuum specific schema(s) in all databases"
-msgstr "нельзя очистить только указанную таблицу(ы) во всех базах"
+msgstr "нельзя очистить только указанную схему(ы) во всех базах"
 
 #. +> 16
 #: vacuumdb.c:440
-#, fuzzy, c-format
+#, c-format
 msgid "cannot exclude specific schema(s) in all databases"
-msgstr "нельзя переиндексировать указанную схему(ы) во всех базах"
+msgstr "нельзя исключить указанную схему(ы) во всех базах"
 
 #. +> 16
 #: vacuumdb.c:444
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "cannot vacuum all tables in schema(s) and specific table(s) at the same time"
-msgstr "нельзя очистить все базы данных и одну конкретную одновременно"
-
-#. +> 16
-#: vacuumdb.c:448
-#, fuzzy, c-format
-msgid "cannot vacuum specific table(s) and exclude schema(s) at the same time"
 msgstr ""
-"нельзя переиндексировать указанную таблицу(ы) и системные каталоги "
+"нельзя очистить все таблицы в схеме(ах) и одну конкретную таблицу "
 "одновременно"
 
 #. +> 16
+#: vacuumdb.c:448
+#, c-format
+msgid "cannot vacuum specific table(s) and exclude schema(s) at the same time"
+msgstr ""
+"нельзя очистить конкретную таблицу(ы) и исключить схему(ы) одновременно"
+
+#. +> 16
 #: vacuumdb.c:452
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "cannot vacuum all tables in schema(s) and exclude schema(s) at the same time"
-msgstr "нельзя очистить все базы данных и одну конкретную одновременно"
+msgstr ""
+"нельзя очистить все таблицы в схеме(ах) и исключить схему(ы) одновременно"
 
 #. +> 11
 #: vacuumdb.c:454
@@ -1855,6 +1868,9 @@ msgstr "  -a, --all                       очистить все базы да�
 #, c-format
 msgid "      --buffer-usage-limit=SIZE   size of ring buffer used for vacuum\n"
 msgstr ""
+"      --buffer-usage-limit=РАЗМЕР размер кольцевого буфера, используемого "
+"при\n"
+"                                  очистке\n"
 
 #. +> 16 15 14 13 12 11
 #: vacuumdb.c:1132
@@ -1946,11 +1962,9 @@ msgstr ""
 
 #. +> 16
 #: vacuumdb.c:1142
-#, fuzzy, c-format
+#, c-format
 msgid "      --no-process-main           skip the main relation\n"
-msgstr ""
-"      --no-process-toast          пропускать TOAST-таблицу, связанную\n"
-"                                  с очищаемой таблицей\n"
+msgstr "      --no-process-main           пропускать основное отношение\n"
 
 #. +> 16 15 14
 #: vacuumdb.c:1143
@@ -1974,21 +1988,22 @@ msgstr ""
 
 #. +> 16
 #: vacuumdb.c:1145
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "  -n, --schema=PATTERN            vacuum tables in the specified schema(s) "
 "only\n"
 msgstr ""
-"  -S, --schema=СХЕМА           переиндексировать только указанную схему(ы)\n"
+"  -n, --schema=ШАБЛОН             очищать таблицы только в указанной "
+"схеме(ах)\n"
 
 #. +> 16
 #: vacuumdb.c:1146
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "  -N, --exclude-schema=PATTERN    do not vacuum tables in the specified "
 "schema(s)\n"
 msgstr ""
-"  -S, --schema=СХЕМА           переиндексировать только указанную схему(ы)\n"
+"  -N, --exclude-schema=ШАБЛОН     не очищать таблицы в указанной схеме(ах)\n"
 
 #. +> 16 15 14 13
 #: vacuumdb.c:1147

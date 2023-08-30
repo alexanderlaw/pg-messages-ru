@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pg_upgrade (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2023-08-28 08:23+0300\n"
-"PO-Revision-Date: 2023-08-28 17:52+0300\n"
+"PO-Revision-Date: 2023-08-30 12:41+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -1061,13 +1061,14 @@ msgstr ""
 
 #. +> 16
 #: check.c:1218
-#, fuzzy, c-format
+#, c-format
 msgid "Checking for incompatible \"aclitem\" data type in user tables"
-msgstr "Проверка несовместимого типа данных \"line\""
+msgstr ""
+"Проверка несовместимого типа данных \"aclitem\" в пользовательских таблицах"
 
 #. +> 16
 #: check.c:1225
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Your installation contains the \"aclitem\" data type in user tables.\n"
 "The internal format of \"aclitem\" changed in PostgreSQL version 16\n"
@@ -1076,13 +1077,14 @@ msgid ""
 "columns is in the file:\n"
 "    %s"
 msgstr ""
-"В вашей инсталляции таблицы используют тип данных jsonb.\n"
-"Внутренний формат \"jsonb\" изменился в версии 9.4 beta, поэтому обновить "
-"кластер\n"
-"в текущем состоянии невозможно. Вы можете удалить проблемные столбцы и\n"
+"В вашей инсталляции пользовательские таблицы используют тип данных "
+"\"aclitem\".\n"
+"Внутренний формат \"aclitem\" изменился в PostgreSQL версии 16, поэтому "
+"обновить\n"
+"кластер в текущем состоянии невозможно. Вы можете удалить проблемные столбцы "
+"и\n"
 "перезапустить обновление. Список проблемных столбцов приведён в файле:\n"
-"    %s\n"
-"\n"
+"    %s"
 
 #. +> 16 15 14 13 12 11
 #: check.c:1246
@@ -1185,6 +1187,11 @@ msgid ""
 "A list of roles starting with \"pg_\" is in the file:\n"
 "    %s"
 msgstr ""
+"В вашей инсталляции имеются роли с именами, начинающимися с \"pg_\".\n"
+"Префикс \"pg_\" зарезервирован для системных ролей. Пока эти роли\n"
+"не будут переименованы, обновить кластер невозможно.\n"
+"Список ролей с префиксом \"pg_\" приведён в файле:\n"
+"    %s"
 
 #. +> 16 15 14
 #: check.c:1334
@@ -2167,9 +2174,9 @@ msgstr "\"%s\" не является каталогом\n"
 
 #. +> 16
 #: exec.c:441
-#, fuzzy, c-format
+#, c-format
 msgid "check for \"%s\" failed: %m"
-msgstr "проверка существования \"%s\" не пройдена: %s\n"
+msgstr "файл \"%s\" не прошёл проверку: %m"
 
 #. +> 16
 #: exec.c:446
@@ -2720,7 +2727,7 @@ msgstr "%s.%s: %u в %u\n"
 #: info.c:329
 #, c-format
 msgid "template0 not found"
-msgstr ""
+msgstr "база template0 не найдена"
 
 #. +> 15 14 13 12 11
 #: info.c:606
@@ -3072,11 +3079,11 @@ msgstr ""
 
 #. +> 16
 #: option.c:291
-#, fuzzy, c-format
+#, c-format
 msgid "  --copy                        copy files to new cluster (default)\n"
 msgstr ""
-"  --clone                       клонировать, а не копировать файлы в новый "
-"кластер\n"
+"  --copy                        копировать файлы в новый кластер (по "
+"умолчанию)\n"
 
 #. +> 16 15 14 13 12 11
 #: option.c:292
@@ -3490,9 +3497,9 @@ msgstr ""
 
 #. +> 16
 #: pg_upgrade.c:388
-#, fuzzy, c-format
+#, c-format
 msgid "Setting locale and encoding for new cluster"
-msgstr "Установка старейшего OID для нового кластера"
+msgstr "Установка локали и кодировки для нового кластера"
 
 #. +> 16 15 14 13 12 11
 #: pg_upgrade.c:450

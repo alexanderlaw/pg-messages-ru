@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: psql (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2023-08-28 08:24+0300\n"
-"PO-Revision-Date: 2023-08-28 17:55+0300\n"
+"PO-Revision-Date: 2023-08-29 13:37+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -120,9 +120,9 @@ msgstr "не удалось найти запускаемый файл \"%s\""
 
 #. +> 16
 #: ../../common/exec.c:250
-#, fuzzy, c-format
+#, c-format
 msgid "could not resolve path \"%s\" to absolute form: %m"
-msgstr "не удалось вывести таблицу результатов: %m"
+msgstr "не удалось преобразовать относительный путь \"%s\" в абсолютный: %m"
 
 #. +> 16 15 14
 #: ../../common/exec.c:412
@@ -727,31 +727,31 @@ msgstr "%s: %s\n"
 #: command.c:2806 command.c:2852
 #, c-format
 msgid "\\watch: interval value is specified more than once"
-msgstr ""
+msgstr "\\watch: длительность интервала указана неоднократно"
 
 #. +> 16
 #: command.c:2816 command.c:2862
 #, c-format
 msgid "\\watch: incorrect interval value \"%s\""
-msgstr ""
+msgstr "\\watch: некорректная длительность интервала \"%s\""
 
 #. +> 16
 #: command.c:2826
 #, c-format
 msgid "\\watch: iteration count is specified more than once"
-msgstr ""
+msgstr "\\watch: число итераций указано неоднократно"
 
 #. +> 16
 #: command.c:2836
 #, c-format
 msgid "\\watch: incorrect iteration count \"%s\""
-msgstr ""
+msgstr "\\watch: некорректное число итераций \"%s\""
 
 #. +> 16
 #: command.c:2843
 #, c-format
 msgid "\\watch: unrecognized parameter \"%s\""
-msgstr ""
+msgstr "\\watch: нераспознанный параметр \"%s\""
 
 #. +> 13 12
 #: command.c:3056
@@ -1076,6 +1076,8 @@ msgid ""
 "\\pset: allowed xheader_width values are \"%s\" (default), \"%s\", \"%s\", "
 "or a number specifying the exact width"
 msgstr ""
+"\\pset: допустимые значения xheader_width: \"%s\" (по умолчанию), \"%s\", "
+"\"%s\", а также число, задающее точную ширину"
 
 #. +> 16 15 14 13 12
 #: command.c:4547
@@ -1143,15 +1145,15 @@ msgstr "Расширенный вывод выключен.\n"
 
 #. +> 16
 #: command.c:4736 command.c:4738 command.c:4740
-#, fuzzy, c-format
+#, c-format
 msgid "Expanded header width is \"%s\".\n"
-msgstr "Стиль Unicode-линий границ: \"%s\".\n"
+msgstr "Ширина расширенного заголовка: \"%s\".\n"
 
 #. +> 16
 #: command.c:4742
-#, fuzzy, c-format
+#, c-format
 msgid "Expanded header width is %d.\n"
-msgstr "Ширина вывода: %d.\n"
+msgstr "Ширина расширенного заголовка: %d.\n"
 
 #. +> 16 15 14 13 12
 #: command.c:4748
@@ -2206,9 +2208,8 @@ msgstr "локаль ICU"
 
 #. +> 16
 #: describe.c:957 describe.c:961 describe.c:4962 describe.c:4966
-#, fuzzy
 msgid "ICU Rules"
-msgstr "Правила:"
+msgstr "Правила ICU"
 
 #. +> 16 15 14 13 12 11
 #: describe.c:973
@@ -2982,13 +2983,12 @@ msgstr "Член ролей"
 #. +> 16
 #: describe.c:3859
 msgid "Grantor"
-msgstr ""
+msgstr "Праводатель"
 
 #. +> 16
 #: describe.c:3886
-#, fuzzy
 msgid "List of role grants"
-msgstr "Список ролей"
+msgstr "Список назначений ролей"
 
 #. +> 16 15 14 13 12 11
 #: describe.c:3952
@@ -3818,18 +3818,17 @@ msgstr "Отключается при ошибке"
 #. +> 16
 #: describe.c:6614
 msgid "Origin"
-msgstr ""
+msgstr "Источник"
 
 #. +> 16
 #: describe.c:6615
-#, fuzzy
 msgid "Password required"
-msgstr "Пароль: "
+msgstr "Требуется пароль"
 
 #. +> 16
 #: describe.c:6616
 msgid "Run as owner?"
-msgstr ""
+msgstr "Использовать владельца?"
 
 #. +> 16 15 14 13 12 11
 #: describe.c:6621
@@ -4334,9 +4333,8 @@ msgstr "Общие\n"
 
 #. +> 16
 #: help.c:192
-#, fuzzy
 msgid "  \\bind [PARAM]...       set query parameters\n"
-msgstr "  \\dFp[+] [МАСКА]        список анализаторов текстового поиска\n"
+msgstr "  \\bind [ПАРАМЕТР]...    задать параметры запроса\n"
 
 # skip-rule: copyright
 #. +> 16 15 14 13 12 11
@@ -4451,12 +4449,11 @@ msgstr "  \\q                     выйти из psql\n"
 
 #. +> 16
 #: help.c:203
-#, fuzzy
 msgid ""
 "  \\watch [[i=]SEC] [c=N] execute query every SEC seconds, up to N times\n"
 msgstr ""
-"  \\watch [СЕК]           повторять запрос в цикле через заданное число "
-"секунд\n"
+"  \\watch [[i=]СЕК] [c=N] повторять запрос через заданное число секунд, не\n"
+"                         более N раз\n"
 
 #. +> 15 14 13 12 11
 #: help.c:202
@@ -4890,11 +4887,10 @@ msgstr "  \\dO[S+] [МАСКА]        список правил сортиро�
 
 #. +> 16
 #: help.c:280
-#, fuzzy
 msgid ""
 "  \\dp[S]  [PATTERN]      list table, view, and sequence access privileges\n"
 msgstr ""
-"  \\dp     [МАСКА]        список прав доступа к таблицам, представлениям и\n"
+"  \\dp[S]  [МАСКА]        список прав доступа к таблицам, представлениям и\n"
 "                         последовательностям\n"
 
 #. +> 15 14 13 12 11
@@ -4930,9 +4926,8 @@ msgstr "  \\drds [МАСК1 [МАСК2]]  список параметров ро
 
 #. +> 16
 #: help.c:283
-#, fuzzy
 msgid "  \\drg[S] [PATTERN]      list role grants\n"
-msgstr "  \\dg[S+] [МАСКА]        список ролей\n"
+msgstr "  \\drg[S] [МАСКА]        список назначений ролей\n"
 
 #. +> 16 15 14 13 12 11
 #: help.c:284
@@ -5008,9 +5003,8 @@ msgstr "  \\sv[+]  ИМЯ_ПРЕДСТ     показать определени
 
 #. +> 16
 #: help.c:297
-#, fuzzy
 msgid "  \\z[S]   [PATTERN]      same as \\dp\n"
-msgstr "  \\z      [МАСКА]        то же, что и \\dp\n"
+msgstr "  \\z[S]   [МАСКА]        то же, что и \\dp\n"
 
 #. +> 15 14 13 12 11
 #: help.c:295
@@ -5564,23 +5558,22 @@ msgstr ""
 
 #. +> 16
 #: help.c:455
-#, fuzzy
 msgid ""
 "  SHELL_ERROR\n"
 "    \"true\" if the last shell command failed, \"false\" if it succeeded\n"
 msgstr ""
-"  ERROR\n"
-"    true в случае ошибки в последнем запросе, иначе — false\n"
+"  SHELL_ERROR\n"
+"    \"true\" в случае ошибки последней команды оболочки, \"false\" в ином "
+"случае\n"
 
 #. +> 16
 #: help.c:457
-#, fuzzy
 msgid ""
 "  SHELL_EXIT_CODE\n"
 "    exit status of the last shell command\n"
 msgstr ""
-"  SHELL\n"
-"    оболочка, вызываемая командой \\!\n"
+"  SHELL_EXIT_CODE\n"
+"    код завершения последней команды оболочки\n"
 
 #. +> 16 15
 #: help.c:459
@@ -7312,7 +7305,7 @@ msgstr "логическое_значение"
 #. +> 16
 #: sql_help.c:1725 sql_help.c:4989
 msgid "size"
-msgstr ""
+msgstr "размер"
 
 #. +> 16 15 14 13 12 11
 #: sql_help.c:1726 sql_help.c:4990
@@ -7409,9 +7402,8 @@ msgstr "представление_NULL"
 
 #. +> 16
 #: sql_help.c:1983
-#, fuzzy
 msgid "default_string"
-msgstr "представление_NULL"
+msgstr "представление_DEFAULT"
 
 #. +> 16 15 14 13 12 11
 #: sql_help.c:1985
@@ -7545,9 +7537,8 @@ msgstr "провайдер"
 
 #. +> 16
 #: sql_help.c:2165
-#, fuzzy
 msgid "rules"
-msgstr "правило"
+msgstr "правила"
 
 #. +> 16 15 14 13 12 11
 #: sql_help.c:2166 sql_help.c:2271
@@ -7596,9 +7587,8 @@ msgstr "локаль_icu"
 
 #. +> 16
 #: sql_help.c:2213
-#, fuzzy
 msgid "icu_rules"
-msgstr "локаль_icu"
+msgstr "правила_icu"
 
 #. +> 16 15
 #: sql_help.c:2214
@@ -9174,9 +9164,8 @@ msgstr "перестроить индексы"
 
 #. +> 16
 #: sql_help.c:6115
-#, fuzzy
 msgid "release a previously defined savepoint"
-msgstr "удалить ранее определённую точку сохранения"
+msgstr "освободить ранее определённую точку сохранения"
 
 #. +> 15 14 13 12 11
 #: sql_help.c:6094
