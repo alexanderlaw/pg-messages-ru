@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2023-08-28 08:24+0300\n"
-"PO-Revision-Date: 2023-08-30 15:40+0300\n"
+"PO-Revision-Date: 2023-08-31 07:08+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -1938,7 +1938,8 @@ msgstr ""
 #, c-format
 msgid "frozen: %u pages from table (%.2f%% of total) had %lld tuples frozen\n"
 msgstr ""
-"на страницах таблицы (%u, %.2f%% от общего числа) заморожено кортежей: %lld\n"
+"замораживание: на страницах таблицы (%u, %.2f%% от общего числа) заморожено "
+"кортежей: %lld\n"
 
 #. +> 16 15 14
 #: access/heap/vacuumlazy.c:707
@@ -19326,7 +19327,7 @@ msgstr ""
 #: commands/user.c:2254 commands/user.c:2263
 #, c-format
 msgid "permission denied to grant privileges as role \"%s\""
-msgstr "нет прав для назначения прав доступа роли \"%s\""
+msgstr "нет полномочий для назначения прав доступа роли \"%s\""
 
 #. +> 16
 #: commands/user.c:2256
@@ -19352,7 +19353,7 @@ msgstr "требуется право admin для роли \"%s\""
 #: commands/user.c:2273
 #, c-format
 msgid "permission denied to revoke privileges granted by role \"%s\""
-msgstr "нет прав для отзыва прав доступа, назначенных ролью \"%s\""
+msgstr "нет полномочий для отзыва прав доступа, назначенных ролью \"%s\""
 
 #. +> 16
 #: commands/user.c:2275
@@ -30810,14 +30811,15 @@ msgstr ""
 msgid ""
 "client sent proto_version=%d but server only supports protocol %d or higher"
 msgstr ""
-"клиент передал proto_version=%d, но мы поддерживает только протокол %d и выше"
+"клиент передал proto_version=%d, но сервер поддерживает только протокол %d и "
+"выше"
 
 #. +> 15 14 13 12 11
 #: replication/pgoutput/pgoutput.c:432
 #, c-format
 msgid "client sent proto_version=%d but we only support protocol %d or higher"
 msgstr ""
-"клиент передал proto_version=%d, но мы поддерживает только протокол %d и выше"
+"клиент передал proto_version=%d, но мы поддерживаем только протокол %d и выше"
 
 #. +> 16 15 14 13 12 11
 #: replication/pgoutput/pgoutput.c:455
@@ -43599,7 +43601,7 @@ msgid ""
 "and with which options."
 msgstr ""
 "Определяет, будет ли пользователь CREATEROLE автоматически включать себя в "
-"создаваемую роль, и с какими параметрами."
+"создаваемую роль и с какими параметрами."
 
 #. +> 16 15 14 13 12 11
 #: utils/misc/guc_tables.c:4015
