@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2023-08-28 08:24+0300\n"
-"PO-Revision-Date: 2023-08-31 07:08+0300\n"
+"PO-Revision-Date: 2023-08-31 10:13+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -21515,7 +21515,7 @@ msgstr ""
 #: libpq/auth.c:315
 #, c-format
 msgid "Connection matched file \"%s\" line %d: \"%s\""
-msgstr "Подключение соответствует строке %2$d в \"%1$s\": \"%s\""
+msgstr "Подключение соответствует строке %2$d в \"%1$s\": \"%3$s\""
 
 #. +> 15 14 13 12 11
 #: libpq/auth.c:319
