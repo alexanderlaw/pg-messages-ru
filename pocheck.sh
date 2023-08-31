@@ -21,7 +21,7 @@ pocheck() {
 #    sed -i -z -e 's/"Last-Translator:[^"]*"\n//g' *.po
     sed -i -e "s/\(\"PO-Revision-Date: \)YEAR-MO-DA HO:MI+ZONE\(\\\\n\"\)/\1`date --rfc-3339=seconds`\2/" *.po
     for po in *.po; do
-        msgfmt -v -o /dev/null $po
+        msgfmt -c -v -o /dev/null $po
         $TTPATH/chkpos.py --whitelist=$SD/whitelist.xml $po
         $TTPATH/chkpos.py --test=SuffixWhitespacePedantic --whitelist=$SD/whitelist.xml $po
     done
