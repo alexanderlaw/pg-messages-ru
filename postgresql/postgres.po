@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2023-09-11 15:34+0300\n"
-"PO-Revision-Date: 2023-08-31 10:13+0300\n"
+"PO-Revision-Date: 2023-09-11 16:21+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -44205,6 +44205,8 @@ msgstr ""
 msgid ""
 "Forces immediate streaming or serialization of changes in large transactions."
 msgstr ""
+"Включает непосредственную передачу или сериализацию изменений в больших "
+"транзакциях."
 
 #. +> 16
 #: utils/misc/guc_tables.c:4961
