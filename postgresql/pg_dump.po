@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_dump (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2023-08-28 08:23+0300\n"
+"POT-Creation-Date: 2023-09-11 15:34+0300\n"
 "PO-Revision-Date: 2023-08-30 14:18+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -5176,7 +5176,7 @@ msgid "WARNING: invalid type \"%c\" of access method \"%s\"\n"
 msgstr "ПРЕДУПРЕЖДЕНИЕ: неверный тип \"%c\" метода доступа \"%s\"\n"
 
 #. +> 16 15 14 13 12
-#: pg_dump.c:13455
+#: pg_dump.c:13455 pg_dump.c:13514
 #, c-format
 msgid "unrecognized collation provider: %s"
 msgstr "нераспознанный провайдер правил сортировки: %s"
@@ -5192,12 +5192,6 @@ msgstr "нераспознанный провайдер правил сорти�
 #, c-format
 msgid "invalid collation \"%s\""
 msgstr "неверное правило сортировки \"%s\""
-
-#. +> 16 15
-#: pg_dump.c:13514
-#, c-format
-msgid "unrecognized collation provider '%c'"
-msgstr "нераспознанный провайдер правил сортировки '%c'"
 
 #. +> 16 15 14 13 12
 #: pg_dump.c:13904
@@ -6598,3 +6592,7 @@ msgstr "не удалось прочитать входной файл: %s\n"
 #, c-format
 msgid "could not read from input file: end of file\n"
 msgstr "не удалось прочитать входной файл: конец файла\n"
+
+#, c-format
+#~ msgid "unrecognized collation provider '%c'"
+#~ msgstr "нераспознанный провайдер правил сортировки '%c'"
