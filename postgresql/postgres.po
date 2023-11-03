@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2023-11-03 09:11+0300\n"
-"PO-Revision-Date: 2023-09-11 16:21+0300\n"
+"PO-Revision-Date: 2023-11-03 10:37+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -10202,10 +10202,10 @@ msgstr "нераспознанный провайдер правил сорти�
 #. +> 16
 #: commands/collationcmds.c:253 commands/collationcmds.c:259
 #: commands/collationcmds.c:267
-#, fuzzy, c-format
+#, c-format
 #| msgid "parameter \"locale\" must be specified"
 msgid "parameter \"%s\" must be specified"
-msgstr "необходимо указать параметр \"locale\""
+msgstr "необходимо указать параметр \"%s\""
 
 #. +> 15 14 13 12 11
 #: commands/collationcmds.c:232
@@ -39176,10 +39176,10 @@ msgstr "неверный запрос"
 
 #. +> 16 15 14 13 12 11
 #: utils/adt/xml.c:3018
-#, fuzzy, c-format
+#, c-format
 #| msgid "%s query does not return tuples"
 msgid "portal \"%s\" does not return tuples"
-msgstr "запрос %s не возвращает кортежи"
+msgstr "портал \"%s\" не возвращает кортежи"
 
 #. +> 16 15 14 13 12 11
 #: utils/adt/xml.c:4270

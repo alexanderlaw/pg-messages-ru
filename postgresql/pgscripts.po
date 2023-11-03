@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: pgscripts (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2023-11-03 09:10+0300\n"
-"PO-Revision-Date: 2023-08-30 12:51+0300\n"
+"PO-Revision-Date: 2023-11-03 10:36+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -121,22 +121,22 @@ msgstr "значение %s должно быть в диапазоне %d..%d"
 
 #. +> 16 15 14 13 12
 #: ../../fe_utils/parallel_slot.c:317
-#, fuzzy, c-format
+#, c-format
 #| msgid "too many jobs for this platform"
 msgid "too many jobs for this platform: %d"
-msgstr "слишком много заданий для этой платформы"
+msgstr "слишком много заданий для этой платформы: %d"
 
 #. +> 16 15 14 13 12
 #: ../../fe_utils/parallel_slot.c:326
 #, c-format
 msgid "socket file descriptor out of range for select(): %d"
-msgstr ""
+msgstr "дескриптор файла сокета вне диапазона, допустимого для select(): %d"
 
 #. +> 16 15
 #: ../../fe_utils/parallel_slot.c:328
 #, c-format
 msgid "Try fewer jobs."
-msgstr ""
+msgstr "Попробуйте уменьшить количество заданий."
 
 #. +> 16 15 14 13
 #: ../../fe_utils/parallel_slot.c:553
@@ -1811,10 +1811,10 @@ msgstr ""
 
 #. +> 16
 #: vacuumdb.c:467
-#, fuzzy, c-format
+#, c-format
 #| msgid "out of memory\n"
 msgid "out of memory"
-msgstr "нехватка памяти\n"
+msgstr "нехватка памяти"
 
 #. +> 16 15 14 13 12 11
 #: vacuumdb.c:512
@@ -2008,7 +2008,7 @@ msgstr ""
 
 #. +> 16
 #: vacuumdb.c:1174
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "  -n, --schema=PATTERN            vacuum tables in the specified "
 #| "schema(s) only\n"
@@ -2016,12 +2016,12 @@ msgid ""
 "  -n, --schema=SCHEMA             vacuum tables in the specified schema(s) "
 "only\n"
 msgstr ""
-"  -n, --schema=ШАБЛОН             очищать таблицы только в указанной "
+"  -n, --schema=СХЕМА              очищать таблицы только в указанной "
 "схеме(ах)\n"
 
 #. +> 16
 #: vacuumdb.c:1175
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "  -N, --exclude-schema=PATTERN    do not vacuum tables in the specified "
 #| "schema(s)\n"
@@ -2029,7 +2029,7 @@ msgid ""
 "  -N, --exclude-schema=SCHEMA     do not vacuum tables in the specified "
 "schema(s)\n"
 msgstr ""
-"  -N, --exclude-schema=ШАБЛОН     не очищать таблицы в указанной схеме(ах)\n"
+"  -N, --exclude-schema=СХЕМА      не очищать таблицы в указанной схеме(ах)\n"
 
 #. +> 16 15 14 13
 #: vacuumdb.c:1176

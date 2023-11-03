@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pg_upgrade (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2023-11-03 09:10+0300\n"
-"PO-Revision-Date: 2023-08-30 15:47+0300\n"
+"PO-Revision-Date: 2023-11-03 09:24+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -1062,11 +1062,10 @@ msgstr ""
 
 #. +> 16
 #: check.c:1231
-#, fuzzy, c-format
+#, c-format
 #| msgid "Checking for incompatible \"aclitem\" data type in user tables"
 msgid "Checking for incompatible \"%s\" data type in user tables"
-msgstr ""
-"Проверка несовместимого типа данных \"aclitem\" в пользовательских таблицах"
+msgstr "Проверка несовместимого типа данных \"%s\" в пользовательских таблицах"
 
 #. +> 16
 #: check.c:1239
@@ -1090,14 +1089,14 @@ msgstr ""
 
 #. +> 16 15 14 13 12
 #: check.c:1263
-#, fuzzy, c-format
+#, c-format
 #| msgid "Checking for reg* data types in user tables"
 msgid "Checking for removed \"%s\" data type in user tables"
-msgstr "Проверка типов данных reg* в пользовательских таблицах"
+msgstr "Проверка удалённого типа данных \"%s\" в пользовательских таблицах"
 
 #. +> 16
 #: check.c:1273
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "Your installation contains the \"aclitem\" data type in user tables.\n"
 #| "The internal format of \"aclitem\" changed in PostgreSQL version 16\n"
@@ -1113,10 +1112,8 @@ msgid ""
 "the upgrade.  A list of the problem columns is in the file:\n"
 "    %s"
 msgstr ""
-"В вашей инсталляции пользовательские таблицы используют тип данных "
-"\"aclitem\".\n"
-"Внутренний формат \"aclitem\" изменился в PostgreSQL версии 16, поэтому "
-"обновить\n"
+"В вашей инсталляции пользовательские таблицы используют тип данных \"%s\".\n"
+"Тип \"%s\" был удалён в PostgreSQL версии %s, поэтому обновить\n"
 "кластер в текущем состоянии невозможно. Вы можете удалить проблемные столбцы "
 "и\n"
 "перезапустить обновление. Список проблемных столбцов приведён в файле:\n"
@@ -1124,7 +1121,7 @@ msgstr ""
 
 #. +> 15 14 13 12
 #: check.c:1374
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "Your installation contains the \"aclitem\" data type in user tables.\n"
 #| "The internal format of \"aclitem\" changed in PostgreSQL version 16\n"
@@ -1141,14 +1138,13 @@ msgid ""
 "    %s\n"
 "\n"
 msgstr ""
-"В вашей инсталляции пользовательские таблицы используют тип данных "
-"\"aclitem\".\n"
-"Внутренний формат \"aclitem\" изменился в PostgreSQL версии 16, поэтому "
-"обновить\n"
+"В вашей инсталляции пользовательские таблицы используют тип данных \"%s\".\n"
+"Тип \"%s\" был удалён в PostgreSQL версии %s, поэтому обновить\n"
 "кластер в текущем состоянии невозможно. Вы можете удалить проблемные столбцы "
 "и\n"
 "перезапустить обновление. Список проблемных столбцов приведён в файле:\n"
-"    %s"
+"    %s\n"
+"\n"
 
 #. +> 16 15 14 13 12 11
 #: check.c:1295
