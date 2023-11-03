@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_dump (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2023-09-11 15:34+0300\n"
+"POT-Creation-Date: 2023-11-03 09:10+0300\n"
 "PO-Revision-Date: 2023-08-30 14:18+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -1888,25 +1888,25 @@ msgid "unrecognized file format \"%d\"\n"
 msgstr "неопознанный формат файла: \"%d\"\n"
 
 #. +> 16 15 14 13 12
-#: pg_backup_archiver.c:2423 pg_backup_archiver.c:4448
+#: pg_backup_archiver.c:2423 pg_backup_archiver.c:4466
 #, c-format
 msgid "finished item %d %s %s"
 msgstr "закончен объект %d %s %s"
 
 #. +> 11
-#: pg_backup_archiver.c:2451 pg_backup_archiver.c:4430
+#: pg_backup_archiver.c:2451 pg_backup_archiver.c:4449
 #, c-format
 msgid "finished item %d %s %s\n"
 msgstr "закончен объект %d %s %s\n"
 
 #. +> 16 15 14 13 12
-#: pg_backup_archiver.c:2427 pg_backup_archiver.c:4461
+#: pg_backup_archiver.c:2427 pg_backup_archiver.c:4479
 #, c-format
 msgid "worker process failed: exit code %d"
 msgstr "рабочий процесс завершился с кодом возврата %d"
 
 #. +> 11
-#: pg_backup_archiver.c:2455 pg_backup_archiver.c:4443
+#: pg_backup_archiver.c:2455 pg_backup_archiver.c:4462
 #, c-format
 msgid "worker process failed: exit code %d\n"
 msgstr "рабочий процесс завершился с кодом возврата %d\n"
@@ -2026,86 +2026,86 @@ msgid "trigger \"%s\" not found\n"
 msgstr "триггер \"%s\" не найден\n"
 
 #. +> 16 15 14 13 12 11
-#: pg_backup_archiver.c:3183
+#: pg_backup_archiver.c:3201
 #, c-format
 msgid "could not set session user to \"%s\": %s"
 msgstr "не удалось переключить пользователя сеанса на \"%s\": %s"
 
 #. +> 16 15 14 13 12 11
-#: pg_backup_archiver.c:3315
+#: pg_backup_archiver.c:3333
 #, c-format
 msgid "could not set search_path to \"%s\": %s"
 msgstr "не удалось присвоить search_path значение \"%s\": %s"
 
 #. +> 16 15 14 13 12 11
-#: pg_backup_archiver.c:3376
+#: pg_backup_archiver.c:3394
 #, c-format
 msgid "could not set default_tablespace to %s: %s"
 msgstr "не удалось задать для default_tablespace значение %s: %s"
 
 #. +> 11
-#: pg_backup_archiver.c:3231
+#: pg_backup_archiver.c:3250
 #, c-format
 msgid "could not set default_with_oids: %s"
 msgstr "не удалось установить параметр default_with_oids: %s"
 
 #. +> 16 15 14 13 12
-#: pg_backup_archiver.c:3425
+#: pg_backup_archiver.c:3443
 #, c-format
 msgid "could not set default_table_access_method: %s"
 msgstr "не удалось задать default_table_access_method: %s"
 
 #. +> 16 15 14 13 12
-#: pg_backup_archiver.c:3530
+#: pg_backup_archiver.c:3548
 #, c-format
 msgid "don't know how to set owner for object type \"%s\""
 msgstr "неизвестно, как назначить владельца для объекта типа \"%s\""
 
 #. +> 11
-#: pg_backup_archiver.c:3534 pg_backup_archiver.c:3706
+#: pg_backup_archiver.c:3553 pg_backup_archiver.c:3725
 #, c-format
 msgid "WARNING: don't know how to set owner for object type \"%s\"\n"
 msgstr ""
 "ПРЕДУПРЕЖДЕНИЕ: неизвестно, как назначить владельца для объекта типа \"%s\"\n"
 
 #. +> 16 15 14 13 12
-#: pg_backup_archiver.c:3752
+#: pg_backup_archiver.c:3770
 #, c-format
 msgid "did not find magic string in file header"
 msgstr "в заголовке файла не найдена нужная сигнатура"
 
 #. +> 11
-#: pg_backup_archiver.c:3795
+#: pg_backup_archiver.c:3814
 #, c-format
 msgid "did not find magic string in file header\n"
 msgstr "в заголовке файла не найдена нужная сигнатура\n"
 
 #. +> 16 15 14 13 12
-#: pg_backup_archiver.c:3766
+#: pg_backup_archiver.c:3784
 #, c-format
 msgid "unsupported version (%d.%d) in file header"
 msgstr "неподдерживаемая версия (%d.%d) в заголовке файла"
 
 #. +> 11
-#: pg_backup_archiver.c:3809
+#: pg_backup_archiver.c:3828
 #, c-format
 msgid "unsupported version (%d.%d) in file header\n"
 msgstr "неподдерживаемая версия (%d.%d) в заголовке файла\n"
 
 #. +> 16 15 14 13 12
-#: pg_backup_archiver.c:3771
+#: pg_backup_archiver.c:3789
 #, c-format
 msgid "sanity check on integer size (%lu) failed"
 msgstr "несоответствие размера integer (%lu)"
 
 #. +> 11
-#: pg_backup_archiver.c:3814
+#: pg_backup_archiver.c:3833
 #, c-format
 msgid "sanity check on integer size (%lu) failed\n"
 msgstr "несоответствие размера integer (%lu)\n"
 
 #. +> 16 15 14 13 12
-#: pg_backup_archiver.c:3775
+#: pg_backup_archiver.c:3793
 #, c-format
 msgid ""
 "archive was made on a machine with larger integers, some operations might "
@@ -2115,7 +2115,7 @@ msgstr ""
 "некоторых операций"
 
 #. +> 11
-#: pg_backup_archiver.c:3818
+#: pg_backup_archiver.c:3837
 #, c-format
 msgid ""
 "WARNING: archive was made on a machine with larger integers, some operations "
@@ -2125,19 +2125,19 @@ msgstr ""
 "возможен сбой некоторых операций\n"
 
 #. +> 16 15 14 13 12
-#: pg_backup_archiver.c:3785
+#: pg_backup_archiver.c:3803
 #, c-format
 msgid "expected format (%d) differs from format found in file (%d)"
 msgstr "ожидаемый формат (%d) отличается от формата, указанного в файле (%d)"
 
 #. +> 11
-#: pg_backup_archiver.c:3828
+#: pg_backup_archiver.c:3847
 #, c-format
 msgid "expected format (%d) differs from format found in file (%d)\n"
 msgstr "ожидаемый формат (%d) отличается от формата, указанного в файле (%d)\n"
 
 #. +> 16
-#: pg_backup_archiver.c:3807
+#: pg_backup_archiver.c:3825
 #, c-format
 msgid ""
 "archive is compressed, but this installation does not support compression "
@@ -2147,7 +2147,7 @@ msgstr ""
 "будут недоступны"
 
 #. +> 15 14 13 12
-#: pg_backup_archiver.c:3862
+#: pg_backup_archiver.c:3880
 #, c-format
 msgid ""
 "archive is compressed, but this installation does not support compression -- "
@@ -2157,7 +2157,7 @@ msgstr ""
 "недоступны"
 
 #. +> 11
-#: pg_backup_archiver.c:3843
+#: pg_backup_archiver.c:3862
 #, c-format
 msgid ""
 "WARNING: archive is compressed, but this installation does not support "
@@ -2167,133 +2167,133 @@ msgstr ""
 "-- данные недоступны\n"
 
 #. +> 16 15 14 13 12
-#: pg_backup_archiver.c:3843
+#: pg_backup_archiver.c:3861
 #, c-format
 msgid "invalid creation date in header"
 msgstr "неверная дата создания в заголовке"
 
 #. +> 11
-#: pg_backup_archiver.c:3878
+#: pg_backup_archiver.c:3897
 #, c-format
 msgid "WARNING: invalid creation date in header\n"
 msgstr "ПРЕДУПРЕЖДЕНИЕ: неверная дата создания в заголовке\n"
 
 #. +> 11
-#: pg_backup_archiver.c:3957
+#: pg_backup_archiver.c:3976
 #, c-format
 msgid "entering restore_toc_entries_prefork\n"
 msgstr "вход в restore_toc_entries_prefork\n"
 
 #. +> 16 15 14 13 12
-#: pg_backup_archiver.c:3977
+#: pg_backup_archiver.c:3995
 #, c-format
 msgid "processing item %d %s %s"
 msgstr "обработка объекта %d %s %s"
 
 #. +> 11
-#: pg_backup_archiver.c:4021
+#: pg_backup_archiver.c:4040
 #, c-format
 msgid "processing item %d %s %s\n"
 msgstr "обработка объекта %d %s %s\n"
 
 #. +> 16 15 14 13 12
-#: pg_backup_archiver.c:4052
+#: pg_backup_archiver.c:4070
 #, c-format
 msgid "entering main parallel loop"
 msgstr "вход в основной параллельный цикл"
 
 #. +> 11
-#: pg_backup_archiver.c:4096
+#: pg_backup_archiver.c:4115
 #, c-format
 msgid "entering main parallel loop\n"
 msgstr "вход в основной параллельный цикл\n"
 
 #. +> 16 15 14 13 12
-#: pg_backup_archiver.c:4063
+#: pg_backup_archiver.c:4081
 #, c-format
 msgid "skipping item %d %s %s"
 msgstr "объект %d %s %s пропускается"
 
 #. +> 11
-#: pg_backup_archiver.c:4107
+#: pg_backup_archiver.c:4126
 #, c-format
 msgid "skipping item %d %s %s\n"
 msgstr "объект %d %s %s пропускается\n"
 
 #. +> 16 15 14 13 12
-#: pg_backup_archiver.c:4072
+#: pg_backup_archiver.c:4090
 #, c-format
 msgid "launching item %d %s %s"
 msgstr "объект %d %s %s запускается"
 
 #. +> 11
-#: pg_backup_archiver.c:4075
+#: pg_backup_archiver.c:4094
 #, c-format
 msgid "entering restore_toc_entries_parallel\n"
 msgstr "вход в restore_toc_entries_parallel\n"
 
 #. +> 11
-#: pg_backup_archiver.c:4117
+#: pg_backup_archiver.c:4136
 #, c-format
 msgid "launching item %d %s %s\n"
 msgstr "объект %d %s %s запускается\n"
 
 #. +> 16 15 14 13 12
-#: pg_backup_archiver.c:4126
+#: pg_backup_archiver.c:4144
 #, c-format
 msgid "finished main parallel loop"
 msgstr "основной параллельный цикл закончен"
 
 #. +> 11
-#: pg_backup_archiver.c:4171
+#: pg_backup_archiver.c:4190
 #, c-format
 msgid "finished main parallel loop\n"
 msgstr "основной параллельный цикл закончен\n"
 
 #. +> 16 15 14 13 12
-#: pg_backup_archiver.c:4162
+#: pg_backup_archiver.c:4180
 #, c-format
 msgid "processing missed item %d %s %s"
 msgstr "обработка пропущенного объекта %d %s %s"
 
 #. +> 11
-#: pg_backup_archiver.c:4189
+#: pg_backup_archiver.c:4208
 #, c-format
 msgid "entering restore_toc_entries_postfork\n"
 msgstr "вход в restore_toc_entries_postfork\n"
 
 #. +> 11
-#: pg_backup_archiver.c:4207
+#: pg_backup_archiver.c:4226
 #, c-format
 msgid "processing missed item %d %s %s\n"
 msgstr "обработка пропущенного объекта %d %s %s\n"
 
 #. +> 11
-#: pg_backup_archiver.c:4386
+#: pg_backup_archiver.c:4405
 #, c-format
 msgid "no item ready\n"
 msgstr "элемент не готов\n"
 
 #. +> 11
-#: pg_backup_archiver.c:4605
+#: pg_backup_archiver.c:4624
 #, c-format
 msgid "transferring dependency %d -> %d to %d\n"
 msgstr "переключение зависимости %d -> %d на %d\n"
 
 #. +> 11
-#: pg_backup_archiver.c:4686
+#: pg_backup_archiver.c:4705
 #, c-format
 msgid "reducing dependencies for %d\n"
 msgstr "уменьшение зависимостей для %d\n"
 
 #. +> 16 15 14 13 12
-#: pg_backup_archiver.c:4767
+#: pg_backup_archiver.c:4785
 #, c-format
 msgid "table \"%s\" could not be created, will not restore its data"
 msgstr "создать таблицу \"%s\" не удалось, её данные не будут восстановлены"
 
 #. +> 11
-#: pg_backup_archiver.c:4738
+#: pg_backup_archiver.c:4757
 #, c-format
 msgid "table \"%s\" could not be created, will not restore its data\n"
 msgstr "создать таблицу \"%s\" не удалось, её данные не будут восстановлены\n"
@@ -4530,8 +4530,8 @@ msgid "unexpected policy command type: %c\n"
 msgstr "нераспознанный тип команды в политике: %c\n"
 
 #. +> 16 15
-#: pg_dump.c:4425 pg_dump.c:4760 pg_dump.c:11984 pg_dump.c:17894
-#: pg_dump.c:17896 pg_dump.c:18517
+#: pg_dump.c:4425 pg_dump.c:4769 pg_dump.c:11996 pg_dump.c:17906
+#: pg_dump.c:17908 pg_dump.c:18529
 #, c-format
 msgid "could not parse %s array"
 msgstr "не удалось разобрать массив %s"
@@ -4641,7 +4641,7 @@ msgid "WARNING: could not parse reloptions array\n"
 msgstr "ПРЕДУПРЕЖДЕНИЕ: не удалось разобрать массив reloptions\n"
 
 #. +> 16 15 14 13 12
-#: pg_dump.c:4613
+#: pg_dump.c:4614
 #, c-format
 msgid "subscriptions not dumped because current user is not a superuser"
 msgstr ""
@@ -4657,7 +4657,7 @@ msgstr ""
 "суперпользователь\n"
 
 #. +> 16 15 14 13 12
-#: pg_dump.c:5149
+#: pg_dump.c:5161
 #, c-format
 msgid "could not find parent extension for %s %s"
 msgstr "не удалось найти родительское расширение для %s %s"
@@ -4669,7 +4669,7 @@ msgid "could not find parent extension for %s %s\n"
 msgstr "не удалось найти родительское расширение для %s %s\n"
 
 #. +> 16 15 14 13 12
-#: pg_dump.c:5294
+#: pg_dump.c:5306
 #, c-format
 msgid "schema with OID %u does not exist"
 msgstr "схема с OID %u не существует"
@@ -4681,7 +4681,7 @@ msgid "schema with OID %u does not exist\n"
 msgstr "схема с OID %u не существует\n"
 
 #. +> 16 15 14 13 12
-#: pg_dump.c:6776 pg_dump.c:17158
+#: pg_dump.c:6788 pg_dump.c:17170
 #, c-format
 msgid ""
 "failed sanity check, parent table with OID %u of sequence with OID %u not "
@@ -4701,7 +4701,7 @@ msgstr ""
 "последовательности с OID %u\n"
 
 #. +> 16 15 14 13 12
-#: pg_dump.c:6919
+#: pg_dump.c:6931
 #, c-format
 msgid ""
 "failed sanity check, table OID %u appearing in pg_partitioned_table not found"
@@ -4720,20 +4720,20 @@ msgstr ""
 "pg_partitioned_table, не найдена\n"
 
 #. +> 16 15
-#: pg_dump.c:7150 pg_dump.c:7417 pg_dump.c:7888 pg_dump.c:8552 pg_dump.c:8671
-#: pg_dump.c:8819
+#: pg_dump.c:7162 pg_dump.c:7429 pg_dump.c:7900 pg_dump.c:8564 pg_dump.c:8683
+#: pg_dump.c:8831
 #, c-format
 msgid "unrecognized table OID %u"
 msgstr "нераспознанный OID таблицы %u"
 
 #. +> 16 15
-#: pg_dump.c:7154
+#: pg_dump.c:7166
 #, c-format
 msgid "unexpected index data for table \"%s\""
 msgstr "неожиданно получены данные индекса для таблицы \"%s\""
 
 #. +> 16 15 14 13 12
-#: pg_dump.c:7649
+#: pg_dump.c:7661
 #, c-format
 msgid ""
 "failed sanity check, parent table with OID %u of pg_rewrite entry with OID "
@@ -4753,7 +4753,7 @@ msgstr ""
 "записи pg_rewrite с OID %u\n"
 
 #. +> 16 15 14 13 12
-#: pg_dump.c:7940
+#: pg_dump.c:7952
 #, c-format
 msgid ""
 "query produced null referenced table name for foreign key trigger \"%s\" on "
@@ -4773,13 +4773,13 @@ msgstr ""
 "\"%s\" в таблице \"%s\" (OID целевой таблицы: %u)\n"
 
 #. +> 16 15
-#: pg_dump.c:8556
+#: pg_dump.c:8568
 #, c-format
 msgid "unexpected column data for table \"%s\""
 msgstr "неожиданно получены данные столбцов для таблицы \"%s\""
 
 #. +> 16 15 14 13 12
-#: pg_dump.c:8585
+#: pg_dump.c:8597
 #, c-format
 msgid "invalid column numbering in table \"%s\""
 msgstr "неверная нумерация столбцов в таблице \"%s\""
@@ -4791,7 +4791,7 @@ msgid "invalid column numbering in table \"%s\"\n"
 msgstr "неверная нумерация столбцов в таблице \"%s\"\n"
 
 #. +> 16 15
-#: pg_dump.c:8633
+#: pg_dump.c:8645
 #, c-format
 msgid "finding table default expressions"
 msgstr "поиск выражений по умолчанию для таблиц"
@@ -4809,7 +4809,7 @@ msgid "finding default expressions of table \"%s.%s\"\n"
 msgstr "поиск выражений по умолчанию для таблицы \"%s.%s\"\n"
 
 #. +> 16 15 14 13 12
-#: pg_dump.c:8675
+#: pg_dump.c:8687
 #, c-format
 msgid "invalid adnum value %d for table \"%s\""
 msgstr "неверное значение adnum (%d) в таблице \"%s\""
@@ -4821,13 +4821,13 @@ msgid "invalid adnum value %d for table \"%s\"\n"
 msgstr "неверное значение adnum (%d) в таблице \"%s\"\n"
 
 #. +> 16 15
-#: pg_dump.c:8769
+#: pg_dump.c:8781
 #, c-format
 msgid "finding table check constraints"
 msgstr "поиск ограничений-проверок для таблиц"
 
 #. +> 16 15 14 13 12
-#: pg_dump.c:8823
+#: pg_dump.c:8835
 #, c-format
 msgid "expected %d check constraint on table \"%s\" but found %d"
 msgid_plural "expected %d check constraints on table \"%s\" but found %d"
@@ -4851,7 +4851,7 @@ msgstr[2] ""
 "ожидалось %d ограничений-проверок для таблицы \"%s\", но найдено: %d\n"
 
 #. +> 16 15
-#: pg_dump.c:8827
+#: pg_dump.c:8839
 #, c-format
 msgid "The system catalogs might be corrupted."
 msgstr "Возможно, повреждены системные каталоги."
@@ -4869,19 +4869,19 @@ msgid "(The system catalogs might be corrupted.)\n"
 msgstr "(Возможно, повреждены системные каталоги.)\n"
 
 #. +> 16 15
-#: pg_dump.c:9517
+#: pg_dump.c:9529
 #, c-format
 msgid "role with OID %u does not exist"
 msgstr "роль с OID %u не существует"
 
 #. +> 16 15
-#: pg_dump.c:9629 pg_dump.c:9658
+#: pg_dump.c:9641 pg_dump.c:9670
 #, c-format
 msgid "unsupported pg_init_privs entry: %u %u %d"
 msgstr "неподдерживаемая запись в pg_init_privs: %u %u %d"
 
 #. +> 16 15 14 13 12
-#: pg_dump.c:10479
+#: pg_dump.c:10491
 #, c-format
 msgid "typtype of data type \"%s\" appears to be invalid"
 msgstr "у типа данных \"%s\" по-видимому неправильный тип типа"
@@ -5025,7 +5025,7 @@ msgstr "ПРЕДУПРЕЖДЕНИЕ: у таблицы \"%s\" по-видимо
 
 # TO REVEIW
 #. +> 16 15 14 13 12
-#: pg_dump.c:12053
+#: pg_dump.c:12065
 #, c-format
 msgid "unrecognized provolatile value for function \"%s\""
 msgstr "недопустимое значение provolatile для функции \"%s\""
@@ -5039,7 +5039,7 @@ msgstr "недопустимое значение provolatile для функц�
 
 # TO REVEIW
 #. +> 16 15 14 13 12
-#: pg_dump.c:12103 pg_dump.c:13985
+#: pg_dump.c:12115 pg_dump.c:13997
 #, c-format
 msgid "unrecognized proparallel value for function \"%s\""
 msgstr "недопустимое значение proparallel для функции \"%s\""
@@ -5052,7 +5052,7 @@ msgid "unrecognized proparallel value for function \"%s\"\n"
 msgstr "недопустимое значение proparallel для функции \"%s\"\n"
 
 #. +> 16 15 14 13 12
-#: pg_dump.c:12233 pg_dump.c:12339 pg_dump.c:12346
+#: pg_dump.c:12245 pg_dump.c:12351 pg_dump.c:12358
 #, c-format
 msgid "could not find function definition for function with OID %u"
 msgstr "не удалось найти определение функции для функции с OID %u"
@@ -5064,7 +5064,7 @@ msgid "could not find function definition for function with OID %u\n"
 msgstr "не удалось найти определение функции для функции с OID %u\n"
 
 #. +> 16 15 14 13 12
-#: pg_dump.c:12272
+#: pg_dump.c:12284
 #, c-format
 msgid "bogus value in pg_cast.castfunc or pg_cast.castmethod field"
 msgstr "неприемлемое значение в поле pg_cast.castfunc или pg_cast.castmethod"
@@ -5078,7 +5078,7 @@ msgstr ""
 "castmethod\n"
 
 #. +> 16 15 14 13 12
-#: pg_dump.c:12275
+#: pg_dump.c:12287
 #, c-format
 msgid "bogus value in pg_cast.castmethod field"
 msgstr "неприемлемое значение в поле pg_cast.castmethod"
@@ -5102,7 +5102,7 @@ msgid "WARNING: bogus value in proargmodes array\n"
 msgstr "ПРЕДУПРЕЖДЕНИЕ: неприемлемое значение в массиве proargmodes\n"
 
 #. +> 16 15 14 13 12
-#: pg_dump.c:12365
+#: pg_dump.c:12377
 #, c-format
 msgid ""
 "bogus transform definition, at least one of trffromsql and trftosql should "
@@ -5122,7 +5122,7 @@ msgstr ""
 "trftosql должно быть ненулевым)\n"
 
 #. +> 16 15 14 13 12
-#: pg_dump.c:12382
+#: pg_dump.c:12394
 #, c-format
 msgid "bogus value in pg_transform.trffromsql field"
 msgstr "неприемлемое значение в поле pg_transform.trffromsql"
@@ -5134,7 +5134,7 @@ msgid "WARNING: bogus value in pg_transform.trffromsql field\n"
 msgstr "ПРЕДУПРЕЖДЕНИЕ: неприемлемое значение в поле pg_transform.trffromsql\n"
 
 #. +> 16 15 14 13 12
-#: pg_dump.c:12403
+#: pg_dump.c:12415
 #, c-format
 msgid "bogus value in pg_transform.trftosql field"
 msgstr "неприемлемое значение в поле pg_transform.trftosql"
@@ -5146,13 +5146,13 @@ msgid "WARNING: bogus value in pg_transform.trftosql field\n"
 msgstr "ПРЕДУПРЕЖДЕНИЕ: неприемлемое значение в поле pg_transform.trftosql\n"
 
 #. +> 16 15 14
-#: pg_dump.c:12548
+#: pg_dump.c:12560
 #, c-format
 msgid "postfix operators are not supported anymore (operator \"%s\")"
 msgstr "постфиксные операторы больше не поддерживаются (оператор \"%s\")"
 
 #. +> 16 15 14 13 12
-#: pg_dump.c:12718
+#: pg_dump.c:12730
 #, c-format
 msgid "could not find operator with OID %s"
 msgstr "оператор с OID %s не найден"
@@ -5164,7 +5164,7 @@ msgid "WARNING: could not find operator with OID %s\n"
 msgstr "ПРЕДУПРЕЖДЕНИЕ: оператор с OID %s не найден\n"
 
 #. +> 16 15 14 13 12
-#: pg_dump.c:12786
+#: pg_dump.c:12798
 #, c-format
 msgid "invalid type \"%c\" of access method \"%s\""
 msgstr "неверный тип \"%c\" метода доступа \"%s\""
@@ -5176,7 +5176,7 @@ msgid "WARNING: invalid type \"%c\" of access method \"%s\"\n"
 msgstr "ПРЕДУПРЕЖДЕНИЕ: неверный тип \"%c\" метода доступа \"%s\"\n"
 
 #. +> 16 15 14 13 12
-#: pg_dump.c:13455 pg_dump.c:13514
+#: pg_dump.c:13467 pg_dump.c:13526
 #, c-format
 msgid "unrecognized collation provider: %s"
 msgstr "нераспознанный провайдер правил сортировки: %s"
@@ -5188,13 +5188,13 @@ msgid "unrecognized collation provider: %s\n"
 msgstr "нераспознанный провайдер правил сортировки: %s\n"
 
 #. +> 16 15
-#: pg_dump.c:13464 pg_dump.c:13473 pg_dump.c:13483 pg_dump.c:13498
+#: pg_dump.c:13476 pg_dump.c:13485 pg_dump.c:13495 pg_dump.c:13510
 #, c-format
 msgid "invalid collation \"%s\""
 msgstr "неверное правило сортировки \"%s\""
 
 #. +> 16 15 14 13 12
-#: pg_dump.c:13904
+#: pg_dump.c:13916
 #, c-format
 msgid "unrecognized aggfinalmodify value for aggregate \"%s\""
 msgstr "нераспознанное значение aggfinalmodify для агрегата \"%s\""
@@ -5206,7 +5206,7 @@ msgid "unrecognized aggfinalmodify value for aggregate \"%s\"\n"
 msgstr "нераспознанное значение aggfinalmodify для агрегата \"%s\"\n"
 
 #. +> 16 15 14 13 12
-#: pg_dump.c:13960
+#: pg_dump.c:13972
 #, c-format
 msgid "unrecognized aggmfinalmodify value for aggregate \"%s\""
 msgstr "нераспознанное значение aggmfinalmodify для агрегата \"%s\""
@@ -5218,7 +5218,7 @@ msgid "unrecognized aggmfinalmodify value for aggregate \"%s\"\n"
 msgstr "нераспознанное значение aggmfinalmodify для агрегата \"%s\"\n"
 
 #. +> 16 15 14 13 12
-#: pg_dump.c:14677
+#: pg_dump.c:14689
 #, c-format
 msgid "unrecognized object type in default privileges: %d"
 msgstr "нераспознанный тип объекта в определении прав по умолчанию: %d"
@@ -5230,7 +5230,7 @@ msgid "unrecognized object type in default privileges: %d\n"
 msgstr "нераспознанный тип объекта в определении прав по умолчанию: %d\n"
 
 #. +> 16 15 14 13 12
-#: pg_dump.c:14693
+#: pg_dump.c:14705
 #, c-format
 msgid "could not parse default ACL list (%s)"
 msgstr "не удалось разобрать список прав по умолчанию (%s)"
@@ -5242,7 +5242,7 @@ msgid "could not parse default ACL list (%s)\n"
 msgstr "не удалось разобрать список прав по умолчанию (%s)\n"
 
 #. +> 16 15
-#: pg_dump.c:14775
+#: pg_dump.c:14787
 #, c-format
 msgid ""
 "could not parse initial ACL list (%s) or default (%s) for object \"%s\" (%s)"
@@ -5271,7 +5271,7 @@ msgstr ""
 "список REVOKE ACL (%s) для объекта \"%s\" (%s)\n"
 
 #. +> 16 15
-#: pg_dump.c:14800
+#: pg_dump.c:14812
 #, c-format
 msgid "could not parse ACL list (%s) or default (%s) for object \"%s\" (%s)"
 msgstr ""
@@ -5299,7 +5299,7 @@ msgstr ""
 "объекта \"%s\" (%s)\n"
 
 #. +> 16 15 14 13 12
-#: pg_dump.c:15341
+#: pg_dump.c:15353
 #, c-format
 msgid "query to obtain definition of view \"%s\" returned no data"
 msgstr ""
@@ -5313,7 +5313,7 @@ msgstr ""
 "запрос на получение определения представления \"%s\" не возвратил данные\n"
 
 #. +> 16 15 14 13 12
-#: pg_dump.c:15344
+#: pg_dump.c:15356
 #, c-format
 msgid ""
 "query to obtain definition of view \"%s\" returned more than one definition"
@@ -5331,7 +5331,7 @@ msgstr ""
 "определений\n"
 
 #. +> 16 15 14 13 12
-#: pg_dump.c:15351
+#: pg_dump.c:15363
 #, c-format
 msgid "definition of view \"%s\" appears to be empty (length zero)"
 msgstr "определение представления \"%s\" пустое (длина равна нулю)"
@@ -5343,13 +5343,13 @@ msgid "definition of view \"%s\" appears to be empty (length zero)\n"
 msgstr "определение представления \"%s\" пустое (длина равна нулю)\n"
 
 #. +> 16 15 14 13 12
-#: pg_dump.c:15435
+#: pg_dump.c:15447
 #, c-format
 msgid "WITH OIDS is not supported anymore (table \"%s\")"
 msgstr "свойство WITH OIDS больше не поддерживается (таблица \"%s\")"
 
 #. +> 16 15 14 13 12
-#: pg_dump.c:16359
+#: pg_dump.c:16371
 #, c-format
 msgid "invalid column number %d for table \"%s\""
 msgstr "неверный номер столбца %d для таблицы \"%s\""
@@ -5379,19 +5379,19 @@ msgid "invalid number of parallel jobs\n"
 msgstr "неверное число параллельных заданий\n"
 
 #. +> 16 15 14
-#: pg_dump.c:16437
+#: pg_dump.c:16449
 #, c-format
 msgid "could not parse index statistic columns"
 msgstr "не удалось разобрать столбцы статистики в индексе"
 
 #. +> 16 15 14
-#: pg_dump.c:16439
+#: pg_dump.c:16451
 #, c-format
 msgid "could not parse index statistic values"
 msgstr "не удалось разобрать значения статистики в индексе"
 
 #. +> 16 15 14
-#: pg_dump.c:16441
+#: pg_dump.c:16453
 #, c-format
 msgid "mismatched number of columns and values for index statistics"
 msgstr ""
@@ -5399,7 +5399,7 @@ msgstr ""
 "количеству"
 
 #. +> 16 15 14 13 12
-#: pg_dump.c:16657
+#: pg_dump.c:16669
 #, c-format
 msgid "missing index for constraint \"%s\""
 msgstr "отсутствует индекс для ограничения \"%s\""
@@ -5411,7 +5411,7 @@ msgid "missing index for constraint \"%s\"\n"
 msgstr "отсутствует индекс для ограничения \"%s\"\n"
 
 #. +> 16 15 14 13 12
-#: pg_dump.c:16892
+#: pg_dump.c:16904
 #, c-format
 msgid "unrecognized constraint type: %c"
 msgstr "нераспознанный тип ограничения: %c"
@@ -5423,7 +5423,7 @@ msgid "unrecognized constraint type: %c\n"
 msgstr "нераспознанный тип ограничения: %c\n"
 
 #. +> 16 15 14 13 12
-#: pg_dump.c:16993 pg_dump.c:17222
+#: pg_dump.c:17005 pg_dump.c:17234
 #, c-format
 msgid "query to get data of sequence \"%s\" returned %d row (expected 1)"
 msgid_plural ""
@@ -5455,7 +5455,7 @@ msgstr[2] ""
 "(ожидалась 1)\n"
 
 #. +> 16 15 14 13 12
-#: pg_dump.c:17025
+#: pg_dump.c:17037
 #, c-format
 msgid "unrecognized sequence type: %s"
 msgstr "нераспознанный тип последовательности: %s"
@@ -5467,7 +5467,7 @@ msgid "unrecognized sequence type: %s\n"
 msgstr "нераспознанный тип последовательности: %s\n"
 
 #. +> 16 15 14 13 12
-#: pg_dump.c:17314
+#: pg_dump.c:17326
 #, c-format
 msgid "unexpected tgtype value: %d"
 msgstr "неожиданное значение tgtype: %d"
@@ -5479,7 +5479,7 @@ msgid "unexpected tgtype value: %d\n"
 msgstr "неожиданное значение tgtype: %d\n"
 
 #. +> 16 15 14 13 12
-#: pg_dump.c:17386
+#: pg_dump.c:17398
 #, c-format
 msgid "invalid argument string (%s) for trigger \"%s\" on table \"%s\""
 msgstr "неверная строка аргументов (%s) для триггера \"%s\" таблицы \"%s\""
@@ -5491,7 +5491,7 @@ msgid "invalid argument string (%s) for trigger \"%s\" on table \"%s\"\n"
 msgstr "неверная строка аргументов (%s) для триггера \"%s\" таблицы \"%s\"\n"
 
 #. +> 16 15 14 13 12
-#: pg_dump.c:17655
+#: pg_dump.c:17667
 #, c-format
 msgid ""
 "query to get rule \"%s\" for table \"%s\" failed: wrong number of rows "
@@ -5511,19 +5511,19 @@ msgstr ""
 "число строк\n"
 
 #. +> 16 15 14 13 12
-#: pg_dump.c:17808
+#: pg_dump.c:17820
 #, c-format
 msgid "could not find referenced extension %u"
 msgstr "не удалось найти упомянутое расширение %u"
 
 #. +> 16 15 14
-#: pg_dump.c:17898
+#: pg_dump.c:17910
 #, c-format
 msgid "mismatched number of configurations and conditions for extension"
 msgstr "конфигурации расширения не соответствуют условиям по количеству"
 
 #. +> 16 15 14 13 12
-#: pg_dump.c:18030
+#: pg_dump.c:18042
 #, c-format
 msgid "reading dependency data"
 msgstr "чтение информации о зависимостях"
@@ -5535,13 +5535,13 @@ msgid "reading dependency data\n"
 msgstr "чтение информации о зависимостях\n"
 
 #. +> 16 15 14 13 12
-#: pg_dump.c:18116
+#: pg_dump.c:18128
 #, c-format
 msgid "no referencing object %u %u"
 msgstr "нет подчинённого объекта %u %u"
 
 #. +> 16 15 14 13 12
-#: pg_dump.c:18127
+#: pg_dump.c:18139
 #, c-format
 msgid "no referenced object %u %u"
 msgstr "нет вышестоящего объекта %u %u"

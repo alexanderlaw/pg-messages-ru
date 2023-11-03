@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_controldata (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2023-08-28 08:23+0300\n"
+"POT-Creation-Date: 2023-11-03 09:10+0300\n"
 "PO-Revision-Date: 2022-09-05 13:34+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -21,7 +21,7 @@ msgstr ""
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #. +> 16 15 14 13 12
-#: ../../common/controldata_utils.c:73
+#: ../../common/controldata_utils.c:83
 #, c-format
 msgid "could not open file \"%s\" for reading: %m"
 msgstr "не удалось открыть файл \"%s\" для чтения: %m"
@@ -33,7 +33,7 @@ msgid "%s: could not open file \"%s\" for reading: %s\n"
 msgstr "%s: не удалось открыть файл \"%s\" для чтения: %s\n"
 
 #. +> 16 15 14 13 12
-#: ../../common/controldata_utils.c:86
+#: ../../common/controldata_utils.c:96
 #, c-format
 msgid "could not read file \"%s\": %m"
 msgstr "не удалось прочитать файл \"%s\": %m"
@@ -45,7 +45,7 @@ msgid "%s: could not read file \"%s\": %s\n"
 msgstr "%s: не удалось прочитать файл \"%s\": %s\n"
 
 #. +> 16 15 14 13 12
-#: ../../common/controldata_utils.c:95
+#: ../../common/controldata_utils.c:105
 #, c-format
 msgid "could not read file \"%s\": read %d of %zu"
 msgstr "не удалось прочитать файл \"%s\" (прочитано байт: %d из %zu)"
@@ -57,18 +57,18 @@ msgid "%s: could not read file \"%s\": read %d of %d\n"
 msgstr "%s: не удалось прочитать файл \"%s\" (прочитано байт: %d из %d)\n"
 
 #. +> 16 15 14 13 12
-#: ../../common/controldata_utils.c:108 ../../common/controldata_utils.c:236
+#: ../../common/controldata_utils.c:118 ../../common/controldata_utils.c:266
 #, c-format
 msgid "could not close file \"%s\": %m"
 msgstr "не удалось закрыть файл \"%s\": %m"
 
 #. +> 16 15 14 13 12 11
-#: ../../common/controldata_utils.c:124
+#: ../../common/controldata_utils.c:154
 msgid "byte ordering mismatch"
 msgstr "несоответствие порядка байт"
 
 #. +> 16 15 14 13 12
-#: ../../common/controldata_utils.c:126
+#: ../../common/controldata_utils.c:156
 #, c-format
 msgid ""
 "possible byte ordering mismatch\n"
@@ -98,19 +98,19 @@ msgstr ""
 "установленный PostgreSQL будет несовместим с этим каталогом данных.\n"
 
 #. +> 16 15 14 13 12
-#: ../../common/controldata_utils.c:186
+#: ../../common/controldata_utils.c:216
 #, c-format
 msgid "could not open file \"%s\": %m"
 msgstr "не удалось открыть файл \"%s\": %m"
 
 #. +> 16 15 14 13 12
-#: ../../common/controldata_utils.c:205
+#: ../../common/controldata_utils.c:235
 #, c-format
 msgid "could not write file \"%s\": %m"
 msgstr "не удалось записать файл \"%s\": %m"
 
 #. +> 16 15 14 13 12
-#: ../../common/controldata_utils.c:224
+#: ../../common/controldata_utils.c:254
 #, c-format
 msgid "could not fsync file \"%s\": %m"
 msgstr "не удалось синхронизировать с ФС файл \"%s\": %m"
