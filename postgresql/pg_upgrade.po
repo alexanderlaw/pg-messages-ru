@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_upgrade (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2023-11-03 09:10+0300\n"
+"POT-Creation-Date: 2024-02-02 18:12+0300\n"
 "PO-Revision-Date: 2023-11-03 09:24+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -593,7 +593,7 @@ msgstr ""
 "Все базы, кроме template0, должны допускать подключения, то есть их свойство "
 "pg_database.datallowconn должно быть true\n"
 
-#. +> 16 15 14 13 12
+#. +> 16
 #: check.c:667 check.c:788 check.c:886 check.c:1012 check.c:1089 check.c:1148
 #: check.c:1209 check.c:1238 check.c:1272 check.c:1303 check.c:1362
 #: check.c:1443 function.c:185 version.c:192 version.c:232 version.c:378
@@ -603,8 +603,8 @@ msgstr "сбой"
 
 #. +> 15 14 13 12 11
 #: check.c:785 check.c:910 check.c:1012 check.c:1138 check.c:1219 check.c:1278
-#: check.c:1339 check.c:1404 check.c:1523 function.c:187 version.c:192
-#: version.c:232 version.c:378
+#: check.c:1339 check.c:1373 check.c:1404 check.c:1523 function.c:187
+#: version.c:192 version.c:232 version.c:378
 #, c-format
 msgid "fatal\n"
 msgstr "сбой\n"
@@ -1063,7 +1063,6 @@ msgstr ""
 #. +> 16
 #: check.c:1231
 #, c-format
-#| msgid "Checking for incompatible \"aclitem\" data type in user tables"
 msgid "Checking for incompatible \"%s\" data type in user tables"
 msgstr "Проверка несовместимого типа данных \"%s\" в пользовательских таблицах"
 
@@ -1090,20 +1089,12 @@ msgstr ""
 #. +> 16 15 14 13 12
 #: check.c:1263
 #, c-format
-#| msgid "Checking for reg* data types in user tables"
 msgid "Checking for removed \"%s\" data type in user tables"
 msgstr "Проверка удалённого типа данных \"%s\" в пользовательских таблицах"
 
 #. +> 16
 #: check.c:1273
 #, c-format
-#| msgid ""
-#| "Your installation contains the \"aclitem\" data type in user tables.\n"
-#| "The internal format of \"aclitem\" changed in PostgreSQL version 16\n"
-#| "so this cluster cannot currently be upgraded.  You can drop the\n"
-#| "problem columns and restart the upgrade.  A list of the problem\n"
-#| "columns is in the file:\n"
-#| "    %s"
 msgid ""
 "Your installation contains the \"%s\" data type in user tables.\n"
 "The \"%s\" type has been removed in PostgreSQL version %s,\n"
@@ -1122,13 +1113,6 @@ msgstr ""
 #. +> 15 14 13 12
 #: check.c:1374
 #, c-format
-#| msgid ""
-#| "Your installation contains the \"aclitem\" data type in user tables.\n"
-#| "The internal format of \"aclitem\" changed in PostgreSQL version 16\n"
-#| "so this cluster cannot currently be upgraded.  You can drop the\n"
-#| "problem columns and restart the upgrade.  A list of the problem\n"
-#| "columns is in the file:\n"
-#| "    %s"
 msgid ""
 "Your installation contains the \"%s\" data type in user tables.\n"
 "The \"%s\" type has been removed in PostgreSQL version %s,\n"

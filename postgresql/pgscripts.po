@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pgscripts (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2023-11-03 09:10+0300\n"
+"POT-Creation-Date: 2024-02-02 18:12+0300\n"
 "PO-Revision-Date: 2023-11-03 10:36+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -122,7 +122,6 @@ msgstr "значение %s должно быть в диапазоне %d..%d"
 #. +> 16 15 14 13 12
 #: ../../fe_utils/parallel_slot.c:317
 #, c-format
-#| msgid "too many jobs for this platform"
 msgid "too many jobs for this platform: %d"
 msgstr "слишком много заданий для этой платформы: %d"
 
@@ -1812,7 +1811,6 @@ msgstr ""
 #. +> 16
 #: vacuumdb.c:467
 #, c-format
-#| msgid "out of memory\n"
 msgid "out of memory"
 msgstr "нехватка памяти"
 
@@ -2009,9 +2007,6 @@ msgstr ""
 #. +> 16
 #: vacuumdb.c:1174
 #, c-format
-#| msgid ""
-#| "  -n, --schema=PATTERN            vacuum tables in the specified "
-#| "schema(s) only\n"
 msgid ""
 "  -n, --schema=SCHEMA             vacuum tables in the specified schema(s) "
 "only\n"
@@ -2022,9 +2017,6 @@ msgstr ""
 #. +> 16
 #: vacuumdb.c:1175
 #, c-format
-#| msgid ""
-#| "  -N, --exclude-schema=PATTERN    do not vacuum tables in the specified "
-#| "schema(s)\n"
 msgid ""
 "  -N, --exclude-schema=SCHEMA     do not vacuum tables in the specified "
 "schema(s)\n"
