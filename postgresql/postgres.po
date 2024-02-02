@@ -4,14 +4,14 @@
 # Serguei A. Mokhov <mokhov@cs.concordia.ca>, 2001-2005.
 # Oleg Bartunov <oleg@sai.msu.su>, 2004-2005.
 # Dmitriy Olshevskiy <olshevskiy87@bk.ru>, 2014.
-# Alexander Lakhin <exclusion@gmail.com>, 2012-2017, 2018, 2019, 2020, 2021, 2022, 2023.
+# Alexander Lakhin <exclusion@gmail.com>, 2012-2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024.
 # Maxim Yablokov <m.yablokov@postgrespro.ru>, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: postgres (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2024-02-02 18:59+0300\n"
-"PO-Revision-Date: 2023-11-03 10:37+0300\n"
+"POT-Creation-Date: 2024-02-02 18:13+0300\n"
+"PO-Revision-Date: 2024-02-02 19:00+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -5333,12 +5333,14 @@ msgstr "начинается восстановление архива"
 
 #. +> 16 15
 #: access/transam/xlogrecovery.c:637
-#, fuzzy, c-format
+#, c-format
 #| msgid "updated min recovery point to %X/%X on timeline %u"
 msgid ""
 "starting backup recovery with redo LSN %X/%X, checkpoint LSN %X/%X, on "
 "timeline ID %u"
-msgstr "минимальная точка восстановления изменена на %X/%X на линии времени %u"
+msgstr ""
+"начинается восстановление копии с LSN redo %X/%X, LSN контрольной точки %X/"
+"%X, на линии времени %u"
 
 #. +> 16 15 14 13 12 11
 #: access/transam/xlogrecovery.c:669
@@ -5401,11 +5403,10 @@ msgstr "не удалось получить информацию о файле 
 
 #. +> 16 15
 #: access/transam/xlogrecovery.c:787
-#, fuzzy, c-format
+#, c-format
 #| msgid "starting point-in-time recovery to WAL location (LSN) \"%X/%X\""
 msgid "restarting backup recovery with redo LSN %X/%X"
-msgstr ""
-"начинается восстановление точки во времени до позиции в WAL (LSN) \"%X/%X\""
+msgstr "перезапуск восстановления копии с LSN redo %X/%X"
 
 #. +> 16 15 14 13 12 11
 #: access/transam/xlogrecovery.c:812
@@ -5633,7 +5634,7 @@ msgstr ""
 #: access/transam/xlogrecovery.c:2167
 #, c-format
 msgid "completed backup recovery with redo LSN %X/%X and end LSN %X/%X"
-msgstr ""
+msgstr "завершено восстановление копии с LSN redo %X/%X и конечным LSN %X/%X"
 
 #. +> 16 15 14 13 12 11
 #: access/transam/xlogrecovery.c:2197
@@ -41360,7 +41361,6 @@ msgstr "Принудительная запись изменений на дис
 
 #. +> 16 15 14 13 12
 #: utils/misc/guc_tables.c:1090
-#, fuzzy
 #| msgid ""
 #| "The server will use the fsync() system call in several places to make "
 #| "sure that updates are physically written to disk. This insures that a "
@@ -41372,9 +41372,9 @@ msgid ""
 "cluster will recover to a consistent state after an operating system or "
 "hardware crash."
 msgstr ""
-"Сервер будет вызывать системную функцию fsync() в разных местах для гарантии "
-"физической записи данных на диск. Это позволит привести кластер БД в "
-"целостное состояние после отказа ОС или оборудования."
+"Сервер будет вызывать в определённые моменты системную функцию fsync(), "
+"обеспечивающую физическую запись данных на диск. Тем самым гарантируется, "
+"что кластер БД придёт в целостное состояние после отказа ОС или оборудования."
 
 #. +> 11
 #: utils/misc/guc.c:1046
