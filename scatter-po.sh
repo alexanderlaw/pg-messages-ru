@@ -40,7 +40,7 @@ finalize_po() {
 
 export MSG_SRCS="$( cd "$TMP" && pwd )"
 
-prepare_src_messages 16 master
+prepare_src_messages 16 REL_16_STABLE
 prepare_src_messages 15 REL_15_STABLE
 prepare_src_messages 14 REL_14_STABLE
 prepare_src_messages 13 REL_13_STABLE
