@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2024-05-04 10:38+0300\n"
-"PO-Revision-Date: 2024-02-02 19:00+0300\n"
+"PO-Revision-Date: 2024-05-04 10:47+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -2307,10 +2307,10 @@ msgstr "транзакция прервана во время сканирова
 
 #. +> 16 15 14 13 12
 #: access/index/genam.c:658 access/index/indexam.c:87
-#, fuzzy, c-format
+#, c-format
 #| msgid "cannot drop extension \"%s\" because it is being modified"
 msgid "cannot access index \"%s\" while it is being reindexed"
-msgstr "удалить расширение \"%s\" нельзя, так как это модифицируемый объект"
+msgstr "индекс \"%s\" перестраивается, обращаться к нему нельзя"
 
 #. +> 16 15 14 13 12 11
 #: access/index/indexam.c:208 catalog/objectaddress.c:1394
@@ -11456,7 +11456,7 @@ msgstr "неверная стратегия создания БД \"%s\""
 
 #. +> 16 15
 #: commands/dbcommands.c:1017
-#, fuzzy, c-format
+#, c-format
 #| msgid "Valid strategies are \"wal_log\", and \"file_copy\"."
 msgid "Valid strategies are \"wal_log\" and \"file_copy\"."
 msgstr "Возможные стратегии: \"wal_log\" и \"file_copy\"."
@@ -16912,11 +16912,10 @@ msgstr ""
 
 #. +> 16 15 14
 #: commands/tablecmds.c:12745
-#, fuzzy, c-format
+#, c-format
 #| msgid "cannot alter type of a column used by a view or rule"
 msgid "cannot alter type of a column used by a function or procedure"
-msgstr ""
-"изменить тип столбца, задействованного в представлении или правиле, нельзя"
+msgstr "изменить тип столбца, задействованного в функции или процедуре, нельзя"
 
 #. +> 16 15 14 13 12 11
 #: commands/tablecmds.c:12746 commands/tablecmds.c:12760
@@ -16959,11 +16958,12 @@ msgstr "Столбец \"%s\" используется генерируемым 
 
 #. +> 16 15
 #: commands/tablecmds.c:12854
-#, fuzzy, c-format
+#, c-format
 #| msgid "cannot alter type of a column used by a view or rule"
 msgid "cannot alter type of a column used by a publication WHERE clause"
 msgstr ""
-"изменить тип столбца, задействованного в представлении или правиле, нельзя"
+"изменить тип столбца, задействованного в заданном для публикации предложении "
+"WHERE, нельзя"
 
 #. +> 16 15 14 13 12 11
 #: commands/tablecmds.c:13915 commands/tablecmds.c:13927
