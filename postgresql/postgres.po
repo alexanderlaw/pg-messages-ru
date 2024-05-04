@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: postgres (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2024-05-04 10:38+0300\n"
+"POT-Creation-Date: 2024-05-04 16:32+0300\n"
 "PO-Revision-Date: 2024-05-04 10:47+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -2308,7 +2308,6 @@ msgstr "транзакция прервана во время сканирова
 #. +> 16 15 14 13 12
 #: access/index/genam.c:658 access/index/indexam.c:87
 #, c-format
-#| msgid "cannot drop extension \"%s\" because it is being modified"
 msgid "cannot access index \"%s\" while it is being reindexed"
 msgstr "индекс \"%s\" перестраивается, обращаться к нему нельзя"
 
@@ -11457,7 +11456,6 @@ msgstr "неверная стратегия создания БД \"%s\""
 #. +> 16 15
 #: commands/dbcommands.c:1017
 #, c-format
-#| msgid "Valid strategies are \"wal_log\", and \"file_copy\"."
 msgid "Valid strategies are \"wal_log\" and \"file_copy\"."
 msgstr "Возможные стратегии: \"wal_log\" и \"file_copy\"."
 
@@ -16913,7 +16911,6 @@ msgstr ""
 #. +> 16 15 14
 #: commands/tablecmds.c:12745
 #, c-format
-#| msgid "cannot alter type of a column used by a view or rule"
 msgid "cannot alter type of a column used by a function or procedure"
 msgstr "изменить тип столбца, задействованного в функции или процедуре, нельзя"
 
@@ -16959,7 +16956,6 @@ msgstr "Столбец \"%s\" используется генерируемым 
 #. +> 16 15
 #: commands/tablecmds.c:12854
 #, c-format
-#| msgid "cannot alter type of a column used by a view or rule"
 msgid "cannot alter type of a column used by a publication WHERE clause"
 msgstr ""
 "изменить тип столбца, задействованного в заданном для публикации предложении "
