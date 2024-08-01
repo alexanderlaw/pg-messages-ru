@@ -1,14 +1,14 @@
 # Russian message translation file for pg_upgrade
 # Copyright (C) 2017 PostgreSQL Global Development Group
 # This file is distributed under the same license as the PostgreSQL package.
-# Alexander Lakhin <a.lakhin@postgrespro.ru>, 2017, 2018, 2019, 2020, 2021, 2022, 2023.
+# Alexander Lakhin <a.lakhin@postgrespro.ru>, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024.
 # Maxim Yablokov <m.yablokov@postgrespro.ru>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: pg_upgrade (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2024-08-01 12:59+0300\n"
-"PO-Revision-Date: 2023-11-03 09:24+0300\n"
+"PO-Revision-Date: 2024-08-01 13:01+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -217,12 +217,12 @@ msgstr ""
 
 #. +> 14 13 12
 #: check.c:325
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "This utility can only upgrade from PostgreSQL version 8.4 and later.\n"
 msgid "This utility can only upgrade from PostgreSQL version 9.0 and later.\n"
 msgstr ""
-"Эта утилита может производить обновление только с версии PostgreSQL 8.4 и "
+"Эта утилита может производить обновление только с версии PostgreSQL 9.0 и "
 "новее.\n"
 
 #. +> 11

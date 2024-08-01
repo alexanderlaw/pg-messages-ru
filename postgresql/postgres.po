@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2024-08-01 12:59+0300\n"
-"PO-Revision-Date: 2024-05-04 10:47+0300\n"
+"PO-Revision-Date: 2024-08-01 13:15+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -16100,10 +16100,10 @@ msgstr ""
 
 #. +> 16 15 14 13 12
 #: commands/tablecmds.c:4149
-#, fuzzy, c-format
+#, c-format
 #| msgid "cannot cluster temporary tables of other sessions"
 msgid "cannot alter temporary tables of other sessions"
-msgstr "кластеризовать временные таблицы других сеансов нельзя"
+msgstr "модифицировать временные таблицы других сеансов нельзя"
 
 #. +> 16 15 14
 #: commands/tablecmds.c:4621
@@ -35267,10 +35267,10 @@ msgstr "неверный синтаксис для типа %s: \"%s\""
 #. +> 16 15 14 13 12
 #: utils/adt/cash.c:98 utils/adt/cash.c:111 utils/adt/cash.c:124
 #: utils/adt/cash.c:137 utils/adt/cash.c:150
-#, fuzzy, c-format
+#, c-format
 #| msgid "time out of range"
 msgid "money out of range"
-msgstr "время вне диапазона"
+msgstr "денежное значение вне диапазона"
 
 #. +> 16 15 14 13 12 11
 #: utils/adt/cash.c:161 utils/adt/cash.c:723 utils/adt/float.c:105
