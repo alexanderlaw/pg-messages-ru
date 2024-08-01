@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pltcl (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2023-08-28 08:23+0300\n"
+"POT-Creation-Date: 2024-08-01 12:59+0300\n"
 "PO-Revision-Date: 2022-09-05 13:38+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -67,20 +67,34 @@ msgid ""
 msgstr ""
 "функция, возвращающая запись, вызвана в контексте, не допускающем этот тип"
 
-#. +> 16 15 14 13 12 11
-#: pltcl.c:1295
+#. +> 16 15 14 13 12
+#: pltcl.c:1031
+#, fuzzy, c-format
+#| msgid "could not split return value from trigger: %s"
+msgid "could not parse function return value: %s"
+msgstr "разложить возвращаемое из триггера значение не удалось: %s"
+
+#. +> 16 15 14 13 12
+#: pltcl.c:1298
+#, fuzzy, c-format
+#| msgid "could not split return value from trigger: %s"
+msgid "could not parse trigger return value: %s"
+msgstr "разложить возвращаемое из триггера значение не удалось: %s"
+
+#. +> 11
+#: pltcl.c:1296
 #, c-format
 msgid "could not split return value from trigger: %s"
 msgstr "разложить возвращаемое из триггера значение не удалось: %s"
 
 #. +> 16 15 14 13 12 11
-#: pltcl.c:1376 pltcl.c:1803
+#: pltcl.c:1383 pltcl.c:1810
 #, c-format
 msgid "%s"
 msgstr "%s"
 
 #. +> 16 15 14 13 12 11
-#: pltcl.c:1377
+#: pltcl.c:1384
 #, c-format
 msgid ""
 "%s\n"
@@ -90,50 +104,50 @@ msgstr ""
 "в функции PL/Tcl \"%s\""
 
 #. +> 16 15 14 13 12 11
-#: pltcl.c:1540
+#: pltcl.c:1547
 #, c-format
 msgid "trigger functions can only be called as triggers"
 msgstr "триггерные функции могут вызываться только в триггерах"
 
 #. +> 16 15 14 13 12 11
-#: pltcl.c:1544
+#: pltcl.c:1551
 #, c-format
 msgid "PL/Tcl functions cannot return type %s"
 msgstr "функции PL/Tcl не могут возвращать тип %s"
 
 #. +> 16 15 14 13 12 11
-#: pltcl.c:1583
+#: pltcl.c:1590
 #, c-format
 msgid "PL/Tcl functions cannot accept type %s"
 msgstr "функции PL/Tcl не могут принимать тип %s"
 
 #. +> 16 15 14 13 12 11
-#: pltcl.c:1695
+#: pltcl.c:1702
 #, c-format
 msgid "could not create internal procedure \"%s\": %s"
 msgstr "не удалось создать внутреннюю процедуру \"%s\": %s"
 
 #. +> 16 15 14 13 12 11
-#: pltcl.c:3199
+#: pltcl.c:3206
 #, c-format
 msgid "column name/value list must have even number of elements"
 msgstr "в списке имён/значений столбцов должно быть чётное число элементов"
 
 #. +> 16 15 14 13 12 11
-#: pltcl.c:3217
+#: pltcl.c:3224
 #, c-format
 msgid "column name/value list contains nonexistent column name \"%s\""
 msgstr ""
 "список имён/значений столбцов содержит имя несуществующего столбца \"%s\""
 
 #. +> 16 15 14 13 12 11
-#: pltcl.c:3224
+#: pltcl.c:3231
 #, c-format
 msgid "cannot set system attribute \"%s\""
 msgstr "присвоить значение системному атрибуту \"%s\" нельзя"
 
 #. +> 16 15 14 13 12
-#: pltcl.c:3230
+#: pltcl.c:3237
 #, c-format
 msgid "cannot set generated column \"%s\""
 msgstr "присвоить значение генерируемому столбцу \"%s\" нельзя"

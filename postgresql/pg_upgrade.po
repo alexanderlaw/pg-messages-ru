@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_upgrade (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2024-02-02 18:12+0300\n"
+"POT-Creation-Date: 2024-08-01 12:59+0300\n"
 "PO-Revision-Date: 2023-11-03 09:24+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -215,8 +215,18 @@ msgstr ""
 "Эта утилита может производить обновление только с версии PostgreSQL %s и "
 "новее.\n"
 
-#. +> 14 13 12 11
-#: check.c:320
+#. +> 14 13 12
+#: check.c:325
+#, fuzzy, c-format
+#| msgid ""
+#| "This utility can only upgrade from PostgreSQL version 8.4 and later.\n"
+msgid "This utility can only upgrade from PostgreSQL version 9.0 and later.\n"
+msgstr ""
+"Эта утилита может производить обновление только с версии PostgreSQL 8.4 и "
+"новее.\n"
+
+#. +> 11
+#: check.c:246
 #, c-format
 msgid "This utility can only upgrade from PostgreSQL version 8.4 and later.\n"
 msgstr ""
@@ -310,7 +320,7 @@ msgstr ""
 "старого.\n"
 
 #. +> 14 13 12 11
-#: check.c:358
+#: check.c:363
 #, c-format
 msgid ""
 "When checking a pre-PG 9.1 live old server, you must specify the old "
@@ -428,7 +438,7 @@ msgstr ""
 "каталога данных, то есть, в %s\n"
 
 #. +> 14 13 12 11
-#: check.c:559
+#: check.c:564
 #, c-format
 msgid ""
 "\n"
@@ -464,7 +474,7 @@ msgstr ""
 "располагаться внутри каталога данных, то есть, в %s\n"
 
 #. +> 14 13 12 11
-#: check.c:583
+#: check.c:588
 #, c-format
 msgid ""
 "\n"
@@ -482,7 +492,7 @@ msgid "Creating script to delete old cluster"
 msgstr "Создание скрипта для удаления старого кластера"
 
 #. +> 13 12 11
-#: check.c:470
+#: check.c:475
 #, c-format
 msgid "Creating script to analyze new cluster"
 msgstr "Создание скрипта для анализа нового кластера"
@@ -584,7 +594,7 @@ msgstr ""
 "pg_database.datallowconn должно быть false\n"
 
 #. +> 14 13 12 11
-#: check.c:759
+#: check.c:764
 #, c-format
 msgid ""
 "All non-template0 databases must allow connections, i.e. their pg_database."
@@ -748,7 +758,7 @@ msgstr ""
 "\n"
 
 #. +> 12 11
-#: check.c:931
+#: check.c:936
 #, c-format
 msgid ""
 "Your installation contains \"contrib/isn\" functions which rely on the\n"
@@ -909,7 +919,7 @@ msgstr ""
 "\n"
 
 #. +> 12
-#: check.c:1010
+#: check.c:1015
 #, c-format
 msgid ""
 "Your installation contains tables declared WITH OIDS, which is not "
@@ -1019,7 +1029,7 @@ msgstr ""
 "\n"
 
 #. +> 13
-#: check.c:1125
+#: check.c:1130
 #, c-format
 msgid ""
 "Your installation contains one of the reg* data types in user tables.\n"
@@ -1040,7 +1050,7 @@ msgstr ""
 "\n"
 
 #. +> 12 11
-#: check.c:1126
+#: check.c:1131
 #, c-format
 msgid ""
 "Your installation contains one of the reg* data types in user tables.\n"
@@ -1175,7 +1185,7 @@ msgstr ""
 "\n"
 
 #. +> 13
-#: check.c:1188
+#: check.c:1193
 #, c-format
 msgid ""
 "Your installation contains the \"jsonb\" data type in user tables.\n"
@@ -1195,7 +1205,7 @@ msgstr ""
 "\n"
 
 #. +> 12 11
-#: check.c:1189
+#: check.c:1194
 #, c-format
 msgid ""
 "Your installation contains the \"jsonb\" data type in user tables.\n"
