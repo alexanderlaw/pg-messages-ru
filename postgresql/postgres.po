@@ -5,14 +5,14 @@
 # Oleg Bartunov <oleg@sai.msu.su>, 2004-2005.
 # Dmitriy Olshevskiy <olshevskiy87@bk.ru>, 2014.
 # Alexander Lakhin <exclusion@gmail.com>, 2012-2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024.
-# Maxim Yablokov <m.yablokov@postgrespro.ru>, 2021, 2022.
+# Maxim Yablokov <m.yablokov@postgrespro.ru>, 2021, 2022, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: postgres (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2024-08-14 10:52+0300\n"
-"PO-Revision-Date: 2024-08-01 13:15+0300\n"
-"Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
+"PO-Revision-Date: 2024-08-14 11:14+0300\n"
+"Last-Translator: Maxim Yablokov <m.yablokov@postgrespro.ru>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
@@ -21249,7 +21249,7 @@ msgstr "сопоставление пользователя для \"%s\" не �
 #: optimizer/util/plancat.c:512
 #, c-format
 msgid "access to non-system foreign table is restricted"
-msgstr ""
+msgstr "доступ к несистемным сторонним таблицам ограничен"
 
 #. +> 16 15 14 13 12 11
 #: foreign/foreign.c:657 storage/file/fd.c:3931
@@ -32002,7 +32002,7 @@ msgstr "многочисленные присвоения одному стол�
 #: rewrite/rewriteHandler.c:1749 rewrite/rewriteHandler.c:3125
 #, c-format
 msgid "access to non-system view \"%s\" is restricted"
-msgstr ""
+msgstr "доступ к несистемному представлению \"%s\" ограничен"
 
 #. +> 16 15 14 13 12 11
 #: rewrite/rewriteHandler.c:2128 rewrite/rewriteHandler.c:4064
@@ -44040,6 +44040,8 @@ msgstr "Использовать прямой ввод/вывод для раб�
 #: utils/misc/guc_tables.c:4555
 msgid "Sets relation kinds of non-system relation to restrict use"
 msgstr ""
+"Задаёт типы несистемных отношений, к которым применяются ограничения "
+"использования"
 
 #. +> 16 15 14 13 12 11
 #: utils/misc/guc_tables.c:4575
