@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pltcl (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2024-08-01 12:59+0300\n"
+"POT-Creation-Date: 2024-08-14 10:52+0300\n"
 "PO-Revision-Date: 2024-08-01 13:03+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -71,14 +71,12 @@ msgstr ""
 #. +> 16 15 14 13 12
 #: pltcl.c:1031
 #, c-format
-#| msgid "could not split return value from trigger: %s"
 msgid "could not parse function return value: %s"
 msgstr "разобрать возвращаемое функцией значение не удалось: %s"
 
 #. +> 16 15 14 13 12
 #: pltcl.c:1298
 #, c-format
-#| msgid "could not split return value from trigger: %s"
 msgid "could not parse trigger return value: %s"
 msgstr "разобрать возвращаемое триггером значение не удалось: %s"
 

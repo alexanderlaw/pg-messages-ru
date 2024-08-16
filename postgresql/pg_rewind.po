@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_rewind (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2024-05-04 10:38+0300\n"
+"POT-Creation-Date: 2024-08-14 10:52+0300\n"
 "PO-Revision-Date: 2023-08-30 15:22+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -1572,7 +1572,7 @@ msgid "%*s/%s kB (%d%%) copied"
 msgstr "%*s/%s КБ (%d%%) скопировано"
 
 #. +> 16 15 14 13 12
-#: pg_rewind.c:941
+#: pg_rewind.c:939
 #, c-format
 msgid ""
 "could not find common ancestor of the source and target cluster's timelines"
@@ -1588,7 +1588,7 @@ msgstr ""
 "не удалось найти общего предка линий времени исходного и целевого кластеров\n"
 
 #. +> 16 15 14 13 12
-#: pg_rewind.c:982
+#: pg_rewind.c:980
 #, c-format
 msgid "backup label buffer too small"
 msgstr "буфер для метки копии слишком мал"
@@ -1600,7 +1600,7 @@ msgid "backup label buffer too small\n"
 msgstr "буфер для метки копии слишком мал\n"
 
 #. +> 16 15 14 13 12
-#: pg_rewind.c:1005
+#: pg_rewind.c:1003
 #, c-format
 msgid "unexpected control file CRC"
 msgstr "неверная контрольная сумма управляющего файла"
@@ -1624,7 +1624,7 @@ msgid "invalid control file\n"
 msgstr "неверный управляющий файл\n"
 
 #. +> 16 15 14 13 12
-#: pg_rewind.c:1017
+#: pg_rewind.c:1015
 #, c-format
 msgid "unexpected control file size %d, expected %d"
 msgstr "неверный размер управляющего файла (%d), ожидалось: %d"
@@ -1636,7 +1636,7 @@ msgid "unexpected control file size %d, expected %d\n"
 msgstr "неверный размер управляющего файла (%d), ожидалось: %d\n"
 
 #. +> 16 15 14 13 12
-#: pg_rewind.c:1026
+#: pg_rewind.c:1024
 #, c-format
 msgid ""
 "WAL segment size must be a power of two between 1 MB and 1 GB, but the "
@@ -1674,7 +1674,7 @@ msgstr[2] ""
 "ГБ, но в управляющем файле указано значение: %d\n"
 
 #. +> 16 15
-#: pg_rewind.c:1065 pg_rewind.c:1135
+#: pg_rewind.c:1063 pg_rewind.c:1133
 #, c-format
 msgid ""
 "program \"%s\" is needed by %s but was not found in the same directory as "
@@ -1682,7 +1682,7 @@ msgid ""
 msgstr "программа \"%s\" нужна для %s, но она не найдена в каталоге \"%s\""
 
 #. +> 14 13
-#: pg_rewind.c:1043 pg_rewind.c:1101
+#: pg_rewind.c:1041 pg_rewind.c:1099
 #, c-format
 msgid ""
 "The program \"%s\" is needed by %s but was not found in the\n"
@@ -1706,7 +1706,7 @@ msgstr ""
 "Проверьте правильность установки СУБД.\n"
 
 #. +> 16 15
-#: pg_rewind.c:1068 pg_rewind.c:1138
+#: pg_rewind.c:1066 pg_rewind.c:1136
 #, c-format
 msgid "program \"%s\" was found by \"%s\" but was not the same version as %s"
 msgstr ""
@@ -1714,7 +1714,7 @@ msgstr ""
 "версии %s"
 
 #. +> 14 13
-#: pg_rewind.c:1048 pg_rewind.c:1106
+#: pg_rewind.c:1046 pg_rewind.c:1104
 #, c-format
 msgid ""
 "The program \"%s\" was found by \"%s\"\n"
@@ -1738,20 +1738,20 @@ msgstr ""
 "Проверьте правильность установки СУБД.\n"
 
 #. +> 16 15 14 13
-#: pg_rewind.c:1101
+#: pg_rewind.c:1099
 #, c-format
 msgid "restore_command is not set in the target cluster"
 msgstr "команда restore_command в целевом кластере не определена"
 
 #. +> 16 15 14 13
-#: pg_rewind.c:1142
+#: pg_rewind.c:1140
 #, c-format
 msgid "executing \"%s\" for target server to complete crash recovery"
 msgstr ""
 "выполнение \"%s\" для восстановления согласованности на целевом сервере"
 
 #. +> 16 15 14 13
-#: pg_rewind.c:1180
+#: pg_rewind.c:1178
 #, c-format
 msgid "postgres single-user mode in target cluster failed"
 msgstr ""
@@ -1759,7 +1759,7 @@ msgstr ""
 "режиме"
 
 #. +> 16 15 14 13
-#: pg_rewind.c:1181
+#: pg_rewind.c:1179
 #, c-format
 msgid "Command was: %s"
 msgstr "Выполнялась команда: %s"

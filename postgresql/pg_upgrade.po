@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_upgrade (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2024-08-01 12:59+0300\n"
+"POT-Creation-Date: 2024-08-14 10:52+0300\n"
 "PO-Revision-Date: 2024-08-01 13:01+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -218,8 +218,6 @@ msgstr ""
 #. +> 14 13 12
 #: check.c:325
 #, c-format
-#| msgid ""
-#| "This utility can only upgrade from PostgreSQL version 8.4 and later.\n"
 msgid "This utility can only upgrade from PostgreSQL version 9.0 and later.\n"
 msgstr ""
 "Эта утилита может производить обновление только с версии PostgreSQL 9.0 и "
