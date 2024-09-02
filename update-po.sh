@@ -81,6 +81,8 @@ wrap_msgs() {
 export MSG_SRCS="$( cd "$TMP" && pwd )"
 export MSG_POTS="$POTD"
 
+merge_pot 17 $PGD REL_17_STABLE master
+
 merge_pot 16 $PGD REL_16_STABLE REL_16_STABLE
 
 merge_pot 15 $PGD REL_15_STABLE REL_15_STABLE
