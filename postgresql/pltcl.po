@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pltcl (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2024-08-14 10:52+0300\n"
+"POT-Creation-Date: 2024-09-02 09:19+0300\n"
 "PO-Revision-Date: 2024-08-01 13:03+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -18,36 +18,36 @@ msgstr ""
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Lokalize 21.12.3\n"
 
-#. +> 16 15 14 13 12 11
+#. +> 16 15 14 13 12
 #: pltcl.c:462
 msgid "PL/Tcl function to call once when pltcl is first used."
 msgstr "Функция на PL/Tcl, вызываемая при первом использовании pltcl."
 
-#. +> 16 15 14 13 12 11
+#. +> 16 15 14 13 12
 #: pltcl.c:469
 msgid "PL/TclU function to call once when pltclu is first used."
 msgstr "Функция на PL/TclU, вызываемая при первом использовании pltclu."
 
-#. +> 16 15 14 13 12 11
+#. +> 16 15 14 13 12
 #: pltcl.c:636
 #, c-format
 msgid "function \"%s\" is in the wrong language"
 msgstr "Функция \"%s\" объявлена на другом языке"
 
-#. +> 16 15 14 13 12 11
+#. +> 16 15 14 13 12
 #: pltcl.c:647
 #, c-format
 msgid "function \"%s\" must not be SECURITY DEFINER"
 msgstr "функция \"%s\" не должна иметь характеристику SECURITY DEFINER"
 
 #. translator: %s is "pltcl.start_proc" or "pltclu.start_proc"
-#. +> 16 15 14 13 12 11
+#. +> 16 15 14 13 12
 #: pltcl.c:681
 #, c-format
 msgid "processing %s parameter"
 msgstr "обработка параметра %s"
 
-#. +> 16 15 14 13 12 11
+#. +> 16 15 14 13 12
 #: pltcl.c:834
 #, c-format
 msgid "set-valued function called in context that cannot accept a set"
@@ -60,7 +60,7 @@ msgstr ""
 msgid "materialize mode required, but it is not allowed in this context"
 msgstr "требуется режим материализации, но он недопустим в этом контексте"
 
-#. +> 16 15 14 13 12 11
+#. +> 16 15 14 13 12
 #: pltcl.c:1012
 #, c-format
 msgid ""
@@ -80,19 +80,13 @@ msgstr "разобрать возвращаемое функцией значе�
 msgid "could not parse trigger return value: %s"
 msgstr "разобрать возвращаемое триггером значение не удалось: %s"
 
-#. +> 11
-#: pltcl.c:1296
-#, c-format
-msgid "could not split return value from trigger: %s"
-msgstr "разложить возвращаемое из триггера значение не удалось: %s"
-
-#. +> 16 15 14 13 12 11
+#. +> 16 15 14 13 12
 #: pltcl.c:1383 pltcl.c:1810
 #, c-format
 msgid "%s"
 msgstr "%s"
 
-#. +> 16 15 14 13 12 11
+#. +> 16 15 14 13 12
 #: pltcl.c:1384
 #, c-format
 msgid ""
@@ -102,44 +96,44 @@ msgstr ""
 "%s\n"
 "в функции PL/Tcl \"%s\""
 
-#. +> 16 15 14 13 12 11
+#. +> 16 15 14 13 12
 #: pltcl.c:1547
 #, c-format
 msgid "trigger functions can only be called as triggers"
 msgstr "триггерные функции могут вызываться только в триггерах"
 
-#. +> 16 15 14 13 12 11
+#. +> 16 15 14 13 12
 #: pltcl.c:1551
 #, c-format
 msgid "PL/Tcl functions cannot return type %s"
 msgstr "функции PL/Tcl не могут возвращать тип %s"
 
-#. +> 16 15 14 13 12 11
+#. +> 16 15 14 13 12
 #: pltcl.c:1590
 #, c-format
 msgid "PL/Tcl functions cannot accept type %s"
 msgstr "функции PL/Tcl не могут принимать тип %s"
 
-#. +> 16 15 14 13 12 11
+#. +> 16 15 14 13 12
 #: pltcl.c:1702
 #, c-format
 msgid "could not create internal procedure \"%s\": %s"
 msgstr "не удалось создать внутреннюю процедуру \"%s\": %s"
 
-#. +> 16 15 14 13 12 11
+#. +> 16 15 14 13 12
 #: pltcl.c:3206
 #, c-format
 msgid "column name/value list must have even number of elements"
 msgstr "в списке имён/значений столбцов должно быть чётное число элементов"
 
-#. +> 16 15 14 13 12 11
+#. +> 16 15 14 13 12
 #: pltcl.c:3224
 #, c-format
 msgid "column name/value list contains nonexistent column name \"%s\""
 msgstr ""
 "список имён/значений столбцов содержит имя несуществующего столбца \"%s\""
 
-#. +> 16 15 14 13 12 11
+#. +> 16 15 14 13 12
 #: pltcl.c:3231
 #, c-format
 msgid "cannot set system attribute \"%s\""
@@ -150,3 +144,7 @@ msgstr "присвоить значение системному атрибут�
 #, c-format
 msgid "cannot set generated column \"%s\""
 msgstr "присвоить значение генерируемому столбцу \"%s\" нельзя"
+
+#, c-format
+#~ msgid "could not split return value from trigger: %s"
+#~ msgstr "разложить возвращаемое из триггера значение не удалось: %s"

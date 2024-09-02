@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_test_fsync (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2023-08-28 08:23+0300\n"
+"POT-Creation-Date: 2024-09-02 09:16+0300\n"
 "PO-Revision-Date: 2022-09-05 13:36+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -42,7 +42,7 @@ msgid "hint: "
 msgstr "подсказка: "
 
 #. translator: maintain alignment with NA_FORMAT
-#. +> 16 15 14 13 12 11
+#. +> 16 15 14 13 12
 #: pg_test_fsync.c:32
 #, c-format
 msgid "%13.3f ops/sec  %6.0f usecs/op\n"
@@ -54,25 +54,13 @@ msgstr "%13.3f оп/с     %6.0f мкс/оп\n"
 msgid "could not create thread for alarm"
 msgstr "не удалось создать поток для обработки сигналов"
 
-#. +> 11
-#: pg_test_fsync.c:49
-#, c-format
-msgid "Could not create thread for alarm\n"
-msgstr "Не удалось создать поток для обработки сигналов\n"
-
 #. +> 16 15
 #: pg_test_fsync.c:95
 #, c-format
 msgid "%s: %m"
 msgstr "%s: %m"
 
-#. +> 11
-#: pg_test_fsync.c:608
-#, c-format
-msgid "%s: %s\n"
-msgstr "%s: %s\n"
-
-#. +> 16 15 14 13 12 11
+#. +> 16 15 14 13 12
 #: pg_test_fsync.c:159
 #, c-format
 msgid "Usage: %s [-f FILENAME] [-s SECS-PER-TEST]\n"
@@ -90,7 +78,7 @@ msgstr "недопустимый аргумент параметра %s"
 msgid "Try \"%s --help\" for more information."
 msgstr "Для дополнительной информации попробуйте \"%s --help\"."
 
-#. +> 14 13 12 11
+#. +> 14 13 12
 #: pg_test_fsync.c:186 pg_test_fsync.c:200 pg_test_fsync.c:211
 #, c-format
 msgid "Try \"%s --help\" for more information.\n"
@@ -108,12 +96,6 @@ msgstr "значение %s должно быть в диапазоне %u..%u"
 msgid "too many command-line arguments (first is \"%s\")"
 msgstr "слишком много аргументов командной строки (первый: \"%s\")"
 
-#. +> 11
-#: pg_test_fsync.c:188
-#, c-format
-msgid "%s: too many command-line arguments (first is \"%s\")\n"
-msgstr "%s: слишком много аргументов командной строки (первый: \"%s\")\n"
-
 #. +> 16 15 14
 #: pg_test_fsync.c:211
 #, c-format
@@ -123,7 +105,7 @@ msgstr[0] "на тест отводится %u сек.\n"
 msgstr[1] "на тест отводится %u сек.\n"
 msgstr[2] "на тест отводится %u сек.\n"
 
-#. +> 13 12 11
+#. +> 13 12
 #: pg_test_fsync.c:196
 #, c-format
 msgid "%d second per test\n"
@@ -132,7 +114,7 @@ msgstr[0] "на тест отводится %d сек.\n"
 msgstr[1] "на тест отводится %d сек.\n"
 msgstr[2] "на тест отводится %d сек.\n"
 
-#. +> 16 15 14 13 12 11
+#. +> 16 15 14 13 12
 #: pg_test_fsync.c:216
 #, c-format
 msgid "O_DIRECT supported on this platform for open_datasync and open_sync.\n"
@@ -146,20 +128,20 @@ msgid "F_NOCACHE supported on this platform for open_datasync and open_sync.\n"
 msgstr ""
 "F_NOCACHE на этой платформе поддерживается для open_datasync и open_sync.\n"
 
-#. +> 16 15 14 13 12 11
+#. +> 16 15 14 13 12
 #: pg_test_fsync.c:220
 #, c-format
 msgid "Direct I/O is not supported on this platform.\n"
 msgstr "Прямой ввод/вывод не поддерживается на этой платформе.\n"
 
-#. +> 16 15 14 13 12 11
+#. +> 16 15 14 13 12
 #: pg_test_fsync.c:245 pg_test_fsync.c:335 pg_test_fsync.c:357
 #: pg_test_fsync.c:381 pg_test_fsync.c:525 pg_test_fsync.c:537
 #: pg_test_fsync.c:553 pg_test_fsync.c:559 pg_test_fsync.c:581
 msgid "could not open output file"
 msgstr "не удалось открыть выходной файл"
 
-#. +> 16 15 14 13 12 11
+#. +> 16 15 14 13 12
 #: pg_test_fsync.c:249 pg_test_fsync.c:319 pg_test_fsync.c:344
 #: pg_test_fsync.c:366 pg_test_fsync.c:390 pg_test_fsync.c:429
 #: pg_test_fsync.c:488 pg_test_fsync.c:527 pg_test_fsync.c:555
@@ -167,19 +149,19 @@ msgstr "не удалось открыть выходной файл"
 msgid "write failed"
 msgstr "ошибка записи"
 
-#. +> 16 15 14 13 12 11
+#. +> 16 15 14 13 12
 #: pg_test_fsync.c:253 pg_test_fsync.c:368 pg_test_fsync.c:392
 #: pg_test_fsync.c:529 pg_test_fsync.c:561
 msgid "fsync failed"
 msgstr "ошибка синхронизации с ФС"
 
-#. +> 13 12 11
+#. +> 13 12
 #: pg_test_fsync.c:276 pg_test_fsync.c:302 pg_test_fsync.c:327
 #: pg_test_fsync.c:350 pg_test_fsync.c:386 pg_test_fsync.c:444
 msgid "seek failed"
 msgstr "ошибка позиционирования"
 
-#. +> 16 15 14 13 12 11
+#. +> 16 15 14 13 12
 #: pg_test_fsync.c:292
 #, c-format
 msgid ""
@@ -189,7 +171,7 @@ msgstr ""
 "\n"
 "Сравнение методов синхронизации файлов при однократной записи %d КБ:\n"
 
-#. +> 16 15 14 13 12 11
+#. +> 16 15 14 13 12
 #: pg_test_fsync.c:294
 #, c-format
 msgid ""
@@ -199,7 +181,7 @@ msgstr ""
 "\n"
 "Сравнение методов синхронизации файлов при двухкратной записи %d КБ:\n"
 
-#. +> 16 15 14 13 12 11
+#. +> 16 15 14 13 12
 #: pg_test_fsync.c:295
 #, c-format
 msgid ""
@@ -208,18 +190,18 @@ msgstr ""
 "(в порядке предпочтения для wal_sync_method, без учёта наибольшего "
 "предпочтения fdatasync в Linux)\n"
 
-#. +> 16 15 14 13 12 11
+#. +> 16 15 14 13 12
 #: pg_test_fsync.c:306 pg_test_fsync.c:409 pg_test_fsync.c:476
 msgid "n/a*"
 msgstr "н/д*"
 
-#. +> 16 15 14 13 12 11
+#. +> 16 15 14 13 12
 #: pg_test_fsync.c:325 pg_test_fsync.c:397 pg_test_fsync.c:435
 #: pg_test_fsync.c:494
 msgid "n/a"
 msgstr "н/д"
 
-#. +> 16 15 14 13 12 11
+#. +> 16 15 14 13 12
 #: pg_test_fsync.c:440
 #, c-format
 msgid ""
@@ -229,7 +211,7 @@ msgstr ""
 "* Эта файловая система с текущими параметрами монтирования не поддерживает\n"
 "  прямой ввод/вывод, как например, ext4 в режиме журналирования.\n"
 
-#. +> 16 15 14 13 12 11
+#. +> 16 15 14 13 12
 #: pg_test_fsync.c:448
 #, c-format
 msgid ""
@@ -239,7 +221,7 @@ msgstr ""
 "\n"
 "Сравнение open_sync при различных объёмах записываемых данных:\n"
 
-#. +> 16 15 14 13 12 11
+#. +> 16 15 14 13 12
 #: pg_test_fsync.c:449
 #, c-format
 msgid ""
@@ -251,32 +233,32 @@ msgstr ""
 "записи с open_sync.)\n"
 
 # skip-rule: double-space
-#. +> 16 15 14 13 12 11
+#. +> 16 15 14 13 12
 #: pg_test_fsync.c:452
 msgid " 1 * 16kB open_sync write"
 msgstr "запись с open_sync  1 * 16 КБ"
 
-#. +> 16 15 14 13 12 11
+#. +> 16 15 14 13 12
 #: pg_test_fsync.c:453
 msgid " 2 *  8kB open_sync writes"
 msgstr "запись с open_sync  2 *  8 КБ"
 
-#. +> 16 15 14 13 12 11
+#. +> 16 15 14 13 12
 #: pg_test_fsync.c:454
 msgid " 4 *  4kB open_sync writes"
 msgstr "запись с open_sync  4 *  4 КБ"
 
-#. +> 16 15 14 13 12 11
+#. +> 16 15 14 13 12
 #: pg_test_fsync.c:455
 msgid " 8 *  2kB open_sync writes"
 msgstr "запись с open_sync  8 *  2 КБ"
 
-#. +> 16 15 14 13 12 11
+#. +> 16 15 14 13 12
 #: pg_test_fsync.c:456
 msgid "16 *  1kB open_sync writes"
 msgstr "запись с open_sync 16 *  1 КБ"
 
-#. +> 16 15 14 13 12 11
+#. +> 16 15 14 13 12
 #: pg_test_fsync.c:510
 #, c-format
 msgid ""
@@ -287,7 +269,7 @@ msgstr ""
 "Проверка, производится ли fsync с указателем файла, открытого не для "
 "записи:\n"
 
-#. +> 16 15 14 13 12 11
+#. +> 16 15 14 13 12
 #: pg_test_fsync.c:511
 #, c-format
 msgid ""
@@ -298,7 +280,7 @@ msgstr ""
 "данные,\n"
 "записанные через другой дескриптор.)\n"
 
-#. +> 16 15 14 13 12 11
+#. +> 16 15 14 13 12
 #: pg_test_fsync.c:576
 #, c-format
 msgid ""
@@ -307,3 +289,15 @@ msgid ""
 msgstr ""
 "\n"
 "Несинхронизированная запись %d КБ:\n"
+
+#, c-format
+#~ msgid "Could not create thread for alarm\n"
+#~ msgstr "Не удалось создать поток для обработки сигналов\n"
+
+#, c-format
+#~ msgid "%s: %s\n"
+#~ msgstr "%s: %s\n"
+
+#, c-format
+#~ msgid "%s: too many command-line arguments (first is \"%s\")\n"
+#~ msgstr "%s: слишком много аргументов командной строки (первый: \"%s\")\n"
