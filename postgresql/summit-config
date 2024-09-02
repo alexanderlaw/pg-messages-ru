@@ -41,10 +41,6 @@ S.branches = [
          topdir=S.relpath("%s/messages-12.git/%s" % (sources_root, S.lang)),
          topdir_templates=S.relpath("%s/12" % (pot_root)),
          ),
-    dict(id="11",
-         topdir=S.relpath("%s/messages-11.git/%s" % (sources_root, S.lang)),
-         topdir_templates=S.relpath("%s/11" % (pot_root)),
-         ),
 ]
 
 S.mappings = [
