@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_test_fsync (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2024-09-02 09:16+0300\n"
+"POT-Creation-Date: 2024-09-02 09:31+0300\n"
 "PO-Revision-Date: 2022-09-05 13:36+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -17,63 +17,76 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
-#. +> 16 15
+#. +> 17 16 15
 #: ../../../src/common/logging.c:276
 #, c-format
 msgid "error: "
 msgstr "ошибка: "
 
-#. +> 16 15
+#. +> 17 16 15
 #: ../../../src/common/logging.c:283
 #, c-format
 msgid "warning: "
 msgstr "предупреждение: "
 
-#. +> 16 15
+#. +> 17 16 15
 #: ../../../src/common/logging.c:294
 #, c-format
 msgid "detail: "
 msgstr "подробности: "
 
-#. +> 16 15
+#. +> 17 16 15
 #: ../../../src/common/logging.c:301
 #, c-format
 msgid "hint: "
 msgstr "подсказка: "
 
+#. +> 17
+#: ../../common/fe_memutils.c:35 ../../common/fe_memutils.c:75
+#: ../../common/fe_memutils.c:98 ../../common/fe_memutils.c:161
+#, c-format
+msgid "out of memory\n"
+msgstr ""
+
+#. +> 17
+#: ../../common/fe_memutils.c:92 ../../common/fe_memutils.c:153
+#, c-format
+msgid "cannot duplicate null pointer (internal error)\n"
+msgstr ""
+
 #. translator: maintain alignment with NA_FORMAT
-#. +> 16 15 14 13 12
-#: pg_test_fsync.c:32
+#. +> 17 16 15 14 13 12
+#: pg_test_fsync.c:38
 #, c-format
 msgid "%13.3f ops/sec  %6.0f usecs/op\n"
 msgstr "%13.3f оп/с     %6.0f мкс/оп\n"
 
-#. +> 16 15
-#: pg_test_fsync.c:50
+#. +> 17 16 15
+#: pg_test_fsync.c:56
 #, c-format
 msgid "could not create thread for alarm"
 msgstr "не удалось создать поток для обработки сигналов"
 
-#. +> 16 15
-#: pg_test_fsync.c:95
+#. +> 17 16 15
+#: pg_test_fsync.c:101
 #, c-format
 msgid "%s: %m"
 msgstr "%s: %m"
 
-#. +> 16 15 14 13 12
-#: pg_test_fsync.c:159
+#. +> 17 16 15 14 13 12
+#: pg_test_fsync.c:165
 #, c-format
 msgid "Usage: %s [-f FILENAME] [-s SECS-PER-TEST]\n"
 msgstr "Использование: %s [-f ИМЯ_ФАЙЛА ] [-s ТЕСТ_СЕК]\n"
 
-#. +> 16 15
-#: pg_test_fsync.c:185
+#. +> 17 16 15
+#: pg_test_fsync.c:191
 #, c-format
 msgid "invalid argument for option %s"
 msgstr "недопустимый аргумент параметра %s"
 
-#. +> 16 15
-#: pg_test_fsync.c:186 pg_test_fsync.c:198 pg_test_fsync.c:207
+#. +> 17 16 15
+#: pg_test_fsync.c:192 pg_test_fsync.c:204 pg_test_fsync.c:213
 #, c-format
 msgid "Try \"%s --help\" for more information."
 msgstr "Для дополнительной информации попробуйте \"%s --help\"."
@@ -84,20 +97,20 @@ msgstr "Для дополнительной информации попробу�
 msgid "Try \"%s --help\" for more information.\n"
 msgstr "Для дополнительной информации попробуйте \"%s --help\".\n"
 
-#. +> 16 15
-#: pg_test_fsync.c:192
+#. +> 17 16 15
+#: pg_test_fsync.c:198
 #, c-format
 msgid "%s must be in range %u..%u"
 msgstr "значение %s должно быть в диапазоне %u..%u"
 
-#. +> 16 15
-#: pg_test_fsync.c:205
+#. +> 17 16 15
+#: pg_test_fsync.c:211
 #, c-format
 msgid "too many command-line arguments (first is \"%s\")"
 msgstr "слишком много аргументов командной строки (первый: \"%s\")"
 
-#. +> 16 15 14
-#: pg_test_fsync.c:211
+#. +> 17 16 15 14
+#: pg_test_fsync.c:217
 #, c-format
 msgid "%u second per test\n"
 msgid_plural "%u seconds per test\n"
@@ -114,44 +127,44 @@ msgstr[0] "на тест отводится %d сек.\n"
 msgstr[1] "на тест отводится %d сек.\n"
 msgstr[2] "на тест отводится %d сек.\n"
 
-#. +> 16 15 14 13 12
-#: pg_test_fsync.c:216
+#. +> 17 16 15 14 13 12
+#: pg_test_fsync.c:222
 #, c-format
 msgid "O_DIRECT supported on this platform for open_datasync and open_sync.\n"
 msgstr ""
 "O_DIRECT на этой платформе не поддерживается для open_datasync и open_sync.\n"
 
-#. +> 16 15
-#: pg_test_fsync.c:218
+#. +> 17 16 15
+#: pg_test_fsync.c:224
 #, c-format
 msgid "F_NOCACHE supported on this platform for open_datasync and open_sync.\n"
 msgstr ""
 "F_NOCACHE на этой платформе поддерживается для open_datasync и open_sync.\n"
 
-#. +> 16 15 14 13 12
-#: pg_test_fsync.c:220
+#. +> 17 16 15 14 13 12
+#: pg_test_fsync.c:226
 #, c-format
 msgid "Direct I/O is not supported on this platform.\n"
 msgstr "Прямой ввод/вывод не поддерживается на этой платформе.\n"
 
-#. +> 16 15 14 13 12
-#: pg_test_fsync.c:245 pg_test_fsync.c:335 pg_test_fsync.c:357
-#: pg_test_fsync.c:381 pg_test_fsync.c:525 pg_test_fsync.c:537
-#: pg_test_fsync.c:553 pg_test_fsync.c:559 pg_test_fsync.c:581
+#. +> 17 16 15 14 13 12
+#: pg_test_fsync.c:251 pg_test_fsync.c:341 pg_test_fsync.c:363
+#: pg_test_fsync.c:387 pg_test_fsync.c:531 pg_test_fsync.c:543
+#: pg_test_fsync.c:559 pg_test_fsync.c:565 pg_test_fsync.c:587
 msgid "could not open output file"
 msgstr "не удалось открыть выходной файл"
 
-#. +> 16 15 14 13 12
-#: pg_test_fsync.c:249 pg_test_fsync.c:319 pg_test_fsync.c:344
-#: pg_test_fsync.c:366 pg_test_fsync.c:390 pg_test_fsync.c:429
-#: pg_test_fsync.c:488 pg_test_fsync.c:527 pg_test_fsync.c:555
-#: pg_test_fsync.c:586
+#. +> 17 16 15 14 13 12
+#: pg_test_fsync.c:255 pg_test_fsync.c:325 pg_test_fsync.c:350
+#: pg_test_fsync.c:372 pg_test_fsync.c:396 pg_test_fsync.c:435
+#: pg_test_fsync.c:494 pg_test_fsync.c:533 pg_test_fsync.c:561
+#: pg_test_fsync.c:592
 msgid "write failed"
 msgstr "ошибка записи"
 
-#. +> 16 15 14 13 12
-#: pg_test_fsync.c:253 pg_test_fsync.c:368 pg_test_fsync.c:392
-#: pg_test_fsync.c:529 pg_test_fsync.c:561
+#. +> 17 16 15 14 13 12
+#: pg_test_fsync.c:259 pg_test_fsync.c:374 pg_test_fsync.c:398
+#: pg_test_fsync.c:535 pg_test_fsync.c:567
 msgid "fsync failed"
 msgstr "ошибка синхронизации с ФС"
 
@@ -161,8 +174,8 @@ msgstr "ошибка синхронизации с ФС"
 msgid "seek failed"
 msgstr "ошибка позиционирования"
 
-#. +> 16 15 14 13 12
-#: pg_test_fsync.c:292
+#. +> 17 16 15 14 13 12
+#: pg_test_fsync.c:298
 #, c-format
 msgid ""
 "\n"
@@ -171,8 +184,8 @@ msgstr ""
 "\n"
 "Сравнение методов синхронизации файлов при однократной записи %d КБ:\n"
 
-#. +> 16 15 14 13 12
-#: pg_test_fsync.c:294
+#. +> 17 16 15 14 13 12
+#: pg_test_fsync.c:300
 #, c-format
 msgid ""
 "\n"
@@ -180,6 +193,19 @@ msgid ""
 msgstr ""
 "\n"
 "Сравнение методов синхронизации файлов при двухкратной записи %d КБ:\n"
+
+#. +> 17
+#: pg_test_fsync.c:301
+#, fuzzy, c-format
+#| msgid ""
+#| "(in wal_sync_method preference order, except fdatasync is Linux's "
+#| "default)\n"
+msgid ""
+"(in \"wal_sync_method\" preference order, except fdatasync is Linux's "
+"default)\n"
+msgstr ""
+"(в порядке предпочтения для wal_sync_method, без учёта наибольшего "
+"предпочтения fdatasync в Linux)\n"
 
 #. +> 16 15 14 13 12
 #: pg_test_fsync.c:295
@@ -190,19 +216,19 @@ msgstr ""
 "(в порядке предпочтения для wal_sync_method, без учёта наибольшего "
 "предпочтения fdatasync в Linux)\n"
 
-#. +> 16 15 14 13 12
-#: pg_test_fsync.c:306 pg_test_fsync.c:409 pg_test_fsync.c:476
+#. +> 17 16 15 14 13 12
+#: pg_test_fsync.c:312 pg_test_fsync.c:415 pg_test_fsync.c:482
 msgid "n/a*"
 msgstr "н/д*"
 
-#. +> 16 15 14 13 12
-#: pg_test_fsync.c:325 pg_test_fsync.c:397 pg_test_fsync.c:435
-#: pg_test_fsync.c:494
+#. +> 17 16 15 14 13 12
+#: pg_test_fsync.c:331 pg_test_fsync.c:403 pg_test_fsync.c:441
+#: pg_test_fsync.c:500
 msgid "n/a"
 msgstr "н/д"
 
-#. +> 16 15 14 13 12
-#: pg_test_fsync.c:440
+#. +> 17 16 15 14 13 12
+#: pg_test_fsync.c:446
 #, c-format
 msgid ""
 "* This file system and its mount options do not support direct\n"
@@ -211,8 +237,8 @@ msgstr ""
 "* Эта файловая система с текущими параметрами монтирования не поддерживает\n"
 "  прямой ввод/вывод, как например, ext4 в режиме журналирования.\n"
 
-#. +> 16 15 14 13 12
-#: pg_test_fsync.c:448
+#. +> 17 16 15 14 13 12
+#: pg_test_fsync.c:454
 #, c-format
 msgid ""
 "\n"
@@ -221,8 +247,8 @@ msgstr ""
 "\n"
 "Сравнение open_sync при различных объёмах записываемых данных:\n"
 
-#. +> 16 15 14 13 12
-#: pg_test_fsync.c:449
+#. +> 17 16 15 14 13 12
+#: pg_test_fsync.c:455
 #, c-format
 msgid ""
 "(This is designed to compare the cost of writing 16kB in different write\n"
@@ -233,33 +259,33 @@ msgstr ""
 "записи с open_sync.)\n"
 
 # skip-rule: double-space
-#. +> 16 15 14 13 12
-#: pg_test_fsync.c:452
+#. +> 17 16 15 14 13 12
+#: pg_test_fsync.c:458
 msgid " 1 * 16kB open_sync write"
 msgstr "запись с open_sync  1 * 16 КБ"
 
-#. +> 16 15 14 13 12
-#: pg_test_fsync.c:453
+#. +> 17 16 15 14 13 12
+#: pg_test_fsync.c:459
 msgid " 2 *  8kB open_sync writes"
 msgstr "запись с open_sync  2 *  8 КБ"
 
-#. +> 16 15 14 13 12
-#: pg_test_fsync.c:454
+#. +> 17 16 15 14 13 12
+#: pg_test_fsync.c:460
 msgid " 4 *  4kB open_sync writes"
 msgstr "запись с open_sync  4 *  4 КБ"
 
-#. +> 16 15 14 13 12
-#: pg_test_fsync.c:455
+#. +> 17 16 15 14 13 12
+#: pg_test_fsync.c:461
 msgid " 8 *  2kB open_sync writes"
 msgstr "запись с open_sync  8 *  2 КБ"
 
-#. +> 16 15 14 13 12
-#: pg_test_fsync.c:456
+#. +> 17 16 15 14 13 12
+#: pg_test_fsync.c:462
 msgid "16 *  1kB open_sync writes"
 msgstr "запись с open_sync 16 *  1 КБ"
 
-#. +> 16 15 14 13 12
-#: pg_test_fsync.c:510
+#. +> 17 16 15 14 13 12
+#: pg_test_fsync.c:516
 #, c-format
 msgid ""
 "\n"
@@ -269,8 +295,8 @@ msgstr ""
 "Проверка, производится ли fsync с указателем файла, открытого не для "
 "записи:\n"
 
-#. +> 16 15 14 13 12
-#: pg_test_fsync.c:511
+#. +> 17 16 15 14 13 12
+#: pg_test_fsync.c:517
 #, c-format
 msgid ""
 "(If the times are similar, fsync() can sync data written on a different\n"
@@ -280,8 +306,8 @@ msgstr ""
 "данные,\n"
 "записанные через другой дескриптор.)\n"
 
-#. +> 16 15 14 13 12
-#: pg_test_fsync.c:576
+#. +> 17 16 15 14 13 12
+#: pg_test_fsync.c:582
 #, c-format
 msgid ""
 "\n"
