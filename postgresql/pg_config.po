@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_config (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2024-09-02 09:31+0300\n"
+"POT-Creation-Date: 2024-09-07 17:09+0300\n"
 "PO-Revision-Date: 2024-09-04 13:45+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -87,14 +87,12 @@ msgstr "не удалось преобразовать относительны�
 #. +> 17
 #: ../../common/exec.c:382
 #, c-format
-#| msgid "could not change directory to \"%s\": %m"
 msgid "could not execute command \"%s\": %m"
 msgstr "не удалось выполнить команду \"%s\": %m"
 
 #. +> 17
 #: ../../common/exec.c:394
 #, c-format
-#| msgid "could not read binary \"%s\": %m"
 msgid "could not read from command \"%s\": %m"
 msgstr "не удалось прочитать вывод команды \"%s\": %m"
 
@@ -125,7 +123,6 @@ msgstr "нехватка памяти"
 #: ../../common/fe_memutils.c:35 ../../common/fe_memutils.c:75
 #: ../../common/fe_memutils.c:98 ../../common/fe_memutils.c:161
 #, c-format
-#| msgid "out of memory"
 msgid "out of memory\n"
 msgstr "нехватка памяти\n"
 

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ecpg (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2024-09-02 09:31+0300\n"
+"POT-Creation-Date: 2024-09-07 17:09+0300\n"
 "PO-Revision-Date: 2024-09-04 07:22+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -251,7 +251,6 @@ msgstr "%s: отладочные сообщения при разборе (-d) �
 #. +> 17
 #: ecpg.c:230 ecpg.c:345 ecpg.c:356
 #, c-format
-#| msgid "%s: could not open file \"%s\": %s\n"
 msgid "%s: could not open file \"%s\": %m\n"
 msgstr "%s: не удалось открыть файл \"%s\": %m\n"
 
@@ -298,25 +297,25 @@ msgid "could not remove output file \"%s\"\n"
 msgstr "ошибка при удалении выходного файла \"%s\"\n"
 
 #. +> 17 16 15 14 13 12
-#: pgc.l:528
+#: pgc.l:542
 #, c-format
 msgid "unterminated /* comment"
 msgstr "незавершённый комментарий /*"
 
 #. +> 17 16 15 14 13 12
-#: pgc.l:545
+#: pgc.l:559
 #, c-format
 msgid "unterminated bit string literal"
 msgstr "оборванная битовая строка"
 
 #. +> 17 16 15 14 13 12
-#: pgc.l:553
+#: pgc.l:567
 #, c-format
 msgid "unterminated hexadecimal string literal"
 msgstr "оборванная шестнадцатеричная строка"
 
 #. +> 17 16 15 14 13 12
-#: pgc.l:628
+#: pgc.l:642
 #, c-format
 msgid "invalid bit string literal"
 msgstr "неверная битовая строка"
@@ -328,13 +327,13 @@ msgid "invalid hex string literal"
 msgstr "неверная шестнадцатеричная строка"
 
 #. +> 17 16 15
-#: pgc.l:633
+#: pgc.l:647
 #, c-format
 msgid "invalid hexadecimal string literal"
 msgstr "неверная шестнадцатеричная строка"
 
 #. +> 17 16 15 14 13
-#: pgc.l:651
+#: pgc.l:665
 #, c-format
 msgid "unhandled previous state in xqs\n"
 msgstr ""
@@ -342,103 +341,103 @@ msgstr ""
 "апострофа\n"
 
 #. +> 17 16 15 14 13 12
-#: pgc.l:677 pgc.l:786
+#: pgc.l:691 pgc.l:800
 #, c-format
 msgid "unterminated quoted string"
 msgstr "незавершённая строка в кавычках"
 
 #. +> 17 16 15 14 13 12
-#: pgc.l:728
+#: pgc.l:742
 #, c-format
 msgid "unterminated dollar-quoted string"
 msgstr "незавершённая строка с $"
 
 #. +> 17 16 15 14 13 12
-#: pgc.l:746 pgc.l:766
+#: pgc.l:760 pgc.l:780
 #, c-format
 msgid "zero-length delimited identifier"
 msgstr "пустой идентификатор в кавычках"
 
 #. +> 17 16 15 14 13 12
-#: pgc.l:777
+#: pgc.l:791
 #, c-format
 msgid "unterminated quoted identifier"
 msgstr "незавершённый идентификатор в кавычках"
 
 #. +> 17 16 15
-#: pgc.l:946
+#: pgc.l:960
 #, c-format
 msgid "trailing junk after parameter"
 msgstr "мусорное содержимое после параметра"
 
 #. +> 17 16 15
-#: pgc.l:998 pgc.l:1001 pgc.l:1004 pgc.l:1007 pgc.l:1010 pgc.l:1013
+#: pgc.l:1012 pgc.l:1015 pgc.l:1018
 #, c-format
 msgid "trailing junk after numeric literal"
 msgstr "мусорное содержимое после числовой константы"
 
 #. +> 17 16 15 14 13 12
-#: pgc.l:1136
+#: pgc.l:1141
 #, c-format
 msgid "nested /* ... */ comments"
 msgstr "вложенные комментарии /* ... */"
 
 #. +> 17 16 15 14 13 12
-#: pgc.l:1235
+#: pgc.l:1240
 #, c-format
 msgid "missing identifier in EXEC SQL UNDEF command"
 msgstr "в команде EXEC SQL UNDEF отсутствует идентификатор"
 
 #. +> 17 16 15 14 13 12
-#: pgc.l:1253 pgc.l:1266 pgc.l:1282 pgc.l:1295
+#: pgc.l:1258 pgc.l:1271 pgc.l:1287 pgc.l:1300
 #, c-format
 msgid "too many nested EXEC SQL IFDEF conditions"
 msgstr "слишком много вложенных условий EXEC SQL IFDEF"
 
 #. +> 17 16 15 14 13 12
-#: pgc.l:1311 pgc.l:1322 pgc.l:1337 pgc.l:1359
+#: pgc.l:1316 pgc.l:1327 pgc.l:1342 pgc.l:1364
 #, c-format
 msgid "missing matching \"EXEC SQL IFDEF\" / \"EXEC SQL IFNDEF\""
 msgstr "нет соответствующего \"EXEC SQL IFDEF\" / \"EXEC SQL IFNDEF\""
 
 #. +> 17 16 15 14 13 12
-#: pgc.l:1313 pgc.l:1324 pgc.l:1517
+#: pgc.l:1318 pgc.l:1329 pgc.l:1522
 #, c-format
 msgid "missing \"EXEC SQL ENDIF;\""
 msgstr "отсутствует \"EXEC SQL ENDIF;\""
 
 #. +> 17 16 15 14 13 12
-#: pgc.l:1339 pgc.l:1361
+#: pgc.l:1344 pgc.l:1366
 #, c-format
 msgid "more than one EXEC SQL ELSE"
 msgstr "неоднократная команда EXEC SQL ELSE"
 
 #. +> 17 16 15 14 13 12
-#: pgc.l:1384 pgc.l:1398
+#: pgc.l:1389 pgc.l:1403
 #, c-format
 msgid "unmatched EXEC SQL ENDIF"
 msgstr "непарная команда EXEC SQL ENDIF"
 
 #. +> 17 16 15 14 13 12
-#: pgc.l:1459
+#: pgc.l:1464
 #, c-format
 msgid "missing identifier in EXEC SQL IFDEF command"
 msgstr "в команде EXEC SQL IFDEF отсутствует идентификатор"
 
 #. +> 17 16 15 14 13 12
-#: pgc.l:1468
+#: pgc.l:1473
 #, c-format
 msgid "missing identifier in EXEC SQL DEFINE command"
 msgstr "в команде EXEC SQL DEFINE отсутствует идентификатор"
 
 #. +> 17 16 15 14 13 12
-#: pgc.l:1506
+#: pgc.l:1511
 #, c-format
 msgid "syntax error in EXEC SQL INCLUDE command"
 msgstr "ошибка синтаксиса в команде EXEC SQL INCLUDE"
 
 #. +> 17 16 15 14 13
-#: pgc.l:1561
+#: pgc.l:1566
 #, c-format
 msgid "internal error: unreachable state; please report this to <%s>"
 msgstr "внутренняя ошибка: недостижимое состояние; пожалуйста, сообщите в <%s>"
@@ -454,7 +453,7 @@ msgstr ""
 "bugs@lists.postgresql.org>"
 
 #. +> 17 16 15 14 13 12
-#: pgc.l:1713
+#: pgc.l:1718
 #, c-format
 msgid "Error: include path \"%s/%s\" is too long on line %d, skipping\n"
 msgstr ""
@@ -462,7 +461,7 @@ msgstr ""
 "пропускается\n"
 
 #. +> 17 16 15 14 13 12
-#: pgc.l:1736
+#: pgc.l:1741
 #, c-format
 msgid "could not open include file \"%s\" on line %d"
 msgstr "не удалось открыть включаемый файл \"%s\" (строка %d)"

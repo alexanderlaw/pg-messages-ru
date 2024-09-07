@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_ctl (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2024-09-02 09:31+0300\n"
+"POT-Creation-Date: 2024-09-07 17:09+0300\n"
 "PO-Revision-Date: 2024-09-07 06:47+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -85,14 +85,12 @@ msgstr "не удалось преобразовать относительны�
 #. +> 17
 #: ../../common/exec.c:382
 #, c-format
-#| msgid "could not change directory to \"%s\": %m"
 msgid "could not execute command \"%s\": %m"
 msgstr "не удалось выполнить команду \"%s\": %m"
 
 #. +> 17
 #: ../../common/exec.c:394
 #, c-format
-#| msgid "could not read binary \"%s\": %m"
 msgid "could not read from command \"%s\": %m"
 msgstr "не удалось прочитать вывод команды \"%s\": %m"
 
@@ -172,7 +170,6 @@ msgstr "дочерний процесс завершился с нераспоз
 #. +> 17
 #: ../../port/path.c:775
 #, c-format
-#| msgid "could not get current working directory: %s\n"
 msgid "could not get current working directory: %m\n"
 msgstr "не удалось определить текущий рабочий каталог: %m\n"
 
@@ -191,7 +188,6 @@ msgstr "%s: каталог \"%s\" не существует\n"
 #. +> 17
 #: pg_ctl.c:257
 #, c-format
-#| msgid "%s: could not access directory \"%s\": %s\n"
 msgid "%s: could not access directory \"%s\": %m\n"
 msgstr "%s: ошибка при обращении к каталогу \"%s\": %m\n"
 
@@ -210,7 +206,6 @@ msgstr "%s: каталог \"%s\" не содержит структуры кл�
 #. +> 17
 #: pg_ctl.c:283
 #, c-format
-#| msgid "%s: could not open PID file \"%s\": %s\n"
 msgid "%s: could not open PID file \"%s\": %m\n"
 msgstr "%s: не удалось открыть файл PID \"%s\": %m\n"
 
@@ -235,7 +230,6 @@ msgstr "%s: неверные данные в файле PID \"%s\"\n"
 #. +> 17
 #: pg_ctl.c:457 pg_ctl.c:499
 #, c-format
-#| msgid "%s: could not start server: %s\n"
 msgid "%s: could not start server: %m\n"
 msgstr "%s: не удалось запустить сервер: %m\n"
 
@@ -248,7 +242,6 @@ msgstr "%s: не удалось запустить сервер: %s\n"
 #. +> 17
 #: pg_ctl.c:477
 #, c-format
-#| msgid "%s: could not start server due to setsid() failure: %s\n"
 msgid "%s: could not start server due to setsid() failure: %m\n"
 msgstr "%s: не удалось запустить сервер из-за ошибки в setsid(): %m\n"
 
@@ -261,7 +254,6 @@ msgstr "%s: не удалось запустить сервер из-за оши
 #. +> 17
 #: pg_ctl.c:547
 #, c-format
-#| msgid "%s: could not open log file \"%s\": %s\n"
 msgid "%s: could not open log file \"%s\": %m\n"
 msgstr "%s: не удалось открыть файл протокола \"%s\": %m\n"
 
@@ -300,7 +292,6 @@ msgstr "%s: в файле параметров \"%s\" должна быть ро
 #. +> 17
 #: pg_ctl.c:854 pg_ctl.c:1038 pg_ctl.c:1105
 #, c-format
-#| msgid "%s: could not send stop signal (PID: %d): %s\n"
 msgid "%s: could not send stop signal (PID: %d): %m\n"
 msgstr "%s: не удалось отправить сигнал остановки (PID: %d): %m\n"
 
@@ -540,7 +531,6 @@ msgstr ""
 #. +> 17
 #: pg_ctl.c:1160
 #, c-format
-#| msgid "%s: could not send reload signal (PID: %d): %s\n"
 msgid "%s: could not send reload signal (PID: %d): %m\n"
 msgstr "%s: не удалось отправить сигнал перезагрузки (PID: %d): %m\n"
 
@@ -584,7 +574,6 @@ msgstr "%s: повысить сервер нельзя - он работает �
 #. +> 17
 #: pg_ctl.c:1208
 #, c-format
-#| msgid "%s: could not create promote signal file \"%s\": %s\n"
 msgid "%s: could not create promote signal file \"%s\": %m\n"
 msgstr "%s: не удалось создать файл \"%s\" с сигналом к повышению: %m\n"
 
@@ -597,7 +586,6 @@ msgstr "%s: не удалось создать файл \"%s\" с сигнало
 #. +> 17
 #: pg_ctl.c:1214
 #, c-format
-#| msgid "%s: could not write promote signal file \"%s\": %s\n"
 msgid "%s: could not write promote signal file \"%s\": %m\n"
 msgstr "%s: не удалось записать файл \"%s\" с сигналом к повышению: %m\n"
 
@@ -610,7 +598,6 @@ msgstr "%s: не удалось записать файл \"%s\" с сигнал
 #. +> 17
 #: pg_ctl.c:1222
 #, c-format
-#| msgid "%s: could not send promote signal (PID: %d): %s\n"
 msgid "%s: could not send promote signal (PID: %d): %m\n"
 msgstr "%s: не удалось отправить сигнал к повышению (PID: %d): %m\n"
 
@@ -629,7 +616,6 @@ msgstr "%s: не удалось отправить сигнал к повыше�
 #. +> 17
 #: pg_ctl.c:1225
 #, c-format
-#| msgid "%s: could not remove promote signal file \"%s\": %s\n"
 msgid "%s: could not remove promote signal file \"%s\": %m\n"
 msgstr "%s: ошибка при удалении файла \"%s\" с сигналом к повышению: %m\n"
 
@@ -679,7 +665,6 @@ msgstr ""
 #. +> 17
 #: pg_ctl.c:1281
 #, c-format
-#| msgid "%s: could not create log rotation signal file \"%s\": %s\n"
 msgid "%s: could not create log rotation signal file \"%s\": %m\n"
 msgstr ""
 "%s: не удалось создать файл \"%s\" с сигналом к прокрутке журнала: %m\n"
@@ -694,7 +679,6 @@ msgstr ""
 #. +> 17
 #: pg_ctl.c:1287
 #, c-format
-#| msgid "%s: could not write log rotation signal file \"%s\": %s\n"
 msgid "%s: could not write log rotation signal file \"%s\": %m\n"
 msgstr ""
 "%s: не удалось записать файл \"%s\" с сигналом к прокрутке журнала: %m\n"
@@ -709,7 +693,6 @@ msgstr ""
 #. +> 17
 #: pg_ctl.c:1295
 #, c-format
-#| msgid "%s: could not send log rotation signal (PID: %d): %s\n"
 msgid "%s: could not send log rotation signal (PID: %d): %m\n"
 msgstr "%s: не удалось отправить сигнал к прокрутке журнала (PID: %d): %m\n"
 
@@ -728,7 +711,6 @@ msgstr "%s: не удалось отправить сигнал к прокру�
 #. +> 17
 #: pg_ctl.c:1298
 #, c-format
-#| msgid "%s: could not remove log rotation signal file \"%s\": %s\n"
 msgid "%s: could not remove log rotation signal file \"%s\": %m\n"
 msgstr ""
 "%s: ошибка при удалении файла \"%s\" с сигналом к прокрутке журнала: %m\n"
@@ -778,7 +760,6 @@ msgstr "%s: сервер не работает\n"
 #. +> 17
 #: pg_ctl.c:1397
 #, c-format
-#| msgid "%s: could not send signal %d (PID: %d): %s\n"
 msgid "%s: could not send signal %d (PID: %d): %m\n"
 msgstr "%s: не удалось отправить сигнал %d (PID: %d): %m\n"
 

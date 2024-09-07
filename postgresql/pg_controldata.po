@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_controldata (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2024-09-02 09:31+0300\n"
+"POT-Creation-Date: 2024-09-07 17:09+0300\n"
 "PO-Revision-Date: 2024-09-04 17:08+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -221,7 +221,6 @@ msgstr "нераспознанный код состояния"
 
 #. +> 17
 #: pg_controldata.c:84
-#| msgid "unrecognized wal_level"
 msgid "unrecognized \"wal_level\""
 msgstr "нераспознанное значение \"wal_level\""
 
@@ -265,12 +264,6 @@ msgstr ""
 #. +> 17
 #: pg_controldata.c:172
 #, c-format
-#| msgid ""
-#| "WARNING: Calculated CRC checksum does not match value stored in file.\n"
-#| "Either the file is corrupt, or it has a different layout than this "
-#| "program\n"
-#| "is expecting.  The results below are untrustworthy.\n"
-#| "\n"
 msgid ""
 "Either the control file is corrupt, or it has a different layout than this "
 "program is expecting.  The results below are untrustworthy."

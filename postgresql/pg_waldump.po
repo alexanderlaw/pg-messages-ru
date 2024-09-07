@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_waldump (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2024-09-02 09:31+0300\n"
+"POT-Creation-Date: 2024-09-07 17:09+0300\n"
 "PO-Revision-Date: 2024-09-07 08:59+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -52,7 +52,6 @@ msgstr "подсказка: "
 #: ../../common/fe_memutils.c:35 ../../common/fe_memutils.c:75
 #: ../../common/fe_memutils.c:98 ../../common/fe_memutils.c:161
 #, c-format
-#| msgid "out of memory"
 msgid "out of memory\n"
 msgstr "нехватка памяти\n"
 
@@ -73,14 +72,12 @@ msgstr "не удалось открыть файл \"%s\": %m"
 #. +> 17
 #: ../../common/file_utils.c:76
 #, c-format
-#| msgid "could not write file \"%s\": %m"
 msgid "could not synchronize file system for file \"%s\": %m"
 msgstr "не удалось синхронизировать с ФС файл \"%s\": %m"
 
 #. +> 17
 #: ../../common/file_utils.c:120 ../../common/file_utils.c:566
 #, c-format
-#| msgid "could not read file \"%s\": %m"
 msgid "could not stat file \"%s\": %m"
 msgstr "не удалось получить информацию о файле \"%s\": %m"
 
@@ -100,21 +97,18 @@ msgstr "не удалось открыть каталог \"%s\": %m"
 #. +> 17
 #: ../../common/file_utils.c:169 ../../common/file_utils.c:315
 #, c-format
-#| msgid "could not create directory \"%s\": %m"
 msgid "could not read directory \"%s\": %m"
 msgstr "не удалось прочитать каталог \"%s\": %m"
 
 #. +> 17
 #: ../../common/file_utils.c:418 ../../common/file_utils.c:488
 #, c-format
-#| msgid "could not find file \"%s\": %m"
 msgid "could not fsync file \"%s\": %m"
 msgstr "не удалось синхронизировать с ФС файл \"%s\": %m"
 
 #. +> 17
 #: ../../common/file_utils.c:498
 #, c-format
-#| msgid "could not read file \"%s\": %m"
 msgid "could not rename file \"%s\" to \"%s\": %m"
 msgstr "не удалось переименовать файл \"%s\" в \"%s\": %m"
 
@@ -154,12 +148,6 @@ msgstr[2] "WAL-файл \"%s\" содержит неверный размер с
 #. +> 17
 #: pg_waldump.c:260
 #, c-format
-#| msgid ""
-#| "WAL segment size must be a power of two between 1 MB and 1 GB, but the "
-#| "WAL file \"%s\" header specifies %d byte"
-#| msgid_plural ""
-#| "WAL segment size must be a power of two between 1 MB and 1 GB, but the "
-#| "WAL file \"%s\" header specifies %d bytes"
 msgid "The WAL segment size must be a power of two between 1 MB and 1 GB."
 msgstr ""
 "Размер сегмента WAL должен задаваться степенью 2 в интервале от 1 МБ до 1 ГБ."
@@ -256,7 +244,6 @@ msgstr "не удалось найти файл \"%s\": %s"
 #. +> 17
 #: pg_waldump.c:421
 #, c-format
-#| msgid "could not read from file %s, offset %d: %m"
 msgid "could not read from file \"%s\", offset %d: %m"
 msgstr "не удалось прочитать файл \"%s\" по смещению %d: %m"
 
@@ -287,7 +274,6 @@ msgstr "не удалось прочитать файл журнала %s по �
 #. +> 17
 #: pg_waldump.c:425
 #, c-format
-#| msgid "could not read from file %s, offset %d: read %d of %d"
 msgid "could not read from file \"%s\", offset %d: read %d of %d"
 msgstr ""
 "не удалось прочитать файл \"%s\" по смещению %d (прочитано байт: %d из %d)"
@@ -756,9 +742,6 @@ msgstr "не удалось найти корректную запись пос�
 #. +> 17
 #: pg_waldump.c:1227
 #, c-format
-#| msgid "first record is after %X/%X, at %X/%X, skipping over %u byte\n"
-#| msgid_plural ""
-#| "first record is after %X/%X, at %X/%X, skipping over %u bytes\n"
 msgid "first record is after %X/%X, at %X/%X, skipping over %u byte"
 msgid_plural "first record is after %X/%X, at %X/%X, skipping over %u bytes"
 msgstr[0] ""

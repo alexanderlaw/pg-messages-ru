@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_archivecleanup (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2024-09-02 09:31+0300\n"
+"POT-Creation-Date: 2024-09-07 17:09+0300\n"
 "PO-Revision-Date: 2024-09-07 06:17+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -162,7 +162,6 @@ msgstr ""
 #. +> 17
 #: pg_archivecleanup.c:264
 #, c-format
-#| msgid "  -d             generate debug output (verbose mode)\n"
 msgid "  -d, --debug                 generate debug output (verbose mode)\n"
 msgstr ""
 "  -d, --debug                 генерировать подробные сообщения (режим "
@@ -177,9 +176,6 @@ msgstr "  -d             генерировать подробные сообщ�
 #. +> 17
 #: pg_archivecleanup.c:265
 #, c-format
-#| msgid ""
-#| "  -n             dry run, show the names of the files that would be "
-#| "removed\n"
 msgid ""
 "  -n, --dry-run               dry run, show the names of the files that "
 "would be\n"
@@ -201,7 +197,6 @@ msgstr ""
 #. +> 17
 #: pg_archivecleanup.c:267
 #, c-format
-#| msgid "  -V, --version  output version information, then exit\n"
 msgid "  -V, --version               output version information, then exit\n"
 msgstr "  -V, --version               показать версию и выйти\n"
 
@@ -227,7 +222,6 @@ msgstr ""
 #. +> 17
 #: pg_archivecleanup.c:270
 #, c-format
-#| msgid "  -?, --help     show this help, then exit\n"
 msgid "  -?, --help                  show this help, then exit\n"
 msgstr "  -?, --help                  показать эту справку и выйти\n"
 

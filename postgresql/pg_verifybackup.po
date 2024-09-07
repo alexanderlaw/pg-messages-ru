@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_verifybackup (PostgreSQL) 13\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2024-09-02 09:31+0300\n"
+"POT-Creation-Date: 2024-09-07 17:09+0300\n"
 "PO-Revision-Date: 2024-09-07 09:48+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -48,7 +48,6 @@ msgstr "подсказка: "
 #. +> 17
 #: ../../common/controldata_utils.c:97
 #, c-format
-#| msgid "could not open file \"%s\": %m"
 msgid "could not open file \"%s\" for reading: %m"
 msgstr "не удалось открыть файл \"%s\" для чтения: %m"
 
@@ -102,14 +101,12 @@ msgstr "не удалось открыть файл \"%s\": %m"
 #. +> 17
 #: ../../common/controldata_utils.c:249
 #, c-format
-#| msgid "could not read file \"%s\": %m"
 msgid "could not write file \"%s\": %m"
 msgstr "не удалось записать файл \"%s\": %m"
 
 #. +> 17
 #: ../../common/controldata_utils.c:268
 #, c-format
-#| msgid "could not open file \"%s\": %m"
 msgid "could not fsync file \"%s\": %m"
 msgstr "не удалось синхронизировать с ФС файл \"%s\": %m"
 
@@ -172,7 +169,6 @@ msgstr ""
 #. +> 17
 #: ../../common/jsonapi.c:2127
 #, c-format
-#| msgid "Escape sequence \"\\%s\" is invalid."
 msgid "Escape sequence \"\\%.*s\" is invalid."
 msgstr "Неверная спецпоследовательность: \"\\%.*s\"."
 
@@ -191,7 +187,6 @@ msgstr "Символ с кодом 0x%02x необходимо экраниро�
 #. +> 17
 #: ../../common/jsonapi.c:2135
 #, c-format
-#| msgid "Expected end of input, but found \"%s\"."
 msgid "Expected end of input, but found \"%.*s\"."
 msgstr "Ожидался конец текста, но обнаружено продолжение \"%.*s\"."
 
@@ -204,7 +199,6 @@ msgstr "Ожидался конец текста, но обнаружено пр
 #. +> 17
 #: ../../common/jsonapi.c:2138
 #, c-format
-#| msgid "Expected array element or \"]\", but found \"%s\"."
 msgid "Expected array element or \"]\", but found \"%.*s\"."
 msgstr "Ожидался элемент массива или \"]\", но обнаружено \"%.*s\"."
 
@@ -217,7 +211,6 @@ msgstr "Ожидался элемент массива или \"]\", но обн
 #. +> 17
 #: ../../common/jsonapi.c:2141
 #, c-format
-#| msgid "Expected \",\" or \"]\", but found \"%s\"."
 msgid "Expected \",\" or \"]\", but found \"%.*s\"."
 msgstr "Ожидалась \",\" или \"]\", но обнаружено \"%.*s\"."
 
@@ -230,7 +223,6 @@ msgstr "Ожидалась \",\" или \"]\", но обнаружено \"%s\".
 #. +> 17
 #: ../../common/jsonapi.c:2144
 #, c-format
-#| msgid "Expected \":\", but found \"%s\"."
 msgid "Expected \":\", but found \"%.*s\"."
 msgstr "Ожидалось \":\", но обнаружено \"%.*s\"."
 
@@ -243,7 +235,6 @@ msgstr "Ожидалось \":\", но обнаружено \"%s\"."
 #. +> 17
 #: ../../common/jsonapi.c:2147
 #, c-format
-#| msgid "Expected JSON value, but found \"%s\"."
 msgid "Expected JSON value, but found \"%.*s\"."
 msgstr "Ожидалось значение JSON, но обнаружено \"%.*s\"."
 
@@ -261,7 +252,6 @@ msgstr "Неожиданный конец входной строки."
 #. +> 17
 #: ../../common/jsonapi.c:2152
 #, c-format
-#| msgid "Expected string or \"}\", but found \"%s\"."
 msgid "Expected string or \"}\", but found \"%.*s\"."
 msgstr "Ожидалась строка или \"}\", но обнаружено \"%.*s\"."
 
@@ -274,7 +264,6 @@ msgstr "Ожидалась строка или \"}\", но обнаружено 
 #. +> 17
 #: ../../common/jsonapi.c:2155
 #, c-format
-#| msgid "Expected \",\" or \"}\", but found \"%s\"."
 msgid "Expected \",\" or \"}\", but found \"%.*s\"."
 msgstr "Ожидалась \",\" или \"}\", но обнаружено \"%.*s\"."
 
@@ -287,7 +276,6 @@ msgstr "Ожидалась \",\" или \"}\", но обнаружено \"%s\".
 #. +> 17
 #: ../../common/jsonapi.c:2158
 #, c-format
-#| msgid "Expected string, but found \"%s\"."
 msgid "Expected string, but found \"%.*s\"."
 msgstr "Ожидалась строка, но обнаружено \"%.*s\"."
 
@@ -300,7 +288,6 @@ msgstr "Ожидалась строка, но обнаружено \"%s\"."
 #. +> 17
 #: ../../common/jsonapi.c:2161
 #, c-format
-#| msgid "Token \"%s\" is invalid."
 msgid "Token \"%.*s\" is invalid."
 msgstr "Ошибочный элемент \"%.*s\"."
 
@@ -421,7 +408,6 @@ msgstr "неожиданное скалярное значение"
 
 #. +> 17
 #: ../../common/parse_manifest.c:609
-#| msgid "timeline is not an integer"
 msgid "manifest version not an integer"
 msgstr "версия манифеста не является целым числом"
 
@@ -432,7 +418,6 @@ msgstr "неожиданная версия манифеста"
 
 #. +> 17
 #: ../../common/parse_manifest.c:637
-#| msgid "timeline is not an integer"
 msgid "system identifier in manifest not an integer"
 msgstr "идентификатор системы в манифесте не является целым числом"
 
@@ -639,7 +624,6 @@ msgstr "не удалось прочитать файл \"%s\" (прочитан
 #. +> 17
 #: pg_verifybackup.c:478
 #, c-format
-#| msgid "could not read file \"%s\": read %d of %lld"
 msgid "could not read file \"%s\": read %lld of %lld"
 msgstr "не удалось прочитать файл \"%s\" (прочитано байт: %lld из %lld)"
 
@@ -702,7 +686,6 @@ msgstr "%s: ошибка CRC"
 #. +> 17
 #: pg_verifybackup.c:772
 #, c-format
-#| msgid "unexpected manifest version"
 msgid "%s: unexpected control file version"
 msgstr "%s: неожиданная версия управляющего файла"
 

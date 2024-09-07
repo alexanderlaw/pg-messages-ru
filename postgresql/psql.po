@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: psql (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2024-09-02 09:32+0300\n"
+"POT-Creation-Date: 2024-09-07 17:09+0300\n"
 "PO-Revision-Date: 2024-09-07 06:49+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -115,7 +115,6 @@ msgstr "не удалось выполнить команду \"%s\": %m"
 #. +> 17
 #: ../../common/exec.c:394
 #, c-format
-#| msgid "could not execute command \"%s\": %m"
 msgid "could not read from command \"%s\": %m"
 msgstr "не удалось прочитать вывод команды \"%s\": %m"
 
@@ -256,7 +255,6 @@ msgstr ""
 #. +> 17
 #: ../../fe_utils/print.c:3272
 #, c-format
-#| msgid "Cannot add cell to table content: total cell count of %d exceeded.\n"
 msgid "Cannot add cell to table content: total cell count of %lld exceeded.\n"
 msgstr ""
 "Ошибка добавления ячейки в таблицу: превышен предел числа ячеек (%lld).\n"
@@ -275,7 +273,7 @@ msgid "invalid output format (internal error): %d"
 msgstr "неверный формат вывода (внутренняя ошибка): %d"
 
 #. +> 17 16 15 14 13 12
-#: ../../fe_utils/psqlscan.l:718
+#: ../../fe_utils/psqlscan.l:732
 #, c-format
 msgid "skipping recursive expansion of variable \"%s\""
 msgstr "рекурсивное расширение переменной \"%s\" пропускается"
@@ -291,8 +289,6 @@ msgstr ""
 #. +> 17
 #: ../../fe_utils/string_utils.c:607
 #, c-format
-#| msgid ""
-#| "shell command argument contains a newline or carriage return: \"%s\"\n"
 msgid "database name contains a newline or carriage return: \"%s\"\n"
 msgstr ""
 "имя базы данных содержит символ новой строки или перевода каретки: \"%s\"\n"
@@ -611,14 +607,12 @@ msgstr "\\watch: некорректное число итераций \"%s\""
 #. +> 17
 #: command.c:2841
 #, c-format
-#| msgid "\\watch: iteration count is specified more than once"
 msgid "\\watch: minimum row count specified more than once"
 msgstr "\\watch: минимальное число строк указано неоднократно"
 
 #. +> 17
 #: command.c:2851
 #, c-format
-#| msgid "\\watch: incorrect iteration count \"%s\""
 msgid "\\watch: incorrect minimum row count \"%s\""
 msgstr "\\watch: некорректное минимальное число строк \"%s\""
 
@@ -741,7 +735,6 @@ msgstr ""
 #. +> 17
 #: command.c:3895
 #, c-format
-#| msgid "SSL connection (protocol: %s, cipher: %s, compression: %s)\n"
 msgid "SSL connection (protocol: %s, cipher: %s, compression: %s, ALPN: %s)\n"
 msgstr "SSL-соединение (протокол: %s, шифр: %s, сжатие: %s, ALPN: %s)\n"
 
@@ -1150,11 +1143,6 @@ msgstr "сбой при ожидании сигналов: %m"
 #. +> 17
 #: command.c:5480 command.c:5487 common.c:632 common.c:639 common.c:1123
 #, c-format
-#| msgid ""
-#| "********* QUERY **********\n"
-#| "%s\n"
-#| "**************************\n"
-#| "\n"
 msgid ""
 "/******** QUERY *********/\n"
 "%s\n"
@@ -1323,12 +1311,6 @@ msgstr "попытка выполнить \\gset со специальной п�
 #. +> 17
 #: common.c:1103
 #, c-format
-#| msgid ""
-#| "***(Single step mode: verify "
-#| "command)*******************************************\n"
-#| "%s\n"
-#| "***(press return to proceed or enter x and return to "
-#| "cancel)********************\n"
 msgid ""
 "/**(Single step mode: verify "
 "command)******************************************/\n"
@@ -1810,7 +1792,6 @@ msgstr "LC_CTYPE"
 #. +> 17
 #: describe.c:943 describe.c:947 describe.c:951 describe.c:4942 describe.c:4946
 #: describe.c:4950
-#| msgid "locale"
 msgid "Locale"
 msgstr "Локаль"
 
@@ -3287,7 +3268,6 @@ msgstr "Использовать владельца?"
 
 #. +> 17
 #: describe.c:6599
-#| msgid "Failed.\n"
 msgid "Failover"
 msgstr "Переносимая"
 
@@ -3460,8 +3440,6 @@ msgstr ""
 
 #. +> 17
 #: help.c:69
-#| msgid ""
-#| "  -d, --dbname=DBNAME      database name to connect to (default: \"%s\")\n"
 msgid "  -d, --dbname=DBNAME      database name to connect to\n"
 msgstr "  -d, --dbname=БД          имя целевой базы данных\n"
 
@@ -3719,9 +3697,6 @@ msgstr ""
 
 #. +> 17
 #: help.c:114
-#| msgid ""
-#| "  -h, --host=HOSTNAME      database server host or socket directory "
-#| "(default: \"%s\")\n"
 msgid "  -h, --host=HOSTNAME      database server host or socket directory\n"
 msgstr ""
 "  -h, --host=ИМЯ           компьютер с сервером баз данных или каталог "
@@ -3740,7 +3715,6 @@ msgstr ""
 
 #. +> 17
 #: help.c:115
-#| msgid "  -p, --port=PORT          database server port (default: \"%s\")\n"
 msgid "  -p, --port=PORT          database server port\n"
 msgstr "  -p, --port=ПОРТ          порт сервера баз данных\n"
 
@@ -3753,7 +3727,6 @@ msgstr ""
 
 #. +> 17
 #: help.c:116
-#| msgid "  -U, --username=USERNAME  database user name (default: \"%s\")\n"
 msgid "  -U, --username=USERNAME  database user name\n"
 msgstr "  -U, --username=ИМЯ       имя пользователя БД\n"
 
@@ -6817,7 +6790,6 @@ msgstr "спецсимвол"
 
 #. +> 17
 #: sql_help.c:1999
-#| msgid "action"
 msgid "error_action"
 msgstr "действие_при_ошибке"
 
@@ -6993,7 +6965,6 @@ msgstr "стратегия"
 
 #. +> 17
 #: sql_help.c:2224
-#| msgid "icu_locale"
 msgid "builtin_locale"
 msgstr "встроенная_локаль"
 
@@ -7024,7 +6995,6 @@ msgstr "oid"
 
 #. +> 17
 #: sql_help.c:2254
-#| msgid "where column_constraint is:"
 msgid "where domain_constraint is:"
 msgstr "где ограничение_домена может быть следующим:"
 

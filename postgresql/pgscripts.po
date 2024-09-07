@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pgscripts (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2024-09-02 09:31+0300\n"
+"POT-Creation-Date: 2024-09-07 17:09+0300\n"
 "PO-Revision-Date: 2024-09-05 08:25+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -67,7 +67,6 @@ msgstr "попытка дублирования нулевого указате�
 #: ../../common/file_utils.c:70 ../../common/file_utils.c:347
 #: ../../common/file_utils.c:406 ../../common/file_utils.c:480
 #, c-format
-#| msgid "could not connect to database %s: %s"
 msgid "could not open file \"%s\": %m"
 msgstr "не удалось открыть файл \"%s\": %m"
 
@@ -80,7 +79,6 @@ msgstr "не удалось синхронизировать с ФС файл \"
 #. +> 17
 #: ../../common/file_utils.c:120 ../../common/file_utils.c:566
 #, c-format
-#| msgid "could not connect to database %s: %s"
 msgid "could not stat file \"%s\": %m"
 msgstr "не удалось получить информацию о файле \"%s\": %m"
 
@@ -94,7 +92,6 @@ msgstr "эта сборка программы не поддерживает м�
 #. +> 17
 #: ../../common/file_utils.c:151 ../../common/file_utils.c:281
 #, c-format
-#| msgid "could not connect to database %s: %s"
 msgid "could not open directory \"%s\": %m"
 msgstr "не удалось открыть каталог \"%s\": %m"
 
@@ -107,7 +104,6 @@ msgstr "не удалось прочитать каталог \"%s\": %m"
 #. +> 17
 #: ../../common/file_utils.c:418 ../../common/file_utils.c:488
 #, c-format
-#| msgid "could not connect to database %s: %s"
 msgid "could not fsync file \"%s\": %m"
 msgstr "не удалось синхронизировать с ФС файл \"%s\": %m"
 
@@ -238,7 +234,6 @@ msgstr ""
 #. +> 17
 #: ../../fe_utils/print.c:3272
 #, c-format
-#| msgid "Cannot add cell to table content: total cell count of %d exceeded.\n"
 msgid "Cannot add cell to table content: total cell count of %lld exceeded.\n"
 msgstr ""
 "Ошибка добавления ячейки в таблицу: превышен предел числа ячеек (%lld).\n"
@@ -648,7 +643,6 @@ msgstr "      --lc-ctype=ЛОКАЛЬ        параметр LC_CTYPE для б
 #. +> 17
 #: createdb.c:307
 #, c-format
-#| msgid "      --icu-locale=LOCALE      ICU locale setting for the database\n"
 msgid ""
 "      --builtin-locale=LOCALE  builtin locale setting for the database\n"
 msgstr "      --builtin-locale=ЛОКАЛЬ  имя встроенной локали для базы данных\n"
@@ -670,10 +664,6 @@ msgstr ""
 #. +> 17
 #: createdb.c:310
 #, c-format
-#| msgid ""
-#| "      --locale-provider={libc|icu}\n"
-#| "                               locale provider for the database's default "
-#| "collation\n"
 msgid ""
 "      --locale-provider={builtin|libc|icu}\n"
 "                               locale provider for the database's default "

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libpq (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2024-09-02 09:31+0300\n"
+"POT-Creation-Date: 2024-09-07 17:09+0300\n"
 "PO-Revision-Date: 2024-09-07 13:49+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -686,7 +686,6 @@ msgstr "неожиданная форма набора результатов, �
 #. +> 17
 #: fe-auth.c:1317
 #, c-format
-#| msgid "password_encryption value too long"
 msgid "\"password_encryption\" value too long"
 msgstr "слишком длинное значение \"password_encryption\""
 
@@ -716,7 +715,6 @@ msgstr "нераспознанный алгоритм шифрования па�
 #. +> 17
 #: fe-cancel.c:76
 #, c-format
-#| msgid "connection pointer is NULL\n"
 msgid "connection pointer is NULL"
 msgstr "нулевой указатель соединения"
 
@@ -735,7 +733,6 @@ msgstr "через это соединение уже передаётся за�
 #. +> 17
 #: fe-cancel.c:263
 #, c-format
-#| msgid "unexpected message from server during startup"
 msgid "unexpected response from server"
 msgstr "неожиданный ответ сервера"
 
@@ -838,9 +835,6 @@ msgstr "значение sslmode \"%s\" недопустимо для сборк
 #. +> 17
 #: fe-connect.c:1625
 #, c-format
-#| msgid ""
-#| "weak sslmode \"%s\" may not be used with sslrootcert=system (use \"verify-"
-#| "full\")"
 msgid ""
 "weak sslmode \"%s\" may not be used with sslnegotiation=direct (use "
 "\"require\", \"verify-ca\", or \"verify-full\")"
@@ -861,7 +855,6 @@ msgstr ""
 #. +> 17
 #: fe-connect.c:1660 fe-connect.c:1668
 #, c-format
-#| msgid "invalid %s value: \"%s\""
 msgid "invalid \"%s\" value: \"%s\""
 msgstr "неверное значение \"%s\": \"%s\""
 
@@ -1119,9 +1112,6 @@ msgstr "преобразовать путь Unix-сокета \"%s\" в адре
 #. +> 17
 #: fe-connect.c:2950 fe-connect.c:4319
 #, c-format
-#| msgid ""
-#| "GSSAPI encryption required but was impossible (possibly no credential "
-#| "cache, no server support, or using a local socket)"
 msgid "GSSAPI encryption required but it is not supported over a local socket"
 msgstr ""
 "затребовано шифрование GSSAPI, но оно не поддерживается для локального сокета"
@@ -1294,7 +1284,6 @@ msgstr "не удалось отправить пакет согласовани
 #. +> 17
 #: fe-connect.c:3412
 #, c-format
-#| msgid "could not send startup packet: %s"
 msgid "could not send cancel packet: %s"
 msgstr "не удалось отправить пакет отмены: %s"
 
@@ -3191,7 +3180,6 @@ msgstr ""
 #. +> 17
 #: fe-secure-openssl.c:1249
 #, c-format
-#| msgid "could not create SSL context: %s"
 msgid "could not set SSL ALPN extension: %s"
 msgstr "не удалось установить расширение SSL ALPN: %s"
 
@@ -3366,7 +3354,6 @@ msgstr "прямое SSL-соединение было установлено б
 #. +> 17
 #: fe-secure-openssl.c:1610
 #, c-format
-#| msgid "SSL connection has been closed unexpectedly"
 msgid "SSL connection was established with unexpected ALPN protocol"
 msgstr "SSL-соединение было установлено с неподдерживаемым протоколом ALPN"
 

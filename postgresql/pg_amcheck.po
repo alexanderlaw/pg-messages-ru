@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_amcheck (PostgreSQL) 14\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2024-09-02 09:31+0300\n"
+"POT-Creation-Date: 2024-09-07 17:09+0300\n"
 "PO-Revision-Date: 2024-09-05 08:23+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -186,7 +186,6 @@ msgstr "Попробуйте уменьшить количество задан�
 #. +> 17
 #: ../../fe_utils/parallel_slot.c:553
 #, c-format
-#| msgid "error sending command to database \"%s\": %s"
 msgid "processing of database \"%s\" failed: %s"
 msgstr "ошибка при обработке базы \"%s\": %s"
 
@@ -655,8 +654,6 @@ msgstr ""
 #. +> 17
 #: pg_amcheck.c:1208
 #, c-format
-#| msgid ""
-#| "      --parent-check              check index parent/child relationships\n"
 msgid ""
 "      --checkunique               check unique constraint if index is "
 "unique\n"

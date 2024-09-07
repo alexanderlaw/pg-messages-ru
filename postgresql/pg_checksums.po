@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_verify_checksums (PostgreSQL) 11\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2024-09-02 09:31+0300\n"
+"POT-Creation-Date: 2024-09-07 17:09+0300\n"
 "PO-Revision-Date: 2024-09-04 13:35+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -48,28 +48,24 @@ msgstr "подсказка: "
 #. +> 17
 #: ../../common/controldata_utils.c:97
 #, c-format
-#| msgid "could not open file \"%s\": %m"
 msgid "could not open file \"%s\" for reading: %m"
 msgstr "не удалось открыть файл \"%s\" для чтения: %m"
 
 #. +> 17
 #: ../../common/controldata_utils.c:110
 #, c-format
-#| msgid "could not open file \"%s\": %m"
 msgid "could not read file \"%s\": %m"
 msgstr "не удалось прочитать файл \"%s\": %m"
 
 #. +> 17
 #: ../../common/controldata_utils.c:119
 #, c-format
-#| msgid "could not read block %u in file \"%s\": read %d of %d"
 msgid "could not read file \"%s\": read %d of %zu"
 msgstr "не удалось прочитать файл \"%s\" (прочитано байт: %d из %zu)"
 
 #. +> 17
 #: ../../common/controldata_utils.c:132 ../../common/controldata_utils.c:280
 #, c-format
-#| msgid "could not open file \"%s\": %m"
 msgid "could not close file \"%s\": %m"
 msgstr "не удалось закрыть файл \"%s\": %m"
 
@@ -104,7 +100,6 @@ msgstr "не удалось открыть файл \"%s\": %m"
 #. +> 17
 #: ../../common/controldata_utils.c:249
 #, c-format
-#| msgid "could not open file \"%s\": %m"
 msgid "could not write file \"%s\": %m"
 msgstr "не удалось записать файл \"%s\": %m"
 
@@ -112,7 +107,6 @@ msgstr "не удалось записать файл \"%s\": %m"
 #: ../../common/controldata_utils.c:268 ../../common/file_utils.c:418
 #: ../../common/file_utils.c:488
 #, c-format
-#| msgid "could not open file \"%s\": %m"
 msgid "could not fsync file \"%s\": %m"
 msgstr "не удалось синхронизировать с ФС файл \"%s\": %m"
 
@@ -132,7 +126,6 @@ msgstr "попытка дублирования нулевого указате�
 #. +> 17
 #: ../../common/file_utils.c:76
 #, c-format
-#| msgid "could not write block %u in file \"%s\": %m"
 msgid "could not synchronize file system for file \"%s\": %m"
 msgstr "не удалось синхронизировать с ФС файл \"%s\": %m"
 
@@ -160,14 +153,12 @@ msgstr "не удалось открыть каталог \"%s\": %m"
 #. +> 17
 #: ../../common/file_utils.c:169 ../../common/file_utils.c:315
 #, c-format
-#| msgid "could not open directory \"%s\": %m"
 msgid "could not read directory \"%s\": %m"
 msgstr "не удалось прочитать каталог \"%s\": %m"
 
 #. +> 17
 #: ../../common/file_utils.c:498
 #, c-format
-#| msgid "could not open file \"%s\": %m"
 msgid "could not rename file \"%s\" to \"%s\": %m"
 msgstr "не удалось переименовать файл \"%s\" в \"%s\": %m"
 

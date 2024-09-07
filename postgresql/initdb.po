@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: initdb (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2024-09-02 09:31+0300\n"
+"POT-Creation-Date: 2024-09-07 17:09+0300\n"
 "PO-Revision-Date: 2024-09-07 06:49+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -116,7 +116,6 @@ msgstr "не удалось выполнить команду \"%s\": %m"
 #. +> 17
 #: ../../common/exec.c:394
 #, c-format
-#| msgid "could not execute command \"%s\": %m"
 msgid "could not read from command \"%s\": %m"
 msgstr "не удалось прочитать вывод команды \"%s\": %m"
 
@@ -168,7 +167,6 @@ msgstr "не удалось открыть файл \"%s\": %m"
 #. +> 17
 #: ../../common/file_utils.c:76
 #, c-format
-#| msgid "could not remove file or directory \"%s\": %m"
 msgid "could not synchronize file system for file \"%s\": %m"
 msgstr "не удалось синхронизировать с ФС файл \"%s\": %m"
 
@@ -351,7 +349,6 @@ msgstr "дочерний процесс завершился с нераспоз
 #. +> 17
 #: ../../fe_utils/option_utils.c:69
 #, c-format
-#| msgid "invalid authentication method \"%s\" for \"%s\" connections"
 msgid "invalid value \"%s\" for option %s"
 msgstr "неверное значение \"%s\" для параметра %s"
 
@@ -364,7 +361,6 @@ msgstr "значение %s должно быть в диапазоне %d..%d"
 #. +> 17
 #: ../../fe_utils/option_utils.c:106
 #, c-format
-#| msgid "unrecognized locale provider: %s"
 msgid "unrecognized sync method: %s"
 msgstr "нераспознанный метод синхронизации: %s"
 
@@ -558,7 +554,6 @@ msgstr "выбирается реализация динамической ра�
 #. +> 17
 #: initdb.c:1095
 #, c-format
-#| msgid "selecting default max_connections ... "
 msgid "selecting default \"max_connections\" ... "
 msgstr "выбирается значение \"max_connections\" по умолчанию... "
 
@@ -571,7 +566,6 @@ msgstr "выбирается значение max_connections по умолча�
 #. +> 17
 #: initdb.c:1115
 #, c-format
-#| msgid "selecting default shared_buffers ... "
 msgid "selecting default \"shared_buffers\" ... "
 msgstr "выбирается значение \"shared_buffers\" по умолчанию... "
 
@@ -794,7 +788,6 @@ msgstr "для локали \"%s\" получен неизвестный язы�
 #. +> 17
 #: initdb.c:2401
 #, c-format
-#| msgid "ICU locale must be specified"
 msgid "locale must be specified if provider is %s"
 msgstr "если выбран провайдер %s, необходимо задать локаль"
 
@@ -807,7 +800,6 @@ msgstr "необходимо задать локаль ICU"
 #. +> 17
 #: initdb.c:2412
 #, c-format
-#| msgid "invalid locale name \"%s\""
 msgid "invalid locale name \"%s\" for builtin provider"
 msgstr "неверное имя локали \"%s\" для встроенного провайдера"
 
@@ -953,10 +945,6 @@ msgstr "      --no-locale           эквивалентно --locale=C\n"
 #. +> 17
 #: initdb.c:2465
 #, c-format
-#| msgid ""
-#| "      --locale-provider={libc|icu}\n"
-#| "                            set default locale provider for new "
-#| "databases\n"
 msgid ""
 "      --builtin-locale=LOCALE\n"
 "                            set builtin locale name for new databases\n"
@@ -967,10 +955,6 @@ msgstr ""
 #. +> 17
 #: initdb.c:2467
 #, c-format
-#| msgid ""
-#| "      --locale-provider={libc|icu}\n"
-#| "                            set default locale provider for new "
-#| "databases\n"
 msgid ""
 "      --locale-provider={builtin|libc|icu}\n"
 "                            set default locale provider for new databases\n"
@@ -1094,7 +1078,6 @@ msgstr ""
 #. +> 17
 #: initdb.c:2484
 #, c-format
-#| msgid "  -s, --show                show internal settings\n"
 msgid "  -s, --show                show internal settings, then exit\n"
 msgstr "  -s, --show                показать внутренние установки и выйти\n"
 
@@ -1319,7 +1302,6 @@ msgstr ""
 #. +> 17
 #: initdb.c:2625
 #, c-format
-#| msgid "  provider:    %s\n"
 msgid "  locale provider:   %s\n"
 msgstr "  провайдер локалей: %s\n"
 
@@ -1465,7 +1447,6 @@ msgstr "В качестве кодировки БД по умолчанию ус
 #. +> 17
 #: initdb.c:2704
 #, c-format
-#| msgid "locale \"%s\" requires unsupported encoding \"%s\""
 msgid "builtin provider locale \"%s\" requires encoding \"%s\""
 msgstr "для локали \"%s\" встроенного провайдера требуется кодировка \"%s\""
 
@@ -1709,7 +1690,6 @@ msgstr "нельзя одновременно запросить пароль и
 #. +> 17
 #: initdb.c:3390
 #, c-format
-#| msgid "argument of --wal-segsize must be a power of two between 1 and 1024"
 msgid "argument of %s must be a power of two between 1 and 1024"
 msgstr "аргументом %s должна быть степень двух от 1 до 1024"
 

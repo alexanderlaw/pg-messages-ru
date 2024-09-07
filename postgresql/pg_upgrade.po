@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_upgrade (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2024-09-02 09:31+0300\n"
+"POT-Creation-Date: 2024-09-07 17:09+0300\n"
 "PO-Revision-Date: 2024-09-07 12:05+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -35,20 +35,17 @@ msgstr "попытка дублирования нулевого указате�
 #. +> 17
 #: ../../common/restricted_token.c:168
 #, c-format
-#| msgid "could not create worker process: %s"
 msgid "could not get exit code from subprocess: error code %lu"
 msgstr "не удалось получить код выхода от подпроцесса (код ошибки: %lu)"
 
 #. +> 17
 #: ../../common/username.c:43
 #, c-format
-#| msgid "could not open file \"%s\": %s"
 msgid "could not look up effective user ID %ld: %s"
 msgstr "выяснить эффективный идентификатор пользователя (%ld) не удалось: %s"
 
 #. +> 17
 #: ../../common/username.c:45
-#| msgid "tablespace directory \"%s\" does not exist"
 msgid "user does not exist"
 msgstr "пользователь не существует"
 
@@ -80,14 +77,6 @@ msgstr "Проверка системных составных типов в п�
 
 #. +> 17
 #: check.c:118
-#| msgid ""
-#| "Your installation contains system-defined composite types in user "
-#| "tables.\n"
-#| "These type OIDs are not stable across PostgreSQL versions,\n"
-#| "so this cluster cannot currently be upgraded.  You can\n"
-#| "drop the problem columns and restart the upgrade.\n"
-#| "A list of the problem columns is in the file:\n"
-#| "    %s"
 msgid ""
 "Your installation contains system-defined composite types in user tables.\n"
 "These type OIDs are not stable across PostgreSQL versions,\n"
@@ -196,14 +185,6 @@ msgstr "Проверка несовместимого типа данных \"js
 
 #. +> 17
 #: check.c:137
-#| msgid ""
-#| "Your installation contains the \"line\" data type in user tables.\n"
-#| "This data type changed its internal and input/output format\n"
-#| "between your old and new versions so this\n"
-#| "cluster cannot currently be upgraded.  You can\n"
-#| "drop the problem columns and restart the upgrade.\n"
-#| "A list of the problem columns is in the file:\n"
-#| "    %s"
 msgid ""
 "Your installation contains the \"line\" data type in user tables.\n"
 "This data type changed its internal and input/output format\n"
@@ -226,13 +207,6 @@ msgstr "Проверка типов данных reg* в пользовател�
 
 #. +> 17
 #: check.c:181
-#| msgid ""
-#| "Your installation contains one of the reg* data types in user tables.\n"
-#| "These data types reference system OIDs that are not preserved by\n"
-#| "pg_upgrade, so this cluster cannot currently be upgraded.  You can\n"
-#| "drop the problem columns and restart the upgrade.\n"
-#| "A list of the problem columns is in the file:\n"
-#| "    %s"
 msgid ""
 "Your installation contains one of the reg* data types in user tables.\n"
 "These data types reference system OIDs that are not preserved by\n"
@@ -328,19 +302,11 @@ msgstr ""
 
 #. +> 17
 #: check.c:193
-#| msgid "Checking for incompatible \"line\" data type"
 msgid "Checking for incompatible \"aclitem\" data type"
 msgstr "Проверка несовместимого типа данных \"aclitem\""
 
 #. +> 17
 #: check.c:198
-#| msgid ""
-#| "Your installation contains the \"aclitem\" data type in user tables.\n"
-#| "The internal format of \"aclitem\" changed in PostgreSQL version 16\n"
-#| "so this cluster cannot currently be upgraded.  You can drop the\n"
-#| "problem columns and restart the upgrade.  A list of the problem\n"
-#| "columns is in the file:\n"
-#| "    %s"
 msgid ""
 "Your installation contains the \"aclitem\" data type in user tables.\n"
 "The internal format of \"aclitem\" changed in PostgreSQL version 16\n"
@@ -382,13 +348,6 @@ msgstr "Проверка неправильных пользовательски
 
 #. +> 17
 #: check.c:222
-#| msgid ""
-#| "Your installation contains the \"unknown\" data type in user tables.\n"
-#| "This data type is no longer allowed in tables, so this\n"
-#| "cluster cannot currently be upgraded.  You can\n"
-#| "drop the problem columns and restart the upgrade.\n"
-#| "A list of the problem columns is in the file:\n"
-#| "    %s"
 msgid ""
 "Your installation contains the \"unknown\" data type in user tables.\n"
 "This data type is no longer allowed in tables, so this cluster\n"
@@ -410,14 +369,6 @@ msgstr ""
 
 #. +> 17
 #: check.c:244
-#| msgid ""
-#| "Your installation contains the \"sql_identifier\" data type in user "
-#| "tables.\n"
-#| "The on-disk format for this data type has changed, so this\n"
-#| "cluster cannot currently be upgraded.  You can\n"
-#| "drop the problem columns and restart the upgrade.\n"
-#| "A list of the problem columns is in the file:\n"
-#| "    %s"
 msgid ""
 "Your installation contains the \"sql_identifier\" data type in user tables.\n"
 "The on-disk format for this data type has changed, so this\n"
@@ -431,7 +382,6 @@ msgstr ""
 
 #. +> 17
 #: check.c:255
-#| msgid "Checking for incompatible \"%s\" data type in user tables"
 msgid "Checking for incompatible \"jsonb\" data type in user tables"
 msgstr ""
 "Проверка несовместимого типа данных \"jsonb\" в пользовательских таблицах"
@@ -444,13 +394,6 @@ msgstr "Проверка несовместимого типа данных \"%s
 
 #. +> 17
 #: check.c:260
-#| msgid ""
-#| "Your installation contains the \"jsonb\" data type in user tables.\n"
-#| "The internal format of \"jsonb\" changed during 9.4 beta so this\n"
-#| "cluster cannot currently be upgraded.  You can\n"
-#| "drop the problem columns and restart the upgrade.\n"
-#| "A list of the problem columns is in the file:\n"
-#| "    %s"
 msgid ""
 "Your installation contains the \"jsonb\" data type in user tables.\n"
 "The internal format of \"jsonb\" changed during 9.4 beta so this\n"
@@ -544,7 +487,6 @@ msgstr ""
 
 #. +> 17
 #: check.c:272
-#| msgid "Checking for removed \"%s\" data type in user tables"
 msgid "Checking for removed \"abstime\" data type in user tables"
 msgstr ""
 "Проверка удалённого типа данных \"abstime\" в пользовательских таблицах"
@@ -557,13 +499,6 @@ msgstr "Проверка удалённого типа данных \"%s\" в п
 
 #. +> 17
 #: check.c:277
-#| msgid ""
-#| "Your installation contains the \"%s\" data type in user tables.\n"
-#| "The \"%s\" type has been removed in PostgreSQL version %s,\n"
-#| "so this cluster cannot currently be upgraded.  You can drop the\n"
-#| "problem columns, or change them to another data type, and restart\n"
-#| "the upgrade.  A list of the problem columns is in the file:\n"
-#| "    %s"
 msgid ""
 "Your installation contains the \"abstime\" data type in user tables.\n"
 "The \"abstime\" type has been removed in PostgreSQL version 12,\n"
@@ -581,20 +516,12 @@ msgstr ""
 
 #. +> 17
 #: check.c:285
-#| msgid "Checking for removed \"%s\" data type in user tables"
 msgid "Checking for removed \"reltime\" data type in user tables"
 msgstr ""
 "Проверка удалённого типа данных \"reltime\" в пользовательских таблицах"
 
 #. +> 17
 #: check.c:290
-#| msgid ""
-#| "Your installation contains the \"%s\" data type in user tables.\n"
-#| "The \"%s\" type has been removed in PostgreSQL version %s,\n"
-#| "so this cluster cannot currently be upgraded.  You can drop the\n"
-#| "problem columns, or change them to another data type, and restart\n"
-#| "the upgrade.  A list of the problem columns is in the file:\n"
-#| "    %s"
 msgid ""
 "Your installation contains the \"reltime\" data type in user tables.\n"
 "The \"reltime\" type has been removed in PostgreSQL version 12,\n"
@@ -652,20 +579,12 @@ msgstr ""
 
 #. +> 17
 #: check.c:298
-#| msgid "Checking for removed \"%s\" data type in user tables"
 msgid "Checking for removed \"tinterval\" data type in user tables"
 msgstr ""
 "Проверка удалённого типа данных \"tinterval\" в пользовательских таблицах"
 
 #. +> 17
 #: check.c:303
-#| msgid ""
-#| "Your installation contains the \"%s\" data type in user tables.\n"
-#| "The \"%s\" type has been removed in PostgreSQL version %s,\n"
-#| "so this cluster cannot currently be upgraded.  You can drop the\n"
-#| "problem columns, or change them to another data type, and restart\n"
-#| "the upgrade.  A list of the problem columns is in the file:\n"
-#| "    %s"
 msgid ""
 "Your installation contains the \"tinterval\" data type in user tables.\n"
 "The \"tinterval\" type has been removed in PostgreSQL version 12,\n"
@@ -684,14 +603,12 @@ msgstr ""
 #. +> 17
 #: check.c:345
 #, c-format
-#| msgid "Checking for reg* data types in user tables"
 msgid "Checking data type usage"
 msgstr "Проверка использования типов данных"
 
 #. +> 17
 #: check.c:480
 #, c-format
-#| msgid "%s() failed: %s"
 msgid "    failed check: %s"
 msgstr "    ошибка: %s"
 
@@ -706,7 +623,6 @@ msgstr "Список проблемных столбцов приведён в �
 #: check.c:1953 check.c:2005 file.c:378 file.c:415 function.c:189 option.c:493
 #: version.c:79 version.c:177
 #, c-format
-#| msgid "could not open file \"%s\": %s"
 msgid "could not open file \"%s\": %m"
 msgstr "не удалось открыть файл \"%s\": %m"
 
@@ -729,7 +645,6 @@ msgstr "не удалось открыть файл \"%s\": %s\n"
 #. +> 17
 #: check.c:522
 #, c-format
-#| msgid "check for \"%s\" failed: %s"
 msgid "Data type checks failed: %s"
 msgstr "Проверки типов данных не пройдены: %s"
 
@@ -1154,7 +1069,6 @@ msgstr "Создание скрипта для анализа нового кл�
 #. +> 17
 #: check.c:1014
 #, c-format
-#| msgid "could not add execute permission to file \"%s\": %s"
 msgid "could not add execute permission to file \"%s\": %m"
 msgstr "не удалось добавить право выполнения для файла \"%s\": %m"
 
@@ -1669,7 +1583,6 @@ msgstr ""
 #. +> 17
 #: check.c:1746
 #, c-format
-#| msgid "Checking for new cluster tablespace directories"
 msgid "Checking for new cluster logical replication slots"
 msgstr "Проверка слотов логической репликации в новом кластере"
 
@@ -1688,7 +1601,6 @@ msgstr "обнаружено слотов логической репликац�
 #. +> 17
 #: check.c:1769 check.c:1820
 #, c-format
-#| msgid "could not determine the number of users"
 msgid "could not determine parameter settings on new cluster"
 msgstr "не удалось получить значения параметров в новом кластере"
 
@@ -1711,7 +1623,6 @@ msgstr ""
 #. +> 17
 #: check.c:1812
 #, c-format
-#| msgid "Checking for new cluster tablespace directories"
 msgid "Checking for new cluster configuration for subscriptions"
 msgstr "Проверка конфигурации нового кластера для использования подписок"
 
@@ -1728,22 +1639,12 @@ msgstr ""
 #. +> 17
 #: check.c:1846
 #, c-format
-#| msgid "Checking for large objects"
 msgid "Checking for valid logical replication slots"
 msgstr "Проверка корректности слотов логической репликации"
 
 #. +> 17
 #: check.c:1898
 #, c-format
-#| msgid ""
-#| "Your installation contains the \"unknown\" data type in user tables.  "
-#| "This\n"
-#| "data type is no longer allowed in tables, so this cluster cannot "
-#| "currently\n"
-#| "be upgraded.  You can remove the problem tables and restart the upgrade.\n"
-#| "A list of the problem columns is in the file:\n"
-#| "    %s\n"
-#| "\n"
 msgid ""
 "Your installation contains logical replication slots that cannot be "
 "upgraded.\n"
@@ -1763,20 +1664,12 @@ msgstr ""
 #. +> 17
 #: check.c:1922
 #, c-format
-#| msgid "Checking for extension updates"
 msgid "Checking for subscription state"
 msgstr "Проверка состояния подписок"
 
 #. +> 17
 #: check.c:2023
 #, c-format
-#| msgid ""
-#| "Your installation contains the \"unknown\" data type in user tables.\n"
-#| "This data type is no longer allowed in tables, so this\n"
-#| "cluster cannot currently be upgraded.  You can\n"
-#| "drop the problem columns and restart the upgrade.\n"
-#| "A list of the problem columns is in the file:\n"
-#| "    %s"
 msgid ""
 "Your installation contains subscriptions without origin or having relations "
 "not in i (initialize) or r (ready) state.\n"
@@ -1796,7 +1689,6 @@ msgstr ""
 #. +> 17
 #: controldata.c:129 controldata.c:199
 #, c-format
-#| msgid "could not get control data using %s: %s"
 msgid "could not get control data using %s: %m"
 msgstr "не удалось получить управляющие данные, выполнив %s: %m"
 
@@ -1859,7 +1751,6 @@ msgstr ""
 #. +> 17
 #: controldata.c:165
 #, c-format
-#| msgid "The source cluster was not shut down cleanly."
 msgid "The source cluster was not shut down cleanly, state reported as: \"%s\""
 msgstr ""
 "Исходный кластер не был отключён штатным образом, записанное состояние: "
@@ -1880,7 +1771,6 @@ msgstr "Исходный кластер не был отключён штатн�
 #. +> 17
 #: controldata.c:167
 #, c-format
-#| msgid "The target cluster was not shut down cleanly."
 msgid "The target cluster was not shut down cleanly, state reported as: \"%s\""
 msgstr ""
 "Целевой кластер не был отключён штатным образом, записанное состояние: \"%s\""
@@ -2555,7 +2445,6 @@ msgstr "Формирование выгрузки схем базы данных
 #. +> 17
 #: exec.c:47
 #, c-format
-#| msgid "could not get pg_ctl version data using %s: %s"
 msgid "could not get pg_ctl version data using %s: %m"
 msgstr "не удалось получить данные версии pg_ctl, выполнив %s: %m"
 
@@ -2690,7 +2579,6 @@ msgstr "не удалось записать в файл протокола \"%s
 #. +> 17
 #: exec.c:244
 #, c-format
-#| msgid "could not open file \"%s\" for reading: %s"
 msgid "could not open file \"%s\" for reading: %m"
 msgstr "не удалось открыть файл \"%s\" для чтения: %m"
 
@@ -2801,15 +2689,12 @@ msgstr ""
 #. +> 17
 #: file.c:44
 #, c-format
-#| msgid "error while cloning relation \"%s.%s\" (\"%s\" to \"%s\"): %s"
 msgid "error while cloning relation \"%s.%s\" (\"%s\" to \"%s\"): %m"
 msgstr "ошибка при клонировании отношения \"%s.%s\" (из \"%s\" в \"%s\"): %m"
 
 #. +> 17
 #: file.c:51
 #, c-format
-#| msgid ""
-#| "error while cloning relation \"%s.%s\": could not open file \"%s\": %s"
 msgid "error while cloning relation \"%s.%s\": could not open file \"%s\": %m"
 msgstr ""
 "ошибка при клонировании отношения \"%s.%s\": не удалось открыть файл \"%s\": "
@@ -2835,8 +2720,6 @@ msgstr ""
 #. +> 17
 #: file.c:56
 #, c-format
-#| msgid ""
-#| "error while cloning relation \"%s.%s\": could not create file \"%s\": %s"
 msgid ""
 "error while cloning relation \"%s.%s\": could not create file \"%s\": %m"
 msgstr ""
@@ -2876,8 +2759,6 @@ msgstr "ошибка при клонировании отношения \"%s.%s\
 #. +> 17
 #: file.c:91 file.c:160 file.c:233
 #, c-format
-#| msgid ""
-#| "error while copying relation \"%s.%s\": could not open file \"%s\": %s"
 msgid "error while copying relation \"%s.%s\": could not open file \"%s\": %m"
 msgstr ""
 "ошибка при копировании отношения \"%s.%s\": не удалось открыть файл \"%s\": "
@@ -2903,8 +2784,6 @@ msgstr ""
 #. +> 17
 #: file.c:96 file.c:165 file.c:242
 #, c-format
-#| msgid ""
-#| "error while copying relation \"%s.%s\": could not create file \"%s\": %s"
 msgid ""
 "error while copying relation \"%s.%s\": could not create file \"%s\": %m"
 msgstr ""
@@ -2932,8 +2811,6 @@ msgstr ""
 #. +> 17
 #: file.c:110 file.c:266
 #, c-format
-#| msgid ""
-#| "error while copying relation \"%s.%s\": could not read file \"%s\": %s"
 msgid "error while copying relation \"%s.%s\": could not read file \"%s\": %m"
 msgstr ""
 "ошибка при копировании отношения \"%s.%s\": не удалось прочитать файл "
@@ -2959,8 +2836,6 @@ msgstr ""
 #. +> 17
 #: file.c:122 file.c:344
 #, c-format
-#| msgid ""
-#| "error while copying relation \"%s.%s\": could not write file \"%s\": %s"
 msgid "error while copying relation \"%s.%s\": could not write file \"%s\": %m"
 msgstr ""
 "ошибка при копировании отношения \"%s.%s\": не удалось записать файл \"%s\": "
@@ -2986,7 +2861,6 @@ msgstr ""
 #. +> 17
 #: file.c:136
 #, c-format
-#| msgid "error while copying relation \"%s.%s\" (\"%s\" to \"%s\"): %s"
 msgid "error while copying relation \"%s.%s\" (\"%s\" to \"%s\"): %m"
 msgstr "ошибка при копировании отношения \"%s.%s\" (из \"%s\" в \"%s\"): %m"
 
@@ -3005,8 +2879,6 @@ msgstr "ошибка при копировании отношения \"%s.%s\" 
 #. +> 17
 #: file.c:172
 #, c-format
-#| msgid ""
-#| "error while copying relation \"%s.%s\": could not open file \"%s\": %s"
 msgid ""
 "error while copying relation \"%s.%s\": could not copy file range from "
 "\"%s\" to \"%s\": %m"
@@ -3017,8 +2889,6 @@ msgstr ""
 #. +> 17
 #: file.c:194
 #, c-format
-#| msgid ""
-#| "error while creating link for relation \"%s.%s\" (\"%s\" to \"%s\"): %s"
 msgid "error while creating link for relation \"%s.%s\" (\"%s\" to \"%s\"): %m"
 msgstr ""
 "ошибка при создании ссылки для отношения \"%s.%s\" (из \"%s\" в \"%s\"): %m"
@@ -3041,8 +2911,6 @@ msgstr ""
 #. +> 17
 #: file.c:237
 #, c-format
-#| msgid ""
-#| "error while copying relation \"%s.%s\": could not stat file \"%s\": %s"
 msgid "error while copying relation \"%s.%s\": could not stat file \"%s\": %m"
 msgstr ""
 "ошибка при копировании отношения \"%s.%s\": не удалось получить информацию о "
@@ -3086,7 +2954,6 @@ msgstr ""
 #. +> 17
 #: file.c:371 file.c:387
 #, c-format
-#| msgid "could not clone file between old and new data directories: %s"
 msgid "could not clone file between old and new data directories: %m"
 msgstr "не удалось клонировать файл из старого каталога данных в новый: %m"
 
@@ -3105,7 +2972,6 @@ msgstr "не удалось клонировать файл из старого 
 #. +> 17
 #: file.c:383 file.c:420
 #, c-format
-#| msgid "could not create file \"%s\": %s"
 msgid "could not create file \"%s\": %m"
 msgstr "не удалось создать файл \"%s\": %m"
 
@@ -3136,7 +3002,6 @@ msgstr "клонирование файлов не поддерживается 
 #. +> 17
 #: file.c:424
 #, c-format
-#| msgid "could not clone file between old and new data directories: %s"
 msgid "could not copy file range between old and new data directories: %m"
 msgstr ""
 "не удалось скопировать фрагмент файла из старого каталога данных в новый: %m"
@@ -3144,17 +3009,12 @@ msgstr ""
 #. +> 17
 #: file.c:430
 #, c-format
-#| msgid "file cloning not supported on this platform"
 msgid "copy_file_range not supported on this platform"
 msgstr "copy_file_range не поддерживается в этой ОС"
 
 #. +> 17
 #: file.c:447
 #, c-format
-#| msgid ""
-#| "could not create hard link between old and new data directories: %s\n"
-#| "In link mode the old and new data directories must be on the same file "
-#| "system."
 msgid ""
 "could not create hard link between old and new data directories: %m\n"
 "In link mode the old and new data directories must be on the same file "
@@ -3465,7 +3325,6 @@ msgstr ""
 #. +> 17
 #: info.c:805
 #, c-format
-#| msgid "Database: %s"
 msgid "Database: \"%s\""
 msgstr "База данных: \"%s\""
 
@@ -3484,7 +3343,6 @@ msgstr "База данных: %s\n"
 #. +> 17
 #: info.c:818
 #, c-format
-#| msgid "relname: %s.%s: reloid: %u reltblspace: %s"
 msgid "relname: \"%s.%s\", reloid: %u, reltblspace: \"%s\""
 msgstr "имя_отношения: \"%s.%s\", oid_отношения: %u, табл_пространство: %s\""
 
@@ -3837,8 +3695,6 @@ msgstr ""
 #. +> 17
 #: option.c:308
 #, c-format
-#| msgid ""
-#| "  --copy                        copy files to new cluster (default)\n"
 msgid ""
 "  --copy-file-range             copy files to new cluster with "
 "copy_file_range\n"
@@ -4003,7 +3859,6 @@ msgstr "Поиск фактического каталога данных для
 #. +> 17
 #: option.c:448
 #, c-format
-#| msgid "could not get data directory using %s: %s"
 msgid "could not get data directory using %s: %m"
 msgstr "не удалось получить каталог данных, выполнив %s: %m"
 
@@ -4022,7 +3877,6 @@ msgstr "не удалось получить каталог данных, вып
 #. +> 17
 #: option.c:500
 #, c-format
-#| msgid "could not read line %d from file \"%s\": %s"
 msgid "could not read line %d from file \"%s\": %m"
 msgstr "не удалось прочитать строку %d из файла \"%s\": %m"
 
@@ -4053,7 +3907,6 @@ msgstr "заданный пользователем старый номер по
 #. +> 17
 #: parallel.c:127 parallel.c:235
 #, c-format
-#| msgid "could not create worker process: %s"
 msgid "could not create worker process: %m"
 msgstr "не удалось создать рабочий процесс: %m"
 
@@ -4072,7 +3925,6 @@ msgstr "не удалось создать рабочий процесс: %s\n"
 #. +> 17
 #: parallel.c:143 parallel.c:253
 #, c-format
-#| msgid "could not create worker thread: %s"
 msgid "could not create worker thread: %m"
 msgstr "не удалось создать рабочий поток: %m"
 
@@ -4091,7 +3943,6 @@ msgstr "не удалось создать рабочий поток: %s\n"
 #. +> 17
 #: parallel.c:294
 #, c-format
-#| msgid "%s() failed: %s"
 msgid "%s() failed: %m"
 msgstr "ошибка в %s(): %m"
 
@@ -4128,7 +3979,6 @@ msgstr "дочерний процесс завершился нештатно с
 #. +> 17
 #: parallel.c:313
 #, c-format
-#| msgid "child worker exited abnormally: %s"
 msgid "child worker exited abnormally: %m"
 msgstr "дочерний процесс завершился аварийно: %m"
 
@@ -4147,7 +3997,6 @@ msgstr "дочерний процесс завершился аварийно: %
 #. +> 17
 #: pg_upgrade.c:115
 #, c-format
-#| msgid "could not read permissions of directory \"%s\": %s"
 msgid "could not read permissions of directory \"%s\": %m"
 msgstr "не удалось прочитать права на каталог \"%s\": %m"
 
@@ -4409,7 +4258,6 @@ msgstr "Установка счётчика minmxid в новом кластер
 #. +> 17
 #: pg_upgrade.c:929
 #, c-format
-#| msgid "Restoring global objects in the new cluster"
 msgid "Restoring logical replication slots in the new cluster"
 msgstr "Восстановление слотов логической репликации в новом кластере"
 
@@ -4428,7 +4276,6 @@ msgstr "Копирование файлов пользовательских о�
 #. +> 17
 #: relfilenumber.c:41
 #, c-format
-#| msgid "Copying user relation files"
 msgid "Copying user relation files with copy_file_range"
 msgstr ""
 "Копирование файлов пользовательских отношений с помощью copy_file_range"
@@ -4454,8 +4301,6 @@ msgstr "старая база данных \"%s\" не найдена в нов�
 #. +> 17
 #: relfilenumber.c:221
 #, c-format
-#| msgid ""
-#| "error while checking for file existence \"%s.%s\" (\"%s\" to \"%s\"): %s"
 msgid ""
 "error while checking for file existence \"%s.%s\" (\"%s\" to \"%s\"): %m"
 msgstr ""
@@ -4531,7 +4376,6 @@ msgstr "Копирование файлов пользовательских о�
 #. +> 17
 #: relfilenumber.c:256
 #, c-format
-#| msgid "copying \"%s\" to \"%s\""
 msgid "copying \"%s\" to \"%s\" with copy_file_range"
 msgstr "копирование \"%s\" в \"%s\" с помощью copy_file_range"
 
@@ -4764,7 +4608,6 @@ msgstr "каталог табличного пространства \"%s\" не
 #. +> 17
 #: tablespace.c:87
 #, c-format
-#| msgid "could not stat tablespace directory \"%s\": %s"
 msgid "could not stat tablespace directory \"%s\": %m"
 msgstr ""
 "не удалось получить информацию о каталоге табличного пространства \"%s\": %m"

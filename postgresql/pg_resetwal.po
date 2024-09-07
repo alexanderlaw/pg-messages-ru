@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_resetxlog (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2024-09-02 09:31+0300\n"
+"POT-Creation-Date: 2024-09-07 17:09+0300\n"
 "PO-Revision-Date: 2024-09-05 12:19+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -68,14 +68,12 @@ msgstr "не удалось прочитать файл \"%s\": %m"
 #. +> 17
 #: ../../common/controldata_utils.c:119
 #, c-format
-#| msgid "could not read file \"%s\": %m"
 msgid "could not read file \"%s\": read %d of %zu"
 msgstr "не удалось прочитать файл \"%s\" (прочитано байт: %d из %zu)"
 
 #. +> 17
 #: ../../common/controldata_utils.c:132 ../../common/controldata_utils.c:280
 #, c-format
-#| msgid "could not open file \"%s\": %m"
 msgid "could not close file \"%s\": %m"
 msgstr "не удалось закрыть файл \"%s\": %m"
 
@@ -117,7 +115,6 @@ msgstr "не удалось записать файл \"%s\": %m"
 #: ../../common/controldata_utils.c:268 ../../common/file_utils.c:418
 #: ../../common/file_utils.c:488
 #, c-format
-#| msgid "could not open file \"%s\": %m"
 msgid "could not fsync file \"%s\": %m"
 msgstr "не удалось синхронизировать с ФС файл \"%s\": %m"
 
@@ -137,14 +134,12 @@ msgstr "попытка дублирования нулевого указате�
 #. +> 17
 #: ../../common/file_utils.c:76
 #, c-format
-#| msgid "could not delete file \"%s\": %m"
 msgid "could not synchronize file system for file \"%s\": %m"
 msgstr "не удалось синхронизировать с ФС файл \"%s\": %m"
 
 #. +> 17
 #: ../../common/file_utils.c:120 ../../common/file_utils.c:566
 #, c-format
-#| msgid "could not read file \"%s\": %m"
 msgid "could not stat file \"%s\": %m"
 msgstr "не удалось получить информацию о файле \"%s\": %m"
 
@@ -172,7 +167,6 @@ msgstr "не удалось прочитать каталог \"%s\": %m"
 #. +> 17
 #: ../../common/file_utils.c:498
 #, c-format
-#| msgid "could not read file \"%s\": %m"
 msgid "could not rename file \"%s\" to \"%s\": %m"
 msgstr "не удалось переименовать файл \"%s\" в \"%s\": %m"
 
@@ -233,7 +227,6 @@ msgstr "не удалось получить код выхода от подпр
 #. +> 17
 #: ../../fe_utils/option_utils.c:69
 #, c-format
-#| msgid "invalid argument for option %s"
 msgid "invalid value \"%s\" for option %s"
 msgstr "неверное значение \"%s\" для параметра %s"
 
@@ -297,7 +290,6 @@ msgstr "ID транзакции (-x) должен быть больше или �
 #. +> 17
 #: pg_resetwal.c:217 pg_resetwal.c:221
 #, c-format
-#| msgid "transaction ID (-c) must be either 0 or greater than or equal to 2"
 msgid "transaction ID (-c) must be either %u or greater than or equal to %u"
 msgstr "ID транзакции (-c) должен быть равен %u, либо больше или равен %u"
 
@@ -340,7 +332,6 @@ msgstr "аргументом --wal-segsize должно быть число"
 #. +> 17
 #: pg_resetwal.c:301
 #, c-format
-#| msgid "argument of --wal-segsize must be a power of two between 1 and 1024"
 msgid "argument of %s must be a power of two between 1 and 1024"
 msgstr "аргументом %s должна быть степень двух от 1 до 1024"
 
@@ -416,9 +407,6 @@ msgstr ""
 #. +> 17
 #: pg_resetwal.c:476
 #, c-format
-#| msgid ""
-#| "\n"
-#| "If these values seem acceptable, use -f to force reset.\n"
 msgid "If these values seem acceptable, use -f to force reset."
 msgstr ""
 "Если эти значения всё же приемлемы, выполните сброс принудительно, добавив "
@@ -462,9 +450,6 @@ msgstr "Сброс журнала предзаписи может привест
 #. +> 17
 #: pg_resetwal.c:487
 #, c-format
-#| msgid ""
-#| "\n"
-#| "If these values seem acceptable, use -f to force reset.\n"
 msgid "If you want to proceed anyway, use -f to force reset."
 msgstr ""
 "Если вы всё же хотите продолжить, выполните сброс принудительно, добавив "
@@ -905,10 +890,6 @@ msgstr "Использование:\n"
 #. +> 17
 #: pg_resetwal.c:1170
 #, c-format
-#| msgid ""
-#| "Usage:\n"
-#| "  %s [OPTION]... DATADIR\n"
-#| "\n"
 msgid "  %s [OPTION]... DATADIR\n"
 msgstr "  %s [ПАРАМЕТР]... КАТ_ДАННЫХ\n"
 
@@ -927,7 +908,6 @@ msgstr ""
 #. +> 17
 #: pg_resetwal.c:1172
 #, c-format
-#| msgid "Options:\n"
 msgid ""
 "\n"
 "Options:\n"
@@ -944,7 +924,6 @@ msgstr "Параметры:\n"
 #. +> 17
 #: pg_resetwal.c:1173
 #, c-format
-#| msgid " [-D, --pgdata=]DATADIR            data directory\n"
 msgid " [-D, --pgdata=]DATADIR  data directory\n"
 msgstr " [-D, --pgdata=]КАТ_ДАННЫХ каталог данных\n"
 
@@ -970,9 +949,6 @@ msgstr ""
 #. +> 17
 #: pg_resetwal.c:1176
 #, c-format
-#| msgid ""
-#| "  -n, --dry-run                    no update, just show what would be "
-#| "done\n"
 msgid "  -n, --dry-run          no update, just show what would be done\n"
 msgstr ""
 "  -n, --dry-run          показать, какие действия будут выполнены, но не\n"
@@ -998,8 +974,6 @@ msgstr ""
 #. +> 17
 #: pg_resetwal.c:1177
 #, c-format
-#| msgid ""
-#| "  -V, --version                    output version information, then exit\n"
 msgid "  -V, --version          output version information, then exit\n"
 msgstr "  -V, --version          показать версию и выйти\n"
 
@@ -1013,7 +987,6 @@ msgstr "  -V, --version                    показать версию и вы
 #. +> 17
 #: pg_resetwal.c:1178
 #, c-format
-#| msgid "  -?, --help                       show this help, then exit\n"
 msgid "  -?, --help             show this help, then exit\n"
 msgstr "  -?, --help             показать эту справку и выйти\n"
 

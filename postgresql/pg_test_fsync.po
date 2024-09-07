@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_test_fsync (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2024-09-02 09:31+0300\n"
+"POT-Creation-Date: 2024-09-07 17:09+0300\n"
 "PO-Revision-Date: 2024-09-04 18:11+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -198,9 +198,6 @@ msgstr ""
 #. +> 17
 #: pg_test_fsync.c:301
 #, c-format
-#| msgid ""
-#| "(in wal_sync_method preference order, except fdatasync is Linux's "
-#| "default)\n"
 msgid ""
 "(in \"wal_sync_method\" preference order, except fdatasync is Linux's "
 "default)\n"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plpgsql (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2024-09-02 09:31+0300\n"
+"POT-Creation-Date: 2024-09-07 17:09+0300\n"
 "PO-Revision-Date: 2024-09-04 20:00+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -106,7 +106,6 @@ msgstr "переменная \"%s\" не существует"
 #. +> 17
 #: pl_comp.c:1722
 #, c-format
-#| msgid "relation \"%s\" does not exist"
 msgid "column \"%s\" of relation \"%s\" does not exist"
 msgstr "столбец \"%s\" в таблице \"%s\" не существует"
 
@@ -953,7 +952,6 @@ msgstr "отсутствует оператор SQL"
 
 #. +> 17
 #: pl_gram.y:2889
-#| msgid "syntax error, expected \"=\""
 msgid "syntax error, expected \"]\""
 msgstr "ошибка синтаксиса, ожидалась \"]\""
 

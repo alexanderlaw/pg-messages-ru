@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_rewind (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2024-09-02 09:31+0300\n"
+"POT-Creation-Date: 2024-09-07 17:09+0300\n"
 "PO-Revision-Date: 2024-09-07 13:07+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -113,7 +113,6 @@ msgstr "не удалось записать файл \"%s\": %m"
 #: ../../common/controldata_utils.c:268 ../../common/file_utils.c:418
 #: ../../common/file_utils.c:488
 #, c-format
-#| msgid "could not stat file \"%s\": %m"
 msgid "could not fsync file \"%s\": %m"
 msgstr "не удалось синхронизировать с ФС файл \"%s\": %m"
 
@@ -133,7 +132,6 @@ msgstr "попытка дублирования нулевого указате�
 #. +> 17
 #: ../../common/file_utils.c:76
 #, c-format
-#| msgid "could not write to file \"%s\": %m"
 msgid "could not synchronize file system for file \"%s\": %m"
 msgstr "не удалось синхронизировать с ФС файл \"%s\": %m"
 
@@ -166,7 +164,6 @@ msgstr "не удалось прочитать каталог \"%s\": %m"
 #. +> 17
 #: ../../common/file_utils.c:498
 #, c-format
-#| msgid "could not truncate file \"%s\" to %u: %m"
 msgid "could not rename file \"%s\" to \"%s\": %m"
 msgstr "не удалось переименовать файл \"%s\" в \"%s\": %m"
 
@@ -269,7 +266,6 @@ msgstr "не удалось открыть файл \"%s\", восстановл
 #. +> 17
 #: ../../fe_utils/archive.c:98
 #, c-format
-#| msgid "restore_command failed: %s"
 msgid "\"restore_command\" failed: %s"
 msgstr "ошибка при выполнении \"restore_command\": %s"
 
@@ -288,7 +284,6 @@ msgstr "восстановить файл \"%s\" из архива не удал
 #. +> 17
 #: ../../fe_utils/option_utils.c:69
 #, c-format
-#| msgid "invalid value for parameter \"%s\": \"%s\""
 msgid "invalid value \"%s\" for option %s"
 msgstr "неверное значение \"%s\" для параметра %s"
 
@@ -515,7 +510,6 @@ msgstr "исходный сервер должен выйти из режима 
 #. +> 17
 #: libpq_source.c:131
 #, c-format
-#| msgid "could not clear search_path: %s"
 msgid "could not clear \"search_path\": %s"
 msgstr "не удалось очистить \"search_path\": %s"
 
@@ -528,7 +522,6 @@ msgstr "не удалось очистить search_path: %s"
 #. +> 17
 #: libpq_source.c:142
 #, c-format
-#| msgid "full_page_writes must be enabled in the source server"
 msgid "\"full_page_writes\" must be enabled in the source server"
 msgstr "на исходном сервере должен быть включён режим \"full_page_writes\""
 
@@ -831,10 +824,6 @@ msgstr "Параметры:\n"
 #. +> 17
 #: pg_rewind.c:97
 #, c-format
-#| msgid ""
-#| "  -c, --restore-target-wal       use restore_command in target "
-#| "configuration to\n"
-#| "                                 retrieve WAL files from archives\n"
 msgid ""
 "  -c, --restore-target-wal       use \"restore_command\" in target "
 "configuration to\n"
@@ -1232,12 +1221,6 @@ msgstr[2] "управляющий файл содержит неверный р�
 #. +> 17
 #: pg_rewind.c:1038
 #, c-format
-#| msgid ""
-#| "WAL segment size must be a power of two between 1 MB and 1 GB, but the "
-#| "control file specifies %d byte"
-#| msgid_plural ""
-#| "WAL segment size must be a power of two between 1 MB and 1 GB, but the "
-#| "control file specifies %d bytes"
 msgid "The WAL segment size must be a power of two between 1 MB and 1 GB."
 msgstr ""
 "Размер сегмента WAL должен задаваться степенью 2 в интервале от 1 МБ до 1 ГБ."
@@ -1304,14 +1287,12 @@ msgstr ""
 #. +> 17
 #: pg_rewind.c:1107
 #, c-format
-#| msgid "restore_command is not set in the target cluster"
 msgid "could not read restore_command from target cluster"
 msgstr "не удалось прочитать параметр \"restore_command\" в целевом кластере"
 
 #. +> 17
 #: pg_rewind.c:1112
 #, c-format
-#| msgid "restore_command is not set in the target cluster"
 msgid "\"restore_command\" is not set in the target cluster"
 msgstr "параметр \"restore_command\" в целевом кластере не определён"
 
