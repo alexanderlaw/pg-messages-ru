@@ -4,14 +4,14 @@
 # Serguei A. Mokhov <mokhov@cs.concordia.ca>, 2001-2005.
 # Oleg Bartunov <oleg@sai.msu.su>, 2004-2005.
 # Sergey Burladyan <eshkinkot@gmail.com>, 2012.
-# Alexander Lakhin <exclusion@gmail.com>, 2012-2017, 2018, 2019, 2020, 2021, 2022, 2023.
+# Alexander Lakhin <exclusion@gmail.com>, 2012-2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024.
 # Maxim Yablokov <m.yablokov@postgrespro.ru>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: psql (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2024-09-02 09:32+0300\n"
-"PO-Revision-Date: 2023-08-29 13:37+0300\n"
+"PO-Revision-Date: 2024-09-07 06:49+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -114,16 +114,16 @@ msgstr "не удалось выполнить команду \"%s\": %m"
 
 #. +> 17
 #: ../../common/exec.c:394
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not execute command \"%s\": %m"
 msgid "could not read from command \"%s\": %m"
-msgstr "не удалось выполнить команду \"%s\": %m"
+msgstr "не удалось прочитать вывод команды \"%s\": %m"
 
 #. +> 17
 #: ../../common/exec.c:397
 #, c-format
 msgid "no data was returned by command \"%s\""
-msgstr ""
+msgstr "команда \"%s\" не выдала данные"
 
 #. +> 17 16 15 14
 #: ../../common/exec.c:424
@@ -209,7 +209,7 @@ msgstr "дочерний процесс завершён по сигналу %d:
 #: ../../common/wait_error.c:82
 #, c-format
 msgid "child process exited with unrecognized status %d"
-msgstr "дочерний процесс завершился с нераспознанным состоянием %d"
+msgstr "дочерний процесс завершился с нераспознанным кодом состояния %d"
 
 #. +> 17 16 15 14 13
 #: ../../fe_utils/cancel.c:186 ../../fe_utils/cancel.c:235
@@ -243,6 +243,8 @@ msgid ""
 "Cannot print table contents: number of cells %lld is equal to or exceeds "
 "maximum %lld.\n"
 msgstr ""
+"Вывести содержимое таблицы нельзя: число ячеек %lld достигло максимума "
+"%lld.\n"
 
 #. +> 17 16 15 14 13 12
 #: ../../fe_utils/print.c:3229
@@ -253,11 +255,11 @@ msgstr ""
 
 #. +> 17
 #: ../../fe_utils/print.c:3272
-#, fuzzy, c-format
+#, c-format
 #| msgid "Cannot add cell to table content: total cell count of %d exceeded.\n"
 msgid "Cannot add cell to table content: total cell count of %lld exceeded.\n"
 msgstr ""
-"Ошибка добавления ячейки в таблицу: превышен предел числа ячеек (%d).\n"
+"Ошибка добавления ячейки в таблицу: превышен предел числа ячеек (%lld).\n"
 
 #. +> 16 15 14 13 12
 #: ../../fe_utils/print.c:3258
@@ -288,13 +290,12 @@ msgstr ""
 
 #. +> 17
 #: ../../fe_utils/string_utils.c:607
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "shell command argument contains a newline or carriage return: \"%s\"\n"
 msgid "database name contains a newline or carriage return: \"%s\"\n"
 msgstr ""
-"аргумент команды оболочки содержит символ новой строки или перевода каретки: "
-"\"%s\"\n"
+"имя базы данных содержит символ новой строки или перевода каретки: \"%s\"\n"
 
 #. +> 17 16 15
 #: ../../port/user.c:43 ../../port/user.c:79
@@ -379,8 +380,8 @@ msgid ""
 "You are connected to database \"%s\" as user \"%s\" on host \"%s\" (address "
 "\"%s\") at port \"%s\".\n"
 msgstr ""
-"Вы подключены к базе данных \"%s\" как пользователь \"%s\" (сервер \"%s\": "
-"адрес \"%s\", порт \"%s\").\n"
+"Вы подключены к базе данных \"%s\" как пользователь \"%s\" (компьютер "
+"\"%s\": адрес \"%s\", порт \"%s\").\n"
 
 #. +> 17 16 15 14 13 12
 #: command.c:679
@@ -389,8 +390,8 @@ msgid ""
 "You are connected to database \"%s\" as user \"%s\" on host \"%s\" at port "
 "\"%s\".\n"
 msgstr ""
-"Вы подключены к базе данных \"%s\" как пользователь \"%s\" (сервер \"%s\", "
-"порт \"%s\").\n"
+"Вы подключены к базе данных \"%s\" как пользователь \"%s\" (компьютер "
+"\"%s\", порт \"%s\").\n"
 
 #. +> 17 16 15 14 13 12
 #: command.c:1069 command.c:1170 command.c:2675
@@ -609,17 +610,17 @@ msgstr "\\watch: некорректное число итераций \"%s\""
 
 #. +> 17
 #: command.c:2841
-#, fuzzy, c-format
+#, c-format
 #| msgid "\\watch: iteration count is specified more than once"
 msgid "\\watch: minimum row count specified more than once"
-msgstr "\\watch: число итераций указано неоднократно"
+msgstr "\\watch: минимальное число строк указано неоднократно"
 
 #. +> 17
 #: command.c:2851
-#, fuzzy, c-format
+#, c-format
 #| msgid "\\watch: incorrect iteration count \"%s\""
 msgid "\\watch: incorrect minimum row count \"%s\""
-msgstr "\\watch: некорректное число итераций \"%s\""
+msgstr "\\watch: некорректное минимальное число строк \"%s\""
 
 #. +> 17 16
 #: command.c:2858
@@ -653,7 +654,7 @@ msgstr "Пароль пользователя %s: "
 msgid ""
 "Do not give user, host, or port separately when using a connection string"
 msgstr ""
-"Не указывайте пользователя, сервер или порт отдельно, когда используете "
+"Не указывайте пользователя, компьютер или порт отдельно, когда используете "
 "строку подключения"
 
 #. +> 17 16 15 14
@@ -702,7 +703,7 @@ msgid ""
 "You are now connected to database \"%s\" as user \"%s\" on host "
 "\"%s\" (address \"%s\") at port \"%s\".\n"
 msgstr ""
-"Сейчас вы подключены к базе данных \"%s\" как пользователь \"%s\" (сервер "
+"Сейчас вы подключены к базе данных \"%s\" как пользователь \"%s\" (компьютер "
 "\"%s\": адрес \"%s\", порт \"%s\").\n"
 
 #. +> 17 16 15 14 13 12
@@ -712,8 +713,8 @@ msgid ""
 "You are now connected to database \"%s\" as user \"%s\" on host \"%s\" at "
 "port \"%s\".\n"
 msgstr ""
-"Вы подключены к базе данных \"%s\" как пользователь \"%s\" (сервер \"%s\", "
-"порт \"%s\").\n"
+"Вы подключены к базе данных \"%s\" как пользователь \"%s\" (компьютер "
+"\"%s\", порт \"%s\").\n"
 
 #. +> 17 16 15 14 13 12
 #: command.c:3737
@@ -739,10 +740,10 @@ msgstr ""
 
 #. +> 17
 #: command.c:3895
-#, fuzzy, c-format
+#, c-format
 #| msgid "SSL connection (protocol: %s, cipher: %s, compression: %s)\n"
 msgid "SSL connection (protocol: %s, cipher: %s, compression: %s, ALPN: %s)\n"
-msgstr "SSL-соединение (протокол: %s, шифр: %s, сжатие: %s)\n"
+msgstr "SSL-соединение (протокол: %s, шифр: %s, сжатие: %s, ALPN: %s)\n"
 
 #. +> 16 15
 #: command.c:3807
@@ -774,7 +775,7 @@ msgstr "вкл."
 #. +> 17
 #: command.c:3899
 msgid "none"
-msgstr ""
+msgstr "нет"
 
 #. +> 17 16 15 14 13 12
 #: command.c:3913
@@ -1148,7 +1149,7 @@ msgstr "сбой при ожидании сигналов: %m"
 
 #. +> 17
 #: command.c:5480 command.c:5487 common.c:632 common.c:639 common.c:1123
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "********* QUERY **********\n"
 #| "%s\n"
@@ -1160,9 +1161,9 @@ msgid ""
 "/************************/\n"
 "\n"
 msgstr ""
-"********* ЗАПРОС *********\n"
+"/******** ЗАПРОС ********/\n"
 "%s\n"
-"**************************\n"
+"/************************/\n"
 "\n"
 
 #. +> 16 15 14 13 12
@@ -1321,7 +1322,7 @@ msgstr "попытка выполнить \\gset со специальной п�
 
 #. +> 17
 #: common.c:1103
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "***(Single step mode: verify "
 #| "command)*******************************************\n"
@@ -1335,10 +1336,11 @@ msgid ""
 "/**(press return to proceed or enter x and return to "
 "cancel)*******************/\n"
 msgstr ""
-"***(Пошаговый режим: проверка "
-"команды)******************************************\n"
+"/**(Пошаговый режим: проверка "
+"команды)*****************************************/\n"
 "%s\n"
-"***(Enter - выполнение; x и Enter - отмена)**************\n"
+"/**(Enter - выполнение; x и Enter - "
+"отмена)************************************/\n"
 
 #. +> 16 15 14 13 12
 #: common.c:1063
@@ -1398,7 +1400,7 @@ msgstr "Команда не выдала результат, либо в рез�
 #: common.c:1511
 #, c-format
 msgid "fetching results in chunked mode failed"
-msgstr ""
+msgstr "получить результаты в блочном режиме не удалось"
 
 #. +> 17 16 15 14 13 12
 #: copy.c:98
@@ -1808,10 +1810,9 @@ msgstr "LC_CTYPE"
 #. +> 17
 #: describe.c:943 describe.c:947 describe.c:951 describe.c:4942 describe.c:4946
 #: describe.c:4950
-#, fuzzy
 #| msgid "locale"
 msgid "Locale"
-msgstr "код_локали"
+msgstr "Локаль"
 
 #. +> 16 15
 #: describe.c:949 describe.c:953 describe.c:4953 describe.c:4957
@@ -3286,10 +3287,9 @@ msgstr "Использовать владельца?"
 
 #. +> 17
 #: describe.c:6599
-#, fuzzy
 #| msgid "Failed.\n"
 msgid "Failover"
-msgstr "неудачна.\n"
+msgstr "Переносимая"
 
 #. +> 17 16 15 14 13 12
 #: describe.c:6604
@@ -3314,7 +3314,7 @@ msgstr "Список подписок"
 #. +> 17
 #: describe.c:6666
 msgid "(none)"
-msgstr ""
+msgstr "(нет)"
 
 #. +> 17 16 15 14 13
 #: describe.c:6706 describe.c:6801 describe.c:6893 describe.c:6987
@@ -3460,13 +3460,10 @@ msgstr ""
 
 #. +> 17
 #: help.c:69
-#, fuzzy
 #| msgid ""
 #| "  -d, --dbname=DBNAME      database name to connect to (default: \"%s\")\n"
 msgid "  -d, --dbname=DBNAME      database name to connect to\n"
-msgstr ""
-"  -d, --dbname=БД          имя подключаемой базы данных (по умолчанию "
-"\"%s\")\n"
+msgstr "  -d, --dbname=БД          имя целевой базы данных\n"
 
 #. +> 16 15 14 13 12
 #: help.c:85
@@ -3722,14 +3719,13 @@ msgstr ""
 
 #. +> 17
 #: help.c:114
-#, fuzzy
 #| msgid ""
 #| "  -h, --host=HOSTNAME      database server host or socket directory "
 #| "(default: \"%s\")\n"
 msgid "  -h, --host=HOSTNAME      database server host or socket directory\n"
 msgstr ""
-"  -h, --host=ИМЯ           имя сервера баз данных или каталог сокетов\n"
-"                           (по умолчанию: \"%s\")\n"
+"  -h, --host=ИМЯ           компьютер с сервером баз данных или каталог "
+"сокетов\n"
 
 #. +> 16 15 14 13 12
 #: help.c:133
@@ -3738,16 +3734,15 @@ msgid ""
 "  -h, --host=HOSTNAME      database server host or socket directory "
 "(default: \"%s\")\n"
 msgstr ""
-"  -h, --host=ИМЯ           имя сервера баз данных или каталог сокетов\n"
+"  -h, --host=ИМЯ           компьютер с сервером баз данных или каталог "
+"сокетов\n"
 "                           (по умолчанию: \"%s\")\n"
 
 #. +> 17
 #: help.c:115
-#, fuzzy
 #| msgid "  -p, --port=PORT          database server port (default: \"%s\")\n"
 msgid "  -p, --port=PORT          database server port\n"
-msgstr ""
-"  -p, --port=ПОРТ          порт сервера баз данных (по умолчанию: \"%s\")\n"
+msgstr "  -p, --port=ПОРТ          порт сервера баз данных\n"
 
 #. +> 16 15 14 13 12
 #: help.c:137
@@ -3758,10 +3753,9 @@ msgstr ""
 
 #. +> 17
 #: help.c:116
-#, fuzzy
 #| msgid "  -U, --username=USERNAME  database user name (default: \"%s\")\n"
 msgid "  -U, --username=USERNAME  database user name\n"
-msgstr "  -U, --username=ИМЯ       имя пользователя (по умолчанию: \"%s\")\n"
+msgstr "  -U, --username=ИМЯ       имя пользователя БД\n"
 
 #. +> 16 15 14 13 12
 #: help.c:140
@@ -3950,6 +3944,10 @@ msgid ""
 "                         execute query every SEC seconds, up to N times,\n"
 "                         stop if less than MIN rows are returned\n"
 msgstr ""
+"  \\watch [[i=]СЕК] [c=N] [m=MIN]\n"
+"                         повторять запрос через заданное число секунд, не "
+"более\n"
+"                         N раз, остановиться, если получено менее MIN строк\n"
 
 #. +> 17 16 15
 #: help.c:181 help.c:189 help.c:201 help.c:211 help.c:218 help.c:275 help.c:283
@@ -4632,7 +4630,7 @@ msgid ""
 "  \\c[onnect] {[DBNAME|- USER|- HOST|- PORT|-] | conninfo}\n"
 "                         connect to new database (currently \"%s\")\n"
 msgstr ""
-"  \\c[onnect] {[БД|- ПОЛЬЗОВАТЕЛЬ|- СЕРВЕР|- ПОРТ|-] | conninfo}\n"
+"  \\c[onnect] {[БД|- ПОЛЬЗОВАТЕЛЬ|- КОМПЬЮТЕР|- ПОРТ|-] | conninfo}\n"
 "                         подключиться к другой базе данных\n"
 "                         (текущая: \"%s\")\n"
 
@@ -4642,7 +4640,7 @@ msgid ""
 "  \\c[onnect] {[DBNAME|- USER|- HOST|- PORT|-] | conninfo}\n"
 "                         connect to new database (currently no connection)\n"
 msgstr ""
-"  \\c[onnect] {[БД|- ПОЛЬЗОВАТЕЛЬ|- СЕРВЕР|- ПОРТ|-] | conninfo}\n"
+"  \\c[onnect] {[БД|- ПОЛЬЗОВАТЕЛЬ|- КОМПЬЮТЕР|- ПОРТ|-] | conninfo}\n"
 "                         подключиться к другой базе данных\n"
 "                         (сейчас подключения нет)\n"
 
@@ -4909,7 +4907,7 @@ msgid ""
 "    the currently connected database server host\n"
 msgstr ""
 "  HOST\n"
-"    сервер баз данных, к которому установлено подключение\n"
+"    компьютер с сервером баз данных, к которому установлено подключение\n"
 
 #. +> 17 16 15 14 13 12
 #: help.c:406
@@ -6819,10 +6817,9 @@ msgstr "спецсимвол"
 
 #. +> 17
 #: sql_help.c:1999
-#, fuzzy
 #| msgid "action"
 msgid "error_action"
-msgstr "действие"
+msgstr "действие_при_ошибке"
 
 #. +> 17 16 15 14 13 12
 #: sql_help.c:2000
@@ -6832,7 +6829,7 @@ msgstr "имя_кодировки"
 #. +> 17
 #: sql_help.c:2001
 msgid "verbosity"
-msgstr ""
+msgstr "детализация"
 
 #. +> 17 16 15 14 13 12
 #: sql_help.c:2012
@@ -6996,10 +6993,9 @@ msgstr "стратегия"
 
 #. +> 17
 #: sql_help.c:2224
-#, fuzzy
 #| msgid "icu_locale"
 msgid "builtin_locale"
-msgstr "локаль_icu"
+msgstr "встроенная_локаль"
 
 #. +> 17 16 15
 #: sql_help.c:2225
@@ -7028,10 +7024,9 @@ msgstr "oid"
 
 #. +> 17
 #: sql_help.c:2254
-#, fuzzy
 #| msgid "where column_constraint is:"
 msgid "where domain_constraint is:"
-msgstr "где ограничение_столбца:"
+msgstr "где ограничение_домена может быть следующим:"
 
 #. +> 17 16 15 14 13 12
 #: sql_help.c:2268 sql_help.c:2701 sql_help.c:3132
@@ -7661,7 +7656,7 @@ msgstr "select"
 #. +> 17
 #: sql_help.c:4600 sql_help.c:4858 sql_help.c:5103
 msgid "from_reference"
-msgstr ""
+msgstr "ссылка_FROM"
 
 #. +> 17 16 15 14 13 12
 #: sql_help.c:4601 sql_help.c:4859 sql_help.c:5104
@@ -7748,7 +7743,7 @@ msgstr "delete"
 #. +> 17
 #: sql_help.c:4657 sql_help.c:4915 sql_help.c:5160
 msgid "merge"
-msgstr ""
+msgstr "merge"
 
 #. +> 17 16 15 14
 #: sql_help.c:4659 sql_help.c:4917 sql_help.c:5162

@@ -4,14 +4,14 @@
 # Serguei A. Mokhov <mokhov@cs.concordia.ca>, 2001-2004.
 # Oleg Bartunov <oleg@sai.msu.su>, 2005.
 # Andrey Sudnik <sudnikand@yandex.ru>, 2010.
-# Alexander Lakhin <exclusion@gmail.com>, 2012-2017, 2018, 2019, 2020, 2021, 2022, 2023.
+# Alexander Lakhin <exclusion@gmail.com>, 2012-2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024.
 # Maxim Yablokov <m.yablokov@postgrespro.ru>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: libpq (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2024-09-02 09:31+0300\n"
-"PO-Revision-Date: 2023-08-30 15:09+0300\n"
+"PO-Revision-Date: 2024-09-07 13:49+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -685,10 +685,10 @@ msgstr "неожиданная форма набора результатов, �
 
 #. +> 17
 #: fe-auth.c:1317
-#, fuzzy, c-format
+#, c-format
 #| msgid "password_encryption value too long"
 msgid "\"password_encryption\" value too long"
-msgstr "слишком длинное значение password_encryption"
+msgstr "слишком длинное значение \"password_encryption\""
 
 #. +> 16
 #: fe-auth.c:1329
@@ -715,10 +715,10 @@ msgstr "нераспознанный алгоритм шифрования па�
 
 #. +> 17
 #: fe-cancel.c:76
-#, fuzzy, c-format
+#, c-format
 #| msgid "connection pointer is NULL\n"
 msgid "connection pointer is NULL"
-msgstr "нулевой указатель соединения\n"
+msgstr "нулевой указатель соединения"
 
 #. +> 17 16
 #: fe-cancel.c:82 fe-misc.c:572
@@ -730,14 +730,14 @@ msgstr "соединение не открыто"
 #: fe-cancel.c:193
 #, c-format
 msgid "cancel request is already being sent on this connection"
-msgstr ""
+msgstr "через это соединение уже передаётся запрос отмены"
 
 #. +> 17
 #: fe-cancel.c:263
-#, fuzzy, c-format
+#, c-format
 #| msgid "unexpected message from server during startup"
 msgid "unexpected response from server"
-msgstr "неожиданное сообщение от сервера в начале работы"
+msgstr "неожиданный ответ сервера"
 
 #. +> 17 16
 #: fe-connect.c:1182
@@ -837,7 +837,7 @@ msgstr "значение sslmode \"%s\" недопустимо для сборк
 
 #. +> 17
 #: fe-connect.c:1625
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "weak sslmode \"%s\" may not be used with sslrootcert=system (use \"verify-"
 #| "full\")"
@@ -845,8 +845,8 @@ msgid ""
 "weak sslmode \"%s\" may not be used with sslnegotiation=direct (use "
 "\"require\", \"verify-ca\", or \"verify-full\")"
 msgstr ""
-"слабый режим sslmode \"%s\" не может использоваться с sslrootcert=system "
-"(используйте режим \"verify-full\")"
+"слабый режим sslmode \"%s\" не может использоваться с sslnegotiation=direct "
+"(используйте режим \"require\", \"verify-ca\" или \"verify-full\")"
 
 #. +> 17 16
 #: fe-connect.c:1647
@@ -860,10 +860,10 @@ msgstr ""
 
 #. +> 17
 #: fe-connect.c:1660 fe-connect.c:1668
-#, fuzzy, c-format
+#, c-format
 #| msgid "invalid %s value: \"%s\""
 msgid "invalid \"%s\" value: \"%s\""
-msgstr "неверное значение %s: \"%s\""
+msgstr "неверное значение \"%s\": \"%s\""
 
 #. +> 17 16
 #: fe-connect.c:1685
@@ -1118,15 +1118,13 @@ msgstr "преобразовать путь Unix-сокета \"%s\" в адре
 
 #. +> 17
 #: fe-connect.c:2950 fe-connect.c:4319
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "GSSAPI encryption required but was impossible (possibly no credential "
 #| "cache, no server support, or using a local socket)"
 msgid "GSSAPI encryption required but it is not supported over a local socket"
 msgstr ""
-"затребовано шифрование GSSAPI, но это требование невыполнимо (возможно, "
-"отсутствует кеш учётных данных, нет поддержки на сервере или используется "
-"локальный сокет)"
+"затребовано шифрование GSSAPI, но оно не поддерживается для локального сокета"
 
 #. +> 16
 #: fe-connect.c:3233
@@ -1153,7 +1151,7 @@ msgstr ""
 #: fe-connect.c:2958 fe-connect.c:4448
 #, c-format
 msgid "GSSAPI encryption required but no credential cache"
-msgstr ""
+msgstr "шифрование GSSAPI затребовано в отсутствие кеша учётных данных"
 
 #. +> 17 16
 #: fe-connect.c:3026
@@ -1295,10 +1293,10 @@ msgstr "не удалось отправить пакет согласовани
 
 #. +> 17
 #: fe-connect.c:3412
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not send startup packet: %s"
 msgid "could not send cancel packet: %s"
-msgstr "не удалось отправить стартовый пакет: %s"
+msgstr "не удалось отправить пакет отмены: %s"
 
 #. +> 17 16
 #: fe-connect.c:3442
@@ -2129,7 +2127,7 @@ msgstr "вызов PQexec не допускается в процессе COPY B
 #: fe-exec.c:2630
 #, c-format
 msgid "unrecognized message type \"%c\""
-msgstr ""
+msgstr "нераспознанный тип сообщения \"%c\""
 
 #. +> 17 16
 #: fe-exec.c:2702 fe-exec.c:2756 fe-exec.c:2824 fe-protocol3.c:1924
@@ -3192,10 +3190,10 @@ msgstr ""
 
 #. +> 17
 #: fe-secure-openssl.c:1249
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not create SSL context: %s"
 msgid "could not set SSL ALPN extension: %s"
-msgstr "не удалось создать контекст SSL: %s"
+msgstr "не удалось установить расширение SSL ALPN: %s"
 
 #. +> 17 16
 #: fe-secure-openssl.c:1292
@@ -3363,14 +3361,14 @@ msgstr ""
 msgid ""
 "direct SSL connection was established without ALPN protocol negotiation "
 "extension"
-msgstr ""
+msgstr "прямое SSL-соединение было установлено без расширения ALPN"
 
 #. +> 17
 #: fe-secure-openssl.c:1610
-#, fuzzy, c-format
+#, c-format
 #| msgid "SSL connection has been closed unexpectedly"
 msgid "SSL connection was established with unexpected ALPN protocol"
-msgstr "SSL-соединение было неожиданно закрыто"
+msgstr "SSL-соединение было установлено с неподдерживаемым протоколом ALPN"
 
 #. +> 17 16
 #: fe-secure-openssl.c:1627

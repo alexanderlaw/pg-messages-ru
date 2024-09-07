@@ -5,13 +5,13 @@
 # Oleg Bartunov <oleg@sai.msu.su>, 2004.
 # Sergey Burladyan <eshkinkot@gmail.com>, 2012.
 # Dmitriy Olshevskiy <olshevskiy87@bk.ru>, 2014.
-# Alexander Lakhin <exclusion@gmail.com>, 2012-2017, 2018, 2019, 2020, 2021, 2022, 2023.
+# Alexander Lakhin <exclusion@gmail.com>, 2012-2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: pg_dump (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2024-09-02 09:31+0300\n"
-"PO-Revision-Date: 2023-08-30 14:18+0300\n"
+"PO-Revision-Date: 2024-09-07 07:35+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -174,23 +174,23 @@ msgstr "не удалось преобразовать относительны�
 
 #. +> 17
 #: ../../common/exec.c:382
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not create directory \"%s\": %m"
 msgid "could not execute command \"%s\": %m"
-msgstr "не удалось создать каталог \"%s\": %m"
+msgstr "не удалось выполнить команду \"%s\": %m"
 
 #. +> 17
 #: ../../common/exec.c:394
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not read directory \"%s\": %m"
 msgid "could not read from command \"%s\": %m"
-msgstr "не удалось прочитать каталог \"%s\": %m"
+msgstr "не удалось прочитать вывод команды \"%s\": %m"
 
 #. +> 17
 #: ../../common/exec.c:397
 #, c-format
 msgid "no data was returned by command \"%s\""
-msgstr ""
+msgstr "команда \"%s\" не выдала данные"
 
 #. +> 17 16 15 14
 #: ../../common/exec.c:424 parallel.c:1609
@@ -225,39 +225,39 @@ msgstr "попытка дублирования нулевого указате�
 #. +> 17
 #: ../../common/file_utils.c:70 ../../common/file_utils.c:347
 #: ../../common/file_utils.c:406 ../../common/file_utils.c:480
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not open TOC file \"%s\": %m"
 msgid "could not open file \"%s\": %m"
-msgstr "не удалось открыть файл оглавления \"%s\": %m"
+msgstr "не удалось открыть файл \"%s\": %m"
 
 #. +> 17
 #: ../../common/file_utils.c:76
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not re-open the output file \"%s\": %m"
 msgid "could not synchronize file system for file \"%s\": %m"
-msgstr "не удалось повторно открыть выходной файл \"%s\": %m"
+msgstr "не удалось синхронизировать с ФС файл \"%s\": %m"
 
 #. +> 17
 #: ../../common/file_utils.c:120 ../../common/file_utils.c:566
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not close data file \"%s\": %m"
 msgid "could not stat file \"%s\": %m"
-msgstr "не удалось закрыть файл данных \"%s\": %m"
+msgstr "не удалось получить информацию о файле \"%s\": %m"
 
 #. +> 17
 #: ../../common/file_utils.c:130 ../../common/file_utils.c:227
 #: ../../fe_utils/option_utils.c:99
-#, fuzzy, c-format
+#, c-format
 #| msgid "this build does not support compression with %s"
 msgid "this build does not support sync method \"%s\""
-msgstr "эта сборка программы не поддерживает сжатие %s"
+msgstr "эта сборка программы не поддерживает метод синхронизации \"%s\""
 
 #. +> 17
 #: ../../common/file_utils.c:151 ../../common/file_utils.c:281
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not close directory \"%s\": %m"
 msgid "could not open directory \"%s\": %m"
-msgstr "не удалось закрыть каталог \"%s\": %m"
+msgstr "не удалось открыть каталог \"%s\": %m"
 
 #. +> 17 16 15 14 13 12
 #: ../../common/file_utils.c:169 ../../common/file_utils.c:315
@@ -268,17 +268,17 @@ msgstr "не удалось прочитать каталог \"%s\": %m"
 
 #. +> 17
 #: ../../common/file_utils.c:418 ../../common/file_utils.c:488
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not open TOC file \"%s\": %m"
 msgid "could not fsync file \"%s\": %m"
-msgstr "не удалось открыть файл оглавления \"%s\": %m"
+msgstr "не удалось синхронизировать с ФС файл \"%s\": %m"
 
 #. +> 17
 #: ../../common/file_utils.c:498
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not create directory \"%s\": %m"
 msgid "could not rename file \"%s\" to \"%s\": %m"
-msgstr "не удалось создать каталог \"%s\": %m"
+msgstr "не удалось переименовать файл \"%s\" в \"%s\": %m"
 
 #. +> 17 16 15 14 13 12
 #: ../../common/wait_error.c:55
@@ -314,7 +314,7 @@ msgstr "дочерний процесс завершён по сигналу %d:
 #: ../../common/wait_error.c:82
 #, c-format
 msgid "child process exited with unrecognized status %d"
-msgstr "дочерний процесс завершился с нераспознанным состоянием %d"
+msgstr "дочерний процесс завершился с нераспознанным кодом состояния %d"
 
 #. +> 17 16 15
 #: ../../fe_utils/option_utils.c:69
@@ -330,22 +330,25 @@ msgstr "значение %s должно быть в диапазоне %d..%d"
 
 #. +> 17
 #: ../../fe_utils/option_utils.c:106
-#, fuzzy, c-format
+#, c-format
 #| msgid "unrecognized sequence type: %s"
 msgid "unrecognized sync method: %s"
-msgstr "нераспознанный тип последовательности: %s"
+msgstr "нераспознанный метод синхронизации: %s"
 
 #. +> 17
 #: ../../fe_utils/string_utils.c:434
 #, c-format
 msgid "shell command argument contains a newline or carriage return: \"%s\"\n"
 msgstr ""
+"аргумент команды оболочки содержит символ новой строки или перевода каретки: "
+"\"%s\"\n"
 
 #. +> 17
 #: ../../fe_utils/string_utils.c:607
 #, c-format
 msgid "database name contains a newline or carriage return: \"%s\"\n"
 msgstr ""
+"имя базы данных содержит символ новой строки или перевода каретки: \"%s\"\n"
 
 #. +> 17 16 15 14 13 12
 #: common.c:135
@@ -601,10 +604,10 @@ msgstr "чтение подписок"
 
 #. +> 17
 #: common.c:270
-#, fuzzy, c-format
+#, c-format
 #| msgid "reading publication membership of tables"
 msgid "reading subscription membership of tables"
-msgstr "чтение информации о таблицах, включённых в публикации"
+msgstr "чтение информации о таблицах, включённых в подписки"
 
 #. +> 17 16 15 14 13 12
 #: common.c:333
@@ -746,71 +749,71 @@ msgstr "необрабатываемый режим \"%s\""
 
 #. +> 17
 #: filter.c:49
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not open input file \"%s\": %m"
 msgid "could not open filter file \"%s\": %m"
-msgstr "не удалось открыть входной файл \"%s\": %m"
+msgstr "не удалось открыть файл фильтра \"%s\": %m"
 
 #. +> 17
 #: filter.c:72
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not close data file \"%s\": %m"
 msgid "could not close filter file \"%s\": %m"
-msgstr "не удалось закрыть файл данных \"%s\": %m"
+msgstr "не удалось закрыть файл фильтра \"%s\": %m"
 
 #. +> 17
 #: filter.c:165
 #, c-format
 msgid "invalid format in filter read from standard input on line %d: %s"
 msgstr ""
+"неверный формат в фильтре, прочитанном из стандартного ввода, в строке %d: %s"
 
 #. +> 17
 #: filter.c:168
 #, c-format
 msgid "invalid format in filter read from file \"%s\" on line %d: %s"
 msgstr ""
+"неверный формат в фильтре, прочитанном из файла \"%s\", в строке %d: %s"
 
 #. +> 17
 #: filter.c:241 filter.c:468
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not read from input file: %m"
 msgid "could not read from filter file \"%s\": %m"
-msgstr "не удалось прочитать входной файл: %m"
+msgstr "не удалось прочитать файл фильтра \"%s\": %m"
 
 #. +> 17
 #: filter.c:244
-#, fuzzy
 #| msgid "unexpected data offset flag %d"
 msgid "unexpected end of file"
-msgstr "неожиданный флаг смещения данных: %d"
+msgstr "неожиданный конец файла"
 
 #. +> 17
 #: filter.c:311
 msgid "missing object name pattern"
-msgstr ""
+msgstr "отсутствует шаблон имени объекта"
 
 #. +> 17
 #: filter.c:422
 msgid "no filter command found (expected \"include\" or \"exclude\")"
-msgstr ""
+msgstr "отсутствует команда фильтра (ожидалась \"include\" или \"exclude\")"
 
 #. +> 17
 #: filter.c:433
 msgid "invalid filter command (expected \"include\" or \"exclude\")"
-msgstr ""
+msgstr "неверная команда фильтра (ожидалась \"include\" или \"exclude\")"
 
 #. +> 17
 #: filter.c:440
-#, fuzzy
 #| msgid "saving large objects"
 msgid "missing filter object type"
-msgstr "сохранение больших объектов"
+msgstr "отсутствует тип объекта фильтра"
 
 #. +> 17
 #: filter.c:447
 #, c-format
 msgid "unsupported filter object type: \"%.*s\""
-msgstr ""
+msgstr "неподдерживаемый тип объекта фильтра: \"%.*s\""
 
 #. +> 17 16 15 14
 #: parallel.c:251
@@ -1385,10 +1388,10 @@ msgstr "не удалось переключить пользователя се
 
 #. +> 17
 #: pg_backup_archiver.c:3457
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not set search_path to \"%s\": %s"
 msgid "could not set \"search_path\" to \"%s\": %s"
-msgstr "не удалось присвоить search_path значение \"%s\": %s"
+msgstr "не удалось присвоить \"search_path\" значение \"%s\": %s"
 
 #. +> 16 15 14 13 12
 #: pg_backup_archiver.c:3336
@@ -1398,10 +1401,10 @@ msgstr "не удалось присвоить search_path значение \"%s
 
 #. +> 17
 #: pg_backup_archiver.c:3518
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not set default_tablespace to %s: %s"
 msgid "could not set \"default_tablespace\" to %s: %s"
-msgstr "не удалось задать для default_tablespace значение %s: %s"
+msgstr "не удалось задать для \"default_tablespace\" значение %s: %s"
 
 #. +> 16 15 14 13 12
 #: pg_backup_archiver.c:3397
@@ -1411,10 +1414,10 @@ msgstr "не удалось задать для default_tablespace значен�
 
 #. +> 17
 #: pg_backup_archiver.c:3567
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not set default_table_access_method: %s"
 msgid "could not set \"default_table_access_method\": %s"
-msgstr "не удалось задать default_table_access_method: %s"
+msgstr "не удалось задать \"default_table_access_method\": %s"
 
 #. +> 16 15 14 13 12
 #: pg_backup_archiver.c:3446
@@ -1424,10 +1427,10 @@ msgstr "не удалось задать default_table_access_method: %s"
 
 #. +> 17
 #: pg_backup_archiver.c:3616
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not set default_table_access_method: %s"
 msgid "could not alter table access method: %s"
-msgstr "не удалось задать default_table_access_method: %s"
+msgstr "не удалось изменить табличный метод доступа: %s"
 
 #. +> 17 16 15 14 13 12
 #: pg_backup_archiver.c:3717
@@ -2310,7 +2313,7 @@ msgstr ""
 #: pg_dump.c:1107
 #, c-format
 msgid "  --sync-method=METHOD         set method for syncing files to disk\n"
-msgstr ""
+msgstr "  --sync-method=МЕТОД          метод синхронизации файлов с ФС\n"
 
 #. +> 17 16 15 14 13 12
 #: pg_dump.c:1108 pg_dumpall.c:643
@@ -2516,12 +2519,11 @@ msgstr ""
 
 #. +> 17
 #: pg_dump.c:1135
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "  -e, --extension=PATTERN      dump the specified extension(s) only\n"
 msgid "  --exclude-extension=PATTERN  do NOT dump the specified extension(s)\n"
-msgstr ""
-"  -e, --extension=ШАБЛОН       выгрузить только указанное расширение(я)\n"
+msgstr "  --exclude-extension=ШАБЛОН   НЕ выгружать указанное расширение(я)\n"
 
 #. +> 17 16
 #: pg_dump.c:1136
@@ -2575,6 +2577,9 @@ msgid ""
 "dump\n"
 "                               based on expressions in FILENAME\n"
 msgstr ""
+"  --filter=ИМЯ_ФАЙЛА           включать или исключать объекты и данные из\n"
+"                               дампа в соответствии с выражениями в этом "
+"файле\n"
 
 #. +> 17 16 15 14 13 12
 #: pg_dump.c:1146 pg_dumpall.c:662 pg_restore.c:487
@@ -2778,7 +2783,8 @@ msgstr "  -d, --dbname=БД          имя базы данных для выг�
 #, c-format
 msgid "  -h, --host=HOSTNAME      database server host or socket directory\n"
 msgstr ""
-"  -h, --host=ИМЯ           имя сервера баз данных или каталог сокетов\n"
+"  -h, --host=ИМЯ           компьютер с сервером баз данных или каталог "
+"сокетов\n"
 
 #. +> 17 16 15 14 13 12
 #: pg_dump.c:1177 pg_dumpall.c:686 pg_restore.c:506
@@ -3021,10 +3027,10 @@ msgstr "сохранение кодировки (%s)"
 
 #. +> 17
 #: pg_dump.c:3562
-#, fuzzy, c-format
+#, c-format
 #| msgid "saving standard_conforming_strings = %s"
 msgid "saving \"standard_conforming_strings = %s\""
-msgstr "сохранение standard_conforming_strings (%s)"
+msgstr "сохранение \"standard_conforming_strings = %s\""
 
 #. +> 16 15 14 13 12
 #: pg_dump.c:3501
@@ -3040,10 +3046,10 @@ msgstr "не удалось разобрать результат current_schema
 
 #. +> 17
 #: pg_dump.c:3620
-#, fuzzy, c-format
+#, c-format
 #| msgid "saving search_path = %s"
 msgid "saving \"search_path = %s\""
-msgstr "сохранение search_path = %s"
+msgstr "сохранение \"search_path = %s\""
 
 #. +> 16 15 14 13 12
 #: pg_dump.c:3559
@@ -3059,10 +3065,10 @@ msgstr "чтение больших объектов"
 
 #. +> 17
 #: pg_dump.c:3877
-#, fuzzy, c-format
+#, c-format
 #| msgid "saving large objects"
 msgid "saving large objects \"%s\""
-msgstr "сохранение больших объектов"
+msgstr "сохранение больших объектов \"%s\""
 
 #. +> 16 15 14 13 12
 #: pg_dump.c:3734
@@ -3168,20 +3174,18 @@ msgstr ""
 
 #. +> 17
 #: pg_dump.c:5012
-#, fuzzy, c-format
+#, c-format
 #| msgid "role with OID %u does not exist"
 msgid "subscription with OID %u does not exist"
-msgstr "роль с OID %u не существует"
+msgstr "подписка с OID %u не существует"
 
 #. +> 17
 #: pg_dump.c:5019
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "failed sanity check, parent OID %u of table \"%s\" (OID %u) not found"
 msgid "failed sanity check, table with OID %u not found"
-msgstr ""
-"нарушение целостности: родительская таблица с OID %u для таблицы \"%s\" (OID "
-"%u) не найдена"
+msgstr "нарушение целостности: таблица с OID %u не найдена"
 
 #. +> 17 16 15 14 13 12
 #: pg_dump.c:5582
@@ -3327,10 +3331,10 @@ msgstr "неподдерживаемая запись в pg_init_privs: %u %u %d
 
 #. +> 17
 #: pg_dump.c:10574
-#, fuzzy, c-format
+#, c-format
 #| msgid "invalid OID for large object (%u)"
 msgid "missing metadata for large objects \"%s\""
-msgstr "неверный OID для большого объекта (%u)"
+msgstr "отсутствуют метаданные о больших объектах \"%s\""
 
 #. +> 17 16 15 14 13 12
 #: pg_dump.c:10857
@@ -3690,7 +3694,7 @@ msgstr "нет вышестоящего объекта %u %u"
 #: pg_restore.c:597
 #, c-format
 msgid "%s filter for \"%s\" is not allowed"
-msgstr ""
+msgstr "фильтр %s для \"%s\" не допускается"
 
 #. +> 17 16 15 14 13 12
 #: pg_dump_sort.c:424
@@ -3953,6 +3957,8 @@ msgid ""
 "  --filter=FILENAME            exclude databases based on expressions in "
 "FILENAME\n"
 msgstr ""
+"  --filter=ИМЯ_ФАЙЛА           исключать базы данных в соответствии с\n"
+"                               выражениями в этом файле\n"
 
 #. +> 17 16 15 14 13 12
 #: pg_dumpall.c:667
@@ -4063,11 +4069,10 @@ msgstr "выполняется %s"
 
 #. +> 17
 #: pg_dumpall.c:1982
-#, fuzzy
 #| msgid "restored %d large object"
 #| msgid_plural "restored %d large objects"
 msgid "unsupported filter object"
-msgstr "восстановлен %d большой объект"
+msgstr "неподдерживаемый объект фильтра"
 
 # TO REVEIW
 #. +> 17 16 15 14 13 12
@@ -4085,13 +4090,14 @@ msgstr "параметры -d/--dbname и -f/--file исключают друг 
 
 #. +> 17
 #: pg_restore.c:350
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "options -C/--create and -1/--single-transaction cannot be used together"
 msgid ""
 "options -1/--single-transaction and --transaction-size cannot be used "
 "together"
-msgstr "параметры -C/--create и -1/--single-transaction исключают друг друга"
+msgstr ""
+"параметры -1/--single-transaction и --transaction-size исключают друг друга"
 
 #. +> 17 16 15 14 13 12
 #: pg_restore.c:357
@@ -4316,7 +4322,7 @@ msgstr "  --enable-row-security        включить защиту на уро
 
 #. +> 17
 #: pg_restore.c:485
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "  -O, --no-owner               skip restoration of object ownership in\n"
 #| "                               plain-text format\n"
@@ -4324,8 +4330,8 @@ msgid ""
 "  --filter=FILENAME            restore or skip objects based on expressions\n"
 "                               in FILENAME\n"
 msgstr ""
-"  -O, --no-owner               не восстанавливать владение объектами\n"
-"                               при использовании текстового формата\n"
+"  --filter=ИМЯ_ФАЙЛА           восстанавливать или пропускать объекты\n"
+"                               в соответствии с выражениями в этом файле\n"
 
 #. +> 17 16 15 14 13 12
 #: pg_restore.c:488
@@ -4392,6 +4398,7 @@ msgstr ""
 #, c-format
 msgid "  --transaction-size=N         commit after every N objects\n"
 msgstr ""
+"  --transaction-size=N         выполнять COMMIT после каждых N объектов\n"
 
 #. +> 17 16 15 14 13 12
 #: pg_restore.c:510

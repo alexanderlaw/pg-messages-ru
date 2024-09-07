@@ -6,13 +6,13 @@
 # Sergey Burladyan <eshkinkot@gmail.com>, 2009.
 # Andrey Sudnik <sudnikand@yandex.ru>, 2010.
 # Dmitriy Olshevskiy <olshevskiy87@bk.ru>, 2014.
-# Alexander Lakhin <exclusion@gmail.com>, 2012-2017, 2018, 2019, 2020, 2021, 2022, 2023.
+# Alexander Lakhin <exclusion@gmail.com>, 2012-2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: initdb (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2024-09-02 09:31+0300\n"
-"PO-Revision-Date: 2023-09-11 16:13+0300\n"
+"PO-Revision-Date: 2024-09-07 06:49+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -115,16 +115,16 @@ msgstr "не удалось выполнить команду \"%s\": %m"
 
 #. +> 17
 #: ../../common/exec.c:394
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not execute command \"%s\": %m"
 msgid "could not read from command \"%s\": %m"
-msgstr "не удалось выполнить команду \"%s\": %m"
+msgstr "не удалось прочитать вывод команды \"%s\": %m"
 
 #. +> 17
 #: ../../common/exec.c:397
 #, c-format
 msgid "no data was returned by command \"%s\""
-msgstr ""
+msgstr "команда \"%s\" не выдала данные"
 
 #. +> 17 16 15 14
 #: ../../common/exec.c:424
@@ -167,10 +167,10 @@ msgstr "не удалось открыть файл \"%s\": %m"
 
 #. +> 17
 #: ../../common/file_utils.c:76
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not remove file or directory \"%s\": %m"
 msgid "could not synchronize file system for file \"%s\": %m"
-msgstr "ошибка при удалении файла или каталога \"%s\": %m"
+msgstr "не удалось синхронизировать с ФС файл \"%s\": %m"
 
 #. +> 17 16 15 14 13 12
 #: ../../common/file_utils.c:120 ../../common/file_utils.c:566
@@ -183,7 +183,7 @@ msgstr "не удалось получить информацию о файле 
 #: ../../fe_utils/option_utils.c:99
 #, c-format
 msgid "this build does not support sync method \"%s\""
-msgstr ""
+msgstr "эта сборка программы не поддерживает метод синхронизации \"%s\""
 
 #. +> 17 16 15 14 13 12
 #: ../../common/file_utils.c:151 ../../common/file_utils.c:281
@@ -346,40 +346,42 @@ msgstr "дочерний процесс завершён по сигналу %d:
 #: ../../common/wait_error.c:82
 #, c-format
 msgid "child process exited with unrecognized status %d"
-msgstr "дочерний процесс завершился с нераспознанным состоянием %d"
+msgstr "дочерний процесс завершился с нераспознанным кодом состояния %d"
 
 #. +> 17
 #: ../../fe_utils/option_utils.c:69
-#, fuzzy, c-format
+#, c-format
 #| msgid "invalid authentication method \"%s\" for \"%s\" connections"
 msgid "invalid value \"%s\" for option %s"
-msgstr ""
-"нераспознанный метод проверки подлинности \"%s\" для подключений \"%s\""
+msgstr "неверное значение \"%s\" для параметра %s"
 
 #. +> 17
 #: ../../fe_utils/option_utils.c:76
 #, c-format
 msgid "%s must be in range %d..%d"
-msgstr ""
+msgstr "значение %s должно быть в диапазоне %d..%d"
 
 #. +> 17
 #: ../../fe_utils/option_utils.c:106
-#, fuzzy, c-format
+#, c-format
 #| msgid "unrecognized locale provider: %s"
 msgid "unrecognized sync method: %s"
-msgstr "нераспознанный провайдер локали: %s"
+msgstr "нераспознанный метод синхронизации: %s"
 
 #. +> 17
 #: ../../fe_utils/string_utils.c:434
 #, c-format
 msgid "shell command argument contains a newline or carriage return: \"%s\"\n"
 msgstr ""
+"аргумент команды оболочки содержит символ новой строки или перевода каретки: "
+"\"%s\"\n"
 
 #. +> 17
 #: ../../fe_utils/string_utils.c:607
 #, c-format
 msgid "database name contains a newline or carriage return: \"%s\"\n"
 msgstr ""
+"имя базы данных содержит символ новой строки или перевода каретки: \"%s\"\n"
 
 #. +> 17 16 15 14 13 12
 #: ../../port/dirmod.c:287
@@ -539,7 +541,7 @@ msgstr ""
 #: initdb.c:946
 #, c-format
 msgid "could not access file \"%s\": %m"
-msgstr "нет доступа к файлу \"%s\": %m"
+msgstr "ошибка при обращении к файлу \"%s\": %m"
 
 #. +> 17 16 15 14 13 12
 #: initdb.c:953
@@ -555,10 +557,10 @@ msgstr "выбирается реализация динамической ра�
 
 #. +> 17
 #: initdb.c:1095
-#, fuzzy, c-format
+#, c-format
 #| msgid "selecting default max_connections ... "
 msgid "selecting default \"max_connections\" ... "
-msgstr "выбирается значение max_connections по умолчанию... "
+msgstr "выбирается значение \"max_connections\" по умолчанию... "
 
 #. +> 16 15 14 13 12
 #: initdb.c:1091
@@ -568,10 +570,10 @@ msgstr "выбирается значение max_connections по умолча�
 
 #. +> 17
 #: initdb.c:1115
-#, fuzzy, c-format
+#, c-format
 #| msgid "selecting default shared_buffers ... "
 msgid "selecting default \"shared_buffers\" ... "
-msgstr "выбирается значение shared_buffers по умолчанию... "
+msgstr "выбирается значение \"shared_buffers\" по умолчанию... "
 
 #. +> 16 15 14 13 12
 #: initdb.c:1111
@@ -791,10 +793,10 @@ msgstr "для локали \"%s\" получен неизвестный язы�
 
 #. +> 17
 #: initdb.c:2401
-#, fuzzy, c-format
+#, c-format
 #| msgid "ICU locale must be specified"
 msgid "locale must be specified if provider is %s"
-msgstr "необходимо задать локаль ICU"
+msgstr "если выбран провайдер %s, необходимо задать локаль"
 
 #. +> 16 15
 #: initdb.c:2397
@@ -804,10 +806,10 @@ msgstr "необходимо задать локаль ICU"
 
 #. +> 17
 #: initdb.c:2412
-#, fuzzy, c-format
+#, c-format
 #| msgid "invalid locale name \"%s\""
 msgid "invalid locale name \"%s\" for builtin provider"
-msgstr "ошибочное имя локали \"%s\""
+msgstr "неверное имя локали \"%s\" для встроенного провайдера"
 
 #. +> 17 16
 #: initdb.c:2423
@@ -950,7 +952,7 @@ msgstr "      --no-locale           эквивалентно --locale=C\n"
 
 #. +> 17
 #: initdb.c:2465
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "      --locale-provider={libc|icu}\n"
 #| "                            set default locale provider for new "
@@ -959,12 +961,12 @@ msgid ""
 "      --builtin-locale=LOCALE\n"
 "                            set builtin locale name for new databases\n"
 msgstr ""
-"      --locale-provider={libc|icu}\n"
-"                            провайдер основной локали для новых баз\n"
+"      --builtin-locale=ЛОКАЛЬ\n"
+"                            имя встроенной локали для новых баз\n"
 
 #. +> 17
 #: initdb.c:2467
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "      --locale-provider={libc|icu}\n"
 #| "                            set default locale provider for new "
@@ -973,7 +975,7 @@ msgid ""
 "      --locale-provider={builtin|libc|icu}\n"
 "                            set default locale provider for new databases\n"
 msgstr ""
-"      --locale-provider={libc|icu}\n"
+"      --locale-provider={builtin|libc|icu}\n"
 "                            провайдер основной локали для новых баз\n"
 
 #. +> 16 15
@@ -1091,10 +1093,10 @@ msgstr ""
 
 #. +> 17
 #: initdb.c:2484
-#, fuzzy, c-format
+#, c-format
 #| msgid "  -s, --show                show internal settings\n"
 msgid "  -s, --show                show internal settings, then exit\n"
-msgstr "  -s, --show                показать внутренние установки\n"
+msgstr "  -s, --show                показать внутренние установки и выйти\n"
 
 #. +> 16 15 14 13 12
 #: initdb.c:2460
@@ -1106,7 +1108,7 @@ msgstr "  -s, --show                показать внутренние уст
 #: initdb.c:2485
 #, c-format
 msgid "      --sync-method=METHOD  set method for syncing files to disk\n"
-msgstr ""
+msgstr "      --sync-method=МЕТОД   метод синхронизации файлов с ФС\n"
 
 #. +> 17 16 15
 #: initdb.c:2486
@@ -1316,10 +1318,10 @@ msgstr ""
 
 #. +> 17
 #: initdb.c:2625
-#, fuzzy, c-format
+#, c-format
 #| msgid "  provider:    %s\n"
 msgid "  locale provider:   %s\n"
-msgstr "  провайдер:   %s\n"
+msgstr "  провайдер локалей: %s\n"
 
 #. +> 16 15
 #: initdb.c:2604
@@ -1338,6 +1340,8 @@ msgstr "  локаль ICU:  %s\n"
 #, c-format
 msgid "  default collation: %s\n"
 msgstr ""
+"  правило сортировки\n"
+"       по умолчанию: %s\n"
 
 #. +> 17 16 15
 #: initdb.c:2628
@@ -1460,10 +1464,10 @@ msgstr "В качестве кодировки БД по умолчанию ус
 
 #. +> 17
 #: initdb.c:2704
-#, fuzzy, c-format
+#, c-format
 #| msgid "locale \"%s\" requires unsupported encoding \"%s\""
 msgid "builtin provider locale \"%s\" requires encoding \"%s\""
-msgstr "для локали \"%s\" требуется неподдерживаемая кодировка \"%s\""
+msgstr "для локали \"%s\" встроенного провайдера требуется кодировка \"%s\""
 
 #. +> 17 16 15 14 13 12
 #: initdb.c:2766
@@ -1550,7 +1554,7 @@ msgstr ""
 #: initdb.c:2873 initdb.c:2943 initdb.c:3369
 #, c-format
 msgid "could not access directory \"%s\": %m"
-msgstr "ошибка доступа к каталогу \"%s\": %m"
+msgstr "ошибка при обращении к каталогу \"%s\": %m"
 
 #. +> 17 16 15 14 13 12
 #: initdb.c:2894
@@ -1704,10 +1708,10 @@ msgstr "нельзя одновременно запросить пароль и
 
 #. +> 17
 #: initdb.c:3390
-#, fuzzy, c-format
+#, c-format
 #| msgid "argument of --wal-segsize must be a power of two between 1 and 1024"
 msgid "argument of %s must be a power of two between 1 and 1024"
-msgstr "аргументом --wal-segsize должна быть степень двух от 1 до 1024"
+msgstr "аргументом %s должна быть степень двух от 1 до 1024"
 
 #. +> 16
 #: initdb.c:3356

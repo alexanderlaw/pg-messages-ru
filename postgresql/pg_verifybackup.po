@@ -1,10 +1,10 @@
-# Alexander Lakhin <a.lakhin@postgrespro.ru>, 2020, 2021, 2022, 2023.
+# Alexander Lakhin <a.lakhin@postgrespro.ru>, 2020, 2021, 2022, 2023, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: pg_verifybackup (PostgreSQL) 13\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2024-09-02 09:31+0300\n"
-"PO-Revision-Date: 2023-08-30 12:42+0300\n"
+"PO-Revision-Date: 2024-09-07 09:48+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -47,10 +47,10 @@ msgstr "подсказка: "
 
 #. +> 17
 #: ../../common/controldata_utils.c:97
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not open file \"%s\": %m"
 msgid "could not open file \"%s\" for reading: %m"
-msgstr "не удалось открыть файл \"%s\": %m"
+msgstr "не удалось открыть файл \"%s\" для чтения: %m"
 
 #. +> 17 16 15 14 13
 #: ../../common/controldata_utils.c:110 pg_verifybackup.c:438
@@ -75,7 +75,7 @@ msgstr "не удалось закрыть файл \"%s\": %m"
 #. +> 17
 #: ../../common/controldata_utils.c:168
 msgid "byte ordering mismatch"
-msgstr ""
+msgstr "несоответствие порядка байт"
 
 #. +> 17
 #: ../../common/controldata_utils.c:170
@@ -87,6 +87,10 @@ msgid ""
 "and\n"
 "the PostgreSQL installation would be incompatible with this data directory."
 msgstr ""
+"возможно несоответствие порядка байт\n"
+"Порядок байт в файле pg_control может не соответствовать используемому\n"
+"этой программой. В этом случае результаты будут неверными и\n"
+"установленный PostgreSQL будет несовместим с этим каталогом данных."
 
 #. +> 17 16 15 14 13
 #: ../../common/controldata_utils.c:230 pg_verifybackup.c:406
@@ -97,17 +101,17 @@ msgstr "не удалось открыть файл \"%s\": %m"
 
 #. +> 17
 #: ../../common/controldata_utils.c:249
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not read file \"%s\": %m"
 msgid "could not write file \"%s\": %m"
-msgstr "не удалось прочитать файл \"%s\": %m"
+msgstr "не удалось записать файл \"%s\": %m"
 
 #. +> 17
 #: ../../common/controldata_utils.c:268
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not open file \"%s\": %m"
 msgid "could not fsync file \"%s\": %m"
-msgstr "не удалось открыть файл \"%s\": %m"
+msgstr "не удалось синхронизировать с ФС файл \"%s\": %m"
 
 #. +> 17 16 15 14
 #: ../../common/cryptohash.c:261 ../../common/cryptohash_openssl.c:356
@@ -120,17 +124,17 @@ msgstr "нехватка памяти"
 #: ../../common/cryptohash.c:266 ../../common/cryptohash.c:272
 #: ../../common/cryptohash_openssl.c:368 ../../common/cryptohash_openssl.c:376
 msgid "success"
-msgstr ""
+msgstr "успех"
 
 #. +> 17
 #: ../../common/cryptohash.c:268 ../../common/cryptohash_openssl.c:370
 msgid "destination buffer too small"
-msgstr ""
+msgstr "буфер назначения слишком мал"
 
 #. +> 17
 #: ../../common/cryptohash_openssl.c:372
 msgid "OpenSSL failure"
-msgstr ""
+msgstr "ошибка OpenSSL"
 
 #. +> 17 16 15 14 13
 #: ../../common/fe_memutils.c:35 ../../common/fe_memutils.c:75
@@ -149,23 +153,28 @@ msgstr "попытка дублирования нулевого указате�
 #: ../../common/jsonapi.c:2121
 msgid "Recursive descent parser cannot use incremental lexer."
 msgstr ""
+"Инкрементальный лексический анализатор не подходит для нисходящего "
+"рекурсивного разбора."
 
 #. +> 17
 #: ../../common/jsonapi.c:2123
 msgid "Incremental parser requires incremental lexer."
 msgstr ""
+"Для инкрементального разбора требуется инкрементальный лексический "
+"анализатор."
 
 #. +> 17
 #: ../../common/jsonapi.c:2125
 msgid "JSON nested too deep, maximum permitted depth is 6400."
 msgstr ""
+"Слишком большая вложенность JSON, максимальная допустимая глубина: 6400."
 
 #. +> 17
 #: ../../common/jsonapi.c:2127
-#, fuzzy, c-format
+#, c-format
 #| msgid "Escape sequence \"\\%s\" is invalid."
 msgid "Escape sequence \"\\%.*s\" is invalid."
-msgstr "Неверная спецпоследовательность: \"\\%s\"."
+msgstr "Неверная спецпоследовательность: \"\\%.*s\"."
 
 #. +> 16 15 14 13
 #: ../../common/jsonapi.c:1144
@@ -181,10 +190,10 @@ msgstr "Символ с кодом 0x%02x необходимо экраниро�
 
 #. +> 17
 #: ../../common/jsonapi.c:2135
-#, fuzzy, c-format
+#, c-format
 #| msgid "Expected end of input, but found \"%s\"."
 msgid "Expected end of input, but found \"%.*s\"."
-msgstr "Ожидался конец текста, но обнаружено продолжение \"%s\"."
+msgstr "Ожидался конец текста, но обнаружено продолжение \"%.*s\"."
 
 #. +> 16 15 14 13
 #: ../../common/jsonapi.c:1150
@@ -194,10 +203,10 @@ msgstr "Ожидался конец текста, но обнаружено пр
 
 #. +> 17
 #: ../../common/jsonapi.c:2138
-#, fuzzy, c-format
+#, c-format
 #| msgid "Expected array element or \"]\", but found \"%s\"."
 msgid "Expected array element or \"]\", but found \"%.*s\"."
-msgstr "Ожидался элемент массива или \"]\", но обнаружено \"%s\"."
+msgstr "Ожидался элемент массива или \"]\", но обнаружено \"%.*s\"."
 
 #. +> 16 15 14 13
 #: ../../common/jsonapi.c:1153
@@ -207,10 +216,10 @@ msgstr "Ожидался элемент массива или \"]\", но обн
 
 #. +> 17
 #: ../../common/jsonapi.c:2141
-#, fuzzy, c-format
+#, c-format
 #| msgid "Expected \",\" or \"]\", but found \"%s\"."
 msgid "Expected \",\" or \"]\", but found \"%.*s\"."
-msgstr "Ожидалась \",\" или \"]\", но обнаружено \"%s\"."
+msgstr "Ожидалась \",\" или \"]\", но обнаружено \"%.*s\"."
 
 #. +> 16 15 14 13
 #: ../../common/jsonapi.c:1156
@@ -220,10 +229,10 @@ msgstr "Ожидалась \",\" или \"]\", но обнаружено \"%s\".
 
 #. +> 17
 #: ../../common/jsonapi.c:2144
-#, fuzzy, c-format
+#, c-format
 #| msgid "Expected \":\", but found \"%s\"."
 msgid "Expected \":\", but found \"%.*s\"."
-msgstr "Ожидалось \":\", но обнаружено \"%s\"."
+msgstr "Ожидалось \":\", но обнаружено \"%.*s\"."
 
 #. +> 16 15 14 13
 #: ../../common/jsonapi.c:1159
@@ -233,10 +242,10 @@ msgstr "Ожидалось \":\", но обнаружено \"%s\"."
 
 #. +> 17
 #: ../../common/jsonapi.c:2147
-#, fuzzy, c-format
+#, c-format
 #| msgid "Expected JSON value, but found \"%s\"."
 msgid "Expected JSON value, but found \"%.*s\"."
-msgstr "Ожидалось значение JSON, но обнаружено \"%s\"."
+msgstr "Ожидалось значение JSON, но обнаружено \"%.*s\"."
 
 #. +> 16 15 14 13
 #: ../../common/jsonapi.c:1162
@@ -251,10 +260,10 @@ msgstr "Неожиданный конец входной строки."
 
 #. +> 17
 #: ../../common/jsonapi.c:2152
-#, fuzzy, c-format
+#, c-format
 #| msgid "Expected string or \"}\", but found \"%s\"."
 msgid "Expected string or \"}\", but found \"%.*s\"."
-msgstr "Ожидалась строка или \"}\", но обнаружено \"%s\"."
+msgstr "Ожидалась строка или \"}\", но обнаружено \"%.*s\"."
 
 #. +> 16 15 14 13
 #: ../../common/jsonapi.c:1167
@@ -264,10 +273,10 @@ msgstr "Ожидалась строка или \"}\", но обнаружено 
 
 #. +> 17
 #: ../../common/jsonapi.c:2155
-#, fuzzy, c-format
+#, c-format
 #| msgid "Expected \",\" or \"}\", but found \"%s\"."
 msgid "Expected \",\" or \"}\", but found \"%.*s\"."
-msgstr "Ожидалась \",\" или \"}\", но обнаружено \"%s\"."
+msgstr "Ожидалась \",\" или \"}\", но обнаружено \"%.*s\"."
 
 #. +> 16 15 14 13
 #: ../../common/jsonapi.c:1170
@@ -277,10 +286,10 @@ msgstr "Ожидалась \",\" или \"}\", но обнаружено \"%s\".
 
 #. +> 17
 #: ../../common/jsonapi.c:2158
-#, fuzzy, c-format
+#, c-format
 #| msgid "Expected string, but found \"%s\"."
 msgid "Expected string, but found \"%.*s\"."
-msgstr "Ожидалась строка, но обнаружено \"%s\"."
+msgstr "Ожидалась строка, но обнаружено \"%.*s\"."
 
 #. +> 16 15 14 13
 #: ../../common/jsonapi.c:1173
@@ -290,16 +299,16 @@ msgstr "Ожидалась строка, но обнаружено \"%s\"."
 
 #. +> 17
 #: ../../common/jsonapi.c:2161
-#, fuzzy, c-format
+#, c-format
 #| msgid "Token \"%s\" is invalid."
 msgid "Token \"%.*s\" is invalid."
-msgstr "Ошибочный элемент текста \"%s\"."
+msgstr "Ошибочный элемент \"%.*s\"."
 
 #. +> 16 15 14 13
 #: ../../common/jsonapi.c:1176
 #, c-format
 msgid "Token \"%s\" is invalid."
-msgstr "Ошибочный элемент текста \"%s\"."
+msgstr "Ошибочный элемент \"%s\"."
 
 #. +> 17 16 15 14 13
 #: ../../common/jsonapi.c:2164
@@ -412,10 +421,9 @@ msgstr "неожиданное скалярное значение"
 
 #. +> 17
 #: ../../common/parse_manifest.c:609
-#, fuzzy
 #| msgid "timeline is not an integer"
 msgid "manifest version not an integer"
-msgstr "линия времени задаётся не целым числом"
+msgstr "версия манифеста не является целым числом"
 
 #. +> 17 16 15 14 13
 #: ../../common/parse_manifest.c:613
@@ -424,10 +432,9 @@ msgstr "неожиданная версия манифеста"
 
 #. +> 17
 #: ../../common/parse_manifest.c:637
-#, fuzzy
 #| msgid "timeline is not an integer"
 msgid "system identifier in manifest not an integer"
-msgstr "линия времени задаётся не целым числом"
+msgstr "идентификатор системы в манифесте не является целым числом"
 
 #. +> 17 16 15 14 13
 #: ../../common/parse_manifest.c:662
@@ -437,7 +444,7 @@ msgstr "отсутствует указание пути"
 #. +> 17 16 15 14 13
 #: ../../common/parse_manifest.c:665
 msgid "both path name and encoded path name"
-msgstr "указание пути задано в обычном виде и в закодированном"
+msgstr "путь задан в обычном виде и в закодированном"
 
 #. +> 17 16 15 14 13
 #: ../../common/parse_manifest.c:667
@@ -489,7 +496,7 @@ msgstr "отсутствует конечный LSN"
 #. +> 17 16 15 14 13
 #: ../../common/parse_manifest.c:772
 msgid "timeline is not an integer"
-msgstr "линия времени задаётся не целым числом"
+msgstr "линия времени задана не целым числом"
 
 #. +> 17 16 15 14 13
 #: ../../common/parse_manifest.c:775
@@ -631,10 +638,10 @@ msgstr "не удалось прочитать файл \"%s\" (прочитан
 
 #. +> 17
 #: pg_verifybackup.c:478
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not read file \"%s\": read %d of %lld"
 msgid "could not read file \"%s\": read %lld of %lld"
-msgstr "не удалось прочитать файл \"%s\" (прочитано байт: %d из %lld)"
+msgstr "не удалось прочитать файл \"%s\" (прочитано байт: %lld из %lld)"
 
 #. +> 17 16 15 14 13
 #: pg_verifybackup.c:561
@@ -690,20 +697,20 @@ msgstr ""
 #: pg_verifybackup.c:768
 #, c-format
 msgid "%s: CRC is incorrect"
-msgstr ""
+msgstr "%s: ошибка CRC"
 
 #. +> 17
 #: pg_verifybackup.c:772
-#, fuzzy, c-format
+#, c-format
 #| msgid "unexpected manifest version"
 msgid "%s: unexpected control file version"
-msgstr "неожиданная версия манифеста"
+msgstr "%s: неожиданная версия управляющего файла"
 
 #. +> 17
 #: pg_verifybackup.c:777
 #, c-format
 msgid "%s: manifest system identifier is %llu, but control file has %llu"
-msgstr ""
+msgstr "%s: идентификатор системы в манифесте %llu, а в управляющем файле %llu"
 
 #. +> 17 16 15 14 13
 #: pg_verifybackup.c:801

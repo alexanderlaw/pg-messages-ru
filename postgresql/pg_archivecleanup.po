@@ -1,13 +1,13 @@
 # Russian message translation file for pg_archivecleanup
 # Copyright (C) 2017 PostgreSQL Global Development Group
 # This file is distributed under the same license as the PostgreSQL package.
-# Alexander Lakhin <a.lakhin@postgrespro.ru>, 2017, 2019, 2020, 2022.
+# Alexander Lakhin <a.lakhin@postgrespro.ru>, 2017, 2019, 2020, 2022, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: pg_archivecleanup (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2024-09-02 09:31+0300\n"
-"PO-Revision-Date: 2022-09-05 13:34+0300\n"
+"PO-Revision-Date: 2024-09-07 06:17+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -16,6 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 21.12.3\n"
 
 #. +> 17 16 15 14 13 12
 #: ../../../src/common/logging.c:276
@@ -52,13 +53,13 @@ msgstr "подсказка: "
 #: ../../common/fe_memutils.c:98 ../../common/fe_memutils.c:161
 #, c-format
 msgid "out of memory\n"
-msgstr ""
+msgstr "нехватка памяти\n"
 
 #. +> 17
 #: ../../common/fe_memutils.c:92 ../../common/fe_memutils.c:153
 #, c-format
 msgid "cannot duplicate null pointer (internal error)\n"
-msgstr ""
+msgstr "попытка дублирования нулевого указателя (внутренняя ошибка)\n"
 
 #. +> 17 16 15 14 13 12
 #: pg_archivecleanup.c:68
@@ -115,7 +116,7 @@ msgstr "Для дополнительной информации попробу�
 #: pg_archivecleanup.c:258
 #, c-format
 msgid "  -x EXT         clean up files if they have this extension\n"
-msgstr "  -x РСШ         убрать файлы с заданным расширением\n"
+msgstr "  -x РСШ         удалить файлы с заданным расширением\n"
 
 #. +> 17 16 15 14 13 12
 #: pg_archivecleanup.c:259
@@ -156,13 +157,16 @@ msgstr ""
 msgid ""
 "  -b, --clean-backup-history  clean up files including backup history files\n"
 msgstr ""
+"  -b, --clean-backup-history  удалить также файлы истории копирования\n"
 
 #. +> 17
 #: pg_archivecleanup.c:264
-#, fuzzy, c-format
+#, c-format
 #| msgid "  -d             generate debug output (verbose mode)\n"
 msgid "  -d, --debug                 generate debug output (verbose mode)\n"
-msgstr "  -d             генерировать подробные сообщения (отладочный режим)\n"
+msgstr ""
+"  -d, --debug                 генерировать подробные сообщения (режим "
+"отладки)\n"
 
 #. +> 16 15 14 13 12
 #: pg_archivecleanup.c:255
@@ -172,7 +176,7 @@ msgstr "  -d             генерировать подробные сообщ�
 
 #. +> 17
 #: pg_archivecleanup.c:265
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "  -n             dry run, show the names of the files that would be "
 #| "removed\n"
@@ -181,8 +185,9 @@ msgid ""
 "would be\n"
 "                              removed\n"
 msgstr ""
-"  -n             холостой запуск, только показать имена файлов, которые "
-"будут удалены\n"
+"  -n, --dry-run               холостой запуск, только показать имена "
+"файлов,\n"
+"                              которые будут удалены\n"
 
 #. +> 16 15 14 13 12
 #: pg_archivecleanup.c:256
@@ -195,10 +200,10 @@ msgstr ""
 
 #. +> 17
 #: pg_archivecleanup.c:267
-#, fuzzy, c-format
+#, c-format
 #| msgid "  -V, --version  output version information, then exit\n"
 msgid "  -V, --version               output version information, then exit\n"
-msgstr "  -V, --version  показать версию и выйти\n"
+msgstr "  -V, --version               показать версию и выйти\n"
 
 #. +> 16 15 14 13 12
 #: pg_archivecleanup.c:257
@@ -206,6 +211,7 @@ msgstr "  -V, --version  показать версию и выйти\n"
 msgid "  -V, --version  output version information, then exit\n"
 msgstr "  -V, --version  показать версию и выйти\n"
 
+# well-spelled: РСШ
 #. +> 17
 #: pg_archivecleanup.c:268
 #, c-format
@@ -214,13 +220,16 @@ msgid ""
 "for\n"
 "                              clean up\n"
 msgstr ""
+"  -x, --strip-extension=РСШ   убрать это расширение прежде чем определять "
+"файлы,\n"
+"                              подлежащие удалению\n"
 
 #. +> 17
 #: pg_archivecleanup.c:270
-#, fuzzy, c-format
+#, c-format
 #| msgid "  -?, --help     show this help, then exit\n"
 msgid "  -?, --help                  show this help, then exit\n"
-msgstr "  -?, --help     показать эту справку и выйти\n"
+msgstr "  -?, --help                  показать эту справку и выйти\n"
 
 #. +> 16 15 14 13 12
 #: pg_archivecleanup.c:259

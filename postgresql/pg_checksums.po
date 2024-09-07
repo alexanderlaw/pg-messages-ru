@@ -1,16 +1,19 @@
-# Alexander Lakhin <a.lakhin@postgrespro.ru>, 2019, 2020, 2021, 2022.
+# Alexander Lakhin <a.lakhin@postgrespro.ru>, 2019, 2020, 2021, 2022, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: pg_verify_checksums (PostgreSQL) 11\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2024-09-02 09:31+0300\n"
-"PO-Revision-Date: 2022-09-05 13:34+0300\n"
+"PO-Revision-Date: 2024-09-04 13:35+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 21.12.3\n"
 
 #. +> 17 16 15 14 13 12
 #: ../../../src/common/logging.c:276
@@ -44,36 +47,36 @@ msgstr "подсказка: "
 
 #. +> 17
 #: ../../common/controldata_utils.c:97
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not open file \"%s\": %m"
 msgid "could not open file \"%s\" for reading: %m"
-msgstr "не удалось открыть файл \"%s\": %m"
+msgstr "не удалось открыть файл \"%s\" для чтения: %m"
 
 #. +> 17
 #: ../../common/controldata_utils.c:110
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not open file \"%s\": %m"
 msgid "could not read file \"%s\": %m"
-msgstr "не удалось открыть файл \"%s\": %m"
+msgstr "не удалось прочитать файл \"%s\": %m"
 
 #. +> 17
 #: ../../common/controldata_utils.c:119
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not read block %u in file \"%s\": read %d of %d"
 msgid "could not read file \"%s\": read %d of %zu"
-msgstr "не удалось прочитать блок %u в файле \"%s\" (прочитано байт: %d из %d)"
+msgstr "не удалось прочитать файл \"%s\" (прочитано байт: %d из %zu)"
 
 #. +> 17
 #: ../../common/controldata_utils.c:132 ../../common/controldata_utils.c:280
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not open file \"%s\": %m"
 msgid "could not close file \"%s\": %m"
-msgstr "не удалось открыть файл \"%s\": %m"
+msgstr "не удалось закрыть файл \"%s\": %m"
 
 #. +> 17
 #: ../../common/controldata_utils.c:168
 msgid "byte ordering mismatch"
-msgstr ""
+msgstr "несоответствие порядка байт"
 
 #. +> 17
 #: ../../common/controldata_utils.c:170
@@ -85,6 +88,10 @@ msgid ""
 "and\n"
 "the PostgreSQL installation would be incompatible with this data directory."
 msgstr ""
+"возможно несоответствие порядка байт\n"
+"Порядок байт в файле pg_control может не соответствовать используемому\n"
+"этой программой. В этом случае результаты будут неверными и\n"
+"установленный PostgreSQL будет несовместим с этим каталогом данных."
 
 #. +> 17 16 15 14 13 12
 #: ../../common/controldata_utils.c:230 ../../common/file_utils.c:70
@@ -96,38 +103,38 @@ msgstr "не удалось открыть файл \"%s\": %m"
 
 #. +> 17
 #: ../../common/controldata_utils.c:249
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not open file \"%s\": %m"
 msgid "could not write file \"%s\": %m"
-msgstr "не удалось открыть файл \"%s\": %m"
+msgstr "не удалось записать файл \"%s\": %m"
 
 #. +> 17
 #: ../../common/controldata_utils.c:268 ../../common/file_utils.c:418
 #: ../../common/file_utils.c:488
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not open file \"%s\": %m"
 msgid "could not fsync file \"%s\": %m"
-msgstr "не удалось открыть файл \"%s\": %m"
+msgstr "не удалось синхронизировать с ФС файл \"%s\": %m"
 
 #. +> 17
 #: ../../common/fe_memutils.c:35 ../../common/fe_memutils.c:75
 #: ../../common/fe_memutils.c:98 ../../common/fe_memutils.c:161
 #, c-format
 msgid "out of memory\n"
-msgstr ""
+msgstr "нехватка памяти\n"
 
 #. +> 17
 #: ../../common/fe_memutils.c:92 ../../common/fe_memutils.c:153
 #, c-format
 msgid "cannot duplicate null pointer (internal error)\n"
-msgstr ""
+msgstr "попытка дублирования нулевого указателя (внутренняя ошибка)\n"
 
 #. +> 17
 #: ../../common/file_utils.c:76
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not write block %u in file \"%s\": %m"
 msgid "could not synchronize file system for file \"%s\": %m"
-msgstr "не удалось записать блок %u в файл \"%s\": %m"
+msgstr "не удалось синхронизировать с ФС файл \"%s\": %m"
 
 #. +> 17 16 15 14 13 12
 #: ../../common/file_utils.c:120 ../../common/file_utils.c:566
@@ -141,7 +148,7 @@ msgstr "не удалось получить информацию о файле 
 #: ../../fe_utils/option_utils.c:99
 #, c-format
 msgid "this build does not support sync method \"%s\""
-msgstr ""
+msgstr "эта сборка программы не поддерживает метод синхронизации \"%s\""
 
 #. +> 17 16 15 14 13 12
 #: ../../common/file_utils.c:151 ../../common/file_utils.c:281
@@ -152,17 +159,17 @@ msgstr "не удалось открыть каталог \"%s\": %m"
 
 #. +> 17
 #: ../../common/file_utils.c:169 ../../common/file_utils.c:315
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not open directory \"%s\": %m"
 msgid "could not read directory \"%s\": %m"
-msgstr "не удалось открыть каталог \"%s\": %m"
+msgstr "не удалось прочитать каталог \"%s\": %m"
 
 #. +> 17
 #: ../../common/file_utils.c:498
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not open file \"%s\": %m"
 msgid "could not rename file \"%s\" to \"%s\": %m"
-msgstr "не удалось открыть файл \"%s\": %m"
+msgstr "не удалось переименовать файл \"%s\" в \"%s\": %m"
 
 #. +> 17 16 15
 #: ../../fe_utils/option_utils.c:69
@@ -180,7 +187,7 @@ msgstr "значение %s должно быть в диапазоне %d..%d"
 #: ../../fe_utils/option_utils.c:106
 #, c-format
 msgid "unrecognized sync method: %s"
-msgstr ""
+msgstr "нераспознанный метод синхронизации: %s"
 
 #. +> 17 16 15 14 13 12
 #: pg_checksums.c:70
@@ -270,7 +277,7 @@ msgstr "  -P, --progress           показывать прогресс опе�
 #: pg_checksums.c:81
 #, c-format
 msgid "      --sync-method=METHOD set method for syncing files to disk\n"
-msgstr ""
+msgstr "      --sync-method=МЕТОД  метод синхронизации файлов с ФС\n"
 
 #. +> 17 16 15 14 13 12
 #: pg_checksums.c:82

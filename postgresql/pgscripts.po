@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the PostgreSQL package.
 # Serguei A. Mokhov, <mokhov@cs.concordia.ca>, 2003-2004.
 # Oleg Bartunov <oleg@sai.msu.su>, 2004.
-# Alexander Lakhin <exclusion@gmail.com>, 2012-2017, 2019, 2020, 2021, 2022, 2023.
+# Alexander Lakhin <exclusion@gmail.com>, 2012-2017, 2019, 2020, 2021, 2022, 2023, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: pgscripts (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2024-09-02 09:31+0300\n"
-"PO-Revision-Date: 2023-11-03 10:36+0300\n"
+"PO-Revision-Date: 2024-09-05 08:25+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -66,56 +66,56 @@ msgstr "попытка дублирования нулевого указате�
 #. +> 17
 #: ../../common/file_utils.c:70 ../../common/file_utils.c:347
 #: ../../common/file_utils.c:406 ../../common/file_utils.c:480
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not connect to database %s: %s"
 msgid "could not open file \"%s\": %m"
-msgstr "не удалось подключиться к базе %s: %s"
+msgstr "не удалось открыть файл \"%s\": %m"
 
 #. +> 17
 #: ../../common/file_utils.c:76
 #, c-format
 msgid "could not synchronize file system for file \"%s\": %m"
-msgstr ""
+msgstr "не удалось синхронизировать с ФС файл \"%s\": %m"
 
 #. +> 17
 #: ../../common/file_utils.c:120 ../../common/file_utils.c:566
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not connect to database %s: %s"
 msgid "could not stat file \"%s\": %m"
-msgstr "не удалось подключиться к базе %s: %s"
+msgstr "не удалось получить информацию о файле \"%s\": %m"
 
 #. +> 17
 #: ../../common/file_utils.c:130 ../../common/file_utils.c:227
 #: ../../fe_utils/option_utils.c:99
 #, c-format
 msgid "this build does not support sync method \"%s\""
-msgstr ""
+msgstr "эта сборка программы не поддерживает метод синхронизации \"%s\""
 
 #. +> 17
 #: ../../common/file_utils.c:151 ../../common/file_utils.c:281
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not connect to database %s: %s"
 msgid "could not open directory \"%s\": %m"
-msgstr "не удалось подключиться к базе %s: %s"
+msgstr "не удалось открыть каталог \"%s\": %m"
 
 #. +> 17
 #: ../../common/file_utils.c:169 ../../common/file_utils.c:315
 #, c-format
 msgid "could not read directory \"%s\": %m"
-msgstr ""
+msgstr "не удалось прочитать каталог \"%s\": %m"
 
 #. +> 17
 #: ../../common/file_utils.c:418 ../../common/file_utils.c:488
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not connect to database %s: %s"
 msgid "could not fsync file \"%s\": %m"
-msgstr "не удалось подключиться к базе %s: %s"
+msgstr "не удалось синхронизировать с ФС файл \"%s\": %m"
 
 #. +> 17
 #: ../../common/file_utils.c:498
 #, c-format
 msgid "could not rename file \"%s\" to \"%s\": %m"
-msgstr ""
+msgstr "не удалось переименовать файл \"%s\" в \"%s\": %m"
 
 #. +> 17 16 15 14 13 12
 #: ../../common/username.c:43
@@ -177,7 +177,7 @@ msgstr "значение %s должно быть в диапазоне %d..%d"
 #: ../../fe_utils/option_utils.c:106
 #, c-format
 msgid "unrecognized sync method: %s"
-msgstr ""
+msgstr "нераспознанный метод синхронизации: %s"
 
 #. +> 17 16 15 14 13 12
 #: ../../fe_utils/parallel_slot.c:317
@@ -225,6 +225,8 @@ msgid ""
 "Cannot print table contents: number of cells %lld is equal to or exceeds "
 "maximum %lld.\n"
 msgstr ""
+"Вывести содержимое таблицы нельзя: число ячеек %lld достигло максимума "
+"%lld.\n"
 
 #. +> 17 16 15 14 13 12
 #: ../../fe_utils/print.c:3229
@@ -235,11 +237,11 @@ msgstr ""
 
 #. +> 17
 #: ../../fe_utils/print.c:3272
-#, fuzzy, c-format
+#, c-format
 #| msgid "Cannot add cell to table content: total cell count of %d exceeded.\n"
 msgid "Cannot add cell to table content: total cell count of %lld exceeded.\n"
 msgstr ""
-"Ошибка добавления ячейки в таблицу: превышен предел числа ячеек (%d).\n"
+"Ошибка добавления ячейки в таблицу: превышен предел числа ячеек (%lld).\n"
 
 #. +> 16 15 14 13 12
 #: ../../fe_utils/print.c:3258
@@ -277,12 +279,15 @@ msgstr "запрос: %s"
 #, c-format
 msgid "shell command argument contains a newline or carriage return: \"%s\"\n"
 msgstr ""
+"аргумент команды оболочки содержит символ новой строки или перевода каретки: "
+"\"%s\"\n"
 
 #. +> 17
 #: ../../fe_utils/string_utils.c:607
 #, c-format
 msgid "database name contains a newline or carriage return: \"%s\"\n"
 msgstr ""
+"имя базы данных содержит символ новой строки или перевода каретки: \"%s\"\n"
 
 #. +> 17 16 15
 #: clusterdb.c:114 clusterdb.c:133 createdb.c:149 createdb.c:168
@@ -450,7 +455,8 @@ msgstr ""
 #, c-format
 msgid "  -h, --host=HOSTNAME       database server host or socket directory\n"
 msgstr ""
-"  -h, --host=ИМЯ            имя сервера баз данных или каталог сокетов\n"
+"  -h, --host=ИМЯ            компьютер с сервером баз данных или каталог "
+"сокетов\n"
 
 #. +> 17 16 15 14 13 12
 #: clusterdb.c:288 createuser.c:450 dropdb.c:183 dropuser.c:181 vacuumdb.c:1180
@@ -641,11 +647,11 @@ msgstr "      --lc-ctype=ЛОКАЛЬ        параметр LC_CTYPE для б
 
 #. +> 17
 #: createdb.c:307
-#, fuzzy, c-format
+#, c-format
 #| msgid "      --icu-locale=LOCALE      ICU locale setting for the database\n"
 msgid ""
 "      --builtin-locale=LOCALE  builtin locale setting for the database\n"
-msgstr "      --icu-locale=ЛОКАЛЬ      локаль ICU для базы данных\n"
+msgstr "      --builtin-locale=ЛОКАЛЬ  имя встроенной локали для базы данных\n"
 
 #. +> 17 16 15
 #: createdb.c:308
@@ -663,7 +669,7 @@ msgstr ""
 
 #. +> 17
 #: createdb.c:310
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "      --locale-provider={libc|icu}\n"
 #| "                               locale provider for the database's default "
@@ -673,7 +679,7 @@ msgid ""
 "                               locale provider for the database's default "
 "collation\n"
 msgstr ""
-"      --locale-provider={libc|icu}\n"
+"      --locale-provider={builtin|libc|icu}\n"
 "                               провайдер локали для основного правила "
 "сортировки БД\n"
 
@@ -730,7 +736,8 @@ msgstr "  -?, --help                   показать эту справку и
 msgid ""
 "  -h, --host=HOSTNAME          database server host or socket directory\n"
 msgstr ""
-"  -h, --host=ИМЯ               имя сервера баз данных или каталог сокетов\n"
+"  -h, --host=ИМЯ               компьютер с сервером баз данных или каталог "
+"сокетов\n"
 
 #. +> 17 16 15 14 13 12
 #: createdb.c:319 reindexdb.c:887
@@ -1239,7 +1246,8 @@ msgstr "  -?, --help               показать эту справку и в�
 #, c-format
 msgid "  -h, --host=HOSTNAME      database server host or socket directory\n"
 msgstr ""
-"  -h, --host=ИМЯ           имя сервера баз данных или каталог сокетов\n"
+"  -h, --host=ИМЯ           компьютер с сервером баз данных или каталог "
+"сокетов\n"
 
 #. +> 17 16 15 14 13 12
 #: pg_isready.c:237

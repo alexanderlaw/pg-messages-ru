@@ -5,13 +5,13 @@
 # Serguei A. Mokhov <mokhov@cs.concordia.ca>, 2004-2005.
 # Sergey Burladyan <eshkinkot@gmail.com>, 2009, 2012.
 # Andrey Sudnik <sudnikand@gmail.com>, 2010.
-# Alexander Lakhin <exclusion@gmail.com>, 2012-2016, 2017, 2019, 2020, 2021, 2023.
+# Alexander Lakhin <exclusion@gmail.com>, 2012-2016, 2017, 2019, 2020, 2021, 2023, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: pg_config (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2024-09-02 09:31+0300\n"
-"PO-Revision-Date: 2023-08-29 10:19+0300\n"
+"PO-Revision-Date: 2024-09-04 13:45+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -86,23 +86,23 @@ msgstr "не удалось преобразовать относительны�
 
 #. +> 17
 #: ../../common/exec.c:382
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not change directory to \"%s\": %m"
 msgid "could not execute command \"%s\": %m"
-msgstr "не удалось перейти в каталог \"%s\": %m"
+msgstr "не удалось выполнить команду \"%s\": %m"
 
 #. +> 17
 #: ../../common/exec.c:394
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not read binary \"%s\": %m"
 msgid "could not read from command \"%s\": %m"
-msgstr "не удалось прочитать исполняемый файл \"%s\": %m"
+msgstr "не удалось прочитать вывод команды \"%s\": %m"
 
 #. +> 17
 #: ../../common/exec.c:397
 #, c-format
 msgid "no data was returned by command \"%s\""
-msgstr ""
+msgstr "команда \"%s\" не выдала данные"
 
 #. +> 17 16 15 14
 #: ../../common/exec.c:424
@@ -124,16 +124,16 @@ msgstr "нехватка памяти"
 #. +> 17
 #: ../../common/fe_memutils.c:35 ../../common/fe_memutils.c:75
 #: ../../common/fe_memutils.c:98 ../../common/fe_memutils.c:161
-#, fuzzy, c-format
+#, c-format
 #| msgid "out of memory"
 msgid "out of memory\n"
-msgstr "нехватка памяти"
+msgstr "нехватка памяти\n"
 
 #. +> 17
 #: ../../common/fe_memutils.c:92 ../../common/fe_memutils.c:153
 #, c-format
 msgid "cannot duplicate null pointer (internal error)\n"
-msgstr ""
+msgstr "попытка дублирования нулевого указателя (внутренняя ошибка)\n"
 
 #. +> 17 16 15 14 13 12
 #: pg_config.c:74

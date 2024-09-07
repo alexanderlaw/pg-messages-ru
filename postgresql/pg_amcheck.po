@@ -1,16 +1,19 @@
-# Alexander Lakhin <a.lakhin@postgrespro.ru>, 2021, 2022.
+# Alexander Lakhin <a.lakhin@postgrespro.ru>, 2021, 2022, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: pg_amcheck (PostgreSQL) 14\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2024-09-02 09:31+0300\n"
-"PO-Revision-Date: 2022-09-05 13:33+0300\n"
+"PO-Revision-Date: 2024-09-05 08:23+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Lokalize 21.12.3\n"
 
 #. +> 17 16 15 14
 #: ../../../src/common/logging.c:276
@@ -47,80 +50,80 @@ msgstr "подсказка: "
 #: ../../common/fe_memutils.c:98 ../../common/fe_memutils.c:161
 #, c-format
 msgid "out of memory\n"
-msgstr ""
+msgstr "нехватка памяти\n"
 
 #. +> 17
 #: ../../common/fe_memutils.c:92 ../../common/fe_memutils.c:153
 #, c-format
 msgid "cannot duplicate null pointer (internal error)\n"
-msgstr ""
+msgstr "попытка дублирования нулевого указателя (внутренняя ошибка)\n"
 
 #. +> 17
 #: ../../common/file_utils.c:70 ../../common/file_utils.c:347
 #: ../../common/file_utils.c:406 ../../common/file_utils.c:480
 #, c-format
 msgid "could not open file \"%s\": %m"
-msgstr ""
+msgstr "не удалось открыть файл \"%s\": %m"
 
 #. +> 17
 #: ../../common/file_utils.c:76
 #, c-format
 msgid "could not synchronize file system for file \"%s\": %m"
-msgstr ""
+msgstr "не удалось синхронизировать с ФС файл \"%s\": %m"
 
 #. +> 17
 #: ../../common/file_utils.c:120 ../../common/file_utils.c:566
 #, c-format
 msgid "could not stat file \"%s\": %m"
-msgstr ""
+msgstr "не удалось получить информацию о файле \"%s\": %m"
 
 #. +> 17
 #: ../../common/file_utils.c:130 ../../common/file_utils.c:227
 #: ../../fe_utils/option_utils.c:99
 #, c-format
 msgid "this build does not support sync method \"%s\""
-msgstr ""
+msgstr "эта сборка программы не поддерживает метод синхронизации \"%s\""
 
 #. +> 17
 #: ../../common/file_utils.c:151 ../../common/file_utils.c:281
 #, c-format
 msgid "could not open directory \"%s\": %m"
-msgstr ""
+msgstr "не удалось открыть каталог \"%s\": %m"
 
 #. +> 17
 #: ../../common/file_utils.c:169 ../../common/file_utils.c:315
 #, c-format
 msgid "could not read directory \"%s\": %m"
-msgstr ""
+msgstr "не удалось прочитать каталог \"%s\": %m"
 
 #. +> 17
 #: ../../common/file_utils.c:418 ../../common/file_utils.c:488
 #, c-format
 msgid "could not fsync file \"%s\": %m"
-msgstr ""
+msgstr "не удалось синхронизировать с ФС файл \"%s\": %m"
 
 #. +> 17
 #: ../../common/file_utils.c:498
 #, c-format
 msgid "could not rename file \"%s\" to \"%s\": %m"
-msgstr ""
+msgstr "не удалось переименовать файл \"%s\" в \"%s\": %m"
 
 #. +> 17
 #: ../../common/username.c:43
 #, c-format
 msgid "could not look up effective user ID %ld: %s"
-msgstr ""
+msgstr "выяснить эффективный идентификатор пользователя (%ld) не удалось: %s"
 
 #. +> 17
 #: ../../common/username.c:45
 msgid "user does not exist"
-msgstr ""
+msgstr "пользователь не существует"
 
 #. +> 17
 #: ../../common/username.c:60
 #, c-format
 msgid "user name lookup failure: error code %lu"
-msgstr ""
+msgstr "распознать имя пользователя не удалось (код ошибки: %lu)"
 
 #. +> 17 16 15 14
 #: ../../fe_utils/cancel.c:186 ../../fe_utils/cancel.c:235
@@ -160,32 +163,32 @@ msgstr "значение %s должно быть в диапазоне %d..%d"
 #: ../../fe_utils/option_utils.c:106
 #, c-format
 msgid "unrecognized sync method: %s"
-msgstr ""
+msgstr "нераспознанный метод синхронизации: %s"
 
 #. +> 17
 #: ../../fe_utils/parallel_slot.c:317
 #, c-format
 msgid "too many jobs for this platform: %d"
-msgstr ""
+msgstr "слишком много заданий для этой платформы: %d"
 
 #. +> 17
 #: ../../fe_utils/parallel_slot.c:326
 #, c-format
 msgid "socket file descriptor out of range for select(): %d"
-msgstr ""
+msgstr "дескриптор файла сокета вне диапазона, допустимого для select(): %d"
 
 #. +> 17
 #: ../../fe_utils/parallel_slot.c:328
 #, c-format
 msgid "Try fewer jobs."
-msgstr ""
+msgstr "Попробуйте уменьшить количество заданий."
 
 #. +> 17
 #: ../../fe_utils/parallel_slot.c:553
-#, fuzzy, c-format
+#, c-format
 #| msgid "error sending command to database \"%s\": %s"
 msgid "processing of database \"%s\" failed: %s"
-msgstr "ошибка передачи команды базе \"%s\": %s"
+msgstr "ошибка при обработке базы \"%s\": %s"
 
 #. +> 17 16 15 14
 #: ../../fe_utils/query_utils.c:33 ../../fe_utils/query_utils.c:58
@@ -213,12 +216,15 @@ msgstr "запрос: %s"
 #, c-format
 msgid "shell command argument contains a newline or carriage return: \"%s\"\n"
 msgstr ""
+"аргумент команды оболочки содержит символ новой строки или перевода каретки: "
+"\"%s\"\n"
 
 #. +> 17
 #: ../../fe_utils/string_utils.c:607
 #, c-format
 msgid "database name contains a newline or carriage return: \"%s\"\n"
 msgstr ""
+"имя базы данных содержит символ новой строки или перевода каретки: \"%s\"\n"
 
 #. +> 14
 #: pg_amcheck.c:330
@@ -320,7 +326,7 @@ msgstr "база \"%s\": используется amcheck версии \"%s\" в
 #: pg_amcheck.c:624
 #, c-format
 msgid "option %s is not supported by amcheck version %s"
-msgstr ""
+msgstr "параметр %s не поддерживается версией amcheck %s"
 
 #. +> 17 16 15 14
 #: pg_amcheck.c:650
@@ -648,15 +654,15 @@ msgstr ""
 
 #. +> 17
 #: pg_amcheck.c:1208
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "      --parent-check              check index parent/child relationships\n"
 msgid ""
 "      --checkunique               check unique constraint if index is "
 "unique\n"
 msgstr ""
-"      --parent-check              проверить связи родитель/потомок в "
-"индексах\n"
+"      --checkunique               проверить ограничение уникальности для "
+"уникальных индексов\n"
 
 #. +> 17 16 15 14
 #: pg_amcheck.c:1209
@@ -702,8 +708,8 @@ msgstr ""
 msgid ""
 "  -h, --host=HOSTNAME             database server host or socket directory\n"
 msgstr ""
-"  -h, --host=ИМЯ                  имя сервера баз данных или каталог "
-"сокетов\n"
+"  -h, --host=ИМЯ                  компьютер с сервером баз данных или "
+"каталог сокетов\n"
 
 #. +> 17 16 15 14
 #: pg_amcheck.c:1214

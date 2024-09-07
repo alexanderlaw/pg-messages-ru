@@ -1,13 +1,13 @@
 # Russian message translation file for pg_rewind
 # Copyright (C) 2015-2016 PostgreSQL Global Development Group
 # This file is distributed under the same license as the PostgreSQL package.
-# Alexander Lakhin <exclusion@gmail.com>, 2015-2017, 2018, 2019, 2020, 2021, 2022, 2023.
+# Alexander Lakhin <exclusion@gmail.com>, 2015-2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: pg_rewind (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2024-09-02 09:31+0300\n"
-"PO-Revision-Date: 2023-08-30 15:22+0300\n"
+"PO-Revision-Date: 2024-09-07 13:07+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -77,7 +77,7 @@ msgstr "не удалось закрыть файл \"%s\": %m"
 #. +> 17
 #: ../../common/controldata_utils.c:168
 msgid "byte ordering mismatch"
-msgstr ""
+msgstr "несоответствие порядка байт"
 
 #. +> 17
 #: ../../common/controldata_utils.c:170
@@ -89,6 +89,10 @@ msgid ""
 "and\n"
 "the PostgreSQL installation would be incompatible with this data directory."
 msgstr ""
+"возможно несоответствие порядка байт\n"
+"Порядок байт в файле pg_control может не соответствовать используемому\n"
+"этой программой. В этом случае результаты будут неверными и\n"
+"установленный PostgreSQL будет несовместим с этим каталогом данных."
 
 #. +> 17 16 15 14 13 12
 #: ../../common/controldata_utils.c:230 ../../common/file_utils.c:70
@@ -108,10 +112,10 @@ msgstr "не удалось записать файл \"%s\": %m"
 #. +> 17
 #: ../../common/controldata_utils.c:268 ../../common/file_utils.c:418
 #: ../../common/file_utils.c:488
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not stat file \"%s\": %m"
 msgid "could not fsync file \"%s\": %m"
-msgstr "не удалось получить информацию о файле \"%s\": %m"
+msgstr "не удалось синхронизировать с ФС файл \"%s\": %m"
 
 #. +> 17 16 15 14 13 12
 #: ../../common/fe_memutils.c:35 ../../common/fe_memutils.c:75
@@ -128,10 +132,10 @@ msgstr "попытка дублирования нулевого указате�
 
 #. +> 17
 #: ../../common/file_utils.c:76
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not write to file \"%s\": %m"
 msgid "could not synchronize file system for file \"%s\": %m"
-msgstr "не удалось записать в файл \"%s\": %m"
+msgstr "не удалось синхронизировать с ФС файл \"%s\": %m"
 
 #. +> 17 16 15 14 13 12
 #: ../../common/file_utils.c:120 ../../common/file_utils.c:566
@@ -145,7 +149,7 @@ msgstr "не удалось получить информацию о файле 
 #: ../../fe_utils/option_utils.c:99
 #, c-format
 msgid "this build does not support sync method \"%s\""
-msgstr ""
+msgstr "эта сборка программы не поддерживает метод синхронизации \"%s\""
 
 #. +> 17 16 15 14 13 12
 #: ../../common/file_utils.c:151 ../../common/file_utils.c:281 file_ops.c:388
@@ -161,10 +165,10 @@ msgstr "не удалось прочитать каталог \"%s\": %m"
 
 #. +> 17
 #: ../../common/file_utils.c:498
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not truncate file \"%s\" to %u: %m"
 msgid "could not rename file \"%s\" to \"%s\": %m"
-msgstr "не удалось обрезать файл \"%s\" до нужного размера (%u): %m"
+msgstr "не удалось переименовать файл \"%s\" в \"%s\": %m"
 
 #. +> 17 16
 #: ../../common/percentrepl.c:79 ../../common/percentrepl.c:118
@@ -264,10 +268,10 @@ msgstr "не удалось открыть файл \"%s\", восстановл
 
 #. +> 17
 #: ../../fe_utils/archive.c:98
-#, fuzzy, c-format
+#, c-format
 #| msgid "restore_command failed: %s"
 msgid "\"restore_command\" failed: %s"
-msgstr "ошибка при выполнении restore_command: %s"
+msgstr "ошибка при выполнении \"restore_command\": %s"
 
 #. +> 16 15 14 13
 #: ../../fe_utils/archive.c:98
@@ -283,22 +287,22 @@ msgstr "восстановить файл \"%s\" из архива не удал
 
 #. +> 17
 #: ../../fe_utils/option_utils.c:69
-#, fuzzy, c-format
+#, c-format
 #| msgid "invalid value for parameter \"%s\": \"%s\""
 msgid "invalid value \"%s\" for option %s"
-msgstr "неверное значение для параметра \"%s\": \"%s\""
+msgstr "неверное значение \"%s\" для параметра %s"
 
 #. +> 17
 #: ../../fe_utils/option_utils.c:76
 #, c-format
 msgid "%s must be in range %d..%d"
-msgstr ""
+msgstr "значение %s должно быть в диапазоне %d..%d"
 
 #. +> 17
 #: ../../fe_utils/option_utils.c:106
 #, c-format
 msgid "unrecognized sync method: %s"
-msgstr ""
+msgstr "нераспознанный метод синхронизации: %s"
 
 #. +> 17 16 15 14 13 12
 #: ../../fe_utils/recovery_gen.c:39 ../../fe_utils/recovery_gen.c:50
@@ -325,12 +329,15 @@ msgstr "не удалось создать файл \"%s\": %m"
 #, c-format
 msgid "shell command argument contains a newline or carriage return: \"%s\"\n"
 msgstr ""
+"аргумент команды оболочки содержит символ новой строки или перевода каретки: "
+"\"%s\"\n"
 
 #. +> 17
 #: ../../fe_utils/string_utils.c:607
 #, c-format
 msgid "database name contains a newline or carriage return: \"%s\"\n"
 msgstr ""
+"имя базы данных содержит символ новой строки или перевода каретки: \"%s\"\n"
 
 #. +> 17 16 15 14 13 12
 #: file_ops.c:67
@@ -507,10 +514,10 @@ msgstr "исходный сервер должен выйти из режима 
 
 #. +> 17
 #: libpq_source.c:131
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not clear search_path: %s"
 msgid "could not clear \"search_path\": %s"
-msgstr "не удалось очистить search_path: %s"
+msgstr "не удалось очистить \"search_path\": %s"
 
 #. +> 16 15 14 13 12
 #: libpq_source.c:130
@@ -520,10 +527,10 @@ msgstr "не удалось очистить search_path: %s"
 
 #. +> 17
 #: libpq_source.c:142
-#, fuzzy, c-format
+#, c-format
 #| msgid "full_page_writes must be enabled in the source server"
 msgid "\"full_page_writes\" must be enabled in the source server"
-msgstr "на исходном сервере должен быть включён режим full_page_writes"
+msgstr "на исходном сервере должен быть включён режим \"full_page_writes\""
 
 #. +> 16 15 14 13 12
 #: libpq_source.c:141
@@ -602,7 +609,7 @@ msgstr "не удалось отправить данные COPY: %s"
 #: libpq_fetch.c:500
 #, c-format
 msgid "could not send end-of-COPY: %s"
-msgstr "не удалось отправить сообщение о завершении копирования: %s"
+msgstr "не удалось отправить сообщение \"конец COPY\": %s"
 
 #. +> 17 16 15 14 13 12
 #: libpq_source.c:480
@@ -823,7 +830,7 @@ msgstr "Параметры:\n"
 
 #. +> 17
 #: pg_rewind.c:97
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "  -c, --restore-target-wal       use restore_command in target "
 #| "configuration to\n"
@@ -834,7 +841,8 @@ msgid ""
 "                                 retrieve WAL files from archives\n"
 msgstr ""
 "  -c, --restore-target-wal       использовать для получения файлов WAL из\n"
-"                                 архива команду restore_command из целевой\n"
+"                                 архивов команду \"restore_command\" из "
+"целевой\n"
 "                                 конфигурации\n"
 
 #. +> 16 15 14 13
@@ -940,7 +948,7 @@ msgstr ""
 #: pg_rewind.c:112
 #, c-format
 msgid "      --sync-method=METHOD       set method for syncing files to disk\n"
-msgstr ""
+msgstr "      --sync-method=МЕТОД        метод синхронизации файлов с ФС\n"
 
 #. +> 17 16 15 14 13 12
 #: pg_rewind.c:113
@@ -1041,7 +1049,7 @@ msgstr "Запускать %s нужно от имени суперпользо�
 #: pg_rewind.c:293
 #, c-format
 msgid "could not read permissions of directory \"%s\": %m"
-msgstr "не удалось считать права на каталог \"%s\": %m"
+msgstr "не удалось прочитать права на каталог \"%s\": %m"
 
 #. +> 17 16 15 14 13 12
 #: pg_rewind.c:311
@@ -1217,13 +1225,13 @@ msgstr "неверный размер управляющего файла (%d), 
 #, c-format
 msgid "invalid WAL segment size in control file (%d byte)"
 msgid_plural "invalid WAL segment size in control file (%d bytes)"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "управляющий файл содержит неверный размер сегмента WAL (%d Б)"
+msgstr[1] "управляющий файл содержит неверный размер сегмента WAL (%d Б)"
+msgstr[2] "управляющий файл содержит неверный размер сегмента WAL (%d Б)"
 
 #. +> 17
 #: pg_rewind.c:1038
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "WAL segment size must be a power of two between 1 MB and 1 GB, but the "
 #| "control file specifies %d byte"
@@ -1232,8 +1240,7 @@ msgstr[2] ""
 #| "control file specifies %d bytes"
 msgid "The WAL segment size must be a power of two between 1 MB and 1 GB."
 msgstr ""
-"размер сегмента WAL должен задаваться степенью 2 в интервале от 1 МБ до 1 "
-"ГБ, но в управляющем файле указано значение: %d"
+"Размер сегмента WAL должен задаваться степенью 2 в интервале от 1 МБ до 1 ГБ."
 
 #. +> 16 15 14 13 12
 #: pg_rewind.c:1024
@@ -1296,17 +1303,17 @@ msgstr ""
 
 #. +> 17
 #: pg_rewind.c:1107
-#, fuzzy, c-format
+#, c-format
 #| msgid "restore_command is not set in the target cluster"
 msgid "could not read restore_command from target cluster"
-msgstr "команда restore_command в целевом кластере не определена"
+msgstr "не удалось прочитать параметр \"restore_command\" в целевом кластере"
 
 #. +> 17
 #: pg_rewind.c:1112
-#, fuzzy, c-format
+#, c-format
 #| msgid "restore_command is not set in the target cluster"
 msgid "\"restore_command\" is not set in the target cluster"
-msgstr "команда restore_command в целевом кластере не определена"
+msgstr "параметр \"restore_command\" в целевом кластере не определён"
 
 #. +> 16 15 14 13
 #: pg_rewind.c:1099
