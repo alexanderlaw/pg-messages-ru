@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: psql (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2024-09-07 17:09+0300\n"
+"POT-Creation-Date: 2024-09-19 11:30+0300\n"
 "PO-Revision-Date: 2024-09-07 06:49+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -431,7 +431,7 @@ msgstr ""
 #. +> 17 16 15 14 13 12
 #: command.c:1368 command.c:2157 command.c:3454 command.c:3652 command.c:5877
 #: common.c:221 common.c:270 common.c:440 common.c:1142 common.c:1160
-#: common.c:1228 common.c:1347 common.c:1385 common.c:1482 common.c:1548
+#: common.c:1228 common.c:1340 common.c:1378 common.c:1475 common.c:1541
 #: copy.c:486 copy.c:722 large_obj.c:157 large_obj.c:192 large_obj.c:254
 #: startup.c:304
 #, c-format
@@ -1360,12 +1360,12 @@ msgstr ""
 "Сервер (версия %s) не поддерживает точки сохранения для ON_ERROR_ROLLBACK."
 
 #. +> 17 16 15 14 13 12
-#: common.c:1369 describe.c:2025
+#: common.c:1362 describe.c:2025
 msgid "Column"
 msgstr "Столбец"
 
 #. +> 17 16 15 14 13 12
-#: common.c:1370 describe.c:169 describe.c:355 describe.c:373 describe.c:1043
+#: common.c:1363 describe.c:169 describe.c:355 describe.c:373 describe.c:1043
 #: describe.c:1201 describe.c:1731 describe.c:1755 describe.c:2026
 #: describe.c:3956 describe.c:4167 describe.c:4404 describe.c:4564
 #: describe.c:5829
@@ -1373,13 +1373,13 @@ msgid "Type"
 msgstr "Тип"
 
 #. +> 17 16 15 14 13 12
-#: common.c:1419
+#: common.c:1412
 #, c-format
 msgid "The command has no result, or the result has no columns.\n"
 msgstr "Команда не выдала результат, либо в результате нет столбцов.\n"
 
 #. +> 17
-#: common.c:1511
+#: common.c:1504
 #, c-format
 msgid "fetching results in chunked mode failed"
 msgstr "получить результаты в блочном режиме не удалось"

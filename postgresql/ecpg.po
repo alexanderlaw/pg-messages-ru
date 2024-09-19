@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ecpg (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2024-09-07 17:09+0300\n"
+"POT-Creation-Date: 2024-09-19 11:29+0300\n"
 "PO-Revision-Date: 2024-09-04 07:22+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -502,13 +502,13 @@ msgid "type name \"string\" is reserved in Informix mode"
 msgstr "имя типа \"string\" в режиме Informix зарезервировано"
 
 #. +> 17 16 15 14 13 12
-#: preproc.y:552 preproc.y:19026
+#: preproc.y:552 preproc.y:19034
 #, c-format
 msgid "type \"%s\" is already defined"
 msgstr "тип \"%s\" уже определён"
 
 #. +> 17 16 15 14 13 12
-#: preproc.y:577 preproc.y:19661 preproc.y:19983 variable.c:625
+#: preproc.y:577 preproc.y:19669 preproc.y:19991 variable.c:625
 #, c-format
 msgid "multidimensional arrays for simple data types are not supported"
 msgstr "многомерные массивы с простыми типами данных не поддерживаются"
@@ -562,8 +562,8 @@ msgid "AT option not allowed in WHENEVER statement"
 msgstr "оператор WHENEVER с параметром AT не поддерживается"
 
 #. +> 17 16 15 14 13 12
-#: preproc.y:2339 preproc.y:2626 preproc.y:4349 preproc.y:5013 preproc.y:5883
-#: preproc.y:6087 preproc.y:6188 preproc.y:12452
+#: preproc.y:2339 preproc.y:2626 preproc.y:4349 preproc.y:5021 preproc.y:5891
+#: preproc.y:6095 preproc.y:6196 preproc.y:12460
 #, c-format
 msgid "unsupported feature will be passed to server"
 msgstr "неподдерживаемая функция будет передана серверу"
@@ -581,33 +581,33 @@ msgid "COPY FROM STDIN is not implemented"
 msgstr "операция COPY FROM STDIN не реализована"
 
 #. +> 17 16 15 14
-#: preproc.y:10436 preproc.y:18495
+#: preproc.y:10444 preproc.y:18503
 #, c-format
 msgid "\"database\" cannot be used as cursor name in INFORMIX mode"
 msgstr ""
 "в режиме INFORMIX нельзя использовать \"database\" в качестве имени курсора"
 
 #. +> 17 16 15 14 13 12
-#: preproc.y:10443 preproc.y:18505
+#: preproc.y:10451 preproc.y:18513
 #, c-format
 msgid "using variable \"%s\" in different declare statements is not supported"
 msgstr ""
 "использование переменной \"%s\" в разных операторах DECLARE не поддерживается"
 
 #. +> 17 16 15 14 13 12
-#: preproc.y:10445 preproc.y:18507
+#: preproc.y:10453 preproc.y:18515
 #, c-format
 msgid "cursor \"%s\" is already defined"
 msgstr "курсор \"%s\" уже определён"
 
 #. +> 17 16 15 14 13 12
-#: preproc.y:10919
+#: preproc.y:10927
 #, c-format
 msgid "no longer supported LIMIT #,# syntax passed to server"
 msgstr "не поддерживаемое более предложение LIMIT #,# передано на сервер"
 
 #. +> 15 14 13 12
-#: preproc.y:11039 preproc.y:11046
+#: preproc.y:11047 preproc.y:11054
 #, c-format
 msgid "subquery in FROM must have an alias"
 msgstr "подзапрос во FROM должен иметь псевдоним"
@@ -619,19 +619,19 @@ msgid "using unsupported DESCRIBE statement"
 msgstr "используется неподдерживаемый оператор DESCRIBE"
 
 #. +> 17 16 15 14 13 12
-#: preproc.y:18187 preproc.y:18194
+#: preproc.y:18195 preproc.y:18202
 #, c-format
 msgid "CREATE TABLE AS cannot specify INTO"
 msgstr "в CREATE TABLE AS нельзя указать INTO"
 
 #. +> 17 16 15 14 13 12
-#: preproc.y:18230
+#: preproc.y:18238
 #, c-format
 msgid "expected \"@\", found \"%s\""
 msgstr "ожидался знак \"@\", но на этом месте \"%s\""
 
 #. +> 17 16 15 14 13 12
-#: preproc.y:18242
+#: preproc.y:18250
 #, c-format
 msgid ""
 "only protocols \"tcp\" and \"unix\" and database type \"postgresql\" are "
@@ -641,105 +641,105 @@ msgstr ""
 "\"postgresql\""
 
 #. +> 17 16 15 14 13 12
-#: preproc.y:18245
+#: preproc.y:18253
 #, c-format
 msgid "expected \"://\", found \"%s\""
 msgstr "ожидалось \"://\", но на этом месте \"%s\""
 
 #. +> 17 16 15 14 13 12
-#: preproc.y:18250
+#: preproc.y:18258
 #, c-format
 msgid "Unix-domain sockets only work on \"localhost\" but not on \"%s\""
 msgstr "Unix-сокеты работают только с \"localhost\", но не с адресом \"%s\""
 
 #. +> 17 16 15 14 13 12
-#: preproc.y:18276
+#: preproc.y:18284
 #, c-format
 msgid "expected \"postgresql\", found \"%s\""
 msgstr "ожидался тип \"postgresql\", но на этом месте \"%s\""
 
 #. +> 17 16 15 14 13 12
-#: preproc.y:18279
+#: preproc.y:18287
 #, c-format
 msgid "invalid connection type: %s"
 msgstr "неверный тип подключения: %s"
 
 #. +> 17 16 15 14 13 12
-#: preproc.y:18288
+#: preproc.y:18296
 #, c-format
 msgid "expected \"@\" or \"://\", found \"%s\""
 msgstr "ожидалось \"@\" или \"://\", но на этом месте \"%s\""
 
 #. +> 17 16 15 14 13 12
-#: preproc.y:18363 preproc.y:18381
+#: preproc.y:18371 preproc.y:18389
 #, c-format
 msgid "invalid data type"
 msgstr "неверный тип данных"
 
 #. +> 17 16 15 14 13 12
-#: preproc.y:18392 preproc.y:18409
+#: preproc.y:18400 preproc.y:18417
 #, c-format
 msgid "incomplete statement"
 msgstr "неполный оператор"
 
 #. +> 17 16 15 14 13 12
-#: preproc.y:18395 preproc.y:18412
+#: preproc.y:18403 preproc.y:18420
 #, c-format
 msgid "unrecognized token \"%s\""
 msgstr "нераспознанное ключевое слово \"%s\""
 
 #. +> 17 16 15 14
-#: preproc.y:18457
+#: preproc.y:18465
 #, c-format
 msgid "name \"%s\" is already declared"
 msgstr "имя \"%s\" уже объявлено"
 
 #. +> 17 16 15 14 13 12
-#: preproc.y:18746
+#: preproc.y:18754
 #, c-format
 msgid "only data types numeric and decimal have precision/scale argument"
 msgstr ""
 "точность/масштаб можно указать только для типов данных numeric и decimal"
 
 #. +> 17 16 15 14 13 12
-#: preproc.y:18845
+#: preproc.y:18853
 #, c-format
 msgid "interval specification not allowed here"
 msgstr "определение интервала здесь не допускается"
 
 #. +> 17 16 15 14 13 12
-#: preproc.y:19001 preproc.y:19053
+#: preproc.y:19009 preproc.y:19061
 #, c-format
 msgid "too many levels in nested structure/union definition"
 msgstr "слишком много уровней в определении вложенной структуры/объединения"
 
 #. +> 17 16 15 14 13 12
-#: preproc.y:19176
+#: preproc.y:19184
 #, c-format
 msgid "pointers to varchar are not implemented"
 msgstr "указатели на varchar не реализованы"
 
 #. +> 17 16 15 14 13 12
-#: preproc.y:19627
+#: preproc.y:19635
 #, c-format
 msgid "initializer not allowed in EXEC SQL VAR command"
 msgstr "команда EXEC SQL VAR не может включать инициализатор"
 
 #. +> 17 16 15 14 13 12
-#: preproc.y:19941
+#: preproc.y:19949
 #, c-format
 msgid "arrays of indicators are not allowed on input"
 msgstr "массивы индикаторов на входе недопустимы"
 
 #. +> 17 16 15 14 13 12
-#: preproc.y:20128
+#: preproc.y:20136
 #, c-format
 msgid "operator not allowed in variable definition"
 msgstr "недопустимый оператор в определении переменной"
 
 #. translator: %s is typically the translation of "syntax error"
 #. +> 17 16 15 14 13 12
-#: preproc.y:20169
+#: preproc.y:20177
 #, c-format
 msgid "%s at or near \"%s\""
 msgstr "%s (примерное положение: \"%s\")"

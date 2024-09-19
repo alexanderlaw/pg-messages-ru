@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_dump (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2024-09-07 17:09+0300\n"
+"POT-Creation-Date: 2024-09-19 11:29+0300\n"
 "PO-Revision-Date: 2024-09-07 07:35+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -3080,14 +3080,14 @@ msgstr ""
 "данных; функция проигнорирована"
 
 #. +> 16 15 14 13 12
-#: pg_dump.c:17399
+#: pg_dump.c:17400
 #, c-format
 msgid "unexpected tgtype value: %d"
 msgstr "неожиданное значение tgtype: %d"
 
 #. +> 17 16 15
-#: pg_dump.c:4592 pg_dump.c:5150 pg_dump.c:12362 pg_dump.c:18246
-#: pg_dump.c:18248 pg_dump.c:18870
+#: pg_dump.c:4592 pg_dump.c:5150 pg_dump.c:12362 pg_dump.c:18247
+#: pg_dump.c:18249 pg_dump.c:18871
 #, c-format
 msgid "could not parse %s array"
 msgstr "не удалось разобрать массив %s"
@@ -3172,7 +3172,7 @@ msgid "schema with OID %u does not exist"
 msgstr "схема с OID %u не существует"
 
 #. +> 17 16 15 14 13 12
-#: pg_dump.c:7209 pg_dump.c:17617
+#: pg_dump.c:7209 pg_dump.c:17618
 #, c-format
 msgid ""
 "failed sanity check, parent table with OID %u of sequence with OID %u not "
@@ -3254,7 +3254,7 @@ msgid "invalid adnum value %d for table \"%s\""
 msgstr "неверное значение adnum (%d) в таблице \"%s\""
 
 #. +> 16 15 14 13 12
-#: pg_dump.c:17471
+#: pg_dump.c:17472
 #, c-format
 msgid "invalid argument string (%s) for trigger \"%s\" on table \"%s\""
 msgstr "неверная строка аргументов (%s) для триггера \"%s\" таблицы \"%s\""
@@ -3599,7 +3599,7 @@ msgid "unrecognized constraint type: %c"
 msgstr "нераспознанный тип ограничения: %c"
 
 #. +> 17 16 15 14 13 12
-#: pg_dump.c:17452 pg_dump.c:17681
+#: pg_dump.c:17452 pg_dump.c:17682
 #, c-format
 msgid "query to get data of sequence \"%s\" returned %d row (expected 1)"
 msgid_plural ""
@@ -3621,7 +3621,7 @@ msgid "unrecognized sequence type: %s"
 msgstr "нераспознанный тип последовательности: %s"
 
 #. +> 17 16 15 14 13 12
-#: pg_dump.c:17998
+#: pg_dump.c:17999
 #, c-format
 msgid ""
 "query to get rule \"%s\" for table \"%s\" failed: wrong number of rows "
@@ -3631,37 +3631,37 @@ msgstr ""
 "число строк"
 
 #. +> 17 16 15 14 13 12
-#: pg_dump.c:18151
+#: pg_dump.c:18152
 #, c-format
 msgid "could not find referenced extension %u"
 msgstr "не удалось найти упомянутое расширение %u"
 
 #. +> 17 16 15 14
-#: pg_dump.c:18250
+#: pg_dump.c:18251
 #, c-format
 msgid "mismatched number of configurations and conditions for extension"
 msgstr "конфигурации расширения не соответствуют условиям по количеству"
 
 #. +> 17 16 15 14 13 12
-#: pg_dump.c:18382
+#: pg_dump.c:18383
 #, c-format
 msgid "reading dependency data"
 msgstr "чтение информации о зависимостях"
 
 #. +> 17 16 15 14 13 12
-#: pg_dump.c:18468
+#: pg_dump.c:18469
 #, c-format
 msgid "no referencing object %u %u"
 msgstr "нет подчинённого объекта %u %u"
 
 #. +> 17 16 15 14 13 12
-#: pg_dump.c:18479
+#: pg_dump.c:18480
 #, c-format
 msgid "no referenced object %u %u"
 msgstr "нет вышестоящего объекта %u %u"
 
 #. +> 17
-#: pg_dump.c:18904 pg_dump.c:18942 pg_dumpall.c:1962 pg_restore.c:551
+#: pg_dump.c:18905 pg_dump.c:18943 pg_dumpall.c:1962 pg_restore.c:551
 #: pg_restore.c:597
 #, c-format
 msgid "%s filter for \"%s\" is not allowed"
