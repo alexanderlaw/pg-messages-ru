@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: initdb (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2024-11-02 08:23+0300\n"
-"PO-Revision-Date: 2024-09-07 06:49+0300\n"
+"PO-Revision-Date: 2024-11-02 08:27+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -393,10 +393,10 @@ msgstr "не удалось получить связь для каталога 
 
 #. +> 17 16
 #: initdb.c:369
-#, fuzzy, c-format
+#, c-format
 #| msgid "setlocale() failed"
 msgid "_wsetlocale() failed"
-msgstr "ошибка в setlocale()"
+msgstr "ошибка в _wsetlocale()"
 
 #. +> 17 16 15 14 13 12
 #: initdb.c:376
@@ -406,10 +406,10 @@ msgstr "ошибка в setlocale()"
 
 #. +> 17 16
 #: initdb.c:390
-#, fuzzy, c-format
+#, c-format
 #| msgid "failed to restore old locale \"%s\""
 msgid "failed to restore old locale"
-msgstr "не удалось восстановить старую локаль \"%s\""
+msgstr "не удалось восстановить старую локаль"
 
 #. +> 17 16 15 14 13 12
 #: initdb.c:393
@@ -695,7 +695,7 @@ msgstr "ок\n"
 #: initdb.c:2191 initdb.c:2237
 #, c-format
 msgid "locale name \"%s\" contains non-ASCII characters"
-msgstr ""
+msgstr "имя локали \"%s\" содержит не-ASCII символы"
 
 #. +> 17 16 15 14 13 12
 #: initdb.c:2217

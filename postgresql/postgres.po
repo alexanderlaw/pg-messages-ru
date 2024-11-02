@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2024-11-02 08:23+0300\n"
-"PO-Revision-Date: 2024-09-19 13:25+0300\n"
+"PO-Revision-Date: 2024-11-02 08:34+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -11734,7 +11734,7 @@ msgstr "условные правила DO INSTEAD не поддерживают
 
 #. +> 17 16 15 14 13 12
 #: commands/copyto.c:478
-#, fuzzy, c-format
+#, c-format
 #| msgid "DO ALSO rules are not supported for the COPY"
 msgid "DO ALSO rules are not supported for COPY"
 msgstr "правила DO ALSO не поддерживаются с COPY"
@@ -11755,7 +11755,7 @@ msgstr "COPY (SELECT INTO) не поддерживается"
 #: commands/copyto.c:499
 #, c-format
 msgid "COPY query must not be a utility command"
-msgstr ""
+msgstr "служебная команда в запросе COPY не допускается"
 
 #. +> 17 16 15 14 13 12
 #: commands/copyto.c:515
@@ -39264,10 +39264,10 @@ msgstr "значение перцентиля %g лежит не в диапаз
 
 #. +> 17 16
 #: utils/adt/pg_locale.c:326 utils/adt/pg_locale.c:358
-#, fuzzy, c-format
+#, c-format
 #| msgid "replication slot name \"%s\" contains invalid character"
 msgid "locale name \"%s\" contains non-ASCII characters"
-msgstr "имя слота репликации \"%s\" содержит недопустимый символ"
+msgstr "имя локали \"%s\" содержит не-ASCII символы"
 
 #. +> 15 14 13 12
 #: utils/adt/pg_locale.c:1231
