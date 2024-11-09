@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: pg_combinebackup (PostgreSQL) 17\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2024-11-09 07:48+0300\n"
-"PO-Revision-Date: 2024-09-07 11:39+0300\n"
+"PO-Revision-Date: 2024-11-09 08:04+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -1075,7 +1075,7 @@ msgstr "не удалось прочитать файл \"%s\" (прочитан
 #: reconstruct.c:339
 #, c-format
 msgid "full backup contains unexpected incremental file \"%s\""
-msgstr ""
+msgstr "полная копия содержит неожиданный инкрементальный файл \"%s\""
 
 #. +> 17
 #: reconstruct.c:423
