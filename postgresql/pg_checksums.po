@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_verify_checksums (PostgreSQL) 11\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2024-09-07 17:09+0300\n"
+"POT-Creation-Date: 2024-11-09 07:48+0300\n"
 "PO-Revision-Date: 2024-09-04 13:35+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -392,7 +392,7 @@ msgid "invalid segment number %d in file name \"%s\""
 msgstr "неверный номер сегмента %d в имени файла \"%s\""
 
 #. +> 14 13 12
-#: pg_checksums.c:504
+#: pg_checksums.c:500
 #, c-format
 msgid "invalid filenode specification, must be numeric: %s"
 msgstr "неверное указание файлового узла, требуется число: %s"
@@ -404,7 +404,7 @@ msgid "Try \"%s --help\" for more information."
 msgstr "Для дополнительной информации попробуйте \"%s --help\"."
 
 #. +> 14 13 12
-#: pg_checksums.c:522 pg_checksums.c:538 pg_checksums.c:548 pg_checksums.c:557
+#: pg_checksums.c:518 pg_checksums.c:534 pg_checksums.c:544 pg_checksums.c:553
 #, c-format
 msgid "Try \"%s --help\" for more information.\n"
 msgstr "Для дополнительной информации попробуйте \"%s --help\".\n"
@@ -456,7 +456,7 @@ msgstr ""
 "pg_checksums скомпилирована для размера блока %u."
 
 #. +> 14 13 12
-#: pg_checksums.c:579
+#: pg_checksums.c:575
 #, c-format
 msgid ""
 "The database cluster was initialized with block size %u, but pg_checksums "
@@ -502,7 +502,7 @@ msgid "Files scanned:   %lld\n"
 msgstr "Просканировано файлов: %lld\n"
 
 #. +> 14 13 12
-#: pg_checksums.c:640
+#: pg_checksums.c:636
 #, c-format
 msgid "Files scanned:  %s\n"
 msgstr "Просканировано файлов: %s\n"
@@ -514,7 +514,7 @@ msgid "Blocks scanned:  %lld\n"
 msgstr "Просканировано блоков: %lld\n"
 
 #. +> 14 13 12
-#: pg_checksums.c:641
+#: pg_checksums.c:637
 #, c-format
 msgid "Blocks scanned: %s\n"
 msgstr "Просканировано блоков: %s\n"
@@ -526,7 +526,7 @@ msgid "Bad checksums:  %lld\n"
 msgstr "Неверные контрольные суммы: %lld\n"
 
 #. +> 14 13 12
-#: pg_checksums.c:644
+#: pg_checksums.c:640
 #, c-format
 msgid "Bad checksums:  %s\n"
 msgstr "Неверные контрольные суммы: %s\n"

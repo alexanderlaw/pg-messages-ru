@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_rewind (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2024-09-07 17:09+0300\n"
+"POT-Creation-Date: 2024-11-09 07:49+0300\n"
 "PO-Revision-Date: 2024-09-07 13:07+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -419,7 +419,7 @@ msgid "symbolic link \"%s\" target is too long"
 msgstr "целевой путь символической ссылки \"%s\" слишком длинный"
 
 #. +> 15 14 13 12
-#: file_ops.c:464
+#: file_ops.c:460
 #, c-format
 msgid ""
 "\"%s\" is a symbolic link, but symbolic links are not supported on this "

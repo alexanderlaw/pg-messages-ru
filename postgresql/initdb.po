@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: initdb (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2024-11-02 08:23+0300\n"
+"POT-Creation-Date: 2024-11-09 07:48+0300\n"
 "PO-Revision-Date: 2024-11-02 08:27+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -394,7 +394,6 @@ msgstr "не удалось получить связь для каталога 
 #. +> 17 16
 #: initdb.c:369
 #, c-format
-#| msgid "setlocale() failed"
 msgid "_wsetlocale() failed"
 msgstr "ошибка в _wsetlocale()"
 
@@ -407,7 +406,6 @@ msgstr "ошибка в setlocale()"
 #. +> 17 16
 #: initdb.c:390
 #, c-format
-#| msgid "failed to restore old locale \"%s\""
 msgid "failed to restore old locale"
 msgstr "не удалось восстановить старую локаль"
 

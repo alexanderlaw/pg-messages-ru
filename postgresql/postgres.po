@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: postgres (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2024-11-02 08:23+0300\n"
+"POT-Creation-Date: 2024-11-09 07:49+0300\n"
 "PO-Revision-Date: 2024-11-02 08:34+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -1832,7 +1832,7 @@ msgid "attempted to delete invisible tuple"
 msgstr "попытка удаления невидимого кортежа"
 
 #. +> 17 16 15 14 13 12
-#: access/heap/heapam.c:3218 access/heap/heapam.c:6515 access/index/genam.c:818
+#: access/heap/heapam.c:3218 access/heap/heapam.c:6454 access/index/genam.c:818
 #, c-format
 msgid "cannot update tuples during a parallel operation"
 msgstr "изменять кортежи во время параллельных операций нельзя"
@@ -2949,42 +2949,42 @@ msgid "invalid MultiXactId: %u"
 msgstr "неверный MultiXactId: %u"
 
 #. +> 17 16 15 14 13 12
-#: access/transam/parallel.c:731 access/transam/parallel.c:850
+#: access/transam/parallel.c:744 access/transam/parallel.c:863
 #, c-format
 msgid "parallel worker failed to initialize"
 msgstr "не удалось инициализировать параллельный исполнитель"
 
 #. +> 17 16 15 14 13 12
-#: access/transam/parallel.c:732 access/transam/parallel.c:851
+#: access/transam/parallel.c:745 access/transam/parallel.c:864
 #, c-format
 msgid "More details may be available in the server log."
 msgstr "Дополнительная информация может быть в журнале сервера."
 
 #. +> 17 16 15 14 13 12
-#: access/transam/parallel.c:912
+#: access/transam/parallel.c:925
 #, c-format
 msgid "postmaster exited during a parallel transaction"
 msgstr "postmaster завершился в процессе параллельной транзакции"
 
 #. +> 17 16 15 14 13 12
-#: access/transam/parallel.c:1099
+#: access/transam/parallel.c:1112
 #, c-format
 msgid "lost connection to parallel worker"
 msgstr "потеряно подключение к параллельному исполнителю"
 
 #. +> 17 16 15 14 13 12
-#: access/transam/parallel.c:1155 access/transam/parallel.c:1157
+#: access/transam/parallel.c:1168 access/transam/parallel.c:1170
 msgid "parallel worker"
 msgstr "параллельный исполнитель"
 
 #. +> 17 16 15 14 13 12
-#: access/transam/parallel.c:1327 replication/logical/applyparallelworker.c:890
+#: access/transam/parallel.c:1340 replication/logical/applyparallelworker.c:890
 #, c-format
 msgid "could not map dynamic shared memory segment"
 msgstr "не удалось отобразить динамический сегмент разделяемой памяти"
 
 #. +> 17 16 15 14 13 12
-#: access/transam/parallel.c:1332 replication/logical/applyparallelworker.c:896
+#: access/transam/parallel.c:1345 replication/logical/applyparallelworker.c:896
 #, c-format
 msgid "invalid magic number in dynamic shared memory segment"
 msgstr "неверное магическое число в динамическом сегменте разделяемой памяти"
@@ -3623,13 +3623,13 @@ msgstr ""
 "идентификаторы транзакций не могут назначаться во время параллельных операций"
 
 #. +> 16 15 14 13 12
-#: access/transam/xact.c:4567
+#: access/transam/xact.c:4557
 #, c-format
 msgid "cannot start subtransactions during a parallel operation"
 msgstr "запускать подтранзакции во время параллельных операций нельзя"
 
 #. +> 16 15 14 13 12
-#: access/transam/xact.c:4635
+#: access/transam/xact.c:4625
 #, c-format
 msgid "cannot commit subtransactions during a parallel operation"
 msgstr "фиксировать подтранзакции во время параллельных операций нельзя"
@@ -3653,20 +3653,20 @@ msgid "cannot have more than 2^32-2 commands in a transaction"
 msgstr "в одной транзакции не может быть больше 2^32-2 команд"
 
 #. +> 17 16 15 14 13 12
-#: access/transam/xact.c:1674
+#: access/transam/xact.c:1664
 #, c-format
 msgid "maximum number of committed subtransactions (%d) exceeded"
 msgstr "превышен предел числа зафиксированных подтранзакций (%d)"
 
 #. +> 17 16 15 14 13 12
-#: access/transam/xact.c:2571
+#: access/transam/xact.c:2561
 #, c-format
 msgid "cannot PREPARE a transaction that has operated on temporary objects"
 msgstr ""
 "нельзя выполнить PREPARE для транзакции, оперирующей с временными объектами"
 
 #. +> 13 12
-#: access/transam/xact.c:2437
+#: access/transam/xact.c:2427
 #, c-format
 msgid ""
 "cannot PREPARE a transaction that has manipulated logical replication workers"
@@ -3675,108 +3675,108 @@ msgstr ""
 "репликации"
 
 #. +> 17 16 15 14 13 12
-#: access/transam/xact.c:2581
+#: access/transam/xact.c:2571
 #, c-format
 msgid "cannot PREPARE a transaction that has exported snapshots"
 msgstr "нельзя выполнить PREPARE для транзакции, снимки которой экспортированы"
 
 #. translator: %s represents an SQL statement name
 #. +> 17 16 15 14 13 12
-#: access/transam/xact.c:3603
+#: access/transam/xact.c:3593
 #, c-format
 msgid "%s cannot run inside a transaction block"
 msgstr "%s не может выполняться внутри блока транзакции"
 
 #. translator: %s represents an SQL statement name
 #. +> 17 16 15 14 13 12
-#: access/transam/xact.c:3613
+#: access/transam/xact.c:3603
 #, c-format
 msgid "%s cannot run inside a subtransaction"
 msgstr "%s не может выполняться внутри подтранзакции"
 
 #. translator: %s represents an SQL statement name
 #. +> 17 16 15 14 13 12
-#: access/transam/xact.c:3623
+#: access/transam/xact.c:3613
 #, c-format
 msgid "%s cannot be executed within a pipeline"
 msgstr "%s нельзя выполнять в конвейере"
 
 #. translator: %s represents an SQL statement name
 #. +> 17 16 15 14 13 12
-#: access/transam/xact.c:3633
+#: access/transam/xact.c:3623
 #, c-format
 msgid "%s cannot be executed from a function"
 msgstr "%s нельзя выполнять внутри функции"
 
 #. translator: %s represents an SQL statement name
 #. +> 17 16 15 14 13 12
-#: access/transam/xact.c:3704 access/transam/xact.c:4029
-#: access/transam/xact.c:4108 access/transam/xact.c:4231
-#: access/transam/xact.c:4382 access/transam/xact.c:4451
-#: access/transam/xact.c:4562
+#: access/transam/xact.c:3694 access/transam/xact.c:4019
+#: access/transam/xact.c:4098 access/transam/xact.c:4221
+#: access/transam/xact.c:4372 access/transam/xact.c:4441
+#: access/transam/xact.c:4552
 #, c-format
 msgid "%s can only be used in transaction blocks"
 msgstr "%s может выполняться только внутри блоков транзакций"
 
 #. +> 17 16 15 14 13 12
-#: access/transam/xact.c:3915
+#: access/transam/xact.c:3905
 #, c-format
 msgid "there is already a transaction in progress"
 msgstr "транзакция уже выполняется"
 
 #. +> 17 16 15 14 13 12
-#: access/transam/xact.c:4034 access/transam/xact.c:4113
-#: access/transam/xact.c:4236
+#: access/transam/xact.c:4024 access/transam/xact.c:4103
+#: access/transam/xact.c:4226
 #, c-format
 msgid "there is no transaction in progress"
 msgstr "нет незавершённой транзакции"
 
 #. +> 17 16 15 14 13 12
-#: access/transam/xact.c:4124
+#: access/transam/xact.c:4114
 #, c-format
 msgid "cannot commit during a parallel operation"
 msgstr "фиксировать транзакции во время параллельных операций нельзя"
 
 #. +> 17 16 15 14 13 12
-#: access/transam/xact.c:4247
+#: access/transam/xact.c:4237
 #, c-format
 msgid "cannot abort during a parallel operation"
 msgstr "прерывание во время параллельных операций невозможно"
 
 #. +> 17 16 15 14 13 12
-#: access/transam/xact.c:4346
+#: access/transam/xact.c:4336
 #, c-format
 msgid "cannot define savepoints during a parallel operation"
 msgstr "определять точки сохранения во время параллельных операций нельзя"
 
 #. +> 17 16 15 14 13 12
-#: access/transam/xact.c:4433
+#: access/transam/xact.c:4423
 #, c-format
 msgid "cannot release savepoints during a parallel operation"
 msgstr "высвобождать точки сохранения во время параллельных операций нельзя"
 
 #. +> 17 16 15 14 13 12
-#: access/transam/xact.c:4443 access/transam/xact.c:4494
-#: access/transam/xact.c:4554 access/transam/xact.c:4603
+#: access/transam/xact.c:4433 access/transam/xact.c:4484
+#: access/transam/xact.c:4544 access/transam/xact.c:4593
 #, c-format
 msgid "savepoint \"%s\" does not exist"
 msgstr "точка сохранения \"%s\" не существует"
 
 #. +> 17 16 15 14 13 12
-#: access/transam/xact.c:4500 access/transam/xact.c:4609
+#: access/transam/xact.c:4490 access/transam/xact.c:4599
 #, c-format
 msgid "savepoint \"%s\" does not exist within current savepoint level"
 msgstr ""
 "точка сохранения \"%s\" на текущем уровне точек сохранения не существует"
 
 #. +> 17 16 15 14 13 12
-#: access/transam/xact.c:4542
+#: access/transam/xact.c:4532
 #, c-format
 msgid "cannot rollback to savepoints during a parallel operation"
 msgstr "откатиться к точке сохранения во время параллельных операций нельзя"
 
 #. +> 17 16 15 14 13 12
-#: access/transam/xact.c:5386
+#: access/transam/xact.c:5376
 #, c-format
 msgid "cannot have more than 2^32-1 subtransactions in a transaction"
 msgstr "в одной транзакции не может быть больше 2^32-1 подтранзакций"
@@ -4603,8 +4603,8 @@ msgstr ""
 "восстановления"
 
 #. +> 15 14 13 12
-#: access/transam/xlog.c:8416 backup/basebackup.c:1364
-#: commands/tablespace.c:399 commands/tablespace.c:581 utils/adt/misc.c:355
+#: access/transam/xlog.c:8416 backup/basebackup.c:1358
+#: commands/tablespace.c:399 commands/tablespace.c:581 utils/adt/misc.c:348
 #, c-format
 msgid "tablespaces are not supported on this platform"
 msgstr "табличные пространства не поддерживаются на этой платформе"
@@ -6386,7 +6386,7 @@ msgid "unexpected WAL file size \"%s\""
 msgstr "неприемлемый размер файла WAL \"%s\""
 
 #. +> 14 13 12
-#: replication/basebackup.c:644 replication/basebackup.c:1777
+#: replication/basebackup.c:644 replication/basebackup.c:1771
 #, c-format
 msgid "base backup could not send data, aborting backup"
 msgstr ""
@@ -8208,13 +8208,13 @@ msgid "DROP INDEX CONCURRENTLY must be first action in transaction"
 msgstr "DROP INDEX CONCURRENTLY должен быть первым действием в транзакции"
 
 #. +> 13 12
-#: catalog/index.c:2957
+#: catalog/index.c:2975
 #, c-format
 msgid "building index \"%s\" on table \"%s\" serially"
 msgstr "создание индекса \"%s\" для таблицы \"%s\" в непараллельном режиме"
 
 #. +> 13 12
-#: catalog/index.c:2962
+#: catalog/index.c:2980
 #, c-format
 msgid ""
 "building index \"%s\" on table \"%s\" with request for %d parallel worker"
@@ -8231,39 +8231,39 @@ msgstr[2] ""
 "исполнителей"
 
 #. +> 17 16 15 14 13 12
-#: catalog/index.c:3659
+#: catalog/index.c:3668
 #, c-format
 msgid "cannot reindex temporary tables of other sessions"
 msgstr "переиндексировать временные таблицы других сеансов нельзя"
 
 #. +> 17 16 15 14 13 12
-#: catalog/index.c:3670 commands/indexcmds.c:3619
+#: catalog/index.c:3679 commands/indexcmds.c:3619
 #, c-format
 msgid "cannot reindex invalid index on TOAST table"
 msgstr "перестроить нерабочий индекс в таблице TOAST нельзя"
 
 #. +> 17 16 15 14 13 12
-#: catalog/index.c:3686 commands/indexcmds.c:3497 commands/indexcmds.c:3643
+#: catalog/index.c:3695 commands/indexcmds.c:3497 commands/indexcmds.c:3643
 #: commands/tablecmds.c:3581
 #, c-format
 msgid "cannot move system relation \"%s\""
 msgstr "переместить системную таблицу \"%s\" нельзя"
 
 #. +> 13 12
-#: catalog/index.c:3811 commands/indexcmds.c:3148
+#: catalog/index.c:3829 commands/indexcmds.c:3148
 #, c-format
 msgid "REINDEX of partitioned tables is not yet implemented, skipping \"%s\""
 msgstr ""
 "REINDEX для секционированных таблицы ещё не реализован, \"%s\" пропускается"
 
 #. +> 17 16 15 14 13 12
-#: catalog/index.c:3823
+#: catalog/index.c:3832
 #, c-format
 msgid "index \"%s\" was reindexed"
 msgstr "индекс \"%s\" был перестроен"
 
 #. +> 17 16 15 14 13 12
-#: catalog/index.c:3989
+#: catalog/index.c:3998
 #, c-format
 msgid "cannot reindex invalid index \"%s.%s\" on TOAST table, skipping"
 msgstr ""
@@ -11735,7 +11735,6 @@ msgstr "условные правила DO INSTEAD не поддерживают
 #. +> 17 16 15 14 13 12
 #: commands/copyto.c:478
 #, c-format
-#| msgid "DO ALSO rules are not supported for the COPY"
 msgid "DO ALSO rules are not supported for COPY"
 msgstr "правила DO ALSO не поддерживаются с COPY"
 
@@ -12667,19 +12666,19 @@ msgid "The owner of an event trigger must be a superuser."
 msgstr "Владельцем событийного триггера должен быть суперпользователь."
 
 #. +> 17 16 15 14 13 12
-#: commands/event_trigger.c:1404
+#: commands/event_trigger.c:1409
 #, c-format
 msgid "%s can only be called in a sql_drop event trigger function"
 msgstr "%s можно вызывать только в событийной триггерной функции sql_drop"
 
 #. +> 17 16 15 14 13 12
-#: commands/event_trigger.c:1497 commands/event_trigger.c:1518
+#: commands/event_trigger.c:1502 commands/event_trigger.c:1523
 #, c-format
 msgid "%s can only be called in a table_rewrite event trigger function"
 msgstr "%s можно вызывать только в событийной триггерной функции table_rewrite"
 
 #. +> 17 16 15 14 13 12
-#: commands/event_trigger.c:1931
+#: commands/event_trigger.c:1936
 #, c-format
 msgid "%s can only be called in an event trigger function"
 msgstr "%s можно вызывать только в событийной триггерной функции"
@@ -17120,7 +17119,7 @@ msgstr ""
 msgid "foreign key constraints are not supported on foreign tables"
 msgstr "ограничения внешнего ключа для сторонних таблиц не поддерживаются"
 
-#. +> 17
+#. +> 17 16 15 14 13 12
 #: commands/tablecmds.c:10815
 #, c-format
 msgid ""
@@ -17129,16 +17128,6 @@ msgid ""
 msgstr ""
 "присоединить таблицу \"%s\" в качестве секции нельзя, так как на неё "
 "ссылается внешний ключ \"%s\""
-
-#. +> 16 15 14 13 12
-#: commands/tablecmds.c:10439
-#, c-format
-msgid ""
-"can't attach table \"%s\" as a partition which is referenced by foreign key "
-"\"%s\""
-msgstr ""
-"присоединить таблицу \"%s\" в качестве секции, на которую ссылается внешний "
-"ключ \"%s\", нельзя"
 
 #. +> 17 16 15 14 13 12
 #: commands/tablecmds.c:11416 commands/tablecmds.c:11697
@@ -24541,21 +24530,21 @@ msgstr "%s не может применяться к NULL-содержащей �
 
 #. translator: %s is a SQL row locking clause such as FOR UPDATE
 #. +> 17 16 15 14 13 12
-#: optimizer/plan/planner.c:1386 parser/analyze.c:1771 parser/analyze.c:2029
+#: optimizer/plan/planner.c:1380 parser/analyze.c:1771 parser/analyze.c:2029
 #: parser/analyze.c:3247
 #, c-format
 msgid "%s is not allowed with UNION/INTERSECT/EXCEPT"
 msgstr "%s несовместимо с UNION/INTERSECT/EXCEPT"
 
 #. +> 17 16 15 14 13 12
-#: optimizer/plan/planner.c:2127 optimizer/plan/planner.c:4113
+#: optimizer/plan/planner.c:2121 optimizer/plan/planner.c:4108
 #, c-format
 msgid "could not implement GROUP BY"
 msgstr "не удалось реализовать GROUP BY"
 
 #. +> 17 16 15 14 13 12
-#: optimizer/plan/planner.c:2128 optimizer/plan/planner.c:4114
-#: optimizer/plan/planner.c:4795 optimizer/prep/prepunion.c:1320
+#: optimizer/plan/planner.c:2122 optimizer/plan/planner.c:4109
+#: optimizer/plan/planner.c:4790 optimizer/prep/prepunion.c:1320
 #, c-format
 msgid ""
 "Some of the datatypes only support hashing, while others only support "
@@ -24565,31 +24554,31 @@ msgstr ""
 "сортировку."
 
 #. +> 17 16 15 14 13 12
-#: optimizer/plan/planner.c:4794
+#: optimizer/plan/planner.c:4789
 #, c-format
 msgid "could not implement DISTINCT"
 msgstr "не удалось реализовать DISTINCT"
 
 #. +> 17 16 15 14 13 12
-#: optimizer/plan/planner.c:6139
+#: optimizer/plan/planner.c:6134
 #, c-format
 msgid "could not implement window PARTITION BY"
 msgstr "не удалось реализовать PARTITION BY для окна"
 
 #. +> 17 16 15 14 13 12
-#: optimizer/plan/planner.c:6140
+#: optimizer/plan/planner.c:6135
 #, c-format
 msgid "Window partitioning columns must be of sortable datatypes."
 msgstr "Столбцы, разбивающие окна, должны иметь сортируемые типы данных."
 
 #. +> 17 16 15 14 13 12
-#: optimizer/plan/planner.c:6144
+#: optimizer/plan/planner.c:6139
 #, c-format
 msgid "could not implement window ORDER BY"
 msgstr "не удалось реализовать ORDER BY для окна"
 
 #. +> 17 16 15 14 13 12
-#: optimizer/plan/planner.c:6145
+#: optimizer/plan/planner.c:6140
 #, c-format
 msgid "Window ordering columns must be of sortable datatypes."
 msgstr "Столбцы, сортирующие окна, должны иметь сортируемые типы данных."
@@ -35988,13 +35977,13 @@ msgid "disabling statistics collector for lack of working socket"
 msgstr "сборщик статистики отключается из-за нехватки рабочего сокета"
 
 #. +> 17 16 15
-#: utils/activity/pgstat.c:1252
+#: utils/activity/pgstat.c:1255
 #, c-format
 msgid "invalid statistics kind: \"%s\""
 msgstr "неверный вид статистики: \"%s\""
 
 #. +> 17 16 15 14 13 12
-#: utils/activity/pgstat.c:1332
+#: utils/activity/pgstat.c:1335
 #, c-format
 msgid "could not open temporary statistics file \"%s\": %m"
 msgstr "не удалось открыть временный файл статистики \"%s\": %m"
@@ -36018,8 +36007,20 @@ msgid "could not send test message on socket for statistics collector: %m"
 msgstr ""
 "не удалось послать тестовое сообщение в сокет для сборщика статистики: %m"
 
+#. +> 14
+#: postmaster/pgstat.c:1445
+#, c-format
+msgid "Target must be \"archiver\", \"bgwriter\", or \"wal\"."
+msgstr "Допустимый счётчик: \"archiver\", \"bgwriter\" или \"wal\"."
+
+#. +> 13 12
+#: postmaster/pgstat.c:1377
+#, c-format
+msgid "Target must be \"archiver\" or \"bgwriter\"."
+msgstr "Допустимый счётчик: \"archiver\" или \"bgwriter\"."
+
 #. +> 17 16 15 14 13 12
-#: utils/activity/pgstat.c:1444
+#: utils/activity/pgstat.c:1447
 #, c-format
 msgid "could not write temporary statistics file \"%s\": %m"
 msgstr "не удалось записать во временный файл статистики \"%s\": %m"
@@ -36038,20 +36039,8 @@ msgstr ""
 "тестовое сообщение через сокет для сборщика статистики получить не удалось: "
 "%m"
 
-#. +> 14
-#: postmaster/pgstat.c:1445
-#, c-format
-msgid "Target must be \"archiver\", \"bgwriter\", or \"wal\"."
-msgstr "Допустимый счётчик: \"archiver\", \"bgwriter\" или \"wal\"."
-
-#. +> 13 12
-#: postmaster/pgstat.c:1377
-#, c-format
-msgid "Target must be \"archiver\" or \"bgwriter\"."
-msgstr "Допустимый счётчик: \"archiver\" или \"bgwriter\"."
-
 #. +> 17 16 15 14 13 12
-#: utils/activity/pgstat.c:1453
+#: utils/activity/pgstat.c:1456
 #, c-format
 msgid "could not close temporary statistics file \"%s\": %m"
 msgstr "не удалось закрыть временный файл статистики \"%s\": %m"
@@ -36063,14 +36052,14 @@ msgid "could not connect socket for statistics collector: %m"
 msgstr "не удалось подключить сокет для сборщика статистики: %m"
 
 #. +> 17 16 15 14 13 12
-#: utils/activity/pgstat.c:1461
+#: utils/activity/pgstat.c:1464
 #, c-format
 msgid "could not rename temporary statistics file \"%s\" to \"%s\": %m"
 msgstr ""
 "не удалось переименовать временный файл статистики из \"%s\" в \"%s\": %m"
 
 #. +> 17 16 15 14 13 12
-#: utils/activity/pgstat.c:1510
+#: utils/activity/pgstat.c:1513
 #, c-format
 msgid "could not open statistics file \"%s\": %m"
 msgstr "не удалось открыть файл статистики \"%s\": %m"
@@ -36101,7 +36090,7 @@ msgid "could not read statistics message: %m"
 msgstr "не удалось прочитать сообщение статистики: %m"
 
 #. +> 17 16 15 14 13 12
-#: utils/activity/pgstat.c:1672
+#: utils/activity/pgstat.c:1675
 #, c-format
 msgid "corrupted statistics file \"%s\""
 msgstr "файл статистики \"%s\" испорчен"
@@ -38873,7 +38862,7 @@ msgid "The supported log formats are \"stderr\", \"csvlog\", and \"jsonlog\"."
 msgstr "Поддерживаются форматы журналов \"stderr\", \"csvlog\" и \"jsonlog\"."
 
 #. +> 14 13 12
-#: utils/adt/misc.c:879
+#: utils/adt/misc.c:872
 #, c-format
 msgid "The supported log formats are \"stderr\" and \"csvlog\"."
 msgstr "Поддерживаются форматы журналов \"stderr\" и \"csvlog\"."
@@ -39265,7 +39254,6 @@ msgstr "значение перцентиля %g лежит не в диапаз
 #. +> 17 16
 #: utils/adt/pg_locale.c:326 utils/adt/pg_locale.c:358
 #, c-format
-#| msgid "replication slot name \"%s\" contains invalid character"
 msgid "locale name \"%s\" contains non-ASCII characters"
 msgstr "имя локали \"%s\" содержит не-ASCII символы"
 
@@ -47398,7 +47386,7 @@ msgid "password too long"
 msgstr "слишком длинный пароль"
 
 #. +> 13 12
-#: jit/llvm/llvmjit.c:885
+#: jit/llvm/llvmjit.c:886
 #, c-format
 msgid "time to inline: %.3fs, opt: %.3fs, emit: %.3fs"
 msgstr "время внедрения: %.3fs, оптимизации: %.3fs, выдачи: %.3fs"
@@ -47449,6 +47437,14 @@ msgstr "неверное внешнее представление txid_snapshot
 #, c-format
 msgid "encoding name too long"
 msgstr "слишком длинное имя кодировки"
+
+#, c-format
+#~ msgid ""
+#~ "can't attach table \"%s\" as a partition which is referenced by foreign "
+#~ "key \"%s\""
+#~ msgstr ""
+#~ "присоединить таблицу \"%s\" в качестве секции, на которую ссылается "
+#~ "внешний ключ \"%s\", нельзя"
 
 #, c-format
 #~ msgid "%s: could not open file \"%s\" for reading: %s\n"

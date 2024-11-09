@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_upgrade (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2024-11-02 08:23+0300\n"
+"POT-Creation-Date: 2024-11-09 07:49+0300\n"
 "PO-Revision-Date: 2024-11-02 08:31+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -609,7 +609,6 @@ msgstr "Проверка использования типов данных"
 #. +> 17
 #: check.c:480
 #, c-format
-#| msgid "    failed check: %s"
 msgid "failed check: %s"
 msgstr "не пройдена проверка: %s"
 
