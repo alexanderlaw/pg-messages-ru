@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: libpq (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2024-11-14 04:47+0300\n"
-"PO-Revision-Date: 2024-09-07 13:49+0300\n"
+"PO-Revision-Date: 2024-11-14 05:02+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -1302,12 +1302,12 @@ msgstr "затребовано подключение через SSL, но се�
 #: fe-connect.c:3519
 #, c-format
 msgid "server sent an error response during SSL exchange"
-msgstr ""
+msgstr "сервер передал ошибочный ответ во время обмена сообщениями SSL"
 
 #. +> 15 14 13 12
 #: fe-connect.c:3085
 msgid "server sent an error response during SSL exchange\n"
-msgstr ""
+msgstr "сервер передал ошибочный ответ во время обмена сообщениями SSL\n"
 
 #. +> 17 16
 #: fe-connect.c:3524
@@ -1336,7 +1336,7 @@ msgstr "после ответа SSL получены незашифрованн�
 #: fe-connect.c:3615
 #, c-format
 msgid "server sent an error response during GSS encryption exchange"
-msgstr ""
+msgstr "сервер передал ошибочный ответ во время шифрования GSS"
 
 #. +> 17 16
 #: fe-connect.c:3629
