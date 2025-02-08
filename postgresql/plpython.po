@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plpython (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2024-09-02 09:31+0300\n"
+"POT-Creation-Date: 2025-02-08 07:46+0200\n"
 "PO-Revision-Date: 2019-08-29 15:42+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -24,19 +24,19 @@ msgid "plpy.cursor expected a query or a plan"
 msgstr "plpy.cursor ожидает запрос или план"
 
 #. +> 17 16 15 14 13 12
-#: plpy_cursorobject.c:155
+#: plpy_cursorobject.c:154
 #, c-format
 msgid "plpy.cursor takes a sequence as its second argument"
 msgstr "plpy.cursor принимает в качестве второго аргумента последовательность"
 
 #. +> 17 16 15 14 13 12
-#: plpy_cursorobject.c:171 plpy_spi.c:205
+#: plpy_cursorobject.c:170 plpy_spi.c:204
 #, c-format
 msgid "could not execute plan"
 msgstr "нельзя выполнить план"
 
 #. +> 17 16 15 14 13 12
-#: plpy_cursorobject.c:174 plpy_spi.c:208
+#: plpy_cursorobject.c:173 plpy_spi.c:207
 #, c-format
 msgid "Expected sequence of %d argument, got %d: %s"
 msgid_plural "Expected sequence of %d arguments, got %d: %s"
@@ -45,32 +45,32 @@ msgstr[1] "Ожидалась последовательность из %d ар�
 msgstr[2] "Ожидалась последовательность из %d аргументов, получено %d: %s"
 
 #. +> 17 16 15 14 13 12
-#: plpy_cursorobject.c:321
+#: plpy_cursorobject.c:317
 #, c-format
 msgid "iterating a closed cursor"
 msgstr "перемещение закрытого курсора"
 
 #. +> 17 16 15 14 13 12
-#: plpy_cursorobject.c:329 plpy_cursorobject.c:395
+#: plpy_cursorobject.c:325 plpy_cursorobject.c:391
 #, c-format
 msgid "iterating a cursor in an aborted subtransaction"
 msgstr "перемещение курсора в прерванной подтранзакции"
 
 #. +> 17 16 15 14 13 12
-#: plpy_cursorobject.c:387
+#: plpy_cursorobject.c:383
 #, c-format
 msgid "fetch from a closed cursor"
 msgstr "выборка из закрытого курсора"
 
 #. +> 17 16 15 14 13 12
-#: plpy_cursorobject.c:430 plpy_spi.c:401
+#: plpy_cursorobject.c:426 plpy_spi.c:393
 #, c-format
 msgid "query result has too many rows to fit in a Python list"
 msgstr ""
 "результат запроса содержит слишком много строк для передачи в списке Python"
 
 #. +> 17 16 15 14 13 12
-#: plpy_cursorobject.c:482
+#: plpy_cursorobject.c:478
 #, c-format
 msgid "closing a cursor in an aborted subtransaction"
 msgstr "закрытие курсора в прерванной подтранзакции"
@@ -389,19 +389,19 @@ msgid "plpy.execute expected a query or a plan"
 msgstr "plpy.execute ожидает запрос или план"
 
 #. +> 17 16 15 14 13 12
-#: plpy_spi.c:189
+#: plpy_spi.c:188
 #, c-format
 msgid "plpy.execute takes a sequence as its second argument"
 msgstr "plpy.execute принимает в качестве второго аргумента последовательность"
 
 #. +> 17 16 15 14 13 12
-#: plpy_spi.c:297
+#: plpy_spi.c:289
 #, c-format
 msgid "SPI_execute_plan failed: %s"
 msgstr "ошибка в SPI_execute_plan: %s"
 
 #. +> 17 16 15 14 13 12
-#: plpy_spi.c:339
+#: plpy_spi.c:331
 #, c-format
 msgid "SPI_execute failed: %s"
 msgstr "ошибка в SPI_execute: %s"

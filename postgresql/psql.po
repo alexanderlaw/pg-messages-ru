@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: psql (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2024-11-02 08:24+0300\n"
+"POT-Creation-Date: 2025-02-08 07:46+0200\n"
 "PO-Revision-Date: 2024-09-07 06:49+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -3411,7 +3411,7 @@ msgstr ""
 "\n"
 
 #. +> 17 16 15 14 13 12
-#: help.c:64 help.c:372 help.c:456 help.c:499
+#: help.c:64 help.c:372 help.c:456 help.c:502
 msgid "Usage:\n"
 msgstr "Использование:\n"
 
@@ -4545,8 +4545,37 @@ msgid "  \\H                     toggle HTML output mode (currently %s)\n"
 msgstr ""
 "  \\H                     переключить режим вывода в HTML (текущий: %s)\n"
 
-#. +> 17 16 15 14 13 12
+#. +> 17 16
 #: help.c:291
+#, fuzzy
+#| msgid ""
+#| "  \\pset [NAME [VALUE]]   set table output option\n"
+#| "                         (border|columns|csv_fieldsep|expanded|fieldsep|\n"
+#| "                         fieldsep_zero|footer|format|linestyle|null|\n"
+#| "                         numericlocale|pager|pager_min_lines|recordsep|\n"
+#| "                         recordsep_zero|tableattr|title|tuples_only|\n"
+#| "                         unicode_border_linestyle|"
+#| "unicode_column_linestyle|\n"
+#| "                         unicode_header_linestyle)\n"
+msgid ""
+"  \\pset [NAME [VALUE]]   set table output option\n"
+"                         (border|columns|csv_fieldsep|expanded|fieldsep|\n"
+"                         fieldsep_zero|footer|format|linestyle|null|\n"
+"                         numericlocale|pager|pager_min_lines|recordsep|\n"
+"                         recordsep_zero|tableattr|title|tuples_only|\n"
+"                         unicode_border_linestyle|unicode_column_linestyle|\n"
+"                         unicode_header_linestyle|xheader_width)\n"
+msgstr ""
+"  \\pset [ИМЯ [ЗНАЧЕНИЕ]] установить параметр вывода таблицы\n"
+"                         (border|columns|csv_fieldsep|expanded|fieldsep|\n"
+"                         fieldsep_zero|footer|format|linestyle|null|\n"
+"                         numericlocale|pager|pager_min_lines|recordsep|\n"
+"                         recordsep_zero|tableattr|title|tuples_only|\n"
+"                         unicode_border_linestyle|unicode_column_linestyle|\n"
+"                         unicode_header_linestyle)\n"
+
+#. +> 15 14 13 12
+#: help.c:312
 msgid ""
 "  \\pset [NAME [VALUE]]   set table output option\n"
 "                         (border|columns|csv_fieldsep|expanded|fieldsep|\n"
@@ -5286,8 +5315,16 @@ msgstr ""
 "    задаёт стиль рисуемых линий Unicode [single (одинарные), double "
 "(двойные)]\n"
 
+#. +> 17 16
+#: help.c:497
+msgid ""
+"  xheader_width\n"
+"    set the maximum width of the header for expanded output\n"
+"    [full, column, page, integer value]\n"
+msgstr ""
+
 #. +> 17 16 15 14 13 12
-#: help.c:498
+#: help.c:501
 msgid ""
 "\n"
 "Environment variables:\n"
@@ -5296,7 +5333,7 @@ msgstr ""
 "Переменные окружения:\n"
 
 #. +> 17 16 15 14 13 12
-#: help.c:502
+#: help.c:505
 msgid ""
 "  NAME=VALUE [NAME=VALUE] psql ...\n"
 "  or \\setenv NAME [VALUE] inside psql\n"
@@ -5307,7 +5344,7 @@ msgstr ""
 "\n"
 
 #. +> 17 16 15 14 13 12
-#: help.c:504
+#: help.c:507
 msgid ""
 "  set NAME=VALUE\n"
 "  psql ...\n"
@@ -5320,7 +5357,7 @@ msgstr ""
 "\n"
 
 #. +> 17 16 15 14 13 12
-#: help.c:507
+#: help.c:510
 msgid ""
 "  COLUMNS\n"
 "    number of columns for wrapped format\n"
@@ -5329,7 +5366,7 @@ msgstr ""
 "    число столбцов для форматирования с переносом\n"
 
 #. +> 17 16 15 14 13 12
-#: help.c:509
+#: help.c:512
 msgid ""
 "  PGAPPNAME\n"
 "    same as the application_name connection parameter\n"
@@ -5338,7 +5375,7 @@ msgstr ""
 "    синоним параметра подключения application_name\n"
 
 #. +> 17 16 15 14 13 12
-#: help.c:511
+#: help.c:514
 msgid ""
 "  PGDATABASE\n"
 "    same as the dbname connection parameter\n"
@@ -5347,7 +5384,7 @@ msgstr ""
 "    синоним параметра подключения dbname\n"
 
 #. +> 17 16 15 14 13 12
-#: help.c:513
+#: help.c:516
 msgid ""
 "  PGHOST\n"
 "    same as the host connection parameter\n"
@@ -5356,7 +5393,7 @@ msgstr ""
 "    синоним параметра подключения host\n"
 
 #. +> 17 16 15 14 13 12
-#: help.c:515
+#: help.c:518
 msgid ""
 "  PGPASSFILE\n"
 "    password file name\n"
@@ -5365,7 +5402,7 @@ msgstr ""
 "    имя файла с паролем\n"
 
 #. +> 17 16 15 14 13 12
-#: help.c:517
+#: help.c:520
 msgid ""
 "  PGPASSWORD\n"
 "    connection password (not recommended)\n"
@@ -5374,7 +5411,7 @@ msgstr ""
 "    пароль для подключения (использовать не рекомендуется)\n"
 
 #. +> 17 16 15 14 13 12
-#: help.c:519
+#: help.c:522
 msgid ""
 "  PGPORT\n"
 "    same as the port connection parameter\n"
@@ -5383,7 +5420,7 @@ msgstr ""
 "    синоним параметра подключения port\n"
 
 #. +> 17 16 15 14 13 12
-#: help.c:521
+#: help.c:524
 msgid ""
 "  PGUSER\n"
 "    same as the user connection parameter\n"
@@ -5392,7 +5429,7 @@ msgstr ""
 "    синоним параметра подключения user\n"
 
 #. +> 17 16 15 14 13 12
-#: help.c:523
+#: help.c:526
 msgid ""
 "  PSQL_EDITOR, EDITOR, VISUAL\n"
 "    editor used by the \\e, \\ef, and \\ev commands\n"
@@ -5401,7 +5438,7 @@ msgstr ""
 "    редактор, вызываемый командами \\e, \\ef и \\ev\n"
 
 #. +> 17 16 15 14 13 12
-#: help.c:525
+#: help.c:528
 msgid ""
 "  PSQL_EDITOR_LINENUMBER_ARG\n"
 "    how to specify a line number when invoking the editor\n"
@@ -5410,7 +5447,7 @@ msgstr ""
 "    определяет способ передачи номера строки при вызове редактора\n"
 
 #. +> 17 16 15 14 13 12
-#: help.c:527
+#: help.c:530
 msgid ""
 "  PSQL_HISTORY\n"
 "    alternative location for the command history file\n"
@@ -5419,7 +5456,7 @@ msgstr ""
 "    альтернативное размещение файла с историей команд\n"
 
 #. +> 17 16 15 14 13 12
-#: help.c:529
+#: help.c:532
 msgid ""
 "  PSQL_PAGER, PAGER\n"
 "    name of external pager program\n"
@@ -5428,7 +5465,7 @@ msgstr ""
 "    имя программы внешнего постраничника\n"
 
 #. +> 17 16 15
-#: help.c:532
+#: help.c:535
 msgid ""
 "  PSQL_WATCH_PAGER\n"
 "    name of external pager program used for \\watch\n"
@@ -5437,7 +5474,7 @@ msgstr ""
 "    имя программы внешнего постраничника для \\watch\n"
 
 #. +> 17 16 15 14 13 12
-#: help.c:535
+#: help.c:538
 msgid ""
 "  PSQLRC\n"
 "    alternative location for the user's .psqlrc file\n"
@@ -5446,7 +5483,7 @@ msgstr ""
 "    альтернативное размещение пользовательского файла .psqlrc\n"
 
 #. +> 17 16 15 14 13 12
-#: help.c:537
+#: help.c:540
 msgid ""
 "  SHELL\n"
 "    shell used by the \\! command\n"
@@ -5455,7 +5492,7 @@ msgstr ""
 "    оболочка, вызываемая командой \\!\n"
 
 #. +> 17 16 15 14 13 12
-#: help.c:539
+#: help.c:542
 msgid ""
 "  TMPDIR\n"
 "    directory for temporary files\n"
@@ -5464,12 +5501,12 @@ msgstr ""
 "    каталог для временных файлов\n"
 
 #. +> 17 16 15 14 13 12
-#: help.c:599
+#: help.c:602
 msgid "Available help:\n"
 msgstr "Имеющаяся справка:\n"
 
 #. +> 17 16 15 14 13 12
-#: help.c:694
+#: help.c:697
 #, c-format
 msgid ""
 "Command:     %s\n"
@@ -5489,7 +5526,7 @@ msgstr ""
 "\n"
 
 #. +> 17 16 15 14 13 12
-#: help.c:717
+#: help.c:720
 #, c-format
 msgid ""
 "No help available for \"%s\".\n"
