@@ -4,14 +4,14 @@
 # Serguei A. Mokhov <mokhov@cs.concordia.ca>, 2001-2005.
 # Oleg Bartunov <oleg@sai.msu.su>, 2004-2005.
 # Sergey Burladyan <eshkinkot@gmail.com>, 2012.
-# Alexander Lakhin <exclusion@gmail.com>, 2012-2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024.
+# Alexander Lakhin <exclusion@gmail.com>, 2012-2025.
 # Maxim Yablokov <m.yablokov@postgrespro.ru>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: psql (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2025-02-08 07:46+0200\n"
-"PO-Revision-Date: 2024-09-07 06:49+0300\n"
+"PO-Revision-Date: 2025-02-08 08:33+0200\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #. +> 17 16 15 14 13 12
 #: ../../../src/common/logging.c:276
@@ -4547,7 +4547,6 @@ msgstr ""
 
 #. +> 17 16
 #: help.c:291
-#, fuzzy
 #| msgid ""
 #| "  \\pset [NAME [VALUE]]   set table output option\n"
 #| "                         (border|columns|csv_fieldsep|expanded|fieldsep|\n"
@@ -4572,7 +4571,7 @@ msgstr ""
 "                         numericlocale|pager|pager_min_lines|recordsep|\n"
 "                         recordsep_zero|tableattr|title|tuples_only|\n"
 "                         unicode_border_linestyle|unicode_column_linestyle|\n"
-"                         unicode_header_linestyle)\n"
+"                         unicode_header_linestyle|xheader_width)\n"
 
 #. +> 15 14 13 12
 #: help.c:312
@@ -4612,7 +4611,7 @@ msgstr ""
 #, c-format
 msgid "  \\x [on|off|auto]       toggle expanded output (currently %s)\n"
 msgstr ""
-"  \\x [on|off|auto]       переключить режим расширенного вывода (сейчас: "
+"  \\x [on|off|auto]       переключить режим развёрнутого вывода (сейчас: "
 "%s)\n"
 
 #. +> 17 16 15
@@ -5175,7 +5174,7 @@ msgid ""
 "    expanded output [on, off, auto]\n"
 msgstr ""
 "  expanded (или x)\n"
-"    расширенный вывод [on (вкл.), off (выкл.), auto (авто)]\n"
+"    развёрнутый вывод [on (вкл.), off (выкл.), auto (авто)]\n"
 
 #. +> 17 16 15 14 13 12
 #: help.c:465
@@ -5322,6 +5321,9 @@ msgid ""
 "    set the maximum width of the header for expanded output\n"
 "    [full, column, page, integer value]\n"
 msgstr ""
+"  xheader_width\n"
+"    задаёт максимальную ширину заголовка для развёрнутого вывода\n"
+"    [full (полностью), column (столбец), page (страница), целое значение]\n"
 
 #. +> 17 16 15 14 13 12
 #: help.c:501

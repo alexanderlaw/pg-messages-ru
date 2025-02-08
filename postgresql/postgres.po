@@ -4,14 +4,14 @@
 # Serguei A. Mokhov <mokhov@cs.concordia.ca>, 2001-2005.
 # Oleg Bartunov <oleg@sai.msu.su>, 2004-2005.
 # Dmitriy Olshevskiy <olshevskiy87@bk.ru>, 2014.
-# Alexander Lakhin <exclusion@gmail.com>, 2012-2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024.
+# Alexander Lakhin <exclusion@gmail.com>, 2012-2025.
 # Maxim Yablokov <m.yablokov@postgrespro.ru>, 2021, 2022, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: postgres (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2025-02-08 07:46+0200\n"
-"PO-Revision-Date: 2024-11-02 08:34+0300\n"
+"PO-Revision-Date: 2025-02-08 08:50+0200\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #. +> 17
 #: ../common/binaryheap.c:121 ../common/binaryheap.c:159
@@ -19475,10 +19475,12 @@ msgstr ""
 
 #. +> 17 16
 #: commands/user.c:825
-#, fuzzy, c-format
+#, c-format
 #| msgid "Only roles with the %s option on role \"%s\" may add members."
 msgid "Only roles with the %s option on role \"%s\" may add or drop members."
-msgstr "Добавлять членов могут только роли с привилегией %s для роли \"%s\"."
+msgstr ""
+"Добавлять или удалять членов могут только роли с привилегией %s для роли "
+"\"%s\"."
 
 #. +> 15 14 13 12
 #: commands/user.c:859 commands/user.c:1400 commands/user.c:1573
@@ -26676,17 +26678,17 @@ msgstr "в предикате IS JSON нельзя использовать ти
 
 #. +> 17
 #: parser/parse_expr.c:4118 parser/parse_expr.c:4239
-#, fuzzy, c-format
+#, c-format
 #| msgid "cannot specify FORMAT JSON in RETURNING clause of %s()"
 msgid "cannot use type %s in RETURNING clause of %s"
-msgstr "FORMAT JSON не может указываться в предложении RETURNING %s()"
+msgstr "тип %s нельзя использовать в предложении RETURNING функции %s"
 
 #. +> 17
 #: parser/parse_expr.c:4120
-#, fuzzy, c-format
+#, c-format
 #| msgid "Try returning a string type or bytea."
 msgid "Try returning json or jsonb."
-msgstr "Попробуйте возвратить строковый тип или bytea."
+msgstr "Попробуйте возвратить тип json или jsonb."
 
 #. +> 17
 #: parser/parse_expr.c:4168
@@ -29846,10 +29848,10 @@ msgstr "породить новый процесс для соединения �
 
 #. +> 17 16 15 14 13
 #: postmaster/postmaster.c:3683
-#, fuzzy, c-format
+#, c-format
 #| msgid "postmaster became multithreaded during startup"
 msgid "postmaster became multithreaded"
-msgstr "процесс postmaster стал многопоточным при запуске"
+msgstr "процесс postmaster стал многопоточным"
 
 #. +> 17 16 15 14
 #: postmaster/postmaster.c:3752
@@ -35928,10 +35930,10 @@ msgstr "нераспознанный параметр функции выдер�
 
 #. +> 17
 #: tsearch/wparser_def.c:2674
-#, fuzzy, c-format
+#, c-format
 #| msgid "MINVALUE (%s) must be less than MAXVALUE (%s)"
 msgid "%s must be less than %s"
-msgstr "MINVALUE (%s) должно быть меньше MAXVALUE (%s)"
+msgstr "%s должно быть меньше %s"
 
 #. +> 16 15 14 13 12
 #: tsearch/wparser_def.c:2673
@@ -35941,10 +35943,10 @@ msgstr "Значение MinWords должно быть меньше MaxWords"
 
 #. +> 17
 #: tsearch/wparser_def.c:2678
-#, fuzzy, c-format
+#, c-format
 #| msgid "COST must be positive"
 msgid "%s must be positive"
-msgstr "значение COST должно быть положительным"
+msgstr "%s должно быть больше нуля"
 
 #. +> 16 15 14 13 12
 #: tsearch/wparser_def.c:2677
@@ -35962,7 +35964,7 @@ msgstr "Значение ShortWord должно быть >= 0"
 #: tsearch/wparser_def.c:2682 tsearch/wparser_def.c:2686
 #, c-format
 msgid "%s must be >= 0"
-msgstr ""
+msgstr "%s должно быть >= 0"
 
 #. +> 16 15 14 13 12
 #: tsearch/wparser_def.c:2685
@@ -38676,7 +38678,7 @@ msgstr "Для передачи часового пояса используйт
 
 #. +> 17
 #: utils/adt/jsonpath_exec.c:3981
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "JSON path expression for column \"%s\" should return single item without "
 #| "wrapper"
@@ -38684,8 +38686,8 @@ msgid ""
 "JSON path expression for column \"%s\" must return single item when no "
 "wrapper is requested"
 msgstr ""
-"выражение пути JSON для столбца \"%s\" должно возвращать одиночный элемент "
-"без обёртки"
+"выражение пути JSON для столбца \"%s\" в отсутствие обёртки должно "
+"возвращать одиночный элемент"
 
 #. +> 17
 #: utils/adt/jsonpath_exec.c:3983 utils/adt/jsonpath_exec.c:3988
@@ -38697,7 +38699,7 @@ msgstr ""
 
 #. +> 17
 #: utils/adt/jsonpath_exec.c:3987
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "JSON path expression in JSON_QUERY should return single item without "
 #| "wrapper"
@@ -38705,12 +38707,12 @@ msgid ""
 "JSON path expression in JSON_QUERY must return single item when no wrapper "
 "is requested"
 msgstr ""
-"выражение пути JSON в JSON_QUERY должно возвращать одиночный элемент без "
-"обёртки"
+"выражение пути JSON в JSON_QUERY в отсутствие обёртки должно возвращать "
+"одиночный элемент"
 
 #. +> 17
 #: utils/adt/jsonpath_exec.c:4045 utils/adt/jsonpath_exec.c:4069
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "JSON path expression for column \"%s\" should return single scalar item"
 msgid "JSON path expression for column \"%s\" must return single scalar item"
@@ -38720,7 +38722,7 @@ msgstr ""
 
 #. +> 17
 #: utils/adt/jsonpath_exec.c:4050 utils/adt/jsonpath_exec.c:4074
-#, fuzzy, c-format
+#, c-format
 #| msgid "JSON path expression in JSON_VALUE should return single scalar item"
 msgid "JSON path expression in JSON_VALUE must return single scalar item"
 msgstr ""
@@ -43482,14 +43484,13 @@ msgstr ""
 
 #. +> 17 16 15 14 13
 #: utils/misc/guc_tables.c:1632
-#, fuzzy
 #| msgid ""
 #| "Start a subprocess to capture stderr output and/or csvlogs into log files."
 msgid ""
 "Start a subprocess to capture stderr, csvlog and/or jsonlog into log files."
 msgstr ""
-"Запускает подпроцесс для чтения stderr и/или csv-файлов и записи в файлы "
-"протоколов."
+"Запускает подпроцесс для чтения stderr, csvlog и/или jsonlog и записи в "
+"файлы протоколов."
 
 #. +> 12
 #: utils/misc/guc.c:1620
