@@ -4,14 +4,14 @@
 # Serguei A. Mokhov <mokhov@cs.concordia.ca>, 2001-2004.
 # Oleg Bartunov <oleg@sai.msu.su>, 2005.
 # Andrey Sudnik <sudnikand@yandex.ru>, 2010.
-# Alexander Lakhin <exclusion@gmail.com>, 2012-2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024.
+# SPDX-FileCopyrightText: 2012-2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025 Alexander Lakhin <exclusion@gmail.com>
 # Maxim Yablokov <m.yablokov@postgrespro.ru>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: libpq (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2025-05-03 16:02+0300\n"
-"PO-Revision-Date: 2024-11-14 05:02+0300\n"
+"PO-Revision-Date: 2025-05-03 16:34+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #. +> 17 16 15
 #: ../../port/user.c:43 ../../port/user.c:79
@@ -2242,17 +2242,16 @@ msgstr "неполный многобайтный символ\n"
 
 #. +> 17 16
 #: fe-exec.c:4142 fe-exec.c:4272
-#, fuzzy, c-format
+#, c-format
 #| msgid "incomplete multibyte character"
 msgid "invalid multibyte character"
-msgstr "неполный многобайтный символ"
+msgstr "неверный многобайтный символ"
 
 #. +> 15 14 13
 #: fe-exec.c:4046 fe-exec.c:4177
-#, fuzzy
 #| msgid "incomplete multibyte character\n"
 msgid "invalid multibyte character\n"
-msgstr "неполный многобайтный символ\n"
+msgstr "неверный многобайтный символ\n"
 
 #. +> 17 16 15 14 13 12
 #: fe-gssapi-common.c:122

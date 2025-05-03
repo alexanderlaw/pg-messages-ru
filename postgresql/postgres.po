@@ -4,14 +4,14 @@
 # Serguei A. Mokhov <mokhov@cs.concordia.ca>, 2001-2005.
 # Oleg Bartunov <oleg@sai.msu.su>, 2004-2005.
 # Dmitriy Olshevskiy <olshevskiy87@bk.ru>, 2014.
-# Alexander Lakhin <exclusion@gmail.com>, 2012-2025.
+# SPDX-FileCopyrightText: 2012-2025 Alexander Lakhin <exclusion@gmail.com>
 # Maxim Yablokov <m.yablokov@postgrespro.ru>, 2021, 2022, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: postgres (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2025-05-03 16:02+0300\n"
-"PO-Revision-Date: 2025-02-08 08:50+0200\n"
+"PO-Revision-Date: 2025-05-03 16:34+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -21383,11 +21383,11 @@ msgstr ""
 
 #. +> 17 16 15 14
 #: executor/nodeModifyTable.c:240
-#, fuzzy, c-format
+#, c-format
 #| msgid "Query provides a value for a dropped column at ordinal position %d."
 msgid "Query provides a value for a generated column at ordinal position %d."
 msgstr ""
-"Запрос выдаёт значение для удалённого столбца (с порядковым номером %d)."
+"Запрос выдаёт значение для генерируемого столбца (с порядковым номером %d)."
 
 #. +> 17 16 15 14 13 12
 #: executor/nodeModifyTable.c:260
@@ -32134,34 +32134,37 @@ msgstr "Смените wal_level на logical или более высокий �
 
 #. +> 17
 #: replication/slot.c:2349
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "logical replication slot \"%s\" exists, but \"wal_level\" < \"logical\""
 msgid ""
 "logical replication slot \"%s\" exists on the standby, but \"hot_standby\" = "
 "\"off\""
 msgstr ""
-"существует слот логической репликации \"%s\", но \"wal_level\" < \"logical\""
+"на ведомом сервере существует слот логической репликации \"%s\", но "
+"\"hot_standby\" = \"off\""
 
 #. +> 16
 #: replication/slot.c:2093
-#, fuzzy, c-format
+#, c-format
 #| msgid "logical replication slot \"%s\" exists, but wal_level < logical"
 msgid ""
 "logical replication slot \"%s\" exists on the standby, but hot_standby = off"
-msgstr "существует слот логической репликации \"%s\", но wal_level < logical"
+msgstr ""
+"на ведомом сервере существует слот логической репликации \"%s\", но "
+"hot_standby = off"
 
 #. +> 17
 #: replication/slot.c:2351
 #, c-format
 msgid "Change \"hot_standby\" to be \"on\"."
-msgstr ""
+msgstr "Смените значение \"hot_standby\" на \"on\"."
 
 #. +> 16
 #: replication/slot.c:2095
 #, c-format
 msgid "Change hot_standby to be on."
-msgstr ""
+msgstr "Смените значение hot_standby на on."
 
 #. +> 17
 #: replication/slot.c:2356
@@ -32342,10 +32345,10 @@ msgstr ""
 
 #. +> 17 16
 #: replication/slotfuncs.c:688
-#, fuzzy, c-format
+#, c-format
 #| msgid "cannot alter replication slot \"%s\""
 msgid "cannot copy invalidated replication slot \"%s\""
-msgstr "изменить слот репликации \"%s\" нельзя"
+msgstr "скопировать аннулированный слот репликации \"%s\" нельзя"
 
 #. +> 17 16 15 14 13 12
 #: replication/slotfuncs.c:780
@@ -32381,21 +32384,19 @@ msgstr ""
 
 #. +> 17 16
 #: replication/slotfuncs.c:802
-#, fuzzy, c-format
+#, c-format
 #| msgid "cannot drop replication slot \"%s\""
 msgid "cannot copy replication slot \"%s\""
-msgstr "удалить слот репликации \"%s\" нельзя"
+msgstr "скопировать слот репликации \"%s\" нельзя"
 
 #. +> 17 16
 #: replication/slotfuncs.c:804
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "The source replication slot was modified incompatibly during the copy "
 #| "operation."
 msgid "The source replication slot was invalidated during the copy operation."
-msgstr ""
-"Исходный слот репликации был модифицирован несовместимым образом во время "
-"копирования."
+msgstr "Исходный слот репликации был аннулирован во время копирования."
 
 #. +> 17
 #: replication/slotfuncs.c:903

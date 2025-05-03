@@ -5,13 +5,13 @@
 # Oleg Bartunov <oleg@sai.msu.su>, 2004.
 # Sergey Burladyan <eshkinkot@gmail.com>, 2012.
 # Dmitriy Olshevskiy <olshevskiy87@bk.ru>, 2014.
-# Alexander Lakhin <exclusion@gmail.com>, 2012-2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024.
+# SPDX-FileCopyrightText: 2012-2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025 Alexander Lakhin <exclusion@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: pg_dump (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2025-05-03 16:02+0300\n"
-"PO-Revision-Date: 2024-09-07 07:35+0300\n"
+"PO-Revision-Date: 2025-05-03 16:33+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #. +> 17 16 15 14 13 12
 #: ../../../src/common/logging.c:276
@@ -3975,7 +3975,7 @@ msgstr "имя роли, начинающееся с \"pg_\", пропущено
 #: pg_dumpall.c:1055 pg_dumpall.c:1113 pg_dumpall.c:1122
 #, c-format
 msgid "found orphaned pg_auth_members entry for role %s"
-msgstr ""
+msgstr "обнаружена потерянная запись pg_auth_members для роли %s"
 
 #. +> 17 16
 #: pg_dumpall.c:1088
