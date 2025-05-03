@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_upgrade (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2024-11-09 07:49+0300\n"
+"POT-Creation-Date: 2025-05-03 16:02+0300\n"
 "PO-Revision-Date: 2024-11-02 08:31+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -56,7 +56,7 @@ msgid "user name lookup failure: error code %lu"
 msgstr "распознать имя пользователя не удалось (код ошибки: %lu)"
 
 #. +> 17
-#: ../../fe_utils/string_utils.c:434
+#: ../../fe_utils/string_utils.c:587
 #, c-format
 msgid "shell command argument contains a newline or carriage return: \"%s\"\n"
 msgstr ""
@@ -64,7 +64,7 @@ msgstr ""
 "\"%s\"\n"
 
 #. +> 17
-#: ../../fe_utils/string_utils.c:607
+#: ../../fe_utils/string_utils.c:760
 #, c-format
 msgid "database name contains a newline or carriage return: \"%s\"\n"
 msgstr ""
@@ -1824,8 +1824,8 @@ msgid "The target cluster lacks cluster state information:\n"
 msgstr "В целевом кластере не хватает информации о состоянии кластера:\n"
 
 #. +> 17 16 15 14 13 12
-#: controldata.c:213 dump.c:50 exec.c:118 pg_upgrade.c:556 pg_upgrade.c:596
-#: pg_upgrade.c:945 relfilenumber.c:233 server.c:34 util.c:337
+#: controldata.c:213 dump.c:50 exec.c:118 pg_upgrade.c:558 pg_upgrade.c:598
+#: pg_upgrade.c:947 relfilenumber.c:233 server.c:34 util.c:337
 #, c-format
 msgid "%s"
 msgstr "%s"
@@ -4157,25 +4157,25 @@ msgid "Setting locale and encoding for new cluster"
 msgstr "Установка локали и кодировки для нового кластера"
 
 #. +> 17 16 15 14 13 12
-#: pg_upgrade.c:489
+#: pg_upgrade.c:491
 #, c-format
 msgid "Analyzing all rows in the new cluster"
 msgstr "Анализ всех строк в новом кластере"
 
 #. +> 17 16 15 14 13 12
-#: pg_upgrade.c:502
+#: pg_upgrade.c:504
 #, c-format
 msgid "Freezing all rows in the new cluster"
 msgstr "Замораживание всех строк в новом кластере"
 
 #. +> 17 16 15 14 13 12
-#: pg_upgrade.c:522
+#: pg_upgrade.c:524
 #, c-format
 msgid "Restoring global objects in the new cluster"
 msgstr "Восстановление глобальных объектов в новом кластере"
 
 #. +> 17 16 15
-#: pg_upgrade.c:538
+#: pg_upgrade.c:540
 #, c-format
 msgid "Restoring database schemas in the new cluster"
 msgstr "Восстановление схем баз данных в новом кластере"
@@ -4187,13 +4187,13 @@ msgid "Restoring database schemas in the new cluster\n"
 msgstr "Восстановление схем баз данных в новом кластере\n"
 
 #. +> 17 16 15 14 13 12
-#: pg_upgrade.c:662
+#: pg_upgrade.c:664
 #, c-format
 msgid "Deleting files from new %s"
 msgstr "Удаление файлов из нового каталога %s"
 
 #. +> 17 16
-#: pg_upgrade.c:666
+#: pg_upgrade.c:668
 #, c-format
 msgid "could not delete directory \"%s\""
 msgstr "ошибка при удалении каталога \"%s\""
@@ -4205,26 +4205,26 @@ msgid "could not delete directory \"%s\"\n"
 msgstr "ошибка при удалении каталога \"%s\"\n"
 
 #. +> 17 16 15 14 13 12
-#: pg_upgrade.c:685
+#: pg_upgrade.c:687
 #, c-format
 msgid "Copying old %s to new server"
 msgstr "Копирование старого каталога %s на новый сервер"
 
 #. +> 17 16 15 14 13 12
-#: pg_upgrade.c:711
+#: pg_upgrade.c:713
 #, c-format
 msgid "Setting oldest XID for new cluster"
 msgstr "Установка старейшего OID для нового кластера"
 
 #. +> 17 16 15 14 13 12
-#: pg_upgrade.c:719
+#: pg_upgrade.c:721
 #, c-format
 msgid "Setting next transaction ID and epoch for new cluster"
 msgstr ""
 "Установка следующего идентификатора транзакции и эпохи для нового кластера"
 
 #. +> 17 16 15 14 13 12
-#: pg_upgrade.c:749
+#: pg_upgrade.c:751
 #, c-format
 msgid "Setting next multixact ID and offset for new cluster"
 msgstr ""
@@ -4232,31 +4232,31 @@ msgstr ""
 "кластера"
 
 #. +> 17 16 15 14 13 12
-#: pg_upgrade.c:773
+#: pg_upgrade.c:775
 #, c-format
 msgid "Setting oldest multixact ID in new cluster"
 msgstr "Установка старейшего идентификатора мультитранзакции в новом кластере"
 
 #. +> 17 16 15 14 13 12
-#: pg_upgrade.c:793
+#: pg_upgrade.c:795
 #, c-format
 msgid "Resetting WAL archives"
 msgstr "Сброс архивов WAL"
 
 #. +> 17 16 15 14 13 12
-#: pg_upgrade.c:836
+#: pg_upgrade.c:838
 #, c-format
 msgid "Setting frozenxid and minmxid counters in new cluster"
 msgstr "Установка счётчиков frozenxid и minmxid в новом кластере"
 
 #. +> 17 16 15 14 13 12
-#: pg_upgrade.c:838
+#: pg_upgrade.c:840
 #, c-format
 msgid "Setting minmxid counter in new cluster"
 msgstr "Установка счётчика minmxid в новом кластере"
 
 #. +> 17
-#: pg_upgrade.c:929
+#: pg_upgrade.c:931
 #, c-format
 msgid "Restoring logical replication slots in the new cluster"
 msgstr "Восстановление слотов логической репликации в новом кластере"
