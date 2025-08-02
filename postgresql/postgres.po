@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2025-08-02 11:38+0300\n"
-"PO-Revision-Date: 2025-05-03 16:34+0300\n"
+"PO-Revision-Date: 2025-08-02 13:46+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -1464,10 +1464,10 @@ msgstr "нераспознанное пространство имён пара�
 
 #. +> 17 16 15 14 13
 #: access/common/reloptions.c:1294 commands/foreigncmds.c:86
-#, fuzzy, c-format
+#, c-format
 #| msgid "Extension names must not contain \"--\"."
 msgid "invalid option name \"%s\": must not contain \"=\""
-msgstr "Имя расширения не может содержать \"--\"."
+msgstr "некорректное имя параметра \"%s\": имя не может содержать \"=\""
 
 #. +> 17 16 15 14 13
 #: access/common/reloptions.c:1309 commands/variable.c:1214
@@ -30530,7 +30530,7 @@ msgstr "не удалось синхронизировать слот репли
 
 #. +> 17
 #: replication/logical/slotsync.c:217
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "The remote slot has LSN %X/%X and catalog xmin %u, but the local slot has "
 #| "LSN %X/%X and catalog xmin %u."
@@ -30538,8 +30538,9 @@ msgid ""
 "Synchronization could lead to data loss as the remote slot needs WAL at LSN "
 "%X/%X and catalog xmin %u, but the standby has LSN %X/%X and catalog xmin %u."
 msgstr ""
-"Для удалённого слота текущий LSN %X/%X и xmin каталога %u, тогда как для "
-"локального — LSN %X/%X и xmin каталога %u."
+"Синхронизация могла привести к потере данных, так как удалённый слот требует "
+"WAL в позиции LSN %X/%X и xmin каталога %u, но на резервном сервере текущий "
+"LSN %X/%X и xmin каталога %u."
 
 #. +> 17
 #: replication/logical/slotsync.c:459
@@ -30554,6 +30555,8 @@ msgid ""
 "Synchronization could lead to data loss as standby could not build a "
 "consistent snapshot to decode WALs at LSN %X/%X."
 msgstr ""
+"Синхронизация могла привести к потере данных, так как резервный сервер не "
+"смог получить согласованный снимок для декодирования WAL в позиции LSN %X/%X."
 
 #. +> 17
 #: replication/logical/slotsync.c:589
@@ -46359,10 +46362,10 @@ msgstr "нераспознанный параметр столбца \"%s\""
 
 #. +> 17 16 15
 #: gram.y:14098
-#, fuzzy, c-format
+#, c-format
 #| msgid "portal \"%s\" cannot be run"
 msgid "option name \"%s\" cannot be used in XMLTABLE"
-msgstr "портал \"%s\" не может быть запущен"
+msgstr "имя параметра \"%s\" не может использоваться в XMLTABLE"
 
 #. +> 17
 #: gram.y:14154
