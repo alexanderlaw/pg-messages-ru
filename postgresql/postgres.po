@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: postgres (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2025-08-02 11:38+0300\n"
+"POT-Creation-Date: 2025-08-09 07:36+0300\n"
 "PO-Revision-Date: 2025-08-02 13:46+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -1465,7 +1465,6 @@ msgstr "нераспознанное пространство имён пара�
 #. +> 17 16 15 14 13
 #: access/common/reloptions.c:1294 commands/foreigncmds.c:86
 #, c-format
-#| msgid "Extension names must not contain \"--\"."
 msgid "invalid option name \"%s\": must not contain \"=\""
 msgstr "некорректное имя параметра \"%s\": имя не может содержать \"=\""
 
@@ -1853,7 +1852,7 @@ msgid "could not obtain lock on row in relation \"%s\""
 msgstr "не удалось получить блокировку строки в таблице \"%s\""
 
 #. +> 17 16 15 14 13
-#: access/heap/heapam.c:6355 commands/trigger.c:3397
+#: access/heap/heapam.c:6355 commands/trigger.c:3427
 #: executor/nodeModifyTable.c:2399 executor/nodeModifyTable.c:2490
 #, c-format
 msgid ""
@@ -8196,7 +8195,7 @@ msgstr ""
 
 #. +> 17 16 15 14 13
 #: catalog/namespace.c:462 catalog/namespace.c:666 catalog/namespace.c:758
-#: commands/trigger.c:5787
+#: commands/trigger.c:5817
 #, c-format
 msgid "cross-database references are not implemented: \"%s.%s.%s\""
 msgstr "ссылки между базами не реализованы: \"%s.%s.%s\""
@@ -18380,20 +18379,20 @@ msgid "permission denied: \"%s\" is a system trigger"
 msgstr "нет доступа: \"%s\" - это системный триггер"
 
 #. +> 17 16 15 14 13
-#: commands/trigger.c:2380
+#: commands/trigger.c:2382
 #, c-format
 msgid "trigger function %u returned null value"
 msgstr "триггерная функция %u вернула значение NULL"
 
 #. +> 17 16 15 14 13
-#: commands/trigger.c:2440 commands/trigger.c:2658 commands/trigger.c:2939
-#: commands/trigger.c:3319
+#: commands/trigger.c:2442 commands/trigger.c:2669 commands/trigger.c:2959
+#: commands/trigger.c:3349
 #, c-format
 msgid "BEFORE STATEMENT trigger cannot return a value"
 msgstr "триггер BEFORE STATEMENT не может возвращать значение"
 
 #. +> 17 16 15 14 13
-#: commands/trigger.c:2516
+#: commands/trigger.c:2518
 #, c-format
 msgid ""
 "moving row to another partition during a BEFORE FOR EACH ROW trigger is not "
@@ -18402,7 +18401,7 @@ msgstr ""
 "в триггере BEFORE FOR EACH ROW нельзя перемещать строку в другую секцию"
 
 #. +> 17 16 15 14 13
-#: commands/trigger.c:2517
+#: commands/trigger.c:2519
 #, c-format
 msgid ""
 "Before executing trigger \"%s\", the row was to be in partition \"%s.%s\"."
@@ -18411,7 +18410,14 @@ msgstr ""
 "%s\"."
 
 #. +> 17 16 15 14 13
-#: commands/trigger.c:3398 executor/nodeModifyTable.c:1563
+#: commands/trigger.c:2548 commands/trigger.c:2827 commands/trigger.c:3190
+#, fuzzy, c-format
+#| msgid "cannot delete from foreign table \"%s\""
+msgid "cannot collect transition tuples from child foreign tables"
+msgstr "удалять данные из сторонней таблицы \"%s\" нельзя"
+
+#. +> 17 16 15 14 13
+#: commands/trigger.c:3428 executor/nodeModifyTable.c:1563
 #: executor/nodeModifyTable.c:1637 executor/nodeModifyTable.c:2400
 #: executor/nodeModifyTable.c:2491 executor/nodeModifyTable.c:3155
 #: executor/nodeModifyTable.c:3325
@@ -18424,7 +18430,7 @@ msgstr ""
 "триггер AFTER вместо BEFORE."
 
 #. +> 17 16 15 14 13
-#: commands/trigger.c:3440 executor/nodeLockRows.c:228
+#: commands/trigger.c:3470 executor/nodeLockRows.c:228
 #: executor/nodeLockRows.c:237 executor/nodeModifyTable.c:335
 #: executor/nodeModifyTable.c:1579 executor/nodeModifyTable.c:2417
 #: executor/nodeModifyTable.c:2641
@@ -18433,7 +18439,7 @@ msgid "could not serialize access due to concurrent update"
 msgstr "не удалось сериализовать доступ из-за параллельного изменения"
 
 #. +> 17 16 15 14 13
-#: commands/trigger.c:3448 executor/nodeModifyTable.c:1669
+#: commands/trigger.c:3478 executor/nodeModifyTable.c:1669
 #: executor/nodeModifyTable.c:2508 executor/nodeModifyTable.c:2665
 #: executor/nodeModifyTable.c:3173
 #, c-format
@@ -18441,7 +18447,7 @@ msgid "could not serialize access due to concurrent delete"
 msgstr "не удалось сериализовать доступ из-за параллельного удаления"
 
 #. +> 17 16 15 14 13
-#: commands/trigger.c:4657
+#: commands/trigger.c:4687
 #, c-format
 msgid "cannot fire deferred trigger within security-restricted operation"
 msgstr ""
@@ -18449,13 +18455,13 @@ msgstr ""
 "триггер"
 
 #. +> 17 16 15 14 13
-#: commands/trigger.c:5838
+#: commands/trigger.c:5868
 #, c-format
 msgid "constraint \"%s\" is not deferrable"
 msgstr "ограничение \"%s\" не является откладываемым"
 
 #. +> 17 16 15 14 13
-#: commands/trigger.c:5861
+#: commands/trigger.c:5891
 #, c-format
 msgid "constraint \"%s\" does not exist"
 msgstr "ограничение \"%s\" не существует"
@@ -21390,7 +21396,7 @@ msgid "user mapping not found for \"%s\""
 msgstr "сопоставление пользователя для \"%s\" не найдено"
 
 #. +> 17 16 15 14 13
-#: foreign/foreign.c:336 optimizer/plan/createplan.c:7153
+#: foreign/foreign.c:336 optimizer/plan/createplan.c:7155
 #: optimizer/util/plancat.c:540
 #, c-format
 msgid "access to non-system foreign table is restricted"
@@ -24141,7 +24147,7 @@ msgstr ""
 "слиянием или хеш-соединение"
 
 #. +> 17 16 15
-#: optimizer/plan/createplan.c:7175 parser/parse_merge.c:203
+#: optimizer/plan/createplan.c:7177 parser/parse_merge.c:203
 #: rewrite/rewriteHandler.c:1680
 #, c-format
 msgid "cannot execute MERGE on relation \"%s\""
@@ -28685,19 +28691,19 @@ msgstr[1] "контрольные точки происходят слишком
 msgstr[2] "контрольные точки происходят слишком часто (через %d сек.)"
 
 #. +> 17 16 15 14 13
-#: postmaster/checkpointer.c:1070
+#: postmaster/checkpointer.c:1073
 #, c-format
 msgid "checkpoint request failed"
 msgstr "сбой при запросе контрольной точки"
 
 #. +> 17 16 15 14 13
-#: postmaster/checkpointer.c:1071
+#: postmaster/checkpointer.c:1074
 #, c-format
 msgid "Consult recent messages in the server log for details."
 msgstr "Смотрите подробности в протоколе сервера."
 
 #. +> 13
-#: postmaster/checkpointer.c:1224
+#: postmaster/checkpointer.c:1227
 #, c-format
 msgid "compacted fsync request queue from %d entries to %d entries"
 msgstr "очередь запросов fsync сжата (было записей: %d, стало: %d)"
@@ -30530,13 +30536,15 @@ msgstr "не удалось синхронизировать слот репли
 
 #. +> 17
 #: replication/logical/slotsync.c:217
-#, c-format
+#, fuzzy, c-format
 #| msgid ""
-#| "The remote slot has LSN %X/%X and catalog xmin %u, but the local slot has "
-#| "LSN %X/%X and catalog xmin %u."
+#| "Synchronization could lead to data loss as the remote slot needs WAL at "
+#| "LSN %X/%X and catalog xmin %u, but the standby has LSN %X/%X and catalog "
+#| "xmin %u."
 msgid ""
-"Synchronization could lead to data loss as the remote slot needs WAL at LSN "
-"%X/%X and catalog xmin %u, but the standby has LSN %X/%X and catalog xmin %u."
+"Synchronization could lead to data loss, because the remote slot needs WAL "
+"at LSN %X/%X and catalog xmin %u, but the standby has LSN %X/%X and catalog "
+"xmin %u."
 msgstr ""
 "Синхронизация могла привести к потере данных, так как удалённый слот требует "
 "WAL в позиции LSN %X/%X и xmin каталога %u, но на резервном сервере текущий "
@@ -30550,10 +30558,13 @@ msgstr "слот репликации \"%s\" базы данных с OID %u у�
 
 #. +> 17
 #: replication/logical/slotsync.c:580
-#, c-format
+#, fuzzy, c-format
+#| msgid ""
+#| "Synchronization could lead to data loss as standby could not build a "
+#| "consistent snapshot to decode WALs at LSN %X/%X."
 msgid ""
-"Synchronization could lead to data loss as standby could not build a "
-"consistent snapshot to decode WALs at LSN %X/%X."
+"Synchronization could lead to data loss, because the standby could not build "
+"a consistent snapshot to decode WALs at LSN %X/%X."
 msgstr ""
 "Синхронизация могла привести к потере данных, так как резервный сервер не "
 "смог получить согласованный снимок для декодирования WAL в позиции LSN %X/%X."
@@ -30632,7 +30643,7 @@ msgid ""
 msgstr "для синхронизации слотов репликации требуется указание \"%s\" в \"%s\""
 
 #. +> 17
-#: replication/logical/slotsync.c:1050
+#: replication/logical/slotsync.c:1048
 #, c-format
 msgid "replication slot synchronization requires \"wal_level\" >= \"logical\""
 msgstr ""
@@ -46363,7 +46374,6 @@ msgstr "нераспознанный параметр столбца \"%s\""
 #. +> 17 16 15
 #: gram.y:14098
 #, c-format
-#| msgid "portal \"%s\" cannot be run"
 msgid "option name \"%s\" cannot be used in XMLTABLE"
 msgstr "имя параметра \"%s\" не может использоваться в XMLTABLE"
 

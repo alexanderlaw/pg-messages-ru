@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_dump (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2025-08-02 11:38+0300\n"
+"POT-Creation-Date: 2025-08-09 07:35+0300\n"
 "PO-Revision-Date: 2025-05-03 16:33+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -763,38 +763,38 @@ msgstr ""
 "неверный формат в фильтре, прочитанном из файла \"%s\", в строке %d: %s"
 
 #. +> 17
-#: filter.c:241 filter.c:468
+#: filter.c:244 filter.c:471
 #, c-format
 msgid "could not read from filter file \"%s\": %m"
 msgstr "не удалось прочитать файл фильтра \"%s\": %m"
 
 #. +> 17
-#: filter.c:244
+#: filter.c:247
 msgid "unexpected end of file"
 msgstr "неожиданный конец файла"
 
 #. +> 17
-#: filter.c:311
+#: filter.c:314
 msgid "missing object name pattern"
 msgstr "отсутствует шаблон имени объекта"
 
 #. +> 17
-#: filter.c:422
+#: filter.c:425
 msgid "no filter command found (expected \"include\" or \"exclude\")"
 msgstr "отсутствует команда фильтра (ожидалась \"include\" или \"exclude\")"
 
 #. +> 17
-#: filter.c:433
+#: filter.c:436
 msgid "invalid filter command (expected \"include\" or \"exclude\")"
 msgstr "неверная команда фильтра (ожидалась \"include\" или \"exclude\")"
 
 #. +> 17
-#: filter.c:440
+#: filter.c:443
 msgid "missing filter object type"
 msgstr "отсутствует тип объекта фильтра"
 
 #. +> 17
-#: filter.c:447
+#: filter.c:450
 #, c-format
 msgid "unsupported filter object type: \"%.*s\""
 msgstr "неподдерживаемый тип объекта фильтра: \"%.*s\""

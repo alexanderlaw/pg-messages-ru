@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_upgrade (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2025-08-02 11:38+0300\n"
+"POT-Creation-Date: 2025-08-09 07:36+0300\n"
 "PO-Revision-Date: 2025-08-02 13:39+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -575,7 +575,7 @@ msgstr "не пройдена проверка: %s"
 msgid "A list of the problem columns is in the file:"
 msgstr "Список проблемных столбцов приведён в файле:"
 
-#. +> 17 16 15 14 13
+#. +> 17
 #: check.c:496 check.c:971 check.c:1144 check.c:1259 check.c:1353 check.c:1481
 #: check.c:1557 check.c:1634 check.c:1700 check.c:1773 check.c:1952
 #: check.c:1971 check.c:2040 check.c:2092 file.c:378 file.c:415 function.c:189
@@ -586,16 +586,16 @@ msgstr "не удалось открыть файл \"%s\": %m"
 
 #. +> 16
 #: check.c:487 check.c:660 check.c:776 check.c:871 check.c:1000 check.c:1077
-#: check.c:1435 check.c:1509 file.c:339 function.c:163 option.c:476
-#: version.c:116 version.c:292 version.c:426
+#: check.c:1155 check.c:1435 check.c:1509 file.c:339 function.c:163
+#: option.c:476 version.c:116 version.c:292 version.c:426
 #, c-format
 msgid "could not open file \"%s\": %s"
 msgstr "не удалось открыть файл \"%s\": %s"
 
 #. +> 15 14 13
 #: check.c:601 check.c:776 check.c:896 check.c:995 check.c:1126 check.c:1205
-#: check.c:1587 file.c:338 function.c:165 option.c:465 version.c:116
-#: version.c:292 version.c:429
+#: check.c:1285 check.c:1587 file.c:338 function.c:165 option.c:465
+#: version.c:116 version.c:292 version.c:429
 #, c-format
 msgid "could not open file \"%s\": %s\n"
 msgstr "не удалось открыть файл \"%s\": %s\n"
@@ -1120,7 +1120,7 @@ msgstr ""
 "Все базы, кроме template0, должны допускать подключения, то есть их свойство "
 "pg_database.datallowconn должно быть true\n"
 
-#. +> 17 16 15 14 13
+#. +> 17 16
 #: check.c:1158 check.c:1278 check.c:1375 check.c:1500 check.c:1576
 #: check.c:1654 check.c:1713 check.c:1793 check.c:1984 check.c:2109
 #: function.c:210
@@ -1129,9 +1129,9 @@ msgid "fatal"
 msgstr "сбой"
 
 #. +> 15 14 13
-#: check.c:793 check.c:918 check.c:1020 check.c:1146 check.c:1227 check.c:1365
-#: check.c:1426 check.c:1460 check.c:1491 check.c:1610 function.c:187
-#: version.c:192 version.c:232 version.c:378
+#: check.c:793 check.c:918 check.c:1020 check.c:1146 check.c:1227 check.c:1305
+#: check.c:1365 check.c:1426 check.c:1460 check.c:1491 check.c:1610
+#: function.c:187 version.c:192 version.c:232 version.c:378
 #, c-format
 msgid "fatal\n"
 msgstr "сбой\n"
@@ -1413,7 +1413,6 @@ msgstr ""
 #. +> 17 16 15 14 13
 #: check.c:1602
 #, c-format
-#| msgid "Checking for subscription state"
 msgid "Checking for not-null constraint inconsistencies"
 msgstr "Проверка несогласованных ограничений NOT NULL"
 
@@ -1437,13 +1436,21 @@ msgstr "не удалось восстановить старую локаль \
 
 #. +> 17 16
 #: check.c:1655
-#, c-format
+#, fuzzy, c-format
+#| msgid ""
+#| "Your installation contains inconsistent NOT NULL constraints.\n"
+#| "If the parent column(s) are NOT NULL, then the child column must\n"
+#| "also be marked NOT NULL, or the upgrade will fail.\n"
+#| "You can fix this by running\n"
+#| "  ALTER TABLE tablename ALTER column SET NOT NULL;\n"
+#| "on each column listed in the file:\n"
+#| "    %s"
 msgid ""
 "Your installation contains inconsistent NOT NULL constraints.\n"
 "If the parent column(s) are NOT NULL, then the child column must\n"
 "also be marked NOT NULL, or the upgrade will fail.\n"
 "You can fix this by running\n"
-"  ALTER TABLE tablename ALTER column SET NOT NULL;\n"
+"    ALTER TABLE tablename ALTER column SET NOT NULL;\n"
 "on each column listed in the file:\n"
 "    %s"
 msgstr ""
@@ -1457,13 +1464,22 @@ msgstr ""
 
 #. +> 15 14 13
 #: check.c:1306
-#, c-format
+#, fuzzy, c-format
+#| msgid ""
+#| "Your installation contains inconsistent NOT NULL constraints.\n"
+#| "If the parent column(s) are NOT NULL, then the child column must\n"
+#| "also be marked NOT NULL, or the upgrade will fail.\n"
+#| "You can fix this by running\n"
+#| "  ALTER TABLE tablename ALTER column SET NOT NULL;\n"
+#| "on each column listed in the file:\n"
+#| "    %s\n"
+#| "\n"
 msgid ""
 "Your installation contains inconsistent NOT NULL constraints.\n"
 "If the parent column(s) are NOT NULL, then the child column must\n"
 "also be marked NOT NULL, or the upgrade will fail.\n"
 "You can fix this by running\n"
-"  ALTER TABLE tablename ALTER column SET NOT NULL;\n"
+"    ALTER TABLE tablename ALTER column SET NOT NULL;\n"
 "on each column listed in the file:\n"
 "    %s\n"
 "\n"
