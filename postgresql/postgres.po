@@ -10,8 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: postgres (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2025-08-09 07:36+0300\n"
-"PO-Revision-Date: 2025-08-02 13:46+0300\n"
+"POT-Creation-Date: 2025-08-09 07:14+0300\n"
+"PO-Revision-Date: 2025-08-09 07:31+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -18411,10 +18411,10 @@ msgstr ""
 
 #. +> 17 16 15 14 13
 #: commands/trigger.c:2548 commands/trigger.c:2827 commands/trigger.c:3190
-#, fuzzy, c-format
+#, c-format
 #| msgid "cannot delete from foreign table \"%s\""
 msgid "cannot collect transition tuples from child foreign tables"
-msgstr "удалять данные из сторонней таблицы \"%s\" нельзя"
+msgstr "собрать переходные кортежи из дочерних сторонних таблиц нельзя"
 
 #. +> 17 16 15 14 13
 #: commands/trigger.c:3428 executor/nodeModifyTable.c:1563
@@ -30536,7 +30536,7 @@ msgstr "не удалось синхронизировать слот репли
 
 #. +> 17
 #: replication/logical/slotsync.c:217
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "Synchronization could lead to data loss as the remote slot needs WAL at "
 #| "LSN %X/%X and catalog xmin %u, but the standby has LSN %X/%X and catalog "
@@ -30558,7 +30558,7 @@ msgstr "слот репликации \"%s\" базы данных с OID %u у�
 
 #. +> 17
 #: replication/logical/slotsync.c:580
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "Synchronization could lead to data loss as standby could not build a "
 #| "consistent snapshot to decode WALs at LSN %X/%X."
