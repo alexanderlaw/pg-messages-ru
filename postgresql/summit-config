@@ -21,6 +21,10 @@ sources_root=os.getenv('MSG_SRCS', 'messages-sources')
 pot_root=os.getenv('MSG_POTS', 'pot')
 
 S.branches = [
+    dict(id="18",
+         topdir=S.relpath("%s/messages-18.git/%s" % (sources_root, S.lang)),
+         topdir_templates=S.relpath("%s/18" % (pot_root)),
+         ),
     dict(id="17",
          topdir=S.relpath("%s/messages-17.git/%s" % (sources_root, S.lang)),
          topdir_templates=S.relpath("%s/17" % (pot_root)),

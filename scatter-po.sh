@@ -40,6 +40,7 @@ finalize_po() {
 
 export MSG_SRCS="$( cd "$TMP" && pwd )"
 
+prepare_src_messages 18 master
 prepare_src_messages 17 REL_17_STABLE
 prepare_src_messages 16 REL_16_STABLE
 prepare_src_messages 15 REL_15_STABLE
@@ -49,6 +50,7 @@ prepare_src_messages 13 REL_13_STABLE
 cd $CUR_MESSAGES_PATH
 $POLOGY_PATH/bin/posummit -v scatter
 )
+finalize_po 18
 finalize_po 17
 finalize_po 16
 finalize_po 15
