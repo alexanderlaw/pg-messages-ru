@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_test_timing (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2025-08-02 11:38+0300\n"
+"POT-Creation-Date: 2025-08-30 16:01+0300\n"
 "PO-Revision-Date: 2024-09-04 19:59+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -18,38 +18,38 @@ msgstr ""
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Lokalize 21.12.3\n"
 
-#. +> 17
+#. +> 18 17
 #: ../../common/fe_memutils.c:35 ../../common/fe_memutils.c:75
 #: ../../common/fe_memutils.c:98 ../../common/fe_memutils.c:161
 #, c-format
 msgid "out of memory\n"
 msgstr "нехватка памяти\n"
 
-#. +> 17
+#. +> 18 17
 #: ../../common/fe_memutils.c:92 ../../common/fe_memutils.c:153
 #, c-format
 msgid "cannot duplicate null pointer (internal error)\n"
 msgstr "попытка дублирования нулевого указателя (внутренняя ошибка)\n"
 
-#. +> 17 16 15 14 13
+#. +> 18 17 16 15 14 13
 #: pg_test_timing.c:59
 #, c-format
 msgid "Usage: %s [-d DURATION]\n"
 msgstr "Использование: %s [-d ДЛИТЕЛЬНОСТЬ]\n"
 
-#. +> 17 16 15 14
+#. +> 18 17 16 15 14
 #: pg_test_timing.c:81
 #, c-format
 msgid "%s: invalid argument for option %s\n"
 msgstr "%s: недопустимый аргумент параметра %s\n"
 
-#. +> 17 16 15 14 13
+#. +> 18 17 16 15 14 13
 #: pg_test_timing.c:83 pg_test_timing.c:97 pg_test_timing.c:109
 #, c-format
 msgid "Try \"%s --help\" for more information.\n"
 msgstr "Для дополнительной информации попробуйте \"%s --help\".\n"
 
-#. +> 17 16 15 14
+#. +> 18 17 16 15 14
 #: pg_test_timing.c:90
 #, c-format
 msgid "%s: %s must be in range %u..%u\n"
@@ -62,13 +62,13 @@ msgid "%s: duration must be a positive integer (duration is \"%d\")\n"
 msgstr ""
 "%s: длительность должна задаваться положительным целым (указано: \"%d\")\n"
 
-#. +> 17 16 15 14 13
+#. +> 18 17 16 15 14 13
 #: pg_test_timing.c:107
 #, c-format
 msgid "%s: too many command-line arguments (first is \"%s\")\n"
 msgstr "%s: слишком много аргументов командной строки (первый: \"%s\")\n"
 
-#. +> 17 16 15 14
+#. +> 18 17 16 15 14
 #: pg_test_timing.c:115
 #, c-format
 msgid "Testing timing overhead for %u second.\n"
@@ -86,41 +86,41 @@ msgstr[0] "Оценка издержек замеров времени в теч
 msgstr[1] "Оценка издержек замеров времени в течение %d сек.\n"
 msgstr[2] "Оценка издержек замеров времени в течение %d сек.\n"
 
-#. +> 17 16 15 14 13
+#. +> 18 17 16 15 14 13
 #: pg_test_timing.c:151
 #, c-format
 msgid "Detected clock going backwards in time.\n"
 msgstr "Обнаружен обратный ход часов.\n"
 
-#. +> 17 16 15 14 13
+#. +> 18 17 16 15 14 13
 #: pg_test_timing.c:152
 #, c-format
 msgid "Time warp: %d ms\n"
 msgstr "Сдвиг времени: %d мс\n"
 
-#. +> 17 16 15 14 13
+#. +> 18 17 16 15 14 13
 #: pg_test_timing.c:175
 #, c-format
 msgid "Per loop time including overhead: %0.2f ns\n"
 msgstr "Время одного цикла, включая издержки: %0.2f нс\n"
 
-#. +> 17 16 15 14 13
+#. +> 18 17 16 15 14 13
 #: pg_test_timing.c:186
 msgid "< us"
 msgstr "< мкс"
 
-#. +> 17 16 15 14 13
+#. +> 18 17 16 15 14 13
 #: pg_test_timing.c:187
 #, no-c-format
 msgid "% of total"
 msgstr "% от общего"
 
-#. +> 17 16 15 14 13
+#. +> 18 17 16 15 14 13
 #: pg_test_timing.c:188
 msgid "count"
 msgstr "число"
 
-#. +> 17 16 15 14 13
+#. +> 18 17 16 15 14 13
 #: pg_test_timing.c:197
 #, c-format
 msgid "Histogram of timing durations:\n"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_verifybackup (PostgreSQL) 13\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2025-08-02 11:38+0300\n"
+"POT-Creation-Date: 2025-08-30 16:01+0300\n"
 "PO-Revision-Date: 2024-09-07 09:48+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -15,20 +15,20 @@ msgstr ""
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Lokalize 21.12.3\n"
 
-#. +> 17 16 15 14 13
-#: ../../../src/common/logging.c:276
+#. +> 18 17 16 15 14 13
+#: ../../../src/common/logging.c:279
 #, c-format
 msgid "error: "
 msgstr "ошибка: "
 
-#. +> 17 16 15 14 13
-#: ../../../src/common/logging.c:283
+#. +> 18 17 16 15 14 13
+#: ../../../src/common/logging.c:286
 #, c-format
 msgid "warning: "
 msgstr "предупреждение: "
 
-#. +> 17 16 15
-#: ../../../src/common/logging.c:294
+#. +> 18 17 16 15
+#: ../../../src/common/logging.c:297
 #, c-format
 msgid "detail: "
 msgstr "подробности: "
@@ -39,44 +39,44 @@ msgstr "подробности: "
 msgid "fatal: "
 msgstr "важно: "
 
-#. +> 17 16 15
-#: ../../../src/common/logging.c:301
+#. +> 18 17 16 15
+#: ../../../src/common/logging.c:304
 #, c-format
 msgid "hint: "
 msgstr "подсказка: "
 
-#. +> 17
+#. +> 18 17
 #: ../../common/controldata_utils.c:97
 #, c-format
 msgid "could not open file \"%s\" for reading: %m"
 msgstr "не удалось открыть файл \"%s\" для чтения: %m"
 
-#. +> 17 16 15 14 13
-#: ../../common/controldata_utils.c:110 pg_verifybackup.c:438
-#: pg_verifybackup.c:476 pg_verifybackup.c:896
+#. +> 18 17 16 15 14 13
+#: ../../common/controldata_utils.c:110 pg_verifybackup.c:440
+#: pg_verifybackup.c:478 pg_verifybackup.c:1025 pg_verifybackup.c:1144
 #, c-format
 msgid "could not read file \"%s\": %m"
 msgstr "не удалось прочитать файл \"%s\": %m"
 
-#. +> 17 13
+#. +> 18 17 13
 #: ../../common/controldata_utils.c:119
 #, c-format
 msgid "could not read file \"%s\": read %d of %zu"
 msgstr "не удалось прочитать файл \"%s\" (прочитано байт: %d из %zu)"
 
-#. +> 17 16 15 14 13
+#. +> 18 17 16 15 14 13
 #: ../../common/controldata_utils.c:132 ../../common/controldata_utils.c:280
-#: pg_verifybackup.c:902
+#: pg_verifybackup.c:1030 pg_verifybackup.c:1150
 #, c-format
 msgid "could not close file \"%s\": %m"
 msgstr "не удалось закрыть файл \"%s\": %m"
 
-#. +> 17
+#. +> 18 17
 #: ../../common/controldata_utils.c:168
 msgid "byte ordering mismatch"
 msgstr "несоответствие порядка байт"
 
-#. +> 17
+#. +> 18 17
 #: ../../common/controldata_utils.c:170
 #, c-format
 msgid ""
@@ -91,83 +91,84 @@ msgstr ""
 "этой программой. В этом случае результаты будут неверными и\n"
 "установленный PostgreSQL будет несовместим с этим каталогом данных."
 
-#. +> 17 16 15 14 13
-#: ../../common/controldata_utils.c:230 pg_verifybackup.c:406
-#: pg_verifybackup.c:865
+#. +> 18 17 16 15 14 13
+#: ../../common/controldata_utils.c:230 pg_verifybackup.c:408
+#: pg_verifybackup.c:1005 pg_verifybackup.c:1113
 #, c-format
 msgid "could not open file \"%s\": %m"
 msgstr "не удалось открыть файл \"%s\": %m"
 
-#. +> 17
+#. +> 18 17
 #: ../../common/controldata_utils.c:249
 #, c-format
 msgid "could not write file \"%s\": %m"
 msgstr "не удалось записать файл \"%s\": %m"
 
-#. +> 17
+#. +> 18 17
 #: ../../common/controldata_utils.c:268
 #, c-format
 msgid "could not fsync file \"%s\": %m"
 msgstr "не удалось синхронизировать с ФС файл \"%s\": %m"
 
-#. +> 17 16 15 14
+#. +> 18 17 16 15 14
 #: ../../common/cryptohash.c:261 ../../common/cryptohash_openssl.c:356
-#: ../../common/parse_manifest.c:157 ../../common/parse_manifest.c:852
+#: ../../common/jsonapi.c:2410 ../../common/parse_manifest.c:157
+#: ../../common/parse_manifest.c:852
 #, c-format
 msgid "out of memory"
 msgstr "нехватка памяти"
 
-#. +> 17
+#. +> 18 17
 #: ../../common/cryptohash.c:266 ../../common/cryptohash.c:272
 #: ../../common/cryptohash_openssl.c:368 ../../common/cryptohash_openssl.c:376
 msgid "success"
 msgstr "успех"
 
-#. +> 17
+#. +> 18 17
 #: ../../common/cryptohash.c:268 ../../common/cryptohash_openssl.c:370
 msgid "destination buffer too small"
 msgstr "буфер назначения слишком мал"
 
-#. +> 17
+#. +> 18 17
 #: ../../common/cryptohash_openssl.c:372
 msgid "OpenSSL failure"
 msgstr "ошибка OpenSSL"
 
-#. +> 17 16 15 14 13
+#. +> 18 17 16 15 14 13
 #: ../../common/fe_memutils.c:35 ../../common/fe_memutils.c:75
 #: ../../common/fe_memutils.c:98 ../../common/fe_memutils.c:161
 #, c-format
 msgid "out of memory\n"
 msgstr "нехватка памяти\n"
 
-#. +> 17 16 15 14 13
+#. +> 18 17 16 15 14 13
 #: ../../common/fe_memutils.c:92 ../../common/fe_memutils.c:153
 #, c-format
 msgid "cannot duplicate null pointer (internal error)\n"
 msgstr "попытка дублирования нулевого указателя (внутренняя ошибка)\n"
 
-#. +> 17
-#: ../../common/jsonapi.c:2124
+#. +> 18 17
+#: ../../common/jsonapi.c:2435
 msgid "Recursive descent parser cannot use incremental lexer."
 msgstr ""
 "Инкрементальный лексический анализатор не подходит для нисходящего "
 "рекурсивного разбора."
 
-#. +> 17
-#: ../../common/jsonapi.c:2126
+#. +> 18 17
+#: ../../common/jsonapi.c:2437
 msgid "Incremental parser requires incremental lexer."
 msgstr ""
 "Для инкрементального разбора требуется инкрементальный лексический "
 "анализатор."
 
-#. +> 17
-#: ../../common/jsonapi.c:2128
+#. +> 18 17
+#: ../../common/jsonapi.c:2439
 msgid "JSON nested too deep, maximum permitted depth is 6400."
 msgstr ""
 "Слишком большая вложенность JSON, максимальная допустимая глубина: 6400."
 
-#. +> 17
-#: ../../common/jsonapi.c:2130
+#. +> 18 17
+#: ../../common/jsonapi.c:2441
 #, c-format
 msgid "Escape sequence \"\\%.*s\" is invalid."
 msgstr "Неверная спецпоследовательность: \"\\%.*s\"."
@@ -178,14 +179,14 @@ msgstr "Неверная спецпоследовательность: \"\\%.*s\
 msgid "Escape sequence \"\\%s\" is invalid."
 msgstr "Неверная спецпоследовательность: \"\\%s\"."
 
-#. +> 17 16 15 14 13
-#: ../../common/jsonapi.c:2134
+#. +> 18 17 16 15 14 13
+#: ../../common/jsonapi.c:2445
 #, c-format
 msgid "Character with value 0x%02x must be escaped."
 msgstr "Символ с кодом 0x%02x необходимо экранировать."
 
-#. +> 17
-#: ../../common/jsonapi.c:2138
+#. +> 18 17
+#: ../../common/jsonapi.c:2449
 #, c-format
 msgid "Expected end of input, but found \"%.*s\"."
 msgstr "Ожидался конец текста, но обнаружено продолжение \"%.*s\"."
@@ -196,8 +197,8 @@ msgstr "Ожидался конец текста, но обнаружено пр
 msgid "Expected end of input, but found \"%s\"."
 msgstr "Ожидался конец текста, но обнаружено продолжение \"%s\"."
 
-#. +> 17
-#: ../../common/jsonapi.c:2141
+#. +> 18 17
+#: ../../common/jsonapi.c:2452
 #, c-format
 msgid "Expected array element or \"]\", but found \"%.*s\"."
 msgstr "Ожидался элемент массива или \"]\", но обнаружено \"%.*s\"."
@@ -208,8 +209,8 @@ msgstr "Ожидался элемент массива или \"]\", но обн
 msgid "Expected array element or \"]\", but found \"%s\"."
 msgstr "Ожидался элемент массива или \"]\", но обнаружено \"%s\"."
 
-#. +> 17
-#: ../../common/jsonapi.c:2144
+#. +> 18 17
+#: ../../common/jsonapi.c:2455
 #, c-format
 msgid "Expected \",\" or \"]\", but found \"%.*s\"."
 msgstr "Ожидалась \",\" или \"]\", но обнаружено \"%.*s\"."
@@ -220,8 +221,8 @@ msgstr "Ожидалась \",\" или \"]\", но обнаружено \"%.*s\
 msgid "Expected \",\" or \"]\", but found \"%s\"."
 msgstr "Ожидалась \",\" или \"]\", но обнаружено \"%s\"."
 
-#. +> 17
-#: ../../common/jsonapi.c:2147
+#. +> 18 17
+#: ../../common/jsonapi.c:2458
 #, c-format
 msgid "Expected \":\", but found \"%.*s\"."
 msgstr "Ожидалось \":\", но обнаружено \"%.*s\"."
@@ -232,8 +233,8 @@ msgstr "Ожидалось \":\", но обнаружено \"%.*s\"."
 msgid "Expected \":\", but found \"%s\"."
 msgstr "Ожидалось \":\", но обнаружено \"%s\"."
 
-#. +> 17
-#: ../../common/jsonapi.c:2150
+#. +> 18 17
+#: ../../common/jsonapi.c:2461
 #, c-format
 msgid "Expected JSON value, but found \"%.*s\"."
 msgstr "Ожидалось значение JSON, но обнаружено \"%.*s\"."
@@ -244,13 +245,13 @@ msgstr "Ожидалось значение JSON, но обнаружено \"%.
 msgid "Expected JSON value, but found \"%s\"."
 msgstr "Ожидалось значение JSON, но обнаружено \"%s\"."
 
-#. +> 17 16 15 14 13
-#: ../../common/jsonapi.c:2153
+#. +> 18 17 16 15 14 13
+#: ../../common/jsonapi.c:2464
 msgid "The input string ended unexpectedly."
 msgstr "Неожиданный конец входной строки."
 
-#. +> 17
-#: ../../common/jsonapi.c:2155
+#. +> 18 17
+#: ../../common/jsonapi.c:2466
 #, c-format
 msgid "Expected string or \"}\", but found \"%.*s\"."
 msgstr "Ожидалась строка или \"}\", но обнаружено \"%.*s\"."
@@ -261,8 +262,8 @@ msgstr "Ожидалась строка или \"}\", но обнаружено 
 msgid "Expected string or \"}\", but found \"%s\"."
 msgstr "Ожидалась строка или \"}\", но обнаружено \"%s\"."
 
-#. +> 17
-#: ../../common/jsonapi.c:2158
+#. +> 18 17
+#: ../../common/jsonapi.c:2469
 #, c-format
 msgid "Expected \",\" or \"}\", but found \"%.*s\"."
 msgstr "Ожидалась \",\" или \"}\", но обнаружено \"%.*s\"."
@@ -273,8 +274,8 @@ msgstr "Ожидалась \",\" или \"}\", но обнаружено \"%.*s\
 msgid "Expected \",\" or \"}\", but found \"%s\"."
 msgstr "Ожидалась \",\" или \"}\", но обнаружено \"%s\"."
 
-#. +> 17
-#: ../../common/jsonapi.c:2161
+#. +> 18 17
+#: ../../common/jsonapi.c:2472
 #, c-format
 msgid "Expected string, but found \"%.*s\"."
 msgstr "Ожидалась строка, но обнаружено \"%.*s\"."
@@ -285,8 +286,8 @@ msgstr "Ожидалась строка, но обнаружено \"%.*s\"."
 msgid "Expected string, but found \"%s\"."
 msgstr "Ожидалась строка, но обнаружено \"%s\"."
 
-#. +> 17
-#: ../../common/jsonapi.c:2164
+#. +> 18 17
+#: ../../common/jsonapi.c:2475
 #, c-format
 msgid "Token \"%.*s\" is invalid."
 msgstr "Ошибочный элемент \"%.*s\"."
@@ -297,18 +298,18 @@ msgstr "Ошибочный элемент \"%.*s\"."
 msgid "Token \"%s\" is invalid."
 msgstr "Ошибочный элемент \"%s\"."
 
-#. +> 17 16 15 14 13
-#: ../../common/jsonapi.c:2167
+#. +> 18 17 16 15 14 13
+#: ../../common/jsonapi.c:2481
 msgid "\\u0000 cannot be converted to text."
 msgstr "\\u0000 нельзя преобразовать в текст."
 
-#. +> 17 16 15 14 13
-#: ../../common/jsonapi.c:2169
+#. +> 18 17 16 15 14 13
+#: ../../common/jsonapi.c:2483
 msgid "\"\\u\" must be followed by four hexadecimal digits."
 msgstr "За \"\\u\" должны следовать четыре шестнадцатеричные цифры."
 
-#. +> 17 16 15 14 13
-#: ../../common/jsonapi.c:2172
+#. +> 18 17 16 15 14 13
+#: ../../common/jsonapi.c:2486
 msgid ""
 "Unicode escape values cannot be used for code point values above 007F when "
 "the encoding is not UTF8."
@@ -316,225 +317,483 @@ msgstr ""
 "Спецкоды Unicode для значений выше 007F можно использовать только с "
 "кодировкой UTF8."
 
-#. +> 17 16
-#: ../../common/jsonapi.c:2181
+#. +> 18 17 16
+#: ../../common/jsonapi.c:2495
 #, c-format
 msgid ""
 "Unicode escape value could not be translated to the server's encoding %s."
 msgstr "Спецкод Unicode нельзя преобразовать в серверную кодировку %s."
 
-#. +> 17 16 15 14 13
-#: ../../common/jsonapi.c:2188
+#. +> 18 17 16 15 14 13
+#: ../../common/jsonapi.c:2502
 msgid "Unicode high surrogate must not follow a high surrogate."
 msgstr ""
 "Старшее слово суррогата Unicode не может следовать за другим старшим словом."
 
-#. +> 17 16 15 14 13
-#: ../../common/jsonapi.c:2190
+#. +> 18 17 16 15 14 13
+#: ../../common/jsonapi.c:2504
 msgid "Unicode low surrogate must follow a high surrogate."
 msgstr "Младшее слово суррогата Unicode должно следовать за старшим словом."
+
+#. +> 18
+#: ../../common/jsonapi.c:2526
+msgid "out of memory while constructing error description"
+msgstr ""
 
 #. +> 16 15
 #: parse_manifest.c:150
 msgid "parsing failed"
 msgstr "ошибка при разборе"
 
-#. +> 17 16 15 14
+#. +> 18 17 16 15 14
 #: ../../common/parse_manifest.c:159 ../../common/parse_manifest.c:854
 #, c-format
 msgid "could not initialize checksum of manifest"
 msgstr "не удалось подготовить контекст контрольной суммы манифеста"
 
-#. +> 17 16 15 14 13
+#. +> 18 17 16 15 14 13
 #: ../../common/parse_manifest.c:203 ../../common/parse_manifest.c:260
 msgid "manifest ended unexpectedly"
 msgstr "неожиданный конец манифеста"
 
-#. +> 17 16 15 14
+#. +> 18 17 16 15 14
 #: ../../common/parse_manifest.c:209 ../../common/parse_manifest.c:861
 #, c-format
 msgid "could not update checksum of manifest"
 msgstr "не удалось изменить контекст контрольной суммы манифеста"
 
-#. +> 17 16 15 14 13
+#. +> 18 17 16 15 14 13
 #: ../../common/parse_manifest.c:301
 msgid "unexpected object start"
 msgstr "неожиданное начало объекта"
 
-#. +> 17 16 15 14 13
+#. +> 18 17 16 15 14 13
 #: ../../common/parse_manifest.c:336
 msgid "unexpected object end"
 msgstr "неожиданный конец объекта"
 
-#. +> 17 16 15 14 13
+#. +> 18 17 16 15 14 13
 #: ../../common/parse_manifest.c:365
 msgid "unexpected array start"
 msgstr "неожиданное начало массива"
 
-#. +> 17 16 15 14 13
+#. +> 18 17 16 15 14 13
 #: ../../common/parse_manifest.c:390
 msgid "unexpected array end"
 msgstr "неожиданный конец массива"
 
-#. +> 17 16 15 14 13
+#. +> 18 17 16 15 14 13
 #: ../../common/parse_manifest.c:417
 msgid "expected version indicator"
 msgstr "ожидалось указание версии"
 
-#. +> 17 16 15 14 13
+#. +> 18 17 16 15 14 13
 #: ../../common/parse_manifest.c:453
 msgid "unrecognized top-level field"
 msgstr "нераспознанное поле на верхнем уровне"
 
-#. +> 17 16 15 14 13
+#. +> 18 17 16 15 14 13
 #: ../../common/parse_manifest.c:472
 msgid "unexpected file field"
 msgstr "неизвестное поле для файла"
 
-#. +> 17 16 15 14 13
+#. +> 18 17 16 15 14 13
 #: ../../common/parse_manifest.c:486
 msgid "unexpected WAL range field"
 msgstr "неизвестное поле в указании диапазона WAL"
 
-#. +> 17 16 15 14 13
+#. +> 18 17 16 15 14 13
 #: ../../common/parse_manifest.c:492
 msgid "unexpected object field"
 msgstr "неожиданное поле объекта"
 
-#. +> 17 16 15 14 13
+#. +> 18 17 16 15 14 13
 #: ../../common/parse_manifest.c:582
 msgid "unexpected scalar"
 msgstr "неожиданное скалярное значение"
 
-#. +> 17
+#. +> 18 17
 #: ../../common/parse_manifest.c:608
 msgid "manifest version not an integer"
 msgstr "версия манифеста не является целым числом"
 
-#. +> 17 16 15 14 13
+#. +> 18 17 16 15 14 13
 #: ../../common/parse_manifest.c:612
 msgid "unexpected manifest version"
 msgstr "неожиданная версия манифеста"
 
-#. +> 17
+#. +> 18 17
 #: ../../common/parse_manifest.c:636
 msgid "system identifier in manifest not an integer"
 msgstr "идентификатор системы в манифесте не является целым числом"
 
-#. +> 17 16 15 14 13
+#. +> 18 17 16 15 14 13
 #: ../../common/parse_manifest.c:661
 msgid "missing path name"
 msgstr "отсутствует указание пути"
 
-#. +> 17 16 15 14 13
+#. +> 18 17 16 15 14 13
 #: ../../common/parse_manifest.c:664
 msgid "both path name and encoded path name"
 msgstr "путь задан в обычном виде и в закодированном"
 
-#. +> 17 16 15 14 13
+#. +> 18 17 16 15 14 13
 #: ../../common/parse_manifest.c:666
 msgid "missing size"
 msgstr "отсутствует указание размера"
 
-#. +> 17 16 15 14 13
+#. +> 18 17 16 15 14 13
 #: ../../common/parse_manifest.c:669
 msgid "checksum without algorithm"
 msgstr "не задан алгоритм расчёта контрольной суммы"
 
-#. +> 17 16 15 14 13
+#. +> 18 17 16 15 14 13
 #: ../../common/parse_manifest.c:683
 msgid "could not decode file name"
 msgstr "не удалось декодировать имя файла"
 
-#. +> 17 16 15 14 13
+#. +> 18 17 16 15 14 13
 #: ../../common/parse_manifest.c:693
 msgid "file size is not an integer"
 msgstr "размер файла не является целочисленным"
 
-#. +> 17 16 15 14 13
+#. +> 18 17 16 15 14 13
 #: ../../common/parse_manifest.c:699
 #, c-format
 msgid "unrecognized checksum algorithm: \"%s\""
 msgstr "нераспознанный алгоритм расчёта контрольных сумм: \"%s\""
 
-#. +> 17 16 15 14 13
+#. +> 18 17 16 15 14 13
 #: ../../common/parse_manifest.c:718
 #, c-format
 msgid "invalid checksum for file \"%s\": \"%s\""
 msgstr "неверная контрольная сумма для файла \"%s\": \"%s\""
 
-#. +> 17 16 15 14 13
+#. +> 18 17 16 15 14 13
 #: ../../common/parse_manifest.c:761
 msgid "missing timeline"
 msgstr "отсутствует линия времени"
 
-#. +> 17 16 15 14 13
+#. +> 18 17 16 15 14 13
 #: ../../common/parse_manifest.c:763
 msgid "missing start LSN"
 msgstr "отсутствует начальный LSN"
 
-#. +> 17 16 15 14 13
+#. +> 18 17 16 15 14 13
 #: ../../common/parse_manifest.c:765
 msgid "missing end LSN"
 msgstr "отсутствует конечный LSN"
 
-#. +> 17 16 15 14 13
+#. +> 18 17 16 15 14 13
 #: ../../common/parse_manifest.c:771
 msgid "timeline is not an integer"
 msgstr "линия времени задана не целым числом"
 
-#. +> 17 16 15 14 13
+#. +> 18 17 16 15 14 13
 #: ../../common/parse_manifest.c:774
 msgid "could not parse start LSN"
 msgstr "не удалось разобрать начальный LSN"
 
-#. +> 17 16 15 14 13
+#. +> 18 17 16 15 14 13
 #: ../../common/parse_manifest.c:777
 msgid "could not parse end LSN"
 msgstr "не удалось разобрать конечный LSN"
 
-#. +> 17 16 15 14 13
+#. +> 18 17 16 15 14 13
 #: ../../common/parse_manifest.c:842
 msgid "expected at least 2 lines"
 msgstr "ожидалось как минимум 2 строки"
 
-#. +> 17 16 15 14 13
+#. +> 18 17 16 15 14 13
 #: ../../common/parse_manifest.c:845
 msgid "last line not newline-terminated"
 msgstr "последняя строка не оканчивается символом новой строки"
 
-#. +> 17 16 15 14
+#. +> 18 17 16 15 14
 #: ../../common/parse_manifest.c:864
 #, c-format
 msgid "could not finalize checksum of manifest"
 msgstr "не удалось завершить расчёт контрольной суммы манифеста"
 
-#. +> 17 16 15 14 13
+#. +> 18 17 16 15 14 13
 #: ../../common/parse_manifest.c:868
 #, c-format
 msgid "manifest has no checksum"
 msgstr "в манифесте нет контрольной суммы"
 
-#. +> 17 16 15 14 13
+#. +> 18 17 16 15 14 13
 #: ../../common/parse_manifest.c:872
 #, c-format
 msgid "invalid manifest checksum: \"%s\""
 msgstr "неверная контрольная сумма в манифесте: \"%s\""
 
-#. +> 17 16 15 14 13
+#. +> 18 17 16 15 14 13
 #: ../../common/parse_manifest.c:876
 #, c-format
 msgid "manifest checksum mismatch"
 msgstr "ошибка контрольной суммы манифеста"
 
-#. +> 17 16 15 14 13
+#. +> 18 17 16 15 14 13
 #: ../../common/parse_manifest.c:891
 #, c-format
 msgid "could not parse backup manifest: %s"
 msgstr "не удалось разобрать манифест копии: %s"
 
-#. +> 17 16 15
-#: pg_verifybackup.c:277 pg_verifybackup.c:286 pg_verifybackup.c:297
+#. +> 18
+#: ../../fe_utils/astreamer_gzip.c:115
+#, fuzzy, c-format
+#| msgid "could not read file \"%s\": %m"
+msgid "could not create compressed file \"%s\": %m"
+msgstr "не удалось прочитать файл \"%s\": %m"
+
+#. +> 18
+#: ../../fe_utils/astreamer_gzip.c:127
+#, fuzzy, c-format
+#| msgid "could not read file \"%s\": %m"
+msgid "could not duplicate stdout: %m"
+msgstr "не удалось прочитать файл \"%s\": %m"
+
+#. +> 18
+#: ../../fe_utils/astreamer_gzip.c:131
+#, fuzzy, c-format
+#| msgid "could not open file \"%s\": %m"
+msgid "could not open output file: %m"
+msgstr "не удалось открыть файл \"%s\": %m"
+
+#. +> 18
+#: ../../fe_utils/astreamer_gzip.c:135
+#, fuzzy, c-format
+#| msgid "could not open file \"%s\": %m"
+msgid "could not set compression level %d: %s"
+msgstr "не удалось открыть файл \"%s\": %m"
+
+#. +> 18
+#: ../../fe_utils/astreamer_gzip.c:140 ../../fe_utils/astreamer_gzip.c:273
+#: ../../fe_utils/astreamer_lz4.c:102 ../../fe_utils/astreamer_lz4.c:300
+#: ../../fe_utils/astreamer_zstd.c:133 ../../fe_utils/astreamer_zstd.c:288
+#, c-format
+msgid "this build does not support compression with %s"
+msgstr ""
+
+#. +> 18
+#: ../../fe_utils/astreamer_gzip.c:167
+#, fuzzy, c-format
+#| msgid "could not write file \"%s\": %m"
+msgid "could not write to compressed file \"%s\": %s"
+msgstr "не удалось записать файл \"%s\": %m"
+
+#. +> 18
+#: ../../fe_utils/astreamer_gzip.c:191
+#, fuzzy, c-format
+#| msgid "could not close file \"%s\": %m"
+msgid "could not close compressed file \"%s\": %m"
+msgstr "не удалось закрыть файл \"%s\": %m"
+
+#. +> 18
+#: ../../fe_utils/astreamer_gzip.c:269
+#, fuzzy, c-format
+#| msgid "could not initialize checksum of manifest"
+msgid "could not initialize compression library"
+msgstr "не удалось подготовить контекст контрольной суммы манифеста"
+
+#. +> 18
+#: ../../fe_utils/astreamer_gzip.c:320 ../../fe_utils/astreamer_lz4.c:356
+#: ../../fe_utils/astreamer_zstd.c:333
+#, fuzzy, c-format
+#| msgid "could not parse start LSN"
+msgid "could not decompress data: %s"
+msgstr "не удалось разобрать начальный LSN"
+
+#. +> 18
+#: ../../fe_utils/astreamer_lz4.c:97
+#, c-format
+msgid "could not create lz4 compression context: %s"
+msgstr ""
+
+#. +> 18
+#: ../../fe_utils/astreamer_lz4.c:142
+#, fuzzy, c-format
+#| msgid "could not write file \"%s\": %m"
+msgid "could not write lz4 header: %s"
+msgstr "не удалось записать файл \"%s\": %m"
+
+#. +> 18
+#: ../../fe_utils/astreamer_lz4.c:191 ../../fe_utils/astreamer_zstd.c:185
+#: ../../fe_utils/astreamer_zstd.c:227
+#, fuzzy, c-format
+#| msgid "could not parse start LSN"
+msgid "could not compress data: %s"
+msgstr "не удалось разобрать начальный LSN"
+
+#. +> 18
+#: ../../fe_utils/astreamer_lz4.c:243
+#, fuzzy, c-format
+#| msgid "could not open file \"%s\" for reading: %m"
+msgid "could not end lz4 compression: %s"
+msgstr "не удалось открыть файл \"%s\" для чтения: %m"
+
+#. +> 18
+#: ../../fe_utils/astreamer_lz4.c:295
+#, fuzzy, c-format
+#| msgid "could not initialize checksum of file \"%s\""
+msgid "could not initialize compression library: %s"
+msgstr "не удалось подготовить контекст контрольной суммы файла \"%s\""
+
+#. +> 18
+#: ../../fe_utils/astreamer_tar.c:244
+#, c-format
+msgid "tar file trailer exceeds 2 blocks"
+msgstr ""
+
+#. +> 18
+#: ../../fe_utils/astreamer_tar.c:249 astreamer_verify.c:130
+#, c-format
+msgid "unexpected state while parsing tar archive"
+msgstr ""
+
+#. +> 18
+#: ../../fe_utils/astreamer_tar.c:292
+#, c-format
+msgid "tar member has empty name"
+msgstr ""
+
+#. +> 18
+#: ../../fe_utils/astreamer_tar.c:326
+#, c-format
+msgid "COPY stream ended before last file was finished"
+msgstr ""
+
+#. +> 18
+#: ../../fe_utils/astreamer_zstd.c:89
+#, c-format
+msgid "could not create zstd compression context"
+msgstr ""
+
+#. +> 18
+#: ../../fe_utils/astreamer_zstd.c:95
+#, c-format
+msgid "could not set zstd compression level to %d: %s"
+msgstr ""
+
+#. +> 18
+#: ../../fe_utils/astreamer_zstd.c:109
+#, fuzzy, c-format
+#| msgid "could not open directory \"%s\": %m"
+msgid "could not set compression worker count to %d: %s"
+msgstr "не удалось открыть каталог \"%s\": %m"
+
+#. +> 18
+#: ../../fe_utils/astreamer_zstd.c:120
+#, c-format
+msgid "could not enable long-distance mode: %s"
+msgstr ""
+
+#. +> 18
+#: ../../fe_utils/astreamer_zstd.c:279
+#, c-format
+msgid "could not create zstd decompression context"
+msgstr ""
+
+#. +> 18
+#: astreamer_verify.c:198
+#, fuzzy, c-format
+#| msgid "\"%s\" is present on disk but not in the manifest"
+msgid "file \"%s\" is present in archive \"%s\" but not in the manifest"
+msgstr "файл \"%s\" присутствует на диске, но отсутствует в манифесте"
+
+#. +> 18
+#: astreamer_verify.c:211
+#, fuzzy, c-format
+#| msgid "\"%s\" has size %lld on disk but size %zu in the manifest"
+msgid ""
+"file \"%s\" has size %llu in archive \"%s\" but size %<PRIu64> in the "
+"manifest"
+msgstr ""
+"файл \"%s\" имеет размер на диске: %lld, тогда как размер в манифесте: %zu"
+
+#. +> 18
+#: astreamer_verify.c:236
+#, fuzzy, c-format
+#| msgid "could not initialize checksum of file \"%s\""
+msgid "%s: could not initialize checksum of file \"%s\""
+msgstr "не удалось подготовить контекст контрольной суммы файла \"%s\""
+
+#. +> 18 17 16 15 14
+#: astreamer_verify.c:274 pg_verifybackup.c:1133
+#, c-format
+msgid "could not update checksum of file \"%s\""
+msgstr "не удалось изменить контекст контрольной суммы файла \"%s\""
+
+#. +> 18
+#: astreamer_verify.c:300
+#, fuzzy, c-format
+#| msgid "file \"%s\" should contain %zu bytes, but read %zu bytes"
+msgid ""
+"file \"%s\" in archive \"%s\" should contain %<PRIu64> bytes, but %<PRIu64> "
+"bytes were read"
+msgstr "файл \"%s\" должен содержать байт: %zu, но фактически прочитано: %zu"
+
+#. +> 18 17 16 15 14
+#: astreamer_verify.c:312 pg_verifybackup.c:1179
+#, c-format
+msgid "could not finalize checksum of file \"%s\""
+msgstr "не удалось завершить расчёт контрольной суммы файла \"%s\""
+
+#. +> 18
+#: astreamer_verify.c:320
+#, fuzzy, c-format
+#| msgid "file \"%s\" has checksum of length %d, but expected %d"
+msgid ""
+"file \"%s\" in archive \"%s\" has checksum of length %d, but expected %d"
+msgstr ""
+"для файла \"%s\" задана контрольная сумма размером %d, но ожидаемый размер: "
+"%d"
+
+#. +> 18
+#: astreamer_verify.c:325
+#, fuzzy, c-format
+#| msgid "checksum mismatch for file \"%s\""
+msgid "checksum mismatch for file \"%s\" in archive \"%s\""
+msgstr "ошибка контрольной суммы для файла \"%s\""
+
+#. +> 18
+#: astreamer_verify.c:387
+#, fuzzy, c-format
+#| msgid "%s: unexpected control file version"
+msgid "unexpected control file size %d, expected %d"
+msgstr "%s: неожиданная версия управляющего файла"
+
+#. +> 18
+#: astreamer_verify.c:399
+#, fuzzy, c-format
+#| msgid "%s: CRC is incorrect"
+msgid "%s: %s: CRC is incorrect"
+msgstr "%s: ошибка CRC"
+
+#. +> 18
+#: astreamer_verify.c:405
+#, fuzzy, c-format
+#| msgid "%s: unexpected control file version"
+msgid "%s: %s: unexpected control file version"
+msgstr "%s: неожиданная версия управляющего файла"
+
+#. +> 18
+#: astreamer_verify.c:412
+#, fuzzy, c-format
+#| msgid "%s: manifest system identifier is %llu, but control file has %llu"
+msgid ""
+"%s: %s: manifest system identifier is %<PRIu64>, but control file has "
+"%<PRIu64>"
+msgstr "%s: идентификатор системы в манифесте %llu, а в управляющем файле %llu"
+
+#. +> 18
+#: pg_verifybackup.c:208
+#, c-format
+msgid "invalid backup format \"%s\", must be \"plain\" or \"tar\""
+msgstr ""
+
+#. +> 18 17 16 15
+#: pg_verifybackup.c:229 pg_verifybackup.c:238 pg_verifybackup.c:249
 #, c-format
 msgid "Try \"%s --help\" for more information."
 msgstr "Для дополнительной информации попробуйте \"%s --help\"."
@@ -545,26 +804,26 @@ msgstr "Для дополнительной информации попробу�
 msgid "Try \"%s --help\" for more information.\n"
 msgstr "Для дополнительной информации попробуйте \"%s --help\".\n"
 
-#. +> 17 16 15 14 13
-#: pg_verifybackup.c:285
+#. +> 18 17 16 15 14 13
+#: pg_verifybackup.c:237
 #, c-format
 msgid "no backup directory specified"
 msgstr "каталог копии не указан"
 
-#. +> 17 16 15 14 13
-#: pg_verifybackup.c:295
+#. +> 18 17 16 15 14 13
+#: pg_verifybackup.c:247
 #, c-format
 msgid "too many command-line arguments (first is \"%s\")"
 msgstr "слишком много аргументов командной строки (первый: \"%s\")"
 
-#. +> 17 16
-#: pg_verifybackup.c:303
+#. +> 18 17 16
+#: pg_verifybackup.c:255
 #, c-format
 msgid "cannot specify both %s and %s"
 msgstr "указать %s и %s одновременно нельзя"
 
-#. +> 17 16 15
-#: pg_verifybackup.c:323
+#. +> 18 17 16 15
+#: pg_verifybackup.c:275
 #, c-format
 msgid ""
 "program \"%s\" is needed by %s but was not found in the same directory as "
@@ -583,8 +842,8 @@ msgstr ""
 "в каталоге \"%s\".\n"
 "Проверьте правильность установки СУБД."
 
-#. +> 17 16 15
-#: pg_verifybackup.c:326
+#. +> 18 17 16 15
+#: pg_verifybackup.c:278
 #, c-format
 msgid "program \"%s\" was found by \"%s\" but was not the same version as %s"
 msgstr ""
@@ -603,53 +862,72 @@ msgstr ""
 "но её версия отличается от версии %s.\n"
 "Проверьте правильность установки СУБД."
 
-#. +> 17 16 15 14 13
-#: pg_verifybackup.c:381
-#, c-format
-msgid "backup successfully verified\n"
-msgstr "копия проверена успешно\n"
-
-#. +> 17 16 15 14 13
-#: pg_verifybackup.c:410
-#, c-format
-msgid "could not stat file \"%s\": %m"
-msgstr "не удалось получить информацию о файле \"%s\": %m"
-
-#. +> 17 16 15 14
-#: pg_verifybackup.c:440
-#, c-format
-msgid "could not read file \"%s\": read %d of %lld"
-msgstr "не удалось прочитать файл \"%s\" (прочитано байт: %d из %lld)"
-
-#. +> 17
-#: pg_verifybackup.c:478
-#, c-format
-msgid "could not read file \"%s\": read %lld of %lld"
-msgstr "не удалось прочитать файл \"%s\" (прочитано байт: %lld из %lld)"
-
-#. +> 17 16 15 14 13
-#: pg_verifybackup.c:561
-#, c-format
-msgid "duplicate path name in backup manifest: \"%s\""
-msgstr "дублирующийся путь в манифесте копии: \"%s\""
-
-#. +> 17 16 15 14 13
-#: pg_verifybackup.c:624 pg_verifybackup.c:631
+#. +> 18 17 16 15 14 13
+#: pg_verifybackup.c:304 pg_verifybackup.c:625
 #, c-format
 msgid "could not open directory \"%s\": %m"
 msgstr "не удалось открыть каталог \"%s\": %m"
 
-#. +> 17 16 15 14 13
-#: pg_verifybackup.c:663
+#. +> 18 17 16 15 14 13
+#: pg_verifybackup.c:323 pg_verifybackup.c:412
+#, c-format
+msgid "could not stat file \"%s\": %m"
+msgstr "не удалось получить информацию о файле \"%s\": %m"
+
+#. +> 18
+#: pg_verifybackup.c:340
+#, c-format
+msgid "pg_waldump cannot read tar files"
+msgstr ""
+
+#. +> 18
+#: pg_verifybackup.c:341
+#, c-format
+msgid "You must use -n/--no-parse-wal when verifying a tar-format backup."
+msgstr ""
+
+#. +> 18 17 16 15 14 13
+#: pg_verifybackup.c:383
+#, c-format
+msgid "backup successfully verified\n"
+msgstr "копия проверена успешно\n"
+
+#. +> 18 17 16 15 14
+#: pg_verifybackup.c:442
+#, c-format
+msgid "could not read file \"%s\": read %d of %lld"
+msgstr "не удалось прочитать файл \"%s\" (прочитано байт: %d из %lld)"
+
+#. +> 18 17
+#: pg_verifybackup.c:480
+#, c-format
+msgid "could not read file \"%s\": read %lld of %lld"
+msgstr "не удалось прочитать файл \"%s\" (прочитано байт: %lld из %lld)"
+
+#. +> 18 17 16 15 14 13
+#: pg_verifybackup.c:563
+#, c-format
+msgid "duplicate path name in backup manifest: \"%s\""
+msgstr "дублирующийся путь в манифесте копии: \"%s\""
+
+#. +> 18 17 16 15 14 13
+#: pg_verifybackup.c:657 pg_verifybackup.c:827
 #, c-format
 msgid "could not close directory \"%s\": %m"
 msgstr "не удалось закрыть каталог \"%s\": %m"
 
-#. +> 17 16 15 14 13
-#: pg_verifybackup.c:683
+#. +> 18 17 16 15 14 13
+#: pg_verifybackup.c:678 pg_verifybackup.c:897
 #, c-format
 msgid "could not stat file or directory \"%s\": %m"
 msgstr "не удалось получить информацию о файле или каталоге \"%s\": %m"
+
+#. +> 18
+#: pg_verifybackup.c:701
+#, fuzzy, c-format
+#| msgid "\"%s\" is not a file or directory"
+msgid "\"%s\" is not a regular file or directory"
+msgstr "\"%s\" не указывает на файл или каталог"
 
 #. +> 17 16 15 14 13
 #: pg_verifybackup.c:706
@@ -657,11 +935,19 @@ msgstr "не удалось получить информацию о файле 
 msgid "\"%s\" is not a file or directory"
 msgstr "\"%s\" не указывает на файл или каталог"
 
-#. +> 17 16 15 14 13
-#: pg_verifybackup.c:716
+#. +> 18 17 16 15 14 13
+#: pg_verifybackup.c:711
 #, c-format
 msgid "\"%s\" is present on disk but not in the manifest"
 msgstr "файл \"%s\" присутствует на диске, но отсутствует в манифесте"
+
+#. +> 18
+#: pg_verifybackup.c:723
+#, fuzzy, c-format
+#| msgid "\"%s\" has size %lld on disk but size %zu in the manifest"
+msgid "\"%s\" has size %llu on disk but size %llu in the manifest"
+msgstr ""
+"файл \"%s\" имеет размер на диске: %lld, тогда как размер в манифесте: %zu"
 
 #. +> 17 16 15 14
 #: pg_verifybackup.c:728
@@ -677,17 +963,25 @@ msgid "\"%s\" has size %zu on disk but size %zu in the manifest"
 msgstr ""
 "файл \"%s\" имеет размер на диске: %zu, тогда как размер в манифесте: %zu"
 
-#. +> 17
-#: pg_verifybackup.c:768
+#. +> 18 17
+#: pg_verifybackup.c:765
 #, c-format
 msgid "%s: CRC is incorrect"
 msgstr "%s: ошибка CRC"
 
-#. +> 17
-#: pg_verifybackup.c:772
+#. +> 18 17
+#: pg_verifybackup.c:769
 #, c-format
 msgid "%s: unexpected control file version"
 msgstr "%s: неожиданная версия управляющего файла"
+
+#. +> 18
+#: pg_verifybackup.c:774
+#, fuzzy, c-format
+#| msgid "%s: manifest system identifier is %llu, but control file has %llu"
+msgid ""
+"%s: manifest system identifier is %<PRIu64>, but control file has %<PRIu64>"
+msgstr "%s: идентификатор системы в манифесте %llu, а в управляющем файле %llu"
 
 #. +> 17
 #: pg_verifybackup.c:777
@@ -695,23 +989,37 @@ msgstr "%s: неожиданная версия управляющего фай�
 msgid "%s: manifest system identifier is %llu, but control file has %llu"
 msgstr "%s: идентификатор системы в манифесте %llu, а в управляющем файле %llu"
 
-#. +> 17 16 15 14 13
-#: pg_verifybackup.c:801
+#. +> 18
+#: pg_verifybackup.c:906
+#, fuzzy, c-format
+#| msgid "file size is not an integer"
+msgid "file \"%s\" is not a regular file"
+msgstr "размер файла не является целочисленным"
+
+#. +> 18
+#: pg_verifybackup.c:936 pg_verifybackup.c:957
+#, c-format
+msgid "file \"%s\" is not expected in a tar format backup"
+msgstr ""
+
+#. +> 18 17 16 15 14 13
+#: pg_verifybackup.c:1049
 #, c-format
 msgid "\"%s\" is present in the manifest but not on disk"
 msgstr "файл \"%s\" присутствует в манифесте, но отсутствует на диске"
 
-#. +> 17 16 15 14
-#: pg_verifybackup.c:873
+#. +> 18 17 16 15 14
+#: pg_verifybackup.c:1121
 #, c-format
 msgid "could not initialize checksum of file \"%s\""
 msgstr "не удалось подготовить контекст контрольной суммы файла \"%s\""
 
-#. +> 17 16 15 14
-#: pg_verifybackup.c:885
-#, c-format
-msgid "could not update checksum of file \"%s\""
-msgstr "не удалось изменить контекст контрольной суммы файла \"%s\""
+#. +> 18
+#: pg_verifybackup.c:1169
+#, fuzzy, c-format
+#| msgid "file \"%s\" should contain %zu bytes, but read %zu bytes"
+msgid "file \"%s\" should contain %<PRIu64> bytes, but read %<PRIu64>"
+msgstr "файл \"%s\" должен содержать байт: %zu, но фактически прочитано: %zu"
 
 #. +> 17 16 15 14 13
 #: pg_verifybackup.c:921
@@ -719,40 +1027,34 @@ msgstr "не удалось изменить контекст контрольн
 msgid "file \"%s\" should contain %zu bytes, but read %zu bytes"
 msgstr "файл \"%s\" должен содержать байт: %zu, но фактически прочитано: %zu"
 
-#. +> 17 16 15 14
-#: pg_verifybackup.c:931
-#, c-format
-msgid "could not finalize checksum of file \"%s\""
-msgstr "не удалось завершить расчёт контрольной суммы файла \"%s\""
-
-#. +> 17 16 15 14 13
-#: pg_verifybackup.c:939
+#. +> 18 17 16 15 14 13
+#: pg_verifybackup.c:1187
 #, c-format
 msgid "file \"%s\" has checksum of length %d, but expected %d"
 msgstr ""
 "для файла \"%s\" задана контрольная сумма размером %d, но ожидаемый размер: "
 "%d"
 
-#. +> 17 16 15 14 13
-#: pg_verifybackup.c:943
+#. +> 18 17 16 15 14 13
+#: pg_verifybackup.c:1191
 #, c-format
 msgid "checksum mismatch for file \"%s\""
 msgstr "ошибка контрольной суммы для файла \"%s\""
 
-#. +> 17 16 15 14 13
-#: pg_verifybackup.c:969
+#. +> 18 17 16 15 14 13
+#: pg_verifybackup.c:1217
 #, c-format
 msgid "WAL parsing failed for timeline %u"
 msgstr "не удалось разобрать WAL для линии времени %u"
 
-#. +> 17 16
-#: pg_verifybackup.c:1072
+#. +> 18 17 16
+#: pg_verifybackup.c:1351
 #, c-format
 msgid "%*s/%s kB (%d%%) verified"
 msgstr "%*s/%s КБ (%d%%) проверено"
 
-#. +> 17 16 15 14 13
-#: pg_verifybackup.c:1089
+#. +> 18 17 16 15 14 13
+#: pg_verifybackup.c:1368
 #, c-format
 msgid ""
 "%s verifies a backup against the backup manifest.\n"
@@ -761,8 +1063,8 @@ msgstr ""
 "%s проверяет резервную копию, используя манифест копии.\n"
 "\n"
 
-#. +> 17 16 15 14 13
-#: pg_verifybackup.c:1090
+#. +> 18 17 16 15 14 13
+#: pg_verifybackup.c:1369
 #, c-format
 msgid ""
 "Usage:\n"
@@ -773,79 +1075,85 @@ msgstr ""
 "  %s [ПАРАМЕТР]... КАТАЛОГ_КОПИИ\n"
 "\n"
 
-#. +> 17 16 15 14 13
-#: pg_verifybackup.c:1091
+#. +> 18 17 16 15 14 13
+#: pg_verifybackup.c:1370
 #, c-format
 msgid "Options:\n"
 msgstr "Параметры:\n"
 
-#. +> 17 16 15 14 13
-#: pg_verifybackup.c:1092
+#. +> 18 17 16 15 14 13
+#: pg_verifybackup.c:1371
 #, c-format
 msgid "  -e, --exit-on-error         exit immediately on error\n"
 msgstr "  -e, --exit-on-error         немедленный выход при ошибке\n"
 
-#. +> 17 16 15 14 13
-#: pg_verifybackup.c:1093
+#. +> 18
+#: pg_verifybackup.c:1372
+#, c-format
+msgid "  -F, --format=p|t            backup format (plain, tar)\n"
+msgstr ""
+
+#. +> 18 17 16 15 14 13
+#: pg_verifybackup.c:1373
 #, c-format
 msgid "  -i, --ignore=RELATIVE_PATH  ignore indicated path\n"
 msgstr ""
 "  -i, --ignore=ОТНОСИТЕЛЬНЫЙ_ПУТЬ\n"
 "                              игнорировать заданный путь\n"
 
-#. +> 17 16 15 14 13
-#: pg_verifybackup.c:1094
+#. +> 18 17 16 15 14 13
+#: pg_verifybackup.c:1374
 #, c-format
 msgid "  -m, --manifest-path=PATH    use specified path for manifest\n"
 msgstr "  -m, --manifest-path=ПУТЬ    использовать заданный файл манифеста\n"
 
-#. +> 17 16 15 14 13
-#: pg_verifybackup.c:1095
+#. +> 18 17 16 15 14 13
+#: pg_verifybackup.c:1375
 #, c-format
 msgid "  -n, --no-parse-wal          do not try to parse WAL files\n"
 msgstr "  -n, --no-parse-wal          не пытаться разбирать файлы WAL\n"
 
-#. +> 17 16
-#: pg_verifybackup.c:1096
+#. +> 18 17 16
+#: pg_verifybackup.c:1376
 #, c-format
 msgid "  -P, --progress              show progress information\n"
 msgstr "  -P, --progress              показывать прогресс операции\n"
 
-#. +> 17 16 15 14 13
-#: pg_verifybackup.c:1097
+#. +> 18 17 16 15 14 13
+#: pg_verifybackup.c:1377
 #, c-format
 msgid ""
 "  -q, --quiet                 do not print any output, except for errors\n"
 msgstr ""
 "  -q, --quiet                 не выводить никаких сообщений, кроме ошибок\n"
 
-#. +> 17 16 15 14 13
-#: pg_verifybackup.c:1098
+#. +> 18 17 16 15 14 13
+#: pg_verifybackup.c:1378
 #, c-format
 msgid "  -s, --skip-checksums        skip checksum verification\n"
 msgstr "  -s, --skip-checksums        пропустить проверку контрольных сумм\n"
 
-#. +> 17 16 15 14 13
-#: pg_verifybackup.c:1099
+#. +> 18 17 16 15 14 13
+#: pg_verifybackup.c:1379
 #, c-format
 msgid "  -w, --wal-directory=PATH    use specified path for WAL files\n"
 msgstr ""
 "  -w, --wal-directory=ПУТЬ    использовать заданный путь к файлам WAL\n"
 
-#. +> 17 16 15 14 13
-#: pg_verifybackup.c:1100
+#. +> 18 17 16 15 14 13
+#: pg_verifybackup.c:1380
 #, c-format
 msgid "  -V, --version               output version information, then exit\n"
 msgstr "  -V, --version               показать версию и выйти\n"
 
-#. +> 17 16 15 14 13
-#: pg_verifybackup.c:1101
+#. +> 18 17 16 15 14 13
+#: pg_verifybackup.c:1381
 #, c-format
 msgid "  -?, --help                  show this help, then exit\n"
 msgstr "  -?, --help                  показать эту справку и выйти\n"
 
-#. +> 17 16 15 14 13
-#: pg_verifybackup.c:1102
+#. +> 18 17 16 15 14 13
+#: pg_verifybackup.c:1382
 #, c-format
 msgid ""
 "\n"
@@ -854,8 +1162,8 @@ msgstr ""
 "\n"
 "Об ошибках сообщайте по адресу <%s>.\n"
 
-#. +> 17 16 15 14 13
-#: pg_verifybackup.c:1103
+#. +> 18 17 16 15 14 13
+#: pg_verifybackup.c:1383
 #, c-format
 msgid "%s home page: <%s>\n"
 msgstr "Домашняя страница %s: <%s>\n"
