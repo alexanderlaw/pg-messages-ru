@@ -1,10 +1,10 @@
-# Alexander Lakhin <a.lakhin@postgrespro.ru>, 2019, 2020, 2021, 2022, 2024.
+# SPDX-FileCopyrightText: 2019, 2020, 2021, 2022, 2024, 2025 Alexander Lakhin <a.lakhin@postgrespro.ru>
 msgid ""
 msgstr ""
 "Project-Id-Version: pg_verify_checksums (PostgreSQL) 11\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2025-08-30 16:01+0300\n"
-"PO-Revision-Date: 2024-09-04 13:35+0300\n"
+"PO-Revision-Date: 2025-08-31 07:39+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #. +> 18 17 16 15 14 13
 #: ../../../src/common/logging.c:279
@@ -317,10 +317,10 @@ msgstr "Домашняя страница %s: <%s>\n"
 
 #. +> 18
 #: pg_checksums.c:144
-#, fuzzy, c-format
+#, c-format
 #| msgid "%lld/%lld MB (%d%%) computed"
 msgid "%<PRId64>/%<PRId64> MB (%d%%) computed"
-msgstr "%lld/%lld МБ (%d%%) обработано"
+msgstr "%<PRId64>/%<PRId64> МБ (%d%%) обработано"
 
 #. +> 17 16 15
 #: pg_checksums.c:145
@@ -498,10 +498,10 @@ msgstr "Обработка контрольных сумм завершена\n"
 
 #. +> 18
 #: pg_checksums.c:606
-#, fuzzy, c-format
+#, c-format
 #| msgid "Files scanned:   %lld\n"
 msgid "Files scanned:   %<PRId64>\n"
-msgstr "Просканировано файлов: %lld\n"
+msgstr "Просканировано файлов: %<PRId64>\n"
 
 #. +> 17 16 15
 #: pg_checksums.c:607
@@ -517,10 +517,10 @@ msgstr "Просканировано файлов: %s\n"
 
 #. +> 18
 #: pg_checksums.c:607
-#, fuzzy, c-format
+#, c-format
 #| msgid "Blocks scanned:  %lld\n"
 msgid "Blocks scanned:  %<PRId64>\n"
-msgstr "Просканировано блоков: %lld\n"
+msgstr "Просканировано блоков: %<PRId64>\n"
 
 #. +> 17 16 15
 #: pg_checksums.c:608
@@ -536,10 +536,10 @@ msgstr "Просканировано блоков: %s\n"
 
 #. +> 18
 #: pg_checksums.c:610
-#, fuzzy, c-format
+#, c-format
 #| msgid "Bad checksums:  %lld\n"
 msgid "Bad checksums:  %<PRId64>\n"
-msgstr "Неверные контрольные суммы: %lld\n"
+msgstr "Неверные контрольные суммы: %<PRId64>\n"
 
 #. +> 17 16 15
 #: pg_checksums.c:611
@@ -561,10 +561,10 @@ msgstr "Версия контрольных сумм данных: %u\n"
 
 #. +> 18
 #: pg_checksums.c:618
-#, fuzzy, c-format
+#, c-format
 #| msgid "Files written:  %lld\n"
 msgid "Files written:  %<PRId64>\n"
-msgstr "Записано файлов: %lld\n"
+msgstr "Записано файлов: %<PRId64>\n"
 
 #. +> 17 16 15
 #: pg_checksums.c:619
@@ -574,10 +574,10 @@ msgstr "Записано файлов: %lld\n"
 
 #. +> 18
 #: pg_checksums.c:619
-#, fuzzy, c-format
+#, c-format
 #| msgid "Blocks written: %lld\n"
 msgid "Blocks written: %<PRId64>\n"
-msgstr "Записано блоков: %lld\n"
+msgstr "Записано блоков: %<PRId64>\n"
 
 #. +> 17 16 15
 #: pg_checksums.c:620

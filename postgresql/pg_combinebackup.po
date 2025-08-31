@@ -1,10 +1,10 @@
-# Alexander Lakhin <exclusion@gmail.com>, 2024.
+# SPDX-FileCopyrightText: 2024, 2025 Alexander Lakhin <exclusion@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: pg_combinebackup (PostgreSQL) 17\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2025-08-30 16:01+0300\n"
-"PO-Revision-Date: 2024-11-09 08:04+0300\n"
+"PO-Revision-Date: 2025-08-30 22:36+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #. +> 18 17
 #: ../../../src/common/logging.c:279
@@ -704,11 +704,13 @@ msgstr "выходной каталог не указан"
 
 #. +> 18
 #: pg_combinebackup.c:306
-#, fuzzy, c-format
+#, c-format
 #| msgid "%s: manifest system identifier is %llu, but control file has %llu"
 msgid ""
 "%s: manifest system identifier is %<PRIu64>, but control file has %<PRIu64>"
-msgstr "%s: идентификатор системы в манифесте %llu, а в управляющем файле %llu"
+msgstr ""
+"%s: идентификатор системы в манифесте %<PRIu64>, а в управляющем файле "
+"%<PRIu64>"
 
 #. +> 17
 #: pg_combinebackup.c:301
@@ -820,10 +822,10 @@ msgstr "%s: неожиданная версия управляющего фай�
 
 #. +> 18
 #: pg_combinebackup.c:635
-#, fuzzy, c-format
+#, c-format
 #| msgid "%s: expected system identifier %llu, but found %llu"
 msgid "%s: expected system identifier %<PRIu64>, but found %<PRIu64>"
-msgstr "%s: ожидался идентификатор системы %llu, но обнаружен %llu"
+msgstr "%s: ожидался идентификатор системы %<PRIu64>, но обнаружен %<PRIu64>"
 
 #. +> 17
 #: pg_combinebackup.c:625

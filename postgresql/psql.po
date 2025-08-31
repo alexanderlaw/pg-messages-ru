@@ -4,14 +4,14 @@
 # Serguei A. Mokhov <mokhov@cs.concordia.ca>, 2001-2005.
 # Oleg Bartunov <oleg@sai.msu.su>, 2004-2005.
 # Sergey Burladyan <eshkinkot@gmail.com>, 2012.
-# Alexander Lakhin <exclusion@gmail.com>, 2012-2025.
+# SPDX-FileCopyrightText: 2012-2025 Alexander Lakhin <exclusion@gmail.com>
 # Maxim Yablokov <m.yablokov@postgrespro.ru>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: psql (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2025-08-30 16:01+0300\n"
-"PO-Revision-Date: 2025-02-08 08:33+0200\n"
+"PO-Revision-Date: 2025-08-30 22:24+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -237,7 +237,7 @@ msgstr "Прервано\n"
 
 #. +> 18
 #: ../../fe_utils/print.c:3188
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "Cannot print table contents: number of cells %lld is equal to or exceeds "
 #| "maximum %lld.\n"
@@ -245,8 +245,8 @@ msgid ""
 "Cannot print table contents: number of cells %<PRIu64> is equal to or "
 "exceeds maximum %zu.\n"
 msgstr ""
-"Вывести содержимое таблицы нельзя: число ячеек %lld достигло максимума "
-"%lld.\n"
+"Вывести содержимое таблицы нельзя: число ячеек %<PRIu64> достигло максимума "
+"%zu.\n"
 
 #. +> 17
 #: ../../fe_utils/print.c:3188
@@ -267,12 +267,13 @@ msgstr ""
 
 #. +> 18
 #: ../../fe_utils/print.c:3272
-#, fuzzy, c-format
+#, c-format
 #| msgid "Cannot add cell to table content: total cell count of %d exceeded.\n"
 msgid ""
 "Cannot add cell to table content: total cell count of %<PRIu64> exceeded.\n"
 msgstr ""
-"Ошибка добавления ячейки в таблицу: превышен предел числа ячеек (%d).\n"
+"Ошибка добавления ячейки в таблицу: превышен предел числа ячеек "
+"(%<PRIu64>).\n"
 
 #. +> 17
 #: ../../fe_utils/print.c:3272

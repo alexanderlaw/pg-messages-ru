@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the PostgreSQL package.
 # Serguei A. Mokhov, <mokhov@cs.concordia.ca>, 2003-2004.
 # Oleg Bartunov <oleg@sai.msu.su>, 2004.
-# Alexander Lakhin <exclusion@gmail.com>, 2012-2017, 2019, 2020, 2021, 2022, 2023, 2024.
+# SPDX-FileCopyrightText: 2012-2017, 2019, 2020, 2021, 2022, 2023, 2024, 2025 Alexander Lakhin <exclusion@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: pgscripts (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2025-08-30 16:01+0300\n"
-"PO-Revision-Date: 2024-09-05 08:25+0300\n"
+"PO-Revision-Date: 2025-08-30 22:35+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #. +> 18 17 16 15 14 13
 #: ../../../src/common/logging.c:279
@@ -216,7 +216,7 @@ msgstr "Прервано\n"
 
 #. +> 18
 #: ../../fe_utils/print.c:3188
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "Cannot print table contents: number of cells %lld is equal to or exceeds "
 #| "maximum %lld.\n"
@@ -224,8 +224,8 @@ msgid ""
 "Cannot print table contents: number of cells %<PRIu64> is equal to or "
 "exceeds maximum %zu.\n"
 msgstr ""
-"Вывести содержимое таблицы нельзя: число ячеек %lld достигло максимума "
-"%lld.\n"
+"Вывести содержимое таблицы нельзя: число ячеек %<PRIu64> достигло максимума "
+"%zu.\n"
 
 #. +> 17
 #: ../../fe_utils/print.c:3188
@@ -246,12 +246,13 @@ msgstr ""
 
 #. +> 18
 #: ../../fe_utils/print.c:3272
-#, fuzzy, c-format
+#, c-format
 #| msgid "Cannot add cell to table content: total cell count of %d exceeded.\n"
 msgid ""
 "Cannot add cell to table content: total cell count of %<PRIu64> exceeded.\n"
 msgstr ""
-"Ошибка добавления ячейки в таблицу: превышен предел числа ячеек (%d).\n"
+"Ошибка добавления ячейки в таблицу: превышен предел числа ячеек "
+"(%<PRIu64>).\n"
 
 #. +> 17
 #: ../../fe_utils/print.c:3272

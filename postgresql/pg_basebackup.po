@@ -1,13 +1,13 @@
 # Russian message translation file for pg_basebackup
 # Copyright (C) 2012-2016 PostgreSQL Global Development Group
 # This file is distributed under the same license as the PostgreSQL package.
-# Alexander Lakhin <exclusion@gmail.com>, 2012-2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024.
+# SPDX-FileCopyrightText: 2012-2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025 Alexander Lakhin <exclusion@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: pg_basebackup (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2025-08-30 16:01+0300\n"
-"PO-Revision-Date: 2024-09-07 11:12+0300\n"
+"PO-Revision-Date: 2025-08-30 22:34+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #. +> 18 17 16 15 14 13
 #: ../../../src/common/logging.c:279
@@ -2010,10 +2010,10 @@ msgstr ""
 
 #. +> 18
 #: pg_createsubscriber.c:617
-#, fuzzy, c-format
+#, c-format
 #| msgid "system identifier is %llu on publisher"
 msgid "system identifier is %<PRIu64> on publisher"
-msgstr "идентификатор системы на стороне публикации: %llu"
+msgstr "идентификатор системы на стороне публикации: %<PRIu64>"
 
 #. +> 17
 #: pg_createsubscriber.c:586
@@ -2035,10 +2035,10 @@ msgstr "управляющий файл, по-видимому, испорчен
 
 #. +> 18
 #: pg_createsubscriber.c:645 pg_createsubscriber.c:685
-#, fuzzy, c-format
+#, c-format
 #| msgid "system identifier is %llu on subscriber"
 msgid "system identifier is %<PRIu64> on subscriber"
-msgstr "идентификатор системы на подписчике: %llu"
+msgstr "идентификатор системы на подписчике: %<PRIu64>"
 
 #. +> 17
 #: pg_createsubscriber.c:615 pg_createsubscriber.c:656
