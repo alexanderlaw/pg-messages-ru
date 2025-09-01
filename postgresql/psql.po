@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: psql (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2025-08-30 16:01+0300\n"
-"PO-Revision-Date: 2025-08-30 22:24+0300\n"
+"PO-Revision-Date: 2025-09-01 22:17+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -321,6 +321,7 @@ msgstr ""
 #, c-format
 msgid "backslash commands are restricted; only \\unrestrict is allowed"
 msgstr ""
+"команды с обратной косой чертой отключены; разрешается только \\unrestrict"
 
 #. +> 18 17 16 15 14 13
 #: command.c:262
@@ -376,14 +377,11 @@ msgstr "В данный момент вы не подключены к базе 
 
 #. +> 18
 #: command.c:839
-#, fuzzy
 #| msgid ""
 #| "\n"
 #| "Connection options:\n"
 msgid "Connection Information"
-msgstr ""
-"\n"
-"Параметры подключения:\n"
+msgstr "Информация о подключении"
 
 #. +> 18 17 16 15
 #: command.c:840 describe.c:4722
@@ -403,31 +401,29 @@ msgstr "БД"
 #. +> 18
 #: command.c:848
 msgid "Client User"
-msgstr ""
+msgstr "Подключённый пользователь"
 
 #. +> 18
 #: command.c:857 command.c:872
 msgid "Host Address"
-msgstr ""
+msgstr "Адрес узла"
 
 #. +> 18
 #: command.c:862
-#, fuzzy
 #| msgid "directory"
 msgid "Socket Directory"
-msgstr "каталог"
+msgstr "Каталог сокетов"
 
 #. +> 18
 #: command.c:868
 msgid "Host"
-msgstr ""
+msgstr "Узел"
 
 #. +> 18
 #: command.c:878
-#, fuzzy
 #| msgid "Server"
 msgid "Server Port"
-msgstr "Сервер"
+msgstr "Порт сервера"
 
 #. +> 18 17 16 15 14 13
 #: command.c:882 describe.c:246 describe.c:3615 describe.c:3955
@@ -436,49 +432,46 @@ msgstr "Параметры"
 
 #. +> 18
 #: command.c:886
-#, fuzzy
 #| msgid "Version"
 msgid "Protocol Version"
-msgstr "Версия"
+msgstr "Версия протокола"
 
 #. +> 18
 #: command.c:890
-#, fuzzy
 #| msgid "Password: "
 msgid "Password Used"
-msgstr "Пароль: "
+msgstr "Использован пароль"
 
 #. +> 18
 #: command.c:891 command.c:895 command.c:903 command.c:936
 msgid "false"
-msgstr ""
+msgstr "нет"
 
 #. +> 18
 #: command.c:891 command.c:895 command.c:903 command.c:936
 msgid "true"
-msgstr ""
+msgstr "да"
 
 #. +> 18
 #: command.c:894
 msgid "GSSAPI Authenticated"
-msgstr ""
+msgstr "Аутентификация GSSAPI"
 
 #. +> 18
 #: command.c:898
 msgid "Backend PID"
-msgstr ""
+msgstr "PID обслуживающего процесса"
 
 #. +> 18
 #: command.c:902
-#, fuzzy
 #| msgid "Connection\n"
 msgid "SSL Connection"
-msgstr "Соединение\n"
+msgstr "SSL-подключение"
 
 #. +> 18
 #: command.c:922
 msgid "SSL Library"
-msgstr ""
+msgstr "Библиотека SSL"
 
 #. +> 18 17 16 15 14 13
 #: command.c:923 command.c:926 command.c:929 command.c:932 command.c:944
@@ -489,29 +482,28 @@ msgstr "неизвестно"
 #. +> 18
 #: command.c:925
 msgid "SSL Protocol"
-msgstr ""
+msgstr "Протокол SSL"
 
 #. +> 18
 #: command.c:928
 msgid "SSL Key Bits"
-msgstr ""
+msgstr "Бит в ключе SSL"
 
 #. +> 18
 #: command.c:931
 msgid "SSL Cipher"
-msgstr ""
+msgstr "Шифр SSL"
 
 #. +> 18
 #: command.c:934
-#, fuzzy
 #| msgid "Compression"
 msgid "SSL Compression"
-msgstr "Сжатие"
+msgstr "Сжатие SSL"
 
 #. +> 18
 #: command.c:938
 msgid "ALPN"
-msgstr ""
+msgstr "ALPN"
 
 #. +> 18 17
 #: command.c:939 command.c:4519
@@ -576,7 +568,7 @@ msgstr "Ошибки не было."
 #: command.c:1766 command.c:1973 command.c:1999 command.c:3380
 #, c-format
 msgid "\\%s not allowed in pipeline mode"
-msgstr ""
+msgstr "\\%s не допускается в конвейерном режиме"
 
 #. +> 18 17 16 15 14 13
 #: command.c:1822
@@ -588,7 +580,7 @@ msgstr "\\%s: отсутствует правая скобка"
 #: command.c:1948
 #, c-format
 msgid "\\getresults: invalid number of requested results"
-msgstr ""
+msgstr "\\getresults: запрошено неверное количество результатов"
 
 #. +> 18 17 16 15 14 13
 #: command.c:2205
@@ -676,12 +668,13 @@ msgstr "История записана в файл \"%s\".\n"
 #, c-format
 msgid "\\sendpipeline must be used after \\bind or \\bind_named"
 msgstr ""
+"\\sendpipeline может использоваться только после \\bind или \\bind_named"
 
 #. +> 18
 #: command.c:2860
 #, c-format
 msgid "\\sendpipeline not allowed outside of pipeline mode"
-msgstr ""
+msgstr "\\sendpipeline не допускается вне конвейерного режима"
 
 #. +> 18 17 16 15 14 13
 #: command.c:2947
@@ -724,13 +717,13 @@ msgstr "Секундомер выключен."
 #: command.c:3208
 #, c-format
 msgid "\\%s: not currently in restricted mode"
-msgstr ""
+msgstr "\\%s: ограниченный режим не активен"
 
 #. +> 18 17 16 15 14 13
 #: command.c:3218
 #, c-format
 msgid "\\%s: wrong key"
-msgstr ""
+msgstr "\\%s: неверный ключ"
 
 #. +> 18 17 16 15 14 13
 #: command.c:3304 command.c:3342 command.c:4792 command.c:4795 command.c:4798
@@ -1570,7 +1563,7 @@ msgstr "Команда не выдала результат, либо в рез�
 #: common.c:1670
 #, c-format
 msgid "No pending results to get"
-msgstr ""
+msgstr "Нет результатов, ожидающих получения"
 
 #. +> 18 17
 #: common.c:1748
@@ -1582,13 +1575,13 @@ msgstr "получить результаты в блочном режиме н�
 #: common.c:1797
 #, c-format
 msgid "Pipeline aborted, command did not run"
-msgstr ""
+msgstr "Конвейерный режим прерван, команда не была выполнена"
 
 #. +> 18
 #: common.c:1893
 #, c-format
 msgid "COPY in a pipeline is not supported, aborting connection"
-msgstr ""
+msgstr "COPY в конвейерном режиме не поддерживается, соединение прерывается"
 
 #. +> 18 17 16 15 14 13
 #: copy.c:98
@@ -1826,10 +1819,10 @@ msgstr "Список табличных пространств"
 
 #. +> 18
 #: describe.c:316
-#, fuzzy, c-format
+#, c-format
 #| msgid "\\df only takes [anptwS+] as options"
 msgid "\\df only takes [%s] as options"
-msgstr "\\df принимает в качестве параметров только [anptwS+]"
+msgstr "\\df принимает в качестве параметров только [%s]"
 
 #. +> 17 16 15 14 13
 #: describe.c:308
@@ -1943,7 +1936,7 @@ msgstr "нет"
 #. +> 18
 #: describe.c:422 describe.c:840 describe.c:5004 describe.c:7128
 msgid "Leakproof?"
-msgstr ""
+msgstr "Герметичная?"
 
 #. +> 18 17 16 15 14 13
 #: describe.c:427
@@ -2104,10 +2097,9 @@ msgstr "схема"
 
 #. +> 18
 #: describe.c:1243
-#, fuzzy
 #| msgid "Large objects"
 msgid "large object"
-msgstr "Большие объекты"
+msgstr "большой объект"
 
 #. +> 18 17 16 15 14 13
 #: describe.c:1265
@@ -2533,24 +2525,21 @@ msgstr "Публикации:"
 
 #. +> 18
 #: describe.c:3127
-#, fuzzy
 #| msgid "table constraint"
 msgid "Not-null constraints:"
-msgstr "ограничение таблицы"
+msgstr "Ограничения NOT NULL:"
 
 #. +> 18
 #: describe.c:3141
-#, fuzzy
 #| msgid "No inheritance"
 msgid " (local, inherited)"
-msgstr "Не наследуется"
+msgstr " (локальное, не наследуется)"
 
 #. +> 18
 #: describe.c:3142
-#, fuzzy
 #| msgid "No inheritance"
 msgid " (inherited)"
-msgstr "Не наследуется"
+msgstr " (наследуется)"
 
 #. +> 18 17 16 15 14 13
 #: describe.c:3175
@@ -2834,94 +2823,94 @@ msgstr "спец. отношение"
 
 #. +> 18
 #: describe.c:4180
-#, fuzzy, c-format
+#, c-format
 #| msgid "Did not find any relation named \"%s\"."
 msgid "Did not find any relations named \"%s\"."
-msgstr "Отношение \"%s\" не найдено."
+msgstr "Отношения с именем \"%s\" не найдены."
 
 #. +> 18
 #: describe.c:4183
-#, fuzzy, c-format
+#, c-format
 #| msgid "Did not find any extension named \"%s\"."
 msgid "Did not find any tables named \"%s\"."
-msgstr "Расширение \"%s\" не найдено."
+msgstr "Таблицы с именем \"%s\" не найдены."
 
 #. +> 18
 #: describe.c:4186
-#, fuzzy, c-format
+#, c-format
 #| msgid "Did not find any extension named \"%s\"."
 msgid "Did not find any indexes named \"%s\"."
-msgstr "Расширение \"%s\" не найдено."
+msgstr "Индексы с именем \"%s\" не найдены."
 
 #. +> 18
 #: describe.c:4189
-#, fuzzy, c-format
+#, c-format
 #| msgid "Did not find any extension named \"%s\"."
 msgid "Did not find any views named \"%s\"."
-msgstr "Расширение \"%s\" не найдено."
+msgstr "Представления с именем \"%s\" не найдены."
 
 #. +> 18
 #: describe.c:4192
-#, fuzzy, c-format
+#, c-format
 #| msgid "Did not find any relation named \"%s\"."
 msgid "Did not find any materialized views named \"%s\"."
-msgstr "Отношение \"%s\" не найдено."
+msgstr "Материализованные представления с именем \"%s\" не найдены."
 
 #. +> 18
 #: describe.c:4195
-#, fuzzy, c-format
+#, c-format
 #| msgid "Did not find any extension named \"%s\"."
 msgid "Did not find any sequences named \"%s\"."
-msgstr "Расширение \"%s\" не найдено."
+msgstr "Последовательности с именем \"%s\" не найдены."
 
 #. +> 18
 #: describe.c:4198
-#, fuzzy, c-format
+#, c-format
 #| msgid "Did not find any relation named \"%s\"."
 msgid "Did not find any foreign tables named \"%s\"."
-msgstr "Отношение \"%s\" не найдено."
+msgstr "Сторонние таблицы с именем \"%s\" не найдены."
 
 #. +> 18
 #: describe.c:4209
-#, fuzzy, c-format
+#, c-format
 #| msgid "Did not find any extensions."
 msgid "Did not find any tables."
-msgstr "Никакие расширения не найдены."
+msgstr "Никакие таблицы не найдены."
 
 #. +> 18
 #: describe.c:4211
-#, fuzzy, c-format
+#, c-format
 #| msgid "Did not find any extensions."
 msgid "Did not find any indexes."
-msgstr "Никакие расширения не найдены."
+msgstr "Никакие индексы не найдены."
 
 #. +> 18
 #: describe.c:4213
-#, fuzzy, c-format
+#, c-format
 #| msgid "Did not find any settings."
 msgid "Did not find any views."
-msgstr "Никакие параметры не найдены."
+msgstr "Никакие представления не найдены."
 
 #. +> 18
 #: describe.c:4215
-#, fuzzy, c-format
+#, c-format
 #| msgid "define a new materialized view"
 msgid "Did not find any materialized views."
-msgstr "создать материализованное представление"
+msgstr "Никакие материализованные представления не найдены."
 
 #. +> 18
 #: describe.c:4217
-#, fuzzy, c-format
+#, c-format
 #| msgid "Did not find any settings."
 msgid "Did not find any sequences."
-msgstr "Никакие параметры не найдены."
+msgstr "Никакие последовательности не найдены."
 
 #. +> 18
 #: describe.c:4219
-#, fuzzy, c-format
+#, c-format
 #| msgid "Did not find any relations."
 msgid "Did not find any foreign tables."
-msgstr "Отношения не найдены."
+msgstr "Никакие сторонние таблицы не найдены."
 
 #. +> 18 17 16 15 14 13
 #: describe.c:4227
@@ -2930,38 +2919,33 @@ msgstr "Список отношений"
 
 #. +> 18
 #: describe.c:4228
-#, fuzzy
 #| msgid "List of tablespaces"
 msgid "List of tables"
-msgstr "Список табличных пространств"
+msgstr "Список таблиц"
 
 #. +> 18
 #: describe.c:4229
-#, fuzzy
 #| msgid "List of domains"
 msgid "List of indexes"
-msgstr "Список доменов"
+msgstr "Список индексов"
 
 #. +> 18
 #: describe.c:4230
-#, fuzzy
 #| msgid "List of roles"
 msgid "List of views"
-msgstr "Список ролей"
+msgstr "Список представлений"
 
 #. +> 18
 #: describe.c:4231
-#, fuzzy
 #| msgid "materialized view"
 msgid "List of materialized views"
-msgstr "материализованное представление"
+msgstr "Список материализованных представлений"
 
 #. +> 18
 #: describe.c:4232
-#, fuzzy
 #| msgid "List of schemas"
 msgid "List of sequences"
-msgstr "Список схем"
+msgstr "Список последовательностей"
 
 #. +> 18 17 16 15 14 13
 #: describe.c:4233 describe.c:6163
@@ -3443,10 +3427,9 @@ msgstr "Список сопоставлений пользователей"
 
 #. +> 18
 #: describe.c:6196
-#, fuzzy
 #| msgid "Default footer is on.\n"
 msgid "Default version"
-msgstr "Строка итогов включена.\n"
+msgstr "Версия по умолчанию"
 
 #. +> 18 17 16 15 14 13
 #: describe.c:6217
@@ -3539,10 +3522,9 @@ msgstr "Опустошения"
 
 #. +> 18
 #: describe.c:6440 describe.c:6574 describe.c:6652
-#, fuzzy
 #| msgid "refcolumn"
 msgid "Generated columns"
-msgstr "целевой_столбец"
+msgstr "Генерируемые столбцы"
 
 #. +> 18 17 16 15 14 13
 #: describe.c:6444 describe.c:6654
@@ -4266,6 +4248,8 @@ msgid ""
 "  \\restrict RESTRICT_KEY\n"
 "                         enter restricted mode with provided key\n"
 msgstr ""
+"  \\restrict ОГРАНИЧИВАЮЩИЙ_КЛЮЧ\n"
+"                         войти в ограниченный режим с указанным ключом\n"
 
 #. +> 18 17 16 15 14 13
 #: help.c:176
@@ -4273,6 +4257,8 @@ msgid ""
 "  \\unrestrict RESTRICT_KEY\n"
 "                         exit restricted mode if key matches\n"
 msgstr ""
+"  \\unrestrict ОГРАНИЧИВАЮЩИЙ_КЛЮЧ\n"
+"                         выйти из ограниченного режима, если ключ совпадает\n"
 
 #. +> 18 17
 #: help.c:178
@@ -4481,14 +4467,13 @@ msgstr "Информационные\n"
 
 #. +> 18
 #: help.c:221
-#, fuzzy
 #| msgid "  (options: S = show system objects, + = additional detail)\n"
 msgid ""
 "  (options: S = show system objects, x = expanded mode, + = additional "
 "detail)\n"
 msgstr ""
-"  (дополнения: S = показывать системные объекты, + = дополнительные "
-"подробности)\n"
+"  (дополнения: S = показывать системные объекты, x = расширенный режим, + = "
+"дополнительные подробности)\n"
 
 #. +> 17 16 15 14 13
 #: help.c:225
@@ -4499,11 +4484,10 @@ msgstr ""
 
 #. +> 18
 #: help.c:222
-#, fuzzy
 #| msgid "  \\d[S+]                 list tables, views, and sequences\n"
 msgid "  \\d[Sx+]                list tables, views, and sequences\n"
 msgstr ""
-"  \\d[S+]                 список таблиц, представлений и "
+"  \\d[Sx+]                список таблиц, представлений и "
 "последовательностей\n"
 
 #. +> 17 16 15 14 13
@@ -4515,11 +4499,10 @@ msgstr ""
 
 #. +> 18
 #: help.c:223
-#, fuzzy
 #| msgid "  \\d[S+]  NAME           describe table, view, sequence, or index\n"
 msgid "  \\d[S+]   NAME          describe table, view, sequence, or index\n"
 msgstr ""
-"  \\d[S+]  ИМЯ            описание таблицы, представления, "
+"  \\d[S+]   ИМЯ           описание таблицы, представления, "
 "последовательности\n"
 "                         или индекса\n"
 
@@ -4533,10 +4516,9 @@ msgstr ""
 
 #. +> 18
 #: help.c:224
-#, fuzzy
 #| msgid "  \\da[S]  [PATTERN]      list aggregates\n"
 msgid "  \\da[Sx]  [PATTERN]     list aggregates\n"
-msgstr "  \\da[S]  [МАСКА]        список агрегатных функций\n"
+msgstr "  \\da[Sx]  [МАСКА]       список агрегатных функций\n"
 
 #. +> 17 16 15 14 13
 #: help.c:228
@@ -4545,10 +4527,9 @@ msgstr "  \\da[S]  [МАСКА]        список агрегатных фун�
 
 #. +> 18
 #: help.c:225
-#, fuzzy
 #| msgid "  \\dA[+]  [PATTERN]      list access methods\n"
 msgid "  \\dA[x+]  [PATTERN]     list access methods\n"
-msgstr "  \\dA[+]  [МАСКА]        список методов доступа\n"
+msgstr "  \\dA[x+]  [МАСКА]       список методов доступа\n"
 
 #. +> 17 16 15 14 13
 #: help.c:229
@@ -4558,10 +4539,9 @@ msgstr "  \\dA[+]  [МАСКА]        список методов доступ�
 # well-spelled: МСК
 #. +> 18
 #: help.c:226
-#, fuzzy
 #| msgid "  \\dAc[+] [AMPTRN [TYPEPTRN]]  list operator classes\n"
 msgid "  \\dAc[x+] [AMPTRN [TYPEPTRN]]  list operator classes\n"
-msgstr "  \\dAc[+] [МСК_МД [МСК_ТИПА]]  список классов операторов\n"
+msgstr "  \\dAc[x+] [МСК_МД [МСК_ТИПА]]  список классов операторов\n"
 
 # well-spelled: МСК
 #. +> 17 16 15 14 13
@@ -4572,10 +4552,9 @@ msgstr "  \\dAc[+] [МСК_МД [МСК_ТИПА]]  список классов 
 # well-spelled: МСК
 #. +> 18
 #: help.c:227
-#, fuzzy
 #| msgid "  \\dAf[+] [AMPTRN [TYPEPTRN]]  list operator families\n"
 msgid "  \\dAf[x+] [AMPTRN [TYPEPTRN]]  list operator families\n"
-msgstr "  \\dAf[+] [МСК_МД [МСК_ТИПА]]  список семейств операторов\n"
+msgstr "  \\dAf[x+] [МСК_МД [МСК_ТИПА]]  список семейств операторов\n"
 
 # well-spelled: МСК
 #. +> 17 16 15 14 13
@@ -4586,12 +4565,11 @@ msgstr "  \\dAf[+] [МСК_МД [МСК_ТИПА]]  список семейст�
 # well-spelled: МСК
 #. +> 18
 #: help.c:228
-#, fuzzy
 #| msgid ""
 #| "  \\dAo[+] [AMPTRN [OPFPTRN]]   list operators of operator families\n"
 msgid "  \\dAo[x+] [AMPTRN [OPFPTRN]]   list operators of operator families\n"
 msgstr ""
-"  \\dAo[+] [МСК_МД [МСК_СОП]]   список операторов из семейств операторов\n"
+"  \\dAo[x+] [МСК_МД [МСК_СОП]]   список операторов из семейств операторов\n"
 
 # well-spelled: МСК
 #. +> 17 16 15 14 13
@@ -4603,14 +4581,13 @@ msgstr ""
 # well-spelled: МСК
 #. +> 18
 #: help.c:229
-#, fuzzy
 #| msgid ""
 #| "  \\dAp[+] [AMPTRN [OPFPTRN]]   list support functions of operator "
 #| "families\n"
 msgid ""
 "  \\dAp[x+] [AMPTRN [OPFPTRN]]   list support functions of operator "
 "families\n"
-msgstr "  \\dAp[+] [МСК_МД [МСК_СОП]]   список опорных функций из семейств\n"
+msgstr "  \\dAp[x+] [МСК_МД [МСК_СОП]]   список опорных функций из семейств\n"
 
 # well-spelled: МСК
 #. +> 17 16 15 14 13
@@ -4621,10 +4598,9 @@ msgstr "  \\dAp[+] [МСК_МД [МСК_СОП]]   список опорных �
 
 #. +> 18
 #: help.c:230
-#, fuzzy
 #| msgid "  \\db[+]  [PATTERN]      list tablespaces\n"
 msgid "  \\db[x+]  [PATTERN]     list tablespaces\n"
-msgstr "  \\db[+]  [МАСКА]        список табличных пространств\n"
+msgstr "  \\db[x+]  [МАСКА]       список табличных пространств\n"
 
 #. +> 17 16 15 14 13
 #: help.c:234
@@ -4633,10 +4609,9 @@ msgstr "  \\db[+]  [МАСКА]        список табличных прос�
 
 #. +> 18
 #: help.c:231
-#, fuzzy
 #| msgid "  \\dc[S+] [PATTERN]      list conversions\n"
 msgid "  \\dc[Sx+] [PATTERN]     list conversions\n"
-msgstr "  \\dc[S+] [МАСКА]        список преобразований\n"
+msgstr "  \\dc[Sx+] [МАСКА]        список преобразований\n"
 
 #. +> 17 16 15 14 13
 #: help.c:235
@@ -4645,10 +4620,9 @@ msgstr "  \\dc[S+] [МАСКА]        список преобразований
 
 #. +> 18
 #: help.c:232
-#, fuzzy
 #| msgid "  \\dconfig[+] [PATTERN]  list configuration parameters\n"
 msgid "  \\dconfig[x+] [PATTERN] list configuration parameters\n"
-msgstr "  \\dconfig[+] [МАСКА]    список параметров конфигурации\n"
+msgstr "  \\dconfig[x+] [МАСКА]   список параметров конфигурации\n"
 
 #. +> 17 16 15
 #: help.c:236
@@ -4657,10 +4631,9 @@ msgstr "  \\dconfig[+] [МАСКА]    список параметров кон�
 
 #. +> 18
 #: help.c:233
-#, fuzzy
 #| msgid "  \\dC[+]  [PATTERN]      list casts\n"
 msgid "  \\dC[x+]  [PATTERN]     list casts\n"
-msgstr "  \\dC[+]  [МАСКА]        список приведений типов\n"
+msgstr "  \\dC[x+]  [МАСКА]       список приведений типов\n"
 
 #. +> 17 16 15 14 13
 #: help.c:237
@@ -4669,14 +4642,13 @@ msgstr "  \\dC[+]  [МАСКА]        список приведений тип�
 
 #. +> 18
 #: help.c:234
-#, fuzzy
 #| msgid ""
 #| "  \\dd[S]  [PATTERN]      show object descriptions not displayed "
 #| "elsewhere\n"
 msgid ""
 "  \\dd[Sx]  [PATTERN]     show object descriptions not displayed elsewhere\n"
 msgstr ""
-"  \\dd[S]  [МАСКА]        описания объектов, не выводимые в других режимах\n"
+"  \\dd[Sx]  [МАСКА]       описания объектов, не выводимые в других режимах\n"
 
 #. +> 17 16 15 14 13
 #: help.c:238
@@ -4687,10 +4659,9 @@ msgstr ""
 
 #. +> 18
 #: help.c:235
-#, fuzzy
 #| msgid "  \\dD[S+] [PATTERN]      list domains\n"
 msgid "  \\dD[Sx+] [PATTERN]     list domains\n"
-msgstr "  \\dD[S+] [МАСКА]        список доменов\n"
+msgstr "  \\dD[Sx+] [МАСКА]       список доменов\n"
 
 #. +> 17 16 15 14 13
 #: help.c:239
@@ -4699,10 +4670,9 @@ msgstr "  \\dD[S+] [МАСКА]        список доменов\n"
 
 #. +> 18
 #: help.c:236
-#, fuzzy
 #| msgid "  \\ddp    [PATTERN]      list default privileges\n"
 msgid "  \\ddp[x]  [PATTERN]     list default privileges\n"
-msgstr "  \\ddp    [МАСКА]        список прав по умолчанию\n"
+msgstr "  \\ddp[x]  [МАСКА]       список прав по умолчанию\n"
 
 #. +> 17 16 15 14 13
 #: help.c:240
@@ -4711,10 +4681,9 @@ msgstr "  \\ddp    [МАСКА]        список прав по умолчан
 
 #. +> 18
 #: help.c:237
-#, fuzzy
 #| msgid "  \\dE[S+] [PATTERN]      list foreign tables\n"
 msgid "  \\dE[Sx+] [PATTERN]     list foreign tables\n"
-msgstr "  \\dE[S+] [МАСКА]        список сторонних таблиц\n"
+msgstr "  \\dE[Sx+] [МАСКА]       список сторонних таблиц\n"
 
 #. +> 17 16 15 14 13
 #: help.c:241
@@ -4723,10 +4692,9 @@ msgstr "  \\dE[S+] [МАСКА]        список сторонних табл�
 
 #. +> 18
 #: help.c:238
-#, fuzzy
 #| msgid "  \\des[+] [PATTERN]      list foreign servers\n"
 msgid "  \\des[x+] [PATTERN]     list foreign servers\n"
-msgstr "  \\des[+] [МАСКА]        список сторонних серверов\n"
+msgstr "  \\des[x+] [МАСКА]       список сторонних серверов\n"
 
 #. +> 17 16 15 14 13
 #: help.c:242
@@ -4735,10 +4703,9 @@ msgstr "  \\des[+] [МАСКА]        список сторонних серв�
 
 #. +> 18
 #: help.c:239
-#, fuzzy
 #| msgid "  \\det[+] [PATTERN]      list foreign tables\n"
 msgid "  \\det[x+] [PATTERN]     list foreign tables\n"
-msgstr "  \\det[+] [МАСКА]        список сторонних таблиц\n"
+msgstr "  \\det[x+] [МАСКА]       список сторонних таблиц\n"
 
 #. +> 17 16 15 14 13
 #: help.c:243
@@ -4747,10 +4714,9 @@ msgstr "  \\det[+] [МАСКА]        список сторонних табл�
 
 #. +> 18
 #: help.c:240
-#, fuzzy
 #| msgid "  \\deu[+] [PATTERN]      list user mappings\n"
 msgid "  \\deu[x+] [PATTERN]     list user mappings\n"
-msgstr "  \\deu[+] [МАСКА]        список сопоставлений пользователей\n"
+msgstr "  \\deu[x+] [МАСКА]       список сопоставлений пользователей\n"
 
 #. +> 17 16 15 14 13
 #: help.c:244
@@ -4759,10 +4725,9 @@ msgstr "  \\deu[+] [МАСКА]        список сопоставлений �
 
 #. +> 18
 #: help.c:241
-#, fuzzy
 #| msgid "  \\dew[+] [PATTERN]      list foreign-data wrappers\n"
 msgid "  \\dew[x+] [PATTERN]     list foreign-data wrappers\n"
-msgstr "  \\dew[+] [МАСКА]        список обёрток сторонних данных\n"
+msgstr "  \\dew[x+] [МАСКА]       список обёрток сторонних данных\n"
 
 #. +> 17 16 15 14 13
 #: help.c:245
@@ -4772,7 +4737,6 @@ msgstr "  \\dew[+] [МАСКА]        список обёрток сторон�
 # well-spelled: МСК, ФУНК
 #. +> 18
 #: help.c:242
-#, fuzzy
 #| msgid ""
 #| "  \\df[anptw][S+] [FUNCPTRN [TYPEPTRN ...]]\n"
 #| "                         list [only agg/normal/procedure/trigger/window] "
@@ -4782,7 +4746,7 @@ msgid ""
 "                         list [only agg/normal/procedure/trigger/window] "
 "functions\n"
 msgstr ""
-"  \\df[anptw][S+] [МСК_ФУНК [МСК_ТИПА ...]]\n"
+"  \\df[anptw][Sx+] [МСК_ФУНК [МСК_ТИПА ...]]\n"
 "                         список функций [только агрегатных/обычных/процедур/"
 "триггеров/оконных]\n"
 
@@ -4810,10 +4774,9 @@ msgstr ""
 
 #. +> 18
 #: help.c:244
-#, fuzzy
 #| msgid "  \\dF[+]  [PATTERN]      list text search configurations\n"
 msgid "  \\dF[x+]  [PATTERN]     list text search configurations\n"
-msgstr "  \\dF[+]  [МАСКА]        список конфигураций текстового поиска\n"
+msgstr "  \\dF[x+]  [МАСКА]       список конфигураций текстового поиска\n"
 
 #. +> 17 16 15 14 13
 #: help.c:248
@@ -4822,10 +4785,9 @@ msgstr "  \\dF[+]  [МАСКА]        список конфигураций т�
 
 #. +> 18
 #: help.c:245
-#, fuzzy
 #| msgid "  \\dFd[+] [PATTERN]      list text search dictionaries\n"
 msgid "  \\dFd[x+] [PATTERN]     list text search dictionaries\n"
-msgstr "  \\dFd[+] [МАСКА]        список словарей текстового поиска\n"
+msgstr "  \\dFd[x+] [МАСКА]       список словарей текстового поиска\n"
 
 #. +> 17 16 15 14 13
 #: help.c:249
@@ -4834,10 +4796,9 @@ msgstr "  \\dFd[+] [МАСКА]        список словарей текст�
 
 #. +> 18
 #: help.c:246
-#, fuzzy
 #| msgid "  \\dFp[+] [PATTERN]      list text search parsers\n"
 msgid "  \\dFp[x+] [PATTERN]     list text search parsers\n"
-msgstr "  \\dFp[+] [МАСКА]        список анализаторов текстового поиска\n"
+msgstr "  \\dFp[x+] [МАСКА]       список анализаторов текстового поиска\n"
 
 #. +> 17 16 15 14 13
 #: help.c:250
@@ -4846,10 +4807,9 @@ msgstr "  \\dFp[+] [МАСКА]        список анализаторов т�
 
 #. +> 18
 #: help.c:247
-#, fuzzy
 #| msgid "  \\dFt[+] [PATTERN]      list text search templates\n"
 msgid "  \\dFt[x+] [PATTERN]     list text search templates\n"
-msgstr "  \\dFt[+] [МАСКА]        список шаблонов текстового поиска\n"
+msgstr "  \\dFt[x+] [МАСКА]       список шаблонов текстового поиска\n"
 
 #. +> 17 16 15 14 13
 #: help.c:251
@@ -4858,10 +4818,9 @@ msgstr "  \\dFt[+] [МАСКА]        список шаблонов текст�
 
 #. +> 18
 #: help.c:248
-#, fuzzy
 #| msgid "  \\dg[S+] [PATTERN]      list roles\n"
 msgid "  \\dg[Sx+] [PATTERN]     list roles\n"
-msgstr "  \\dg[S+] [МАСКА]        список ролей\n"
+msgstr "  \\dg[Sx+] [МАСКА]       список ролей\n"
 
 #. +> 17 16 15 14 13
 #: help.c:252
@@ -4870,10 +4829,9 @@ msgstr "  \\dg[S+] [МАСКА]        список ролей\n"
 
 #. +> 18
 #: help.c:249
-#, fuzzy
 #| msgid "  \\di[S+] [PATTERN]      list indexes\n"
 msgid "  \\di[Sx+] [PATTERN]     list indexes\n"
-msgstr "  \\di[S+] [МАСКА]        список индексов\n"
+msgstr "  \\di[Sx+] [МАСКА]       список индексов\n"
 
 #. +> 17 16 15 14 13
 #: help.c:253
@@ -4882,11 +4840,10 @@ msgstr "  \\di[S+] [МАСКА]        список индексов\n"
 
 #. +> 18
 #: help.c:250
-#, fuzzy
 #| msgid "  \\dl[+]                 list large objects, same as \\lo_list\n"
 msgid "  \\dl[x+]                list large objects, same as \\lo_list\n"
 msgstr ""
-"  \\dl[+]                 список больших объектов (то же, что и \\lo_list)\n"
+"  \\dl[x+]                список больших объектов (то же, что и \\lo_list)\n"
 
 #. +> 17 16 15
 #: help.c:254
@@ -4903,10 +4860,9 @@ msgstr ""
 
 #. +> 18
 #: help.c:251
-#, fuzzy
 #| msgid "  \\dL[S+] [PATTERN]      list procedural languages\n"
 msgid "  \\dL[Sx+] [PATTERN]     list procedural languages\n"
-msgstr "  \\dL[S+] [МАСКА]        список языков процедур\n"
+msgstr "  \\dL[Sx+] [МАСКА]       список процедурных языков\n"
 
 #. +> 17 16 15 14 13
 #: help.c:255
@@ -4915,10 +4871,9 @@ msgstr "  \\dL[S+] [МАСКА]        список языков процеду�
 
 #. +> 18
 #: help.c:252
-#, fuzzy
 #| msgid "  \\dm[S+] [PATTERN]      list materialized views\n"
 msgid "  \\dm[Sx+] [PATTERN]     list materialized views\n"
-msgstr "  \\dm[S+] [МАСКА]        список материализованных представлений\n"
+msgstr "  \\dm[Sx+] [МАСКА]       список материализованных представлений\n"
 
 #. +> 17 16 15 14 13
 #: help.c:256
@@ -4927,10 +4882,9 @@ msgstr "  \\dm[S+] [МАСКА]        список материализован
 
 #. +> 18
 #: help.c:253
-#, fuzzy
 #| msgid "  \\dn[S+] [PATTERN]      list schemas\n"
 msgid "  \\dn[Sx+] [PATTERN]     list schemas\n"
-msgstr "  \\dn[S+] [МАСКА]        список схем\n"
+msgstr "  \\dn[Sx+] [МАСКА]       список схем\n"
 
 #. +> 17 16 15 14 13
 #: help.c:257
@@ -4940,7 +4894,6 @@ msgstr "  \\dn[S+] [МАСКА]        список схем\n"
 # well-spelled: МСК
 #. +> 18
 #: help.c:254
-#, fuzzy
 #| msgid ""
 #| "  \\do[S+] [OPPTRN [TYPEPTRN [TYPEPTRN]]]\n"
 #| "                         list operators\n"
@@ -4948,7 +4901,7 @@ msgid ""
 "  \\do[Sx+] [OPPTRN [TYPEPTRN [TYPEPTRN]]]\n"
 "                         list operators\n"
 msgstr ""
-"  \\do[S+] [МСК_ОП [МСК_ТИПА [МСК_ТИПА]]]\n"
+"  \\do[Sx+] [МСК_ОП [МСК_ТИПА [МСК_ТИПА]]]\n"
 "                         список операторов\n"
 
 # well-spelled: МСК
@@ -4963,10 +4916,9 @@ msgstr ""
 
 #. +> 18
 #: help.c:256
-#, fuzzy
 #| msgid "  \\dO[S+] [PATTERN]      list collations\n"
 msgid "  \\dO[Sx+] [PATTERN]     list collations\n"
-msgstr "  \\dO[S+] [МАСКА]        список правил сортировки\n"
+msgstr "  \\dO[Sx+] [МАСКА]       список правил сортировки\n"
 
 #. +> 17 16 15 14 13
 #: help.c:260
@@ -4975,14 +4927,13 @@ msgstr "  \\dO[S+] [МАСКА]        список правил сортиро�
 
 #. +> 18
 #: help.c:257
-#, fuzzy
 #| msgid ""
 #| "  \\dp[S]  [PATTERN]      list table, view, and sequence access "
 #| "privileges\n"
 msgid ""
 "  \\dp[Sx]  [PATTERN]     list table, view, and sequence access privileges\n"
 msgstr ""
-"  \\dp[S]  [МАСКА]        список прав доступа к таблицам, представлениям и\n"
+"  \\dp[Sx]  [МАСКА]       список прав доступа к таблицам, представлениям и\n"
 "                         последовательностям\n"
 
 #. +> 17 16
@@ -5003,7 +4954,6 @@ msgstr ""
 
 #. +> 18
 #: help.c:258
-#, fuzzy
 #| msgid ""
 #| "  \\dP[itn+] [PATTERN]    list [only index/table] partitioned relations "
 #| "[n=nested]\n"
@@ -5011,7 +4961,7 @@ msgid ""
 "  \\dP[itnx+] [PATTERN]   list [only index/table] partitioned relations "
 "[n=nested]\n"
 msgstr ""
-"  \\dP[itn+] [МАСКА]      список секционированных отношений\n"
+"  \\dP[itnx+] [МАСКА]     список секционированных отношений\n"
 "                          [только индексов (i)/таблиц (t)], с вложенностью "
 "(n)\n"
 
@@ -5028,12 +4978,13 @@ msgstr ""
 # well-spelled: МСК
 #. +> 18
 #: help.c:259
-#, fuzzy
 #| msgid "  \\drds [ROLEPTRN [DBPTRN]] list per-database role settings\n"
 msgid ""
 "  \\drds[x] [ROLEPTRN [DBPTRN]]\n"
 "                         list per-database role settings\n"
-msgstr "  \\drds [МСК_РОЛИ [МСК_БД]] список параметров роли на уровне БД\n"
+msgstr ""
+"  \\drds[x] [МСК_РОЛИ [МСК_БД]]\n"
+"                         список параметров роли на уровне БД\n"
 
 # well-spelled: МСК
 #. +> 17 16 15 14
@@ -5050,10 +5001,9 @@ msgstr "  \\drds [МАСК1 [МАСК2]]  список параметров ро
 
 #. +> 18
 #: help.c:261
-#, fuzzy
 #| msgid "  \\drg[S] [PATTERN]      list role grants\n"
 msgid "  \\drg[Sx] [PATTERN]     list role grants\n"
-msgstr "  \\drg[S] [МАСКА]        список назначений ролей\n"
+msgstr "  \\drg[Sx] [МАСКА]       список назначений ролей\n"
 
 #. +> 17 16
 #: help.c:264
@@ -5062,10 +5012,9 @@ msgstr "  \\drg[S] [МАСКА]        список назначений рол�
 
 #. +> 18
 #: help.c:262
-#, fuzzy
 #| msgid "  \\dRp[+] [PATTERN]      list replication publications\n"
 msgid "  \\dRp[x+] [PATTERN]     list replication publications\n"
-msgstr "  \\dRp[+] [МАСКА]        список публикаций для репликации\n"
+msgstr "  \\dRp[x+] [МАСКА]       список публикаций для репликации\n"
 
 #. +> 17 16 15 14 13
 #: help.c:265
@@ -5074,10 +5023,9 @@ msgstr "  \\dRp[+] [МАСКА]        список публикаций для 
 
 #. +> 18
 #: help.c:263
-#, fuzzy
 #| msgid "  \\dRs[+] [PATTERN]      list replication subscriptions\n"
 msgid "  \\dRs[x+] [PATTERN]     list replication subscriptions\n"
-msgstr "  \\dRs[+] [МАСКА]        список подписок на репликацию\n"
+msgstr "  \\dRs[x+] [МАСКА]       список подписок на репликацию\n"
 
 #. +> 17 16 15 14 13
 #: help.c:266
@@ -5086,10 +5034,9 @@ msgstr "  \\dRs[+] [МАСКА]        список подписок на реп
 
 #. +> 18
 #: help.c:264
-#, fuzzy
 #| msgid "  \\ds[S+] [PATTERN]      list sequences\n"
 msgid "  \\ds[Sx+] [PATTERN]     list sequences\n"
-msgstr "  \\ds[S+] [МАСКА]        список последовательностей\n"
+msgstr "  \\ds[Sx+] [МАСКА]       список последовательностей\n"
 
 #. +> 17 16 15 14 13
 #: help.c:267
@@ -5098,10 +5045,9 @@ msgstr "  \\ds[S+] [МАСКА]        список последовательн
 
 #. +> 18
 #: help.c:265
-#, fuzzy
 #| msgid "  \\dt[S+] [PATTERN]      list tables\n"
 msgid "  \\dt[Sx+] [PATTERN]     list tables\n"
-msgstr "  \\dt[S+] [МАСКА]        список таблиц\n"
+msgstr "  \\dt[Sx+] [МАСКА]       список таблиц\n"
 
 #. +> 17 16 15 14 13
 #: help.c:268
@@ -5110,10 +5056,9 @@ msgstr "  \\dt[S+] [МАСКА]        список таблиц\n"
 
 #. +> 18
 #: help.c:266
-#, fuzzy
 #| msgid "  \\dT[S+] [PATTERN]      list data types\n"
 msgid "  \\dT[Sx+] [PATTERN]     list data types\n"
-msgstr "  \\dT[S+] [МАСКА]        список типов данных\n"
+msgstr "  \\dT[Sx+] [МАСКА]       список типов данных\n"
 
 #. +> 17 16 15 14 13
 #: help.c:269
@@ -5122,10 +5067,9 @@ msgstr "  \\dT[S+] [МАСКА]        список типов данных\n"
 
 #. +> 18
 #: help.c:267
-#, fuzzy
 #| msgid "  \\du[S+] [PATTERN]      list roles\n"
 msgid "  \\du[Sx+] [PATTERN]     list roles\n"
-msgstr "  \\du[S+] [МАСКА]        список ролей\n"
+msgstr "  \\du[Sx+] [МАСКА]       список ролей\n"
 
 #. +> 17 16 15 14 13
 #: help.c:270
@@ -5140,10 +5084,9 @@ msgstr "  \\do[S+] [МАСКА]        список операторов\n"
 
 #. +> 18
 #: help.c:268
-#, fuzzy
 #| msgid "  \\dv[S+] [PATTERN]      list views\n"
 msgid "  \\dv[Sx+] [PATTERN]     list views\n"
-msgstr "  \\dv[S+] [МАСКА]        список представлений\n"
+msgstr "  \\dv[Sx+] [МАСКА]       список представлений\n"
 
 #. +> 17 16 15 14 13
 #: help.c:271
@@ -5152,10 +5095,9 @@ msgstr "  \\dv[S+] [МАСКА]        список представлений\n
 
 #. +> 18
 #: help.c:269
-#, fuzzy
 #| msgid "  \\dx[+]  [PATTERN]      list extensions\n"
 msgid "  \\dx[x+]  [PATTERN]     list extensions\n"
-msgstr "  \\dx[+]  [МАСКА]        список расширений\n"
+msgstr "  \\dx[x+]  [МАСКА]       список расширений\n"
 
 #. +> 17 16 15 14 13
 #: help.c:272
@@ -5164,10 +5106,9 @@ msgstr "  \\dx[+]  [МАСКА]        список расширений\n"
 
 #. +> 18
 #: help.c:270
-#, fuzzy
 #| msgid "  \\dX     [PATTERN]      list extended statistics\n"
 msgid "  \\dX[x]   [PATTERN]     list extended statistics\n"
-msgstr "  \\dX     [МАСКА]        список расширенных статистик\n"
+msgstr "  \\dX[x]   [МАСКА]       список расширенных статистик\n"
 
 #. +> 17 16 15 14
 #: help.c:273
@@ -5176,10 +5117,9 @@ msgstr "  \\dX     [МАСКА]        список расширенных ст�
 
 #. +> 18
 #: help.c:271
-#, fuzzy
 #| msgid "  \\dy[+]  [PATTERN]      list event triggers\n"
 msgid "  \\dy[x+]  [PATTERN]     list event triggers\n"
-msgstr "  \\dy[+]  [МАСКА]        список событийных триггеров\n"
+msgstr "  \\dy[x+]  [МАСКА]       список событийных триггеров\n"
 
 #. +> 17 16 15 14 13
 #: help.c:274
@@ -5188,10 +5128,9 @@ msgstr "  \\dy[+]  [МАСКА]        список событийных три�
 
 #. +> 18
 #: help.c:272
-#, fuzzy
 #| msgid "  \\l[+]   [PATTERN]      list databases\n"
 msgid "  \\l[x+]   [PATTERN]     list databases\n"
-msgstr "  \\l[+]   [МАСКА]        список баз данных\n"
+msgstr "  \\l[x+]   [МАСКА]       список баз данных\n"
 
 #. +> 17 16 15 14 13
 #: help.c:275
@@ -5200,10 +5139,9 @@ msgstr "  \\l[+]   [МАСКА]        список баз данных\n"
 
 #. +> 18
 #: help.c:273
-#, fuzzy
 #| msgid "  \\sf[+]  FUNCNAME       show a function's definition\n"
 msgid "  \\sf[+]   FUNCNAME      show a function's definition\n"
-msgstr "  \\sf[+]  ИМЯ_ФУНКЦИИ    показать определение функции\n"
+msgstr "  \\sf[+]   ИМЯ_ФУНКЦИИ   показать определение функции\n"
 
 #. +> 17 16 15 14 13
 #: help.c:276
@@ -5213,10 +5151,9 @@ msgstr "  \\sf[+]  ИМЯ_ФУНКЦИИ    показать определен�
 # well-spelled: ПРЕДСТ
 #. +> 18
 #: help.c:274
-#, fuzzy
 #| msgid "  \\sv[+]  VIEWNAME       show a view's definition\n"
 msgid "  \\sv[+]   VIEWNAME      show a view's definition\n"
-msgstr "  \\sv[+]  ИМЯ_ПРЕДСТ     показать определение представления\n"
+msgstr "  \\sv[+]   ИМЯ_ПРЕДСТ    показать определение представления\n"
 
 # well-spelled: ПРЕДСТ
 #. +> 17 16 15 14 13
@@ -5226,10 +5163,9 @@ msgstr "  \\sv[+]  ИМЯ_ПРЕДСТ     показать определени
 
 #. +> 18
 #: help.c:275
-#, fuzzy
 #| msgid "  \\z[S]   [PATTERN]      same as \\dp\n"
 msgid "  \\z[Sx]   [PATTERN]     same as \\dp\n"
-msgstr "  \\z[S]   [МАСКА]        то же, что и \\dp\n"
+msgstr "  \\z[Sx]   [МАСКА]       то же, что и \\dp\n"
 
 #. +> 17 16
 #: help.c:278
@@ -5262,10 +5198,9 @@ msgstr ""
 
 #. +> 18
 #: help.c:282
-#, fuzzy
 #| msgid "  \\lo_list[+]            list large objects\n"
 msgid "  \\lo_list[x+]           list large objects\n"
-msgstr "  \\lo_list[+]            список больших объектов\n"
+msgstr "  \\lo_list[x+]           список больших объектов\n"
 
 #. +> 17 16 15
 #: help.c:285
@@ -5500,7 +5435,7 @@ msgstr "  \\unset ИМЯ             сбросить (удалить) внут�
 #. +> 18
 #: help.c:334
 msgid "Extended Query Protocol\n"
-msgstr ""
+msgstr "Протокол расширенных запросов\n"
 
 #. +> 18 17 16
 #: help.c:335
@@ -5514,6 +5449,10 @@ msgid ""
 "                         set query parameters for an existing prepared "
 "statement\n"
 msgstr ""
+"  \\bind_named ИМЯ_ОПЕР [ПАРАМ]...\n"
+"                         задать параметры запроса для существующего "
+"подготовленного\n"
+"                         оператора\n"
 
 #. +> 18
 #: help.c:338
@@ -5521,18 +5460,20 @@ msgid ""
 "  \\close_prepared STMT_NAME\n"
 "                         close an existing prepared statement\n"
 msgstr ""
+"  \\close_prepared ИМЯ_ОПЕР\n"
+"                         закрыть существующий подготовленный оператор\n"
 
 #. +> 18
 #: help.c:340
 msgid "  \\endpipeline           exit pipeline mode\n"
-msgstr ""
+msgstr "  \\endpipeline           выйти из конвейерного режима\n"
 
 #. +> 18
 #: help.c:341
-#, fuzzy
 #| msgid "  \\p                     show the contents of the query buffer\n"
 msgid "  \\flush                 flush output data to the server\n"
-msgstr "  \\p                     вывести содержимое буфера запросов\n"
+msgstr ""
+"  \\flush                 передать серверу выводимые данные из буфера\n"
 
 #. +> 18
 #: help.c:342
@@ -5540,6 +5481,8 @@ msgid ""
 "  \\flushrequest          send request to the server to flush its output "
 "buffer\n"
 msgstr ""
+"  \\flushrequest          передать запрос серверу, чтобы сбросить его буфер "
+"вывода\n"
 
 #. +> 18
 #: help.c:343
@@ -5547,24 +5490,27 @@ msgid ""
 "  \\getresults [NUM_RES]  read NUM_RES pending results, or all if no "
 "argument\n"
 msgstr ""
+"  \\getresults [КОЛ_РЕЗ]  прочитать заданное количество результатов либо "
+"все,\n"
+"                          если параметр не указан\n"
 
 #. +> 18
 #: help.c:344
-#, fuzzy
 #| msgid "deallocate a prepared statement"
 msgid "  \\parse STMT_NAME       create a prepared statement\n"
-msgstr "освободить подготовленный оператор"
+msgstr "  \\parse ИМЯ_ОПЕР        создать подготовленный оператор\n"
 
 #. +> 18
 #: help.c:345
 msgid ""
 "  \\sendpipeline          send an extended query to an ongoing pipeline\n"
 msgstr ""
+"  \\sendpipeline          передать расширенный запрос в текущий конвейер\n"
 
 #. +> 18
 #: help.c:346
 msgid "  \\startpipeline         enter pipeline mode\n"
-msgstr ""
+msgstr "  \\startpipeline         перейти в конвейерный режим\n"
 
 #. +> 18
 #: help.c:347
@@ -5572,6 +5518,7 @@ msgid ""
 "  \\syncpipeline          add a synchronisation point to an ongoing "
 "pipeline\n"
 msgstr ""
+"  \\syncpipeline          добавить точку синхронизации в текущий конвейер\n"
 
 #. +> 18 17 16 15 14 13
 #: help.c:386
@@ -5971,6 +5918,9 @@ msgid ""
 "  WATCH_INTERVAL\n"
 "    number of seconds \\watch waits between executions (default %s)\n"
 msgstr ""
+"  WATCH_INTERVAL\n"
+"    сколько секунд \\watch будет ждать перед следующим выполнением запроса\n"
+"    (по умолчанию %s)\n"
 
 #. +> 18 17 16 15 14 13
 #: help.c:475
@@ -7687,10 +7637,9 @@ msgstr "действие_при_ошибке"
 
 #. +> 18
 #: sql_help.c:2032
-#, fuzzy
 #| msgid "error: "
 msgid "maxerror"
-msgstr "ошибка: "
+msgstr "макс_ошибок"
 
 #. +> 18 17 16 15 14 13
 #: sql_help.c:2033
@@ -8261,10 +8210,9 @@ msgstr "имя_курсора"
 
 #. +> 18
 #: sql_help.c:3373 sql_help.c:4064 sql_help.c:4158 sql_help.c:5028
-#, fuzzy
 #| msgid "output_name"
 msgid "output_alias"
-msgstr "имя_результата"
+msgstr "псевдоним_результата"
 
 #. +> 18 17 16 15 14 13
 #: sql_help.c:3374 sql_help.c:4065 sql_help.c:4159 sql_help.c:5029
@@ -9624,37 +9572,41 @@ msgstr "неправильное значение \"%s\" для \"%s\": ожид
 
 #. +> 18
 #: variables.c:207
-#, fuzzy, c-format
+#, c-format
 #| msgid "invalid variable name: \"%s\""
 msgid "invalid input syntax for variable \"%s\""
-msgstr "неправильное имя переменной: \"%s\""
+msgstr "неправильный синтаксис значения для переменной \"%s\""
 
 #. +> 18
 #: variables.c:218
-#, fuzzy, c-format
+#, c-format
 #| msgid "invalid value \"%s\" for \"%s\": integer expected"
 msgid "invalid value \"%s\" for variable \"%s\": must be greater than %.2f"
-msgstr "неправильное значение \"%s\" для \"%s\": ожидалось целое"
+msgstr ""
+"значение \"%s\" не подходит для переменной \"%s\"; оно должно быть больше "
+"%.2f"
 
 #. +> 18
 #: variables.c:225
-#, fuzzy, c-format
+#, c-format
 #| msgid "invalid value \"%s\" for \"%s\": integer expected"
 msgid "invalid value \"%s\" for variable \"%s\": must be less than %.2f"
-msgstr "неправильное значение \"%s\" для \"%s\": ожидалось целое"
+msgstr ""
+"значение \"%s\" не подходит для переменной \"%s\"; оно должно быть меньше "
+"%.2f"
 
 #. +> 18
 #: variables.c:241
 #, c-format
 msgid "value \"%s\" is out of range for variable \"%s\""
-msgstr ""
+msgstr "значение \"%s\" вне диапазона для переменной \"%s\""
 
 #. +> 18
 #: variables.c:247
-#, fuzzy, c-format
+#, c-format
 #| msgid "invalid value \"%s\" for \"%s\": integer expected"
 msgid "invalid value \"%s\" for variable \"%s\""
-msgstr "неправильное значение \"%s\" для \"%s\": ожидалось целое"
+msgstr "неправильное значение \"%s\" для переменной \"%s\""
 
 #. +> 18 17 16 15 14 13
 #: variables.c:294
