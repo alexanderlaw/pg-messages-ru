@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: libpq (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2025-08-30 16:01+0300\n"
-"PO-Revision-Date: 2025-05-03 16:34+0300\n"
+"PO-Revision-Date: 2025-09-03 08:20+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -26,255 +26,257 @@ msgstr ""
 #: ../libpq-oauth/oauth-curl.c:307 ../libpq-oauth/oauth-curl.c:2000
 #, c-format
 msgid "libcurl easy handle removal failed: %s"
-msgstr ""
+msgstr "ошибка при удалении простого указателя libcurl: %s"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:327
 #, c-format
 msgid "libcurl multi handle cleanup failed: %s"
-msgstr ""
+msgstr "ошибка при очистке множественного указателя libcurl: %s"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:390 ../libpq-oauth/oauth-curl.c:401
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not establish SSL connection: %s"
 msgid "failed to set %s on OAuth connection: %s"
-msgstr "не удалось установить SSL-соединение: %s"
+msgstr "не удалось задать %s для подключения OAuth: %s"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:412
 #, c-format
 msgid "failed to get %s from OAuth response: %s"
-msgstr ""
+msgstr "не удалось получить %s из ответа OAuth: %s"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:515 ../libpq-oauth/oauth-curl.c:625
 #, c-format
 msgid "JSON is too deeply nested"
-msgstr ""
+msgstr "слишком большая вложенность в JSON"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:540
 #, c-format
 msgid "internal error: started field '%s' before field '%s' was finished"
-msgstr ""
+msgstr "внутренняя ошибка: поле '%s' началось прежде чем закончилось поле '%s'"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:567
 #, c-format
 msgid "field \"%s\" is duplicated"
-msgstr ""
+msgstr "поле \"%s\" дублируется"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:592
 #, c-format
 msgid "internal error: field '%s' still active at end of object"
-msgstr ""
+msgstr "внутренняя ошибка: поле '%s' активно, но объект завершён"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:607 ../libpq-oauth/oauth-curl.c:667
 #, c-format
 msgid "top-level element must be an object"
-msgstr ""
+msgstr "элементом верхнего уровня должен быть объект"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:648
 #, c-format
 msgid "internal error: found unexpected array end while parsing field '%s'"
 msgstr ""
+"внутренняя ошибка: при разборе поля '%s' неожиданно обнаружен конец массива"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:703
 #, c-format
 msgid "internal error: scalar target found at nesting level %d"
 msgstr ""
+"внутрення ошибка: скалярное значение обнаружено на уровне вложенности %d"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:713
 #, c-format
 msgid "internal error: scalar field '%s' would be assigned twice"
-msgstr ""
+msgstr "внутренняя ошибка: попытка двойного присвоения скалярному полю '%s'"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:735
 #, c-format
 msgid "internal error: array member found at nesting level %d"
-msgstr ""
+msgstr "внутренняя ошибка: элемент массива найден на уровне вложенности %d"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:770
-#, fuzzy, c-format
+#, c-format
 #| msgid "no connection to the server"
 msgid "no content type was provided"
-msgstr "нет соединения с сервером"
+msgstr "тип содержимого не передан"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:809
-#, fuzzy, c-format
+#, c-format
 #| msgid "unexpected asyncStatus: %d"
 msgid "unexpected content type: \"%s\""
-msgstr "неожиданный asyncStatus: %d"
+msgstr "неожиданный тип содержимого: \"%s\""
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:834
-#, fuzzy, c-format
+#, c-format
 #| msgid "SSL certificate's name contains embedded null"
 msgid "response contains embedded NULLs"
-msgstr "имя в SSL-сертификате включает нулевой байт"
+msgstr "ответ содержит в себе NUL"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:844
 #, c-format
 msgid "response is not valid UTF-8"
-msgstr ""
+msgstr "ответ не является текстом в кодировке UTF-8"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:884
 #, c-format
 msgid "field \"%s\" is missing"
-msgstr ""
+msgstr "поле \"%s\" отсутствует"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:1118
 #, c-format
 msgid "provider rejected the oauth_client_secret"
-msgstr ""
+msgstr "провайдер не принял oauth_client_secret"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:1182
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not create socket: %s"
 msgid "failed to create epoll set: %m"
-msgstr "не удалось создать сокет: %s"
+msgstr "не удалось создать набор epoll: %m"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:1189
 #, c-format
 msgid "failed to create timerfd: %m"
-msgstr ""
+msgstr "не удалось создать timerfd: %m"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:1195
 #, c-format
 msgid "failed to add timerfd to epoll set: %m"
-msgstr ""
+msgstr "не удалось добавить timerfd в набор epoll: %m"
 
 #. translator: the term "kqueue" (kernel queue) should not be translated
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:1205
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not create socket: %s"
 msgid "failed to create kqueue: %m"
-msgstr "не удалось создать сокет: %s"
+msgstr "не удалось создать kqueue: %m"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:1218
 #, c-format
 msgid "failed to create timer kqueue: %m"
-msgstr ""
+msgstr "не удалось создать kqueue для таймера: %m"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:1262 ../libpq-oauth/oauth-curl.c:1337
 #, c-format
 msgid "unknown libcurl socket operation: %d"
-msgstr ""
+msgstr "неизвестная операция для сокета libcurl: %d"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:1279
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not create socket: %s"
 msgid "could not add to epoll set: %m"
-msgstr "не удалось создать сокет: %s"
+msgstr "ошибка при добавлении в набор epoll: %m"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:1283
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not get client address from socket: %s"
 msgid "could not delete from epoll set: %m"
-msgstr "не удалось получить адрес клиента из сокета: %s"
+msgstr "ошибка при удалении из набора epoll: %m"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:1287
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not create socket: %s"
 msgid "could not update epoll set: %m"
-msgstr "не удалось создать сокет: %s"
+msgstr "ошибка при изменении набора epoll: %m"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:1347
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not verify server signature: %s"
 msgid "could not modify kqueue: %m"
-msgstr "не удалось проверить сигнатуру сервера: %s"
+msgstr "не удалось модифицировать kqueue: %m"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:1371
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not receive data from server: %s"
 msgid "could not delete from kqueue: %m"
-msgstr "не удалось получить данные с сервера: %s"
+msgstr "ошибка при удалении из kqueue: %m"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:1374
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not send data to server: %s"
 msgid "could not add to kqueue: %m"
-msgstr "не удалось передать данные серверу: %s"
+msgstr "ошибка при добавлении в kqueue: %m"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:1423
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not create socket: %s"
 msgid "could not comb kqueue: %m"
-msgstr "не удалось создать сокет: %s"
+msgstr "не удалось упорядочить kqueue: %m"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:1473
 #, c-format
 msgid "setting timerfd to %ld: %m"
-msgstr ""
+msgstr "установка для timerfd значения %ld: %m"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:1503
 #, c-format
 msgid "deleting kqueue timer: %m"
-msgstr ""
+msgstr "удаление таймера kqueue: %m"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:1510
 #, c-format
 msgid "removing kqueue timer from multiplexer: %m"
-msgstr ""
+msgstr "удаление таймера kqueue из мультиплексора: %m"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:1521
 #, c-format
 msgid "setting kqueue timer to %ld: %m"
-msgstr ""
+msgstr "установка для таймера kqueue значения %ld: %m"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:1528
 #, c-format
 msgid "adding kqueue timer to multiplexer: %m"
-msgstr ""
+msgstr "добавление таймера kqueue в мультиплексор: %m"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:1553
 #, c-format
 msgid "checking timer expiration: %m"
-msgstr ""
+msgstr "проверка состояния таймера: %m"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:1715
 #, c-format
 msgid "failed to create libcurl multi handle"
-msgstr ""
+msgstr "не удалось создать множественный указатель libcurl"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:1735
 #, c-format
 msgid "failed to create libcurl handle"
-msgstr ""
+msgstr "не удалось создать указатель libcurl"
 
 #. +> 18 17 16 15 14 13
 #: ../libpq-oauth/oauth-curl.c:1819 ../libpq-oauth/oauth-curl.c:1860
@@ -307,64 +309,65 @@ msgstr "нехватка памяти"
 #: ../libpq-oauth/oauth-curl.c:1847
 #, c-format
 msgid "response is too large"
-msgstr ""
+msgstr "ответ слишком большой"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:1889
 #, c-format
 msgid "failed to queue HTTP request: %s"
-msgstr ""
+msgstr "добавить HTTP-запрос в очередь не удалось: %s"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:1906 ../libpq-oauth/oauth-curl.c:1959
 #, c-format
 msgid "asynchronous HTTP request failed: %s"
-msgstr ""
+msgstr "ошибка асинхронного HTTP-запроса: %s"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:2011
 #, c-format
 msgid "no result was retrieved for the finished handle"
-msgstr ""
+msgstr "для завершённого указателя не был получен результат"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:2144 ../libpq-oauth/oauth-curl.c:2450
 #: ../libpq-oauth/oauth-curl.c:2529
-#, fuzzy, c-format
+#, c-format
 #| msgid "unexpected response from server"
 msgid "unexpected response code %ld"
-msgstr "неожиданный ответ сервера"
+msgstr "неожиданный код ответа %ld"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:2216
-#, fuzzy, c-format
+#, c-format
 #| msgid "server certificate for \"%s\" does not match host name \"%s\""
 msgid "the issuer identifier (%s) does not match oauth_issuer (%s)"
-msgstr "серверный сертификат для \"%s\" не соответствует имени сервера \"%s\""
+msgstr "идентификатор издателя (%s) не совпадает с oauth_issuer (%s)"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:2243
 #, c-format
 msgid "issuer \"%s\" does not provide a device authorization endpoint"
-msgstr ""
+msgstr "издатель \"%s\" не передал конечную точку авторизации устройств"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:2269
 #, c-format
 msgid "device authorization endpoint \"%s\" must use HTTPS"
-msgstr ""
+msgstr "конечная точка авторизации устройств \"%s\" должна использовать HTTPS"
 
+# well-spelled: токенов
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:2278
 #, c-format
 msgid "token endpoint \"%s\" must use HTTPS"
-msgstr ""
+msgstr "конечная точка токенов \"%s\" должна использовать HTTPS"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:2587
 #, c-format
 msgid "slow_down interval overflow"
-msgstr ""
+msgstr "переполнение интервала замедления (slow_down)"
 
 #. translator: The first %s is a URL for the user to visit in a
 #. browser, and the second %s is a code to be copy-pasted there.
@@ -373,25 +376,25 @@ msgstr ""
 #: ../libpq-oauth/oauth-curl.c:2623
 #, c-format
 msgid "Visit %s and enter the code: %s\n"
-msgstr ""
+msgstr "Посетите %s и введите код: %s\n"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:2628
 #, c-format
 msgid "device prompt failed"
-msgstr ""
+msgstr "ошибка при запросе устройства"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:2684
 #, c-format
 msgid "curl_global_init previously failed during OAuth setup"
-msgstr ""
+msgstr "в curl_global_init ранее возникла ошибка при настройке OAuth"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:2703
 #, c-format
 msgid "curl_global_init failed during OAuth setup"
-msgstr ""
+msgstr "в curl_global_init возникла ошибка при настройке OAuth"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:2724
@@ -403,6 +406,11 @@ msgid ""
 "\tlibcurl reports that it is not. Recompile libpq against\n"
 "\tthe installed version of libcurl."
 msgstr ""
+"библиотека libcurl оказалась не потокобезопасной\n"
+"\tВо время компиляции libpq при инициализации библиотеки curl\n"
+"\tона была потокобезопасной, но текущая установленная версия\n"
+"\tlibcurl сообщает, что таковой не является. Перекомпилируйте\n"
+"\tlibpq с установленной версией libcurl."
 
 #. +> 18 17 16
 #: fe-auth-scram.c:228
@@ -766,12 +774,14 @@ msgstr ""
 
 #. +> 18
 #: fe-auth.c:571
-#, fuzzy, c-format
+#, c-format
 #| msgid "authentication method requirement \"%s\" failed: %s"
 msgid ""
 "authentication method requirement \"%s\" failed: server requested %s "
 "authentication"
-msgstr "требование метода аутентификации \"%s\" не выполнено: %s"
+msgstr ""
+"требование метода аутентификации \"%s\" не выполнено: сервер запросил "
+"аутентификацию %s"
 
 #. +> 18 17 16
 #: fe-auth.c:580
@@ -1020,10 +1030,10 @@ msgstr "распознать имя пользователя не удалось
 
 #. +> 18
 #: fe-auth.c:1315
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not look up local user ID %d: %s"
 msgid "could not look up local user ID %ld: %m"
-msgstr "найти локального пользователя по идентификатору (%d) не удалось: %s"
+msgstr "найти локального пользователя по идентификатору (%ld) не удалось: %m"
 
 #. +> 14 13
 #: fe-auth.c:1117 fe-connect.c:2857
@@ -1033,10 +1043,10 @@ msgstr "найти локального пользователя по идент
 
 #. +> 18
 #: fe-auth.c:1320
-#, fuzzy, c-format
+#, c-format
 #| msgid "local user with ID %d does not exist"
 msgid "local user with ID %ld does not exist"
-msgstr "локальный пользователь с ID %d не существует"
+msgstr "локальный пользователь с ID %ld не существует"
 
 #. +> 14 13
 #: fe-auth.c:1122 fe-connect.c:2862
@@ -1100,7 +1110,7 @@ msgstr "соединение не открыто"
 #: fe-cancel.c:92
 #, c-format
 msgid "no cancellation key received"
-msgstr ""
+msgstr "ключ отмены не получен"
 
 #. +> 18 17
 #: fe-cancel.c:212
@@ -1197,7 +1207,7 @@ msgstr "неверное значение target_session_attrs: \"%s\"\n"
 #: fe-connect.c:1647
 #, c-format
 msgid "internal error: no space in allowed_sasl_mechs"
-msgstr ""
+msgstr "внутренняя ошибка: в allowed_sasl_mechs нет места"
 
 #. +> 18 17 16
 #: fe-connect.c:1686
@@ -1294,36 +1304,36 @@ msgstr ""
 
 #. +> 18
 #: fe-connect.c:2029
-#, fuzzy, c-format
+#, c-format
 #| msgid "invalid SCRAM exchange state"
 msgid "invalid SCRAM client key"
-msgstr "ошибочное состояние обмена SCRAM"
+msgstr "неправильный клиентский ключ SCRAM"
 
 #. +> 18
 #: fe-connect.c:2034
-#, fuzzy, c-format
+#, c-format
 #| msgid "invalid SCRAM exchange state"
 msgid "invalid SCRAM client key length: %d"
-msgstr "ошибочное состояние обмена SCRAM"
+msgstr "некорректная длина клиентского ключа SCRAM: %d"
 
 #. +> 18
 #: fe-connect.c:2052
-#, fuzzy, c-format
+#, c-format
 #| msgid "invalid SCRAM exchange state"
 msgid "invalid SCRAM server key"
-msgstr "ошибочное состояние обмена SCRAM"
+msgstr "неправильный серверный ключ SCRAM"
 
 #. +> 18
 #: fe-connect.c:2057
 #, c-format
 msgid "invalid SCRAM server key length: %d"
-msgstr ""
+msgstr "некорректная длина серверного ключа SCRAM: %d"
 
 #. +> 18
 #: fe-connect.c:2144
 #, c-format
 msgid "\"%s\" is greater than \"%s\""
-msgstr ""
+msgstr "\"%s\" больше чем \"%s\""
 
 #. +> 18 17 16
 #: fe-connect.c:2356
@@ -1837,28 +1847,32 @@ msgstr "получено некорректное сообщение об оши
 
 #. +> 18
 #: fe-connect.c:4151
-#, fuzzy, c-format
+#, c-format
 #| msgid "received invalid protocol negotiation message"
 msgid "received duplicate protocol negotiation message"
-msgstr "получено некорректное сообщение согласования протокола"
+msgstr "получено повторное сообщение согласования протокола"
 
 #. +> 18
 #: fe-connect.c:4253
 #, c-format
 msgid "internal error: async authentication has no handler"
-msgstr ""
+msgstr "внутренняя ошибка: нет обработчика для асинхронной аутентификации"
 
 #. +> 18
 #: fe-connect.c:4278
 #, c-format
 msgid "internal error: async cleanup did not release polling socket"
 msgstr ""
+"внутренняя ошибка: при асинхронной очистке не был освобождён опрашивающий "
+"сокет"
 
 #. +> 18
 #: fe-connect.c:4301
 #, c-format
 msgid "internal error: async authentication did not set a socket for polling"
 msgstr ""
+"внутренняя ошибка: при асинхронной аутентификации не был настроен сокет для "
+"опроса"
 
 #. +> 14 13
 #: fe-connect.c:4307 fe-connect.c:4367
@@ -2302,6 +2316,7 @@ msgstr "недопустимое значение %%00 для символа, з
 msgid ""
 "unexpected spaces found in \"%s\", use percent-encoded spaces (%%20) instead"
 msgstr ""
+"в \"%s\" обнаружены недопустимые пробелы, замените их закодированными (%%20)"
 
 #. +> 18 17 16 15 14 13
 #: fe-connect.c:7626
@@ -3139,12 +3154,14 @@ msgstr ""
 
 #. +> 18
 #: fe-protocol3.c:1442
-#, fuzzy, c-format
+#, c-format
 #| msgid "received invalid protocol negotiation message"
 msgid ""
 "received invalid protocol negotiation message: server requested downgrade to "
 "a higher-numbered version"
-msgstr "получено некорректное сообщение согласования протокола"
+msgstr ""
+"получено некорректное сообщение согласования протокола: сервер запросил "
+"понижение версии на версию выше"
 
 #. +> 17 16
 #: fe-protocol3.c:1446
@@ -3157,12 +3174,14 @@ msgstr[2] "сервер не поддерживает эти расширени�
 
 #. +> 18
 #: fe-protocol3.c:1448
-#, fuzzy, c-format
+#, c-format
 #| msgid "received invalid protocol negotiation message"
 msgid ""
 "received invalid protocol negotiation message: server requested downgrade to "
 "pre-3.0 protocol version"
-msgstr "получено некорректное сообщение согласования протокола"
+msgstr ""
+"получено некорректное сообщение согласования протокола: сервер запросил "
+"понижение на версию протокола, предшествующую 3.0"
 
 #. +> 17 16
 #: fe-protocol3.c:1454
@@ -3177,24 +3196,30 @@ msgid ""
 "received invalid protocol negotiation message: server requested downgrade to "
 "non-existent 3.1 protocol version"
 msgstr ""
+"получено некорректное сообщение согласования протокола: сервер запросил "
+"понижение на несуществующую версию протокола 3.1"
 
 #. +> 18
 #: fe-protocol3.c:1461
-#, fuzzy, c-format
+#, c-format
 #| msgid "received invalid protocol negotiation message"
 msgid ""
 "received invalid protocol negotiation message: server reported negative "
 "number of unsupported parameters"
-msgstr "получено некорректное сообщение согласования протокола"
+msgstr ""
+"получено некорректное сообщение согласования протокола: сервер передал "
+"отрицательное число неподдерживаемых параметров"
 
 #. +> 18
 #: fe-protocol3.c:1467
-#, fuzzy, c-format
+#, c-format
 #| msgid "received invalid protocol negotiation message"
 msgid ""
 "received invalid protocol negotiation message: server negotiated but asks "
 "for no changes"
-msgstr "получено некорректное сообщение согласования протокола"
+msgstr ""
+"получено некорректное сообщение согласования протокола: сервер согласовал "
+"версию и не требует никаких изменений"
 
 #. +> 18
 #: fe-protocol3.c:1473
@@ -3202,6 +3227,8 @@ msgstr "получено некорректное сообщение согла�
 msgid ""
 "server only supports protocol version %d.%d, but \"%s\" was set to %d.%d"
 msgstr ""
+"сервер поддерживает только версию протокола %d.%d, но параметр \"%s\" равен "
+"%d.%d"
 
 #. +> 18
 #: fe-protocol3.c:1498
@@ -3210,6 +3237,8 @@ msgid ""
 "received invalid protocol negotiation message: server reported unsupported "
 "parameter name without a \"%s\" prefix (\"%s\")"
 msgstr ""
+"получено некорректное сообщение согласования протокола: сервер выдал "
+"неподдерживаемое имя параметра без префикса \"%s\" (\"%s\")"
 
 #. +> 18
 #: fe-protocol3.c:1501
@@ -3218,13 +3247,17 @@ msgid ""
 "received invalid protocol negotiation message: server reported an "
 "unsupported parameter that was not requested (\"%s\")"
 msgstr ""
+"получено некорректное сообщение согласования протокола: сервер выдал "
+"неподдерживаемый параметр, который не был запрошен (\"%s\")"
 
 #. +> 18
 #: fe-protocol3.c:1508
-#, fuzzy, c-format
+#, c-format
 #| msgid "received invalid protocol negotiation message"
 msgid "received invalid protocol negotiation message: message too short"
-msgstr "получено некорректное сообщение согласования протокола"
+msgstr ""
+"получено некорректное сообщение согласования протокола: сообщение слишком "
+"короткое"
 
 #. +> 18
 #: fe-protocol3.c:1574
@@ -3233,6 +3266,8 @@ msgid ""
 "received invalid BackendKeyData message: cancel key with length %d not "
 "allowed in protocol version 3.0 (must be 4 bytes)"
 msgstr ""
+"получено некорректное сообщение согласования протокола: ключ отмены длиной "
+"%d в протоколе версии 3.0 не допускается (длина должна быть 4 байта)"
 
 #. +> 18
 #: fe-protocol3.c:1581
@@ -3241,6 +3276,8 @@ msgid ""
 "received invalid BackendKeyData message: cancel key with length %d is too "
 "short (minimum 4 bytes)"
 msgstr ""
+"получено некорректное сообщение согласования протокола: ключ отмены длиной "
+"%d слишком короткий (минимальная длина 4 байта)"
 
 #. +> 18
 #: fe-protocol3.c:1588
@@ -3249,6 +3286,8 @@ msgid ""
 "received invalid BackendKeyData message: cancel key with length %d is too "
 "long (maximum 256 bytes)"
 msgstr ""
+"получено некорректное сообщение согласования протокола: ключ отмены длиной "
+"%d слишком длинный (максимальная длина 256 байт)"
 
 #. +> 18 17 16
 #: fe-protocol3.c:1952
@@ -3555,17 +3594,21 @@ msgstr "в SSL-сертификате отсутствует запись адр
 
 #. +> 18
 #: fe-secure-openssl.c:715
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not open file \"%s\": %s\n"
 msgid "WARNING: could not open SSL key logging file \"%s\": %m\n"
-msgstr "не удалось открыть файл \"%s\": %s\n"
+msgstr ""
+"ПРЕДУПРЕЖДЕНИЕ: не удалось открыть файл для диагностики ключа SSL \"%s\": "
+"%m\n"
 
 #. +> 18
 #: fe-secure-openssl.c:723
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not write to file \"%s\": %s\n"
 msgid "WARNING: could not write to SSL key logging file \"%s\": %m\n"
-msgstr "не удалось записать файл \"%s\": %s\n"
+msgstr ""
+"ПРЕДУПРЕЖДЕНИЕ: не удалось записать в файл для диагностики ключа SSL \"%s\": "
+"%m\n"
 
 #. +> 18 17 16
 #: fe-secure-openssl.c:776
@@ -3736,13 +3779,14 @@ msgstr "не удалось установить SSL-соединение: %s\n"
 #: fe-secure-openssl.c:1058
 #, c-format
 msgid "WARNING: sslkeylogfile support requires OpenSSL\n"
-msgstr ""
+msgstr "ПРЕДУПРЕЖДЕНИЕ: для поддержки sslkeylogfile требуется OpenSSL\n"
 
 #. +> 18
 #: fe-secure-openssl.c:1060
 #, c-format
 msgid "WARNING: libpq was not built with sslkeylogfile support\n"
 msgstr ""
+"ПРЕДУПРЕЖДЕНИЕ: сборка libpq была произведена без поддержки sslkeylogfile\n"
 
 #. +> 18 17 16
 #: fe-secure-openssl.c:1090
