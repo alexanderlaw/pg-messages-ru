@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: pg_dump (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2025-08-30 16:01+0300\n"
-"PO-Revision-Date: 2025-05-03 16:33+0300\n"
+"PO-Revision-Date: 2025-09-04 22:18+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -661,10 +661,10 @@ msgstr "не удалось прочитать входной файл: %s"
 
 #. +> 18 17 16
 #: compress_gzip.c:294 compress_zstd.c:382
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not write to output file: %s"
 msgid "could not write to file: %s"
-msgstr "не удалось записать в выходной файл: %s"
+msgstr "не удалось записать в файл: %s"
 
 #. +> 18 17 16 15 14 13
 #: compress_gzip.c:310 compress_lz4.c:494 compress_none.c:94
@@ -713,31 +713,31 @@ msgstr "не удалось инициализировать LZ4: %s"
 
 #. +> 18 17 16
 #: compress_lz4.c:463 compress_lz4.c:581
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not initialize compression library: %s"
 msgid "unable to initialize LZ4 library: %s"
-msgstr "не удалось инициализировать библиотеку сжатия: %s"
+msgstr "не удалось инициализировать библиотеку LZ4: %s"
 
 #. +> 18 17 16
 #: compress_lz4.c:593
-#, fuzzy, c-format
+#, c-format
 #| msgid "error during file seek: %s\n"
 msgid "error during writing: %s"
-msgstr "ошибка при перемещении в файле: %s\n"
+msgstr "ошибка при записи: %s"
 
 #. +> 18 17 16
 #: compress_lz4.c:599
-#, fuzzy, c-format
+#, c-format
 #| msgid "error during file seek: %m"
 msgid "error during writing: %m"
-msgstr "ошибка при перемещении в файле: %m"
+msgstr "ошибка при записи: %m"
 
 #. +> 18 17 16
 #: compress_lz4.c:698
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not write to output file: %s"
 msgid "could not write to output file: %m"
-msgstr "не удалось записать в выходной файл: %s"
+msgstr "не удалось записать в выходной файл: %m"
 
 #. +> 18 17 16
 #: compress_lz4.c:711
@@ -747,17 +747,17 @@ msgstr "не удалось завершить распаковку: %s"
 
 #. +> 18 17 16
 #: compress_lz4.c:726 compress_none.c:156
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not close TOC file: %m"
 msgid "could not close file: %m"
-msgstr "не удалось закрыть файл оглавления: %m"
+msgstr "не удалось закрыть файл: %m"
 
 #. +> 18 17 16
 #: compress_none.c:109 compress_zstd.c:389
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not write to output file: %s"
 msgid "could not write to file: %m"
-msgstr "не удалось записать в выходной файл: %s"
+msgstr "не удалось записать в файл: %m"
 
 #. +> 18 17 16
 #: compress_zstd.c:67
@@ -846,17 +846,17 @@ msgstr "не удалось создать каталог \"%s\": %m"
 
 #. +> 18
 #: dumputils.c:953
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not change directory to \"%s\": %m"
 msgid "could not change permissions of directory \"%s\": %m"
-msgstr "не удалось перейти в каталог \"%s\": %m"
+msgstr "не удалось поменять права для каталога \"%s\": %m"
 
 #. +> 18
 #: dumputils.c:958
-#, fuzzy, c-format
+#, c-format
 #| msgid "%s filter for \"%s\" is not allowed"
 msgid "directory \"%s\" is not empty"
-msgstr "фильтр %s для \"%s\" не допускается"
+msgstr "каталог \"%s\" не пуст"
 
 #. +> 18 17
 #: filter.c:48
@@ -1108,10 +1108,10 @@ msgstr ""
 
 #. +> 18
 #: pg_backup_archiver.c:450
-#, fuzzy, c-format
+#, c-format
 #| msgid "implied data-only restore"
 msgid "implied no-schema restore"
-msgstr "подразумевается восстановление только данных"
+msgstr "подразумевается восстановление без схемы"
 
 #. +> 17 16 15 14 13
 #: pg_backup_archiver.c:442
@@ -1435,10 +1435,10 @@ msgstr "рабочий процесс завершился с кодом воз�
 
 #. +> 18
 #: pg_backup_archiver.c:2668
-#, fuzzy, c-format
+#, c-format
 #| msgid "read TOC entry %d (ID %d) for %s %s\n"
 msgid "unexpected TOC entry in WriteToc(): %d %s %s"
-msgstr "прочитана запись оглавления %d (ID %d): %s %s\n"
+msgstr "неожиданная запись оглавления в WriteToc(): %d %s %s"
 
 #. +> 18 17 16 15 14 13
 #: pg_backup_archiver.c:2672 pg_backup_custom.c:440 pg_backup_custom.c:506
@@ -1566,7 +1566,7 @@ msgstr "неизвестно, как назначить владельца дл�
 #: pg_backup_archiver.c:3970
 #, c-format
 msgid "unexpected TOC entry in _printTocEntry(): %d %s %s"
-msgstr ""
+msgstr "неожиданная запись оглавления в _printTocEntry(): %d %s %s"
 
 #. +> 18 17 16 15 14 13
 #: pg_backup_archiver.c:4118
@@ -1763,10 +1763,10 @@ msgstr "сжатие активно"
 
 #. +> 18
 #: pg_backup_db.c:41
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not get server_version from libpq"
 msgid "could not get \"server_version\" from libpq"
-msgstr "не удалось получить версию сервера из libpq"
+msgstr "не удалось получить значение \"server_version\" от libpq"
 
 #. +> 17 16 15 14 13
 #: pg_backup_db.c:42
@@ -2176,59 +2176,57 @@ msgstr "параметры -s/--schema-only и -a/--data-only исключают
 
 #. +> 18
 #: pg_dump.c:828 pg_restore.c:382
-#, fuzzy, c-format
+#, c-format
 #| msgid "options -s/--schema-only and -a/--data-only cannot be used together"
 msgid "options -s/--schema-only and --statistics-only cannot be used together"
-msgstr "параметры -s/--schema-only и -a/--data-only исключают друг друга"
+msgstr "параметры -s/--schema-only и --statistics-only исключают друг друга"
 
 #. +> 18
 #: pg_dump.c:830 pg_restore.c:384
-#, fuzzy, c-format
+#, c-format
 #| msgid "options -s/--schema-only and -a/--data-only cannot be used together"
 msgid "options -a/--data-only and --statistics-only cannot be used together"
-msgstr "параметры -s/--schema-only и -a/--data-only исключают друг друга"
+msgstr "параметры -a/--data-only и --statistics-only исключают друг друга"
 
 #. +> 18
 #: pg_dump.c:834 pg_restore.c:388
-#, fuzzy, c-format
+#, c-format
 #| msgid "options -s/--schema-only and -a/--data-only cannot be used together"
 msgid "options -a/--data-only and --no-data cannot be used together"
-msgstr "параметры -s/--schema-only и -a/--data-only исключают друг друга"
+msgstr "параметры -a/--data-only и --no-data исключают друг друга"
 
 #. +> 18
 #: pg_dump.c:836 pg_restore.c:390
-#, fuzzy, c-format
+#, c-format
 #| msgid "options -s/--schema-only and -a/--data-only cannot be used together"
 msgid "options -s/--schema-only and --no-schema cannot be used together"
-msgstr "параметры -s/--schema-only и -a/--data-only исключают друг друга"
+msgstr "параметры -s/--schema-only и --no-schema исключают друг друга"
 
 #. +> 18
 #: pg_dump.c:838 pg_restore.c:392
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "options -1/--single-transaction and --transaction-size cannot be used "
 #| "together"
 msgid "options --statistics-only and --no-statistics cannot be used together"
-msgstr ""
-"параметры -1/--single-transaction и --transaction-size исключают друг друга"
+msgstr "параметры --statistics-only и --no-statistics исключают друг друга"
 
 #. +> 18
 #: pg_dump.c:842 pg_restore.c:396
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "options -1/--single-transaction and --transaction-size cannot be used "
 #| "together"
 msgid "options --statistics and --no-statistics cannot be used together"
-msgstr ""
-"параметры -1/--single-transaction и --transaction-size исключают друг друга"
+msgstr "параметры --statistics и --no-statistics исключают друг друга"
 
 # TO REVEIW
 #. +> 18
 #: pg_dump.c:846 pg_dump.c:849 pg_restore.c:400 pg_restore.c:403
-#, fuzzy, c-format
+#, c-format
 #| msgid "options -d/--dbname and -f/--file cannot be used together"
 msgid "options %s and %s cannot be used together"
-msgstr "параметры -d/--dbname и -f/--file исключают друг друга"
+msgstr "параметры %s и %s исключают друг друга"
 
 #. +> 18 17 16 15 14 13
 #: pg_dump.c:853
@@ -2270,22 +2268,22 @@ msgstr ""
 
 #. +> 18 17 16 15 14 13
 #: pg_dump.c:898 pg_dumpall.c:498 pg_restore.c:373
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not execute query"
 msgid "could not generate restrict key"
-msgstr "не удалось выполнить запрос"
+msgstr "не удалось сгенерировать ограничительный ключ"
 
 #. +> 18 17 16 15 14 13
 #: pg_dump.c:900 pg_dumpall.c:500 pg_restore.c:375
 #, c-format
 msgid "invalid restrict key"
-msgstr ""
+msgstr "неверный ограничительный ключ"
 
 #. +> 18 17 16 15 14 13
 #: pg_dump.c:903
 #, c-format
 msgid "option --restrict-key can only be used with --format=plain"
-msgstr ""
+msgstr "параметр --restrict-key можно использовать только с --format=plain"
 
 #. +> 18 17 16
 #: pg_dump.c:925
@@ -2356,7 +2354,7 @@ msgstr ""
 
 #. +> 18
 #: pg_dump.c:1251
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "%s dumps a database as a text file or to other formats.\n"
 #| "\n"
@@ -2364,7 +2362,7 @@ msgid ""
 "%s exports a PostgreSQL database as an SQL script or to other formats.\n"
 "\n"
 msgstr ""
-"%s сохраняет резервную копию БД в текстовом файле или другом виде.\n"
+"%s выгружает базу данных PostgreSQL в виде скрипта SQL и в других форматах.\n"
 "\n"
 
 #. +> 17 16 15 14 13
@@ -2491,12 +2489,14 @@ msgstr ""
 
 #. +> 18
 #: pg_dump.c:1270 pg_dumpall.c:704
-#, fuzzy, c-format
+#, c-format
 #| msgid "  -a, --data-only              dump only the data, not the schema\n"
 msgid ""
 "  -a, --data-only              dump only the data, not the schema or "
 "statistics\n"
-msgstr "  -a, --data-only              выгрузить только данные, без схемы\n"
+msgstr ""
+"  -a, --data-only              выгрузить только данные, без схемы и "
+"статистики\n"
 
 #. +> 17 16 15 14 13
 #: pg_dump.c:1132 pg_dumpall.c:681
@@ -2599,11 +2599,13 @@ msgstr ""
 
 #. +> 18
 #: pg_dump.c:1283 pg_dumpall.c:710
-#, fuzzy, c-format
+#, c-format
 #| msgid "  -s, --schema-only            dump only the schema, no data\n"
 msgid ""
 "  -s, --schema-only            dump only the schema, no data or statistics\n"
-msgstr "  -s, --schema-only            выгрузить только схему, без данных\n"
+msgstr ""
+"  -s, --schema-only            выгрузить только схему, без данных и "
+"статистики\n"
 
 #. +> 17 16 15 14 13
 #: pg_dump.c:1145 pg_dumpall.c:687
@@ -2806,10 +2808,10 @@ msgstr ""
 
 #. +> 18
 #: pg_dump.c:1311 pg_dumpall.c:724
-#, fuzzy, c-format
+#, c-format
 #| msgid "  --no-comments                do not dump comments\n"
 msgid "  --no-comments                do not dump comment commands\n"
-msgstr "  --no-comments                не выгружать комментарии\n"
+msgstr "  --no-comments                не выгружать команды комментариев\n"
 
 #. +> 17 16 15 14 13
 #: pg_dump.c:1173 pg_dumpall.c:701
@@ -2819,17 +2821,17 @@ msgstr "  --no-comments                не выгружать коммента�
 
 #. +> 18
 #: pg_dump.c:1312 pg_dumpall.c:725
-#, fuzzy, c-format
+#, c-format
 #| msgid "  --no-comments                do not dump comments\n"
 msgid "  --no-data                    do not dump data\n"
-msgstr "  --no-comments                не выгружать комментарии\n"
+msgstr "  --no-data                    не выгружать данные\n"
 
 #. +> 18
 #: pg_dump.c:1313 pg_dumpall.c:726
-#, fuzzy, c-format
+#, c-format
 #| msgid "  --no-comments                do not dump comments\n"
 msgid "  --no-policies                do not dump row security policies\n"
-msgstr "  --no-comments                не выгружать комментарии\n"
+msgstr "  --no-policies                не выгружать политики защиты строк\n"
 
 #. +> 18 17 16 15 14 13
 #: pg_dump.c:1314 pg_dumpall.c:727
@@ -2839,10 +2841,10 @@ msgstr "  --no-publications            не выгружать публикац�
 
 #. +> 18
 #: pg_dump.c:1315 pg_dumpall.c:729
-#, fuzzy, c-format
+#, c-format
 #| msgid "  --no-comments                do not dump comments\n"
 msgid "  --no-schema                  do not dump schema\n"
-msgstr "  --no-comments                не выгружать комментарии\n"
+msgstr "  --no-schema                  не выгружать схему\n"
 
 #. +> 18 17 16 15 14 13
 #: pg_dump.c:1316 pg_dumpall.c:730
@@ -2853,10 +2855,10 @@ msgstr ""
 
 #. +> 18
 #: pg_dump.c:1317 pg_dumpall.c:731
-#, fuzzy, c-format
+#, c-format
 #| msgid "  --no-subscriptions           do not dump subscriptions\n"
 msgid "  --no-statistics              do not dump statistics\n"
-msgstr "  --no-subscriptions           не выгружать подписки\n"
+msgstr "  --no-statistics              не выгружать статистику\n"
 
 #. +> 18 17 16 15 14 13
 #: pg_dump.c:1318 pg_dumpall.c:732
@@ -2910,12 +2912,16 @@ msgstr ""
 "  --quote-all-identifiers      заключать в кавычки все идентификаторы,\n"
 "                               а не только ключевые слова\n"
 
+# well-spelled: ОГР
 #. +> 18 17 16 15 14 13
 #: pg_dump.c:1325 pg_dumpall.c:740 pg_restore.c:571
 #, c-format
 msgid ""
 "  --restrict-key=RESTRICT_KEY  use provided string as psql \\restrict key\n"
 msgstr ""
+"  --restrict-key=ОГР_КЛЮЧ      использовать заданную строку как ключ "
+"\\restrict\n"
+"                               в psql\n"
 
 #. +> 18 17 16 15 14 13
 #: pg_dump.c:1326 pg_dumpall.c:741
@@ -2938,14 +2944,12 @@ msgstr ""
 
 #. +> 18
 #: pg_dump.c:1328 pg_dumpall.c:742
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "  -C, --create                 include commands to create database in "
 #| "dump\n"
 msgid "  --sequence-data              include sequence data in dump\n"
-msgstr ""
-"  -C, --create                 добавить в копию команды создания базы "
-"данных\n"
+msgstr "  --sequence-data              выгружать данные последовательностей\n"
 
 #. +> 18 17 16 15 14 13
 #: pg_dump.c:1329
@@ -2966,20 +2970,20 @@ msgstr ""
 
 #. +> 18
 #: pg_dump.c:1331 pg_dumpall.c:743
-#, fuzzy, c-format
+#, c-format
 #| msgid "  --no-tablespaces             do not dump tablespace assignments\n"
 msgid "  --statistics                 dump the statistics\n"
-msgstr ""
-"  --no-tablespaces             не выгружать назначения табличных "
-"пространств\n"
+msgstr "  --statistics                 выгружать статистику\n"
 
 #. +> 18
 #: pg_dump.c:1332 pg_dumpall.c:744
-#, fuzzy, c-format
+#, c-format
 #| msgid "  -s, --schema-only            dump only the schema, no data\n"
 msgid ""
 "  --statistics-only            dump only the statistics, not schema or data\n"
-msgstr "  -s, --schema-only            выгрузить только схему, без данных\n"
+msgstr ""
+"  --statistics-only            выгрузить только статистику, без схемы и "
+"данных\n"
 
 #. +> 18 17 16 15 14 13
 #: pg_dump.c:1333 pg_restore.c:575
@@ -3440,7 +3444,7 @@ msgstr "схема с OID %u не существует"
 #: pg_dump.c:6994
 #, c-format
 msgid "cannot dump statistics for relation kind \"%c\""
-msgstr ""
+msgstr "для отношения типа \"%c\" нельзя выгрузить статистику"
 
 #. +> 18 17 16 15 14 13
 #: pg_dump.c:7506 pg_dump.c:18987
@@ -3532,10 +3536,10 @@ msgstr "неверная строка аргументов (%s) для триг�
 
 #. +> 18
 #: pg_dump.c:9553
-#, fuzzy, c-format
+#, c-format
 #| msgid "finding table check constraints"
 msgid "finding invalid not-null constraints"
-msgstr "поиск ограничений-проверок для таблиц"
+msgstr "поиск некорректных ограничений NOT NULL"
 
 #. +> 18 17 16 15
 #: pg_dump.c:9651
@@ -3584,20 +3588,22 @@ msgstr "неподдерживаемая запись в pg_init_privs: %u %u %d
 #, c-format
 msgid "statistics dumped out of order (current: %d %s %s, expected: %d %s %s)"
 msgstr ""
+"статистика выгружена в неправильном порядке (текущий: %d %s %s, ожидаемый: "
+"%d %s %s)"
 
 #. +> 18
 #: pg_dump.c:11092
-#, fuzzy, c-format
+#, c-format
 #| msgid "unexpected end of file"
 msgid "unexpected null attname"
-msgstr "неожиданный конец файла"
+msgstr "неожиданный null в имени атрибута (attname)"
 
 #. +> 18
 #: pg_dump.c:11121
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not connect to database \"%s\""
 msgid "could not find index attname \"%s\""
-msgstr "не удалось подключиться к базе данных: \"%s\""
+msgstr "не удалось получить для индекса имя атрибута (attname) \"%s\""
 
 #. +> 18 17
 #: pg_dump.c:11607
@@ -3920,10 +3926,10 @@ msgstr[2] ""
 
 #. +> 18
 #: pg_dump.c:18866
-#, fuzzy, c-format
+#, c-format
 #| msgid "unrecognized sequence type: %s"
 msgid "unrecognized sequence type: %d"
-msgstr "нераспознанный тип последовательности: %s"
+msgstr "нераспознанный тип последовательности: %d"
 
 #. +> 18 17 16 15 14 13
 #: pg_dump.c:19395
@@ -4114,7 +4120,7 @@ msgstr ""
 
 #. +> 18
 #: pg_dumpall.c:693
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "%s extracts a PostgreSQL database cluster into an SQL script file.\n"
 #| "\n"
@@ -4122,7 +4128,7 @@ msgid ""
 "%s exports a PostgreSQL database cluster as an SQL script.\n"
 "\n"
 msgstr ""
-"%s экспортирует всё содержимое кластера баз данных PostgreSQL в SQL-скрипт.\n"
+"%s выгружает базу данных PostgreSQL в виде скрипта SQL.\n"
 "\n"
 
 #. +> 17 16 15 14 13
@@ -4337,10 +4343,10 @@ msgstr "параметры -d/--dbname и -f/--file исключают друг 
 # TO REVEIW
 #. +> 18 17 16 15 14 13
 #: pg_restore.c:361
-#, fuzzy, c-format
+#, c-format
 #| msgid "options -d/--dbname and -f/--file cannot be used together"
 msgid "options -d/--dbname and --restrict-key cannot be used together"
-msgstr "параметры -d/--dbname и -f/--file исключают друг друга"
+msgstr "параметры -d/--dbname и --restrict-key исключают друг друга"
 
 #. +> 14 13
 #: pg_restore.c:387
@@ -4373,7 +4379,7 @@ msgstr "параметр --single-transaction допускается тольк�
 #: pg_restore.c:467
 #, c-format
 msgid "archive format \"%s\" is not supported; please use psql"
-msgstr ""
+msgstr "формат архива \"%s\" не поддерживается; используйте psql"
 
 #. +> 18 17 16 15 14 13
 #: pg_restore.c:471
@@ -4590,7 +4596,7 @@ msgstr ""
 
 #. +> 18
 #: pg_restore.c:559
-#, fuzzy, c-format
+#, c-format
 #| msgid "  --no-comments                do not restore comments\n"
 msgid "  --no-comments                do not restore comment commands\n"
 msgstr "  --no-comments                не восстанавливать комментарии\n"
@@ -4603,10 +4609,10 @@ msgstr "  --no-comments                не восстанавливать ко�
 
 #. +> 18
 #: pg_restore.c:560
-#, fuzzy, c-format
+#, c-format
 #| msgid "  --no-comments                do not restore comments\n"
 msgid "  --no-data                    do not restore data\n"
-msgstr "  --no-comments                не восстанавливать комментарии\n"
+msgstr "  --no-data                    не восстанавливать данные\n"
 
 #. +> 18 17 16 15 14 13
 #: pg_restore.c:561
@@ -4621,10 +4627,11 @@ msgstr ""
 
 #. +> 18
 #: pg_restore.c:563
-#, fuzzy, c-format
+#, c-format
 #| msgid "  --no-comments                do not restore comments\n"
 msgid "  --no-policies                do not restore row security policies\n"
-msgstr "  --no-comments                не восстанавливать комментарии\n"
+msgstr ""
+"  --no-policies                не восстанавливать политики защиты строк\n"
 
 #. +> 18 17 16 15 14 13
 #: pg_restore.c:564
@@ -4634,10 +4641,10 @@ msgstr "  --no-publications            не восстанавливать пу�
 
 #. +> 18
 #: pg_restore.c:565
-#, fuzzy, c-format
+#, c-format
 #| msgid "  --no-comments                do not restore comments\n"
 msgid "  --no-schema                  do not restore schema\n"
-msgstr "  --no-comments                не восстанавливать комментарии\n"
+msgstr "  --no-schema                  не восстанавливать схему\n"
 
 #. +> 18 17 16 15 14 13
 #: pg_restore.c:566
@@ -4647,10 +4654,10 @@ msgstr "  --no-security-labels         не восстанавливать ме�
 
 #. +> 18
 #: pg_restore.c:567
-#, fuzzy, c-format
+#, c-format
 #| msgid "  --no-subscriptions           do not restore subscriptions\n"
 msgid "  --no-statistics              do not restore statistics\n"
-msgstr "  --no-subscriptions           не восстанавливать подписки\n"
+msgstr "  --no-statistics              не восстанавливать статистику\n"
 
 #. +> 18 17 16 15 14 13
 #: pg_restore.c:568
@@ -4685,19 +4692,21 @@ msgstr ""
 
 #. +> 18
 #: pg_restore.c:573
-#, fuzzy, c-format
+#, c-format
 #| msgid "  -C, --create                 create the target database\n"
 msgid "  --statistics                 restore the statistics\n"
-msgstr "  -C, --create                 создать целевую базу данных\n"
+msgstr "  --statistics                 восстанавливать статистику\n"
 
 #. +> 18
 #: pg_restore.c:574
-#, fuzzy, c-format
+#, c-format
 #| msgid "  -s, --schema-only            restore only the schema, no data\n"
 msgid ""
 "  --statistics-only            restore only the statistics, not schema or "
 "data\n"
-msgstr "  -s, --schema-only            восстановить только схему, без данных\n"
+msgstr ""
+"  --statistics-only            восстановить только статистику, без схемы и "
+"данных\n"
 
 #. +> 18 17
 #: pg_restore.c:577
