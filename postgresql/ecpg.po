@@ -1,13 +1,13 @@
 # Russian message translation file for ecpg
 # Copyright (C) 2012-2016 PostgreSQL Global Development Group
 # This file is distributed under the same license as the PostgreSQL package.
-# Alexander Lakhin <exclusion@gmail.com>, 2012-2017, 2018, 2019, 2020, 2021, 2022, 2024.
+# SPDX-FileCopyrightText: 2012-2017, 2018, 2019, 2020, 2021, 2022, 2024, 2025 Alexander Lakhin <exclusion@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: ecpg (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2025-08-30 16:01+0300\n"
-"PO-Revision-Date: 2024-09-04 07:22+0300\n"
+"PO-Revision-Date: 2025-08-30 22:23+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #. +> 18 17 16 15 14 13
 #: descriptor.c:63
@@ -358,7 +358,7 @@ msgstr "незавершённый идентификатор в кавычка�
 #: pgc.l:985
 #, c-format
 msgid "parameter number too large"
-msgstr ""
+msgstr "номер параметра слишком большой"
 
 #. +> 18 17 16 15
 #: pgc.l:990
@@ -841,10 +841,10 @@ msgstr "переменная \"%s\" - не массив"
 
 #. +> 18
 #: variable.c:220
-#, fuzzy, c-format
+#, c-format
 #| msgid "incorrectly formed variable \"%s\""
 msgid "unmatched bracket in variable \"%s\""
-msgstr "неправильно оформленная переменная \"%s\""
+msgstr "непарная квадратная скобка в переменной \"%s\""
 
 #. +> 18 17 16 15 14 13
 #: variable.c:235 variable.c:258

@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: pg_controldata (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2025-08-30 16:01+0300\n"
-"PO-Revision-Date: 2025-08-30 23:12+0300\n"
+"PO-Revision-Date: 2025-09-13 16:58+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -705,20 +705,20 @@ msgstr "Версия контрольных сумм страниц:      %u\n"
 
 #. +> 18
 #: pg_controldata.c:339
-#, fuzzy, c-format
+#, c-format
 #| msgid "Maximum data alignment:               %u\n"
 msgid "Default char data signedness:         %s\n"
-msgstr "Макс. предел выравнивания данных:     %u\n"
+msgstr "Знаковость char по умолчанию:         %s\n"
 
 #. +> 18
 #: pg_controldata.c:340
 msgid "signed"
-msgstr ""
+msgstr "знаковое"
 
 #. +> 18
 #: pg_controldata.c:340
 msgid "unsigned"
-msgstr ""
+msgstr "беззнаковое"
 
 # skip-rule: capital-letter-first
 #. +> 18 17 16 15 14 13

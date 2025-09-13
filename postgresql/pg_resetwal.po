@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: pg_resetxlog (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2025-08-30 16:01+0300\n"
-"PO-Revision-Date: 2025-08-30 22:31+0300\n"
+"PO-Revision-Date: 2025-09-13 17:20+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -758,20 +758,20 @@ msgstr "Версия контрольных сумм страниц:      %u\n"
 
 #. +> 18
 #: pg_resetwal.c:804
-#, fuzzy, c-format
+#, c-format
 #| msgid "Maximum data alignment:               %u\n"
 msgid "Default char data signedness:         %s\n"
-msgstr "Макс. предел выравнивания данных:     %u\n"
+msgstr "Знаковость char по умолчанию:         %s\n"
 
 #. +> 18
 #: pg_resetwal.c:805
 msgid "signed"
-msgstr ""
+msgstr "знаковое"
 
 #. +> 18
 #: pg_resetwal.c:805
 msgid "unsigned"
-msgstr ""
+msgstr "unsigned"
 
 #. +> 18 17 16 15 14 13
 #: pg_resetwal.c:818
@@ -1084,6 +1084,8 @@ msgid ""
 "      --char-signedness=OPTION     set char signedness to \"signed\" or "
 "\"unsigned\"\n"
 msgstr ""
+"      --char-signedness=ВАРИАНТ    установить знаковость char: \"signed\" "
+"или \"unsigned\"\n"
 
 #. +> 18 17 16 15 14 13
 #: pg_resetwal.c:1216

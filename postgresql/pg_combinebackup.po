@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: pg_combinebackup (PostgreSQL) 17\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2025-08-30 16:01+0300\n"
-"PO-Revision-Date: 2025-08-30 22:36+0300\n"
+"PO-Revision-Date: 2025-09-13 17:16+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -322,7 +322,7 @@ msgstr "Младшее слово суррогата Unicode должно сле
 #. +> 18
 #: ../../common/jsonapi.c:2526
 msgid "out of memory while constructing error description"
-msgstr ""
+msgstr "нехватка памяти при составлении описания ошибки"
 
 #. +> 18 17
 #: ../../common/parse_manifest.c:159 ../../common/parse_manifest.c:854
@@ -648,10 +648,10 @@ msgstr "не удалось скопировать файл \"%s\" в \"%s\": %m
 
 #. +> 18
 #: copy_file.c:333
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not create symbolic link from \"%s\" to \"%s\": %m"
 msgid "could not create link from \"%s\" to \"%s\": %m"
-msgstr "не удалось создать символическую ссылку \"%s\" в \"%s\": %m"
+msgstr "не удалось создать ссылку \"%s\" в \"%s\": %m"
 
 #. +> 18 17
 #: load_manifest.c:125
@@ -747,6 +747,8 @@ msgid ""
 "--link mode was used; any modifications to the output directory might "
 "destructively modify input directories"
 msgstr ""
+"был использован режим --link; любые изменения в выходном каталоге могут "
+"разрушительно повлиять на входные каталоги"
 
 #. +> 18 17
 #: pg_combinebackup.c:464
@@ -925,14 +927,11 @@ msgstr "  -d, --debug               выдавать много отладочн
 
 #. +> 18
 #: pg_combinebackup.c:773
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "      --clone               clone (reflink) files instead of copying\n"
 msgid "  -k, --link                link files instead of copying\n"
-msgstr ""
-"      --clone               клонировать (используя reflink), а не "
-"копировать\n"
-"                            файлы\n"
+msgstr "  -k, --link                не копировать файлы, а создавать ссылки\n"
 
 #. +> 18 17
 #: pg_combinebackup.c:774

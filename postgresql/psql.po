@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: psql (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2025-08-30 16:01+0300\n"
-"PO-Revision-Date: 2025-09-01 22:17+0300\n"
+"PO-Revision-Date: 2025-09-06 14:43+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -8045,7 +8045,7 @@ msgstr "имя_функции_в_sql"
 #. +> 18 17 16 15 14 13
 #: sql_help.c:3187
 msgid "referenced_table_name"
-msgstr "ссылающаяся_таблица"
+msgstr "целевая_таблица"
 
 #. +> 18 17 16 15 14 13
 #: sql_help.c:3188

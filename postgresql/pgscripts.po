@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: pgscripts (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2025-08-30 16:01+0300\n"
-"PO-Revision-Date: 2025-08-30 22:35+0300\n"
+"PO-Revision-Date: 2025-09-13 17:25+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -1597,10 +1597,10 @@ msgstr "параметр \"%s\" нельзя использовать совме
 
 #. +> 18
 #: vacuumdb.c:380
-#, fuzzy, c-format
+#, c-format
 #| msgid "cannot use the \"%s\" option with the \"%s\" option"
 msgid "cannot use the \"%s\" option without \"%s\" or \"%s\""
-msgstr "параметр \"%s\" нельзя использовать совместно с \"%s\""
+msgstr "параметр \"%s\" нельзя использовать без \"%s\" или \"%s\""
 
 #. +> 16
 #: vacuumdb.c:442
@@ -1805,6 +1805,8 @@ msgid ""
 "      --missing-stats-only        only analyze relations with missing "
 "statistics\n"
 msgstr ""
+"      --missing-stats-only        анализировать только отношения без "
+"статистики\n"
 
 #. +> 18 17 16 15 14
 #: vacuumdb.c:1352

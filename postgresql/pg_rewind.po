@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: pg_rewind (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2025-08-30 16:01+0300\n"
-"PO-Revision-Date: 2025-08-31 07:47+0300\n"
+"PO-Revision-Date: 2025-09-13 18:56+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -1204,7 +1204,7 @@ msgstr "неверный управляющий файл"
 #: pg_rewind.c:1029
 #, c-format
 msgid "unexpected control file size %d, expected %d"
-msgstr "неверный размер управляющего файла (%d), ожидалось: %d"
+msgstr "неверный размер управляющего файла (%d), ожидался: %d"
 
 #. +> 18 17
 #: pg_rewind.c:1039
@@ -1283,7 +1283,7 @@ msgstr ""
 
 #. +> 18
 #: pg_rewind.c:1112
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not read restore_command from target cluster"
 msgid "could not read \"restore_command\" from target cluster"
 msgstr "не удалось прочитать параметр \"restore_command\" в целевом кластере"
@@ -1462,7 +1462,7 @@ msgstr "неверные информационные биты %04X в сегм�
 
 #. +> 18
 #: xlogreader.c:1285
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "WAL file is from different database system: WAL file database system "
 #| "identifier is %llu, pg_control database system identifier is %llu"
@@ -1471,7 +1471,7 @@ msgid ""
 "identifier is %<PRIu64>, pg_control database system identifier is %<PRIu64>"
 msgstr ""
 "файл WAL принадлежит другой СУБД: в нём указан идентификатор системы БД "
-"%llu, а идентификатор системы pg_control: %llu"
+"%<PRIu64>, а идентификатор системы pg_control: %<PRIu64>"
 
 #. +> 17 16 15 14 13
 #: xlogreader.c:1284

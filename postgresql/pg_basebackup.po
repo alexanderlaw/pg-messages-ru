@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: pg_basebackup (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2025-08-30 16:01+0300\n"
-"PO-Revision-Date: 2025-08-30 22:34+0300\n"
+"PO-Revision-Date: 2025-09-13 18:09+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -1795,6 +1795,9 @@ msgid ""
 "                                  databases and databases that don't allow "
 "connections\n"
 msgstr ""
+"  -a, --all                       создать подписки для всех баз данных, "
+"кроме шаблонов\n"
+"                                  и баз данных, не допускающих подключения\n"
 
 #. +> 18 17
 #: pg_createsubscriber.c:251
@@ -1855,7 +1858,7 @@ msgstr ""
 
 #. +> 18
 #: pg_createsubscriber.c:258
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "  -d, --database=DBNAME           database in which to create a "
 #| "subscription\n"
@@ -1863,7 +1866,8 @@ msgid ""
 "  -T, --enable-two-phase          enable two-phase commit for all "
 "subscriptions\n"
 msgstr ""
-"  -d, --database=ИМЯ_БД           база, в которой будет создана подписка\n"
+"  -T, --enable-two-phase          включить двухфазную фиксацию для всех "
+"подписок\n"
 
 #. +> 18 17
 #: pg_createsubscriber.c:259
@@ -1888,6 +1892,9 @@ msgid ""
 "                                  databases on the subscriber; accepts: "
 "\"%s\"\n"
 msgstr ""
+"      --clean=ТИП_ОБЪЕКТОВ        удалить все объекты указанного типа из "
+"указанных\n"
+"                                  баз на подписчике; принимает: \"%s\"\n"
 
 #. +> 18 17
 #: pg_createsubscriber.c:263
@@ -2120,10 +2127,10 @@ msgstr "не удалось получить параметры с сервер�
 
 #. +> 18
 #: pg_createsubscriber.c:949
-#, fuzzy, c-format
+#, c-format
 #| msgid "publisher requires wal_level >= \"logical\""
 msgid "publisher requires \"wal_level\" >= \"logical\""
-msgstr "на стороне публикации требуется значение wal_level >= \"logical\""
+msgstr "на стороне публикации требуется значение \"wal_level\" >= \"logical\""
 
 #. +> 17
 #: pg_createsubscriber.c:914
@@ -2182,12 +2189,14 @@ msgstr ""
 msgid ""
 "You can use the command-line option --enable-two-phase to enable two_phase."
 msgstr ""
+"Для включения режима two_phase можно использовать параметр командной строки "
+"--enable-two-phase."
 
 #. +> 18
 #: pg_createsubscriber.c:986
 #, c-format
 msgid "required WAL could be removed from the publisher"
-msgstr ""
+msgstr "нужные файлы WAL могли быть удалены с сервера публикации"
 
 #. +> 18
 #: pg_createsubscriber.c:987
@@ -2196,6 +2205,8 @@ msgid ""
 "Set the configuration parameter \"%s\" to -1 to ensure that required WAL "
 "files are not prematurely removed."
 msgstr ""
+"Чтобы необходимые файлы WAL не были удалены преждевременно, присвойте "
+"параметру конфигурации \"%s\" -1."
 
 #. +> 18 17
 #: pg_createsubscriber.c:1019
@@ -2217,10 +2228,11 @@ msgstr "получить параметры подписчика не удало
 
 #. +> 18
 #: pg_createsubscriber.c:1074
-#, fuzzy, c-format
+#, c-format
 #| msgid "subscriber requires %d replication slots, but only %d remain"
 msgid "subscriber requires %d active replication origins, but only %d remain"
-msgstr "подписчику требуется слотов репликации: %d, но доступно всего %d"
+msgstr ""
+"подписчику требуется активных слотов репликации: %d, но доступно всего %d"
 
 #. +> 18 17
 #: pg_createsubscriber.c:1083
@@ -2435,10 +2447,10 @@ msgstr "удалить публикацию \"%s\" в базе \"%s\" не по�
 
 #. +> 18
 #: pg_createsubscriber.c:1748
-#, fuzzy, c-format
+#, c-format
 #| msgid "dropping publication \"%s\" in database \"%s\""
 msgid "dropping all existing publications in database \"%s\""
-msgstr "удаляется публикация \"%s\" в базе \"%s\""
+msgstr "удаление всех существующих публикаций в базе \"%s\""
 
 #. +> 18 17
 #: pg_createsubscriber.c:1806
@@ -2492,10 +2504,10 @@ msgstr "включить подписку \"%s\" не удалось: %s"
 
 #. +> 18
 #: pg_createsubscriber.c:2008
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not obtain database OID: %s"
 msgid "could not obtain a list of databases: %s"
-msgstr "получить OID базы данных не удалось: %s"
+msgstr "не удалось получить список баз данных: %s"
 
 #. +> 18 17
 #: pg_createsubscriber.c:2112
@@ -2511,10 +2523,10 @@ msgstr "Запускать %s нужно от имени суперпользо�
 
 #. +> 18
 #: pg_createsubscriber.c:2136
-#, fuzzy, c-format
+#, c-format
 #| msgid "database \"%s\" specified more than once"
 msgid "database \"%s\" specified more than once for -d/--database"
-msgstr "база \"%s\" указана неоднократно"
+msgstr "база \"%s\" указана в -d/--database неоднократно"
 
 #. +> 17
 #: pg_createsubscriber.c:1976
@@ -2524,10 +2536,10 @@ msgstr "база \"%s\" указана неоднократно"
 
 #. +> 18
 #: pg_createsubscriber.c:2177
-#, fuzzy, c-format
+#, c-format
 #| msgid "publication \"%s\" specified more than once"
 msgid "publication \"%s\" specified more than once for --publication"
-msgstr "публикация \"%s\" указана неоднократно"
+msgstr "публикация \"%s\" указана в --publication неоднократно"
 
 #. +> 17
 #: pg_createsubscriber.c:2017
@@ -2537,10 +2549,10 @@ msgstr "публикация \"%s\" указана неоднократно"
 
 #. +> 18
 #: pg_createsubscriber.c:2186
-#, fuzzy, c-format
+#, c-format
 #| msgid "replication slot \"%s\" specified more than once"
 msgid "replication slot \"%s\" specified more than once for --replication-slot"
-msgstr "слот репликации \"%s\" указан неоднократно"
+msgstr "слот репликации \"%s\" указан в --replication-slot неоднократно"
 
 #. +> 17
 #: pg_createsubscriber.c:2029
@@ -2550,10 +2562,10 @@ msgstr "слот репликации \"%s\" указан неоднократн
 
 #. +> 18
 #: pg_createsubscriber.c:2195
-#, fuzzy, c-format
+#, c-format
 #| msgid "subscription \"%s\" specified more than once"
 msgid "subscription \"%s\" specified more than once for --subscription"
-msgstr "подписка \"%s\" указана неоднократно"
+msgstr "подписка \"%s\" указана в --subscription неоднократно"
 
 #. +> 17
 #: pg_createsubscriber.c:2041
@@ -2563,16 +2575,16 @@ msgstr "подписка \"%s\" указана неоднократно"
 
 #. +> 18
 #: pg_createsubscriber.c:2201
-#, fuzzy, c-format
+#, c-format
 #| msgid "replication slot \"%s\" specified more than once"
 msgid "object type \"%s\" specified more than once for --clean"
-msgstr "слот репликации \"%s\" указан неоднократно"
+msgstr "тип объекта \"%s\" указан в --clean неоднократно"
 
 #. +> 18
 #: pg_createsubscriber.c:2226
 #, c-format
 msgid "options %s and -a/--all cannot be used together"
-msgstr ""
+msgstr "параметры %s и -a/--all исключают друг друга"
 
 #. +> 18 17
 #: pg_createsubscriber.c:2244
@@ -2674,14 +2686,14 @@ msgstr ""
 #: pg_createsubscriber.c:2352
 #, c-format
 msgid "invalid object type \"%s\" specified for --clean"
-msgstr ""
+msgstr "в --clean указан неправильный тип объекта \"%s\""
 
 #. +> 18
 #: pg_createsubscriber.c:2353
-#, fuzzy, c-format
+#, c-format
 #| msgid "invalid --max-rate unit: \"%s\""
 msgid "The valid value is: \"%s\""
-msgstr "неверная единица измерения в --max-rate: \"%s\""
+msgstr "Допустимое значение: \"%s\""
 
 #. +> 18 17
 #: pg_createsubscriber.c:2384
@@ -3070,6 +3082,9 @@ msgid ""
 "servers when\n"
 "                         creating a replication slot\n"
 msgstr ""
+"      --enable-failover  включает синхронизацию слота репликации с ведомыми "
+"серверами при\n"
+"                         создании слота\n"
 
 #. +> 18 17 16 15 14 13
 #: pg_recvlogical.c:95
@@ -3129,7 +3144,7 @@ msgstr "  -S, --slot=ИМЯ_СЛОТА   имя слота логической 
 
 #. +> 18
 #: pg_recvlogical.c:108
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "  -t, --two-phase        enable decoding of prepared transactions when "
 #| "creating a slot\n"
@@ -3137,7 +3152,7 @@ msgid ""
 "  -t, --enable-two-phase enable decoding of prepared transactions when "
 "creating a slot\n"
 msgstr ""
-"  -t, --two-phase        включить декодирование подготовленных транзакций "
+"  -t, --enable-two-phase включает декодирование подготовленных транзакций "
 "при создании слота\n"
 
 #. +> 17 16 15
@@ -3154,7 +3169,7 @@ msgstr ""
 #: pg_recvlogical.c:109
 #, c-format
 msgid "      --two-phase        (same as --enable-two-phase, deprecated)\n"
-msgstr ""
+msgstr "      --two-phase        (то же, что --enable-two-phase, устаревший)\n"
 
 #. +> 18 17 16 15 14 13
 #: pg_recvlogical.c:114
@@ -3303,10 +3318,10 @@ msgstr "--endpos можно задать только вместе с --start"
 
 #. +> 18
 #: pg_recvlogical.c:933 pg_recvlogical.c:940
-#, fuzzy, c-format
+#, c-format
 #| msgid "--two-phase may only be specified with --create-slot"
 msgid "%s may only be specified with --create-slot"
-msgstr "--two-phase можно задать только вместе с --create-slot"
+msgstr "%s можно задать только вместе с --create-slot"
 
 #. +> 17 16 15
 #: pg_recvlogical.c:923

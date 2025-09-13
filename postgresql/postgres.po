@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2025-08-30 16:01+0300\n"
-"PO-Revision-Date: 2025-09-13 16:30+0300\n"
+"PO-Revision-Date: 2025-09-13 18:53+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -7041,7 +7041,7 @@ msgstr "сжатие zstd не поддерживается в данной сб
 #: backup/basebackup_zstd.c:117
 #, c-format
 msgid "could not set compression worker count to %d: %s"
-msgstr "не удалось установить для zstd число потоков %d: %s"
+msgstr "не удалось установить число потоков сжатия %d: %s"
 
 #. +> 18 17 16
 #: backup/basebackup_zstd.c:129
