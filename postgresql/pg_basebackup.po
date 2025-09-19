@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_basebackup (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2025-08-30 16:01+0300\n"
+"POT-Creation-Date: 2025-09-13 23:15+0300\n"
 "PO-Revision-Date: 2025-09-13 18:09+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -1859,9 +1859,6 @@ msgstr ""
 #. +> 18
 #: pg_createsubscriber.c:258
 #, c-format
-#| msgid ""
-#| "  -d, --database=DBNAME           database in which to create a "
-#| "subscription\n"
 msgid ""
 "  -T, --enable-two-phase          enable two-phase commit for all "
 "subscriptions\n"
@@ -2018,7 +2015,6 @@ msgstr ""
 #. +> 18
 #: pg_createsubscriber.c:617
 #, c-format
-#| msgid "system identifier is %llu on publisher"
 msgid "system identifier is %<PRIu64> on publisher"
 msgstr "идентификатор системы на стороне публикации: %<PRIu64>"
 
@@ -2043,7 +2039,6 @@ msgstr "управляющий файл, по-видимому, испорчен
 #. +> 18
 #: pg_createsubscriber.c:645 pg_createsubscriber.c:685
 #, c-format
-#| msgid "system identifier is %llu on subscriber"
 msgid "system identifier is %<PRIu64> on subscriber"
 msgstr "идентификатор системы на подписчике: %<PRIu64>"
 
@@ -2128,7 +2123,6 @@ msgstr "не удалось получить параметры с сервер�
 #. +> 18
 #: pg_createsubscriber.c:949
 #, c-format
-#| msgid "publisher requires wal_level >= \"logical\""
 msgid "publisher requires \"wal_level\" >= \"logical\""
 msgstr "на стороне публикации требуется значение \"wal_level\" >= \"logical\""
 
@@ -2229,7 +2223,6 @@ msgstr "получить параметры подписчика не удало
 #. +> 18
 #: pg_createsubscriber.c:1074
 #, c-format
-#| msgid "subscriber requires %d replication slots, but only %d remain"
 msgid "subscriber requires %d active replication origins, but only %d remain"
 msgstr ""
 "подписчику требуется активных слотов репликации: %d, но доступно всего %d"
@@ -2448,7 +2441,6 @@ msgstr "удалить публикацию \"%s\" в базе \"%s\" не по�
 #. +> 18
 #: pg_createsubscriber.c:1748
 #, c-format
-#| msgid "dropping publication \"%s\" in database \"%s\""
 msgid "dropping all existing publications in database \"%s\""
 msgstr "удаление всех существующих публикаций в базе \"%s\""
 
@@ -2505,7 +2497,6 @@ msgstr "включить подписку \"%s\" не удалось: %s"
 #. +> 18
 #: pg_createsubscriber.c:2008
 #, c-format
-#| msgid "could not obtain database OID: %s"
 msgid "could not obtain a list of databases: %s"
 msgstr "не удалось получить список баз данных: %s"
 
@@ -2524,7 +2515,6 @@ msgstr "Запускать %s нужно от имени суперпользо�
 #. +> 18
 #: pg_createsubscriber.c:2136
 #, c-format
-#| msgid "database \"%s\" specified more than once"
 msgid "database \"%s\" specified more than once for -d/--database"
 msgstr "база \"%s\" указана в -d/--database неоднократно"
 
@@ -2537,7 +2527,6 @@ msgstr "база \"%s\" указана неоднократно"
 #. +> 18
 #: pg_createsubscriber.c:2177
 #, c-format
-#| msgid "publication \"%s\" specified more than once"
 msgid "publication \"%s\" specified more than once for --publication"
 msgstr "публикация \"%s\" указана в --publication неоднократно"
 
@@ -2550,7 +2539,6 @@ msgstr "публикация \"%s\" указана неоднократно"
 #. +> 18
 #: pg_createsubscriber.c:2186
 #, c-format
-#| msgid "replication slot \"%s\" specified more than once"
 msgid "replication slot \"%s\" specified more than once for --replication-slot"
 msgstr "слот репликации \"%s\" указан в --replication-slot неоднократно"
 
@@ -2563,7 +2551,6 @@ msgstr "слот репликации \"%s\" указан неоднократн
 #. +> 18
 #: pg_createsubscriber.c:2195
 #, c-format
-#| msgid "subscription \"%s\" specified more than once"
 msgid "subscription \"%s\" specified more than once for --subscription"
 msgstr "подписка \"%s\" указана в --subscription неоднократно"
 
@@ -2576,7 +2563,6 @@ msgstr "подписка \"%s\" указана неоднократно"
 #. +> 18
 #: pg_createsubscriber.c:2201
 #, c-format
-#| msgid "replication slot \"%s\" specified more than once"
 msgid "object type \"%s\" specified more than once for --clean"
 msgstr "тип объекта \"%s\" указан в --clean неоднократно"
 
@@ -2691,7 +2677,6 @@ msgstr "в --clean указан неправильный тип объекта \
 #. +> 18
 #: pg_createsubscriber.c:2353
 #, c-format
-#| msgid "invalid --max-rate unit: \"%s\""
 msgid "The valid value is: \"%s\""
 msgstr "Допустимое значение: \"%s\""
 
@@ -3145,9 +3130,6 @@ msgstr "  -S, --slot=ИМЯ_СЛОТА   имя слота логической 
 #. +> 18
 #: pg_recvlogical.c:108
 #, c-format
-#| msgid ""
-#| "  -t, --two-phase        enable decoding of prepared transactions when "
-#| "creating a slot\n"
 msgid ""
 "  -t, --enable-two-phase enable decoding of prepared transactions when "
 "creating a slot\n"
@@ -3319,7 +3301,6 @@ msgstr "--endpos можно задать только вместе с --start"
 #. +> 18
 #: pg_recvlogical.c:933 pg_recvlogical.c:940
 #, c-format
-#| msgid "--two-phase may only be specified with --create-slot"
 msgid "%s may only be specified with --create-slot"
 msgstr "%s можно задать только вместе с --create-slot"
 

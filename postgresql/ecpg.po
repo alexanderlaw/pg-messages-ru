@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ecpg (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2025-08-30 16:01+0300\n"
+"POT-Creation-Date: 2025-09-13 23:15+0300\n"
 "PO-Revision-Date: 2025-08-30 22:23+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -842,7 +842,6 @@ msgstr "переменная \"%s\" - не массив"
 #. +> 18
 #: variable.c:220
 #, c-format
-#| msgid "incorrectly formed variable \"%s\""
 msgid "unmatched bracket in variable \"%s\""
 msgstr "непарная квадратная скобка в переменной \"%s\""
 

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pltcl (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2025-08-30 16:01+0300\n"
+"POT-Creation-Date: 2025-09-13 23:15+0300\n"
 "PO-Revision-Date: 2025-09-13 17:22+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -89,9 +89,6 @@ msgstr "%s"
 #. +> 18
 #: pltcl.c:1405
 #, c-format
-#| msgid ""
-#| "%s\n"
-#| "in PL/Tcl function \"%s\""
 msgid ""
 "%s\n"
 "in PL/Tcl function %s"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_verifybackup (PostgreSQL) 13\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2025-08-30 16:01+0300\n"
+"POT-Creation-Date: 2025-09-13 23:15+0300\n"
 "PO-Revision-Date: 2025-09-13 19:04+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -542,28 +542,24 @@ msgstr "не удалось разобрать манифест копии: %s"
 #. +> 18
 #: ../../fe_utils/astreamer_gzip.c:115
 #, c-format
-#| msgid "could not read file \"%s\": %m"
 msgid "could not create compressed file \"%s\": %m"
 msgstr "не удалось создать сжатый файл \"%s\": %m"
 
 #. +> 18
 #: ../../fe_utils/astreamer_gzip.c:127
 #, c-format
-#| msgid "could not read file \"%s\": %m"
 msgid "could not duplicate stdout: %m"
 msgstr "не удалось продублировать stdout: %m"
 
 #. +> 18
 #: ../../fe_utils/astreamer_gzip.c:131
 #, c-format
-#| msgid "could not open file \"%s\": %m"
 msgid "could not open output file: %m"
 msgstr "не удалось открыть выходной файл: %m"
 
 #. +> 18
 #: ../../fe_utils/astreamer_gzip.c:135
 #, c-format
-#| msgid "could not open file \"%s\": %m"
 msgid "could not set compression level %d: %s"
 msgstr "не удалось установить уровень сжатия %d: %s"
 
@@ -578,21 +574,18 @@ msgstr "эта сборка программы не поддерживает с�
 #. +> 18
 #: ../../fe_utils/astreamer_gzip.c:167
 #, c-format
-#| msgid "could not write file \"%s\": %m"
 msgid "could not write to compressed file \"%s\": %s"
 msgstr "не удалось записать сжатый файл \"%s\": %s"
 
 #. +> 18
 #: ../../fe_utils/astreamer_gzip.c:191
 #, c-format
-#| msgid "could not close file \"%s\": %m"
 msgid "could not close compressed file \"%s\": %m"
 msgstr "не удалось закрыть сжатый файл \"%s\": %m"
 
 #. +> 18
 #: ../../fe_utils/astreamer_gzip.c:269
 #, c-format
-#| msgid "could not initialize checksum of manifest"
 msgid "could not initialize compression library"
 msgstr "не удалось инициализировать библиотеку сжатия"
 
@@ -600,7 +593,6 @@ msgstr "не удалось инициализировать библиотек�
 #: ../../fe_utils/astreamer_gzip.c:320 ../../fe_utils/astreamer_lz4.c:356
 #: ../../fe_utils/astreamer_zstd.c:333
 #, c-format
-#| msgid "could not parse start LSN"
 msgid "could not decompress data: %s"
 msgstr "не удалось распаковать данные: %s"
 
@@ -613,7 +605,6 @@ msgstr "не удалось создать контекст сжатия lz4: %s
 #. +> 18
 #: ../../fe_utils/astreamer_lz4.c:142
 #, c-format
-#| msgid "could not write file \"%s\": %m"
 msgid "could not write lz4 header: %s"
 msgstr "не удалось записать заголовок lz4: %s"
 
@@ -621,21 +612,18 @@ msgstr "не удалось записать заголовок lz4: %s"
 #: ../../fe_utils/astreamer_lz4.c:191 ../../fe_utils/astreamer_zstd.c:185
 #: ../../fe_utils/astreamer_zstd.c:227
 #, c-format
-#| msgid "could not parse start LSN"
 msgid "could not compress data: %s"
 msgstr "не удалось сжать данные: %s"
 
 #. +> 18
 #: ../../fe_utils/astreamer_lz4.c:243
 #, c-format
-#| msgid "could not open file \"%s\" for reading: %m"
 msgid "could not end lz4 compression: %s"
 msgstr "не удалось завершить сжатие lz4: %s"
 
 #. +> 18
 #: ../../fe_utils/astreamer_lz4.c:295
 #, c-format
-#| msgid "could not initialize checksum of file \"%s\""
 msgid "could not initialize compression library: %s"
 msgstr "не удалось инициализировать библиотеку сжатия: %s"
 
@@ -678,7 +666,6 @@ msgstr "не удалось установить для zstd уровень сж
 #. +> 18
 #: ../../fe_utils/astreamer_zstd.c:109
 #, c-format
-#| msgid "could not open directory \"%s\": %m"
 msgid "could not set compression worker count to %d: %s"
 msgstr "не удалось установить число потоков сжатия %d: %s"
 
@@ -697,14 +684,12 @@ msgstr "не удалось создать контекст распаковки
 #. +> 18
 #: astreamer_verify.c:198
 #, c-format
-#| msgid "\"%s\" is present on disk but not in the manifest"
 msgid "file \"%s\" is present in archive \"%s\" but not in the manifest"
 msgstr "файл \"%s\" присутствует в архиве \"%s\", но отсутствует в манифесте"
 
 #. +> 18
 #: astreamer_verify.c:211
 #, c-format
-#| msgid "\"%s\" has size %lld on disk but size %zu in the manifest"
 msgid ""
 "file \"%s\" has size %llu in archive \"%s\" but size %<PRIu64> in the "
 "manifest"
@@ -715,7 +700,6 @@ msgstr ""
 #. +> 18
 #: astreamer_verify.c:236
 #, c-format
-#| msgid "could not initialize checksum of file \"%s\""
 msgid "%s: could not initialize checksum of file \"%s\""
 msgstr "%s: не удалось подготовить контекст контрольной суммы файла \"%s\""
 
@@ -728,7 +712,6 @@ msgstr "не удалось изменить контекст контрольн
 #. +> 18
 #: astreamer_verify.c:300
 #, c-format
-#| msgid "file \"%s\" should contain %zu bytes, but read %zu bytes"
 msgid ""
 "file \"%s\" in archive \"%s\" should contain %<PRIu64> bytes, but %<PRIu64> "
 "bytes were read"
@@ -745,7 +728,6 @@ msgstr "не удалось завершить расчёт контрольно
 #. +> 18
 #: astreamer_verify.c:320
 #, c-format
-#| msgid "file \"%s\" has checksum of length %d, but expected %d"
 msgid ""
 "file \"%s\" in archive \"%s\" has checksum of length %d, but expected %d"
 msgstr ""
@@ -755,35 +737,30 @@ msgstr ""
 #. +> 18
 #: astreamer_verify.c:325
 #, c-format
-#| msgid "checksum mismatch for file \"%s\""
 msgid "checksum mismatch for file \"%s\" in archive \"%s\""
 msgstr "ошибка контрольной суммы для файла \"%s\" в архиве \"%s\""
 
 #. +> 18
 #: astreamer_verify.c:387
 #, c-format
-#| msgid "%s: unexpected control file version"
 msgid "unexpected control file size %d, expected %d"
 msgstr "неверный размер управляющего файла (%d), ожидался: %d"
 
 #. +> 18
 #: astreamer_verify.c:399
 #, c-format
-#| msgid "%s: CRC is incorrect"
 msgid "%s: %s: CRC is incorrect"
 msgstr "%s: %s: ошибка CRC"
 
 #. +> 18
 #: astreamer_verify.c:405
 #, c-format
-#| msgid "%s: unexpected control file version"
 msgid "%s: %s: unexpected control file version"
 msgstr "%s: %s: неожиданная версия управляющего файла"
 
 #. +> 18
 #: astreamer_verify.c:412
 #, c-format
-#| msgid "%s: manifest system identifier is %llu, but control file has %llu"
 msgid ""
 "%s: %s: manifest system identifier is %<PRIu64>, but control file has "
 "%<PRIu64>"
@@ -930,7 +907,6 @@ msgstr "не удалось получить информацию о файле 
 #. +> 18
 #: pg_verifybackup.c:701
 #, c-format
-#| msgid "\"%s\" is not a file or directory"
 msgid "\"%s\" is not a regular file or directory"
 msgstr "\"%s\" не является обычным файлом или каталогом"
 
@@ -949,7 +925,6 @@ msgstr "файл \"%s\" присутствует на диске, но отсу�
 #. +> 18
 #: pg_verifybackup.c:723
 #, c-format
-#| msgid "\"%s\" has size %lld on disk but size %zu in the manifest"
 msgid "\"%s\" has size %llu on disk but size %llu in the manifest"
 msgstr ""
 "файл \"%s\" имеет размер на диске: %llu, тогда как размер в манифесте: %llu"
@@ -983,7 +958,6 @@ msgstr "%s: неожиданная версия управляющего фай�
 #. +> 18
 #: pg_verifybackup.c:774
 #, c-format
-#| msgid "%s: manifest system identifier is %llu, but control file has %llu"
 msgid ""
 "%s: manifest system identifier is %<PRIu64>, but control file has %<PRIu64>"
 msgstr ""
@@ -999,7 +973,6 @@ msgstr "%s: идентификатор системы в манифесте %llu
 #. +> 18
 #: pg_verifybackup.c:906
 #, c-format
-#| msgid "file size is not an integer"
 msgid "file \"%s\" is not a regular file"
 msgstr "\"%s\" — не обычный файл"
 
@@ -1024,7 +997,6 @@ msgstr "не удалось подготовить контекст контро
 #. +> 18
 #: pg_verifybackup.c:1169
 #, c-format
-#| msgid "file \"%s\" should contain %zu bytes, but read %zu bytes"
 msgid "file \"%s\" should contain %<PRIu64> bytes, but read %<PRIu64>"
 msgstr ""
 "файл \"%s\" должен содержать байт: %<PRIu64>, но фактически прочитано: "

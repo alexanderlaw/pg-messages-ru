@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_controldata (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2025-08-30 16:01+0300\n"
+"POT-Creation-Date: 2025-09-13 23:15+0300\n"
 "PO-Revision-Date: 2025-09-13 16:58+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -361,7 +361,6 @@ msgstr "Номер версии каталога:                %u\n"
 #. +> 18
 #: pg_controldata.c:242
 #, c-format
-#| msgid "Database system identifier:           %llu\n"
 msgid "Database system identifier:           %<PRIu64>\n"
 msgstr "Идентификатор системы баз данных:     %<PRIu64>\n"
 
@@ -706,7 +705,6 @@ msgstr "Версия контрольных сумм страниц:      %u\n"
 #. +> 18
 #: pg_controldata.c:339
 #, c-format
-#| msgid "Maximum data alignment:               %u\n"
 msgid "Default char data signedness:         %s\n"
 msgstr "Знаковость char по умолчанию:         %s\n"
 

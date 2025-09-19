@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pgscripts (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2025-08-30 16:01+0300\n"
+"POT-Creation-Date: 2025-09-13 23:15+0300\n"
 "PO-Revision-Date: 2025-09-13 17:25+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -217,9 +217,6 @@ msgstr "Прервано\n"
 #. +> 18
 #: ../../fe_utils/print.c:3188
 #, c-format
-#| msgid ""
-#| "Cannot print table contents: number of cells %lld is equal to or exceeds "
-#| "maximum %lld.\n"
 msgid ""
 "Cannot print table contents: number of cells %<PRIu64> is equal to or "
 "exceeds maximum %zu.\n"
@@ -247,7 +244,6 @@ msgstr ""
 #. +> 18
 #: ../../fe_utils/print.c:3272
 #, c-format
-#| msgid "Cannot add cell to table content: total cell count of %d exceeded.\n"
 msgid ""
 "Cannot add cell to table content: total cell count of %<PRIu64> exceeded.\n"
 msgstr ""
@@ -1598,7 +1594,6 @@ msgstr "параметр \"%s\" нельзя использовать совме
 #. +> 18
 #: vacuumdb.c:380
 #, c-format
-#| msgid "cannot use the \"%s\" option with the \"%s\" option"
 msgid "cannot use the \"%s\" option without \"%s\" or \"%s\""
 msgstr "параметр \"%s\" нельзя использовать без \"%s\" или \"%s\""
 

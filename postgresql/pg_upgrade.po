@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_upgrade (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2025-08-30 16:01+0300\n"
+"POT-Creation-Date: 2025-09-13 23:15+0300\n"
 "PO-Revision-Date: 2025-09-13 22:22+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -649,7 +649,6 @@ msgstr ""
 #. +> 18
 #: check.c:754
 #, c-format
-#| msgid "This utility can only upgrade from PostgreSQL version %s and later."
 msgid ""
 "Swap mode can only upgrade clusters from PostgreSQL version %s and later."
 msgstr ""
@@ -704,11 +703,6 @@ msgstr ""
 #. +> 18
 #: check.c:826
 #, c-format
-#| msgid ""
-#| "Optimizer statistics are not transferred by pg_upgrade.\n"
-#| "Once you start the new server, consider running:\n"
-#| "    %s/vacuumdb %s--all --analyze-in-stages\n"
-#| "\n"
 msgid ""
 "Some statistics are not transferred by pg_upgrade.\n"
 "Once you start the new server, consider running these two commands:\n"
@@ -908,7 +902,6 @@ msgstr ""
 #. +> 18
 #: check.c:897
 #, c-format
-#| msgid "This utility can only upgrade from PostgreSQL version %s and later."
 msgid "The option %s cannot be used for upgrades from PostgreSQL %s and later."
 msgstr ""
 "Параметр %s нельзя использовать при обновлении с PostgreSQL %s и новее."
@@ -1217,14 +1210,6 @@ msgstr "сбой\n"
 #. +> 18
 #: check.c:1204
 #, c-format
-#| msgid ""
-#| "All non-template0 databases must allow connections, i.e. their\n"
-#| "pg_database.datallowconn must be true.  Your installation contains\n"
-#| "non-template0 databases with their pg_database.datallowconn set to\n"
-#| "false.  Consider allowing connection for all non-template0 databases\n"
-#| "or drop the databases which do not allow connections.  A list of\n"
-#| "databases with the problem is in the file:\n"
-#| "    %s"
 msgid ""
 "All non-template0 databases must allow connections, i.e. their\n"
 "pg_database.datallowconn must be true and pg_database.datconnlimit\n"
@@ -1612,7 +1597,6 @@ msgstr ""
 #. +> 18
 #: check.c:1939
 #, c-format
-#| msgid "Checking for extension updates"
 msgid "Checking for objects affected by Unicode update"
 msgstr "Проверка объектов, затрагиваемых обновлением Unicode"
 
@@ -1685,9 +1669,6 @@ msgstr "Проверка конфигурации нового кластера 
 #. +> 18
 #: check.c:2153
 #, c-format
-#| msgid ""
-#| "\"max_replication_slots\" (%d) must be greater than or equal to the "
-#| "number of subscriptions (%d) on the old cluster"
 msgid ""
 "\"max_active_replication_origins\" (%d) must be greater than or equal to the "
 "number of subscriptions (%d) on the old cluster"
@@ -2491,7 +2472,6 @@ msgstr ""
 #. +> 18
 #: controldata.c:762
 #, c-format
-#| msgid "Adding \".old\" suffix to old global/pg_control"
 msgid "Adding \".old\" suffix to old \"%s\""
 msgstr "Добавление расширения \".old\" к старому файлу \"%s\""
 
@@ -2511,12 +2491,6 @@ msgstr "не удалось переименовать файл \"%s\" в \"%s\"
 #. +> 18
 #: controldata.c:773
 #, c-format
-#| msgid ""
-#| "\n"
-#| "If you want to start the old cluster, you will need to remove\n"
-#| "the \".old\" suffix from %s/global/pg_control.old.\n"
-#| "Because \"link\" mode was used, the old cluster cannot be safely\n"
-#| "started once the new cluster has been started."
 msgid ""
 "\n"
 "If you want to start the old cluster, you will need to remove\n"
@@ -3178,10 +3152,6 @@ msgstr ""
 #. +> 18
 #: file.c:452
 #, c-format
-#| msgid ""
-#| "could not create hard link between old and new data directories: %m\n"
-#| "In link mode the old and new data directories must be on the same file "
-#| "system."
 msgid ""
 "could not create hard link between old and new data directories: %m\n"
 "In swap mode the old and new data directories must be on the same file "
@@ -3866,9 +3836,6 @@ msgstr ""
 #. +> 18
 #: option.c:334
 #, c-format
-#| msgid ""
-#| "  --clone                       clone instead of copying files to new "
-#| "cluster\n"
 msgid "  --swap                        move data directories to new cluster\n"
 msgstr ""
 "  --swap                        перенести каталоги данных в новый кластер\n"
@@ -4315,7 +4282,6 @@ msgstr ""
 #. +> 18
 #: pg_upgrade.c:421
 #, c-format
-#| msgid "Setting locale and encoding for new cluster"
 msgid "Setting the default char signedness for new cluster"
 msgstr "Установка знаковости char по умолчанию для нового кластера"
 
@@ -4433,7 +4399,6 @@ msgstr "Восстановление слотов логической репл�
 #. +> 18
 #: relfilenumber.c:68
 #, c-format
-#| msgid "could not create file \"%s\": %m"
 msgid "could not synchronize file \"%s\": %m"
 msgstr "не удалось синхронизировать файл \"%s\": %m"
 
@@ -4465,7 +4430,6 @@ msgstr "Подключение файлов пользовательских о�
 #. +> 18
 #: relfilenumber.c:126
 #, c-format
-#| msgid "Sync data directory to disk"
 msgid "Swapping data directories"
 msgstr "Подмена каталогов данных"
 
@@ -4484,42 +4448,36 @@ msgstr "старая база данных \"%s\" не найдена в нов�
 #. +> 18
 #: relfilenumber.c:287
 #, c-format
-#| msgid "could not create file \"%s\": %m"
 msgid "could not stat file \"%s\": %m"
 msgstr "не удалось получить информацию о файле \"%s\": %m"
 
 #. +> 18
 #: relfilenumber.c:301 relfilenumber.c:305
 #, c-format
-#| msgid "could not rename file \"%s\" to \"%s\": %m"
 msgid "could not rename directory \"%s\" to \"%s\": %m"
 msgstr "не удалось переименовать каталог \"%s\" в \"%s\": %m"
 
 #. +> 18
 #: relfilenumber.c:375 relfilenumber.c:402
 #, c-format
-#| msgid "could not create directory \"%s\": %m"
 msgid "could not open directory \"%s\": %m"
 msgstr "не удалось открыть каталог \"%s\": %m"
 
 #. +> 18
 #: relfilenumber.c:396 relfilenumber.c:434
 #, c-format
-#| msgid "could not create directory \"%s\": %m"
 msgid "could not read directory \"%s\": %m"
 msgstr "не удалось прочитать каталог \"%s\": %m"
 
 #. +> 18
 #: relfilenumber.c:439
 #, c-format
-#| msgid "could not create directory \"%s\": %m"
 msgid "could not synchronize directory \"%s\": %m"
 msgstr "не удалось синхронизировать каталог \"%s\": %m"
 
 #. +> 18
 #: relfilenumber.c:441
 #, c-format
-#| msgid "could not create directory \"%s\": %m"
 msgid "could not synchronize parent directory of \"%s\": %m"
 msgstr "не удалось синхронизировать родительский каталог \"%s\": %m"
 
@@ -4873,7 +4831,6 @@ msgstr "путь табличного пространства \"%s\" не ук�
 #. +> 18
 #: task.c:216 task.c:267 task.c:282 task.c:293
 #, c-format
-#| msgid "connection to database failed: %s"
 msgid "connection failure: %s"
 msgstr "ошибка подключения: %s"
 

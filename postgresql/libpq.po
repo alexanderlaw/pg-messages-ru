@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libpq (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2025-08-30 16:01+0300\n"
+"POT-Creation-Date: 2025-09-13 23:15+0300\n"
 "PO-Revision-Date: 2025-09-03 08:20+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -37,7 +37,6 @@ msgstr "ошибка при очистке множественного указ
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:390 ../libpq-oauth/oauth-curl.c:401
 #, c-format
-#| msgid "could not establish SSL connection: %s"
 msgid "failed to set %s on OAuth connection: %s"
 msgstr "не удалось задать %s для подключения OAuth: %s"
 
@@ -106,21 +105,18 @@ msgstr "внутренняя ошибка: элемент массива най�
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:770
 #, c-format
-#| msgid "no connection to the server"
 msgid "no content type was provided"
 msgstr "тип содержимого не передан"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:809
 #, c-format
-#| msgid "unexpected asyncStatus: %d"
 msgid "unexpected content type: \"%s\""
 msgstr "неожиданный тип содержимого: \"%s\""
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:834
 #, c-format
-#| msgid "SSL certificate's name contains embedded null"
 msgid "response contains embedded NULLs"
 msgstr "ответ содержит в себе NUL"
 
@@ -145,7 +141,6 @@ msgstr "провайдер не принял oauth_client_secret"
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:1182
 #, c-format
-#| msgid "could not create socket: %s"
 msgid "failed to create epoll set: %m"
 msgstr "не удалось создать набор epoll: %m"
 
@@ -165,7 +160,6 @@ msgstr "не удалось добавить timerfd в набор epoll: %m"
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:1205
 #, c-format
-#| msgid "could not create socket: %s"
 msgid "failed to create kqueue: %m"
 msgstr "не удалось создать kqueue: %m"
 
@@ -184,49 +178,42 @@ msgstr "неизвестная операция для сокета libcurl: %d"
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:1279
 #, c-format
-#| msgid "could not create socket: %s"
 msgid "could not add to epoll set: %m"
 msgstr "ошибка при добавлении в набор epoll: %m"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:1283
 #, c-format
-#| msgid "could not get client address from socket: %s"
 msgid "could not delete from epoll set: %m"
 msgstr "ошибка при удалении из набора epoll: %m"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:1287
 #, c-format
-#| msgid "could not create socket: %s"
 msgid "could not update epoll set: %m"
 msgstr "ошибка при изменении набора epoll: %m"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:1347
 #, c-format
-#| msgid "could not verify server signature: %s"
 msgid "could not modify kqueue: %m"
 msgstr "не удалось модифицировать kqueue: %m"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:1371
 #, c-format
-#| msgid "could not receive data from server: %s"
 msgid "could not delete from kqueue: %m"
 msgstr "ошибка при удалении из kqueue: %m"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:1374
 #, c-format
-#| msgid "could not send data to server: %s"
 msgid "could not add to kqueue: %m"
 msgstr "ошибка при добавлении в kqueue: %m"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:1423
 #, c-format
-#| msgid "could not create socket: %s"
 msgid "could not comb kqueue: %m"
 msgstr "не удалось упорядочить kqueue: %m"
 
@@ -333,14 +320,12 @@ msgstr "для завершённого указателя не был полу�
 #: ../libpq-oauth/oauth-curl.c:2144 ../libpq-oauth/oauth-curl.c:2450
 #: ../libpq-oauth/oauth-curl.c:2529
 #, c-format
-#| msgid "unexpected response from server"
 msgid "unexpected response code %ld"
 msgstr "неожиданный код ответа %ld"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:2216
 #, c-format
-#| msgid "server certificate for \"%s\" does not match host name \"%s\""
 msgid "the issuer identifier (%s) does not match oauth_issuer (%s)"
 msgstr "идентификатор издателя (%s) не совпадает с oauth_issuer (%s)"
 
@@ -775,7 +760,6 @@ msgstr ""
 #. +> 18
 #: fe-auth.c:571
 #, c-format
-#| msgid "authentication method requirement \"%s\" failed: %s"
 msgid ""
 "authentication method requirement \"%s\" failed: server requested %s "
 "authentication"
@@ -1031,7 +1015,6 @@ msgstr "распознать имя пользователя не удалось
 #. +> 18
 #: fe-auth.c:1315
 #, c-format
-#| msgid "could not look up local user ID %d: %s"
 msgid "could not look up local user ID %ld: %m"
 msgstr "найти локального пользователя по идентификатору (%ld) не удалось: %m"
 
@@ -1044,7 +1027,6 @@ msgstr "найти локального пользователя по идент
 #. +> 18
 #: fe-auth.c:1320
 #, c-format
-#| msgid "local user with ID %d does not exist"
 msgid "local user with ID %ld does not exist"
 msgstr "локальный пользователь с ID %ld не существует"
 
@@ -1305,21 +1287,18 @@ msgstr ""
 #. +> 18
 #: fe-connect.c:2029
 #, c-format
-#| msgid "invalid SCRAM exchange state"
 msgid "invalid SCRAM client key"
 msgstr "неправильный клиентский ключ SCRAM"
 
 #. +> 18
 #: fe-connect.c:2034
 #, c-format
-#| msgid "invalid SCRAM exchange state"
 msgid "invalid SCRAM client key length: %d"
 msgstr "некорректная длина клиентского ключа SCRAM: %d"
 
 #. +> 18
 #: fe-connect.c:2052
 #, c-format
-#| msgid "invalid SCRAM exchange state"
 msgid "invalid SCRAM server key"
 msgstr "неправильный серверный ключ SCRAM"
 
@@ -1848,7 +1827,6 @@ msgstr "получено некорректное сообщение об оши
 #. +> 18
 #: fe-connect.c:4151
 #, c-format
-#| msgid "received invalid protocol negotiation message"
 msgid "received duplicate protocol negotiation message"
 msgstr "получено повторное сообщение согласования протокола"
 
@@ -3155,7 +3133,6 @@ msgstr ""
 #. +> 18
 #: fe-protocol3.c:1442
 #, c-format
-#| msgid "received invalid protocol negotiation message"
 msgid ""
 "received invalid protocol negotiation message: server requested downgrade to "
 "a higher-numbered version"
@@ -3175,7 +3152,6 @@ msgstr[2] "сервер не поддерживает эти расширени�
 #. +> 18
 #: fe-protocol3.c:1448
 #, c-format
-#| msgid "received invalid protocol negotiation message"
 msgid ""
 "received invalid protocol negotiation message: server requested downgrade to "
 "pre-3.0 protocol version"
@@ -3202,7 +3178,6 @@ msgstr ""
 #. +> 18
 #: fe-protocol3.c:1461
 #, c-format
-#| msgid "received invalid protocol negotiation message"
 msgid ""
 "received invalid protocol negotiation message: server reported negative "
 "number of unsupported parameters"
@@ -3213,7 +3188,6 @@ msgstr ""
 #. +> 18
 #: fe-protocol3.c:1467
 #, c-format
-#| msgid "received invalid protocol negotiation message"
 msgid ""
 "received invalid protocol negotiation message: server negotiated but asks "
 "for no changes"
@@ -3253,7 +3227,6 @@ msgstr ""
 #. +> 18
 #: fe-protocol3.c:1508
 #, c-format
-#| msgid "received invalid protocol negotiation message"
 msgid "received invalid protocol negotiation message: message too short"
 msgstr ""
 "получено некорректное сообщение согласования протокола: сообщение слишком "
@@ -3595,7 +3568,6 @@ msgstr "в SSL-сертификате отсутствует запись адр
 #. +> 18
 #: fe-secure-openssl.c:715
 #, c-format
-#| msgid "could not open file \"%s\": %s\n"
 msgid "WARNING: could not open SSL key logging file \"%s\": %m\n"
 msgstr ""
 "ПРЕДУПРЕЖДЕНИЕ: не удалось открыть файл для диагностики ключа SSL \"%s\": "
@@ -3604,7 +3576,6 @@ msgstr ""
 #. +> 18
 #: fe-secure-openssl.c:723
 #, c-format
-#| msgid "could not write to file \"%s\": %s\n"
 msgid "WARNING: could not write to SSL key logging file \"%s\": %m\n"
 msgstr ""
 "ПРЕДУПРЕЖДЕНИЕ: не удалось записать в файл для диагностики ключа SSL \"%s\": "

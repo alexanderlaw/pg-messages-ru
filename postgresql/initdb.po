@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: initdb (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2025-08-30 16:01+0300\n"
+"POT-Creation-Date: 2025-09-13 23:15+0300\n"
 "PO-Revision-Date: 2025-09-13 16:55+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -977,7 +977,6 @@ msgstr ""
 #. +> 18
 #: initdb.c:2542
 #, c-format
-#| msgid "  -k, --data-checksums      use data page checksums\n"
 msgid "      --no-data-checksums   do not use data page checksums\n"
 msgstr "      --no-data-checksums   отключить контроль целостности страниц\n"
 

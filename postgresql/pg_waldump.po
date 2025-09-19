@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_waldump (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2025-08-30 16:01+0300\n"
+"POT-Creation-Date: 2025-09-13 23:15+0300\n"
 "PO-Revision-Date: 2025-08-30 22:30+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -814,9 +814,6 @@ msgstr "неверные информационные биты %04X в сегм�
 #. +> 18
 #: xlogreader.c:1285
 #, c-format
-#| msgid ""
-#| "WAL file is from different database system: WAL file database system "
-#| "identifier is %llu, pg_control database system identifier is %llu"
 msgid ""
 "WAL file is from different database system: WAL file database system "
 "identifier is %<PRIu64>, pg_control database system identifier is %<PRIu64>"

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_dump (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2025-08-30 16:01+0300\n"
+"POT-Creation-Date: 2025-09-19 22:28+0300\n"
 "PO-Revision-Date: 2025-09-04 22:18+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -662,7 +662,6 @@ msgstr "не удалось прочитать входной файл: %s"
 #. +> 18 17 16
 #: compress_gzip.c:294 compress_zstd.c:382
 #, c-format
-#| msgid "could not write to output file: %s"
 msgid "could not write to file: %s"
 msgstr "не удалось записать в файл: %s"
 
@@ -714,28 +713,24 @@ msgstr "не удалось инициализировать LZ4: %s"
 #. +> 18 17 16
 #: compress_lz4.c:463 compress_lz4.c:581
 #, c-format
-#| msgid "could not initialize compression library: %s"
 msgid "unable to initialize LZ4 library: %s"
 msgstr "не удалось инициализировать библиотеку LZ4: %s"
 
 #. +> 18 17 16
 #: compress_lz4.c:593
 #, c-format
-#| msgid "error during file seek: %s\n"
 msgid "error during writing: %s"
 msgstr "ошибка при записи: %s"
 
 #. +> 18 17 16
 #: compress_lz4.c:599
 #, c-format
-#| msgid "error during file seek: %m"
 msgid "error during writing: %m"
 msgstr "ошибка при записи: %m"
 
 #. +> 18 17 16
 #: compress_lz4.c:698
 #, c-format
-#| msgid "could not write to output file: %s"
 msgid "could not write to output file: %m"
 msgstr "не удалось записать в выходной файл: %m"
 
@@ -748,14 +743,12 @@ msgstr "не удалось завершить распаковку: %s"
 #. +> 18 17 16
 #: compress_lz4.c:726 compress_none.c:156
 #, c-format
-#| msgid "could not close TOC file: %m"
 msgid "could not close file: %m"
 msgstr "не удалось закрыть файл: %m"
 
 #. +> 18 17 16
 #: compress_none.c:109 compress_zstd.c:389
 #, c-format
-#| msgid "could not write to output file: %s"
 msgid "could not write to file: %m"
 msgstr "не удалось записать в файл: %m"
 
@@ -847,14 +840,12 @@ msgstr "не удалось создать каталог \"%s\": %m"
 #. +> 18
 #: dumputils.c:953
 #, c-format
-#| msgid "could not change directory to \"%s\": %m"
 msgid "could not change permissions of directory \"%s\": %m"
 msgstr "не удалось поменять права для каталога \"%s\": %m"
 
 #. +> 18
 #: dumputils.c:958
 #, c-format
-#| msgid "%s filter for \"%s\" is not allowed"
 msgid "directory \"%s\" is not empty"
 msgstr "каталог \"%s\" не пуст"
 
@@ -1109,7 +1100,6 @@ msgstr ""
 #. +> 18
 #: pg_backup_archiver.c:450
 #, c-format
-#| msgid "implied data-only restore"
 msgid "implied no-schema restore"
 msgstr "подразумевается восстановление без схемы"
 
@@ -1422,13 +1412,13 @@ msgid "unrecognized file format \"%d\""
 msgstr "неопознанный формат файла: \"%d\""
 
 #. +> 18 17 16 15 14 13
-#: pg_backup_archiver.c:2566 pg_backup_archiver.c:4761
+#: pg_backup_archiver.c:2566 pg_backup_archiver.c:4797
 #, c-format
 msgid "finished item %d %s %s"
 msgstr "закончен объект %d %s %s"
 
 #. +> 18 17 16 15 14 13
-#: pg_backup_archiver.c:2570 pg_backup_archiver.c:4774
+#: pg_backup_archiver.c:2570 pg_backup_archiver.c:4810
 #, c-format
 msgid "worker process failed: exit code %d"
 msgstr "рабочий процесс завершился с кодом возврата %d"
@@ -1436,7 +1426,6 @@ msgstr "рабочий процесс завершился с кодом воз�
 #. +> 18
 #: pg_backup_archiver.c:2668
 #, c-format
-#| msgid "read TOC entry %d (ID %d) for %s %s\n"
 msgid "unexpected TOC entry in WriteToc(): %d %s %s"
 msgstr "неожиданная запись оглавления в WriteToc(): %d %s %s"
 
@@ -1509,85 +1498,85 @@ msgid "trigger \"%s\" not found"
 msgstr "триггер \"%s\" не найден"
 
 #. +> 18 17 16 15 14 13
-#: pg_backup_archiver.c:3433
+#: pg_backup_archiver.c:3469
 #, c-format
 msgid "could not set session user to \"%s\": %s"
 msgstr "не удалось переключить пользователя сеанса на \"%s\": %s"
 
 #. +> 18 17
-#: pg_backup_archiver.c:3575
+#: pg_backup_archiver.c:3611
 #, c-format
 msgid "could not set \"search_path\" to \"%s\": %s"
 msgstr "не удалось присвоить \"search_path\" значение \"%s\": %s"
 
 #. +> 16 15 14 13
-#: pg_backup_archiver.c:3366
+#: pg_backup_archiver.c:3397
 #, c-format
 msgid "could not set search_path to \"%s\": %s"
 msgstr "не удалось присвоить search_path значение \"%s\": %s"
 
 #. +> 18 17
-#: pg_backup_archiver.c:3636
+#: pg_backup_archiver.c:3672
 #, c-format
 msgid "could not set \"default_tablespace\" to %s: %s"
 msgstr "не удалось задать для \"default_tablespace\" значение %s: %s"
 
 #. +> 16 15 14 13
-#: pg_backup_archiver.c:3427
+#: pg_backup_archiver.c:3458
 #, c-format
 msgid "could not set default_tablespace to %s: %s"
 msgstr "не удалось задать для default_tablespace значение %s: %s"
 
 #. +> 18 17
-#: pg_backup_archiver.c:3685
+#: pg_backup_archiver.c:3721
 #, c-format
 msgid "could not set \"default_table_access_method\": %s"
 msgstr "не удалось задать \"default_table_access_method\": %s"
 
 #. +> 16 15 14 13
-#: pg_backup_archiver.c:3476
+#: pg_backup_archiver.c:3507
 #, c-format
 msgid "could not set default_table_access_method: %s"
 msgstr "не удалось задать default_table_access_method: %s"
 
 #. +> 18 17
-#: pg_backup_archiver.c:3734
+#: pg_backup_archiver.c:3770
 #, c-format
 msgid "could not alter table access method: %s"
 msgstr "не удалось изменить табличный метод доступа: %s"
 
 #. +> 18 17 16 15 14 13
-#: pg_backup_archiver.c:3835
+#: pg_backup_archiver.c:3871
 #, c-format
 msgid "don't know how to set owner for object type \"%s\""
 msgstr "неизвестно, как назначить владельца для объекта типа \"%s\""
 
 #. +> 18
-#: pg_backup_archiver.c:3970
+#: pg_backup_archiver.c:4006
 #, c-format
 msgid "unexpected TOC entry in _printTocEntry(): %d %s %s"
 msgstr "неожиданная запись оглавления в _printTocEntry(): %d %s %s"
 
 #. +> 18 17 16 15 14 13
-#: pg_backup_archiver.c:4118
+#: pg_backup_archiver.c:4154
 #, c-format
 msgid "did not find magic string in file header"
 msgstr "в заголовке файла не найдена нужная сигнатура"
 
 #. +> 18 17 16 15 14 13
-#: pg_backup_archiver.c:4132
+#: pg_backup_archiver.c:4168
 #, c-format
 msgid "unsupported version (%d.%d) in file header"
 msgstr "неподдерживаемая версия (%d.%d) в заголовке файла"
 
 #. +> 18 17 16 15 14 13
-#: pg_backup_archiver.c:4137
+#: pg_backup_archiver.c:4173
 #, c-format
 msgid "sanity check on integer size (%lu) failed"
 msgstr "несоответствие размера integer (%lu)"
 
 #. +> 18 17 16 15 14 13
-#: pg_backup_archiver.c:4141
+#: pg_backup_archiver.c:4177
 #, c-format
 msgid ""
 "archive was made on a machine with larger integers, some operations might "
@@ -1597,13 +1586,13 @@ msgstr ""
 "некоторых операций"
 
 #. +> 18 17 16 15 14 13
-#: pg_backup_archiver.c:4151
+#: pg_backup_archiver.c:4187
 #, c-format
 msgid "expected format (%d) differs from format found in file (%d)"
 msgstr "ожидаемый формат (%d) отличается от формата, указанного в файле (%d)"
 
 #. +> 18 17 16
-#: pg_backup_archiver.c:4173
+#: pg_backup_archiver.c:4209
 #, c-format
 msgid ""
 "archive is compressed, but this installation does not support compression "
@@ -1613,7 +1602,7 @@ msgstr ""
 "будут недоступны"
 
 #. +> 15 14 13
-#: pg_backup_archiver.c:3877
+#: pg_backup_archiver.c:3908
 #, c-format
 msgid ""
 "archive is compressed, but this installation does not support compression -- "
@@ -1623,49 +1612,49 @@ msgstr ""
 "недоступны"
 
 #. +> 18 17 16 15 14 13
-#: pg_backup_archiver.c:4209
+#: pg_backup_archiver.c:4245
 #, c-format
 msgid "invalid creation date in header"
 msgstr "неверная дата создания в заголовке"
 
 #. +> 18 17 16 15 14 13
-#: pg_backup_archiver.c:4343
+#: pg_backup_archiver.c:4379
 #, c-format
 msgid "processing item %d %s %s"
 msgstr "обработка объекта %d %s %s"
 
 #. +> 18 17 16 15 14 13
-#: pg_backup_archiver.c:4428
+#: pg_backup_archiver.c:4464
 #, c-format
 msgid "entering main parallel loop"
 msgstr "вход в основной параллельный цикл"
 
 #. +> 18 17 16 15 14 13
-#: pg_backup_archiver.c:4439
+#: pg_backup_archiver.c:4475
 #, c-format
 msgid "skipping item %d %s %s"
 msgstr "объект %d %s %s пропускается"
 
 #. +> 18 17 16 15 14 13
-#: pg_backup_archiver.c:4448
+#: pg_backup_archiver.c:4484
 #, c-format
 msgid "launching item %d %s %s"
 msgstr "объект %d %s %s запускается"
 
 #. +> 18 17 16 15 14 13
-#: pg_backup_archiver.c:4502
+#: pg_backup_archiver.c:4538
 #, c-format
 msgid "finished main parallel loop"
 msgstr "основной параллельный цикл закончен"
 
 #. +> 18 17 16 15 14 13
-#: pg_backup_archiver.c:4538
+#: pg_backup_archiver.c:4574
 #, c-format
 msgid "processing missed item %d %s %s"
 msgstr "обработка пропущенного объекта %d %s %s"
 
 #. +> 18 17 16 15 14 13
-#: pg_backup_archiver.c:5080
+#: pg_backup_archiver.c:5116
 #, c-format
 msgid "table \"%s\" could not be created, will not restore its data"
 msgstr "создать таблицу \"%s\" не удалось, её данные не будут восстановлены"
@@ -1764,7 +1753,6 @@ msgstr "сжатие активно"
 #. +> 18
 #: pg_backup_db.c:41
 #, c-format
-#| msgid "could not get server_version from libpq"
 msgid "could not get \"server_version\" from libpq"
 msgstr "не удалось получить значение \"server_version\" от libpq"
 
@@ -2177,46 +2165,36 @@ msgstr "параметры -s/--schema-only и -a/--data-only исключают
 #. +> 18
 #: pg_dump.c:828 pg_restore.c:382
 #, c-format
-#| msgid "options -s/--schema-only and -a/--data-only cannot be used together"
 msgid "options -s/--schema-only and --statistics-only cannot be used together"
 msgstr "параметры -s/--schema-only и --statistics-only исключают друг друга"
 
 #. +> 18
 #: pg_dump.c:830 pg_restore.c:384
 #, c-format
-#| msgid "options -s/--schema-only and -a/--data-only cannot be used together"
 msgid "options -a/--data-only and --statistics-only cannot be used together"
 msgstr "параметры -a/--data-only и --statistics-only исключают друг друга"
 
 #. +> 18
 #: pg_dump.c:834 pg_restore.c:388
 #, c-format
-#| msgid "options -s/--schema-only and -a/--data-only cannot be used together"
 msgid "options -a/--data-only and --no-data cannot be used together"
 msgstr "параметры -a/--data-only и --no-data исключают друг друга"
 
 #. +> 18
 #: pg_dump.c:836 pg_restore.c:390
 #, c-format
-#| msgid "options -s/--schema-only and -a/--data-only cannot be used together"
 msgid "options -s/--schema-only and --no-schema cannot be used together"
 msgstr "параметры -s/--schema-only и --no-schema исключают друг друга"
 
 #. +> 18
 #: pg_dump.c:838 pg_restore.c:392
 #, c-format
-#| msgid ""
-#| "options -1/--single-transaction and --transaction-size cannot be used "
-#| "together"
 msgid "options --statistics-only and --no-statistics cannot be used together"
 msgstr "параметры --statistics-only и --no-statistics исключают друг друга"
 
 #. +> 18
 #: pg_dump.c:842 pg_restore.c:396
 #, c-format
-#| msgid ""
-#| "options -1/--single-transaction and --transaction-size cannot be used "
-#| "together"
 msgid "options --statistics and --no-statistics cannot be used together"
 msgstr "параметры --statistics и --no-statistics исключают друг друга"
 
@@ -2224,7 +2202,6 @@ msgstr "параметры --statistics и --no-statistics исключают д
 #. +> 18
 #: pg_dump.c:846 pg_dump.c:849 pg_restore.c:400 pg_restore.c:403
 #, c-format
-#| msgid "options -d/--dbname and -f/--file cannot be used together"
 msgid "options %s and %s cannot be used together"
 msgstr "параметры %s и %s исключают друг друга"
 
@@ -2269,7 +2246,6 @@ msgstr ""
 #. +> 18 17 16 15 14 13
 #: pg_dump.c:898 pg_dumpall.c:498 pg_restore.c:373
 #, c-format
-#| msgid "could not execute query"
 msgid "could not generate restrict key"
 msgstr "не удалось сгенерировать ограничительный ключ"
 
@@ -2355,9 +2331,6 @@ msgstr ""
 #. +> 18
 #: pg_dump.c:1251
 #, c-format
-#| msgid ""
-#| "%s dumps a database as a text file or to other formats.\n"
-#| "\n"
 msgid ""
 "%s exports a PostgreSQL database as an SQL script or to other formats.\n"
 "\n"
@@ -2490,7 +2463,6 @@ msgstr ""
 #. +> 18
 #: pg_dump.c:1270 pg_dumpall.c:704
 #, c-format
-#| msgid "  -a, --data-only              dump only the data, not the schema\n"
 msgid ""
 "  -a, --data-only              dump only the data, not the schema or "
 "statistics\n"
@@ -2600,7 +2572,6 @@ msgstr ""
 #. +> 18
 #: pg_dump.c:1283 pg_dumpall.c:710
 #, c-format
-#| msgid "  -s, --schema-only            dump only the schema, no data\n"
 msgid ""
 "  -s, --schema-only            dump only the schema, no data or statistics\n"
 msgstr ""
@@ -2809,7 +2780,6 @@ msgstr ""
 #. +> 18
 #: pg_dump.c:1311 pg_dumpall.c:724
 #, c-format
-#| msgid "  --no-comments                do not dump comments\n"
 msgid "  --no-comments                do not dump comment commands\n"
 msgstr "  --no-comments                не выгружать команды комментариев\n"
 
@@ -2822,14 +2792,12 @@ msgstr "  --no-comments                не выгружать коммента�
 #. +> 18
 #: pg_dump.c:1312 pg_dumpall.c:725
 #, c-format
-#| msgid "  --no-comments                do not dump comments\n"
 msgid "  --no-data                    do not dump data\n"
 msgstr "  --no-data                    не выгружать данные\n"
 
 #. +> 18
 #: pg_dump.c:1313 pg_dumpall.c:726
 #, c-format
-#| msgid "  --no-comments                do not dump comments\n"
 msgid "  --no-policies                do not dump row security policies\n"
 msgstr "  --no-policies                не выгружать политики защиты строк\n"
 
@@ -2842,7 +2810,6 @@ msgstr "  --no-publications            не выгружать публикац�
 #. +> 18
 #: pg_dump.c:1315 pg_dumpall.c:729
 #, c-format
-#| msgid "  --no-comments                do not dump comments\n"
 msgid "  --no-schema                  do not dump schema\n"
 msgstr "  --no-schema                  не выгружать схему\n"
 
@@ -2856,7 +2823,6 @@ msgstr ""
 #. +> 18
 #: pg_dump.c:1317 pg_dumpall.c:731
 #, c-format
-#| msgid "  --no-subscriptions           do not dump subscriptions\n"
 msgid "  --no-statistics              do not dump statistics\n"
 msgstr "  --no-statistics              не выгружать статистику\n"
 
@@ -2945,9 +2911,6 @@ msgstr ""
 #. +> 18
 #: pg_dump.c:1328 pg_dumpall.c:742
 #, c-format
-#| msgid ""
-#| "  -C, --create                 include commands to create database in "
-#| "dump\n"
 msgid "  --sequence-data              include sequence data in dump\n"
 msgstr "  --sequence-data              выгружать данные последовательностей\n"
 
@@ -2971,14 +2934,12 @@ msgstr ""
 #. +> 18
 #: pg_dump.c:1331 pg_dumpall.c:743
 #, c-format
-#| msgid "  --no-tablespaces             do not dump tablespace assignments\n"
 msgid "  --statistics                 dump the statistics\n"
 msgstr "  --statistics                 выгружать статистику\n"
 
 #. +> 18
 #: pg_dump.c:1332 pg_dumpall.c:744
 #, c-format
-#| msgid "  -s, --schema-only            dump only the schema, no data\n"
 msgid ""
 "  --statistics-only            dump only the statistics, not schema or data\n"
 msgstr ""
@@ -3355,8 +3316,8 @@ msgid "unexpected tgtype value: %d"
 msgstr "неожиданное значение tgtype: %d"
 
 #. +> 18 17 16 15
-#: pg_dump.c:4786 pg_dump.c:5343 pg_dump.c:7972 pg_dump.c:13450 pg_dump.c:19643
-#: pg_dump.c:19645 pg_dump.c:20277
+#: pg_dump.c:4786 pg_dump.c:5343 pg_dump.c:7972 pg_dump.c:13450 pg_dump.c:19648
+#: pg_dump.c:19650 pg_dump.c:20282
 #, c-format
 msgid "could not parse %s array"
 msgstr "не удалось разобрать массив %s"
@@ -3392,19 +3353,19 @@ msgid "could not parse proconfig array"
 msgstr "не удалось разобрать массив proconfig"
 
 #. +> 14
-#: pg_dump.c:18639
+#: pg_dump.c:18644
 #, c-format
 msgid "could not parse extension configuration array"
 msgstr "не удалось разобрать массив конфигураций расширения"
 
 #. +> 14
-#: pg_dump.c:18641
+#: pg_dump.c:18646
 #, c-format
 msgid "could not parse extension condition array"
 msgstr "не удалось разобрать массив условий расширения"
 
 #. +> 14 13
-#: pg_dump.c:19268
+#: pg_dump.c:19273
 #, c-format
 msgid "could not parse reloptions array"
 msgstr "не удалось разобрать массив reloptions"
@@ -3537,7 +3498,6 @@ msgstr "неверная строка аргументов (%s) для триг�
 #. +> 18
 #: pg_dump.c:9553
 #, c-format
-#| msgid "finding table check constraints"
 msgid "finding invalid not-null constraints"
 msgstr "поиск некорректных ограничений NOT NULL"
 
@@ -3594,14 +3554,12 @@ msgstr ""
 #. +> 18
 #: pg_dump.c:11092
 #, c-format
-#| msgid "unexpected end of file"
 msgid "unexpected null attname"
 msgstr "неожиданный null в имени атрибута (attname)"
 
 #. +> 18
 #: pg_dump.c:11121
 #, c-format
-#| msgid "could not connect to database \"%s\""
 msgid "could not find index attname \"%s\""
 msgstr "не удалось получить для индекса имя атрибута (attname) \"%s\""
 
@@ -3927,12 +3885,11 @@ msgstr[2] ""
 #. +> 18
 #: pg_dump.c:18866
 #, c-format
-#| msgid "unrecognized sequence type: %s"
 msgid "unrecognized sequence type: %d"
 msgstr "нераспознанный тип последовательности: %d"
 
 #. +> 18 17 16 15 14 13
-#: pg_dump.c:19395
+#: pg_dump.c:19400
 #, c-format
 msgid ""
 "query to get rule \"%s\" for table \"%s\" failed: wrong number of rows "
@@ -3942,37 +3899,37 @@ msgstr ""
 "число строк"
 
 #. +> 18 17 16 15 14 13
-#: pg_dump.c:19548
+#: pg_dump.c:19553
 #, c-format
 msgid "could not find referenced extension %u"
 msgstr "не удалось найти упомянутое расширение %u"
 
 #. +> 18 17 16 15 14
-#: pg_dump.c:19647
+#: pg_dump.c:19652
 #, c-format
 msgid "mismatched number of configurations and conditions for extension"
 msgstr "конфигурации расширения не соответствуют условиям по количеству"
 
 #. +> 18 17 16 15 14 13
-#: pg_dump.c:19779
+#: pg_dump.c:19784
 #, c-format
 msgid "reading dependency data"
 msgstr "чтение информации о зависимостях"
 
 #. +> 18 17 16 15 14 13
-#: pg_dump.c:19865
+#: pg_dump.c:19870
 #, c-format
 msgid "no referencing object %u %u"
 msgstr "нет подчинённого объекта %u %u"
 
 #. +> 18 17 16 15 14 13
-#: pg_dump.c:19876
+#: pg_dump.c:19881
 #, c-format
 msgid "no referenced object %u %u"
 msgstr "нет вышестоящего объекта %u %u"
 
 #. +> 18 17
-#: pg_dump.c:20311 pg_dump.c:20349 pg_dumpall.c:1836 pg_restore.c:629
+#: pg_dump.c:20316 pg_dump.c:20354 pg_dumpall.c:1836 pg_restore.c:629
 #: pg_restore.c:675
 #, c-format
 msgid "%s filter for \"%s\" is not allowed"
@@ -4121,9 +4078,6 @@ msgstr ""
 #. +> 18
 #: pg_dumpall.c:693
 #, c-format
-#| msgid ""
-#| "%s extracts a PostgreSQL database cluster into an SQL script file.\n"
-#| "\n"
 msgid ""
 "%s exports a PostgreSQL database cluster as an SQL script.\n"
 "\n"
@@ -4344,7 +4298,6 @@ msgstr "параметры -d/--dbname и -f/--file исключают друг 
 #. +> 18 17 16 15 14 13
 #: pg_restore.c:361
 #, c-format
-#| msgid "options -d/--dbname and -f/--file cannot be used together"
 msgid "options -d/--dbname and --restrict-key cannot be used together"
 msgstr "параметры -d/--dbname и --restrict-key исключают друг друга"
 
@@ -4597,7 +4550,6 @@ msgstr ""
 #. +> 18
 #: pg_restore.c:559
 #, c-format
-#| msgid "  --no-comments                do not restore comments\n"
 msgid "  --no-comments                do not restore comment commands\n"
 msgstr "  --no-comments                не восстанавливать комментарии\n"
 
@@ -4610,7 +4562,6 @@ msgstr "  --no-comments                не восстанавливать ко�
 #. +> 18
 #: pg_restore.c:560
 #, c-format
-#| msgid "  --no-comments                do not restore comments\n"
 msgid "  --no-data                    do not restore data\n"
 msgstr "  --no-data                    не восстанавливать данные\n"
 
@@ -4628,7 +4579,6 @@ msgstr ""
 #. +> 18
 #: pg_restore.c:563
 #, c-format
-#| msgid "  --no-comments                do not restore comments\n"
 msgid "  --no-policies                do not restore row security policies\n"
 msgstr ""
 "  --no-policies                не восстанавливать политики защиты строк\n"
@@ -4642,7 +4592,6 @@ msgstr "  --no-publications            не восстанавливать пу�
 #. +> 18
 #: pg_restore.c:565
 #, c-format
-#| msgid "  --no-comments                do not restore comments\n"
 msgid "  --no-schema                  do not restore schema\n"
 msgstr "  --no-schema                  не восстанавливать схему\n"
 
@@ -4655,7 +4604,6 @@ msgstr "  --no-security-labels         не восстанавливать ме�
 #. +> 18
 #: pg_restore.c:567
 #, c-format
-#| msgid "  --no-subscriptions           do not restore subscriptions\n"
 msgid "  --no-statistics              do not restore statistics\n"
 msgstr "  --no-statistics              не восстанавливать статистику\n"
 
@@ -4693,14 +4641,12 @@ msgstr ""
 #. +> 18
 #: pg_restore.c:573
 #, c-format
-#| msgid "  -C, --create                 create the target database\n"
 msgid "  --statistics                 restore the statistics\n"
 msgstr "  --statistics                 восстанавливать статистику\n"
 
 #. +> 18
 #: pg_restore.c:574
 #, c-format
-#| msgid "  -s, --schema-only            restore only the schema, no data\n"
 msgid ""
 "  --statistics-only            restore only the statistics, not schema or "
 "data\n"
