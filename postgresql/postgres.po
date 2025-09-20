@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2025-09-20 12:15+0300\n"
-"PO-Revision-Date: 2025-09-20 07:01+0300\n"
+"PO-Revision-Date: 2025-09-20 12:20+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -37775,14 +37775,12 @@ msgstr "для выполнения CHECKPOINT нужно быть суперп�
 
 #. +> 18 17 16 15 14
 #: tcop/utility.c:1886
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "CREATE STATISTICS only supports tables, foreign tables and materialized "
 #| "views."
 msgid "CREATE STATISTICS only supports relation names in the FROM clause"
-msgstr ""
-"CREATE STATISTICS поддерживает только обычные таблицы, сторонние таблицы и "
-"материализованные представления."
+msgstr "CREATE STATISTICS принимает только имена отношений в предложении FROM"
 
 #. +> 18 17 16 15 14 13
 #: tsearch/dict_ispell.c:53 tsearch/dict_thesaurus.c:616
