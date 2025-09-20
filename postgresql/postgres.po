@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: postgres (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2025-09-13 23:15+0300\n"
+"POT-Creation-Date: 2025-09-20 12:15+0300\n"
 "PO-Revision-Date: 2025-09-20 07:01+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -102,7 +102,7 @@ msgstr "не записано"
 
 #. +> 18 17 16 15 14 13
 #: ../common/controldata_utils.c:93 ../common/controldata_utils.c:97
-#: commands/copyfrom.c:1879 commands/extension.c:3807 utils/adt/genfile.c:123
+#: commands/copyfrom.c:1879 commands/extension.c:3831 utils/adt/genfile.c:123
 #: utils/time/snapmgr.c:1448
 #, c-format
 msgid "could not open file \"%s\" for reading: %m"
@@ -115,7 +115,7 @@ msgstr "не удалось открыть файл \"%s\" для чтения: 
 #: access/transam/xlog.c:4370 access/transam/xlogrecovery.c:1246
 #: access/transam/xlogrecovery.c:1344 access/transam/xlogrecovery.c:1381
 #: access/transam/xlogrecovery.c:1448 backup/basebackup.c:2128
-#: backup/walsummary.c:283 commands/extension.c:3817 libpq/hba.c:769
+#: backup/walsummary.c:283 commands/extension.c:3841 libpq/hba.c:769
 #: replication/logical/origin.c:768 replication/logical/origin.c:804
 #: replication/logical/reorderbuffer.c:5366
 #: replication/logical/snapbuild.c:1951 replication/slot.c:2485
@@ -395,7 +395,7 @@ msgstr "не удалось синхронизировать с ФС файл \"
 #: access/transam/xlogarchive.c:111 access/transam/xlogarchive.c:235
 #: backup/basebackup.c:357 backup/basebackup.c:555 backup/basebackup.c:626
 #: backup/walsummary.c:247 backup/walsummary.c:254 commands/copyfrom.c:1889
-#: commands/copyto.c:979 commands/extension.c:3796 commands/tablespace.c:804
+#: commands/copyto.c:979 commands/extension.c:3820 commands/tablespace.c:804
 #: commands/tablespace.c:893 postmaster/pgarch.c:682
 #: replication/logical/snapbuild.c:1546 replication/logical/snapbuild.c:2073
 #: storage/file/fd.c:1969 storage/file/fd.c:2057 storage/file/fd.c:3626
@@ -2686,7 +2686,7 @@ msgstr ""
 
 #. +> 18 17 16 15 14 13
 #: access/sequence/sequence.c:75 access/table/table.c:145
-#: optimizer/util/plancat.c:144
+#: optimizer/util/plancat.c:145
 #, c-format
 msgid "cannot open relation \"%s\""
 msgstr "открыть отношение \"%s\" нельзя"
@@ -4333,14 +4333,14 @@ msgstr "\"max_wal_size\" должен быть минимум вдвое бол�
 
 #. +> 18 17 16 15 14 13
 #: access/transam/xlog.c:4726 catalog/namespace.c:4696
-#: commands/tablespace.c:1210 commands/user.c:2542 commands/variable.c:72
+#: commands/tablespace.c:1210 commands/user.c:2531 commands/variable.c:72
 #: replication/slot.c:2711 tcop/postgres.c:3626 utils/error/elog.c:2257
 #, c-format
 msgid "List syntax is invalid."
 msgstr "Ошибка синтаксиса в списке."
 
 #. +> 18 17 16 15 14 13
-#: access/transam/xlog.c:4772 commands/user.c:2558 commands/variable.c:173
+#: access/transam/xlog.c:4772 commands/user.c:2547 commands/variable.c:173
 #: tcop/postgres.c:3642 utils/error/elog.c:2283
 #, c-format
 msgid "Unrecognized key word: \"%s\"."
@@ -9716,13 +9716,13 @@ msgid "default conversion for %s to %s already exists"
 msgstr "преобразование по умолчанию из %s в %s уже существует"
 
 #. +> 18 17 16 15 14 13
-#: catalog/pg_depend.c:223 commands/extension.c:3665
+#: catalog/pg_depend.c:223 commands/extension.c:3689
 #, c-format
 msgid "%s is already a member of extension \"%s\""
 msgstr "%s уже относится к расширению \"%s\""
 
 #. +> 18 17 16 15 14 13
-#: catalog/pg_depend.c:230 catalog/pg_depend.c:281 commands/extension.c:3705
+#: catalog/pg_depend.c:230 catalog/pg_depend.c:281 commands/extension.c:3729
 #, c-format
 msgid "%s is not a member of extension \"%s\""
 msgstr "%s не относится к расширению \"%s\""
@@ -12300,7 +12300,7 @@ msgid "unrecognized locale provider: %s"
 msgstr "нераспознанный провайдер локали: %s"
 
 #. +> 18 17 16 15 14 13
-#: commands/dbcommands.c:958 commands/dbcommands.c:2453 commands/user.c:300
+#: commands/dbcommands.c:958 commands/dbcommands.c:2453 commands/user.c:299
 #: commands/user.c:739
 #, c-format
 msgid "invalid connection limit: %d"
@@ -13193,7 +13193,7 @@ msgstr ""
 "одновременно"
 
 #. +> 18 17 16 15 14 13
-#: commands/extension.c:177 commands/extension.c:3299
+#: commands/extension.c:177 commands/extension.c:3323
 #, c-format
 msgid "extension \"%s\" does not exist"
 msgstr "расширение \"%s\" не существует"
@@ -13418,7 +13418,7 @@ msgstr ""
 "\"%s\""
 
 #. +> 18 17 16 15 14 13
-#: commands/extension.c:1693 commands/extension.c:3357
+#: commands/extension.c:1693 commands/extension.c:3381
 #, c-format
 msgid "version to install must be specified"
 msgstr "нужно указать версию для установки"
@@ -13490,7 +13490,7 @@ msgid "cannot drop extension \"%s\" because it is being modified"
 msgstr "удалить расширение \"%s\" нельзя, так как это модифицируемый объект"
 
 #. +> 18 17 16 15 14 13
-#: commands/extension.c:2665
+#: commands/extension.c:2689
 #, c-format
 msgid "%s can only be called from an SQL script executed by CREATE EXTENSION"
 msgstr ""
@@ -13498,19 +13498,19 @@ msgstr ""
 "EXTENSION"
 
 #. +> 18 17 16 15 14 13
-#: commands/extension.c:2677
+#: commands/extension.c:2701
 #, c-format
 msgid "OID %u does not refer to a table"
 msgstr "OID %u не относится к таблице"
 
 #. +> 18 17 16 15 14 13
-#: commands/extension.c:2682
+#: commands/extension.c:2706
 #, c-format
 msgid "table \"%s\" is not a member of the extension being created"
 msgstr "таблица \"%s\" не относится к созданному расширению"
 
 #. +> 18 17 16 15 14 13
-#: commands/extension.c:3081
+#: commands/extension.c:3105
 #, c-format
 msgid ""
 "cannot move extension \"%s\" into schema \"%s\" because the extension "
@@ -13520,13 +13520,13 @@ msgstr ""
 "схему"
 
 #. +> 18 17 16 15 14 13
-#: commands/extension.c:3122 commands/extension.c:3216
+#: commands/extension.c:3146 commands/extension.c:3240
 #, c-format
 msgid "extension \"%s\" does not support SET SCHEMA"
 msgstr "расширение \"%s\" не поддерживает SET SCHEMA"
 
 #. +> 18 17 16
-#: commands/extension.c:3179
+#: commands/extension.c:3203
 #, c-format
 msgid ""
 "cannot SET SCHEMA of extension \"%s\" because other extensions prevent it"
@@ -13535,37 +13535,37 @@ msgstr ""
 "препятствуют другие расширения"
 
 #. +> 18 17 16
-#: commands/extension.c:3181
+#: commands/extension.c:3205
 #, c-format
 msgid "Extension \"%s\" requests no relocation of extension \"%s\"."
 msgstr "Расширение \"%s\" не допускает перемещения расширения \"%s\"."
 
 #. +> 18 17 16 15 14 13
-#: commands/extension.c:3218
+#: commands/extension.c:3242
 #, c-format
 msgid "%s is not in the extension's schema \"%s\""
 msgstr "объект %s не принадлежит схеме расширения \"%s\""
 
 #. +> 18 17 16 15 14 13
-#: commands/extension.c:3279
+#: commands/extension.c:3303
 #, c-format
 msgid "nested ALTER EXTENSION is not supported"
 msgstr "вложенные операторы ALTER EXTENSION не поддерживаются"
 
 #. +> 18 17 16 15 14 13
-#: commands/extension.c:3368
+#: commands/extension.c:3392
 #, c-format
 msgid "version \"%s\" of extension \"%s\" is already installed"
 msgstr "версия \"%s\" расширения \"%s\" уже установлена"
 
 #. +> 18 17 16 15 14
-#: commands/extension.c:3579
+#: commands/extension.c:3603
 #, c-format
 msgid "cannot add an object of this type to an extension"
 msgstr "добавить объект этого типа к расширению нельзя"
 
 #. +> 18 17 16 15 14 13
-#: commands/extension.c:3677
+#: commands/extension.c:3701
 #, c-format
 msgid ""
 "cannot add schema \"%s\" to extension \"%s\" because the schema contains the "
@@ -13575,19 +13575,19 @@ msgstr ""
 "расширение"
 
 #. +> 18 17 16 15 14
-#: commands/extension.c:3759 commands/typecmds.c:4041 utils/fmgr/funcapi.c:725
+#: commands/extension.c:3783 commands/typecmds.c:4041 utils/fmgr/funcapi.c:725
 #, c-format
 msgid "could not find multirange type for data type %s"
 msgstr "тип мультидиапазона для типа данных %s не найден"
 
 #. +> 18 17 16 15 14 13
-#: commands/extension.c:3801
+#: commands/extension.c:3825
 #, c-format
 msgid "file \"%s\" is too large"
 msgstr "файл \"%s\" слишком большой"
 
 #. +> 18
-#: commands/extension.c:3894 utils/fmgr/dfmgr.c:625
+#: commands/extension.c:3918 utils/fmgr/dfmgr.c:625
 #, c-format
 msgid "component in parameter \"%s\" is not an absolute path"
 msgstr "компонент в параметре \"%s\" не является абсолютным путём"
@@ -20266,7 +20266,7 @@ msgid "%s is not a base type"
 msgstr "%s — не базовый тип"
 
 #. +> 18 17 16 15 14 13
-#: commands/user.c:201
+#: commands/user.c:200
 #, c-format
 msgid "SYSID can no longer be specified"
 msgstr "SYSID уже не нужно указывать"
@@ -20299,53 +20299,53 @@ msgstr ""
 "суперпользователем"
 
 #. +> 18 17 16 15 14 13
-#: commands/user.c:319 commands/user.c:325 commands/user.c:331
-#: commands/user.c:337 commands/user.c:343
+#: commands/user.c:318 commands/user.c:324 commands/user.c:330
+#: commands/user.c:336 commands/user.c:342
 #, c-format
 msgid "permission denied to create role"
 msgstr "нет прав для создания роли"
 
 #. +> 18 17 16
-#: commands/user.c:320
+#: commands/user.c:319
 #, c-format
 msgid "Only roles with the %s attribute may create roles."
 msgstr "Создавать роли могут только роли с атрибутом %s."
 
 #. +> 18 17 16
-#: commands/user.c:326 commands/user.c:332 commands/user.c:338
-#: commands/user.c:344
+#: commands/user.c:325 commands/user.c:331 commands/user.c:337
+#: commands/user.c:343
 #, c-format
 msgid ""
 "Only roles with the %s attribute may create roles with the %s attribute."
 msgstr "Создавать роли с атрибутом %s могут только роли с атрибутом %s."
 
 #. +> 18 17 16 15 14 13
-#: commands/user.c:355 commands/user.c:1386 commands/user.c:1393
+#: commands/user.c:354 commands/user.c:1386 commands/user.c:1393
 #: utils/adt/acl.c:5707 utils/adt/acl.c:5713 gram.y:17473 gram.y:17519
 #, c-format
 msgid "role name \"%s\" is reserved"
 msgstr "имя роли \"%s\" зарезервировано"
 
 #. +> 18 17 16 15 14 13
-#: commands/user.c:357 commands/user.c:1388 commands/user.c:1395
+#: commands/user.c:356 commands/user.c:1388 commands/user.c:1395
 #, c-format
 msgid "Role names starting with \"pg_\" are reserved."
 msgstr "Имена ролей, начинающиеся с \"pg_\", зарезервированы."
 
 #. +> 18 17 16 15 14 13
-#: commands/user.c:378 commands/user.c:1410
+#: commands/user.c:377 commands/user.c:1410
 #, c-format
 msgid "role \"%s\" already exists"
 msgstr "роль \"%s\" уже существует"
 
 #. +> 18 17 16 15 14 13
-#: commands/user.c:440 commands/user.c:924
+#: commands/user.c:439 commands/user.c:924
 #, c-format
 msgid "empty string is not a valid password, clearing password"
 msgstr "пустая строка не является допустимым паролем; пароль сбрасывается"
 
 #. +> 18 17 16 15 14 13
-#: commands/user.c:469
+#: commands/user.c:468
 #, c-format
 msgid "pg_authid OID value not set when in binary upgrade mode"
 msgstr "значение OID в pg_authid не задано в режиме двоичного обновления"
@@ -20688,39 +20688,39 @@ msgid ""
 msgstr "роль \"%s\" уже назначена членом роли \"%s\" ролью \"%s\""
 
 #. +> 18 17 16
-#: commands/user.c:2036
+#: commands/user.c:2025
 #, c-format
 msgid ""
 "role \"%s\" has not been granted membership in role \"%s\" by role \"%s\""
 msgstr "роль \"%s\" не была назначена членом роли \"%s\" ролью \"%s\""
 
 #. +> 18 17 16 15 14
-#: commands/user.c:2137
+#: commands/user.c:2126
 #, c-format
 msgid "role \"%s\" cannot have explicit members"
 msgstr "роль \"%s\" не может содержать явных членов"
 
 #. +> 18 17 16
-#: commands/user.c:2148 commands/user.c:2171
+#: commands/user.c:2137 commands/user.c:2160
 #, c-format
 msgid "permission denied to grant role \"%s\""
 msgstr "нет прав для назначения членства в роли \"%s\""
 
 #. +> 18 17 16
-#: commands/user.c:2150
+#: commands/user.c:2139
 #, c-format
 msgid "Only roles with the %s attribute may grant roles with the %s attribute."
 msgstr ""
 "Только роли с атрибутом %s могут назначать членов в ролях с атрибутов %s."
 
 #. +> 18 17 16
-#: commands/user.c:2155 commands/user.c:2178
+#: commands/user.c:2144 commands/user.c:2167
 #, c-format
 msgid "permission denied to revoke role \"%s\""
 msgstr "нет прав для лишения членства в роли \"%s\""
 
 #. +> 18 17 16
-#: commands/user.c:2157
+#: commands/user.c:2146
 #, c-format
 msgid ""
 "Only roles with the %s attribute may revoke roles with the %s attribute."
@@ -20728,27 +20728,27 @@ msgstr ""
 "Только роли с атрибутом %s могут лишать членства в ролях с атрибутом %s."
 
 #. +> 18 17 16
-#: commands/user.c:2173
+#: commands/user.c:2162
 #, c-format
 msgid "Only roles with the %s option on role \"%s\" may grant this role."
 msgstr ""
 "Только роли с привилегией %s для роли \"%s\" могут назначать членов в ней."
 
 #. +> 18 17 16
-#: commands/user.c:2180
+#: commands/user.c:2169
 #, c-format
 msgid "Only roles with the %s option on role \"%s\" may revoke this role."
 msgstr ""
 "Только роли с привилегией %s для роли \"%s\" могут лишать членства в ней."
 
 #. +> 18 17 16
-#: commands/user.c:2260 commands/user.c:2269
+#: commands/user.c:2249 commands/user.c:2258
 #, c-format
 msgid "permission denied to grant privileges as role \"%s\""
 msgstr "нет полномочий для назначения прав доступа роли \"%s\""
 
 #. +> 18 17 16
-#: commands/user.c:2262
+#: commands/user.c:2251
 #, c-format
 msgid ""
 "Only roles with privileges of role \"%s\" may grant privileges as this role."
@@ -20756,7 +20756,7 @@ msgstr ""
 "Только роли с правами роли \"%s\" могут назначать права от имени этой роли."
 
 #. +> 18 17 16
-#: commands/user.c:2271
+#: commands/user.c:2260
 #, c-format
 msgid "The grantor must have the %s option on role \"%s\"."
 msgstr "Праводатель должен иметь привилегию %s для роли \"%s\"."
@@ -20768,13 +20768,13 @@ msgid "must have admin option on role \"%s\""
 msgstr "требуется право admin для роли \"%s\""
 
 #. +> 18 17 16
-#: commands/user.c:2279
+#: commands/user.c:2268
 #, c-format
 msgid "permission denied to revoke privileges granted by role \"%s\""
 msgstr "нет полномочий для отзыва прав доступа, назначенных ролью \"%s\""
 
 #. +> 18 17 16
-#: commands/user.c:2281
+#: commands/user.c:2270
 #, c-format
 msgid ""
 "Only roles with privileges of role \"%s\" may revoke privileges granted by "
@@ -20783,13 +20783,13 @@ msgstr ""
 "Только роли с правами роли \"%s\" могут отзывать права от имени этой роли."
 
 #. +> 18 17 16 15 14 13
-#: commands/user.c:2504 utils/adt/acl.c:1342
+#: commands/user.c:2493 utils/adt/acl.c:1342
 #, c-format
 msgid "dependent privileges exist"
 msgstr "существуют зависимые права"
 
 #. +> 18 17 16 15 14 13
-#: commands/user.c:2505 utils/adt/acl.c:1343
+#: commands/user.c:2494 utils/adt/acl.c:1343
 #, c-format
 msgid "Use CASCADE to revoke them too."
 msgstr "Используйте CASCADE, чтобы отозвать и их."
@@ -21492,7 +21492,7 @@ msgstr ""
 "%s."
 
 #. +> 18 17 16 15 14 13
-#: executor/execExpr.c:1157 parser/parse_agg.c:843
+#: executor/execExpr.c:1157 parser/parse_agg.c:869
 #, c-format
 msgid "window function calls cannot be nested"
 msgstr "вложенные вызовы оконных функций недопустимы"
@@ -22666,7 +22666,7 @@ msgstr "сопоставление пользователя для \"%s\" не �
 
 #. +> 18 17 16 15 14 13
 #: foreign/foreign.c:337 optimizer/plan/createplan.c:7293
-#: optimizer/util/plancat.c:538
+#: optimizer/util/plancat.c:539
 #, c-format
 msgid "access to non-system foreign table is restricted"
 msgstr "доступ к несистемным сторонним таблицам ограничен"
@@ -25829,13 +25829,13 @@ msgstr ""
 "сортировки"
 
 #. +> 18 17 16 15 14 13
-#: optimizer/util/clauses.c:4966
+#: optimizer/util/clauses.c:4968
 #, c-format
 msgid "SQL function \"%s\" during inlining"
 msgstr "внедрённая в код SQL-функция \"%s\""
 
 #. +> 18 17 16 15 14 13
-#: optimizer/util/plancat.c:153
+#: optimizer/util/plancat.c:154
 #, c-format
 msgid "cannot access temporary or unlogged relations during recovery"
 msgstr ""
@@ -25843,7 +25843,7 @@ msgstr ""
 "восстановления нельзя"
 
 #. +> 18 17 16 15 14 13
-#: optimizer/util/plancat.c:770
+#: optimizer/util/plancat.c:771
 #, c-format
 msgid "whole row unique index inference specifications are not supported"
 msgstr ""
@@ -25851,19 +25851,19 @@ msgstr ""
 "поддерживаются"
 
 #. +> 18 17 16 15 14 13
-#: optimizer/util/plancat.c:787
+#: optimizer/util/plancat.c:788
 #, c-format
 msgid "constraint in ON CONFLICT clause has no associated index"
 msgstr "ограничению в ON CONFLICT не соответствует индекс"
 
 #. +> 18 17 16 15 14 13
-#: optimizer/util/plancat.c:837
+#: optimizer/util/plancat.c:838
 #, c-format
 msgid "ON CONFLICT DO UPDATE not supported with exclusion constraints"
 msgstr "ON CONFLICT DO UPDATE не поддерживается с ограничениями-исключениями"
 
 #. +> 18 17 16 15 14 13
-#: optimizer/util/plancat.c:954
+#: optimizer/util/plancat.c:955
 #, c-format
 msgid ""
 "there is no unique or exclusion constraint matching the ON CONFLICT "
@@ -26462,116 +26462,116 @@ msgid "aggregate function calls cannot contain window function calls"
 msgstr "вызовы агрегатных функций не могут включать вызовы оконных функции"
 
 #. +> 18 17 16 15 14 13
-#: parser/parse_agg.c:869
+#: parser/parse_agg.c:895
 msgid "window functions are not allowed in JOIN conditions"
 msgstr "оконные функции нельзя применять в условиях JOIN"
 
 #. +> 18 17 16 15 14 13
-#: parser/parse_agg.c:876
+#: parser/parse_agg.c:902
 msgid "window functions are not allowed in functions in FROM"
 msgstr "оконные функции нельзя применять в функциях во FROM"
 
 #. +> 18 17 16 15 14 13
-#: parser/parse_agg.c:882
+#: parser/parse_agg.c:908
 msgid "window functions are not allowed in policy expressions"
 msgstr "оконные функции нельзя применять в выражениях политик"
 
 #. +> 18 17 16 15 14 13
-#: parser/parse_agg.c:895
+#: parser/parse_agg.c:921
 msgid "window functions are not allowed in window definitions"
 msgstr "оконные функции нельзя применять в определении окна"
 
 #. +> 18 17 16 15
-#: parser/parse_agg.c:906
+#: parser/parse_agg.c:932
 msgid "window functions are not allowed in MERGE WHEN conditions"
 msgstr "оконные функции нельзя применять в условиях MERGE WHEN"
 
 #. +> 18 17 16 15 14 13
-#: parser/parse_agg.c:931
+#: parser/parse_agg.c:957
 msgid "window functions are not allowed in check constraints"
 msgstr "оконные функции нельзя применять в ограничениях-проверках"
 
 #. +> 18 17 16 15 14 13
-#: parser/parse_agg.c:935
+#: parser/parse_agg.c:961
 msgid "window functions are not allowed in DEFAULT expressions"
 msgstr "оконные функции нельзя применять в выражениях DEFAULT"
 
 #. +> 18 17 16 15 14 13
-#: parser/parse_agg.c:938
+#: parser/parse_agg.c:964
 msgid "window functions are not allowed in index expressions"
 msgstr "оконные функции нельзя применять в выражениях индексов"
 
 #. +> 18 17 16 15 14
-#: parser/parse_agg.c:941
+#: parser/parse_agg.c:967
 msgid "window functions are not allowed in statistics expressions"
 msgstr "оконные функции нельзя применять в выражениях статистики"
 
 #. +> 18 17 16 15 14 13
-#: parser/parse_agg.c:944
+#: parser/parse_agg.c:970
 msgid "window functions are not allowed in index predicates"
 msgstr "оконные функции нельзя применять в предикатах индексов"
 
 #. +> 18 17 16 15 14 13
-#: parser/parse_agg.c:947
+#: parser/parse_agg.c:973
 msgid "window functions are not allowed in transform expressions"
 msgstr "оконные функции нельзя применять в выражениях преобразований"
 
 #. +> 18 17 16 15 14 13
-#: parser/parse_agg.c:950
+#: parser/parse_agg.c:976
 msgid "window functions are not allowed in EXECUTE parameters"
 msgstr "оконные функции нельзя применять в параметрах EXECUTE"
 
 #. +> 18 17 16 15 14 13
-#: parser/parse_agg.c:953
+#: parser/parse_agg.c:979
 msgid "window functions are not allowed in trigger WHEN conditions"
 msgstr "оконные функции нельзя применять в условиях WHEN для триггеров"
 
 #. +> 18 17 16 15 14 13
-#: parser/parse_agg.c:956
+#: parser/parse_agg.c:982
 msgid "window functions are not allowed in partition bound"
 msgstr "оконные функции нельзя применять в выражении границы секции"
 
 #. +> 18 17 16 15 14 13
-#: parser/parse_agg.c:959
+#: parser/parse_agg.c:985
 msgid "window functions are not allowed in partition key expressions"
 msgstr "оконные функции нельзя применять в выражениях ключа секционирования"
 
 #. +> 18 17 16 15 14 13
-#: parser/parse_agg.c:962
+#: parser/parse_agg.c:988
 msgid "window functions are not allowed in CALL arguments"
 msgstr "оконные функции нельзя применять в аргументах CALL"
 
 #. +> 18 17 16 15 14 13
-#: parser/parse_agg.c:965
+#: parser/parse_agg.c:991
 msgid "window functions are not allowed in COPY FROM WHERE conditions"
 msgstr "оконные функции нельзя применять в условиях COPY FROM WHERE"
 
 #. +> 18 17 16 15 14 13
-#: parser/parse_agg.c:968
+#: parser/parse_agg.c:994
 msgid "window functions are not allowed in column generation expressions"
 msgstr "оконные функции нельзя применять в выражениях генерируемых столбцов"
 
 #. translator: %s is name of a SQL construct, eg GROUP BY
 #. +> 18 17 16 15 14 13
-#: parser/parse_agg.c:991 parser/parse_clause.c:1971
+#: parser/parse_agg.c:1017 parser/parse_clause.c:1971
 #, c-format
 msgid "window functions are not allowed in %s"
 msgstr "оконные функции нельзя применять в конструкции %s"
 
 #. +> 18 17 16 15 14 13
-#: parser/parse_agg.c:1025 parser/parse_clause.c:2804
+#: parser/parse_agg.c:1051 parser/parse_clause.c:2804
 #, c-format
 msgid "window \"%s\" does not exist"
 msgstr "окно \"%s\" не существует"
 
 #. +> 18 17 16 15 14 13
-#: parser/parse_agg.c:1115
+#: parser/parse_agg.c:1141
 #, c-format
 msgid "too many grouping sets present (maximum 4096)"
 msgstr "слишком много наборов группирования (при максимуме 4096)"
 
 #. +> 18 17 16 15 14 13
-#: parser/parse_agg.c:1276
+#: parser/parse_agg.c:1302
 #, c-format
 msgid ""
 "aggregate functions are not allowed in a recursive query's recursive term"
@@ -26579,7 +26579,7 @@ msgstr ""
 "в рекурсивной части рекурсивного запроса агрегатные функции недопустимы"
 
 #. +> 18 17 16 15 14 13
-#: parser/parse_agg.c:1499
+#: parser/parse_agg.c:1525
 #, c-format
 msgid ""
 "column \"%s.%s\" must appear in the GROUP BY clause or be used in an "
@@ -26589,7 +26589,7 @@ msgstr ""
 "использоваться в агрегатной функции"
 
 #. +> 18 17 16 15 14 13
-#: parser/parse_agg.c:1502
+#: parser/parse_agg.c:1528
 #, c-format
 msgid ""
 "Direct arguments of an ordered-set aggregate must use only grouped columns."
@@ -26598,14 +26598,14 @@ msgstr ""
 "группируемые столбцы."
 
 #. +> 18 17 16 15 14 13
-#: parser/parse_agg.c:1507
+#: parser/parse_agg.c:1533
 #, c-format
 msgid "subquery uses ungrouped column \"%s.%s\" from outer query"
 msgstr ""
 "подзапрос использует негруппированный столбец \"%s.%s\" из внешнего запроса"
 
 #. +> 18 17 16 15 14 13
-#: parser/parse_agg.c:1672
+#: parser/parse_agg.c:1698
 #, c-format
 msgid ""
 "arguments to GROUPING must be grouping expressions of the associated query "
@@ -37775,16 +37775,11 @@ msgstr "для выполнения CHECKPOINT нужно быть суперп�
 
 #. +> 18 17 16 15 14
 #: tcop/utility.c:1886
-#, c-format
-msgid "cannot create statistics on the specified relation"
-msgstr "создать статистику для указанного отношения нельзя"
-
-#. +> 18 17 16 15 14
-#: tcop/utility.c:1887
-#, c-format
-msgid ""
-"CREATE STATISTICS only supports tables, foreign tables and materialized "
-"views."
+#, fuzzy, c-format
+#| msgid ""
+#| "CREATE STATISTICS only supports tables, foreign tables and materialized "
+#| "views."
+msgid "CREATE STATISTICS only supports relation names in the FROM clause"
 msgstr ""
 "CREATE STATISTICS поддерживает только обычные таблицы, сторонние таблицы и "
 "материализованные представления."
@@ -38408,7 +38403,6 @@ msgstr "Не удалось выделить память для объекта 
 #. +> 17 16 15
 #: utils/activity/pgstat_shmem.c:509
 #, c-format
-#| msgid "Failed while allocating a WAL reading processor."
 msgid "Failed while allocating entry %d/%u/%u."
 msgstr "Не удалось выделить память для объекта %d/%u/%u."
 
@@ -41048,13 +41042,13 @@ msgid "LIKE pattern must not end with escape character"
 msgstr "шаблон LIKE не должен заканчиваться защитным символом"
 
 #. +> 18 17 16 15 14 13
-#: utils/adt/like_match.c:437 utils/adt/regexp.c:803
+#: utils/adt/like_match.c:437 utils/adt/regexp.c:801
 #, c-format
 msgid "invalid escape string"
 msgstr "неверный защитный символ"
 
 #. +> 18 17 16 15 14 13
-#: utils/adt/like_match.c:438 utils/adt/regexp.c:804
+#: utils/adt/like_match.c:438 utils/adt/regexp.c:802
 #, c-format
 msgid "Escape string must be empty or one character."
 msgstr "Защитный символ должен быть пустым или состоять из одного байта."
@@ -41987,7 +41981,7 @@ msgid "Junk after right parenthesis or bracket."
 msgstr "Мусор после правой скобки."
 
 #. +> 18 17 16 15 14 13
-#: utils/adt/regexp.c:304 utils/adt/regexp.c:2022 utils/adt/varlena.c:4475
+#: utils/adt/regexp.c:304 utils/adt/regexp.c:2065 utils/adt/varlena.c:4475
 #, c-format
 msgid "regular expression failed: %s"
 msgstr "ошибка в регулярном выражении: %s"
@@ -42015,16 +42009,16 @@ msgstr ""
 "четвёртый аргумент к целочисленному типу."
 
 #. +> 18 17 16 15 14 13
-#: utils/adt/regexp.c:716 utils/adt/regexp.c:725 utils/adt/regexp.c:1108
-#: utils/adt/regexp.c:1172 utils/adt/regexp.c:1181 utils/adt/regexp.c:1190
-#: utils/adt/regexp.c:1199 utils/adt/regexp.c:1879 utils/adt/regexp.c:1888
-#: utils/adt/regexp.c:1897 utils/misc/guc.c:6829 utils/misc/guc.c:6863
+#: utils/adt/regexp.c:716 utils/adt/regexp.c:725 utils/adt/regexp.c:1151
+#: utils/adt/regexp.c:1215 utils/adt/regexp.c:1224 utils/adt/regexp.c:1233
+#: utils/adt/regexp.c:1242 utils/adt/regexp.c:1922 utils/adt/regexp.c:1931
+#: utils/adt/regexp.c:1940 utils/misc/guc.c:6829 utils/misc/guc.c:6863
 #, c-format
 msgid "invalid value for parameter \"%s\": %d"
 msgstr "неверное значение параметра \"%s\": %d"
 
 #. +> 18 17 16 15 14 13
-#: utils/adt/regexp.c:939
+#: utils/adt/regexp.c:948
 #, c-format
 msgid ""
 "SQL regular expression may not contain more than two escape-double-quote "
@@ -42035,21 +42029,21 @@ msgstr ""
 
 #. translator: %s is a SQL function name
 #. +> 18 17 16 15 14 13
-#: utils/adt/regexp.c:1119 utils/adt/regexp.c:1210 utils/adt/regexp.c:1297
-#: utils/adt/regexp.c:1336 utils/adt/regexp.c:1724 utils/adt/regexp.c:1779
-#: utils/adt/regexp.c:1908
+#: utils/adt/regexp.c:1162 utils/adt/regexp.c:1253 utils/adt/regexp.c:1340
+#: utils/adt/regexp.c:1379 utils/adt/regexp.c:1767 utils/adt/regexp.c:1822
+#: utils/adt/regexp.c:1951
 #, c-format
 msgid "%s does not support the \"global\" option"
 msgstr "%s не поддерживает режим \"global\""
 
 #. +> 18 17 16 15 14 13
-#: utils/adt/regexp.c:1338
+#: utils/adt/regexp.c:1381
 #, c-format
 msgid "Use the regexp_matches function instead."
 msgstr "Вместо неё используйте функцию regexp_matches."
 
 #. +> 18 17 16 15 14 13
-#: utils/adt/regexp.c:1526
+#: utils/adt/regexp.c:1569
 #, c-format
 msgid "too many regular expression matches"
 msgstr "слишком много совпадений для регулярного выражения"
@@ -50490,6 +50484,10 @@ msgstr "ошибка в %s: %m"
 msgid "could not fsync file \"%s\" but retrying: %m"
 msgstr ""
 "не удалось синхронизировать с ФС файл \"%s\", последует повторная попытка: %m"
+
+#, c-format
+#~ msgid "cannot create statistics on the specified relation"
+#~ msgstr "создать статистику для указанного отношения нельзя"
 
 #, c-format
 #~ msgid "cannot create restricted tokens on this platform"
