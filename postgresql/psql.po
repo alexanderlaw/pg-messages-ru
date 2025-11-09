@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: psql (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2025-11-09 06:30+0200\n"
-"PO-Revision-Date: 2025-09-06 14:43+0300\n"
+"PO-Revision-Date: 2025-11-09 08:23+0200\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -5855,7 +5855,7 @@ msgstr ""
 
 #. +> 18 17 16 15 14 13
 #: help.c:483
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "  fieldsep\n"
 #| "    field separator for unaligned output (default \"%s\")\n"
@@ -5863,8 +5863,8 @@ msgid ""
 "  csv_fieldsep\n"
 "    field separator for CSV output format (default \"%c\")\n"
 msgstr ""
-"  fieldsep\n"
-"    разделитель полей для неформатированного вывода (по умолчанию \"%s\")\n"
+"  csv_fieldsep\n"
+"    разделитель полей для формата вывода CSV (по умолчанию \"%c\")\n"
 
 #. +> 18 17 16 15 14 13
 #: help.c:486

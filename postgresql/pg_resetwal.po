@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: pg_resetxlog (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2025-09-13 23:15+0300\n"
-"PO-Revision-Date: 2025-09-13 17:20+0300\n"
+"PO-Revision-Date: 2025-11-09 08:46+0200\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -769,7 +769,7 @@ msgstr "знаковое"
 #. +> 18
 #: pg_resetwal.c:805
 msgid "unsigned"
-msgstr "unsigned"
+msgstr "беззнаковое"
 
 #. +> 18 17 16 15 14 13
 #: pg_resetwal.c:818

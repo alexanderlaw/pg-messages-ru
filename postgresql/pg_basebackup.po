@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: pg_basebackup (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2025-11-09 06:30+0200\n"
-"PO-Revision-Date: 2025-09-13 18:09+0300\n"
+"PO-Revision-Date: 2025-11-09 08:45+0200\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -455,7 +455,7 @@ msgstr "не удалось установить для zstd уровень сж
 #: ../../fe_utils/astreamer_zstd.c:109
 #, c-format
 msgid "could not set compression worker count to %d: %s"
-msgstr "не удалось установить для zstd число потоков %d: %s"
+msgstr "не удалось установить число потоков сжатия %d: %s"
 
 #. +> 18 17 16
 #: ../../fe_utils/astreamer_zstd.c:120
@@ -1823,8 +1823,8 @@ msgstr ""
 msgid ""
 "  -n, --dry-run                   dry run, just show what would be done\n"
 msgstr ""
-"  -n, --dry-run                   показать, какие действия будут выполнены,\n"
-"                                  но не выполнять их\n"
+"  -n, --dry-run                   холостой запуск — только показать, какие\n"
+"                                  действия будут выполнены\n"
 
 #. +> 18 17
 #: pg_createsubscriber.c:254
@@ -2056,17 +2056,19 @@ msgstr "изменение идентификатора системы на по
 
 #. +> 18
 #: pg_createsubscriber.c:683
-#, fuzzy, c-format
+#, c-format
 #| msgid "system identifier is %<PRIu64> on subscriber"
 msgid "dry-run: would set system identifier to %<PRIu64> on subscriber"
-msgstr "идентификатор системы на подписчике: %<PRIu64>"
+msgstr ""
+"холостой запуск: на подписчике будет установлен идентификатор системы "
+"%<PRIu64>"
 
 #. +> 18
 #: pg_createsubscriber.c:693
-#, fuzzy, c-format
+#, c-format
 #| msgid "running pg_resetwal on the subscriber"
 msgid "dry-run: would run pg_resetwal on the subscriber"
-msgstr "запуск pg_resetwal на подписчике"
+msgstr "холостой запуск: будет выполнен сброс WAL (pg_resetwal) на подписчике"
 
 #. +> 18 17
 #: pg_createsubscriber.c:695
@@ -2076,17 +2078,17 @@ msgstr "запуск pg_resetwal на подписчике"
 
 #. +> 18 17
 #: pg_createsubscriber.c:707
-#, fuzzy, c-format
+#, c-format
 #| msgid "running pg_resetwal on the subscriber"
 msgid "successfully reset WAL on the subscriber"
-msgstr "запуск pg_resetwal на подписчике"
+msgstr "WAL на подписчике сброшен успешно"
 
 #. +> 18 17
 #: pg_createsubscriber.c:709
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not obtain subscriber settings: %s"
 msgid "could not reset WAL on subscriber: %s"
-msgstr "получить параметры подписчика не удалось: %s"
+msgstr "не удалось сбросить WAL на подписчике: %s"
 
 #. +> 18 17
 #: pg_createsubscriber.c:733
@@ -2259,10 +2261,10 @@ msgstr "подписчику требуется рабочих процессо�
 
 #. +> 18
 #: pg_createsubscriber.c:1135
-#, fuzzy, c-format
+#, c-format
 #| msgid "dropping subscription \"%s\" in database \"%s\""
 msgid "dry-run: would drop subscription \"%s\" in database \"%s\""
-msgstr "удаление подписки \"%s\" в базе \"%s\""
+msgstr "холостой запуск: будет удалена подписка \"%s\" в базе \"%s\""
 
 #. +> 18 17
 #: pg_createsubscriber.c:1139
@@ -2312,19 +2314,21 @@ msgstr "удалить переносимый слот репликации не
 
 #. +> 18
 #: pg_createsubscriber.c:1389
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not create replication slot \"%s\" in database \"%s\": %s"
 msgid ""
 "dry-run: would create the replication slot \"%s\" in database \"%s\" on "
 "publisher"
-msgstr "создать слот репликации \"%s\" в базе \"%s\" не удалось: %s"
+msgstr ""
+"холостой запуск: будет создан слот репликации \"%s\" в базе \"%s\" на "
+"стороне публикации"
 
 #. +> 18
 #: pg_createsubscriber.c:1392
-#, fuzzy, c-format
+#, c-format
 #| msgid "creating the replication slot \"%s\" in database \"%s\""
 msgid "creating the replication slot \"%s\" in database \"%s\" on publisher"
-msgstr "создание слота репликации \"%s\" в базе \"%s\""
+msgstr "создание слота репликации \"%s\" в базе \"%s\" на стороне публикации"
 
 #. +> 18 17
 #: pg_createsubscriber.c:1411
@@ -2334,10 +2338,10 @@ msgstr "создать слот репликации \"%s\" в базе \"%s\" �
 
 #. +> 18
 #: pg_createsubscriber.c:1442
-#, fuzzy, c-format
+#, c-format
 #| msgid "dropping the replication slot \"%s\" in database \"%s\""
 msgid "dry-run: would drop the replication slot \"%s\" in database \"%s\""
-msgstr "удаление слота репликации \"%s\" в базе \"%s\""
+msgstr "холостой запуск: будет удалён слот репликации \"%s\" в базе \"%s\""
 
 #. +> 18 17
 #: pg_createsubscriber.c:1445
@@ -2462,10 +2466,10 @@ msgstr "Чтобы продолжить, её можно переименова�
 
 #. +> 18
 #: pg_createsubscriber.c:1668
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not create publication \"%s\" in database \"%s\": %s"
 msgid "dry-run: would create publication \"%s\" in database \"%s\""
-msgstr "создать публикацию \"%s\" в базе \"%s\" не удалось: %s"
+msgstr "холостой запуск: будет создана публикация \"%s\" в базе \"%s\""
 
 #. +> 18 17
 #: pg_createsubscriber.c:1671
@@ -2481,10 +2485,10 @@ msgstr "создать публикацию \"%s\" в базе \"%s\" не уд�
 
 #. +> 18
 #: pg_createsubscriber.c:1715
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not drop publication \"%s\" in database \"%s\": %s"
 msgid "dry-run: would drop publication \"%s\" in database \"%s\""
-msgstr "удалить публикацию \"%s\" в базе \"%s\" не получилось: %s"
+msgstr "холостой запуск: будет удалена публикация \"%s\" в базе \"%s\""
 
 #. +> 18 17
 #: pg_createsubscriber.c:1718
@@ -2506,10 +2510,10 @@ msgstr "удаление всех существующих публикаций 
 
 #. +> 18
 #: pg_createsubscriber.c:1828
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not create subscription \"%s\" in database \"%s\": %s"
 msgid "dry-run: would create subscription \"%s\" in database \"%s\""
-msgstr "создать подписку \"%s\" в базе \"%s\" не удалось: %s"
+msgstr "холостой запуск: будет удалена подписка \"%s\" в базе \"%s\""
 
 #. +> 18 17
 #: pg_createsubscriber.c:1831
@@ -2537,14 +2541,16 @@ msgstr "получить OID подписки не удалось; получе�
 
 #. +> 18
 #: pg_createsubscriber.c:1930
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "setting the replication progress (node name \"%s\", LSN %s) in database "
 #| "\"%s\""
 msgid ""
 "dry-run: would set the replication progress (node name \"%s\", LSN %s) in "
 "database \"%s\""
-msgstr "отражение состояния репликации (имя узла \"%s\", LSN %s) в базе \"%s\""
+msgstr ""
+"холостой запуск: будет установлено состояние репликации (имя узла \"%s\", "
+"LSN %s) в базе \"%s\""
 
 #. +> 18 17
 #: pg_createsubscriber.c:1933
@@ -2562,10 +2568,10 @@ msgstr "не удалось передать состояние репликац
 
 #. +> 18
 #: pg_createsubscriber.c:1980
-#, fuzzy, c-format
+#, c-format
 #| msgid "enabling subscription \"%s\" in database \"%s\""
 msgid "dry-run: would enable subscription \"%s\" in database \"%s\""
-msgstr "включение подписки \"%s\" в базе \"%s\""
+msgstr "холостой запуск: будет включена подписка \"%s\" в базе \"%s\""
 
 #. +> 18 17
 #: pg_createsubscriber.c:1983
