@@ -5,13 +5,13 @@
 # Oleg Bartunov <oleg@sai.msu.su>, 2004.
 # Sergey Burladyan <eshkinkot@gmail.com>, 2012.
 # Dmitriy Olshevskiy <olshevskiy87@bk.ru>, 2014.
-# SPDX-FileCopyrightText: 2012-2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025 Alexander Lakhin <exclusion@gmail.com>
+# SPDX-FileCopyrightText: 2012-2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026 Alexander Lakhin <exclusion@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: pg_dump (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2026-02-07 08:59+0200\n"
-"PO-Revision-Date: 2025-09-04 22:18+0300\n"
+"PO-Revision-Date: 2026-02-07 09:21+0200\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -2201,12 +2201,10 @@ msgstr "параметры -c/--clean и -a/--data-only исключают др�
 
 #. +> 18
 #: pg_dump.c:865
-#, fuzzy, c-format
+#, c-format
 #| msgid "option --include-foreign-data is not supported with parallel backup"
 msgid "option %s is not supported with parallel backup"
-msgstr ""
-"параметр --include-foreign-data не поддерживается при копировании в "
-"параллельном режиме"
+msgstr "параметр %s не поддерживается при копировании в параллельном режиме"
 
 #. +> 17 16 15 14 13
 #: pg_dump.c:740
@@ -2218,10 +2216,10 @@ msgstr ""
 
 #. +> 18
 #: pg_dump.c:873 pg_dumpall.c:427 pg_restore.c:460
-#, fuzzy, c-format
+#, c-format
 #| msgid "option --if-exists requires option -c/--clean"
 msgid "option %s requires option %s"
-msgstr "параметр --if-exists требует указания -c/--clean"
+msgstr "параметр %s требует указания %s"
 
 #. +> 17 16 15 14 13
 #: pg_dump.c:746 pg_dumpall.c:417 pg_restore.c:396
@@ -2233,7 +2231,7 @@ msgstr "параметр --if-exists требует указания -c/--clean"
 #: pg_dump.c:894
 #, c-format
 msgid "option %s requires option %s, %s, or %s"
-msgstr ""
+msgstr "параметр %s требует указания %s, %s или %s"
 
 #. +> 18 17 16 15 14 13
 #: pg_dump.c:912 pg_dumpall.c:504 pg_restore.c:375
@@ -2249,10 +2247,10 @@ msgstr "неверный ограничительный ключ"
 
 #. +> 18
 #: pg_dump.c:917
-#, fuzzy, c-format
+#, c-format
 #| msgid "option --restrict-key can only be used with --format=plain"
 msgid "option %s can only be used with %s"
-msgstr "параметр --restrict-key можно использовать только с --format=plain"
+msgstr "параметр %s можно использовать только с %s"
 
 #. +> 17 16 15 14 13
 #: pg_dump.c:774
@@ -3894,6 +3892,8 @@ msgid ""
 "failed to get data for sequence \"%s\"; user may lack SELECT privilege on "
 "the sequence or the sequence may have been concurrently dropped"
 msgstr ""
+"не удалось получить данные последовательности \"%s\"; возможно, пользователь "
+"не имеет права SELECT для неё или она была удалена"
 
 #. +> 18 17 16 15 14 13
 #: pg_dump.c:19430
@@ -4054,10 +4054,10 @@ msgstr ""
 # TO REVEIW
 #. +> 18
 #: pg_dumpall.c:402
-#, fuzzy, c-format
+#, c-format
 #| msgid "options %s and %s cannot be used together"
 msgid "option %s cannot be used together with %s, %s, or %s"
-msgstr "параметры %s и %s исключают друг друга"
+msgstr "параметр %s нельзя использовать вместе с %s, %s или %s"
 
 #. +> 17 16 15 14 13
 #: pg_dumpall.c:404

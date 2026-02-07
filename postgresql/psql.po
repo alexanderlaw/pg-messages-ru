@@ -4,14 +4,14 @@
 # Serguei A. Mokhov <mokhov@cs.concordia.ca>, 2001-2005.
 # Oleg Bartunov <oleg@sai.msu.su>, 2004-2005.
 # Sergey Burladyan <eshkinkot@gmail.com>, 2012.
-# SPDX-FileCopyrightText: 2012-2025 Alexander Lakhin <exclusion@gmail.com>
+# SPDX-FileCopyrightText: 2012-2025, 2026 Alexander Lakhin <exclusion@gmail.com>
 # Maxim Yablokov <m.yablokov@postgrespro.ru>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: psql (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2026-02-07 08:59+0200\n"
-"PO-Revision-Date: 2025-11-09 08:23+0200\n"
+"PO-Revision-Date: 2026-02-07 09:12+0200\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -7085,10 +7085,9 @@ msgstr "объект_публикации"
 
 #. +> 18 17 16 15
 #: sql_help.c:940
-#, fuzzy
 #| msgid "publication_object"
 msgid "publication_drop_object"
-msgstr "объект_публикации"
+msgstr "удаляемый_объект_публикации"
 
 #. +> 18 17 16 15 14 13
 #: sql_help.c:942 sql_help.c:2709
@@ -7107,10 +7106,9 @@ msgstr "таблица_и_столбцы"
 
 #. +> 18 17 16 15
 #: sql_help.c:951
-#, fuzzy
 #| msgid "where publication_object is one of:"
 msgid "and publication_drop_object is one of:"
-msgstr "где объект_публикации:"
+msgstr "и удаляемый_объект_публикации:"
 
 #. +> 18 17 16 15 14 13
 #: sql_help.c:954 sql_help.c:1782 sql_help.c:2714 sql_help.c:5095

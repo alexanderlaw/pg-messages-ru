@@ -5,13 +5,13 @@
 # Oleg Bartunov <oleg@sai.msu.su>, 2004.
 # Sergey Burladyan <eshkinkot@gmail.com>, 2009.
 # Dmitriy Olshevskiy <olshevskiy87@bk.ru>, 2014.
-# SPDX-FileCopyrightText: 2012-2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025 Alexander Lakhin <exclusion@gmail.com>
+# SPDX-FileCopyrightText: 2012-2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026 Alexander Lakhin <exclusion@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: pg_resetxlog (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2026-02-07 08:59+0200\n"
-"PO-Revision-Date: 2025-11-09 08:46+0200\n"
+"PO-Revision-Date: 2026-02-07 09:15+0200\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -313,10 +313,10 @@ msgstr "ID мультитранзакции (-m) не должен быть ра
 
 #. +> 18 17 16 15
 #: pg_resetwal.c:279
-#, fuzzy, c-format
+#, c-format
 #| msgid "multitransaction offset (-O) must not be -1"
 msgid "multitransaction offset (-O) must be between 0 and %u"
-msgstr "смещение мультитранзакции (-O) не должно быть равно -1"
+msgstr "смещение мультитранзакции (-O) должно быть от 0 до %u"
 
 #. +> 14 13
 #: pg_resetwal.c:292

@@ -4,14 +4,14 @@
 # Serguei A. Mokhov <mokhov@cs.concordia.ca>, 2001-2005.
 # Oleg Bartunov <oleg@sai.msu.su>, 2004-2005.
 # Dmitriy Olshevskiy <olshevskiy87@bk.ru>, 2014.
-# SPDX-FileCopyrightText: 2012-2025 Alexander Lakhin <exclusion@gmail.com>
+# SPDX-FileCopyrightText: 2012-2025, 2026 Alexander Lakhin <exclusion@gmail.com>
 # Maxim Yablokov <m.yablokov@postgrespro.ru>, 2021, 2022, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: postgres (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2026-02-07 08:59+0200\n"
-"PO-Revision-Date: 2025-11-09 08:27+0200\n"
+"PO-Revision-Date: 2026-02-07 10:42+0200\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -2998,7 +2998,7 @@ msgstr "MultiXactId %u ещё не был создан: видимо, произ
 #: access/transam/multixact.c:1560
 #, c-format
 msgid "MultiXact %u has invalid next offset"
-msgstr ""
+msgstr "для мультитранзакции %u получено некорректное следующее смещение"
 
 #. +> 13
 #: access/transam/multixact.c:2276
@@ -3088,7 +3088,7 @@ msgstr ""
 
 #. +> 18 17 16 15 14
 #: access/transam/multixact.c:3293
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "cannot truncate up to MultiXact %u because it does not exist on disk, "
 #| "skipping truncation"
@@ -3096,8 +3096,8 @@ msgid ""
 "cannot truncate up to MultiXact %u because it has invalid offset, skipping "
 "truncation"
 msgstr ""
-"выполнить усечение до мультитранзакции %u нельзя ввиду её отсутствия на "
-"диске, усечение пропускается"
+"выполнить усечение до мультитранзакции %u нельзя из-за некорректного "
+"смещения, усечение пропускается"
 
 #. +> 18 17 16 15 14 13
 #: access/transam/multixact.c:3638
@@ -5746,7 +5746,7 @@ msgstr "не удалось считать правильную запись к�
 
 #. +> 18 17 16 15 14
 #: access/transam/xlogrecovery.c:814
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "could not find redo location %X/%X referenced by checkpoint record at %X/"
 #| "%X"
@@ -5754,8 +5754,8 @@ msgid ""
 "could not find redo location %X/%08X referenced by checkpoint record at %X/"
 "%08X"
 msgstr ""
-"не удалось найти положение REDO %X/%X, указанное в записи контрольной точки "
-"в %X/%X"
+"не удалось найти положение REDO %X/%08X, указанное в записи контрольной "
+"точки в %X/%08X"
 
 #. +> 18 17 16 15 14 13
 #: access/transam/xlogrecovery.c:823
@@ -7268,10 +7268,10 @@ msgstr "нет полномочий для изменения прав дост�
 
 #. +> 18
 #: catalog/aclchk.c:1211 catalog/aclchk.c:1222
-#, fuzzy, c-format
+#, c-format
 #| msgid "cannot use IN SCHEMA clause when using GRANT/REVOKE ON SCHEMAS"
 msgid "cannot use IN SCHEMA clause when using %s"
-msgstr "предложение IN SCHEMA нельзя использовать в GRANT/REVOKE ON SCHEMAS"
+msgstr "предложение IN SCHEMA нельзя использовать в %s"
 
 #. +> 17 16 15 14 13
 #: catalog/aclchk.c:1266
@@ -9708,18 +9708,19 @@ msgstr "Возможно, следует проверить его, выполн
 
 #. +> 18
 #: catalog/pg_constraint.c:792
-#, fuzzy, c-format
+#, c-format
 #| msgid "cannot add not-null constraint on system column \"%s\""
 msgid ""
 "cannot create not-null constraint \"%s\" on column \"%s\" of table \"%s\""
-msgstr "добавить ограничение NOT NULL для системного столбца \"%s\" нельзя"
+msgstr ""
+"создать ограничение NOT NULL \"%s\" для столбца \"%s\" таблицы \"%s\" нельзя"
 
 #. +> 18
 #: catalog/pg_constraint.c:794
-#, fuzzy, c-format
+#, c-format
 #| msgid "check constraint \"%s\" already exists"
 msgid "A not-null constraint named \"%s\" already exists for this column."
-msgstr "ограничение-проверка \"%s\" уже существует"
+msgstr "Ограничение-проверка NOT NULL \"%s\" для этого столбца уже существует."
 
 #. +> 18 17 16 15 14 13
 #: catalog/pg_constraint.c:1033
@@ -10844,10 +10845,10 @@ msgstr ""
 #: commands/cluster.c:127 commands/dbcommands.c:2356
 #: commands/explain_state.c:165 commands/indexcmds.c:2846 commands/vacuum.c:234
 #: commands/vacuum.c:308
-#, fuzzy, c-format
+#, c-format
 #| msgid "unrecognized role option \"%s\""
 msgid "unrecognized %s option \"%s\""
-msgstr "нераспознанный параметр роли \"%s\""
+msgstr "нераспознанный параметр %s \"%s\""
 
 #. +> 17 16 15 14
 #: commands/cluster.c:128
@@ -13221,10 +13222,10 @@ msgstr "%s можно вызывать только в событийной тр
 #. +> 18
 #: commands/explain_state.c:133 commands/explain_state.c:158
 #: replication/walsender.c:1151
-#, fuzzy, c-format
+#, c-format
 #| msgid "unrecognized value for role option \"%s\": \"%s\""
 msgid "unrecognized value for %s option \"%s\": \"%s\""
-msgstr "нераспознанное значение для параметра роли \"%s\": \"%s\""
+msgstr "нераспознанное значение для параметра %s \"%s\": \"%s\""
 
 #. +> 18
 #: commands/explain_state.c:174 commands/explain_state.c:186
@@ -13235,10 +13236,10 @@ msgstr "параметр %s оператора EXPLAIN требует указа
 
 #. +> 18
 #: commands/explain_state.c:198
-#, fuzzy, c-format
+#, c-format
 #| msgid "%s and %s options cannot be used together"
 msgid "%s options %s and %s cannot be used together"
-msgstr "параметры %s и %s исключают друг друга"
+msgstr "параметры %s %s и %s исключают друг друга"
 
 #. +> 18 17 16 15 14 13
 #: commands/extension.c:177 commands/extension.c:3323
@@ -26468,16 +26469,16 @@ msgstr "операции группировки нельзя применять 
 
 #. +> 18 17 16 15 14
 #: parser/parse_agg.c:705 parser/parse_agg.c:742
-#, fuzzy, c-format
+#, c-format
 #| msgid "aggregates cannot use named arguments"
 msgid "outer-level aggregate cannot use a nested CTE"
-msgstr "у агрегатных функций не может быть именованных аргументов"
+msgstr "агрегатная функция внешнего уровня не может использовать вложенное CTE"
 
 #. +> 18 17 16 15 14
 #: parser/parse_agg.c:706 parser/parse_agg.c:743
 #, c-format
 msgid "CTE \"%s\" is below the aggregate's semantic level."
-msgstr ""
+msgstr "CTE \"%s\" находится ниже семантического уровня агрегатной функции."
 
 #. +> 18 17 16 15 14 13
 #: parser/parse_agg.c:728
@@ -32671,7 +32672,7 @@ msgstr ""
 
 #. +> 18 17
 #: replication/logical/slotsync.c:1184
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "replication slot synchronization worker will shut down because \"%s\" is "
 #| "disabled"
@@ -32679,8 +32680,8 @@ msgid ""
 "replication slot synchronization worker is shutting down because promotion "
 "is triggered"
 msgstr ""
-"процесс синхронизации слотов репликации будет остановлен, так как \"%s\" "
-"отключён"
+"процесс синхронизации слотов репликации останавливается, так как вызвана "
+"процедура повышения сервера"
 
 #. +> 18 17
 #: replication/logical/slotsync.c:1309
@@ -49046,10 +49047,9 @@ msgstr "Выбирает метод копирования файлов."
 
 #. +> 18 17 16
 #: utils/misc/guc_tables.c:5278
-#, fuzzy
 #| msgid "Selects the method used for forcing WAL updates to disk."
 msgid "Selects the method used for extending data files."
-msgstr "Выбирает метод принудительной записи изменений в WAL на диск."
+msgstr "Выбирает метод для расширения файлов данных."
 
 #. +> 18 17 16 15 14 13
 #: utils/misc/guc_tables.c:5288
