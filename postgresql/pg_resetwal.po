@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_resetxlog (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2025-09-13 23:15+0300\n"
+"POT-Creation-Date: 2026-02-07 08:59+0200\n"
 "PO-Revision-Date: 2025-11-09 08:46+0200\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -53,14 +53,14 @@ msgid "hint: "
 msgstr "подсказка: "
 
 #. +> 18 17 16 15 14 13
-#: ../../common/controldata_utils.c:97 pg_resetwal.c:389 pg_resetwal.c:547
-#: pg_resetwal.c:595
+#: ../../common/controldata_utils.c:97 pg_resetwal.c:394 pg_resetwal.c:552
+#: pg_resetwal.c:600
 #, c-format
 msgid "could not open file \"%s\" for reading: %m"
 msgstr "не удалось открыть файл \"%s\" для чтения: %m"
 
 #. +> 18 17 16 15 14 13
-#: ../../common/controldata_utils.c:110 pg_resetwal.c:556 pg_resetwal.c:610
+#: ../../common/controldata_utils.c:110 pg_resetwal.c:561 pg_resetwal.c:615
 #, c-format
 msgid "could not read file \"%s\": %m"
 msgstr "не удалось прочитать файл \"%s\": %m"
@@ -100,13 +100,13 @@ msgstr ""
 #. +> 18 17 16 15 14 13
 #: ../../common/controldata_utils.c:230 ../../common/file_utils.c:69
 #: ../../common/file_utils.c:370 ../../common/file_utils.c:428
-#: ../../common/file_utils.c:502 pg_resetwal.c:1158
+#: ../../common/file_utils.c:502 pg_resetwal.c:1172
 #, c-format
 msgid "could not open file \"%s\": %m"
 msgstr "не удалось открыть файл \"%s\": %m"
 
 #. +> 18 17 16 15 14 13
-#: ../../common/controldata_utils.c:249 pg_resetwal.c:1166 pg_resetwal.c:1178
+#: ../../common/controldata_utils.c:249 pg_resetwal.c:1180 pg_resetwal.c:1192
 #, c-format
 msgid "could not write file \"%s\": %m"
 msgstr "не удалось записать файл \"%s\": %m"
@@ -152,14 +152,14 @@ msgstr "эта сборка программы не поддерживает м�
 
 #. +> 18 17 16 15 14 13
 #: ../../common/file_utils.c:156 ../../common/file_utils.c:304
-#: pg_resetwal.c:952 pg_resetwal.c:1005 pg_resetwal.c:1040 pg_resetwal.c:1078
+#: pg_resetwal.c:961 pg_resetwal.c:1014 pg_resetwal.c:1049 pg_resetwal.c:1089
 #, c-format
 msgid "could not open directory \"%s\": %m"
 msgstr "не удалось открыть каталог \"%s\": %m"
 
 #. +> 18 17 16 15 14 13
 #: ../../common/file_utils.c:174 ../../common/file_utils.c:338
-#: pg_resetwal.c:978 pg_resetwal.c:1019 pg_resetwal.c:1057 pg_resetwal.c:1092
+#: pg_resetwal.c:987 pg_resetwal.c:1028 pg_resetwal.c:1066 pg_resetwal.c:1103
 #, c-format
 msgid "could not read directory \"%s\": %m"
 msgstr "не удалось прочитать каталог \"%s\": %m"
@@ -238,18 +238,18 @@ msgstr "нераспознанный метод синхронизации: %s"
 
 #. translator: the second %s is a command line argument (-e, etc)
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:166 pg_resetwal.c:179 pg_resetwal.c:192 pg_resetwal.c:205
-#: pg_resetwal.c:212 pg_resetwal.c:231 pg_resetwal.c:244 pg_resetwal.c:252
-#: pg_resetwal.c:272 pg_resetwal.c:283 pg_resetwal.c:317
+#: pg_resetwal.c:169 pg_resetwal.c:182 pg_resetwal.c:195 pg_resetwal.c:208
+#: pg_resetwal.c:215 pg_resetwal.c:234 pg_resetwal.c:247 pg_resetwal.c:255
+#: pg_resetwal.c:274 pg_resetwal.c:288 pg_resetwal.c:322
 #, c-format
 msgid "invalid argument for option %s"
 msgstr "недопустимый аргумент параметра %s"
 
 #. +> 18 17 16 15
-#: pg_resetwal.c:167 pg_resetwal.c:180 pg_resetwal.c:193 pg_resetwal.c:206
-#: pg_resetwal.c:213 pg_resetwal.c:232 pg_resetwal.c:245 pg_resetwal.c:253
-#: pg_resetwal.c:273 pg_resetwal.c:284 pg_resetwal.c:318 pg_resetwal.c:326
-#: pg_resetwal.c:339 pg_resetwal.c:346
+#: pg_resetwal.c:170 pg_resetwal.c:183 pg_resetwal.c:196 pg_resetwal.c:209
+#: pg_resetwal.c:216 pg_resetwal.c:235 pg_resetwal.c:248 pg_resetwal.c:256
+#: pg_resetwal.c:275 pg_resetwal.c:289 pg_resetwal.c:323 pg_resetwal.c:331
+#: pg_resetwal.c:344 pg_resetwal.c:351
 #, c-format
 msgid "Try \"%s --help\" for more information."
 msgstr "Для дополнительной информации попробуйте \"%s --help\"."
@@ -264,134 +264,141 @@ msgid "Try \"%s --help\" for more information.\n"
 msgstr "Для дополнительной информации попробуйте \"%s --help\".\n"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:171
+#: pg_resetwal.c:174
 #, c-format
 msgid "transaction ID epoch (-e) must not be -1"
 msgstr "эпоха ID транзакции (-e) не должна быть равна -1"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:184
+#: pg_resetwal.c:187
 #, c-format
 msgid "oldest transaction ID (-u) must be greater than or equal to %u"
 msgstr "ID старейшей транзакции (-u) должен быть больше или равен %u"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:197
+#: pg_resetwal.c:200
 #, c-format
 msgid "transaction ID (-x) must be greater than or equal to %u"
 msgstr "ID транзакции (-x) должен быть больше или равен %u"
 
 #. +> 18 17
-#: pg_resetwal.c:219 pg_resetwal.c:223
+#: pg_resetwal.c:222 pg_resetwal.c:226
 #, c-format
 msgid "transaction ID (-c) must be either %u or greater than or equal to %u"
 msgstr "ID транзакции (-c) должен быть равен %u, либо больше или равен %u"
 
 #. +> 16 15 14 13
-#: pg_resetwal.c:216 pg_resetwal.c:220
+#: pg_resetwal.c:219 pg_resetwal.c:223
 #, c-format
 msgid "transaction ID (-c) must be either 0 or greater than or equal to 2"
 msgstr "ID транзакции (-c) должен быть равен 0, либо больше или равен 2"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:236
+#: pg_resetwal.c:239
 #, c-format
 msgid "OID (-o) must not be 0"
 msgstr "OID (-o) не должен быть равен 0"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:257
-#, c-format
-msgid "multitransaction ID (-m) must not be 0"
-msgstr "ID мультитранзакции (-m) не должен быть равен 0"
-
-#. +> 18 17 16 15 14 13
-#: pg_resetwal.c:264
+#: pg_resetwal.c:265
 #, c-format
 msgid "oldest multitransaction ID (-m) must not be 0"
 msgstr "ID старейшей мультитранзакции (-m) не должен быть равен 0"
 
-#. +> 18 17 16 15 14 13
-#: pg_resetwal.c:277
+#. +> 14 13
+#: pg_resetwal.c:267
+#, c-format
+msgid "multitransaction ID (-m) must not be 0"
+msgstr "ID мультитранзакции (-m) не должен быть равен 0"
+
+#. +> 18 17 16 15
+#: pg_resetwal.c:279
+#, fuzzy, c-format
+#| msgid "multitransaction offset (-O) must not be -1"
+msgid "multitransaction offset (-O) must be between 0 and %u"
+msgstr "смещение мультитранзакции (-O) не должно быть равно -1"
+
+#. +> 14 13
+#: pg_resetwal.c:292
 #, c-format
 msgid "multitransaction offset (-O) must not be -1"
 msgstr "смещение мультитранзакции (-O) не должно быть равно -1"
 
 #. +> 16 15 14 13
-#: pg_resetwal.c:296
+#: pg_resetwal.c:301
 #, c-format
 msgid "argument of --wal-segsize must be a number"
 msgstr "аргументом --wal-segsize должно быть число"
 
 #. +> 18 17
-#: pg_resetwal.c:303
+#: pg_resetwal.c:308
 #, c-format
 msgid "argument of %s must be a power of two between 1 and 1024"
 msgstr "аргументом %s должна быть степень двух от 1 до 1024"
 
 #. +> 16
-#: pg_resetwal.c:298
+#: pg_resetwal.c:303
 #, c-format
 msgid "argument of --wal-segsize must be a power of two between 1 and 1024"
 msgstr "аргументом --wal-segsize должна быть степень двух от 1 до 1024"
 
 #. +> 15 14 13
-#: pg_resetwal.c:298
+#: pg_resetwal.c:303
 #, c-format
 msgid "argument of --wal-segsize must be a power of 2 between 1 and 1024"
 msgstr "аргументом --wal-segsize должна быть степень 2 от 1 до 1024"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:337
+#: pg_resetwal.c:342
 #, c-format
 msgid "too many command-line arguments (first is \"%s\")"
 msgstr "слишком много аргументов командной строки (первый: \"%s\")"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:345
+#: pg_resetwal.c:350
 #, c-format
 msgid "no data directory specified"
 msgstr "каталог данных не указан"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:359
+#: pg_resetwal.c:364
 #, c-format
 msgid "cannot be executed by \"root\""
 msgstr "программу не должен запускать root"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:360
+#: pg_resetwal.c:365
 #, c-format
 msgid "You must run %s as the PostgreSQL superuser."
 msgstr "Запускать %s нужно от имени суперпользователя PostgreSQL."
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:370
+#: pg_resetwal.c:375
 #, c-format
 msgid "could not read permissions of directory \"%s\": %m"
 msgstr "не удалось прочитать права на каталог \"%s\": %m"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:376
+#: pg_resetwal.c:381
 #, c-format
 msgid "could not change directory to \"%s\": %m"
 msgstr "не удалось перейти в каталог \"%s\": %m"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:394
+#: pg_resetwal.c:399
 #, c-format
 msgid "lock file \"%s\" exists"
 msgstr "файл блокировки \"%s\" существует"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:395
+#: pg_resetwal.c:400
 #, c-format
 msgid "Is a server running?  If not, delete the lock file and try again."
 msgstr ""
 "Возможно, сервер запущен? Если нет, удалите этот файл и попробуйте снова."
 
 #. +> 16 15 14 13
-#: pg_resetwal.c:479
+#: pg_resetwal.c:484
 #, c-format
 msgid ""
 "The database server was not shut down cleanly.\n"
@@ -403,7 +410,7 @@ msgstr ""
 "Если вы хотите сбросить его, несмотря на это, добавьте ключ -f.\n"
 
 #. +> 18 17
-#: pg_resetwal.c:497
+#: pg_resetwal.c:502
 #, c-format
 msgid "not proceeding because control file values were guessed"
 msgstr ""
@@ -411,7 +418,7 @@ msgstr ""
 "предполагаемыми"
 
 #. +> 18 17
-#: pg_resetwal.c:498
+#: pg_resetwal.c:503
 #, c-format
 msgid "If these values seem acceptable, use -f to force reset."
 msgstr ""
@@ -419,7 +426,7 @@ msgstr ""
 "ключ -f."
 
 #. +> 16 15 14 13
-#: pg_resetwal.c:467
+#: pg_resetwal.c:472
 #, c-format
 msgid ""
 "\n"
@@ -430,19 +437,19 @@ msgstr ""
 "ключ -f.\n"
 
 #. +> 18 17
-#: pg_resetwal.c:507
+#: pg_resetwal.c:512
 #, c-format
 msgid "database server was not shut down cleanly"
 msgstr "сервер баз данных не был остановлен штатно"
 
 #. +> 18 17
-#: pg_resetwal.c:508
+#: pg_resetwal.c:513
 #, c-format
 msgid "Resetting the write-ahead log might cause data to be lost."
 msgstr "Сброс журнала предзаписи может привести к потере данных."
 
 #. +> 18 17
-#: pg_resetwal.c:509
+#: pg_resetwal.c:514
 #, c-format
 msgid "If you want to proceed anyway, use -f to force reset."
 msgstr ""
@@ -450,25 +457,25 @@ msgstr ""
 "ключ -f."
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:522
+#: pg_resetwal.c:527
 #, c-format
 msgid "Write-ahead log reset\n"
 msgstr "Журнал предзаписи сброшен\n"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:554
+#: pg_resetwal.c:559
 #, c-format
 msgid "unexpected empty file \"%s\""
 msgstr "файл \"%s\" оказался пустым"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:564
+#: pg_resetwal.c:569
 #, c-format
 msgid "data directory is of wrong version"
 msgstr "каталог данных имеет неверную версию"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:565
+#: pg_resetwal.c:570
 #, c-format
 msgid ""
 "File \"%s\" contains \"%s\", which is not compatible with this program's "
@@ -477,7 +484,7 @@ msgstr ""
 "Файл \"%s\" содержит строку \"%s\", а ожидается версия программы \"%s\"."
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:598
+#: pg_resetwal.c:603
 #, c-format
 msgid ""
 "If you are sure the data directory path is correct, execute\n"
@@ -489,7 +496,7 @@ msgstr ""
 "и повторите попытку."
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:626
+#: pg_resetwal.c:631
 #, c-format
 msgid "pg_control exists but has invalid CRC; proceed with caution"
 msgstr ""
@@ -497,7 +504,7 @@ msgstr ""
 "осторожностью"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:635
+#: pg_resetwal.c:640
 #, c-format
 msgid ""
 "pg_control specifies invalid WAL segment size (%d byte); proceed with caution"
@@ -515,7 +522,7 @@ msgstr[2] ""
 "осторожностью"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:646
+#: pg_resetwal.c:651
 #, c-format
 msgid "pg_control exists but is broken or wrong version; ignoring it"
 msgstr ""
@@ -523,7 +530,7 @@ msgstr ""
 "игнорируется..."
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:741
+#: pg_resetwal.c:746
 #, c-format
 msgid ""
 "Guessed pg_control values:\n"
@@ -533,7 +540,7 @@ msgstr ""
 "\n"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:743
+#: pg_resetwal.c:748
 #, c-format
 msgid ""
 "Current pg_control values:\n"
@@ -543,236 +550,236 @@ msgstr ""
 "\n"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:745
+#: pg_resetwal.c:750
 #, c-format
 msgid "pg_control version number:            %u\n"
 msgstr "Номер версии pg_control:              %u\n"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:747
+#: pg_resetwal.c:752
 #, c-format
 msgid "Catalog version number:               %u\n"
 msgstr "Номер версии каталога:                %u\n"
 
 #. +> 18
-#: pg_resetwal.c:749
+#: pg_resetwal.c:754
 #, c-format
 msgid "Database system identifier:           %<PRIu64>\n"
 msgstr "Идентификатор системы баз данных:     %<PRIu64>\n"
 
 #. +> 17 16 15 14 13
-#: pg_resetwal.c:727
+#: pg_resetwal.c:732
 #, c-format
 msgid "Database system identifier:           %llu\n"
 msgstr "Идентификатор системы баз данных:     %llu\n"
 
 # skip-rule: capital-letter-first
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:751
+#: pg_resetwal.c:756
 #, c-format
 msgid "Latest checkpoint's TimeLineID:       %u\n"
 msgstr "Линия времени последней конт. точки:  %u\n"
 
 # skip-rule: no-space-after-period
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:753
+#: pg_resetwal.c:758
 #, c-format
 msgid "Latest checkpoint's full_page_writes: %s\n"
 msgstr "Режим full_page_writes последней к.т: %s\n"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:754
+#: pg_resetwal.c:759
 msgid "off"
 msgstr "выкл."
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:754
+#: pg_resetwal.c:759
 msgid "on"
 msgstr "вкл."
 
 # skip-rule: capital-letter-first
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:755
+#: pg_resetwal.c:760
 #, c-format
 msgid "Latest checkpoint's NextXID:          %u:%u\n"
 msgstr "NextXID последней конт. точки:        %u:%u\n"
 
 # skip-rule: capital-letter-first
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:758
+#: pg_resetwal.c:763
 #, c-format
 msgid "Latest checkpoint's NextOID:          %u\n"
 msgstr "NextOID последней конт. точки:        %u\n"
 
 # skip-rule: capital-letter-first
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:760
+#: pg_resetwal.c:765
 #, c-format
 msgid "Latest checkpoint's NextMultiXactId:  %u\n"
 msgstr "NextMultiXactId послед. конт. точки:  %u\n"
 
 # skip-rule: capital-letter-first
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:762
+#: pg_resetwal.c:767
 #, c-format
 msgid "Latest checkpoint's NextMultiOffset:  %u\n"
 msgstr "NextMultiOffset послед. конт. точки:  %u\n"
 
 # skip-rule: capital-letter-first
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:764
+#: pg_resetwal.c:769
 #, c-format
 msgid "Latest checkpoint's oldestXID:        %u\n"
 msgstr "oldestXID последней конт. точки:      %u\n"
 
 # skip-rule: capital-letter-first
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:766
+#: pg_resetwal.c:771
 #, c-format
 msgid "Latest checkpoint's oldestXID's DB:   %u\n"
 msgstr "БД с oldestXID последней конт. точки: %u\n"
 
 # skip-rule: capital-letter-first
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:768
+#: pg_resetwal.c:773
 #, c-format
 msgid "Latest checkpoint's oldestActiveXID:  %u\n"
 msgstr "oldestActiveXID последней к. т.:      %u\n"
 
 # skip-rule: capital-letter-first
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:770
+#: pg_resetwal.c:775
 #, c-format
 msgid "Latest checkpoint's oldestMultiXid:   %u\n"
 msgstr "oldestMultiXid последней конт. точки: %u\n"
 
 # skip-rule: capital-letter-first, double-space
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:772
+#: pg_resetwal.c:777
 #, c-format
 msgid "Latest checkpoint's oldestMulti's DB: %u\n"
 msgstr "БД с oldestMulti последней к. т.:     %u\n"
 
 # skip-rule: capital-letter-first, double-space
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:774
+#: pg_resetwal.c:779
 #, c-format
 msgid "Latest checkpoint's oldestCommitTsXid:%u\n"
 msgstr "oldestCommitTsXid последней к. т.:    %u\n"
 
 # skip-rule: capital-letter-first, double-space
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:776
+#: pg_resetwal.c:781
 #, c-format
 msgid "Latest checkpoint's newestCommitTsXid:%u\n"
 msgstr "newestCommitTsXid последней к. т.:    %u\n"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:778
+#: pg_resetwal.c:783
 #, c-format
 msgid "Maximum data alignment:               %u\n"
 msgstr "Макс. предел выравнивания данных:     %u\n"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:781
+#: pg_resetwal.c:786
 #, c-format
 msgid "Database block size:                  %u\n"
 msgstr "Размер блока БД:                      %u\n"
 
 # skip-rule: double-space
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:783
+#: pg_resetwal.c:788
 #, c-format
 msgid "Blocks per segment of large relation: %u\n"
 msgstr "Блоков в макс. сегменте отношений:    %u\n"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:785
+#: pg_resetwal.c:790
 #, c-format
 msgid "WAL block size:                       %u\n"
 msgstr "Размер блока WAL:                     %u\n"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:787 pg_resetwal.c:875
+#: pg_resetwal.c:792 pg_resetwal.c:884
 #, c-format
 msgid "Bytes per WAL segment:                %u\n"
 msgstr "Байт в сегменте WAL:                  %u\n"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:789
+#: pg_resetwal.c:794
 #, c-format
 msgid "Maximum length of identifiers:        %u\n"
 msgstr "Максимальная длина идентификаторов:   %u\n"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:791
+#: pg_resetwal.c:796
 #, c-format
 msgid "Maximum columns in an index:          %u\n"
 msgstr "Макс. число столбцов в индексе:       %u\n"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:793
+#: pg_resetwal.c:798
 #, c-format
 msgid "Maximum size of a TOAST chunk:        %u\n"
 msgstr "Максимальный размер порции TOAST:     %u\n"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:795
+#: pg_resetwal.c:800
 #, c-format
 msgid "Size of a large-object chunk:         %u\n"
 msgstr "Размер порции большого объекта:       %u\n"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:798
+#: pg_resetwal.c:803
 #, c-format
 msgid "Date/time type storage:               %s\n"
 msgstr "Формат хранения даты/времени:         %s\n"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:799
+#: pg_resetwal.c:804
 msgid "64-bit integers"
 msgstr "64-битные целые"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:800
+#: pg_resetwal.c:805
 #, c-format
 msgid "Float8 argument passing:              %s\n"
 msgstr "Передача аргумента float8:            %s\n"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:801
+#: pg_resetwal.c:806
 msgid "by reference"
 msgstr "по ссылке"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:801
+#: pg_resetwal.c:806
 msgid "by value"
 msgstr "по значению"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:802
+#: pg_resetwal.c:807
 #, c-format
 msgid "Data page checksum version:           %u\n"
 msgstr "Версия контрольных сумм страниц:      %u\n"
 
 #. +> 18
-#: pg_resetwal.c:804
+#: pg_resetwal.c:809
 #, c-format
 msgid "Default char data signedness:         %s\n"
 msgstr "Знаковость char по умолчанию:         %s\n"
 
 #. +> 18
-#: pg_resetwal.c:805
+#: pg_resetwal.c:810
 msgid "signed"
 msgstr "знаковое"
 
 #. +> 18
-#: pg_resetwal.c:805
+#: pg_resetwal.c:810
 msgid "unsigned"
 msgstr "беззнаковое"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:818
+#: pg_resetwal.c:823
 #, c-format
 msgid ""
 "\n"
@@ -786,97 +793,97 @@ msgstr ""
 "\n"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:822
+#: pg_resetwal.c:827
 #, c-format
 msgid "First log segment after reset:        %s\n"
 msgstr "Первый сегмент журнала после сброса:  %s\n"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:826
+#: pg_resetwal.c:831
 #, c-format
 msgid "NextMultiXactId:                      %u\n"
 msgstr "NextMultiXactId:                      %u\n"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:828
+#: pg_resetwal.c:833
 #, c-format
 msgid "OldestMultiXid:                       %u\n"
 msgstr "OldestMultiXid:                       %u\n"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:830
+#: pg_resetwal.c:835
 #, c-format
 msgid "OldestMulti's DB:                     %u\n"
 msgstr "БД с oldestMultiXid:                  %u\n"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:836
+#: pg_resetwal.c:841
 #, c-format
 msgid "NextMultiOffset:                      %u\n"
 msgstr "NextMultiOffset:                      %u\n"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:842
+#: pg_resetwal.c:847
 #, c-format
 msgid "NextOID:                              %u\n"
 msgstr "NextOID:                              %u\n"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:848
+#: pg_resetwal.c:853
 #, c-format
 msgid "NextXID:                              %u\n"
 msgstr "NextXID:                              %u\n"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:850
+#: pg_resetwal.c:859
 #, c-format
 msgid "OldestXID:                            %u\n"
 msgstr "OldestXID:                            %u\n"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:852
+#: pg_resetwal.c:861
 #, c-format
 msgid "OldestXID's DB:                       %u\n"
 msgstr "БД с oldestXID:                       %u\n"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:858
+#: pg_resetwal.c:867
 #, c-format
 msgid "NextXID epoch:                        %u\n"
 msgstr "Эпоха NextXID:                        %u\n"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:864
+#: pg_resetwal.c:873
 #, c-format
 msgid "oldestCommitTsXid:                    %u\n"
 msgstr "oldestCommitTsXid:                    %u\n"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:869
+#: pg_resetwal.c:878
 #, c-format
 msgid "newestCommitTsXid:                    %u\n"
 msgstr "newestCommitTsXid:                    %u\n"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:981 pg_resetwal.c:1022 pg_resetwal.c:1060 pg_resetwal.c:1095
+#: pg_resetwal.c:990 pg_resetwal.c:1031 pg_resetwal.c:1069 pg_resetwal.c:1106
 #, c-format
 msgid "could not close directory \"%s\": %m"
 msgstr "не удалось закрыть каталог \"%s\": %m"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:1014 pg_resetwal.c:1052 pg_resetwal.c:1087
+#: pg_resetwal.c:1023 pg_resetwal.c:1061 pg_resetwal.c:1098
 #, c-format
 msgid "could not delete file \"%s\": %m"
 msgstr "ошибка удаления файла \"%s\": %m"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:1183
+#: pg_resetwal.c:1197
 #, c-format
 msgid "fsync error: %m"
 msgstr "ошибка синхронизации с ФС: %m"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:1192
+#: pg_resetwal.c:1206
 #, c-format
 msgid ""
 "%s resets the PostgreSQL write-ahead log.\n"
@@ -886,19 +893,19 @@ msgstr ""
 "\n"
 
 #. +> 18 17
-#: pg_resetwal.c:1193
+#: pg_resetwal.c:1207
 #, c-format
 msgid "Usage:\n"
 msgstr "Использование:\n"
 
 #. +> 18 17
-#: pg_resetwal.c:1194
+#: pg_resetwal.c:1208
 #, c-format
 msgid "  %s [OPTION]... DATADIR\n"
 msgstr "  %s [ПАРАМЕТР]... КАТ_ДАННЫХ\n"
 
 #. +> 16 15 14 13
-#: pg_resetwal.c:1128
+#: pg_resetwal.c:1137
 #, c-format
 msgid ""
 "Usage:\n"
@@ -910,7 +917,7 @@ msgstr ""
 "\n"
 
 #. +> 18 17
-#: pg_resetwal.c:1196
+#: pg_resetwal.c:1210
 #, c-format
 msgid ""
 "\n"
@@ -920,25 +927,25 @@ msgstr ""
 "Параметры:\n"
 
 #. +> 16 15 14 13
-#: pg_resetwal.c:1129
+#: pg_resetwal.c:1138
 #, c-format
 msgid "Options:\n"
 msgstr "Параметры:\n"
 
 #. +> 18 17
-#: pg_resetwal.c:1197
+#: pg_resetwal.c:1211
 #, c-format
 msgid " [-D, --pgdata=]DATADIR  data directory\n"
 msgstr " [-D, --pgdata=]КАТ_ДАННЫХ каталог данных\n"
 
 #. +> 16 15 14 13
-#: pg_resetwal.c:1133
+#: pg_resetwal.c:1142
 #, c-format
 msgid " [-D, --pgdata=]DATADIR            data directory\n"
 msgstr " [-D, --pgdata=]КАТ_ДАННЫХ         каталог данных\n"
 
 #. +> 18 17
-#: pg_resetwal.c:1198
+#: pg_resetwal.c:1212
 #, c-format
 msgid ""
 "  -f, --force            force update to be done even after unclean shutdown "
@@ -951,7 +958,7 @@ msgstr ""
 "                         отключения сервера\n"
 
 #. +> 18 17
-#: pg_resetwal.c:1200
+#: pg_resetwal.c:1214
 #, c-format
 msgid "  -n, --dry-run          no update, just show what would be done\n"
 msgstr ""
@@ -959,14 +966,14 @@ msgstr ""
 "                         выполнять их\n"
 
 #. +> 16 15 14 13
-#: pg_resetwal.c:1135
+#: pg_resetwal.c:1144
 #, c-format
 msgid "  -f, --force                      force update to be done\n"
 msgstr ""
 "  -f, --force                      принудительное выполнение операции\n"
 
 #. +> 16 15 14 13
-#: pg_resetwal.c:1138
+#: pg_resetwal.c:1147
 #, c-format
 msgid ""
 "  -n, --dry-run                    no update, just show what would be done\n"
@@ -976,32 +983,32 @@ msgstr ""
 "                                   но не выполнять их\n"
 
 #. +> 18 17
-#: pg_resetwal.c:1201
+#: pg_resetwal.c:1215
 #, c-format
 msgid "  -V, --version          output version information, then exit\n"
 msgstr "  -V, --version          показать версию и выйти\n"
 
 #. +> 16 15 14 13
-#: pg_resetwal.c:1142
+#: pg_resetwal.c:1151
 #, c-format
 msgid ""
 "  -V, --version                    output version information, then exit\n"
 msgstr "  -V, --version                    показать версию и выйти\n"
 
 #. +> 18 17
-#: pg_resetwal.c:1202
+#: pg_resetwal.c:1216
 #, c-format
 msgid "  -?, --help             show this help, then exit\n"
 msgstr "  -?, --help             показать эту справку и выйти\n"
 
 #. +> 16 15 14 13
-#: pg_resetwal.c:1145
+#: pg_resetwal.c:1154
 #, c-format
 msgid "  -?, --help                       show this help, then exit\n"
 msgstr "  -?, --help                       показать эту справку и выйти\n"
 
 #. +> 18 17
-#: pg_resetwal.c:1204
+#: pg_resetwal.c:1218
 #, c-format
 msgid ""
 "\n"
@@ -1011,7 +1018,7 @@ msgstr ""
 "Параметры, переопределяющие значения из контрольного файла:\n"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:1205
+#: pg_resetwal.c:1219
 #, c-format
 msgid ""
 "  -c, --commit-timestamp-ids=XID,XID\n"
@@ -1024,14 +1031,14 @@ msgstr ""
 "                                   несущие метки времени (0 — не менять)\n"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:1208
+#: pg_resetwal.c:1222
 #, c-format
 msgid "  -e, --epoch=XIDEPOCH             set next transaction ID epoch\n"
 msgstr ""
 "  -e, --epoch=XIDEPOCH             задать эпоху для ID следующей транзакции\n"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:1209
+#: pg_resetwal.c:1223
 #, c-format
 msgid ""
 "  -l, --next-wal-file=WALFILE      set minimum starting location for new "
@@ -1041,7 +1048,7 @@ msgstr ""
 "                                   для нового WAL\n"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:1210
+#: pg_resetwal.c:1224
 #, c-format
 msgid ""
 "  -m, --multixact-ids=MXID,MXID    set next and oldest multitransaction ID\n"
@@ -1050,13 +1057,13 @@ msgstr ""
 "                                   мультитранзакции\n"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:1211
+#: pg_resetwal.c:1225
 #, c-format
 msgid "  -o, --next-oid=OID               set next OID\n"
 msgstr "  -o, --next-oid=OID               задать следующий OID\n"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:1212
+#: pg_resetwal.c:1226
 #, c-format
 msgid "  -O, --multixact-offset=OFFSET    set next multitransaction offset\n"
 msgstr ""
@@ -1064,19 +1071,19 @@ msgstr ""
 "мультитранзакции\n"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:1213
+#: pg_resetwal.c:1227
 #, c-format
 msgid "  -u, --oldest-transaction-id=XID  set oldest transaction ID\n"
 msgstr "  -u, --oldest-transaction-id=XID  задать ID старейшей ID\n"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:1214
+#: pg_resetwal.c:1228
 #, c-format
 msgid "  -x, --next-transaction-id=XID    set next transaction ID\n"
 msgstr "  -x, --next-transaction-id=XID    задать ID следующей транзакции\n"
 
 #. +> 18
-#: pg_resetwal.c:1215
+#: pg_resetwal.c:1229
 #, c-format
 msgid ""
 "      --char-signedness=OPTION     set char signedness to \"signed\" or "
@@ -1086,14 +1093,14 @@ msgstr ""
 "или \"unsigned\"\n"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:1216
+#: pg_resetwal.c:1230
 #, c-format
 msgid "      --wal-segsize=SIZE           size of WAL segments, in megabytes\n"
 msgstr ""
 "      --wal-segsize=РАЗМЕР         размер сегментов WAL (в мегабайтах)\n"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:1218
+#: pg_resetwal.c:1232
 #, c-format
 msgid ""
 "\n"
@@ -1103,7 +1110,7 @@ msgstr ""
 "Об ошибках сообщайте по адресу <%s>.\n"
 
 #. +> 18 17 16 15 14 13
-#: pg_resetwal.c:1219
+#: pg_resetwal.c:1233
 #, c-format
 msgid "%s home page: <%s>\n"
 msgstr "Домашняя страница %s: <%s>\n"

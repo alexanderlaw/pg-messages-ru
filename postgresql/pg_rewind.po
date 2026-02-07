@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_rewind (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2025-09-13 23:15+0300\n"
+"POT-Creation-Date: 2026-02-07 08:59+0200\n"
 "PO-Revision-Date: 2025-09-13 18:56+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -49,7 +49,7 @@ msgid "hint: "
 msgstr "подсказка: "
 
 #. +> 18 17 16 15 14 13
-#: ../../common/controldata_utils.c:97 file_ops.c:326 file_ops.c:330
+#: ../../common/controldata_utils.c:97 file_ops.c:326
 #, c-format
 msgid "could not open file \"%s\" for reading: %m"
 msgstr "не удалось открыть файл \"%s\" для чтения: %m"
@@ -405,6 +405,13 @@ msgstr "не удалось создать символическую ссылк
 #, c-format
 msgid "could not remove symbolic link \"%s\": %m"
 msgstr "ошибка при удалении символической ссылки \"%s\": %m"
+
+#. +> 18 17 16 15 14
+#: file_ops.c:330
+#, fuzzy, c-format
+#| msgid "could not open file \"%s\" for reading: %m"
+msgid "could not stat file \"%s\" for reading: %m"
+msgstr "не удалось открыть файл \"%s\" для чтения: %m"
 
 #. +> 18 17 16 15 14 13
 #: file_ops.c:441
