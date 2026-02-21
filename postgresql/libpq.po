@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libpq (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2026-02-07 08:59+0200\n"
+"POT-Creation-Date: 2026-02-21 05:21+0200\n"
 "PO-Revision-Date: 2026-02-07 10:48+0200\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -50,7 +50,6 @@ msgstr "не удалось получить %s из ответа OAuth: %s"
 #: ../libpq-oauth/oauth-curl.c:485 fe-auth-oauth.c:209 fe-auth-oauth.c:271
 #: fe-auth-oauth.c:333
 #, c-format
-#| msgid "field \"%s\" is missing"
 msgid "field \"%s\" must be a string"
 msgstr "поле \"%s\" должно быть строковым"
 
@@ -69,7 +68,6 @@ msgstr "поле \"%s\" должно содержать массив строк"
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:498
 #, c-format
-#| msgid "field \"%s\" is duplicated"
 msgid "field \"%s\" has unexpected type"
 msgstr "поле \"%s\" имеет неожиданный тип"
 
@@ -125,7 +123,6 @@ msgstr "поле \"%s\" отсутствует"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:1097
-#| msgid "failed to get %s from OAuth response: %s"
 msgid "failed to parse token error response"
 msgstr "не удалось разобрать ответ с ошибкой токена"
 
@@ -138,7 +135,6 @@ msgstr "провайдер не принял oauth_client_secret"
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:1126
 #, c-format
-#| msgid "provider rejected the oauth_client_secret"
 msgid ""
 "provider requires client authentication, and no oauth_client_secret is set"
 msgstr ""
@@ -256,14 +252,12 @@ msgstr "конечная точка токенов \"%s\" должна испо�
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:2430
-#| msgid "issuer \"%s\" does not provide a device authorization endpoint"
 msgid "failed to parse device authorization"
 msgstr "не удалось разобрать сообщение авторизации устройства"
 
 # well-spelled: токеном
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:2518
-#| msgid "failed to create epoll set: %m"
 msgid "failed to parse access token response"
 msgstr "не удалось разобрать ответ с токеном доступа"
 
@@ -339,7 +333,6 @@ msgstr "не удалось получить токен доступа"
 #. +> 18
 #: fe-auth-oauth.c:133
 #, c-format
-#| msgid "internal error: async authentication has no handler"
 msgid "internal error: no OAuth token was set for the connection"
 msgstr "внутренняя ошибка: отсутствует токен OAuth для текущего подключения"
 
@@ -347,7 +340,6 @@ msgstr "внутренняя ошибка: отсутствует токен OAu
 #. +> 18
 #: fe-auth-oauth.c:396
 #, c-format
-#| msgid "token endpoint \"%s\" must use HTTPS"
 msgid "OAuth discovery URI \"%s\" must use HTTPS"
 msgstr "в URI обнаружения OAuth \"%s\" должен использоваться HTTPS"
 
@@ -390,21 +382,18 @@ msgstr ""
 #. +> 18
 #: fe-auth-oauth.c:539
 #, c-format
-#| msgid "response is not valid UTF-8"
 msgid "server's error response is not valid UTF-8"
 msgstr "ответ с ошибкой сервера не является текстом в кодировке UTF-8"
 
 #. +> 18
 #: fe-auth-oauth.c:579
 #, c-format
-#| msgid "failed to get %s from OAuth response: %s"
 msgid "failed to parse server's error response: %s"
 msgstr "не удалось разобрать ответ с ошибкой сервера: %s"
 
 #. +> 18
 #: fe-auth-oauth.c:610
 #, c-format
-#| msgid "the issuer identifier (%s) does not match oauth_issuer (%s)"
 msgid ""
 "server's discovery document at %s (issuer \"%s\") is incompatible with "
 "oauth_issuer (%s)"
@@ -422,14 +411,12 @@ msgstr ""
 #. +> 18
 #: fe-auth-oauth.c:652
 #, c-format
-#| msgid "server sent an error response during SSL exchange"
 msgid "server sent error response without a status"
 msgstr "сервер передал ответ с ошибкой без текста статуса"
 
 #. +> 18
 #: fe-auth-oauth.c:663
 #, c-format
-#| msgid "server requested SASL authentication"
 msgid "server rejected OAuth bearer token: %s"
 msgstr "сервер не принял токен предъявителя OAuth: %s"
 
@@ -456,15 +443,12 @@ msgstr "в пользовательском потоке OAuth не был по�
 #. +> 18
 #: fe-auth-oauth.c:734
 #, c-format
-#| msgid ""
-#| "internal error: async authentication did not set a socket for polling"
 msgid "user-defined OAuth flow did not provide a socket for polling"
 msgstr "в пользовательском потоке OAuth не был получен сокет для опроса"
 
 #. +> 18
 #: fe-auth-oauth.c:917
 #, c-format
-#| msgid "failed to create kqueue: %m"
 msgid "failed to lock mutex (%d)"
 msgstr "не удалось получить исключительную блокировку (%d)"
 
@@ -502,8 +486,6 @@ msgstr ""
 #. +> 18
 #: fe-auth-oauth.c:1333
 #, c-format
-#| msgid ""
-#| "internal error: async authentication did not set a socket for polling"
 msgid "internal error: OAuth flow did not set a token"
 msgstr "внутренняя ошибка: в потоке OAuth не был установлен токен"
 
@@ -516,7 +498,6 @@ msgstr "сервер передал дополнительные данные OA
 #. +> 18
 #: fe-auth-oauth.c:1355
 #, c-format
-#| msgid "invalid SCRAM exchange state"
 msgid "invalid OAuth exchange state"
 msgstr "ошибочное состояние обмена OAuth"
 
@@ -524,7 +505,6 @@ msgstr "ошибочное состояние обмена OAuth"
 #. +> 18
 #: fe-auth-oauth.c:1368
 #, c-format
-#| msgid "no connection to the server"
 msgid "retrying connection with new bearer token"
 msgstr "повторение подключения с новым токеном предъявителя"
 

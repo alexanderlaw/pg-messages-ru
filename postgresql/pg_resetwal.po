@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_resetxlog (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2026-02-07 08:59+0200\n"
+"POT-Creation-Date: 2026-02-21 05:21+0200\n"
 "PO-Revision-Date: 2026-02-07 09:15+0200\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -314,7 +314,6 @@ msgstr "ID мультитранзакции (-m) не должен быть ра
 #. +> 18 17 16 15
 #: pg_resetwal.c:279
 #, c-format
-#| msgid "multitransaction offset (-O) must not be -1"
 msgid "multitransaction offset (-O) must be between 0 and %u"
 msgstr "смещение мультитранзакции (-O) должно быть от 0 до %u"
 

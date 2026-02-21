@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_basebackup (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2026-02-07 08:59+0200\n"
+"POT-Creation-Date: 2026-02-21 05:21+0200\n"
 "PO-Revision-Date: 2026-02-07 09:24+0200\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -2645,7 +2645,6 @@ msgstr "тип объекта \"%s\" указан в --clean неоднокра�
 #. +> 18
 #: pg_createsubscriber.c:2259
 #, c-format
-#| msgid "options %s and -a/--all cannot be used together"
 msgid "options %s and %s cannot be used together"
 msgstr "параметры %s и %s исключают друг друга"
 
@@ -2748,7 +2747,6 @@ msgstr ""
 #. +> 18
 #: pg_createsubscriber.c:2386
 #, c-format
-#| msgid "invalid object type \"%s\" specified for --clean"
 msgid "invalid object type \"%s\" specified for %s"
 msgstr "неправильный тип объекта \"%s\" указан в %s"
 

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_combinebackup (PostgreSQL) 17\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2026-02-07 08:59+0200\n"
+"POT-Creation-Date: 2026-02-21 05:21+0200\n"
 "PO-Revision-Date: 2026-02-07 09:22+0200\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -779,7 +779,6 @@ msgstr ""
 #. +> 18 17
 #: pg_combinebackup.c:494
 #, c-format
-#| msgid "old directory is not an absolute path in tablespace mapping: %s"
 msgid "new directory is not an absolute path in tablespace mapping: %s"
 msgstr ""
 "новый каталог в сопоставлении табл. пространства задан не абсолютным путём: "

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: psql (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2026-02-07 08:59+0200\n"
+"POT-Creation-Date: 2026-02-21 05:21+0200\n"
 "PO-Revision-Date: 2026-02-07 09:12+0200\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -7085,7 +7085,6 @@ msgstr "объект_публикации"
 
 #. +> 18 17 16 15
 #: sql_help.c:940
-#| msgid "publication_object"
 msgid "publication_drop_object"
 msgstr "удаляемый_объект_публикации"
 
@@ -7106,7 +7105,6 @@ msgstr "таблица_и_столбцы"
 
 #. +> 18 17 16 15
 #: sql_help.c:951
-#| msgid "where publication_object is one of:"
 msgid "and publication_drop_object is one of:"
 msgstr "и удаляемый_объект_публикации:"
 
