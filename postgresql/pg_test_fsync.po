@@ -133,7 +133,7 @@ msgstr[2] "на тест отводится %d сек.\n"
 #, c-format
 msgid "O_DIRECT supported on this platform for open_datasync and open_sync.\n"
 msgstr ""
-"O_DIRECT на этой платформе не поддерживается для open_datasync и open_sync.\n"
+"O_DIRECT на этой платформе поддерживается для open_datasync и open_sync.\n"
 
 #. +> 18 17 16 15
 #: pg_test_fsync.c:222
