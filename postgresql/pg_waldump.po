@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_waldump (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2025-09-13 23:15+0300\n"
+"POT-Creation-Date: 2026-08-05 06:39+0300\n"
 "PO-Revision-Date: 2025-08-30 22:30+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -49,17 +49,29 @@ msgid "hint: "
 msgstr "подсказка: "
 
 #. +> 18 17
-#: ../../common/fe_memutils.c:35 ../../common/fe_memutils.c:75
-#: ../../common/fe_memutils.c:98 ../../common/fe_memutils.c:161
+#: ../../common/fe_memutils.c:41 ../../common/fe_memutils.c:81
+#: ../../common/fe_memutils.c:104 ../../common/fe_memutils.c:167
 #, c-format
 msgid "out of memory\n"
 msgstr "нехватка памяти\n"
 
 #. +> 18 17
-#: ../../common/fe_memutils.c:92 ../../common/fe_memutils.c:153
+#: ../../common/fe_memutils.c:98 ../../common/fe_memutils.c:159
 #, c-format
 msgid "cannot duplicate null pointer (internal error)\n"
 msgstr "попытка дублирования нулевого указателя (внутренняя ошибка)\n"
+
+#. +> 18 17
+#: ../../common/fe_memutils.c:209
+#, c-format
+msgid "invalid memory allocation request size %zu + %zu\n"
+msgstr ""
+
+#. +> 18 17
+#: ../../common/fe_memutils.c:228
+#, c-format
+msgid "invalid memory allocation request size %zu * %zu\n"
+msgstr ""
 
 #. +> 18 17 16 15 14 13
 #: ../../common/file_utils.c:69 ../../common/file_utils.c:370
@@ -882,26 +894,26 @@ msgstr ""
 "журнала %s, смещение %u"
 
 #. +> 18 17 16 15 14 13
-#: xlogreader.c:1769
+#: xlogreader.c:1771
 #, c-format
 msgid "out-of-order block_id %u at %X/%X"
 msgstr "идентификатор блока %u идёт не по порядку в позиции %X/%X"
 
 #. +> 18 17 16 15 14 13
-#: xlogreader.c:1793
+#: xlogreader.c:1795
 #, c-format
 msgid "BKPBLOCK_HAS_DATA set, but no data included at %X/%X"
 msgstr "BKPBLOCK_HAS_DATA установлен, но данных в позиции %X/%X нет"
 
 #. +> 18 17 16 15 14 13
-#: xlogreader.c:1800
+#: xlogreader.c:1802
 #, c-format
 msgid "BKPBLOCK_HAS_DATA not set, but data length is %u at %X/%X"
 msgstr ""
 "BKPBLOCK_HAS_DATA не установлен, но длина данных равна %u в позиции %X/%X"
 
 #. +> 18 17 16 15 14 13
-#: xlogreader.c:1836
+#: xlogreader.c:1838
 #, c-format
 msgid ""
 "BKPIMAGE_HAS_HOLE set, but hole offset %u length %u block image length %u at "
@@ -911,7 +923,7 @@ msgstr ""
 "при длине образа блока %u в позиции %X/%X"
 
 #. +> 18 17 16 15 14 13
-#: xlogreader.c:1852
+#: xlogreader.c:1854
 #, c-format
 msgid "BKPIMAGE_HAS_HOLE not set, but hole offset %u length %u at %X/%X"
 msgstr ""
@@ -919,7 +931,7 @@ msgstr ""
 "%u в позиции %X/%X"
 
 #. +> 18 17 16 15
-#: xlogreader.c:1866
+#: xlogreader.c:1868
 #, c-format
 msgid "BKPIMAGE_COMPRESSED set, but block image length %u at %X/%X"
 msgstr ""
@@ -935,7 +947,7 @@ msgstr ""
 "%X/%X"
 
 #. +> 18 17 16 15
-#: xlogreader.c:1881
+#: xlogreader.c:1883
 #, c-format
 msgid ""
 "neither BKPIMAGE_HAS_HOLE nor BKPIMAGE_COMPRESSED set, but block image "
@@ -955,7 +967,7 @@ msgstr ""
 "образа блока равна %u в позиции %X/%X"
 
 #. +> 18 17 16 15 14 13
-#: xlogreader.c:1897
+#: xlogreader.c:1899
 #, c-format
 msgid "BKPBLOCK_SAME_REL set but no previous rel at %X/%X"
 msgstr ""
@@ -963,7 +975,7 @@ msgstr ""
 "%X"
 
 #. +> 18 17 16 15 14 13
-#: xlogreader.c:1909
+#: xlogreader.c:1911
 #, c-format
 msgid "invalid block_id %u at %X/%X"
 msgstr "неверный идентификатор блока %u в позиции %X/%X"
@@ -975,33 +987,33 @@ msgid "invalid record offset at %X/%X"
 msgstr "неверное смещение записи в позиции %X/%X"
 
 #. +> 18 17 16 15 14 13
-#: xlogreader.c:1976
+#: xlogreader.c:1978
 #, c-format
 msgid "record with invalid length at %X/%X"
 msgstr "запись с неверной длиной в позиции %X/%X"
 
 #. +> 18 17 16 15
-#: xlogreader.c:2002
+#: xlogreader.c:2004
 #, c-format
 msgid "could not locate backup block with ID %d in WAL record"
 msgstr "не удалось найти копию блока с ID %d в записи журнала WAL"
 
 #. +> 18 17 16 15
-#: xlogreader.c:2086
+#: xlogreader.c:2088
 #, c-format
 msgid "could not restore image at %X/%X with invalid block %d specified"
 msgstr ""
 "не удалось восстановить образ в позиции %X/%X с указанным неверным блоком %d"
 
 #. +> 18 17 16 15
-#: xlogreader.c:2093
+#: xlogreader.c:2095
 #, c-format
 msgid "could not restore image at %X/%X with invalid state, block %d"
 msgstr ""
 "не удалось восстановить образ в позиции %X/%X с неверным состоянием, блок %d"
 
 #. +> 18 17 16 15
-#: xlogreader.c:2120 xlogreader.c:2137
+#: xlogreader.c:2122 xlogreader.c:2139
 #, c-format
 msgid ""
 "could not restore image at %X/%X compressed with %s not supported by build, "
@@ -1011,7 +1023,7 @@ msgstr ""
 "поддерживается этой сборкой, блок %d"
 
 #. +> 18 17 16 15
-#: xlogreader.c:2146
+#: xlogreader.c:2148
 #, c-format
 msgid ""
 "could not restore image at %X/%X compressed with unknown method, block %d"
@@ -1020,7 +1032,7 @@ msgstr ""
 "блок %d"
 
 #. +> 18 17 16 15
-#: xlogreader.c:2154
+#: xlogreader.c:2156
 #, c-format
 msgid "could not decompress image at %X/%X, block %d"
 msgstr "не удалось развернуть образ в позиции %X/%X, блок %d"

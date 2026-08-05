@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pgscripts (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2025-09-13 23:15+0300\n"
+"POT-Creation-Date: 2026-08-05 06:39+0300\n"
 "PO-Revision-Date: 2025-09-13 17:25+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -51,17 +51,29 @@ msgid "hint: "
 msgstr "подсказка: "
 
 #. +> 18 17 16 15 14 13
-#: ../../common/fe_memutils.c:35 ../../common/fe_memutils.c:75
-#: ../../common/fe_memutils.c:98 ../../common/fe_memutils.c:161
+#: ../../common/fe_memutils.c:41 ../../common/fe_memutils.c:81
+#: ../../common/fe_memutils.c:104 ../../common/fe_memutils.c:167
 #, c-format
 msgid "out of memory\n"
 msgstr "нехватка памяти\n"
 
 #. +> 18 17 16 15 14 13
-#: ../../common/fe_memutils.c:92 ../../common/fe_memutils.c:153
+#: ../../common/fe_memutils.c:98 ../../common/fe_memutils.c:159
 #, c-format
 msgid "cannot duplicate null pointer (internal error)\n"
 msgstr "попытка дублирования нулевого указателя (внутренняя ошибка)\n"
+
+#. +> 18 17 16 15 14
+#: ../../common/fe_memutils.c:209
+#, c-format
+msgid "invalid memory allocation request size %zu + %zu\n"
+msgstr ""
+
+#. +> 18 17 16 15 14
+#: ../../common/fe_memutils.c:228
+#, c-format
+msgid "invalid memory allocation request size %zu * %zu\n"
+msgstr ""
 
 #. +> 18 17
 #: ../../common/file_utils.c:69 ../../common/file_utils.c:370
@@ -209,13 +221,13 @@ msgstr[1] "(%lu строки)"
 msgstr[2] "(%lu строк)"
 
 #. +> 18 17 16 15 14 13
-#: ../../fe_utils/print.c:3154
+#: ../../fe_utils/print.c:3155
 #, c-format
 msgid "Interrupted\n"
 msgstr "Прервано\n"
 
 #. +> 18
-#: ../../fe_utils/print.c:3188
+#: ../../fe_utils/print.c:3189
 #, c-format
 msgid ""
 "Cannot print table contents: number of cells %<PRIu64> is equal to or "
@@ -225,7 +237,7 @@ msgstr ""
 "%zu.\n"
 
 #. +> 17
-#: ../../fe_utils/print.c:3188
+#: ../../fe_utils/print.c:3189
 #, c-format
 msgid ""
 "Cannot print table contents: number of cells %lld is equal to or exceeds "
@@ -235,14 +247,14 @@ msgstr ""
 "%lld.\n"
 
 #. +> 18 17 16 15 14 13
-#: ../../fe_utils/print.c:3229
+#: ../../fe_utils/print.c:3230
 #, c-format
 msgid "Cannot add header to table content: column count of %d exceeded.\n"
 msgstr ""
 "Ошибка добавления заголовка таблицы: превышен предел числа столбцов (%d).\n"
 
 #. +> 18
-#: ../../fe_utils/print.c:3272
+#: ../../fe_utils/print.c:3273
 #, c-format
 msgid ""
 "Cannot add cell to table content: total cell count of %<PRIu64> exceeded.\n"
@@ -251,21 +263,21 @@ msgstr ""
 "(%<PRIu64>).\n"
 
 #. +> 17
-#: ../../fe_utils/print.c:3272
+#: ../../fe_utils/print.c:3273
 #, c-format
 msgid "Cannot add cell to table content: total cell count of %lld exceeded.\n"
 msgstr ""
 "Ошибка добавления ячейки в таблицу: превышен предел числа ячеек (%lld).\n"
 
 #. +> 16 15 14 13
-#: ../../fe_utils/print.c:3258
+#: ../../fe_utils/print.c:3259
 #, c-format
 msgid "Cannot add cell to table content: total cell count of %d exceeded.\n"
 msgstr ""
 "Ошибка добавления ячейки в таблицу: превышен предел числа ячеек (%d).\n"
 
 #. +> 18 17 16 15 14 13
-#: ../../fe_utils/print.c:3530
+#: ../../fe_utils/print.c:3531
 #, c-format
 msgid "invalid output format (internal error): %d"
 msgstr "неверный формат вывода (внутренняя ошибка): %d"
