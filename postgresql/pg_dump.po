@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: pg_dump (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2026-08-05 06:39+0300\n"
-"PO-Revision-Date: 2026-05-10 08:53+0300\n"
+"PO-Revision-Date: 2026-08-05 07:50+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -224,13 +224,13 @@ msgstr "попытка дублирования нулевого указате�
 #: ../../common/fe_memutils.c:209
 #, c-format
 msgid "invalid memory allocation request size %zu + %zu\n"
-msgstr ""
+msgstr "недопустимый размер в запросе на выделение памяти: %zu + %zu\n"
 
 #. +> 18 17 16 15 14
 #: ../../common/fe_memutils.c:228
 #, c-format
 msgid "invalid memory allocation request size %zu * %zu\n"
-msgstr ""
+msgstr "недопустимый размер в запросе на выделение памяти: %zu * %zu\n"
 
 #. +> 18 17
 #: ../../common/file_utils.c:69 ../../common/file_utils.c:370
@@ -950,10 +950,10 @@ msgstr "не удалось создать каналы межпроцессно
 
 #. +> 18 17 16 15 14
 #: parallel.c:980
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not create worker process: %m"
 msgid "could not create worker thread: %m"
-msgstr "не удалось создать рабочий процесс: %m"
+msgstr "не удалось создать рабочий поток: %m"
 
 #. +> 18 17 16 15 14 13
 #: parallel.c:1020

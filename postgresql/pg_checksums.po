@@ -1,10 +1,10 @@
-# SPDX-FileCopyrightText: 2019, 2020, 2021, 2022, 2024, 2025 Alexander Lakhin <a.lakhin@postgrespro.ru>
+# SPDX-FileCopyrightText: 2019, 2020, 2021, 2022, 2024, 2025, 2026 Alexander Lakhin <a.lakhin@postgrespro.ru>
 msgid ""
 msgstr ""
 "Project-Id-Version: pg_verify_checksums (PostgreSQL) 11\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2026-08-05 06:39+0300\n"
-"PO-Revision-Date: 2025-08-31 07:39+0300\n"
+"PO-Revision-Date: 2026-08-05 07:48+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -127,13 +127,13 @@ msgstr "попытка дублирования нулевого указате�
 #: ../../common/fe_memutils.c:209
 #, c-format
 msgid "invalid memory allocation request size %zu + %zu\n"
-msgstr ""
+msgstr "недопустимый размер в запросе на выделение памяти: %zu + %zu\n"
 
 #. +> 18 17
 #: ../../common/fe_memutils.c:228
 #, c-format
 msgid "invalid memory allocation request size %zu * %zu\n"
-msgstr ""
+msgstr "недопустимый размер в запросе на выделение памяти: %zu * %zu\n"
 
 #. +> 18 17
 #: ../../common/file_utils.c:75

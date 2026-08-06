@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: pg_rewind (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2026-08-05 06:39+0300\n"
-"PO-Revision-Date: 2026-02-07 09:14+0200\n"
+"PO-Revision-Date: 2026-08-05 21:23+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -133,13 +133,13 @@ msgstr "попытка дублирования нулевого указате�
 #: ../../common/fe_memutils.c:209
 #, c-format
 msgid "invalid memory allocation request size %zu + %zu\n"
-msgstr ""
+msgstr "недопустимый размер в запросе на выделение памяти: %zu + %zu\n"
 
 #. +> 18 17 16 15 14
 #: ../../common/fe_memutils.c:228
 #, c-format
 msgid "invalid memory allocation request size %zu * %zu\n"
-msgstr ""
+msgstr "недопустимый размер в запросе на выделение памяти: %zu * %zu\n"
 
 #. +> 18 17
 #: ../../common/file_utils.c:75
@@ -350,7 +350,7 @@ msgstr ""
 #: file_ops.c:52
 #, c-format
 msgid "target file path is unsafe for open: \"%s\""
-msgstr ""
+msgstr "целевой путь небезопасен для открытия файла: \"%s\""
 
 #. +> 18 17 16 15 14 13
 #: file_ops.c:70
@@ -386,7 +386,7 @@ msgstr "неверное действие (CREATE) для обычного фа�
 #: file_ops.c:195
 #, c-format
 msgid "target file path is unsafe for removal: \"%s\""
-msgstr ""
+msgstr "целевой путь небезопасен для удаления файла: \"%s\""
 
 #. +> 18 17 16 15 14 13
 #: file_ops.c:206
@@ -396,10 +396,10 @@ msgstr "не удалось стереть файл \"%s\": %m"
 
 #. +> 18 17 16 15 14
 #: file_ops.c:218
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not open file \"%s\" for truncation: %s\n"
 msgid "target file path is unsafe for truncation: \"%s\""
-msgstr "не удалось открыть файл \"%s\" для усечения: %s\n"
+msgstr "целевой путь небезопасен для усечения файла: \"%s\""
 
 #. +> 18 17 16 15 14 13
 #: file_ops.c:227
@@ -417,7 +417,7 @@ msgstr "не удалось обрезать файл \"%s\" до нужного
 #: file_ops.c:243
 #, c-format
 msgid "target directory path is unsafe for directory creation: \"%s\""
-msgstr ""
+msgstr "целевой путь небезопасен для создания каталога: \"%s\""
 
 #. +> 18 17 16 15 14 13
 #: file_ops.c:251
@@ -429,7 +429,7 @@ msgstr "не удалось создать каталог \"%s\": %m"
 #: file_ops.c:261
 #, c-format
 msgid "target directory path is unsafe for directory removal: \"%s\""
-msgstr ""
+msgstr "целевой путь небезопасен для удаления каталога: \"%s\""
 
 #. +> 18 17 16 15 14 13
 #: file_ops.c:269
@@ -441,7 +441,7 @@ msgstr "ошибка при удалении каталога \"%s\": %m"
 #: file_ops.c:279
 #, c-format
 msgid "target symlink path is unsafe for creation: \"%s\""
-msgstr ""
+msgstr "целевой путь небезопасен для создания символической ссылки: \"%s\""
 
 #. +> 18 17 16 15 14 13
 #: file_ops.c:286
@@ -453,7 +453,7 @@ msgstr "не удалось создать символическую ссылк
 #: file_ops.c:296
 #, c-format
 msgid "target symlink path is unsafe for removal: \"%s\""
-msgstr ""
+msgstr "целевой путь небезопасен для удаления символической ссылки: \"%s\""
 
 #. +> 18 17 16 15 14 13
 #: file_ops.c:303

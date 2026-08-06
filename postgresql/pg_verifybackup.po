@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: pg_verifybackup (PostgreSQL) 13\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2026-08-05 06:39+0300\n"
-"PO-Revision-Date: 2026-05-10 08:33+0300\n"
+"PO-Revision-Date: 2026-08-05 07:51+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -151,13 +151,13 @@ msgstr "попытка дублирования нулевого указате�
 #: ../../common/fe_memutils.c:209
 #, c-format
 msgid "invalid memory allocation request size %zu + %zu\n"
-msgstr ""
+msgstr "недопустимый размер в запросе на выделение памяти: %zu + %zu\n"
 
 #. +> 18 17 16 15 14
 #: ../../common/fe_memutils.c:228
 #, c-format
 msgid "invalid memory allocation request size %zu * %zu\n"
-msgstr ""
+msgstr "недопустимый размер в запросе на выделение памяти: %zu * %zu\n"
 
 #. +> 18 17
 #: ../../common/jsonapi.c:2484
@@ -659,10 +659,10 @@ msgstr "пустое имя у компонента tar"
 
 #. +> 18
 #: ../../fe_utils/astreamer_tar.c:309
-#, fuzzy, c-format
+#, c-format
 #| msgid "tar member has empty name"
 msgid "tar member has unsafe path name: \"%s\""
-msgstr "пустое имя у компонента tar"
+msgstr "компонент tar имеет небезопасный путь: \"%s\""
 
 #. +> 18
 #: ../../fe_utils/astreamer_tar.c:332

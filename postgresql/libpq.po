@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: libpq (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2026-08-05 06:39+0300\n"
-"PO-Revision-Date: 2026-02-07 10:48+0200\n"
+"PO-Revision-Date: 2026-08-05 07:41+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -3058,12 +3058,14 @@ msgstr ""
 #, c-format
 msgid "drained only %zd of %zd pending bytes in transport buffer"
 msgstr ""
+"выбрано только %zd из %zd байт, ожидающих получения в транспортном буфере"
 
 #. +> 15 14
 #: fe-misc.c:932
 #, c-format
 msgid "drained only %zd of %zd pending bytes in transport buffer\n"
 msgstr ""
+"выбрано только %zd из %zd байт, ожидающих получения в транспортном буфере\n"
 
 #. +> 18 17 16 15 14 13
 #: fe-misc.c:1004
@@ -3442,17 +3444,16 @@ msgstr "PQgetline можно вызывать только во время COPY 
 
 #. +> 18 17 16
 #: fe-protocol3.c:2306
-#, fuzzy, c-format
+#, c-format
 #| msgid "server sent unexpected additional OAuth data"
 msgid "server returned too much data"
-msgstr "сервер передал неожиданные дополнительные данные OAuth"
+msgstr "сервер передал слишком много данных"
 
 #. +> 15 14
 #: fe-protocol3.c:2105
-#, fuzzy
 #| msgid "server sent unexpected additional OAuth data"
 msgid "server returned too much data\n"
-msgstr "сервер передал неожиданные дополнительные данные OAuth"
+msgstr "сервер передал слишком много данных\n"
 
 #. +> 18 17 16
 #: fe-protocol3.c:2361
@@ -3694,13 +3695,13 @@ msgstr "нераспознанный код ошибки SSL: %d\n"
 #: fe-secure-openssl.c:251
 #, c-format
 msgid "OpenSSL reports negative bytes pending"
-msgstr ""
+msgstr "OpenSSL сообщил, что число ожидающих байт отрицательное"
 
 #. +> 18 17 16
 #: fe-secure-openssl.c:263
 #, c-format
 msgid "OpenSSL reports INT_MAX bytes pending"
-msgstr ""
+msgstr "OpenSSL сообщил, что число ожидающих байт равно INT_MAX"
 
 #. +> 18 17 16
 #: fe-secure-openssl.c:399

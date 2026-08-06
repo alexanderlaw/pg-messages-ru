@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2026-08-05 06:39+0300\n"
-"PO-Revision-Date: 2026-05-10 08:36+0300\n"
+"PO-Revision-Date: 2026-08-06 07:17+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -385,17 +385,17 @@ msgstr "попытка дублирования нулевого указате�
 
 #. +> 18 17 16 15 14
 #: ../common/fe_memutils.c:209
-#, fuzzy, c-format
+#, c-format
 #| msgid "invalid large object write request size: %d"
 msgid "invalid memory allocation request size %zu + %zu\n"
-msgstr "неверный размер записи большого объекта: %d"
+msgstr "недопустимый размер в запросе на выделение памяти: %zu + %zu\n"
 
 #. +> 18 17 16 15 14
 #: ../common/fe_memutils.c:228
-#, fuzzy, c-format
+#, c-format
 #| msgid "invalid large object write request size: %d"
 msgid "invalid memory allocation request size %zu * %zu\n"
-msgstr "неверный размер записи большого объекта: %d"
+msgstr "недопустимый размер в запросе на выделение памяти: %zu * %zu\n"
 
 #. +> 18 17 16 15 14
 #: ../common/file_utils.c:75 storage/file/fd.c:3581
@@ -2845,7 +2845,7 @@ msgstr ""
 #. +> 18 17 16 15 14
 #: access/transam/multixact.c:1268 access/transam/multixact.c:1275
 #: access/transam/multixact.c:1299 access/transam/multixact.c:1308
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "Execute a database-wide VACUUM in that database.\n"
 #| "You might also need to commit or roll back old prepared transactions, or "
@@ -2855,8 +2855,8 @@ msgid ""
 "You might also need to commit or roll back old prepared transactions."
 msgstr ""
 "Выполните очистку (VACUUM) всей базы данных.\n"
-"Возможно, вам также придётся зафиксировать или откатить старые "
-"подготовленные транзакции и удалить неиспользуемые слоты репликации."
+"Возможно, вам также придётся зафиксировать или откатить старые\n"
+"подготовленные транзакции."
 
 #. +> 18 17
 #: access/transam/multixact.c:1273
@@ -3040,7 +3040,7 @@ msgstr ""
 
 #. +> 18 17
 #: access/transam/multixact.c:2655 access/transam/multixact.c:2664
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "To avoid MultiXactId assignment failures, execute a database-wide VACUUM "
 #| "in that database.\n"
@@ -3054,11 +3054,11 @@ msgstr ""
 "Во избежание сбоев при назначении MultiXactId, выполните очистку (VACUUM) "
 "всей базы.\n"
 "Возможно, вам также придётся зафиксировать или откатить старые "
-"подготовленные транзакции и удалить неиспользуемые слоты репликации."
+"подготовленные транзакции."
 
 #. +> 16 15 14
 #: access/transam/multixact.c:2477 access/transam/multixact.c:2486
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "To avoid a database shutdown, execute a database-wide VACUUM in that "
 #| "database.\n"
@@ -3070,8 +3070,8 @@ msgid ""
 "You might also need to commit or roll back old prepared transactions."
 msgstr ""
 "Во избежание отключения базы данных выполните очистку (VACUUM) всей базы.\n"
-"Возможно, вам также придётся зафиксировать или откатить старые "
-"подготовленные транзакции и удалить неиспользуемые слоты репликации."
+"Возможно, вам также придётся зафиксировать или откатить старые\n"
+"подготовленные транзакции."
 
 #. +> 18 17 16 15 14 13
 #: access/transam/multixact.c:2947
@@ -7051,11 +7051,11 @@ msgstr "Проверьте, есть ли место на диске."
 
 #. +> 18 17 16 15
 #: backup/basebackup_server.c:179 backup/basebackup_server.c:272
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not write file \"%s\": wrote only %d of %d bytes at offset %u"
 msgid "could not write file \"%s\": wrote only %d of %d bytes at offset %lld"
 msgstr ""
-"не удалось записать файл \"%s\" (записано байт: %d из %d по смещению %u)"
+"не удалось записать файл \"%s\" (записано байт: %d из %d по смещению %lld)"
 
 #. +> 18 17 16 15
 #: backup/basebackup_target.c:146
@@ -9848,17 +9848,17 @@ msgstr ""
 
 #. +> 18 17 16 15 14
 #: catalog/pg_depend.c:812
-#, fuzzy, c-format
+#, c-format
 #| msgid "role %u was concurrently dropped"
 msgid "referenced %s was concurrently dropped"
-msgstr "роль %u удалена другим процессом"
+msgstr "зависимый объект %s был удалён другим процессом"
 
 #. +> 18 17 16 15 14
 #: catalog/pg_depend.c:844
-#, fuzzy, c-format
+#, c-format
 #| msgid "role %u was concurrently dropped"
 msgid "referenced relation was concurrently dropped"
-msgstr "роль %u удалена другим процессом"
+msgstr "зависимое отношение было удалено другим процессом"
 
 #. +> 18 17 16 15 14 13
 #: catalog/pg_enum.c:175 catalog/pg_enum.c:314 catalog/pg_enum.c:624
@@ -18169,13 +18169,13 @@ msgstr "ограничение \"%s\" в таблице \"%s\" не являет
 
 #. +> 18
 #: commands/tablecmds.c:12259
-#, fuzzy, c-format
+#, c-format
 #| msgid "not-null constraints on partitioned tables cannot be NO INHERIT"
 msgid ""
 "not-null constraint \"%s\" on partitioned table \"%s\" cannot be NO INHERIT"
 msgstr ""
-"ограничения NOT NULL для секционированных таблиц не могут иметь свойства NO "
-"INHERIT"
+"ограничение NOT NULL \"%s\" для секционированной таблицы \"%s\" не может "
+"иметь свойства NO INHERIT"
 
 #. +> 18
 #: commands/tablecmds.c:12267
@@ -21152,7 +21152,7 @@ msgstr "самый старый multixact далеко в прошлом"
 
 #. +> 18 17 16
 #: commands/vacuum.c:1189
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "Close open transactions soon to avoid wraparound problems.\n"
 #| "You might also need to commit or roll back old prepared transactions, or "
@@ -21164,7 +21164,7 @@ msgstr ""
 "Завершите открытые транзакции как можно быстрее во избежание проблемы "
 "зацикливания.\n"
 "Возможно, вам также придётся зафиксировать или откатить старые "
-"подготовленные транзакции и удалить неиспользуемые слоты репликации."
+"подготовленные транзакции."
 
 #. +> 18 17 16 15 14 13
 #: commands/vacuum.c:1950
@@ -31644,10 +31644,10 @@ msgstr ""
 
 #. +> 18 17 16 15 14
 #: replication/libpqwalreceiver/libpqwalreceiver.c:470
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not parse RADIUS port list \"%s\""
 msgid "could not parse WAL location \"%s\""
-msgstr "не удалось разобрать список портов RADIUS \"%s\""
+msgstr "не удалось разобрать позицию в WAL \"%s\""
 
 #. +> 18 17 16 15 14 13
 #: replication/libpqwalreceiver/libpqwalreceiver.c:669
@@ -31720,7 +31720,7 @@ msgstr "не удалось создать слот репликации \"%s\":
 
 #. +> 18 17 16 15 14
 #: replication/libpqwalreceiver/libpqwalreceiver.c:1046
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "Could not identify system: got %d rows and %d fields, expected %d rows "
 #| "and %d or more fields."
@@ -31728,8 +31728,8 @@ msgid ""
 "Could not create replication slot \"%s\": got %d rows and %d fields, "
 "expected %d rows and %d fields."
 msgstr ""
-"Не удалось идентифицировать систему, получено строк: %d, полей: %d "
-"(ожидалось: %d и %d (или более))."
+"Создать слот репликации \"%s\" не удалось; получено строк: %d, полей: %d "
+"(ожидалось: %d и %d)."
 
 #. +> 18 17
 #: replication/libpqwalreceiver/libpqwalreceiver.c:1098
@@ -33108,6 +33108,8 @@ msgstr "сообщение ORIGIN отправлено неуместно"
 msgid ""
 "logical replication column %d not found in tuple: only %d column(s) received"
 msgstr ""
+"столбец %d для логической репликации не найден в кортеже; всего получено "
+"столбцов: %d"
 
 #. +> 18 17 16 15 14
 #: replication/logical/worker.c:852 replication/logical/worker.c:971
@@ -34322,7 +34324,7 @@ msgstr ""
 
 #. +> 18 17 16 15 14
 #: replication/walreceiver.c:390
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "requested starting point %X/%X on timeline %u is not in this server's "
 #| "history"
@@ -34330,15 +34332,19 @@ msgid ""
 "walreceiver requested start point %X/%08X on timeline %u is ahead of the "
 "upstream server's flush position %X/%08X, waiting"
 msgstr ""
-"в истории сервера нет запрошенной начальной точки %X/%X на линии времени %u"
+"walreceiver запросил начальную точку %X/%08X на линии времени %u, "
+"опережающую позицию сброшенных данных на вышестоящем сервере %X/%08X, "
+"требуется ожидание"
 
 #. +> 18 17 16 15 14
 #: replication/walreceiver.c:405
-#, fuzzy, c-format
+#, c-format
 #| msgid "terminating walreceiver due to timeout"
 msgid ""
 "terminating walreceiver due to timeout while waiting for upstream to catch up"
-msgstr "завершение приёма журнала из-за тайм-аута"
+msgstr ""
+"завершение приёма журнала из-за тайм-аута при ожидании достижения требуемой "
+"позиции вышестоящим сервером"
 
 #. +> 18 17 16 15 14 13
 #: replication/walreceiver.c:466
@@ -35450,13 +35456,15 @@ msgid ""
 "could not parse \"%s\": incorrect number of elements (same as \"%s\" "
 "required)"
 msgstr ""
+"не удалось разобрать \"%s\": число элементов должно совпадать с числом "
+"элементов в \"%s\""
 
 #. +> 18
 #: statistics/attribute_stats.c:755
-#, fuzzy, c-format
+#, c-format
 #| msgid "thresholds must be one-dimensional array"
 msgid "\"%s\" must be a one-dimensional array"
-msgstr "границы должны задаваться одномерным массивом"
+msgstr "значение \"%s\" должно быть одномерным массивом"
 
 #. +> 18
 #: statistics/attribute_stats.c:764
@@ -35494,10 +35502,10 @@ msgstr ""
 
 #. +> 18
 #: statistics/relation_stats.c:119
-#, fuzzy, c-format
+#, c-format
 #| msgid "argument of %s must be a type name"
 msgid "argument \"%s\" must be a finite value"
-msgstr "аргументом %s должно быть имя типа"
+msgstr "аргумент \"%s\" должен быть конечным значением"
 
 #. +> 18
 #: statistics/relation_stats.c:126
@@ -38257,10 +38265,10 @@ msgstr "количество псевдонимов превышает зада�
 
 #. +> 18 17 16 15 14
 #: tsearch/spell.c:1436
-#, fuzzy, c-format
+#, c-format
 #| msgid "number of aliases exceeds specified number %d"
 msgid "number of aliases is less than specified number %d"
-msgstr "количество псевдонимов превышает заданное число %d"
+msgstr "количество псевдонимов меньше заданного числа %d"
 
 #. +> 18 17 16 15 14 13
 #: tsearch/spell.c:1585
@@ -38369,10 +38377,10 @@ msgstr "Значение MaxFragments должно быть >= 0"
 #. +> 18 17 16 15 14
 #: tsearch/wparser_def.c:2729 tsearch/wparser_def.c:2733
 #: tsearch/wparser_def.c:2737
-#, fuzzy, c-format
+#, c-format
 #| msgid "tablespace location \"%s\" is too long"
 msgid "value for \"%s\" is too long"
-msgstr "путь к табличному пространству \"%s\" слишком длинный"
+msgstr "значение для \"%s\" слишком длинное"
 
 #. +> 14 13
 #: postmaster/pgstat.c:441
@@ -40119,10 +40127,10 @@ msgstr "слишком длинное значение формата локал
 
 #. +> 16 15 14
 #: utils/adt/formatting.c:2765 utils/adt/formatting.c:2781
-#, fuzzy, c-format
+#, c-format
 #| msgid "localized string format value too long"
 msgid "time zone format value too long"
-msgstr "слишком длинное значение формата локализованной строки"
+msgstr "значение формата часового пояса слишком длинное"
 
 #. +> 18 17 16 15 14 13
 #: utils/adt/formatting.c:3200
@@ -43002,10 +43010,10 @@ msgstr "нераспознанный вес: \"%c\""
 
 #. +> 18 17 16 15 14
 #: utils/adt/tsvector_op.c:242
-#, fuzzy, c-format
+#, c-format
 #| msgid "unrecognized weight: \"%c\""
 msgid "unrecognized weight: \"\\%03o\""
-msgstr "нераспознанный вес: \"%c\""
+msgstr "нераспознанный вес: \"\\%03o\""
 
 #. +> 18 17 16 15 14 13
 #: utils/adt/tsvector_op.c:766
@@ -43100,24 +43108,24 @@ msgstr "не удалось сгенерировать случайные зна
 
 #. +> 18
 #: utils/adt/uuid.c:700
-#, fuzzy, c-format
+#, c-format
 #| msgid "interval out of range"
 msgid "interval out of range for UUID version 7"
-msgstr "interval вне диапазона"
+msgstr "интервал вне диапазона для UUID версии 7"
 
 #. +> 18
 #: utils/adt/uuid.c:701
-#, fuzzy, c-format
+#, c-format
 #| msgid "XML does not support infinite date values."
 msgid "UUID version 7 does not support infinite intervals."
-msgstr "XML не поддерживает бесконечность в датах."
+msgstr "В UUID версии 7 бесконечные интервалы не поддерживаются."
 
 #. +> 18
 #: utils/adt/uuid.c:725
-#, fuzzy, c-format
+#, c-format
 #| msgid "timestamp out of range"
 msgid "timestamp out of range for UUID version 7"
-msgstr "timestamp вне диапазона"
+msgstr "дата/время вне диапазона для UUID версии 7"
 
 #. +> 18
 #: utils/adt/uuid.c:726
@@ -43126,6 +43134,7 @@ msgid ""
 "UUID version 7 supports timestamps from 1970-01-01 to approximately year "
 "10889."
 msgstr ""
+"В UUID версии 7 поддерживаются даты с 1970-01-01 до примерно 10889 года."
 
 #. +> 18 17 16 15 14 13
 #: utils/adt/varbit.c:110 utils/adt/varchar.c:53
@@ -49678,17 +49687,17 @@ msgstr "вывод информации о памяти процесса с PID 
 
 #. +> 18 17 16 15 14
 #: utils/mmgr/mcxt.c:1698
-#, fuzzy, c-format
+#, c-format
 #| msgid "invalid large object write request size: %d"
 msgid "invalid memory allocation request size %zu + %zu"
-msgstr "неверный размер записи большого объекта: %d"
+msgstr "недопустимый размер в запросе на выделение памяти: %zu + %zu"
 
 #. +> 18 17 16 15 14
 #: utils/mmgr/mcxt.c:1717
-#, fuzzy, c-format
+#, c-format
 #| msgid "invalid large object write request size: %d"
 msgid "invalid memory allocation request size %zu * %zu"
-msgstr "неверный размер записи большого объекта: %d"
+msgstr "недопустимый размер в запросе на выделение памяти: %zu * %zu"
 
 #. +> 18 17 16 15 14 13
 #: utils/mmgr/portalmem.c:187

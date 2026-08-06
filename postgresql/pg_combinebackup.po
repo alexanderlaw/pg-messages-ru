@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: pg_combinebackup (PostgreSQL) 17\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2026-08-05 06:39+0300\n"
-"PO-Revision-Date: 2026-02-07 09:22+0200\n"
+"PO-Revision-Date: 2026-08-05 07:49+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -154,13 +154,13 @@ msgstr "попытка дублирования нулевого указате�
 #: ../../common/fe_memutils.c:209
 #, c-format
 msgid "invalid memory allocation request size %zu + %zu\n"
-msgstr ""
+msgstr "недопустимый размер в запросе на выделение памяти: %zu + %zu\n"
 
 #. +> 18 17
 #: ../../common/fe_memutils.c:228
 #, c-format
 msgid "invalid memory allocation request size %zu * %zu\n"
-msgstr ""
+msgstr "недопустимый размер в запросе на выделение памяти: %zu * %zu\n"
 
 #. +> 18 17
 #: ../../common/file_utils.c:75
@@ -1175,10 +1175,11 @@ msgstr "не удалось прочитать файл \"%s\" (прочитан
 
 #. +> 18 17
 #: reconstruct.c:709
-#, fuzzy, c-format
+#, c-format
 #| msgid "error while copying file range from \"%s\" to \"%s\": %m"
 msgid "unexpected end of file while copying file range from \"%s\" to \"%s\""
-msgstr "ошибка при копировании фрагмента файла \"%s\" в \"%s\": %m"
+msgstr ""
+"неожиданный конец файла при копировании фрагмента файла из \"%s\" в \"%s\""
 
 #. +> 18 17
 #: reconstruct.c:791
