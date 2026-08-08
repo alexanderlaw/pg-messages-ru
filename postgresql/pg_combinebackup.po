@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_combinebackup (PostgreSQL) 17\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2026-08-05 06:39+0300\n"
+"POT-Creation-Date: 2026-08-08 08:33+0300\n"
 "PO-Revision-Date: 2026-08-05 07:49+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -1176,7 +1176,6 @@ msgstr "не удалось прочитать файл \"%s\" (прочитан
 #. +> 18 17
 #: reconstruct.c:709
 #, c-format
-#| msgid "error while copying file range from \"%s\" to \"%s\": %m"
 msgid "unexpected end of file while copying file range from \"%s\" to \"%s\""
 msgstr ""
 "неожиданный конец файла при копировании фрагмента файла из \"%s\" в \"%s\""

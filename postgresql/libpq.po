@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libpq (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2026-08-05 06:39+0300\n"
+"POT-Creation-Date: 2026-08-08 08:33+0300\n"
 "PO-Revision-Date: 2026-08-05 07:41+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -3445,13 +3445,11 @@ msgstr "PQgetline можно вызывать только во время COPY 
 #. +> 18 17 16
 #: fe-protocol3.c:2306
 #, c-format
-#| msgid "server sent unexpected additional OAuth data"
 msgid "server returned too much data"
 msgstr "сервер передал слишком много данных"
 
 #. +> 15 14
 #: fe-protocol3.c:2105
-#| msgid "server sent unexpected additional OAuth data"
 msgid "server returned too much data\n"
 msgstr "сервер передал слишком много данных\n"
 

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_rewind (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2026-08-05 06:39+0300\n"
+"POT-Creation-Date: 2026-08-08 08:33+0300\n"
 "PO-Revision-Date: 2026-08-05 21:23+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -397,7 +397,6 @@ msgstr "не удалось стереть файл \"%s\": %m"
 #. +> 18 17 16 15 14
 #: file_ops.c:218
 #, c-format
-#| msgid "could not open file \"%s\" for truncation: %s\n"
 msgid "target file path is unsafe for truncation: \"%s\""
 msgstr "целевой путь небезопасен для усечения файла: \"%s\""
 

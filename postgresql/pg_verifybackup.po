@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_verifybackup (PostgreSQL) 13\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2026-08-05 06:39+0300\n"
+"POT-Creation-Date: 2026-08-08 08:33+0300\n"
 "PO-Revision-Date: 2026-08-05 07:51+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -660,7 +660,6 @@ msgstr "пустое имя у компонента tar"
 #. +> 18
 #: ../../fe_utils/astreamer_tar.c:309
 #, c-format
-#| msgid "tar member has empty name"
 msgid "tar member has unsafe path name: \"%s\""
 msgstr "компонент tar имеет небезопасный путь: \"%s\""
 
