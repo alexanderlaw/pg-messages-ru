@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libpq (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2026-08-08 08:33+0300\n"
+"POT-Creation-Date: 2026-09-25 22:34+0300\n"
 "PO-Revision-Date: 2026-08-05 07:41+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -159,7 +159,7 @@ msgstr "не удалось создать множественный указа
 msgid "failed to create libcurl handle"
 msgstr "не удалось создать указатель libcurl"
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: ../libpq-oauth/oauth-curl.c:1826 ../libpq-oauth/oauth-curl.c:1867
 #: ../libpq-oauth/oauth-curl.c:2185 ../libpq-oauth/oauth-curl.c:2346
 #: ../libpq-oauth/oauth-curl.c:2407 ../libpq-oauth/oauth-curl.c:2496
@@ -514,7 +514,7 @@ msgstr "повторение подключения с новым токеном
 msgid "malformed SCRAM message (empty message)"
 msgstr "неправильное сообщение SCRAM (пустое содержимое)"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-auth-scram.c:231
 msgid "malformed SCRAM message (empty message)\n"
 msgstr "неправильное сообщение SCRAM (пустое содержимое)\n"
@@ -525,7 +525,7 @@ msgstr "неправильное сообщение SCRAM (пустое соде
 msgid "malformed SCRAM message (length mismatch)"
 msgstr "неправильное сообщение SCRAM (некорректная длина)"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-auth-scram.c:237
 msgid "malformed SCRAM message (length mismatch)\n"
 msgstr "неправильное сообщение SCRAM (некорректная длина)\n"
@@ -553,7 +553,7 @@ msgstr "не удалось проверить сигнатуру сервера
 msgid "incorrect server signature"
 msgstr "некорректная сигнатура сервера"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-auth-scram.c:288
 msgid "incorrect server signature\n"
 msgstr "некорректная сигнатура сервера\n"
@@ -564,7 +564,7 @@ msgstr "некорректная сигнатура сервера\n"
 msgid "invalid SCRAM exchange state"
 msgstr "ошибочное состояние обмена SCRAM"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-auth-scram.c:297
 msgid "invalid SCRAM exchange state\n"
 msgstr "ошибочное состояние обмена SCRAM\n"
@@ -575,7 +575,7 @@ msgstr "ошибочное состояние обмена SCRAM\n"
 msgid "malformed SCRAM message (attribute \"%c\" expected)"
 msgstr "неправильное сообщение SCRAM (ожидался атрибут \"%c\")"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-auth-scram.c:324
 #, c-format
 msgid "malformed SCRAM message (attribute \"%c\" expected)\n"
@@ -588,7 +588,7 @@ msgid "malformed SCRAM message (expected character \"=\" for attribute \"%c\")"
 msgstr ""
 "неправильное сообщение SCRAM (для атрибута \"%c\" ожидался символ \"=\")"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-auth-scram.c:333
 #, c-format
 msgid ""
@@ -602,7 +602,7 @@ msgstr ""
 msgid "could not generate nonce"
 msgstr "не удалось сгенерировать разовый код"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-auth-scram.c:374
 msgid "could not generate nonce\n"
 msgstr "не удалось сгенерировать разовый код\n"
@@ -613,7 +613,7 @@ msgstr "не удалось сгенерировать разовый код\n"
 msgid "could not encode nonce"
 msgstr "не удалось оформить разовый код"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-auth-scram.c:392
 msgid "could not encode nonce\n"
 msgstr "не удалось оформить разовый код\n"
@@ -641,7 +641,7 @@ msgstr "не удалось вычислить подтверждение кли
 msgid "could not encode client proof"
 msgstr "не удалось закодировать подтверждение клиента"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-auth-scram.c:599
 msgid "could not encode client proof\n"
 msgstr "не удалось закодировать подтверждение клиента\n"
@@ -652,7 +652,7 @@ msgstr "не удалось закодировать подтверждение 
 msgid "invalid SCRAM response (nonce mismatch)"
 msgstr "неверный ответ SCRAM (несовпадение разового кода)"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-auth-scram.c:654
 msgid "invalid SCRAM response (nonce mismatch)\n"
 msgstr "неверный ответ SCRAM (несовпадение разового кода)\n"
@@ -663,7 +663,7 @@ msgstr "неверный ответ SCRAM (несовпадение разово
 msgid "malformed SCRAM message (invalid salt)"
 msgstr "неправильное сообщение SCRAM (некорректная соль)"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-auth-scram.c:687
 msgid "malformed SCRAM message (invalid salt)\n"
 msgstr "неправильное сообщение SCRAM (некорректная соль)\n"
@@ -674,7 +674,7 @@ msgstr "неправильное сообщение SCRAM (некорректн�
 msgid "malformed SCRAM message (invalid iteration count)"
 msgstr "неправильное сообщение SCRAM (некорректное число итераций)"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-auth-scram.c:701
 msgid "malformed SCRAM message (invalid iteration count)\n"
 msgstr "неправильное сообщение SCRAM (некорректное число итераций)\n"
@@ -685,7 +685,7 @@ msgstr "неправильное сообщение SCRAM (некорректн�
 msgid "malformed SCRAM message (garbage at end of server-first-message)"
 msgstr "неправильное сообщение SCRAM (мусор в конце первого сообщения сервера)"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-auth-scram.c:707
 msgid "malformed SCRAM message (garbage at end of server-first-message)\n"
 msgstr ""
@@ -697,7 +697,7 @@ msgstr ""
 msgid "error received from server in SCRAM exchange: %s"
 msgstr "в ходе обмена SCRAM от сервера получена ошибка: %s"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-auth-scram.c:743
 #, c-format
 msgid "error received from server in SCRAM exchange: %s\n"
@@ -710,7 +710,7 @@ msgid "malformed SCRAM message (garbage at end of server-final-message)"
 msgstr ""
 "неправильное сообщение SCRAM (мусор в конце последнего сообщения сервера)"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-auth-scram.c:759
 msgid "malformed SCRAM message (garbage at end of server-final-message)\n"
 msgstr ""
@@ -722,7 +722,7 @@ msgstr ""
 msgid "malformed SCRAM message (invalid server signature)"
 msgstr "неправильное сообщение SCRAM (неверная сигнатура сервера)"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-auth-scram.c:778
 msgid "malformed SCRAM message (invalid server signature)\n"
 msgstr "неправильное сообщение SCRAM (неверная сигнатура сервера)\n"
@@ -738,13 +738,13 @@ msgstr "не удалось сгенерировать случайную сол
 msgid "out of memory allocating GSSAPI buffer (%d)"
 msgstr "недостаточно памяти для буфера GSSAPI (%d)"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-auth.c:76
 #, c-format
 msgid "out of memory allocating GSSAPI buffer (%d)\n"
 msgstr "недостаточно памяти для буфера GSSAPI (%d)\n"
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-auth.c:146
 msgid "GSSAPI continuation error"
 msgstr "ошибка продолжения в GSSAPI"
@@ -756,7 +756,7 @@ msgstr "ошибка продолжения в GSSAPI"
 msgid "host name must be specified"
 msgstr "требуется указать имя сервера"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-auth.c:158 fe-auth.c:391 fe-gssapi-common.c:98 fe-secure-common.c:100
 #: fe-secure-common.c:177
 msgid "host name must be specified\n"
@@ -768,7 +768,7 @@ msgstr "требуется указать имя сервера\n"
 msgid "duplicate GSS authentication request"
 msgstr "повторный запрос аутентификации GSS"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-auth.c:165
 msgid "duplicate GSS authentication request\n"
 msgstr "повторный запрос аутентификации GSS\n"
@@ -779,13 +779,13 @@ msgstr "повторный запрос аутентификации GSS\n"
 msgid "out of memory allocating SSPI buffer (%d)"
 msgstr "недостаточно памяти для буфера SSPI (%d)"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-auth.c:230
 #, c-format
 msgid "out of memory allocating SSPI buffer (%d)\n"
 msgstr "недостаточно памяти для буфера SSPI (%d)\n"
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-auth.c:297
 msgid "SSPI continuation error"
 msgstr "ошибка продолжения в SSPI"
@@ -796,12 +796,12 @@ msgstr "ошибка продолжения в SSPI"
 msgid "duplicate SSPI authentication request"
 msgstr "повторный запрос аутентификации SSPI"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-auth.c:351
 msgid "duplicate SSPI authentication request\n"
 msgstr "повторный запрос аутентификации SSPI\n"
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-auth.c:397
 msgid "could not acquire SSPI credentials"
 msgstr "не удалось получить удостоверение SSPI"
@@ -812,7 +812,7 @@ msgstr "не удалось получить удостоверение SSPI"
 msgid "channel binding required, but SSL not in use"
 msgstr "требуется привязка каналов, но SSL не используется"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-auth.c:433
 msgid "channel binding required, but SSL not in use\n"
 msgstr "требуется привязка каналов, но SSL не используется\n"
@@ -823,7 +823,7 @@ msgstr "требуется привязка каналов, но SSL не исп
 msgid "duplicate SASL authentication request"
 msgstr "повторный запрос аутентификации SASL"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-auth.c:440
 msgid "duplicate SASL authentication request\n"
 msgstr "повторный запрос аутентификации SASL\n"
@@ -834,7 +834,7 @@ msgstr "повторный запрос аутентификации SASL\n"
 msgid "channel binding is required, but client does not support it"
 msgstr "требуется привязка каналов, но клиент её не поддерживает"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-auth.c:499
 msgid "channel binding is required, but client does not support it\n"
 msgstr "требуется привязка каналов, но клиент её не поддерживает\n"
@@ -848,7 +848,7 @@ msgstr ""
 "сервер предложил аутентификацию SCRAM-SHA-256-PLUS для соединения, не "
 "защищённого SSL"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-auth.c:516
 msgid ""
 "server offered SCRAM-SHA-256-PLUS authentication over a non-SSL connection\n"
@@ -862,7 +862,7 @@ msgstr ""
 msgid "none of the server's SASL authentication mechanisms are supported"
 msgstr "ни один из серверных механизмов аутентификации SASL не поддерживается"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-auth.c:531
 msgid "none of the server's SASL authentication mechanisms are supported\n"
 msgstr ""
@@ -888,7 +888,7 @@ msgstr ""
 "требуется привязка каналов, но сервер не предложил поддерживающий её метод "
 "аутентификации"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-auth.c:539
 msgid ""
 "channel binding is required, but server did not offer an authentication "
@@ -903,7 +903,7 @@ msgstr ""
 msgid "out of memory allocating SASL buffer (%d)"
 msgstr "недостаточно памяти для буфера SASL (%d)"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-auth.c:647
 #, c-format
 msgid "out of memory allocating SASL buffer (%d)\n"
@@ -919,7 +919,7 @@ msgstr ""
 "c сервера получено сообщение AuthenticationSASLFinal, но аутентификация SASL "
 "ещё не завершена"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-auth.c:672
 msgid ""
 "AuthenticationSASLFinal received from server, but SASL authentication was "
@@ -1013,7 +1013,7 @@ msgid ""
 msgstr ""
 "требуется привязка каналов, но сервер аутентифицировал клиента без привязки"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-auth.c:868
 msgid ""
 "channel binding required, but server authenticated client without channel "
@@ -1030,7 +1030,7 @@ msgstr ""
 "требуется привязка каналов, но она не поддерживается при том запросе "
 "аутентификации, который передал сервер"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-auth.c:874
 msgid ""
 "channel binding required but not supported by server's authentication "
@@ -1045,7 +1045,7 @@ msgstr ""
 msgid "Kerberos 4 authentication not supported"
 msgstr "аутентификация Kerberos 4 не поддерживается"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-auth.c:909
 msgid "Kerberos 4 authentication not supported\n"
 msgstr "аутентификация Kerberos 4 не поддерживается\n"
@@ -1056,7 +1056,7 @@ msgstr "аутентификация Kerberos 4 не поддерживаетс�
 msgid "Kerberos 5 authentication not supported"
 msgstr "аутентификация Kerberos 5 не поддерживается"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-auth.c:914
 msgid "Kerberos 5 authentication not supported\n"
 msgstr "аутентификация Kerberos 5 не поддерживается\n"
@@ -1067,7 +1067,7 @@ msgstr "аутентификация Kerberos 5 не поддерживаетс�
 msgid "GSSAPI authentication not supported"
 msgstr "аутентификация через GSSAPI не поддерживается"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-auth.c:985
 msgid "GSSAPI authentication not supported\n"
 msgstr "аутентификация через GSSAPI не поддерживается\n"
@@ -1078,7 +1078,7 @@ msgstr "аутентификация через GSSAPI не поддержива
 msgid "SSPI authentication not supported"
 msgstr "аутентификация через SSPI не поддерживается"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-auth.c:1017
 msgid "SSPI authentication not supported\n"
 msgstr "аутентификация через SSPI не поддерживается\n"
@@ -1089,7 +1089,7 @@ msgstr "аутентификация через SSPI не поддерживае
 msgid "Crypt authentication not supported"
 msgstr "аутентификация Crypt не поддерживается"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-auth.c:1025
 msgid "Crypt authentication not supported\n"
 msgstr "аутентификация Crypt не поддерживается\n"
@@ -1100,12 +1100,12 @@ msgstr "аутентификация Crypt не поддерживается\n"
 msgid "authentication method %u not supported"
 msgstr "метод аутентификации %u не поддерживается"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-auth.c:765
 msgid "SCM_CRED authentication method not supported\n"
 msgstr "аутентификация SCM_CRED не поддерживается\n"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-auth.c:1092
 #, c-format
 msgid "authentication method %u not supported\n"
@@ -1117,7 +1117,7 @@ msgstr "метод аутентификации %u не поддерживает
 msgid "user name lookup failure: error code %lu"
 msgstr "распознать имя пользователя не удалось (код ошибки: %lu)"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-auth.c:1138
 #, c-format
 msgid "user name lookup failure: error code %lu\n"
@@ -1129,7 +1129,7 @@ msgstr "распознать имя пользователя не удалось
 msgid "could not look up local user ID %ld: %m"
 msgstr "найти локального пользователя по идентификатору (%ld) не удалось: %m"
 
-#. +> 14 13
+#. +> 14
 #: fe-auth.c:1117 fe-connect.c:2858
 #, c-format
 msgid "could not look up local user ID %d: %s\n"
@@ -1141,7 +1141,7 @@ msgstr "найти локального пользователя по идент
 msgid "local user with ID %ld does not exist"
 msgstr "локальный пользователь с ID %ld не существует"
 
-#. +> 14 13
+#. +> 14
 #: fe-auth.c:1122 fe-connect.c:2863
 #, c-format
 msgid "local user with ID %d does not exist\n"
@@ -1153,7 +1153,7 @@ msgstr "локальный пользователь с ID %d не существ
 msgid "unexpected shape of result set returned for SHOW"
 msgstr "неожиданная форма набора результатов, возвращённого для SHOW"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-auth.c:1264
 msgid "unexpected shape of result set returned for SHOW\n"
 msgstr "неожиданная форма набора результатов, возвращённого для SHOW\n"
@@ -1170,7 +1170,7 @@ msgstr "слишком длинное значение \"password_encryption\""
 msgid "password_encryption value too long"
 msgstr "слишком длинное значение password_encryption"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-auth.c:1273
 msgid "password_encryption value too long\n"
 msgstr "слишком длинное значение password_encryption\n"
@@ -1181,7 +1181,7 @@ msgstr "слишком длинное значение password_encryption\n"
 msgid "unrecognized password encryption algorithm \"%s\""
 msgstr "нераспознанный алгоритм шифрования пароля \"%s\""
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-auth.c:1327
 #, c-format
 msgid "unrecognized password encryption algorithm \"%s\"\n"
@@ -1223,7 +1223,7 @@ msgstr "неожиданный ответ сервера"
 msgid "could not match %d host names to %d hostaddr values"
 msgstr "не удалось сопоставить имена узлов (%d) со значениями hostaddr (%d)"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:1093
 #, c-format
 msgid "could not match %d host names to %d hostaddr values\n"
@@ -1235,7 +1235,7 @@ msgstr "не удалось сопоставить имена узлов (%d) с
 msgid "could not match %d port numbers to %d hosts"
 msgstr "не удалось сопоставить номера портов (%d) с узлами (%d)"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:1179
 #, c-format
 msgid "could not match %d port numbers to %d hosts\n"
@@ -1272,30 +1272,6 @@ msgstr "неверное значение %s: \"%s\""
 msgid "invalid %s value: \"%s\"\n"
 msgstr "неверное значение %s: \"%s\"\n"
 
-#. +> 13
-#: fe-connect.c:1257
-#, c-format
-msgid "invalid channel_binding value: \"%s\"\n"
-msgstr "неверное значение channel_binding: \"%s\"\n"
-
-#. +> 13
-#: fe-connect.c:1283
-#, c-format
-msgid "invalid sslmode value: \"%s\"\n"
-msgstr "неверное значение sslmode: \"%s\"\n"
-
-#. +> 13
-#: fe-connect.c:1365
-#, c-format
-msgid "invalid gssencmode value: \"%s\"\n"
-msgstr "неверное значение gssencmode: \"%s\"\n"
-
-#. +> 13
-#: fe-connect.c:1409
-#, c-format
-msgid "invalid target_session_attrs value: \"%s\"\n"
-msgstr "неверное значение target_session_attrs: \"%s\"\n"
-
 #. +> 18
 #: fe-connect.c:1648
 #, c-format
@@ -1314,7 +1290,7 @@ msgstr "метод require_auth \"%s\" указан неоднократно"
 msgid "%s value \"%s\" invalid when SSL support is not compiled in"
 msgstr "значение %s \"%s\" недопустимо для сборки без поддержки SSL"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:1319
 #, c-format
 msgid "sslmode value \"%s\" invalid when SSL support is not compiled in\n"
@@ -1352,22 +1328,10 @@ msgstr "неверное значение \"%s\": \"%s\""
 msgid "invalid SSL protocol version range"
 msgstr "неверный диапазон версий протокола SSL"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:1367
 msgid "invalid SSL protocol version range\n"
 msgstr "неверный диапазон версий протокола SSL\n"
-
-#. +> 13
-#: fe-connect.c:1325
-#, c-format
-msgid "invalid ssl_min_protocol_version value: \"%s\"\n"
-msgstr "неверное значение ssl_min_protocol_version: \"%s\"\n"
-
-#. +> 13
-#: fe-connect.c:1333
-#, c-format
-msgid "invalid ssl_max_protocol_version value: \"%s\"\n"
-msgstr "неверное значение ssl_max_protocol_version: \"%s\"\n"
 
 #. +> 18 17 16
 #: fe-connect.c:1946
@@ -1375,19 +1339,13 @@ msgstr "неверное значение ssl_max_protocol_version: \"%s\"\n"
 msgid "%s value \"%s\" is not supported (check OpenSSL version)"
 msgstr "значение %s \"%s\" не поддерживается (проверьте версию OpenSSL)"
 
-#. +> 13
-#: fe-connect.c:1955
-#, c-format
-msgid "WSAIoctl(SIO_KEEPALIVE_VALS) failed: %ui\n"
-msgstr "ошибка в WSAIoctl(SIO_KEEPALIVE_VALS): %ui\n"
-
 #. +> 18 17 16
 #: fe-connect.c:1976
 #, c-format
 msgid "gssencmode value \"%s\" invalid when GSSAPI support is not compiled in"
 msgstr "значение gssencmode \"%s\" недопустимо для сборки без поддержки GSSAPI"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:1392
 #, c-format
 msgid ""
@@ -1431,7 +1389,7 @@ msgstr "\"%s\" больше чем \"%s\""
 msgid "could not set socket to TCP no delay mode: %s"
 msgstr "не удалось перевести сокет в режим TCP-передачи без задержки: %s"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:1652
 #, c-format
 msgid "could not set socket to TCP no delay mode: %s\n"
@@ -1472,18 +1430,6 @@ msgstr ""
 "\tСервер действительно работает локально и принимает подключения через этот "
 "сокет?\n"
 
-#. +> 13
-#: fe-connect.c:1688
-#, c-format
-msgid ""
-"could not connect to server: %s\n"
-"\tIs the server running locally and accepting\n"
-"\tconnections on Unix domain socket \"%s\"?\n"
-msgstr ""
-"не удалось подключиться к серверу: %s\n"
-"\tОн действительно работает локально и принимает\n"
-"\tсоединения через Unix-сокет \"%s\"?\n"
-
 #. +> 18 17 16
 #: fe-connect.c:2472
 #, c-format
@@ -1499,30 +1445,6 @@ msgstr ""
 "\tСервер действительно работает по данному адресу и принимает TCP-"
 "соединения?\n"
 
-#. +> 13
-#: fe-connect.c:1725
-#, c-format
-msgid ""
-"could not connect to server: %s\n"
-"\tIs the server running on host \"%s\" (%s) and accepting\n"
-"\tTCP/IP connections on port %s?\n"
-msgstr ""
-"не удалось подключиться к серверу: %s\n"
-"\tОн действительно работает по адресу \"%s\" (%s)\n"
-"\t и принимает TCP-соединения (порт %s)?\n"
-
-#. +> 13
-#: fe-connect.c:1733
-#, c-format
-msgid ""
-"could not connect to server: %s\n"
-"\tIs the server running on host \"%s\" and accepting\n"
-"\tTCP/IP connections on port %s?\n"
-msgstr ""
-"не удалось подключиться к серверу: %s\n"
-"\tОн действительно работает по адресу \"%s\"\n"
-"\t и принимает TCP-соединения (порт %s)?\n"
-
 #. +> 18 17 16
 #: fe-connect.c:2518 fe-connect.c:2552 fe-connect.c:2587 fe-connect.c:2685
 #: fe-connect.c:3411
@@ -1536,13 +1458,6 @@ msgstr "ошибка в %s(%s): %s"
 #, c-format
 msgid "%s(%s) failed: %s\n"
 msgstr "ошибка в %s(%s): %s\n"
-
-#. +> 13
-#: fe-connect.c:1833 fe-connect.c:1867 fe-connect.c:1902 fe-connect.c:1989
-#: fe-connect.c:2630
-#, c-format
-msgid "setsockopt(%s) failed: %s\n"
-msgstr "ошибка в setsockopt(%s): %s\n"
 
 #. +> 18 17 16
 #: fe-connect.c:2651
@@ -1562,7 +1477,7 @@ msgstr "ошибка в %s(%s): код ошибки %d\n"
 msgid "invalid connection state, probably indicative of memory corruption"
 msgstr "неверное состояние соединения - возможно разрушение памяти"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:2320
 msgid "invalid connection state, probably indicative of memory corruption\n"
 msgstr "неверное состояние соединения - возможно разрушение памяти\n"
@@ -1573,7 +1488,7 @@ msgstr "неверное состояние соединения - возмож�
 msgid "invalid port number: \"%s\""
 msgstr "неверный номер порта: \"%s\""
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:2399
 #, c-format
 msgid "invalid port number: \"%s\"\n"
@@ -1585,7 +1500,7 @@ msgstr "неверный номер порта: \"%s\"\n"
 msgid "could not translate host name \"%s\" to address: %s"
 msgstr "преобразовать имя \"%s\" в адрес не удалось: %s"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:2415
 #, c-format
 msgid "could not translate host name \"%s\" to address: %s\n"
@@ -1597,7 +1512,7 @@ msgstr "преобразовать имя \"%s\" в адрес не удалос
 msgid "could not parse network address \"%s\": %s"
 msgstr "не удалось разобрать сетевой адрес \"%s\": %s"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:2428
 #, c-format
 msgid "could not parse network address \"%s\": %s\n"
@@ -1609,7 +1524,7 @@ msgstr "не удалось разобрать сетевой адрес \"%s\":
 msgid "Unix-domain socket path \"%s\" is too long (maximum %d bytes)"
 msgstr "длина пути Unix-сокета \"%s\" превышает предел (%d байт)"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:2441
 #, c-format
 msgid "Unix-domain socket path \"%s\" is too long (maximum %d bytes)\n"
@@ -1621,7 +1536,7 @@ msgstr "длина пути Unix-сокета \"%s\" превышает пред
 msgid "could not translate Unix-domain socket path \"%s\" to address: %s"
 msgstr "преобразовать путь Unix-сокета \"%s\" в адрес не удалось: %s"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:2456
 #, c-format
 msgid "could not translate Unix-domain socket path \"%s\" to address: %s\n"
@@ -1645,7 +1560,7 @@ msgstr ""
 "отсутствует кеш учётных данных, нет поддержки на сервере или используется "
 "локальный сокет)"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:2919
 msgid ""
 "GSSAPI encryption required but was impossible (possibly no credential cache, "
@@ -1667,7 +1582,7 @@ msgstr "шифрование GSSAPI затребовано в отсутстви
 msgid "could not create socket: %s"
 msgstr "не удалось создать сокет: %s"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:2582
 #, c-format
 msgid "could not create socket: %s\n"
@@ -1679,7 +1594,7 @@ msgstr "не удалось создать сокет: %s\n"
 msgid "could not set socket to nonblocking mode: %s"
 msgstr "не удалось перевести сокет в неблокирующий режим: %s"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:2613
 #, c-format
 msgid "could not set socket to nonblocking mode: %s\n"
@@ -1693,7 +1608,7 @@ msgstr ""
 "не удалось перевести сокет в режим закрытия при выполнении (close-on-exec): "
 "%s"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:2623
 #, c-format
 msgid "could not set socket to close-on-exec mode: %s\n"
@@ -1707,7 +1622,7 @@ msgstr ""
 msgid "could not get socket error status: %s"
 msgstr "не удалось получить статус ошибки сокета: %s"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:2781
 #, c-format
 msgid "could not get socket error status: %s\n"
@@ -1719,7 +1634,7 @@ msgstr "не удалось получить статус ошибки соке�
 msgid "could not get client address from socket: %s"
 msgstr "не удалось получить адрес клиента из сокета: %s"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:2809
 #, c-format
 msgid "could not get client address from socket: %s\n"
@@ -1731,7 +1646,7 @@ msgstr "не удалось получить адрес клиента из со
 msgid "requirepeer parameter is not supported on this platform"
 msgstr "параметр requirepeer не поддерживается в этой ОС"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:2848
 msgid "requirepeer parameter is not supported on this platform\n"
 msgstr "параметр requirepeer не поддерживается в этой ОС\n"
@@ -1742,7 +1657,7 @@ msgstr "параметр requirepeer не поддерживается в это
 msgid "could not get peer credentials: %s"
 msgstr "не удалось получить учётные данные сервера: %s"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:2851
 #, c-format
 msgid "could not get peer credentials: %s\n"
@@ -1756,7 +1671,7 @@ msgstr ""
 "requirepeer допускает подключение только к \"%s\", но сервер работает под "
 "именем \"%s\""
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:2865
 #, c-format
 msgid "requirepeer specifies \"%s\", but actual peer user name is \"%s\"\n"
@@ -1770,7 +1685,7 @@ msgstr ""
 msgid "could not send GSSAPI negotiation packet: %s"
 msgstr "не удалось отправить пакет согласования GSSAPI: %s"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:2907
 #, c-format
 msgid "could not send GSSAPI negotiation packet: %s\n"
@@ -1782,7 +1697,7 @@ msgstr "не удалось отправить пакет согласовани
 msgid "could not send SSL negotiation packet: %s"
 msgstr "не удалось отправить пакет согласования SSL: %s"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:2961
 #, c-format
 msgid "could not send SSL negotiation packet: %s\n"
@@ -1800,32 +1715,18 @@ msgstr "не удалось отправить пакет отмены: %s"
 msgid "could not send startup packet: %s"
 msgstr "не удалось отправить стартовый пакет: %s"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:2992
 #, c-format
 msgid "could not send startup packet: %s\n"
 msgstr "не удалось отправить стартовый пакет: %s\n"
-
-#. +> 13
-#: fe-connect.c:3746
-#, c-format
-msgid "could not make a writable connection to server \"%s:%s\"\n"
-msgstr ""
-"не удалось установить подключение для чтения/записи к серверу \"%s:%s\"\n"
-
-#. +> 13
-#: fe-connect.c:3792
-#, c-format
-msgid "test \"SHOW transaction_read_only\" failed on server \"%s:%s\"\n"
-msgstr ""
-"проверка \"SHOW transaction_read_only\" не пройдена на сервере \"%s:%s\"\n"
 
 #. +> 18 17 16
 #: fe-connect.c:3812
 msgid "server does not support SSL, but SSL was required"
 msgstr "затребовано подключение через SSL, но сервер не поддерживает SSL"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:3068
 msgid "server does not support SSL, but SSL was required\n"
 msgstr "затребовано подключение через SSL, но сервер не поддерживает SSL\n"
@@ -1836,7 +1737,7 @@ msgstr "затребовано подключение через SSL, но се�
 msgid "server sent an error response during SSL exchange"
 msgstr "сервер передал ошибочный ответ во время обмена сообщениями SSL"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:3086
 msgid "server sent an error response during SSL exchange\n"
 msgstr "сервер передал ошибочный ответ во время обмена сообщениями SSL\n"
@@ -1847,7 +1748,7 @@ msgstr "сервер передал ошибочный ответ во врем�
 msgid "received invalid response to SSL negotiation: %c"
 msgstr "получен неверный ответ при согласовании SSL: %c"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:3092
 #, c-format
 msgid "received invalid response to SSL negotiation: %c\n"
@@ -1859,7 +1760,7 @@ msgstr "получен неверный ответ при согласовани
 msgid "received unencrypted data after SSL response"
 msgstr "после ответа SSL получены незашифрованные данные"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:3113
 msgid "received unencrypted data after SSL response\n"
 msgstr "после ответа SSL получены незашифрованные данные\n"
@@ -1875,7 +1776,7 @@ msgstr "сервер передал ошибочный ответ во врем�
 msgid "server doesn't support GSSAPI encryption, but it was required"
 msgstr "затребовано шифрование GSSAPI, но сервер его не поддерживает"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:3194
 msgid "server doesn't support GSSAPI encryption, but it was required\n"
 msgstr "затребовано шифрование GSSAPI, но сервер его не поддерживает\n"
@@ -1886,7 +1787,7 @@ msgstr "затребовано шифрование GSSAPI, но сервер е
 msgid "received invalid response to GSSAPI negotiation: %c"
 msgstr "получен неверный ответ при согласовании GSSAPI: %c"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:3206
 #, c-format
 msgid "received invalid response to GSSAPI negotiation: %c\n"
@@ -1899,7 +1800,7 @@ msgid "received unencrypted data after GSSAPI encryption response"
 msgstr ""
 "после ответа на запрос шифрования GSSAPI получены незашифрованные данные"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:3225
 msgid "received unencrypted data after GSSAPI encryption response\n"
 msgstr ""
@@ -1911,7 +1812,7 @@ msgstr ""
 msgid "expected authentication request from server, but received %c"
 msgstr "ожидался запрос аутентификации от сервера, но получено: %c"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:3290 fe-connect.c:3315
 #, c-format
 msgid "expected authentication request from server, but received %c\n"
@@ -1963,7 +1864,7 @@ msgstr ""
 "внутренняя ошибка: при асинхронной аутентификации не был настроен сокет для "
 "опроса"
 
-#. +> 14 13
+#. +> 14
 #: fe-connect.c:4308 fe-connect.c:4368
 #, c-format
 msgid "PGEventProc \"%s\" failed during PGEVT_CONNRESET event\n"
@@ -1975,7 +1876,7 @@ msgstr "ошибка в PGEventProc \"%s\" при обработке событ�
 msgid "unexpected message from server during startup"
 msgstr "неожиданное сообщение от сервера в начале работы"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:3522
 msgid "unexpected message from server during startup\n"
 msgstr "неожиданное сообщение от сервера в начале работы\n"
@@ -2042,7 +1943,7 @@ msgstr "выполнить \"%s\" не удалось\n"
 msgid "invalid connection state %d, probably indicative of memory corruption"
 msgstr "неверное состояние соединения %d - возможно разрушение памяти"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:3858
 #, c-format
 msgid "invalid connection state %d, probably indicative of memory corruption\n"
@@ -2054,7 +1955,7 @@ msgstr "неверное состояние соединения %d - возмо
 msgid "invalid LDAP URL \"%s\": scheme must be ldap://"
 msgstr "некорректный адрес LDAP \"%s\": схема должна быть ldap://"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:4841
 #, c-format
 msgid "invalid LDAP URL \"%s\": scheme must be ldap://\n"
@@ -2066,7 +1967,7 @@ msgstr "некорректный адрес LDAP \"%s\": схема должна
 msgid "invalid LDAP URL \"%s\": missing distinguished name"
 msgstr "некорректный адрес LDAP \"%s\": отсутствует уникальное имя"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:4856
 #, c-format
 msgid "invalid LDAP URL \"%s\": missing distinguished name\n"
@@ -2078,7 +1979,7 @@ msgstr "некорректный адрес LDAP \"%s\": отсутствует 
 msgid "invalid LDAP URL \"%s\": must have exactly one attribute"
 msgstr "некорректный адрес LDAP \"%s\": должен быть только один атрибут"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:4868 fe-connect.c:4926
 #, c-format
 msgid "invalid LDAP URL \"%s\": must have exactly one attribute\n"
@@ -2091,7 +1992,7 @@ msgid "invalid LDAP URL \"%s\": must have search scope (base/one/sub)"
 msgstr ""
 "некорректный адрес LDAP \"%s\": не указана область поиска (base/one/sub)"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:4880 fe-connect.c:4942
 #, c-format
 msgid "invalid LDAP URL \"%s\": must have search scope (base/one/sub)\n"
@@ -2104,7 +2005,7 @@ msgstr ""
 msgid "invalid LDAP URL \"%s\": no filter"
 msgstr "некорректный адрес LDAP \"%s\": нет фильтра"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:4892
 #, c-format
 msgid "invalid LDAP URL \"%s\": no filter\n"
@@ -2116,7 +2017,7 @@ msgstr "некорректный адрес LDAP \"%s\": нет фильтра\n
 msgid "invalid LDAP URL \"%s\": invalid port number"
 msgstr "некорректный адрес LDAP \"%s\": неверный номер порта"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:4914
 #, c-format
 msgid "invalid LDAP URL \"%s\": invalid port number\n"
@@ -2128,7 +2029,7 @@ msgstr "некорректный адрес LDAP \"%s\": неверный ном
 msgid "could not create LDAP structure"
 msgstr "не удалось создать структуру LDAP"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:4952
 msgid "could not create LDAP structure\n"
 msgstr "не удалось создать структуру LDAP\n"
@@ -2139,7 +2040,7 @@ msgstr "не удалось создать структуру LDAP\n"
 msgid "lookup on LDAP server failed: %s"
 msgstr "ошибка поиска на сервере LDAP: %s"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:5028
 #, c-format
 msgid "lookup on LDAP server failed: %s\n"
@@ -2151,7 +2052,7 @@ msgstr "ошибка поиска на сервере LDAP: %s\n"
 msgid "more than one entry found on LDAP lookup"
 msgstr "при поиске LDAP найдено более одного вхождения"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:5039
 msgid "more than one entry found on LDAP lookup\n"
 msgstr "при поиске LDAP найдено более одного вхождения\n"
@@ -2162,7 +2063,7 @@ msgstr "при поиске LDAP найдено более одного вхож
 msgid "no entry found on LDAP lookup"
 msgstr "при поиске LDAP ничего не найдено"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:5040 fe-connect.c:5052
 msgid "no entry found on LDAP lookup\n"
 msgstr "при поиске LDAP ничего не найдено\n"
@@ -2173,7 +2074,7 @@ msgstr "при поиске LDAP ничего не найдено\n"
 msgid "attribute has no values on LDAP lookup"
 msgstr "атрибут не содержит значений при поиске LDAP"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:5063 fe-connect.c:5076
 msgid "attribute has no values on LDAP lookup\n"
 msgstr "атрибут не содержит значений при поиске LDAP\n"
@@ -2186,7 +2087,7 @@ msgstr ""
 "размер строки с информацией о подключении превышает максимально допустимый "
 "(%d)"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:5090
 #, c-format
 msgid "connection info string size exceeds the maximum allowed (%d)\n"
@@ -2200,7 +2101,7 @@ msgstr ""
 msgid "missing \"=\" after \"%s\" in connection info string"
 msgstr "в строке соединения нет \"=\" после \"%s\""
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:5142 fe-connect.c:5161 fe-connect.c:5693
 #, c-format
 msgid "missing \"=\" after \"%s\" in connection info string\n"
@@ -2212,7 +2113,7 @@ msgstr "в строке соединения нет \"=\" после \"%s\"\n"
 msgid "invalid connection option \"%s\""
 msgstr "неверный параметр соединения \"%s\""
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:5234 fe-connect.c:5878 fe-connect.c:6654
 #, c-format
 msgid "invalid connection option \"%s\"\n"
@@ -2224,7 +2125,7 @@ msgstr "неверный параметр соединения \"%s\"\n"
 msgid "unterminated quoted string in connection info string"
 msgstr "в строке соединения не хватает закрывающей кавычки"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:5250 fe-connect.c:5742
 msgid "unterminated quoted string in connection info string\n"
 msgstr "в строке соединения не хватает закрывающей кавычки\n"
@@ -2235,7 +2136,7 @@ msgstr "в строке соединения не хватает закрыва�
 msgid "definition of service \"%s\" not found"
 msgstr "определение службы \"%s\" не найдено"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:5331
 #, c-format
 msgid "definition of service \"%s\" not found\n"
@@ -2247,7 +2148,7 @@ msgstr "определение службы \"%s\" не найдено\n"
 msgid "service file \"%s\" not found"
 msgstr "файл определений служб \"%s\" не найден"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:5357
 #, c-format
 msgid "service file \"%s\" not found\n"
@@ -2259,7 +2160,7 @@ msgstr "файл определений служб \"%s\" не найден\n"
 msgid "line %d too long in service file \"%s\""
 msgstr "слишком длинная строка (%d) в файле определений служб \"%s\""
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:5371
 #, c-format
 msgid "line %d too long in service file \"%s\"\n"
@@ -2271,7 +2172,7 @@ msgstr "слишком длинная строка (%d) в файле опред
 msgid "syntax error in service file \"%s\", line %d"
 msgstr "синтаксическая ошибка в файле определения служб \"%s\" (строка %d)"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:5442 fe-connect.c:5486
 #, c-format
 msgid "syntax error in service file \"%s\", line %d\n"
@@ -2286,7 +2187,7 @@ msgstr ""
 "рекурсивные определения служб не поддерживаются (файл определения служб "
 "\"%s\", строка %d)"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:5453
 #, c-format
 msgid ""
@@ -2301,7 +2202,7 @@ msgstr ""
 msgid "invalid URI propagated to internal parser routine: \"%s\""
 msgstr "во внутреннюю процедуру разбора строки передан ошибочный URI: \"%s\""
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:6174
 #, c-format
 msgid "invalid URI propagated to internal parser routine: \"%s\"\n"
@@ -2315,7 +2216,7 @@ msgid ""
 "in URI: \"%s\""
 msgstr "URI не содержит символ \"]\" после адреса IPv6: \"%s\""
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:6251
 #, c-format
 msgid ""
@@ -2329,7 +2230,7 @@ msgstr "URI не содержит символ \"]\" после адреса IPv
 msgid "IPv6 host address may not be empty in URI: \"%s\""
 msgstr "IPv6, содержащийся в URI, не может быть пустым: \"%s\""
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:6258
 #, c-format
 msgid "IPv6 host address may not be empty in URI: \"%s\"\n"
@@ -2345,7 +2246,7 @@ msgstr ""
 "неожиданный символ \"%c\" в позиции %d в URI (ожидалось \":\" или \"/\"): "
 "\"%s\""
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:6273
 #, c-format
 msgid ""
@@ -2361,7 +2262,7 @@ msgstr ""
 msgid "extra key/value separator \"=\" in URI query parameter: \"%s\""
 msgstr "лишний разделитель ключа/значения \"=\" в параметрах URI: \"%s\""
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:6403
 #, c-format
 msgid "extra key/value separator \"=\" in URI query parameter: \"%s\"\n"
@@ -2373,7 +2274,7 @@ msgstr "лишний разделитель ключа/значения \"=\" в
 msgid "missing key/value separator \"=\" in URI query parameter: \"%s\""
 msgstr "в параметрах URI не хватает разделителя ключа/значения \"=\": \"%s\""
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:6423
 #, c-format
 msgid "missing key/value separator \"=\" in URI query parameter: \"%s\"\n"
@@ -2385,7 +2286,7 @@ msgstr "в параметрах URI не хватает разделителя �
 msgid "invalid URI query parameter: \"%s\""
 msgstr "неверный параметр в URI: \"%s\""
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:6475
 #, c-format
 msgid "invalid URI query parameter: \"%s\"\n"
@@ -2397,7 +2298,7 @@ msgstr "неверный параметр в URI: \"%s\"\n"
 msgid "invalid percent-encoded token: \"%s\""
 msgstr "неверный символ, закодированный с %%: \"%s\""
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:6549
 #, c-format
 msgid "invalid percent-encoded token: \"%s\"\n"
@@ -2409,7 +2310,7 @@ msgstr "неверный символ, закодированный с %%: \"%s\
 msgid "forbidden value %%00 in percent-encoded value: \"%s\""
 msgstr "недопустимое значение %%00 для символа, закодированного с %%: \"%s\""
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:6559
 #, c-format
 msgid "forbidden value %%00 in percent-encoded value: \"%s\"\n"
@@ -2423,24 +2324,24 @@ msgid ""
 msgstr ""
 "в \"%s\" обнаружены недопустимые пробелы, замените их закодированными (%%20)"
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-connect.c:7641
 msgid "connection pointer is NULL\n"
 msgstr "нулевой указатель соединения\n"
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-connect.c:7649 fe-exec.c:719 fe-exec.c:981 fe-exec.c:3490
 #: fe-protocol3.c:1008 fe-protocol3.c:1041
 msgid "out of memory\n"
 msgstr "нехватка памяти\n"
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-connect.c:7951
 #, c-format
 msgid "WARNING: password file \"%s\" is not a plain file\n"
 msgstr "ПРЕДУПРЕЖДЕНИЕ: файл паролей \"%s\" - не обычный файл\n"
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-connect.c:7961
 #, c-format
 msgid ""
@@ -2456,7 +2357,7 @@ msgstr ""
 msgid "password retrieved from file \"%s\""
 msgstr "пароль получен из файла \"%s\""
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:7336
 #, c-format
 msgid "password retrieved from file \"%s\"\n"
@@ -2468,20 +2369,20 @@ msgstr "пароль получен из файла \"%s\"\n"
 msgid "invalid integer value \"%s\" for connection option \"%s\""
 msgstr "неверное целочисленное значение \"%s\" для параметра соединения \"%s\""
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-connect.c:1839
 #, c-format
 msgid "invalid integer value \"%s\" for connection option \"%s\"\n"
 msgstr ""
 "неверное целочисленное значение \"%s\" для параметра соединения \"%s\"\n"
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-exec.c:470 fe-exec.c:3564
 #, c-format
 msgid "row number %d is out of range 0..%d"
 msgstr "номер записи %d вне диапазона 0..%d"
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-exec.c:532 fe-protocol3.c:2149
 #, c-format
 msgid "%s"
@@ -2493,7 +2394,7 @@ msgstr "%s"
 msgid "write to server failed"
 msgstr "ошибка при передаче данных серверу"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-exec.c:842
 msgid "write to server failed\n"
 msgstr "ошибка при передаче данных серверу\n"
@@ -2509,25 +2410,20 @@ msgstr "текст ошибки отсутствует"
 msgid "no error text available\n"
 msgstr "текст ошибки отсутствует\n"
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-exec.c:969
 msgid "NOTICE"
 msgstr "ЗАМЕЧАНИЕ"
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-exec.c:1027
 msgid "PGresult cannot support more than INT_MAX tuples"
 msgstr "PGresult не может вместить больше чем INT_MAX кортежей"
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-exec.c:1039
 msgid "size_t overflow"
 msgstr "переполнение size_t"
-
-#. +> 13
-#: fe-exec.c:1366 fe-exec.c:1529 fe-exec.c:2242 fe-exec.c:2444
-msgid "function requires at least protocol version 3.0\n"
-msgstr "функция требует протокол минимум версии 3.0\n"
 
 #. +> 18 17 16
 #: fe-exec.c:1455 fe-exec.c:1524 fe-exec.c:1570
@@ -2535,7 +2431,7 @@ msgstr "функция требует протокол минимум верси
 msgid "command string is a null pointer"
 msgstr "указатель на командную строку нулевой"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-exec.c:1456 fe-exec.c:1527 fe-exec.c:1576
 msgid "command string is a null pointer\n"
 msgstr "указатель на командную строку нулевой\n"
@@ -2551,16 +2447,6 @@ msgstr "%s не допускается в конвейерном режиме"
 #, c-format
 msgid "%s not allowed in pipeline mode\n"
 msgstr "%s не допускается в конвейерном режиме\n"
-
-#. +> 13
-#: fe-exec.c:2060
-msgid "COPY IN state must be terminated first\n"
-msgstr "сначала должно завершиться состояние COPY IN\n"
-
-#. +> 13
-#: fe-exec.c:2080
-msgid "COPY OUT state must be terminated first\n"
-msgstr "сначала должно завершиться состояние COPY OUT\n"
 
 #. +> 14
 #: fe-exec.c:2915
@@ -2579,18 +2465,13 @@ msgstr "число параметров должно быть от 0 до %d"
 msgid "number of parameters must be between 0 and %d\n"
 msgstr "число параметров должно быть от 0 до %d\n"
 
-#. +> 13
-#: fe-exec.c:1312 fe-exec.c:1358 fe-exec.c:1453
-msgid "number of parameters must be between 0 and 65535\n"
-msgstr "число параметров должно быть от 0 до 65535\n"
-
 #. +> 18 17 16
 #: fe-exec.c:1565 fe-exec.c:1664
 #, c-format
 msgid "statement name is a null pointer"
 msgstr "указатель на имя оператора нулевой"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-exec.c:1570 fe-exec.c:1672
 msgid "statement name is a null pointer\n"
 msgstr "указатель на имя оператора нулевой\n"
@@ -2601,7 +2482,7 @@ msgstr "указатель на имя оператора нулевой\n"
 msgid "no connection to the server"
 msgstr "нет соединения с сервером"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-exec.c:1716 fe-exec.c:3296
 msgid "no connection to the server\n"
 msgstr "нет соединения с сервером\n"
@@ -2612,7 +2493,7 @@ msgstr "нет соединения с сервером\n"
 msgid "another command is already in progress"
 msgstr "уже выполняется другая команда"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-exec.c:1725 fe-exec.c:3305
 msgid "another command is already in progress\n"
 msgstr "уже выполняется другая команда\n"
@@ -2634,12 +2515,12 @@ msgstr "во время COPY нельзя добавлять команды в �
 msgid "length must be given for binary parameter"
 msgstr "для двоичного параметра должна быть указана длина"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-exec.c:1874
 msgid "length must be given for binary parameter\n"
 msgstr "для двоичного параметра должна быть указана длина\n"
 
-#. +> 14 13
+#. +> 14
 #: fe-exec.c:2184
 #, c-format
 msgid "PGEventProc \"%s\" failed during PGEVT_RESULTCREATE event\n"
@@ -2651,7 +2532,7 @@ msgstr "ошибка в PGEventProc \"%s\" при обработке событ�
 msgid "unexpected asyncStatus: %d"
 msgstr "неожиданный asyncStatus: %d"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-exec.c:2189
 #, c-format
 msgid "unexpected asyncStatus: %d\n"
@@ -2672,7 +2553,7 @@ msgid ""
 msgstr ""
 "функции синхронного выполнения команд не допускаются в конвейерном режиме\n"
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-exec.c:2395
 msgid "COPY terminated by new PQexec"
 msgstr "операция COPY прервана вызовом PQexec"
@@ -2683,7 +2564,7 @@ msgstr "операция COPY прервана вызовом PQexec"
 msgid "PQexec not allowed during COPY BOTH"
 msgstr "вызов PQexec не допускается в процессе COPY BOTH"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-exec.c:2381
 msgid "PQexec not allowed during COPY BOTH\n"
 msgstr "вызов PQexec не допускается в процессе COPY BOTH\n"
@@ -2700,7 +2581,7 @@ msgstr "нераспознанный тип сообщения \"%c\""
 msgid "no COPY in progress"
 msgstr "операция COPY не выполняется"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-exec.c:2609 fe-exec.c:2665 fe-exec.c:2734 fe-protocol3.c:1878
 msgid "no COPY in progress\n"
 msgstr "операция COPY не выполняется\n"
@@ -2711,7 +2592,7 @@ msgstr "операция COPY не выполняется\n"
 msgid "connection in wrong state"
 msgstr "соединение в неправильном состоянии"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-exec.c:2937
 msgid "connection in wrong state\n"
 msgstr "соединение в неправильном состоянии\n"
@@ -2771,29 +2652,29 @@ msgstr "отправить конвейер, не перейдя в конвей
 msgid "cannot send pipeline when not in pipeline mode\n"
 msgstr "отправить конвейер, не перейдя в конвейерный режим, нельзя\n"
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-exec.c:3453
 msgid "invalid ExecStatusType code"
 msgstr "неверный код ExecStatusType"
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-exec.c:3480
 msgid "PGresult is not an error result\n"
 msgstr "В PGresult не передан результат ошибки\n"
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-exec.c:3548 fe-exec.c:3571
 #, c-format
 msgid "column number %d is out of range 0..%d"
 msgstr "номер столбца %d вне диапазона 0..%d"
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-exec.c:3586
 #, c-format
 msgid "parameter number %d is out of range 0..%d"
 msgstr "номер параметра %d вне диапазона 0..%d"
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-exec.c:3897
 #, c-format
 msgid "could not interpret result from server: %s"
@@ -2805,7 +2686,7 @@ msgstr "не удалось интерпретировать ответ серв
 msgid "incomplete multibyte character"
 msgstr "неполный многобайтный символ"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-exec.c:4064 fe-exec.c:4179
 msgid "incomplete multibyte character\n"
 msgstr "неполный многобайтный символ\n"
@@ -2816,7 +2697,7 @@ msgstr "неполный многобайтный символ\n"
 msgid "invalid multibyte character"
 msgstr "неверный многобайтный символ"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-exec.c:4067 fe-exec.c:4199
 msgid "invalid multibyte character\n"
 msgstr "неверный многобайтный символ\n"
@@ -2827,7 +2708,7 @@ msgstr "неверный многобайтный символ\n"
 msgid "escaped string size exceeds the maximum allowed (%zu)"
 msgstr "размер строки с экранированием превышает максимально допустимый (%zu)"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-exec.c:4302
 #, c-format
 msgid "escaped string size exceeds the maximum allowed (%zu)\n"
@@ -2841,7 +2722,7 @@ msgid "escaped bytea size exceeds the maximum allowed (%zu)"
 msgstr ""
 "размер значения bytea с экранированием превышает максимально допустимый (%zu)"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-exec.c:4480
 #, c-format
 msgid "escaped bytea size exceeds the maximum allowed (%zu)\n"
@@ -2849,7 +2730,7 @@ msgstr ""
 "размер значения bytea с экранированием превышает максимально допустимый "
 "(%zu)\n"
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-gssapi-common.c:122
 msgid "GSSAPI name import error"
 msgstr "ошибка импорта имени в GSSAPI"
@@ -2870,78 +2751,13 @@ msgstr "определить OID функции %s нельзя"
 msgid "cannot determine OID of function %s\n"
 msgstr "определить OID функции %s нельзя\n"
 
-#. +> 13
-#: fe-lobj.c:154
-msgid "cannot determine OID of function lo_truncate\n"
-msgstr "не удалось определить OID функции lo_truncate\n"
-
-#. +> 13
-#: fe-lobj.c:221
-msgid "cannot determine OID of function lo_truncate64\n"
-msgstr "не удалось определить OID функции lo_truncate64\n"
-
-#. +> 13
-#: fe-lobj.c:425
-msgid "cannot determine OID of function lo_lseek64\n"
-msgstr "не удалось определить OID функции lo_lseek64\n"
-
-#. +> 13
-#: fe-lobj.c:521
-msgid "cannot determine OID of function lo_create\n"
-msgstr "не удалось определить OID функции lo_create\n"
-
-#. +> 13
-#: fe-lobj.c:600
-msgid "cannot determine OID of function lo_tell64\n"
-msgstr "не удалось определить OID функции lo_tell64\n"
-
-#. +> 13
-#: fe-lobj.c:995
-msgid "cannot determine OID of function lo_open\n"
-msgstr "не удалось определить OID функции lo_open\n"
-
-#. +> 13
-#: fe-lobj.c:1002
-msgid "cannot determine OID of function lo_close\n"
-msgstr "не удалось определить OID функции lo_close\n"
-
-#. +> 13
-#: fe-lobj.c:1009
-msgid "cannot determine OID of function lo_creat\n"
-msgstr "не удалось определить OID функции lo_creat\n"
-
-#. +> 13
-#: fe-lobj.c:1016
-msgid "cannot determine OID of function lo_unlink\n"
-msgstr "не удалось определить OID функции lo_unlink\n"
-
-#. +> 13
-#: fe-lobj.c:1023
-msgid "cannot determine OID of function lo_lseek\n"
-msgstr "не удалось определить OID функции lo_lseek\n"
-
-#. +> 13
-#: fe-lobj.c:1030
-msgid "cannot determine OID of function lo_tell\n"
-msgstr "не удалось определить OID функции lo_tell\n"
-
-#. +> 13
-#: fe-lobj.c:1037
-msgid "cannot determine OID of function loread\n"
-msgstr "не удалось определить OID функции loread\n"
-
-#. +> 13
-#: fe-lobj.c:1044
-msgid "cannot determine OID of function lowrite\n"
-msgstr "не удалось определить OID функции lowrite\n"
-
 #. +> 18 17 16
 #: fe-lobj.c:160
 #, c-format
 msgid "argument of lo_truncate exceeds integer range"
 msgstr "аргумент lo_truncate не умещается в обычном целом"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-lobj.c:162
 msgid "argument of lo_truncate exceeds integer range\n"
 msgstr "аргумент lo_truncate не умещается в обычном целом\n"
@@ -2952,7 +2768,7 @@ msgstr "аргумент lo_truncate не умещается в обычном �
 msgid "argument of lo_read exceeds integer range"
 msgstr "аргумент lo_read не умещается в обычном целом"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-lobj.c:266
 msgid "argument of lo_read exceeds integer range\n"
 msgstr "аргумент lo_read не умещается в обычном целом\n"
@@ -2963,7 +2779,7 @@ msgstr "аргумент lo_read не умещается в обычном це�
 msgid "argument of lo_write exceeds integer range"
 msgstr "аргумент lo_write не умещается в обычном целом"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-lobj.c:318
 msgid "argument of lo_write exceeds integer range\n"
 msgstr "аргумент lo_write не умещается в обычном целом\n"
@@ -2974,7 +2790,7 @@ msgstr "аргумент lo_write не умещается в обычном це
 msgid "could not open file \"%s\": %s"
 msgstr "не удалось открыть файл \"%s\": %s"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-lobj.c:678 fe-lobj.c:791
 #, c-format
 msgid "could not open file \"%s\": %s\n"
@@ -2986,7 +2802,7 @@ msgstr "не удалось открыть файл \"%s\": %s\n"
 msgid "could not read from file \"%s\": %s"
 msgstr "не удалось прочитать файл \"%s\": %s"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-lobj.c:735
 #, c-format
 msgid "could not read from file \"%s\": %s\n"
@@ -2998,7 +2814,7 @@ msgstr "не удалось прочитать файл \"%s\": %s\n"
 msgid "could not write to file \"%s\": %s"
 msgstr "не удалось записать файл \"%s\": %s"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-lobj.c:813 fe-lobj.c:837
 #, c-format
 msgid "could not write to file \"%s\": %s\n"
@@ -3010,18 +2826,18 @@ msgstr "не удалось записать файл \"%s\": %s\n"
 msgid "query to initialize large object functions did not return data"
 msgstr "запрос инициализации функций для больших объектов не вернул данные"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-lobj.c:923
 msgid "query to initialize large object functions did not return data\n"
 msgstr "запрос инициализации функций для больших объектов не вернул данные\n"
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-misc.c:241
 #, c-format
 msgid "integer of size %lu not supported by pqGetInt"
 msgstr "функция pqGetInt не поддерживает integer размером %lu байт"
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-misc.c:274
 #, c-format
 msgid "integer of size %lu not supported by pqPutInt"
@@ -3040,8 +2856,8 @@ msgstr ""
 "\tСкорее всего сервер прекратил работу из-за сбоя\n"
 "\tдо или в процессе выполнения запроса."
 
-#. +> 15 14 13
-#: fe-misc.c:823 fe-secure-openssl.c:214 fe-secure-openssl.c:359
+#. +> 15 14
+#: fe-misc.c:823 fe-secure-openssl.c:218 fe-secure-openssl.c:363
 #: fe-secure.c:262 fe-secure.c:454
 #, c-format
 msgid ""
@@ -3067,7 +2883,7 @@ msgid "drained only %zd of %zd pending bytes in transport buffer\n"
 msgstr ""
 "выбрано только %zd из %zd байт, ожидающих получения в транспортном буфере\n"
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-misc.c:1004
 msgid "connection not open\n"
 msgstr "соединение не открыто\n"
@@ -3078,7 +2894,7 @@ msgstr "соединение не открыто\n"
 msgid "timeout expired"
 msgstr "тайм-аут"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-misc.c:1180
 msgid "timeout expired\n"
 msgstr "тайм-аут\n"
@@ -3089,7 +2905,7 @@ msgstr "тайм-аут\n"
 msgid "invalid socket"
 msgstr "неверный сокет"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-misc.c:1225
 msgid "invalid socket\n"
 msgstr "неверный сокет\n"
@@ -3106,19 +2922,13 @@ msgstr "ошибка в %s(): %s"
 msgid "%s() failed: %s\n"
 msgstr "ошибка в %s(): %s\n"
 
-#. +> 13
-#: fe-misc.c:1157
-#, c-format
-msgid "select() failed: %s\n"
-msgstr "ошибка в select(): %s\n"
-
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-protocol3.c:192
 #, c-format
 msgid "message type 0x%02x arrived from server while idle"
 msgstr "от сервера во время простоя получено сообщение типа 0x%02x"
 
-#. +> 18 17 16 13
+#. +> 18 17 16
 #: fe-protocol3.c:405
 #, c-format
 msgid ""
@@ -3128,7 +2938,7 @@ msgstr ""
 "сервер отправил данные (сообщение \"D\") без предварительного описания "
 "строки (сообщение \"T\")"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-protocol3.c:390
 msgid ""
 "server sent data (\"D\" message) without prior row description (\"T\" "
@@ -3143,7 +2953,7 @@ msgstr ""
 msgid "unexpected response from server; first received character was \"%c\""
 msgstr "неожиданный ответ сервера; первый полученный символ: \"%c\""
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-protocol3.c:433
 #, c-format
 msgid "unexpected response from server; first received character was \"%c\"\n"
@@ -3155,7 +2965,7 @@ msgstr "неожиданный ответ сервера; первый полу�
 msgid "message contents do not agree with length in message type \"%c\""
 msgstr "содержимое не соответствует длине в сообщении типа \"%c\""
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-protocol3.c:458
 #, c-format
 msgid "message contents do not agree with length in message type \"%c\"\n"
@@ -3168,122 +2978,122 @@ msgid "lost synchronization with server: got message type \"%c\", length %d"
 msgstr ""
 "потеряна синхронизация с сервером: получено сообщение типа \"%c\", длина %d"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-protocol3.c:478
 #, c-format
 msgid "lost synchronization with server: got message type \"%c\", length %d\n"
 msgstr ""
 "потеряна синхронизация с сервером: получено сообщение типа \"%c\", длина %d\n"
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-protocol3.c:553 fe-protocol3.c:593
 msgid "insufficient data in \"T\" message"
 msgstr "недостаточно данных в сообщении \"T\""
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-protocol3.c:664 fe-protocol3.c:870
 msgid "out of memory for query result"
 msgstr "недостаточно памяти для результата запроса"
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-protocol3.c:733
 msgid "insufficient data in \"t\" message"
 msgstr "недостаточно данных в сообщении \"t\""
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-protocol3.c:792 fe-protocol3.c:824 fe-protocol3.c:842
 msgid "insufficient data in \"D\" message"
 msgstr "недостаточно данных в сообщении \"D\""
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-protocol3.c:798
 msgid "unexpected field count in \"D\" message"
 msgstr "неверное число полей в сообщении \"D\""
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-protocol3.c:1054
 msgid "no error message available\n"
 msgstr "нет сообщения об ошибке\n"
 
 #. translator: %s represents a digit string
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-protocol3.c:1102 fe-protocol3.c:1121
 #, c-format
 msgid " at character %s"
 msgstr " символ %s"
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-protocol3.c:1134
 #, c-format
 msgid "DETAIL:  %s\n"
 msgstr "ПОДРОБНОСТИ:  %s\n"
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-protocol3.c:1137
 #, c-format
 msgid "HINT:  %s\n"
 msgstr "ПОДСКАЗКА:  %s\n"
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-protocol3.c:1140
 #, c-format
 msgid "QUERY:  %s\n"
 msgstr "ЗАПРОС:  %s\n"
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-protocol3.c:1147
 #, c-format
 msgid "CONTEXT:  %s\n"
 msgstr "КОНТЕКСТ:  %s\n"
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-protocol3.c:1156
 #, c-format
 msgid "SCHEMA NAME:  %s\n"
 msgstr "СХЕМА:  %s\n"
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-protocol3.c:1160
 #, c-format
 msgid "TABLE NAME:  %s\n"
 msgstr "ТАБЛИЦА:  %s\n"
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-protocol3.c:1164
 #, c-format
 msgid "COLUMN NAME:  %s\n"
 msgstr "СТОЛБЕЦ:  %s\n"
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-protocol3.c:1168
 #, c-format
 msgid "DATATYPE NAME:  %s\n"
 msgstr "ТИП ДАННЫХ:  %s\n"
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-protocol3.c:1172
 #, c-format
 msgid "CONSTRAINT NAME:  %s\n"
 msgstr "ОГРАНИЧЕНИЕ:  %s\n"
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-protocol3.c:1184
 msgid "LOCATION:  "
 msgstr "ПОЛОЖЕНИЕ:  "
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-protocol3.c:1186
 #, c-format
 msgid "%s, "
 msgstr "%s, "
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-protocol3.c:1188
 #, c-format
 msgid "%s:%s"
 msgstr "%s:%s"
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-protocol3.c:1396
 #, c-format
 msgid "LINE %d: "
@@ -3437,7 +3247,7 @@ msgstr ""
 msgid "PQgetline: not doing text COPY OUT"
 msgstr "PQgetline можно вызывать только во время COPY OUT с текстом"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-protocol3.c:1772
 msgid "PQgetline: not doing text COPY OUT\n"
 msgstr "PQgetline можно вызывать только во время COPY OUT с текстом\n"
@@ -3470,7 +3280,7 @@ msgstr "ошибка протокола: нет результата функц�
 msgid "protocol error: id=0x%x"
 msgstr "ошибка протокола: id=0x%x"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-protocol3.c:2173
 #, c-format
 msgid "protocol error: id=0x%x\n"
@@ -3482,7 +3292,7 @@ msgstr "ошибка протокола: id=0x%x\n"
 msgid "SSL certificate's name contains embedded null"
 msgstr "имя в SSL-сертификате включает нулевой байт"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-secure-common.c:126
 msgid "SSL certificate's name contains embedded null\n"
 msgstr "имя в SSL-сертификате включает нулевой байт\n"
@@ -3517,7 +3327,7 @@ msgstr "не удалось преобразовать в строку IP-адр
 msgid "host name must be specified for a verified SSL connection"
 msgstr "для проверенного SSL-соединения должно указываться имя узла"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-secure-common.c:276
 msgid "host name must be specified for a verified SSL connection\n"
 msgstr "для проверенного SSL-соединения должно указываться имя узла\n"
@@ -3547,7 +3357,7 @@ msgstr[2] ""
 msgid "server certificate for \"%s\" does not match host name \"%s\""
 msgstr "серверный сертификат для \"%s\" не соответствует имени сервера \"%s\""
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-secure-common.c:301
 #, c-format
 msgid "server certificate for \"%s\" does not match host name \"%s\"\n"
@@ -3560,12 +3370,12 @@ msgstr ""
 msgid "could not get server's host name from server certificate"
 msgstr "не удалось получить имя сервера из серверного сертификата"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-secure-common.c:307
 msgid "could not get server's host name from server certificate\n"
 msgstr "не удалось получить имя сервера из серверного сертификата\n"
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-secure-gssapi.c:201
 msgid "GSSAPI wrap error"
 msgstr "ошибка обёртывания сообщения в GSSAPI"
@@ -3576,7 +3386,7 @@ msgstr "ошибка обёртывания сообщения в GSSAPI"
 msgid "outgoing GSSAPI message would not use confidentiality"
 msgstr "исходящее сообщение GSSAPI не будет защищено"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-secure-gssapi.c:209
 msgid "outgoing GSSAPI message would not use confidentiality\n"
 msgstr "исходящее сообщение GSSAPI не будет защищено\n"
@@ -3587,7 +3397,7 @@ msgstr "исходящее сообщение GSSAPI не будет защищ�
 msgid "client tried to send oversize GSSAPI packet (%zu > %zu)"
 msgstr "клиент попытался передать чрезмерно большой пакет GSSAPI (%zu > %zu)"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-secure-gssapi.c:217 fe-secure-gssapi.c:722
 #, c-format
 msgid "client tried to send oversize GSSAPI packet (%zu > %zu)\n"
@@ -3599,13 +3409,13 @@ msgstr "клиент попытался передать чрезмерно бо
 msgid "oversize GSSAPI packet sent by the server (%zu > %zu)"
 msgstr "сервер передал чрезмерно большой пакет GSSAPI (%zu > %zu)"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-secure-gssapi.c:357 fe-secure-gssapi.c:614
 #, c-format
 msgid "oversize GSSAPI packet sent by the server (%zu > %zu)\n"
 msgstr "сервер передал чрезмерно большой пакет GSSAPI (%zu > %zu)\n"
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-secure-gssapi.c:393
 msgid "GSSAPI unwrap error"
 msgstr "ошибка развёртывания сообщения в GSSAPI"
@@ -3616,17 +3426,17 @@ msgstr "ошибка развёртывания сообщения в GSSAPI"
 msgid "incoming GSSAPI message did not use confidentiality"
 msgstr "входящее сообщение GSSAPI не защищено"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-secure-gssapi.c:406
 msgid "incoming GSSAPI message did not use confidentiality\n"
 msgstr "входящее сообщение GSSAPI не защищено\n"
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-secure-gssapi.c:672
 msgid "could not initiate GSSAPI security context"
 msgstr "не удалось инициализировать контекст безопасности GSSAPI"
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-secure-gssapi.c:722
 msgid "GSSAPI size check error"
 msgstr "ошибка проверки размера в GSSAPI"
@@ -3637,8 +3447,8 @@ msgstr "ошибка проверки размера в GSSAPI"
 msgid "SSL SYSCALL error: %s"
 msgstr "ошибка SSL SYSCALL: %s"
 
-#. +> 15 14 13
-#: fe-secure-openssl.c:219 fe-secure-openssl.c:364 fe-secure-openssl.c:1526
+#. +> 15 14
+#: fe-secure-openssl.c:223 fe-secure-openssl.c:368 fe-secure-openssl.c:1530
 #, c-format
 msgid "SSL SYSCALL error: %s\n"
 msgstr "ошибка SSL SYSCALL: %s\n"
@@ -3649,8 +3459,8 @@ msgstr "ошибка SSL SYSCALL: %s\n"
 msgid "SSL SYSCALL error: EOF detected"
 msgstr "ошибка SSL SYSCALL: конец файла (EOF)"
 
-#. +> 15 14 13
-#: fe-secure-openssl.c:226 fe-secure-openssl.c:371 fe-secure-openssl.c:1530
+#. +> 15 14
+#: fe-secure-openssl.c:230 fe-secure-openssl.c:375 fe-secure-openssl.c:1534
 msgid "SSL SYSCALL error: EOF detected\n"
 msgstr "ошибка SSL SYSCALL: конец файла (EOF)\n"
 
@@ -3660,8 +3470,8 @@ msgstr "ошибка SSL SYSCALL: конец файла (EOF)\n"
 msgid "SSL error: %s"
 msgstr "ошибка SSL: %s"
 
-#. +> 15 14 13
-#: fe-secure-openssl.c:237 fe-secure-openssl.c:382 fe-secure-openssl.c:1539
+#. +> 15 14
+#: fe-secure-openssl.c:241 fe-secure-openssl.c:386 fe-secure-openssl.c:1543
 #, c-format
 msgid "SSL error: %s\n"
 msgstr "ошибка SSL: %s\n"
@@ -3672,8 +3482,8 @@ msgstr "ошибка SSL: %s\n"
 msgid "SSL connection has been closed unexpectedly"
 msgstr "SSL-соединение было неожиданно закрыто"
 
-#. +> 15 14 13
-#: fe-secure-openssl.c:252 fe-secure-openssl.c:397
+#. +> 15 14
+#: fe-secure-openssl.c:256 fe-secure-openssl.c:401
 msgid "SSL connection has been closed unexpectedly\n"
 msgstr "SSL-соединение было неожиданно закрыто\n"
 
@@ -3683,8 +3493,8 @@ msgstr "SSL-соединение было неожиданно закрыто\n"
 msgid "unrecognized SSL error code: %d"
 msgstr "нераспознанный код ошибки SSL: %d"
 
-#. +> 15 14 13
-#: fe-secure-openssl.c:258 fe-secure-openssl.c:403 fe-secure-openssl.c:1589
+#. +> 15 14
+#: fe-secure-openssl.c:262 fe-secure-openssl.c:407 fe-secure-openssl.c:1593
 #, c-format
 msgid "unrecognized SSL error code: %d\n"
 msgstr "нераспознанный код ошибки SSL: %d\n"
@@ -3707,8 +3517,8 @@ msgstr "OpenSSL сообщил, что число ожидающих байт р
 msgid "could not determine server certificate signature algorithm"
 msgstr "не удалось определить алгоритм подписи сертификата сервера"
 
-#. +> 15 14 13
-#: fe-secure-openssl.c:448
+#. +> 15 14
+#: fe-secure-openssl.c:452
 msgid "could not determine server certificate signature algorithm\n"
 msgstr "не удалось определить алгоритм подписи сертификата сервера\n"
 
@@ -3718,8 +3528,8 @@ msgstr "не удалось определить алгоритм подписи
 msgid "could not find digest for NID %s"
 msgstr "не удалось найти алгоритм хеширования по NID %s"
 
-#. +> 15 14 13
-#: fe-secure-openssl.c:469
+#. +> 15 14
+#: fe-secure-openssl.c:473
 #, c-format
 msgid "could not find digest for NID %s\n"
 msgstr "не удалось найти алгоритм хеширования по NID %s\n"
@@ -3730,8 +3540,8 @@ msgstr "не удалось найти алгоритм хеширования �
 msgid "could not generate peer certificate hash"
 msgstr "не удалось сгенерировать хеш сертификата сервера"
 
-#. +> 15 14 13
-#: fe-secure-openssl.c:479
+#. +> 15 14
+#: fe-secure-openssl.c:483
 msgid "could not generate peer certificate hash\n"
 msgstr "не удалось сгенерировать хеш сертификата сервера\n"
 
@@ -3741,8 +3551,8 @@ msgstr "не удалось сгенерировать хеш сертифика
 msgid "SSL certificate's name entry is missing"
 msgstr "в SSL-сертификате отсутствует запись имени"
 
-#. +> 15 14 13
-#: fe-secure-openssl.c:537
+#. +> 15 14
+#: fe-secure-openssl.c:541
 msgid "SSL certificate's name entry is missing\n"
 msgstr "в SSL-сертификате отсутствует запись имени\n"
 
@@ -3753,7 +3563,7 @@ msgid "SSL certificate's address entry is missing"
 msgstr "в SSL-сертификате отсутствует запись адреса"
 
 #. +> 15
-#: fe-secure-openssl.c:572
+#: fe-secure-openssl.c:576
 msgid "SSL certificate's address entry is missing\n"
 msgstr "в SSL-сертификате отсутствует запись адреса\n"
 
@@ -3779,8 +3589,8 @@ msgstr ""
 msgid "could not create SSL context: %s"
 msgstr "не удалось создать контекст SSL: %s"
 
-#. +> 15 14 13
-#: fe-secure-openssl.c:974
+#. +> 15 14
+#: fe-secure-openssl.c:978
 #, c-format
 msgid "could not create SSL context: %s\n"
 msgstr "не удалось создать контекст SSL: %s\n"
@@ -3791,8 +3601,8 @@ msgstr "не удалось создать контекст SSL: %s\n"
 msgid "invalid value \"%s\" for minimum SSL protocol version"
 msgstr "неверное значение \"%s\" для минимальной версии протокола SSL"
 
-#. +> 15 14 13
-#: fe-secure-openssl.c:1013
+#. +> 15 14
+#: fe-secure-openssl.c:1017
 #, c-format
 msgid "invalid value \"%s\" for minimum SSL protocol version\n"
 msgstr "неверное значение \"%s\" для минимальной версии протокола SSL\n"
@@ -3803,8 +3613,8 @@ msgstr "неверное значение \"%s\" для минимальной �
 msgid "could not set minimum SSL protocol version: %s"
 msgstr "не удалось задать минимальную версию протокола SSL: %s"
 
-#. +> 15 14 13
-#: fe-secure-openssl.c:1024
+#. +> 15 14
+#: fe-secure-openssl.c:1028
 #, c-format
 msgid "could not set minimum SSL protocol version: %s\n"
 msgstr "не удалось задать минимальную версию протокола SSL: %s\n"
@@ -3815,8 +3625,8 @@ msgstr "не удалось задать минимальную версию п�
 msgid "invalid value \"%s\" for maximum SSL protocol version"
 msgstr "неверное значение \"%s\" для максимальной версии протокола SSL"
 
-#. +> 15 14 13
-#: fe-secure-openssl.c:1042
+#. +> 15 14
+#: fe-secure-openssl.c:1046
 #, c-format
 msgid "invalid value \"%s\" for maximum SSL protocol version\n"
 msgstr "неверное значение \"%s\" для максимальной версии протокола SSL\n"
@@ -3827,8 +3637,8 @@ msgstr "неверное значение \"%s\" для максимальной
 msgid "could not set maximum SSL protocol version: %s"
 msgstr "не удалось задать максимальную версию протокола SSL: %s"
 
-#. +> 15 14 13
-#: fe-secure-openssl.c:1053
+#. +> 15 14
+#: fe-secure-openssl.c:1057
 #, c-format
 msgid "could not set maximum SSL protocol version: %s\n"
 msgstr "не удалось задать максимальную версию протокола SSL: %s\n"
@@ -3845,8 +3655,8 @@ msgstr "не удалось выбрать системные пути для к
 msgid "could not read root certificate file \"%s\": %s"
 msgstr "не удалось прочитать файл корневых сертификатов \"%s\": %s"
 
-#. +> 15 14 13
-#: fe-secure-openssl.c:1089
+#. +> 15 14
+#: fe-secure-openssl.c:1093
 #, c-format
 msgid "could not read root certificate file \"%s\": %s\n"
 msgstr "не удалось прочитать файл корневых сертификатов \"%s\": %s\n"
@@ -3865,8 +3675,8 @@ msgstr ""
 "(sslrootcert=system) или отключите проверку сертификата сервера, изменив "
 "sslmode."
 
-#. +> 15 14 13
-#: fe-secure-openssl.c:1142
+#. +> 15 14
+#: fe-secure-openssl.c:1146
 msgid ""
 "could not get home directory to locate root certificate file\n"
 "Either provide the file or change sslmode to disable server certificate "
@@ -3890,8 +3700,8 @@ msgstr ""
 "(sslrootcert=system) или отключите проверку сертификата сервера, изменив "
 "sslmode."
 
-#. +> 15 14 13
-#: fe-secure-openssl.c:1146
+#. +> 15 14
+#: fe-secure-openssl.c:1150
 #, c-format
 msgid ""
 "root certificate file \"%s\" does not exist\n"
@@ -3908,8 +3718,8 @@ msgstr ""
 msgid "could not open certificate file \"%s\": %s"
 msgstr "не удалось открыть файл сертификата \"%s\": %s"
 
-#. +> 15 14 13
-#: fe-secure-openssl.c:1177
+#. +> 15 14
+#: fe-secure-openssl.c:1181
 #, c-format
 msgid "could not open certificate file \"%s\": %s\n"
 msgstr "не удалось открыть файл сертификата \"%s\": %s\n"
@@ -3920,8 +3730,8 @@ msgstr "не удалось открыть файл сертификата \"%s\
 msgid "could not read certificate file \"%s\": %s"
 msgstr "не удалось прочитать файл сертификата \"%s\": %s"
 
-#. +> 15 14 13
-#: fe-secure-openssl.c:1196
+#. +> 15 14
+#: fe-secure-openssl.c:1200
 #, c-format
 msgid "could not read certificate file \"%s\": %s\n"
 msgstr "не удалось прочитать файл сертификата \"%s\": %s\n"
@@ -3932,8 +3742,8 @@ msgstr "не удалось прочитать файл сертификата \
 msgid "could not establish SSL connection: %s"
 msgstr "не удалось установить SSL-соединение: %s"
 
-#. +> 15 14 13
-#: fe-secure-openssl.c:1221
+#. +> 15 14
+#: fe-secure-openssl.c:1225
 #, c-format
 msgid "could not establish SSL connection: %s\n"
 msgstr "не удалось установить SSL-соединение: %s\n"
@@ -3958,7 +3768,7 @@ msgid "could not set SSL Server Name Indication (SNI): %s"
 msgstr "не удалось задать SNI (Server Name Indication) для SSL-подключения: %s"
 
 #. +> 15 14
-#: fe-secure-openssl.c:1255
+#: fe-secure-openssl.c:1259
 #, c-format
 msgid "could not set SSL Server Name Indication (SNI): %s\n"
 msgstr ""
@@ -3976,8 +3786,8 @@ msgstr "не удалось установить расширение SSL ALPN: 
 msgid "could not load SSL engine \"%s\": %s"
 msgstr "не удалось загрузить модуль SSL ENGINE \"%s\": %s"
 
-#. +> 15 14 13
-#: fe-secure-openssl.c:1302
+#. +> 15 14
+#: fe-secure-openssl.c:1306
 #, c-format
 msgid "could not load SSL engine \"%s\": %s\n"
 msgstr "не удалось загрузить модуль SSL ENGINE \"%s\": %s\n"
@@ -3988,8 +3798,8 @@ msgstr "не удалось загрузить модуль SSL ENGINE \"%s\": %
 msgid "could not initialize SSL engine \"%s\": %s"
 msgstr "не удалось инициализировать модуль SSL ENGINE \"%s\": %s"
 
-#. +> 15 14 13
-#: fe-secure-openssl.c:1314
+#. +> 15 14
+#: fe-secure-openssl.c:1318
 #, c-format
 msgid "could not initialize SSL engine \"%s\": %s\n"
 msgstr "не удалось инициализировать модуль SSL ENGINE \"%s\": %s\n"
@@ -4000,8 +3810,8 @@ msgstr "не удалось инициализировать модуль SSL EN
 msgid "could not read private SSL key \"%s\" from engine \"%s\": %s"
 msgstr "не удалось прочитать закрытый ключ SSL \"%s\" из модуля \"%s\": %s"
 
-#. +> 15 14 13
-#: fe-secure-openssl.c:1330
+#. +> 15 14
+#: fe-secure-openssl.c:1334
 #, c-format
 msgid "could not read private SSL key \"%s\" from engine \"%s\": %s\n"
 msgstr "не удалось прочитать закрытый ключ SSL \"%s\" из модуля \"%s\": %s\n"
@@ -4012,8 +3822,8 @@ msgstr "не удалось прочитать закрытый ключ SSL \"%
 msgid "could not load private SSL key \"%s\" from engine \"%s\": %s"
 msgstr "не удалось загрузить закрытый ключ SSL \"%s\" из модуля \"%s\": %s"
 
-#. +> 15 14 13
-#: fe-secure-openssl.c:1344
+#. +> 15 14
+#: fe-secure-openssl.c:1348
 #, c-format
 msgid "could not load private SSL key \"%s\" from engine \"%s\": %s\n"
 msgstr "не удалось загрузить закрытый ключ SSL \"%s\" из модуля \"%s\": %s\n"
@@ -4024,8 +3834,8 @@ msgstr "не удалось загрузить закрытый ключ SSL \"%
 msgid "certificate present, but not private key file \"%s\""
 msgstr "при наличии сертификата отсутствует файл закрытого ключа \"%s\""
 
-#. +> 15 14 13
-#: fe-secure-openssl.c:1382
+#. +> 15 14
+#: fe-secure-openssl.c:1386
 #, c-format
 msgid "certificate present, but not private key file \"%s\"\n"
 msgstr "при наличии сертификата отсутствует файл закрытого ключа \"%s\"\n"
@@ -4037,7 +3847,7 @@ msgid "could not stat private key file \"%s\": %m"
 msgstr "не удалось получить информацию о файле закрытого ключа \"%s\": %m"
 
 #. +> 15
-#: fe-secure-openssl.c:1386
+#: fe-secure-openssl.c:1390
 #, c-format
 msgid "could not stat private key file \"%s\": %m\n"
 msgstr "не удалось получить информацию о файле закрытого ключа \"%s\": %m\n"
@@ -4048,8 +3858,8 @@ msgstr "не удалось получить информацию о файле 
 msgid "private key file \"%s\" is not a regular file"
 msgstr "файл закрытого ключа \"%s\" - не обычный файл"
 
-#. +> 15 14 13
-#: fe-secure-openssl.c:1395
+#. +> 15 14
+#: fe-secure-openssl.c:1399
 #, c-format
 msgid "private key file \"%s\" is not a regular file\n"
 msgstr "файл закрытого ключа \"%s\" - не обычный файл\n"
@@ -4067,8 +3877,8 @@ msgstr ""
 "текущему пользователю, либо u=rw,g=r (0640) или более строгие, если он "
 "принадлежит root"
 
-#. +> 15 14 13
-#: fe-secure-openssl.c:1428
+#. +> 15 14
+#: fe-secure-openssl.c:1432
 #, c-format
 msgid ""
 "private key file \"%s\" has group or world access; file must have "
@@ -4086,8 +3896,8 @@ msgstr ""
 msgid "could not load private key file \"%s\": %s"
 msgstr "не удалось загрузить файл закрытого ключа \"%s\": %s"
 
-#. +> 15 14 13
-#: fe-secure-openssl.c:1453
+#. +> 15 14
+#: fe-secure-openssl.c:1457
 #, c-format
 msgid "could not load private key file \"%s\": %s\n"
 msgstr "не удалось загрузить файл закрытого ключа \"%s\": %s\n"
@@ -4098,8 +3908,8 @@ msgstr "не удалось загрузить файл закрытого кл�
 msgid "certificate does not match private key file \"%s\": %s"
 msgstr "сертификат не соответствует файлу закрытого ключа \"%s\": %s"
 
-#. +> 15 14 13
-#: fe-secure-openssl.c:1470
+#. +> 15 14
+#: fe-secure-openssl.c:1474
 #, c-format
 msgid "certificate does not match private key file \"%s\": %s\n"
 msgstr "сертификат не соответствует файлу закрытого ключа \"%s\": %s\n"
@@ -4120,8 +3930,8 @@ msgstr ""
 "Это может указывать на то, что сервер не поддерживает ни одну версию "
 "протокола SSL между %s и %s."
 
-#. +> 15 14 13
-#: fe-secure-openssl.c:1572
+#. +> 15 14
+#: fe-secure-openssl.c:1576
 #, c-format
 msgid ""
 "This may indicate that the server does not support any SSL protocol version "
@@ -4150,25 +3960,25 @@ msgstr "SSL-соединение было установлено с неподд
 msgid "certificate could not be obtained: %s"
 msgstr "не удалось получить сертификат: %s"
 
-#. +> 15 14 13
-#: fe-secure-openssl.c:1608
+#. +> 15 14
+#: fe-secure-openssl.c:1612
 #, c-format
 msgid "certificate could not be obtained: %s\n"
 msgstr "не удалось получить сертификат: %s\n"
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-secure-openssl.c:1596
 #, c-format
 msgid "no SSL error reported"
 msgstr "нет сообщения об ошибке SSL"
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-secure-openssl.c:1639
 #, c-format
 msgid "SSL error code %lu"
 msgstr "код ошибки SSL: %lu"
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: fe-secure-openssl.c:1941
 #, c-format
 msgid "WARNING: sslpassword truncated\n"
@@ -4180,7 +3990,7 @@ msgstr "ПРЕДУПРЕЖДЕНИЕ: значение sslpassword усечен�
 msgid "could not receive data from server: %s"
 msgstr "не удалось получить данные с сервера: %s"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-secure.c:274
 #, c-format
 msgid "could not receive data from server: %s\n"
@@ -4192,13 +4002,13 @@ msgstr "не удалось получить данные с сервера: %s\
 msgid "could not send data to server: %s"
 msgstr "не удалось передать данные серверу: %s"
 
-#. +> 15 14 13
+#. +> 15 14
 #: fe-secure.c:467
 #, c-format
 msgid "could not send data to server: %s\n"
 msgstr "не удалось передать данные серверу: %s\n"
 
-#. +> 18 17 16 15 14 13
+#. +> 18 17 16 15 14
 #: win32.c:310
 #, c-format
 msgid "unrecognized socket error: 0x%08X/%d"
@@ -4216,39 +4026,157 @@ msgstr "найти локального пользователя по идент
 msgid "local user with ID %d does not exist"
 msgstr "локальный пользователь с ID %d не существует"
 
-#. +> 13
-#: fe-protocol2.c:87
 #, c-format
-msgid "invalid setenv state %c, probably indicative of memory corruption\n"
-msgstr "неверное состояние setenv %c - возможно разрушение памяти\n"
+#~ msgid "invalid channel_binding value: \"%s\"\n"
+#~ msgstr "неверное значение channel_binding: \"%s\"\n"
 
-#. +> 13
-#: fe-protocol2.c:384
 #, c-format
-msgid "invalid state %c, probably indicative of memory corruption\n"
-msgstr "неверное состояние %c - возможно разрушение памяти\n"
+#~ msgid "invalid sslmode value: \"%s\"\n"
+#~ msgstr "неверное значение sslmode: \"%s\"\n"
 
-#. +> 13
-#: fe-protocol2.c:523
 #, c-format
-msgid "unexpected character %c following empty query response (\"I\" message)"
-msgstr "неожиданный символ %c вслед за пустым ответом (сообщение \"I\")"
+#~ msgid "invalid gssencmode value: \"%s\"\n"
+#~ msgstr "неверное значение gssencmode: \"%s\"\n"
 
-#. +> 13
-#: fe-protocol2.c:607
 #, c-format
-msgid ""
-"server sent binary data (\"B\" message) without prior row description (\"T\" "
-"message)"
-msgstr ""
-"сервер отправил двоичные данные (сообщение \"B\") без предварительного "
-"описания строки (сообщение \"T\")"
+#~ msgid "invalid target_session_attrs value: \"%s\"\n"
+#~ msgstr "неверное значение target_session_attrs: \"%s\"\n"
 
-#. +> 13
-#: fe-protocol2.c:1408
 #, c-format
-msgid "lost synchronization with server, resetting connection"
-msgstr "потеряна синхронизация с сервером; попытка восстановить соединение"
+#~ msgid "invalid ssl_min_protocol_version value: \"%s\"\n"
+#~ msgstr "неверное значение ssl_min_protocol_version: \"%s\"\n"
+
+#, c-format
+#~ msgid "invalid ssl_max_protocol_version value: \"%s\"\n"
+#~ msgstr "неверное значение ssl_max_protocol_version: \"%s\"\n"
+
+#, c-format
+#~ msgid "WSAIoctl(SIO_KEEPALIVE_VALS) failed: %ui\n"
+#~ msgstr "ошибка в WSAIoctl(SIO_KEEPALIVE_VALS): %ui\n"
+
+#, c-format
+#~ msgid ""
+#~ "could not connect to server: %s\n"
+#~ "\tIs the server running locally and accepting\n"
+#~ "\tconnections on Unix domain socket \"%s\"?\n"
+#~ msgstr ""
+#~ "не удалось подключиться к серверу: %s\n"
+#~ "\tОн действительно работает локально и принимает\n"
+#~ "\tсоединения через Unix-сокет \"%s\"?\n"
+
+#, c-format
+#~ msgid ""
+#~ "could not connect to server: %s\n"
+#~ "\tIs the server running on host \"%s\" (%s) and accepting\n"
+#~ "\tTCP/IP connections on port %s?\n"
+#~ msgstr ""
+#~ "не удалось подключиться к серверу: %s\n"
+#~ "\tОн действительно работает по адресу \"%s\" (%s)\n"
+#~ "\t и принимает TCP-соединения (порт %s)?\n"
+
+#, c-format
+#~ msgid ""
+#~ "could not connect to server: %s\n"
+#~ "\tIs the server running on host \"%s\" and accepting\n"
+#~ "\tTCP/IP connections on port %s?\n"
+#~ msgstr ""
+#~ "не удалось подключиться к серверу: %s\n"
+#~ "\tОн действительно работает по адресу \"%s\"\n"
+#~ "\t и принимает TCP-соединения (порт %s)?\n"
+
+#, c-format
+#~ msgid "setsockopt(%s) failed: %s\n"
+#~ msgstr "ошибка в setsockopt(%s): %s\n"
+
+#, c-format
+#~ msgid "could not make a writable connection to server \"%s:%s\"\n"
+#~ msgstr ""
+#~ "не удалось установить подключение для чтения/записи к серверу \"%s:%s\"\n"
+
+#, c-format
+#~ msgid "test \"SHOW transaction_read_only\" failed on server \"%s:%s\"\n"
+#~ msgstr ""
+#~ "проверка \"SHOW transaction_read_only\" не пройдена на сервере \"%s:%s\"\n"
+
+#~ msgid "function requires at least protocol version 3.0\n"
+#~ msgstr "функция требует протокол минимум версии 3.0\n"
+
+#~ msgid "COPY IN state must be terminated first\n"
+#~ msgstr "сначала должно завершиться состояние COPY IN\n"
+
+#~ msgid "COPY OUT state must be terminated first\n"
+#~ msgstr "сначала должно завершиться состояние COPY OUT\n"
+
+#~ msgid "number of parameters must be between 0 and 65535\n"
+#~ msgstr "число параметров должно быть от 0 до 65535\n"
+
+#~ msgid "cannot determine OID of function lo_truncate\n"
+#~ msgstr "не удалось определить OID функции lo_truncate\n"
+
+#~ msgid "cannot determine OID of function lo_truncate64\n"
+#~ msgstr "не удалось определить OID функции lo_truncate64\n"
+
+#~ msgid "cannot determine OID of function lo_lseek64\n"
+#~ msgstr "не удалось определить OID функции lo_lseek64\n"
+
+#~ msgid "cannot determine OID of function lo_create\n"
+#~ msgstr "не удалось определить OID функции lo_create\n"
+
+#~ msgid "cannot determine OID of function lo_tell64\n"
+#~ msgstr "не удалось определить OID функции lo_tell64\n"
+
+#~ msgid "cannot determine OID of function lo_open\n"
+#~ msgstr "не удалось определить OID функции lo_open\n"
+
+#~ msgid "cannot determine OID of function lo_close\n"
+#~ msgstr "не удалось определить OID функции lo_close\n"
+
+#~ msgid "cannot determine OID of function lo_creat\n"
+#~ msgstr "не удалось определить OID функции lo_creat\n"
+
+#~ msgid "cannot determine OID of function lo_unlink\n"
+#~ msgstr "не удалось определить OID функции lo_unlink\n"
+
+#~ msgid "cannot determine OID of function lo_lseek\n"
+#~ msgstr "не удалось определить OID функции lo_lseek\n"
+
+#~ msgid "cannot determine OID of function lo_tell\n"
+#~ msgstr "не удалось определить OID функции lo_tell\n"
+
+#~ msgid "cannot determine OID of function loread\n"
+#~ msgstr "не удалось определить OID функции loread\n"
+
+#~ msgid "cannot determine OID of function lowrite\n"
+#~ msgstr "не удалось определить OID функции lowrite\n"
+
+#, c-format
+#~ msgid "select() failed: %s\n"
+#~ msgstr "ошибка в select(): %s\n"
+
+#, c-format
+#~ msgid "invalid setenv state %c, probably indicative of memory corruption\n"
+#~ msgstr "неверное состояние setenv %c - возможно разрушение памяти\n"
+
+#, c-format
+#~ msgid "invalid state %c, probably indicative of memory corruption\n"
+#~ msgstr "неверное состояние %c - возможно разрушение памяти\n"
+
+#, c-format
+#~ msgid ""
+#~ "unexpected character %c following empty query response (\"I\" message)"
+#~ msgstr "неожиданный символ %c вслед за пустым ответом (сообщение \"I\")"
+
+#, c-format
+#~ msgid ""
+#~ "server sent binary data (\"B\" message) without prior row description "
+#~ "(\"T\" message)"
+#~ msgstr ""
+#~ "сервер отправил двоичные данные (сообщение \"B\") без предварительного "
+#~ "описания строки (сообщение \"T\")"
+
+#, c-format
+#~ msgid "lost synchronization with server, resetting connection"
+#~ msgstr "потеряна синхронизация с сервером; попытка восстановить соединение"
 
 #, c-format
 #~ msgid "internal error: started field '%s' before field '%s' was finished"
