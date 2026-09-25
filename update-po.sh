@@ -91,9 +91,6 @@ merge_pot 15 $PGD REL_15_STABLE REL_15_STABLE
 
 merge_pot 14 $PGD REL_14_STABLE REL_14_STABLE
 
-merge_pot 13 $PGD REL_13_STABLE REL_13_STABLE
-
-
 (
 cd $CUR_MESSAGES_PATH
 $POLOGY_PATH/bin/posummit -v --create merge

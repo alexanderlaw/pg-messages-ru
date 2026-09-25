@@ -45,7 +45,6 @@ prepare_src_messages 17 REL_17_STABLE
 prepare_src_messages 16 REL_16_STABLE
 prepare_src_messages 15 REL_15_STABLE
 prepare_src_messages 14 REL_14_STABLE
-prepare_src_messages 13 REL_13_STABLE
 (
 cd $CUR_MESSAGES_PATH
 $POLOGY_PATH/bin/posummit -v scatter
@@ -55,5 +54,4 @@ finalize_po 17
 finalize_po 16
 finalize_po 15
 finalize_po 14
-finalize_po 13
 
