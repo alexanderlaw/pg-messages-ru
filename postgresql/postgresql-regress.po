@@ -1,0 +1,181 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: postgresql-regress (PostgreSQL) 19\n"
+"Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
+"POT-Creation-Date: 2026-09-25 22:48+0300\n"
+"PO-Revision-Date: 2026-09-25 22:48+0300\n"
+"Last-Translator: Simulacrum\n"
+"Language-Team: Nevernessian\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. +> 19
+#: regress.c:207
+#, c-format
+msgid "invalid input syntax for type %s: \"%s\""
+msgstr ""
+
+#. +> 19
+#: regress.c:853
+#, c-format
+msgid "test_inline_in_from_support_func called with %d args but expected 3"
+msgstr ""
+
+#. +> 19
+#: regress.c:861 regress.c:877
+#, c-format
+msgid "test_inline_in_from_support_func called with non-Const parameters"
+msgstr ""
+
+#. +> 19
+#: regress.c:868 regress.c:884
+#, c-format
+msgid "test_inline_in_from_support_func called with non-TEXT parameters"
+msgstr ""
+
+#. +> 19
+#: regress.c:917
+#, c-format
+msgid "test_inline_in_from_support_func parsed to more than one node"
+msgstr ""
+
+#. +> 19
+#: regress.c:928
+#, c-format
+msgid "test_inline_in_from_support_func rewrote to more than one node"
+msgstr ""
+
+#. +> 19
+#: regress.c:935
+#, c-format
+msgid "test_inline_in_from_support_func didn't parse to a Query"
+msgstr ""
+
+#. +> 19
+#: regress.c:1044
+#, c-format
+msgid "invalid source encoding name \"%s\""
+msgstr ""
+
+#. +> 19
+#: regress.c:1049
+#, c-format
+msgid "invalid destination encoding name \"%s\""
+msgstr ""
+
+#. +> 19
+#: regress.c:1094
+#, c-format
+msgid ""
+"default conversion function for encoding \"%s\" to \"%s\" does not exist"
+msgstr ""
+
+#. +> 19
+#: regress.c:1101
+#, c-format
+msgid "out of memory"
+msgstr ""
+
+#. +> 19
+#: regress.c:1102
+#, c-format
+msgid "String of %d bytes is too long for encoding conversion."
+msgstr ""
+
+#. +> 19
+#: regress.c:1365
+#, c-format
+msgid "translated PRId64 = %<PRId64>"
+msgstr ""
+
+#. +> 19
+#: regress.c:1367
+#, c-format
+msgid "translated PRId32 = %<PRId32>"
+msgstr ""
+
+#. +> 19
+#: regress.c:1369
+#, c-format
+msgid "translated PRIdMAX = %<PRIdMAX>"
+msgstr ""
+
+#. +> 19
+#: regress.c:1371
+#, c-format
+msgid "translated PRIdPTR = %<PRIdPTR>"
+msgstr ""
+
+#. +> 19
+#: regress.c:1374
+#, c-format
+msgid "translated PRIu64 = %<PRIu64>"
+msgstr ""
+
+#. +> 19
+#: regress.c:1376
+#, c-format
+msgid "translated PRIu32 = %<PRIu32>"
+msgstr ""
+
+#. +> 19
+#: regress.c:1378
+#, c-format
+msgid "translated PRIuMAX = %<PRIuMAX>"
+msgstr ""
+
+#. +> 19
+#: regress.c:1380
+#, c-format
+msgid "translated PRIuPTR = %<PRIuPTR>"
+msgstr ""
+
+#. +> 19
+#: regress.c:1383
+#, c-format
+msgid "translated PRIx64 = %<PRIx64>"
+msgstr ""
+
+#. +> 19
+#: regress.c:1385
+#, c-format
+msgid "translated PRIx32 = %<PRIx32>"
+msgstr ""
+
+#. +> 19
+#: regress.c:1387
+#, c-format
+msgid "translated PRIxMAX = %<PRIxMAX>"
+msgstr ""
+
+#. +> 19
+#: regress.c:1389
+#, c-format
+msgid "translated PRIxPTR = %<PRIxPTR>"
+msgstr ""
+
+#. +> 19
+#: regress.c:1392
+#, c-format
+msgid "translated PRIX64 = %<PRIX64>"
+msgstr ""
+
+#. +> 19
+#: regress.c:1394
+#, c-format
+msgid "translated PRIX32 = %<PRIX32>"
+msgstr ""
+
+#. +> 19
+#: regress.c:1396
+#, c-format
+msgid "translated PRIXMAX = %<PRIXMAX>"
+msgstr ""
+
+#. +> 19
+#: regress.c:1398
+#, c-format
+msgid "translated PRIXPTR = %<PRIXPTR>"
+msgstr ""

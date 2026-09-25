@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pg_upgrade (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2026-09-25 22:34+0300\n"
+"POT-Creation-Date: 2026-09-25 22:48+0300\n"
 "PO-Revision-Date: 2026-08-05 07:50+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -19,76 +19,106 @@ msgstr ""
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Lokalize 23.08.5\n"
 
-#. +> 18 17 15 14
+#. +> 19 18 17 15 14
 #: ../../common/fe_memutils.c:41 ../../common/fe_memutils.c:81
 #: ../../common/fe_memutils.c:104 ../../common/fe_memutils.c:167
 #, c-format
 msgid "out of memory\n"
 msgstr "нехватка памяти\n"
 
-#. +> 18 17
+#. +> 19 18 17
 #: ../../common/fe_memutils.c:98 ../../common/fe_memutils.c:159
 #, c-format
 msgid "cannot duplicate null pointer (internal error)\n"
 msgstr "попытка дублирования нулевого указателя (внутренняя ошибка)\n"
 
-#. +> 18 17
+#. +> 19 18 17
 #: ../../common/fe_memutils.c:209
 #, c-format
 msgid "invalid memory allocation request size %zu + %zu\n"
 msgstr "недопустимый размер в запросе на выделение памяти: %zu + %zu\n"
 
-#. +> 18 17
+#. +> 19 18 17
 #: ../../common/fe_memutils.c:228
 #, c-format
 msgid "invalid memory allocation request size %zu * %zu\n"
 msgstr "недопустимый размер в запросе на выделение памяти: %zu * %zu\n"
 
-#. +> 18 17
+#. +> 19 18 17
 #: ../../common/restricted_token.c:168
 #, c-format
 msgid "could not get exit code from subprocess: error code %lu"
 msgstr "не удалось получить код выхода от подпроцесса (код ошибки: %lu)"
 
-#. +> 18 17
+#. +> 19 18 17
 #: ../../common/username.c:43
 #, c-format
 msgid "could not look up effective user ID %ld: %s"
 msgstr "выяснить эффективный идентификатор пользователя (%ld) не удалось: %s"
 
-#. +> 18 17
+#. +> 19 18 17
 #: ../../common/username.c:45
 msgid "user does not exist"
 msgstr "пользователь не существует"
 
-#. +> 18 17
+#. +> 19 18 17
 #: ../../common/username.c:60
 #, c-format
 msgid "user name lookup failure: error code %lu"
 msgstr "распознать имя пользователя не удалось (код ошибки: %lu)"
 
-#. +> 18 17
-#: ../../fe_utils/string_utils.c:587
+#. +> 19
+#: ../../fe_utils/option_utils.c:139
+#, c-format
+msgid "options %s and %s cannot be used together"
+msgstr ""
+
+#. +> 19 18 17
+#: ../../fe_utils/string_utils.c:585
 #, c-format
 msgid "shell command argument contains a newline or carriage return: \"%s\"\n"
 msgstr ""
 "аргумент команды оболочки содержит символ новой строки или перевода каретки: "
 "\"%s\"\n"
 
-#. +> 18 17
-#: ../../fe_utils/string_utils.c:760
+#. +> 19 18 17
+#: ../../fe_utils/string_utils.c:758
 #, c-format
 msgid "database name contains a newline or carriage return: \"%s\"\n"
 msgstr ""
 "имя базы данных содержит символ новой строки или перевода каретки: \"%s\"\n"
 
-#. +> 18 17 16 15 14
-#: check.c:112
+#. +> 19 18 17 16
+#: ../../fe_utils/version.c:57
+#, c-format
+msgid "could not open version file \"%s\": %m"
+msgstr "не удалось открыть файл с версией \"%s\": %m"
+
+#. +> 19 18
+#: ../../fe_utils/version.c:60 relfilenumber.c:279
+#, c-format
+msgid "could not stat file \"%s\": %m"
+msgstr "не удалось получить информацию о файле \"%s\": %m"
+
+#. +> 19
+#: ../../fe_utils/version.c:62
+#, c-format
+msgid "file \"%s\" is too large"
+msgstr ""
+
+#. +> 19 18 17 16
+#: ../../fe_utils/version.c:66
+#, c-format
+msgid "could not parse version file \"%s\""
+msgstr "не удалось разобрать файл с версией \"%s\""
+
+#. +> 19 18 17 16 15 14
+#: check.c:120
 msgid "Checking for system-defined composite types in user tables"
 msgstr "Проверка системных составных типов в пользовательских таблицах"
 
-#. +> 18 17
-#: check.c:119
+#. +> 19 18 17
+#: check.c:127
 msgid ""
 "Your installation contains system-defined composite types in user tables.\n"
 "These type OIDs are not stable across PostgreSQL versions,\n"
@@ -184,8 +214,8 @@ msgstr ""
 "    %s\n"
 "\n"
 
-#. +> 18 17 16 15 14
-#: check.c:133
+#. +> 19 18 17 16 15 14
+#: check.c:141
 msgid "Checking for incompatible \"line\" data type"
 msgstr "Проверка несовместимого типа данных \"line\""
 
@@ -195,8 +225,8 @@ msgstr "Проверка несовместимого типа данных \"li
 msgid "Checking for incompatible \"jsonb\" data type"
 msgstr "Проверка несовместимого типа данных \"jsonb\""
 
-#. +> 18 17
-#: check.c:138
+#. +> 19 18 17
+#: check.c:146
 msgid ""
 "Your installation contains the \"line\" data type in user tables.\n"
 "This data type changed its internal and input/output format\n"
@@ -212,13 +242,13 @@ msgstr ""
 "можете\n"
 "удалить проблемные столбцы и перезапустить обновление.\n"
 
-#. +> 18 17 16 15 14
-#: check.c:155
+#. +> 19 18 17 16 15 14
+#: check.c:163
 msgid "Checking for reg* data types in user tables"
 msgstr "Проверка типов данных reg* в пользовательских таблицах"
 
-#. +> 18 17
-#: check.c:182
+#. +> 19 18 17
+#: check.c:191
 msgid ""
 "Your installation contains one of the reg* data types in user tables.\n"
 "These data types reference system OIDs that are not preserved by\n"
@@ -270,13 +300,13 @@ msgstr ""
 "    %s\n"
 "\n"
 
-#. +> 18 17
-#: check.c:194
+#. +> 19 18 17
+#: check.c:203
 msgid "Checking for incompatible \"aclitem\" data type"
 msgstr "Проверка несовместимого типа данных \"aclitem\""
 
-#. +> 18 17
-#: check.c:199
+#. +> 19 18 17
+#: check.c:208
 msgid ""
 "Your installation contains the \"aclitem\" data type in user tables.\n"
 "The internal format of \"aclitem\" changed in PostgreSQL version 16\n"
@@ -311,13 +341,13 @@ msgstr ""
 "перезапустить обновление. Список проблемных столбцов приведён в файле:\n"
 "    %s"
 
-#. +> 18 17 16 15 14
-#: check.c:218
+#. +> 19 18 17 16 15 14
+#: check.c:227
 msgid "Checking for invalid \"unknown\" user columns"
 msgstr "Проверка неправильных пользовательских столбцов типа \"unknown\""
 
-#. +> 18 17
-#: check.c:223
+#. +> 19 18 17
+#: check.c:232
 msgid ""
 "Your installation contains the \"unknown\" data type in user tables.\n"
 "This data type is no longer allowed in tables, so this cluster\n"
@@ -331,14 +361,14 @@ msgstr ""
 "проблемные\n"
 "столбцы и перезапустить обновление.\n"
 
-#. +> 18 17 16 15 14
-#: check.c:240
+#. +> 19 18 17 16 15 14
+#: check.c:249
 msgid "Checking for invalid \"sql_identifier\" user columns"
 msgstr ""
 "Проверка неправильных пользовательских столбцов типа \"sql_identifier\""
 
-#. +> 18 17
-#: check.c:245
+#. +> 19 18 17
+#: check.c:254
 msgid ""
 "Your installation contains the \"sql_identifier\" data type in user tables.\n"
 "The on-disk format for this data type has changed, so this\n"
@@ -350,8 +380,8 @@ msgstr ""
 "поэтому обновить данный кластер невозможно. Вы можете удалить проблемные\n"
 "столбцы и перезапустить обновление.\n"
 
-#. +> 18 17
-#: check.c:256
+#. +> 19 18 17
+#: check.c:265
 msgid "Checking for incompatible \"jsonb\" data type in user tables"
 msgstr ""
 "Проверка несовместимого типа данных \"jsonb\" в пользовательских таблицах"
@@ -362,8 +392,8 @@ msgstr ""
 msgid "Checking for incompatible \"%s\" data type in user tables"
 msgstr "Проверка несовместимого типа данных \"%s\" в пользовательских таблицах"
 
-#. +> 18 17
-#: check.c:261
+#. +> 19 18 17
+#: check.c:270
 msgid ""
 "Your installation contains the \"jsonb\" data type in user tables.\n"
 "The internal format of \"jsonb\" changed during 9.4 beta so this\n"
@@ -414,8 +444,8 @@ msgstr ""
 "    %s\n"
 "\n"
 
-#. +> 18 17
-#: check.c:273
+#. +> 19 18 17
+#: check.c:282
 msgid "Checking for removed \"abstime\" data type in user tables"
 msgstr ""
 "Проверка удалённого типа данных \"abstime\" в пользовательских таблицах"
@@ -426,8 +456,8 @@ msgstr ""
 msgid "Checking for removed \"%s\" data type in user tables"
 msgstr "Проверка удалённого типа данных \"%s\" в пользовательских таблицах"
 
-#. +> 18 17
-#: check.c:278
+#. +> 19 18 17
+#: check.c:287
 msgid ""
 "Your installation contains the \"abstime\" data type in user tables.\n"
 "The \"abstime\" type has been removed in PostgreSQL version 12,\n"
@@ -443,14 +473,14 @@ msgstr ""
 "поменять\n"
 "их тип на другой, а затем перезапустить обновление.\n"
 
-#. +> 18 17
-#: check.c:286
+#. +> 19 18 17
+#: check.c:295
 msgid "Checking for removed \"reltime\" data type in user tables"
 msgstr ""
 "Проверка удалённого типа данных \"reltime\" в пользовательских таблицах"
 
-#. +> 18 17
-#: check.c:291
+#. +> 19 18 17
+#: check.c:300
 msgid ""
 "Your installation contains the \"reltime\" data type in user tables.\n"
 "The \"reltime\" type has been removed in PostgreSQL version 12,\n"
@@ -506,14 +536,14 @@ msgstr ""
 "    %s\n"
 "\n"
 
-#. +> 18 17
-#: check.c:299
+#. +> 19 18 17
+#: check.c:308
 msgid "Checking for removed \"tinterval\" data type in user tables"
 msgstr ""
 "Проверка удалённого типа данных \"tinterval\" в пользовательских таблицах"
 
-#. +> 18 17
-#: check.c:304
+#. +> 19 18 17
+#: check.c:313
 msgid ""
 "Your installation contains the \"tinterval\" data type in user tables.\n"
 "The \"tinterval\" type has been removed in PostgreSQL version 12,\n"
@@ -529,22 +559,23 @@ msgstr ""
 "поменять\n"
 "их тип на другой, а затем перезапустить обновление.\n"
 
-#. +> 18 17
-#: check.c:422
+#. +> 19 18 17
+#: check.c:429
 #, c-format
 msgid "failed check: %s"
 msgstr "не пройдена проверка: %s"
 
-#. +> 18 17
-#: check.c:425
+#. +> 19 18 17
+#: check.c:432
 msgid "A list of the problem columns is in the file:"
 msgstr "Список проблемных столбцов приведён в файле:"
 
-#. +> 18 17
-#: check.c:431 check.c:1038 check.c:1189 check.c:1272 check.c:1361 check.c:1452
-#: check.c:1584 check.c:1656 check.c:1757 check.c:1804 check.c:1884
-#: check.c:2160 check.c:2273 check.c:2292 check.c:2338 check.c:2391 file.c:378
-#: file.c:415 function.c:208 option.c:519 version.c:97 version.c:180
+#. +> 19 18 17
+#: check.c:438 check.c:1074 check.c:1225 check.c:1289 check.c:1363 check.c:1449
+#: check.c:1537 check.c:1667 check.c:1736 check.c:1821 check.c:1910
+#: check.c:1954 check.c:2034 check.c:2343 check.c:2463 check.c:2482
+#: check.c:2498 check.c:2542 check.c:2595 check.c:2708 file.c:378 file.c:415
+#: function.c:214 option.c:519 slru_io.c:113 version.c:97 version.c:178
 #, c-format
 msgid "could not open file \"%s\": %m"
 msgstr "не удалось открыть файл \"%s\": %m"
@@ -565,20 +596,20 @@ msgstr "не удалось открыть файл \"%s\": %s"
 msgid "could not open file \"%s\": %s\n"
 msgstr "не удалось открыть файл \"%s\": %s\n"
 
-#. +> 18 17
-#: check.c:473
+#. +> 19 18 17
+#: check.c:480
 #, c-format
 msgid "Checking data type usage"
 msgstr "Проверка использования типов данных"
 
-#. +> 18 17
-#: check.c:527
+#. +> 19 18 17
+#: check.c:534
 #, c-format
 msgid "Data type checks failed: %s"
 msgstr "Проверки типов данных не пройдены: %s"
 
-#. +> 18 17 16
-#: check.c:576
+#. +> 19 18 17 16
+#: check.c:583
 #, c-format
 msgid ""
 "Performing Consistency Checks on Old Live Server\n"
@@ -597,8 +628,8 @@ msgstr ""
 "Проверка целостности на старом работающем сервере\n"
 "-------------------------------------------------\n"
 
-#. +> 18 17 16
-#: check.c:582
+#. +> 19 18 17 16
+#: check.c:589
 #, c-format
 msgid ""
 "Performing Consistency Checks\n"
@@ -617,16 +648,16 @@ msgstr ""
 "Проведение проверок целостности\n"
 "-------------------------------\n"
 
-#. +> 18
-#: check.c:754
+#. +> 19 18
+#: check.c:790
 #, c-format
 msgid ""
 "Swap mode can only upgrade clusters from PostgreSQL version %s and later."
 msgstr ""
 "В режиме подмены возможно обновление только с версии PostgreSQL %s и новее."
 
-#. +> 18 17 16
-#: check.c:777
+#. +> 19 18 17 16
+#: check.c:813
 #, c-format
 msgid ""
 "\n"
@@ -645,8 +676,8 @@ msgstr ""
 "\n"
 "*Кластеры совместимы*\n"
 
-#. +> 18 17 16
-#: check.c:785
+#. +> 19 18 17 16
+#: check.c:821
 #, c-format
 msgid ""
 "\n"
@@ -671,8 +702,8 @@ msgstr ""
 "initdb\n"
 "для нового кластера, чтобы продолжить.\n"
 
-#. +> 18
-#: check.c:826
+#. +> 19 18
+#: check.c:862
 #, c-format
 msgid ""
 "Some statistics are not transferred by pg_upgrade.\n"
@@ -711,8 +742,8 @@ msgstr ""
 "    %s/vacuumdb %s--all --analyze-in-stages\n"
 "\n"
 
-#. +> 18 17 16
-#: check.c:835
+#. +> 19 18 17 16
+#: check.c:871
 #, c-format
 msgid ""
 "Running this script will delete the old cluster's data files:\n"
@@ -731,8 +762,8 @@ msgstr ""
 "При запуске этого скрипта будут удалены файлы данных старого кластера:\n"
 "    %s\n"
 
-#. +> 18 17 16
-#: check.c:840
+#. +> 19 18 17 16
+#: check.c:876
 #, c-format
 msgid ""
 "Could not create a script to delete the old cluster's data files\n"
@@ -759,14 +790,14 @@ msgstr ""
 "пространства или каталог данных нового кластера.\n"
 "Содержимое старого кластера нужно будет удалить вручную.\n"
 
-#. +> 18 17 16 15 14
-#: check.c:852
+#. +> 19 18 17 16 15 14
+#: check.c:888
 #, c-format
 msgid "Checking cluster versions"
 msgstr "Проверка версий кластеров"
 
-#. +> 18 17 16
-#: check.c:864
+#. +> 19 18 17 16
+#: check.c:900
 #, c-format
 msgid "This utility can only upgrade from PostgreSQL version %s and later."
 msgstr ""
@@ -789,8 +820,8 @@ msgstr ""
 "Эта утилита может производить обновление только с версии PostgreSQL 9.0 и "
 "новее.\n"
 
-#. +> 18 17 16
-#: check.c:869
+#. +> 19 18 17 16
+#: check.c:905
 #, c-format
 msgid "This utility can only upgrade to PostgreSQL version %s."
 msgstr "Эта утилита может повышать версию PostgreSQL только до %s."
@@ -801,8 +832,8 @@ msgstr "Эта утилита может повышать версию PostgreSQ
 msgid "This utility can only upgrade to PostgreSQL version %s.\n"
 msgstr "Эта утилита может повышать версию PostgreSQL только до %s.\n"
 
-#. +> 18 17 16
-#: check.c:878
+#. +> 19 18 17 16
+#: check.c:914
 #, c-format
 msgid ""
 "This utility cannot be used to downgrade to older major PostgreSQL versions."
@@ -820,8 +851,8 @@ msgstr ""
 "Эта утилита не может понижать версию до более старой основной версии "
 "PostgreSQL.\n"
 
-#. +> 18 17 16
-#: check.c:883
+#. +> 19 18 17 16
+#: check.c:919
 #, c-format
 msgid ""
 "Old cluster data and binary directories are from different major versions."
@@ -838,8 +869,8 @@ msgstr ""
 "Каталоги данных и исполняемых файлов старого кластера относятся к разным "
 "основным версиям.\n"
 
-#. +> 18 17 16
-#: check.c:886
+#. +> 19 18 17 16
+#: check.c:922
 #, c-format
 msgid ""
 "New cluster data and binary directories are from different major versions."
@@ -856,15 +887,15 @@ msgstr ""
 "Каталоги данных и исполняемых файлов нового кластера относятся к разным "
 "основным версиям.\n"
 
-#. +> 18
-#: check.c:897
+#. +> 19 18
+#: check.c:933
 #, c-format
 msgid "The option %s cannot be used for upgrades from PostgreSQL %s and later."
 msgstr ""
 "Параметр %s нельзя использовать при обновлении с PostgreSQL %s и новее."
 
-#. +> 18 17 16
-#: check.c:913
+#. +> 19 18 17 16
+#: check.c:949
 #, c-format
 msgid ""
 "When checking a live server, the old and new port numbers must be different."
@@ -892,8 +923,8 @@ msgstr ""
 "Для проверки старого работающего сервера версии до 9.1 необходимо указать "
 "номер порта этого сервера.\n"
 
-#. +> 18 17 16
-#: check.c:933
+#. +> 19 18 17 16
+#: check.c:969
 #, c-format
 msgid "New cluster database \"%s\" is not empty: found relation \"%s.%s\""
 msgstr ""
@@ -906,14 +937,21 @@ msgid "New cluster database \"%s\" is not empty: found relation \"%s.%s\"\n"
 msgstr ""
 "Новая база данных кластера \"%s\" не пустая: найдено отношение \"%s.%s\"\n"
 
+#. +> 19
+#: check.c:992
+#, fuzzy, c-format
+#| msgid "Checking for new cluster tablespace directories"
+msgid "Checking new cluster tablespace directories"
+msgstr "Проверка каталогов табличных пространств в новом кластере"
+
 #. +> 18 17 16 15 14
 #: check.c:956
 #, c-format
 msgid "Checking for new cluster tablespace directories"
 msgstr "Проверка каталогов табличных пространств в новом кластере"
 
-#. +> 18 17 16
-#: check.c:967
+#. +> 19 18 17 16
+#: check.c:1003
 #, c-format
 msgid "new cluster tablespace directory already exists: \"%s\""
 msgstr ""
@@ -926,8 +964,8 @@ msgid "new cluster tablespace directory already exists: \"%s\"\n"
 msgstr ""
 "каталог табличного пространства в новом кластере уже существует: \"%s\"\n"
 
-#. +> 18 17 16
-#: check.c:1001
+#. +> 19 18 17 16
+#: check.c:1037
 #, c-format
 msgid ""
 "\n"
@@ -962,8 +1000,8 @@ msgstr ""
 "ПРЕДУПРЕЖДЕНИЕ:  новый каталог данных не должен располагаться внутри старого "
 "каталога данных, то есть, в %s\n"
 
-#. +> 18 17 16
-#: check.c:1025
+#. +> 19 18 17 16
+#: check.c:1061
 #, c-format
 msgid ""
 "\n"
@@ -998,14 +1036,14 @@ msgstr ""
 "ПРЕДУПРЕЖДЕНИЕ:  пользовательские табличные пространства не должны "
 "располагаться внутри каталога данных, то есть, в %s\n"
 
-#. +> 18 17 16 15 14
-#: check.c:1035
+#. +> 19 18 17 16 15 14
+#: check.c:1071
 #, c-format
 msgid "Creating script to delete old cluster"
 msgstr "Создание скрипта для удаления старого кластера"
 
-#. +> 18 17
-#: check.c:1063
+#. +> 19 18 17
+#: check.c:1099
 #, c-format
 msgid "could not add execute permission to file \"%s\": %m"
 msgstr "не удалось добавить право выполнения для файла \"%s\": %m"
@@ -1022,14 +1060,14 @@ msgstr "не удалось добавить право выполнения д�
 msgid "could not add execute permission to file \"%s\": %s\n"
 msgstr "не удалось добавить право выполнения для файла \"%s\": %s\n"
 
-#. +> 18 17 16 15 14
-#: check.c:1083
+#. +> 19 18 17 16 15 14
+#: check.c:1119
 #, c-format
 msgid "Checking database user is the install user"
 msgstr "Проверка, является ли пользователь БД стартовым пользователем"
 
-#. +> 18 17 16
-#: check.c:1099
+#. +> 19 18 17 16
+#: check.c:1135
 #, c-format
 msgid "database user \"%s\" is not the install user"
 msgstr "пользователь БД \"%s\" не является стартовым пользователем"
@@ -1040,8 +1078,8 @@ msgstr "пользователь БД \"%s\" не является старто�
 msgid "database user \"%s\" is not the install user\n"
 msgstr "пользователь БД \"%s\" не является стартовым пользователем\n"
 
-#. +> 18 17 16
-#: check.c:1110
+#. +> 19 18 17 16
+#: check.c:1146
 #, c-format
 msgid "could not determine the number of users"
 msgstr "не удалось определить количество пользователей"
@@ -1052,8 +1090,8 @@ msgstr "не удалось определить количество польз
 msgid "could not determine the number of users\n"
 msgstr "не удалось определить количество пользователей\n"
 
-#. +> 18 17 16
-#: check.c:1118
+#. +> 19 18 17 16
+#: check.c:1154
 #, c-format
 msgid "Only the install user can be defined in the new cluster."
 msgstr "В новом кластере может быть определён только стартовый пользователь."
@@ -1063,12 +1101,6 @@ msgstr "В новом кластере может быть определён т
 #, c-format
 msgid "Only the install user can be defined in the new cluster.\n"
 msgstr "В новом кластере может быть определён только стартовый пользователь.\n"
-
-#. +> 18 17 16 15 14
-#: check.c:1148
-#, c-format
-msgid "Checking database connection settings"
-msgstr "Проверка параметров подключения к базе данных"
 
 #. +> 17 16
 #: check.c:1159
@@ -1112,8 +1144,14 @@ msgstr ""
 "    %s\n"
 "\n"
 
-#. +> 18 17 16
-#: check.c:1176
+#. +> 19 18 17 16 15 14
+#: check.c:1184
+#, c-format
+msgid "Checking database connection settings"
+msgstr "Проверка параметров подключения к базе данных"
+
+#. +> 19 18 17 16
+#: check.c:1212
 #, c-format
 msgid ""
 "template0 must not allow connections, i.e. its pg_database.datallowconn must "
@@ -1142,10 +1180,10 @@ msgstr ""
 "Все базы, кроме template0, должны допускать подключения, то есть их свойство "
 "pg_database.datallowconn должно быть true\n"
 
-#. +> 18 17 16
-#: check.c:1203 check.c:1324 check.c:1420 check.c:1548 check.c:1624
-#: check.c:1710 check.c:1770 check.c:1853 check.c:2172 check.c:2305
-#: check.c:2447 function.c:229
+#. +> 19 18 17 16
+#: check.c:1239 check.c:1300 check.c:1415 check.c:1508 check.c:1633
+#: check.c:1707 check.c:1790 check.c:1865 check.c:1923 check.c:2003
+#: check.c:2355 check.c:2511 check.c:2651 check.c:2720 function.c:235
 #, c-format
 msgid "fatal"
 msgstr "сбой"
@@ -1158,8 +1196,8 @@ msgstr "сбой"
 msgid "fatal\n"
 msgstr "сбой\n"
 
-#. +> 18
-#: check.c:1204
+#. +> 19 18
+#: check.c:1240
 #, c-format
 msgid ""
 "All non-template0 databases must allow connections, i.e. their\n"
@@ -1181,14 +1219,43 @@ msgstr ""
 "приведён в файле:\n"
 "    %s"
 
-#. +> 18 17 16 15 14
-#: check.c:1229
+#. +> 19
+#: check.c:1267
+#, fuzzy, c-format
+#| msgid "Checking for prepared transactions"
+msgid "Checking for unsupported encodings"
+msgstr "Проверка наличия подготовленных транзакций"
+
+#. +> 19
+#: check.c:1301
+#, fuzzy, c-format
+#| msgid ""
+#| "Your installation contains tables declared WITH OIDS, which is not\n"
+#| "supported anymore.  Consider removing the oid column using\n"
+#| "    ALTER TABLE ... SET WITHOUT OIDS;\n"
+#| "A list of tables with the problem is in the file:\n"
+#| "    %s"
+msgid ""
+"Your installation contains databases using encodings that are\n"
+"no longer supported.  Consider dumping and restoring with UTF8.\n"
+"A list of databases with unsupported encodings is in the file:\n"
+"    %s"
+msgstr ""
+"В вашей инсталляции содержатся таблицы со свойством WITH OIDS, которое "
+"теперь\n"
+"не поддерживается. Отказаться от использования столбцов oid можно так:\n"
+"    ALTER TABLE ... SET WITHOUT OIDS;\n"
+"Список проблемных таблиц приведён в файле:\n"
+"    %s"
+
+#. +> 19 18 17 16 15 14
+#: check.c:1323
 #, c-format
 msgid "Checking for prepared transactions"
 msgstr "Проверка наличия подготовленных транзакций"
 
-#. +> 18 17 16
-#: check.c:1238
+#. +> 19 18 17 16
+#: check.c:1332
 #, c-format
 msgid "The source cluster contains prepared transactions"
 msgstr "Исходный кластер содержит подготовленные транзакции"
@@ -1205,8 +1272,8 @@ msgstr "Исходный кластер содержит подготовлен�
 msgid "The source cluster contains roles starting with \"pg_\"\n"
 msgstr "В исходном кластере есть роли, имена которых начинаются с \"pg_\"\n"
 
-#. +> 18 17 16
-#: check.c:1240
+#. +> 19 18 17 16
+#: check.c:1334
 #, c-format
 msgid "The target cluster contains prepared transactions"
 msgstr "Целевой кластер содержит подготовленные транзакции"
@@ -1223,14 +1290,14 @@ msgstr "Целевой кластер содержит подготовленн�
 msgid "The target cluster contains roles starting with \"pg_\"\n"
 msgstr "В целевом кластере есть роли, имена которых начинаются с \"pg_\"\n"
 
-#. +> 18 17 16 15 14
-#: check.c:1300
+#. +> 19 18 17 16 15 14
+#: check.c:1391
 #, c-format
 msgid "Checking for contrib/isn with bigint-passing mismatch"
 msgstr "Проверка несоответствия при передаче bigint в contrib/isn"
 
-#. +> 18 17 16
-#: check.c:1325
+#. +> 19 18 17 16
+#: check.c:1416
 #, c-format
 msgid ""
 "Your installation contains \"contrib/isn\" functions which rely on the\n"
@@ -1277,14 +1344,14 @@ msgstr ""
 "    %s\n"
 "\n"
 
-#. +> 18 17 16 15 14
-#: check.c:1405
+#. +> 19 18 17 16 15 14
+#: check.c:1493
 #, c-format
 msgid "Checking for user-defined postfix operators"
 msgstr "Проверка пользовательских постфиксных операторов"
 
-#. +> 18 17 16
-#: check.c:1421
+#. +> 19 18 17 16
+#: check.c:1509
 #, c-format
 msgid ""
 "Your installation contains user-defined postfix operators, which are not\n"
@@ -1319,14 +1386,14 @@ msgstr ""
 "    %s\n"
 "\n"
 
-#. +> 18 17 16 15 14
-#: check.c:1476
+#. +> 19 18 17 16 15 14
+#: check.c:1561
 #, c-format
 msgid "Checking for incompatible polymorphic functions"
 msgstr "Проверка несовместимых полиморфных функций"
 
-#. +> 18 17 16
-#: check.c:1549
+#. +> 19 18 17 16
+#: check.c:1634
 #, c-format
 msgid ""
 "Your installation contains user-defined objects that refer to internal\n"
@@ -1371,14 +1438,32 @@ msgstr ""
 "    %s\n"
 "\n"
 
-#. +> 18 17 16 15 14
-#: check.c:1609
+#. +> 15 14
+#: check.c:1638
+#, c-format
+msgid "failed to get the current locale\n"
+msgstr "не удалось получить текущую локаль\n"
+
+#. +> 15 14
+#: check.c:1647
+#, c-format
+msgid "failed to get system locale name for \"%s\"\n"
+msgstr "не удалось получить системное имя локали для \"%s\"\n"
+
+#. +> 15 14
+#: check.c:1653
+#, c-format
+msgid "failed to restore old locale \"%s\"\n"
+msgstr "не удалось восстановить старую локаль \"%s\"\n"
+
+#. +> 19 18 17 16 15 14
+#: check.c:1692
 #, c-format
 msgid "Checking for tables WITH OIDS"
 msgstr "Проверка таблиц со свойством WITH OIDS"
 
-#. +> 18 17 16
-#: check.c:1625
+#. +> 19 18 17 16
+#: check.c:1708
 #, c-format
 msgid ""
 "Your installation contains tables declared WITH OIDS, which is not\n"
@@ -1413,32 +1498,14 @@ msgstr ""
 "    %s\n"
 "\n"
 
-#. +> 15 14
-#: check.c:1638
-#, c-format
-msgid "failed to get the current locale\n"
-msgstr "не удалось получить текущую локаль\n"
-
-#. +> 15 14
-#: check.c:1647
-#, c-format
-msgid "failed to get system locale name for \"%s\"\n"
-msgstr "не удалось получить системное имя локали для \"%s\"\n"
-
-#. +> 15 14
-#: check.c:1653
-#, c-format
-msgid "failed to restore old locale \"%s\"\n"
-msgstr "не удалось восстановить старую локаль \"%s\"\n"
-
-#. +> 18 17 16 15 14
-#: check.c:1684
+#. +> 19 18 17 16 15 14
+#: check.c:1764
 #, c-format
 msgid "Checking for not-null constraint inconsistencies"
 msgstr "Проверка несогласованных ограничений NOT NULL"
 
-#. +> 18 17 16
-#: check.c:1711
+#. +> 19 18 17 16
+#: check.c:1791
 #, c-format
 msgid ""
 "Your installation contains inconsistent NOT NULL constraints.\n"
@@ -1479,14 +1546,33 @@ msgstr ""
 "    %s\n"
 "\n"
 
-#. +> 18 17 16 15 14
-#: check.c:1740
+#. +> 19
+#: check.c:1850
+#, fuzzy, c-format
+#| msgid "Checking for not-null constraint inconsistencies"
+msgid "Checking for uses of gist_inet_ops/gist_cidr_ops"
+msgstr "Проверка несогласованных ограничений NOT NULL"
+
+#. +> 19
+#: check.c:1866
+#, c-format
+msgid ""
+"Your installation contains indexes that use the btree_gist extension's\n"
+"gist_inet_ops or gist_cidr_ops operator classes, which cannot be\n"
+"binary-upgraded.  Replace them with indexes that use the built-in GiST\n"
+"inet_ops operator class.\n"
+"A list of indexes with the problem is in the file:\n"
+"    %s"
+msgstr ""
+
+#. +> 19 18 17 16 15 14
+#: check.c:1893
 #, c-format
 msgid "Checking for roles starting with \"pg_\""
 msgstr "Проверка ролей с именами, начинающимися с \"pg_\""
 
-#. +> 18 17 16
-#: check.c:1771
+#. +> 19 18 17 16
+#: check.c:1924
 #, c-format
 msgid ""
 "Your installation contains roles starting with \"pg_\".\n"
@@ -1501,14 +1587,14 @@ msgstr ""
 "Список ролей с префиксом \"pg_\" приведён в файле:\n"
 "    %s"
 
-#. +> 18 17 16 15 14
-#: check.c:1825
+#. +> 19 18 17 16 15 14
+#: check.c:1975
 #, c-format
 msgid "Checking for user-defined encoding conversions"
 msgstr "Проверка пользовательских перекодировок"
 
-#. +> 18 17 16
-#: check.c:1854
+#. +> 19 18 17 16
+#: check.c:2004
 #, c-format
 msgid ""
 "Your installation contains user-defined encoding conversions.\n"
@@ -1545,20 +1631,20 @@ msgstr ""
 "    %s\n"
 "\n"
 
-#. +> 18
-#: check.c:1939
+#. +> 19 18
+#: check.c:2089
 #, c-format
 msgid "Checking for objects affected by Unicode update"
 msgstr "Проверка объектов, затрагиваемых обновлением Unicode"
 
-#. +> 18 17 16 15 14
-#: check.c:2038 version.c:139
+#. +> 19 18 17 16 15 14
+#: check.c:2188 version.c:139
 #, c-format
 msgid "warning"
 msgstr "предупреждение"
 
-#. +> 18
-#: check.c:2039
+#. +> 19 18
+#: check.c:2189
 #, c-format
 msgid ""
 "Your installation contains relations that might be affected by a new version "
@@ -1571,11 +1657,25 @@ msgstr ""
 "Список потенциально затрагиваемых отношений содержится в файле:\n"
 "    %s"
 
+#. +> 19
+#: check.c:2240
+#, fuzzy, c-format
+#| msgid "Checking for new cluster logical replication slots"
+msgid "Checking new cluster replication slots"
+msgstr "Проверка слотов логической репликации в новом кластере"
+
 #. +> 18 17
 #: check.c:2076
 #, c-format
 msgid "Checking for new cluster logical replication slots"
 msgstr "Проверка слотов логической репликации в новом кластере"
+
+#. +> 19
+#: check.c:2252
+#, fuzzy, c-format
+#| msgid "could not count the number of logical replication slots"
+msgid "could not count the number of replication slots"
+msgstr "не удалось получить количество слотов логической репликации"
 
 #. +> 18 17
 #: check.c:2084
@@ -1583,17 +1683,31 @@ msgstr "Проверка слотов логической репликации 
 msgid "could not count the number of logical replication slots"
 msgstr "не удалось получить количество слотов логической репликации"
 
-#. +> 18 17
-#: check.c:2089
+#. +> 19 18 17
+#: check.c:2262
 #, c-format
 msgid "expected 0 logical replication slots but found %d"
 msgstr "обнаружено слотов логической репликации: %d, тогда как ожидалось 0"
 
-#. +> 18 17
-#: check.c:2099 check.c:2228
+#. +> 19
+#: check.c:2271
+#, fuzzy, c-format
+#| msgid "Restoring logical replication slots in the new cluster"
+msgid "replication slot \"%s\" already exists in the new cluster"
+msgstr "Восстановление слотов логической репликации в новом кластере"
+
+#. +> 19 18 17
+#: check.c:2281 check.c:2418
 #, c-format
 msgid "could not determine parameter settings on new cluster"
 msgstr "не удалось получить значения параметров в новом кластере"
+
+#. +> 19
+#: check.c:2287
+#, fuzzy, c-format
+#| msgid "\"wal_level\" must be \"logical\" but is set to \"%s\""
+msgid "\"wal_level\" must be \"replica\" or \"logical\" but is set to \"%s\""
+msgstr "\"wal_level\" должен иметь значение \"logical\", а имеет \"%s\""
 
 #. +> 18 17
 #: check.c:2104
@@ -1601,14 +1715,14 @@ msgstr "не удалось получить значения параметро
 msgid "\"wal_level\" must be \"logical\" but is set to \"%s\""
 msgstr "\"wal_level\" должен иметь значение \"logical\", а имеет \"%s\""
 
-#. +> 18 17
-#: check.c:2126
+#. +> 19 18 17
+#: check.c:2309
 #, c-format
 msgid "could not parse \"output_plugin_libraries\" setting '%s'"
 msgstr ""
 
-#. +> 18 17
-#: check.c:2173
+#. +> 19 18 17
+#: check.c:2356
 #, fuzzy, c-format
 #| msgid ""
 #| "Your installation contains logical replication slots that cannot be "
@@ -1633,6 +1747,33 @@ msgstr ""
 "Список проблемных слотов приведён в файле:\n"
 "    %s"
 
+#. +> 19
+#: check.c:2372
+#, fuzzy, c-format
+#| msgid ""
+#| "\"max_replication_slots\" (%d) must be greater than or equal to the "
+#| "number of logical replication slots (%d) on the old cluster"
+msgid ""
+"\"max_replication_slots\" (%d) must be greater than or equal to the number "
+"of logical replication slots in the old cluster plus one additional slot "
+"required for retaining conflict detection information (%d)"
+msgstr ""
+"значение \"max_replication_slots\" (%d) должно быть больше или равно числу "
+"слотов логической репликации (%d) в старом кластере"
+
+#. +> 19
+#: check.c:2378
+#, fuzzy, c-format
+#| msgid ""
+#| "\"max_replication_slots\" (%d) must be greater than or equal to the "
+#| "number of logical replication slots (%d) on the old cluster"
+msgid ""
+"\"max_replication_slots\" (%d) must be greater than or equal to the number "
+"of logical replication slots (%d) in the old cluster"
+msgstr ""
+"значение \"max_replication_slots\" (%d) должно быть больше или равно числу "
+"слотов логической репликации (%d) в старом кластере"
+
 #. +> 18 17
 #: check.c:2188
 #, c-format
@@ -1643,11 +1784,31 @@ msgstr ""
 "значение \"max_replication_slots\" (%d) должно быть больше или равно числу "
 "слотов логической репликации (%d) в старом кластере"
 
+#. +> 19
+#: check.c:2410
+#, fuzzy, c-format
+#| msgid "Checking for new cluster configuration for subscriptions"
+msgid "Checking new cluster configuration for subscriptions"
+msgstr "Проверка конфигурации нового кластера для использования подписок"
+
 #. +> 18 17
 #: check.c:2220
 #, c-format
 msgid "Checking for new cluster configuration for subscriptions"
 msgstr "Проверка конфигурации нового кластера для использования подписок"
+
+#. +> 19
+#: check.c:2422
+#, fuzzy, c-format
+#| msgid ""
+#| "\"max_active_replication_origins\" (%d) must be greater than or equal to "
+#| "the number of subscriptions (%d) on the old cluster"
+msgid ""
+"\"max_active_replication_origins\" (%d) must be greater than or equal to the "
+"number of subscriptions (%d) in the old cluster"
+msgstr ""
+"значение \"max_active_replication_origins\" (%d) должно быть больше или "
+"равно числу подписок (%d) в старом кластере"
 
 #. +> 18
 #: check.c:2232
@@ -1669,14 +1830,21 @@ msgstr ""
 "значение \"max_replication_slots\" (%d) должно быть больше или равно числу "
 "подписок (%d) в старом кластере"
 
+#. +> 19
+#: check.c:2444
+#, fuzzy, c-format
+#| msgid "Checking for valid logical replication slots"
+msgid "Checking logical replication slots"
+msgstr "Проверка корректности слотов логической репликации"
+
 #. +> 18 17
 #: check.c:2254
 #, c-format
 msgid "Checking for valid logical replication slots"
 msgstr "Проверка корректности слотов логической репликации"
 
-#. +> 18 17
-#: check.c:2306
+#. +> 19 18 17
+#: check.c:2512
 #, c-format
 msgid ""
 "Your installation contains logical replication slots that cannot be "
@@ -1694,14 +1862,21 @@ msgstr ""
 "Список проблемных слотов приведён в файле:\n"
 "    %s"
 
+#. +> 19
+#: check.c:2570
+#, fuzzy, c-format
+#| msgid "Checking for subscription state"
+msgid "Checking subscription state"
+msgstr "Проверка состояния подписок"
+
 #. +> 18 17
 #: check.c:2366
 #, c-format
 msgid "Checking for subscription state"
 msgstr "Проверка состояния подписок"
 
-#. +> 18 17
-#: check.c:2448
+#. +> 19 18 17
+#: check.c:2652
 #, c-format
 msgid ""
 "Your installation contains subscriptions without origin or having relations "
@@ -1719,13 +1894,52 @@ msgstr ""
 "Список проблемных подписок приведён в файле:\n"
 "    %s"
 
-#. +> 18 17
+#. +> 19
+#: check.c:2678
+#, c-format
+msgid "Checking names of databases, roles, and tablespaces"
+msgstr ""
+
+#. +> 19
+#: check.c:2721
+#, c-format
+msgid ""
+"Your installation contains databases, roles, or tablespaces with names\n"
+"with invalid characters (newline or carriage return).  To fix this,\n"
+"rename these objects.\n"
+"A list of all objects with invalid names is in the file:\n"
+"    %s"
+msgstr ""
+
+#. +> 19
+#: check.c:2770
+#, c-format
+msgid "Checking oldestXID and oldestMultiXid consistency"
+msgstr ""
+
+#. +> 19
+#: check.c:2791
+#, c-format
+msgid ""
+"oldestXID (%u) in the control file is newer than the datfrozenxid (%u) of "
+"database \"%s\""
+msgstr ""
+
+#. +> 19
+#: check.c:2796
+#, c-format
+msgid ""
+"oldestMultiXid (%u) in control file is newer than the datminmxid (%u) of "
+"database \"%s\""
+msgstr ""
+
+#. +> 19 18 17
 #: controldata.c:133 controldata.c:203
 #, c-format
 msgid "could not get control data using %s: %m"
 msgstr "не удалось получить управляющие данные, выполнив %s: %m"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: controldata.c:143
 #, c-format
 msgid "%d: database cluster state problem"
@@ -1737,7 +1951,7 @@ msgstr "%d: недопустимое состояние кластера баз 
 msgid "%d: database cluster state problem\n"
 msgstr "%d: недопустимое состояние кластера баз данных\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: controldata.c:162
 #, c-format
 msgid ""
@@ -1759,7 +1973,7 @@ msgstr ""
 "обновление, используйте документированный способ с rsync или отключите его в "
 "режиме главного сервера.\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: controldata.c:164
 #, c-format
 msgid ""
@@ -1781,7 +1995,7 @@ msgstr ""
 "обновление, используйте документированный способ с rsync или отключите его в "
 "режиме главного сервера.\n"
 
-#. +> 18 17
+#. +> 19 18 17
 #: controldata.c:169
 #, c-format
 msgid "The source cluster was not shut down cleanly, state reported as: \"%s\""
@@ -1801,7 +2015,7 @@ msgstr "Исходный кластер не был отключён штатн�
 msgid "The source cluster was not shut down cleanly.\n"
 msgstr "Исходный кластер не был отключён штатным образом.\n"
 
-#. +> 18 17
+#. +> 19 18 17
 #: controldata.c:171
 #, c-format
 msgid "The target cluster was not shut down cleanly, state reported as: \"%s\""
@@ -1820,7 +2034,7 @@ msgstr "Целевой кластер не был отключён штатны�
 msgid "The target cluster was not shut down cleanly.\n"
 msgstr "Целевой кластер не был отключён штатным образом.\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: controldata.c:179 controldata.c:530
 #, c-format
 msgid "could not get control data using %s: %s"
@@ -1832,7 +2046,7 @@ msgstr "не удалось получить управляющие данные
 msgid "could not get control data using %s: %s\n"
 msgstr "не удалось получить управляющие данные, выполнив %s: %s\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: controldata.c:185
 #, c-format
 msgid "The source cluster lacks cluster state information:"
@@ -1844,7 +2058,7 @@ msgstr "В исходном кластере не хватает информа�
 msgid "The source cluster lacks cluster state information:\n"
 msgstr "В исходном кластере не хватает информации о состоянии кластера:\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: controldata.c:187
 #, c-format
 msgid "The target cluster lacks cluster state information:"
@@ -1856,14 +2070,14 @@ msgstr "В целевом кластере не хватает информац�
 msgid "The target cluster lacks cluster state information:\n"
 msgstr "В целевом кластере не хватает информации о состоянии кластера:\n"
 
-#. +> 18 17 16 15 14
-#: controldata.c:217 dump.c:54 exec.c:118 pg_upgrade.c:606 pg_upgrade.c:646
-#: pg_upgrade.c:995 relfilenumber.c:610 server.c:34 util.c:337
+#. +> 19 18 17 16 15 14
+#: controldata.c:217 dump.c:54 exec.c:119 pg_upgrade.c:630 pg_upgrade.c:670
+#: pg_upgrade.c:1048 relfilenumber.c:605 server.c:34 util.c:337
 #, c-format
 msgid "%s"
 msgstr "%s"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: controldata.c:224
 #, c-format
 msgid "%d: pg_resetwal problem"
@@ -1875,7 +2089,7 @@ msgstr "%d: проблема с выводом pg_resetwal"
 msgid "%d: pg_resetwal problem\n"
 msgstr "%d: проблема с выводом pg_resetwal\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: controldata.c:234 controldata.c:244 controldata.c:255 controldata.c:266
 #: controldata.c:277 controldata.c:296 controldata.c:307 controldata.c:318
 #: controldata.c:329 controldata.c:340 controldata.c:351 controldata.c:362
@@ -1899,7 +2113,7 @@ msgstr "%d: проблема с получением управляющих да
 msgid "%d: controldata retrieval problem\n"
 msgstr "%d: проблема с получением управляющих данных\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: controldata.c:618
 #, c-format
 msgid "The source cluster lacks some required control information:"
@@ -1911,7 +2125,7 @@ msgstr "В исходном кластере не хватает необход�
 msgid "The source cluster lacks some required control information:\n"
 msgstr "В исходном кластере не хватает необходимой управляющей информации:\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: controldata.c:621
 #, c-format
 msgid "The target cluster lacks some required control information:"
@@ -1924,7 +2138,7 @@ msgid "The target cluster lacks some required control information:\n"
 msgstr "В целевом кластере не хватает необходимой управляющей информации:\n"
 
 # skip-rule: capital-letter-first
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: controldata.c:624
 #, c-format
 msgid "  checkpoint next XID"
@@ -1938,7 +2152,7 @@ msgid "  checkpoint next XID\n"
 msgstr "  следующий XID конт. точки\n"
 
 # skip-rule: capital-letter-first
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: controldata.c:627
 #, c-format
 msgid "  latest checkpoint next OID"
@@ -1952,7 +2166,7 @@ msgid "  latest checkpoint next OID\n"
 msgstr "  следующий OID последней конт. точки\n"
 
 # skip-rule: capital-letter-first
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: controldata.c:630
 #, c-format
 msgid "  latest checkpoint next MultiXactId"
@@ -1966,7 +2180,7 @@ msgid "  latest checkpoint next MultiXactId\n"
 msgstr "  следующий MultiXactId последней конт. точки\n"
 
 # skip-rule: capital-letter-first
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: controldata.c:634
 #, c-format
 msgid "  latest checkpoint oldest MultiXactId"
@@ -1980,7 +2194,7 @@ msgid "  latest checkpoint oldest MultiXactId\n"
 msgstr "  старейший MultiXactId последней конт. точки\n"
 
 # skip-rule: capital-letter-first
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: controldata.c:637
 #, c-format
 msgid "  latest checkpoint oldestXID"
@@ -1994,7 +2208,7 @@ msgid "  latest checkpoint oldestXID\n"
 msgstr "  oldestXID последней конт. точки\n"
 
 # skip-rule: capital-letter-first
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: controldata.c:640
 #, c-format
 msgid "  latest checkpoint next MultiXactOffset"
@@ -2007,7 +2221,7 @@ msgstr "  следующий MultiXactOffset последней конт. точ
 msgid "  latest checkpoint next MultiXactOffset\n"
 msgstr "  следующий MultiXactOffset последней конт. точки\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: controldata.c:643
 #, c-format
 msgid "  first WAL segment after reset"
@@ -2019,7 +2233,7 @@ msgstr "  первый сегмент WAL после сброса"
 msgid "  first WAL segment after reset\n"
 msgstr "  первый сегмент WAL после сброса\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: controldata.c:646
 #, c-format
 msgid "  float8 argument passing method"
@@ -2031,7 +2245,7 @@ msgstr "  метод передачи аргумента float8"
 msgid "  float8 argument passing method\n"
 msgstr "  метод передачи аргумента float8\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: controldata.c:649
 #, c-format
 msgid "  maximum alignment"
@@ -2043,7 +2257,7 @@ msgstr "  максимальное выравнивание"
 msgid "  maximum alignment\n"
 msgstr "  максимальное выравнивание\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: controldata.c:652
 #, c-format
 msgid "  block size"
@@ -2055,7 +2269,7 @@ msgstr "  размер блока"
 msgid "  block size\n"
 msgstr "  размер блока\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: controldata.c:655
 #, c-format
 msgid "  large relation segment size"
@@ -2067,7 +2281,7 @@ msgstr "  размер сегмента большого отношения"
 msgid "  large relation segment size\n"
 msgstr "  размер сегмента большого отношения\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: controldata.c:658
 #, c-format
 msgid "  WAL block size"
@@ -2079,7 +2293,7 @@ msgstr "  размер блока WAL"
 msgid "  WAL block size\n"
 msgstr "  размер блока WAL\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: controldata.c:661
 #, c-format
 msgid "  WAL segment size"
@@ -2091,7 +2305,7 @@ msgstr "  размер сегмента WAL"
 msgid "  WAL segment size\n"
 msgstr "  размер сегмента WAL\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: controldata.c:664
 #, c-format
 msgid "  maximum identifier length"
@@ -2103,7 +2317,7 @@ msgstr "  максимальная длина идентификатора"
 msgid "  maximum identifier length\n"
 msgstr "  максимальная длина идентификатора\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: controldata.c:667
 #, c-format
 msgid "  maximum number of indexed columns"
@@ -2115,7 +2329,7 @@ msgstr "  максимальное число столбцов в индексе
 msgid "  maximum number of indexed columns\n"
 msgstr "  максимальное число столбцов в индексе\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: controldata.c:670
 #, c-format
 msgid "  maximum TOAST chunk size"
@@ -2127,7 +2341,7 @@ msgstr "  максимальный размер порции TOAST"
 msgid "  maximum TOAST chunk size\n"
 msgstr "  максимальный размер порции TOAST\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: controldata.c:674
 #, c-format
 msgid "  large-object chunk size"
@@ -2139,7 +2353,7 @@ msgstr "  размер порции большого объекта"
 msgid "  large-object chunk size\n"
 msgstr "  размер порции большого объекта\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: controldata.c:677
 #, c-format
 msgid "  dates/times are integers?"
@@ -2151,7 +2365,7 @@ msgstr "  дата/время представлены целыми числам
 msgid "  dates/times are integers?\n"
 msgstr "  дата/время представлены целыми числами?\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: controldata.c:681
 #, c-format
 msgid "  data checksum version"
@@ -2163,13 +2377,13 @@ msgstr "  версия контрольных сумм данных"
 msgid "  data checksum version\n"
 msgstr "  версия контрольных сумм данных\n"
 
-#. +> 18
+#. +> 19 18
 #: controldata.c:685
 #, c-format
 msgid "  default char signedness"
 msgstr "  знаковость char по умолчанию"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: controldata.c:687
 #, c-format
 msgid "Cannot continue without required control information, terminating"
@@ -2183,7 +2397,7 @@ msgid "Cannot continue without required control information, terminating\n"
 msgstr ""
 "Нет необходимой управляющей информации для продолжения, работа прерывается\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: controldata.c:702
 #, c-format
 msgid ""
@@ -2204,7 +2418,7 @@ msgstr ""
 "Вероятно, один кластер установлен в 32-битной системе, а другой ~ в 64-"
 "битной\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: controldata.c:706
 #, c-format
 msgid "old and new pg_controldata block sizes are invalid or do not match"
@@ -2218,7 +2432,7 @@ msgid "old and new pg_controldata block sizes are invalid or do not match\n"
 msgstr ""
 "старый и новый размер блоков в pg_controldata различаются или некорректны\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: controldata.c:709
 #, c-format
 msgid ""
@@ -2238,7 +2452,7 @@ msgstr ""
 "старый и новый максимальный размер сегментов отношений в pg_controldata "
 "различаются или некорректны\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: controldata.c:712
 #, c-format
 msgid "old and new pg_controldata WAL block sizes are invalid or do not match"
@@ -2254,7 +2468,7 @@ msgstr ""
 "старый и новый размер блоков WAL в pg_controldata различаются или "
 "некорректны\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: controldata.c:715
 #, c-format
 msgid ""
@@ -2278,7 +2492,7 @@ msgstr ""
 msgid "Unable to rename %s to %s.\n"
 msgstr "Не удалось переименовать %s в %s.\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: controldata.c:718
 #, c-format
 msgid ""
@@ -2298,7 +2512,7 @@ msgstr ""
 "старая и новая максимальная длина идентификаторов в pg_controldata "
 "различаются или некорректны\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: controldata.c:721
 #, c-format
 msgid ""
@@ -2318,7 +2532,7 @@ msgstr ""
 "старый и новый максимум числа столбцов, составляющих индексы, в "
 "pg_controldata различаются или некорректны\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: controldata.c:724
 #, c-format
 msgid ""
@@ -2372,7 +2586,7 @@ msgstr ""
 "после того, как будет запущен новый, не гарантируется.\n"
 "\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: controldata.c:729
 #, c-format
 msgid ""
@@ -2390,7 +2604,7 @@ msgid ""
 msgstr ""
 "старый и новый размер порции большого объекта различаются или некорректны\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: controldata.c:732
 #, c-format
 msgid "old and new pg_controldata date/time storage types do not match"
@@ -2406,7 +2620,7 @@ msgstr ""
 "старый и новый тип хранения даты/времени в pg_controldata различаются или "
 "некорректны\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: controldata.c:745
 #, c-format
 msgid "old cluster does not use data checksums but the new one does"
@@ -2422,7 +2636,7 @@ msgstr ""
 "в старом кластере не применялись контрольные суммы данных, но в новом они "
 "есть\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: controldata.c:748
 #, c-format
 msgid "old cluster uses data checksums but the new one does not"
@@ -2436,7 +2650,7 @@ msgid "old cluster uses data checksums but the new one does not\n"
 msgstr ""
 "в старом кластере применялись контрольные суммы данных, но в новом их нет\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: controldata.c:750
 #, c-format
 msgid "old and new cluster pg_controldata checksum versions do not match"
@@ -2452,7 +2666,7 @@ msgstr ""
 "различаются\n"
 
 #. translator: %s is the file path of the control file
-#. +> 18
+#. +> 19 18
 #: controldata.c:762
 #, c-format
 msgid "Adding \".old\" suffix to old \"%s\""
@@ -2464,14 +2678,14 @@ msgstr "Добавление расширения \".old\" к старому ф�
 msgid "Adding \".old\" suffix to old global/pg_control"
 msgstr "Добавление расширения \".old\" к старому файлу global/pg_control"
 
-#. +> 18 17 16
-#: controldata.c:767 relfilenumber.c:393 relfilenumber.c:420
+#. +> 19 18 17 16
+#: controldata.c:767 relfilenumber.c:385 relfilenumber.c:412
 #, c-format
 msgid "could not rename file \"%s\" to \"%s\": %m"
 msgstr "не удалось переименовать файл \"%s\" в \"%s\": %m"
 
 #. translator: %s/%s is the file path of the control file
-#. +> 18
+#. +> 19 18
 #: controldata.c:773
 #, c-format
 msgid ""
@@ -2487,7 +2701,7 @@ msgstr ""
 "Так как применялся режим \"ссылок\", работа старого кластера\n"
 "после того, как будет запущен новый, не гарантируется."
 
-#. +> 18
+#. +> 19 18
 #: controldata.c:780
 #, c-format
 msgid ""
@@ -2499,19 +2713,19 @@ msgstr ""
 "Так как использовался режим \"подмены\", старый кластер уже не может быть\n"
 "запущен штатно."
 
-#. +> 18
+#. +> 19 18
 #: controldata.c:784 file.c:455
 #, c-format
 msgid "unrecognized transfer mode"
 msgstr "нераспознанный режим передачи данных"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: dump.c:20
 #, c-format
 msgid "Creating dump of global objects"
 msgstr "Формирование выгрузки глобальных объектов"
 
-#. +> 18 17 16 15
+#. +> 19 18 17 16 15
 #: dump.c:33
 #, c-format
 msgid "Creating dump of database schemas"
@@ -2523,14 +2737,14 @@ msgstr "Формирование выгрузки схем базы данных
 msgid "Creating dump of database schemas\n"
 msgstr "Формирование выгрузки схем базы данных\n"
 
-#. +> 18 17
-#: exec.c:47
+#. +> 19 18 17
+#: exec.c:48
 #, c-format
 msgid "could not get pg_ctl version data using %s: %m"
 msgstr "не удалось получить данные версии pg_ctl, выполнив %s: %m"
 
-#. +> 18 17 16
-#: exec.c:51
+#. +> 19 18 17 16
+#: exec.c:52
 #, c-format
 msgid "could not get pg_ctl version data using %s: %s"
 msgstr "не удалось получить данные версии pg_ctl, выполнив %s: %s"
@@ -2541,8 +2755,8 @@ msgstr "не удалось получить данные версии pg_ctl, �
 msgid "could not get pg_ctl version data using %s: %s\n"
 msgstr "не удалось получить данные версии pg_ctl, выполнив %s: %s\n"
 
-#. +> 18 17 16
-#: exec.c:55
+#. +> 19 18 17 16
+#: exec.c:56
 #, c-format
 msgid "could not get pg_ctl version output from %s"
 msgstr "не удалось получить версию pg_ctl из результата %s"
@@ -2553,8 +2767,8 @@ msgstr "не удалось получить версию pg_ctl из резул
 msgid "could not get pg_ctl version output from %s\n"
 msgstr "не удалось получить версию pg_ctl из результата %s\n"
 
-#. +> 18 17 16
-#: exec.c:112 exec.c:116
+#. +> 19 18 17 16
+#: exec.c:113 exec.c:117
 #, c-format
 msgid "command too long"
 msgstr "команда слишком длинная"
@@ -2571,8 +2785,8 @@ msgstr "команда слишком длинная\n"
 msgid "%s\n"
 msgstr "%s\n"
 
-#. +> 18 17 16
-#: exec.c:160 pg_upgrade.c:315
+#. +> 19 18 17 16
+#: exec.c:161 pg_upgrade.c:339
 #, c-format
 msgid "could not open log file \"%s\": %m"
 msgstr "не удалось открыть файл протокола \"%s\": %m"
@@ -2583,8 +2797,8 @@ msgstr "не удалось открыть файл протокола \"%s\": %
 msgid "could not open log file \"%s\": %m\n"
 msgstr "не удалось открыть файл протокола \"%s\": %m\n"
 
-#. +> 18 17 16 15 14
-#: exec.c:192
+#. +> 19 18 17 16 15 14
+#: exec.c:193
 #, c-format
 msgid ""
 "\n"
@@ -2593,8 +2807,8 @@ msgstr ""
 "\n"
 "*ошибка*"
 
-#. +> 18 17 16
-#: exec.c:195
+#. +> 19 18 17 16
+#: exec.c:196
 #, c-format
 msgid "There were problems executing \"%s\""
 msgstr "При выполнении \"%s\" возникли проблемы"
@@ -2605,8 +2819,8 @@ msgstr "При выполнении \"%s\" возникли проблемы"
 msgid "There were problems executing \"%s\"\n"
 msgstr "При выполнении \"%s\" возникли проблемы\n"
 
-#. +> 18 17 16
-#: exec.c:198
+#. +> 19 18 17 16
+#: exec.c:199
 #, c-format
 msgid ""
 "Consult the last few lines of \"%s\" or \"%s\" for\n"
@@ -2625,8 +2839,8 @@ msgstr ""
 "Чтобы понять причину ошибки, просмотрите последние несколько строк\n"
 "файла \"%s\" или \"%s\".\n"
 
-#. +> 18 17 16
-#: exec.c:203
+#. +> 19 18 17 16
+#: exec.c:204
 #, c-format
 msgid ""
 "Consult the last few lines of \"%s\" for\n"
@@ -2645,8 +2859,8 @@ msgstr ""
 "Чтобы понять причину ошибки, просмотрите последние несколько строк\n"
 "файла \"%s\".\n"
 
-#. +> 18 17 16
-#: exec.c:218 pg_upgrade.c:325
+#. +> 19 18 17 16
+#: exec.c:219 pg_upgrade.c:349
 #, c-format
 msgid "could not write to log file \"%s\": %m"
 msgstr "не удалось записать в файл протокола \"%s\": %m"
@@ -2657,8 +2871,8 @@ msgstr "не удалось записать в файл протокола \"%s
 msgid "could not write to log file \"%s\": %m\n"
 msgstr "не удалось записать в файл протокола \"%s\": %m\n"
 
-#. +> 18 17
-#: exec.c:244
+#. +> 19 18 17
+#: exec.c:245
 #, c-format
 msgid "could not open file \"%s\" for reading: %m"
 msgstr "не удалось открыть файл \"%s\" для чтения: %m"
@@ -2675,8 +2889,8 @@ msgstr "не удалось открыть файл \"%s\" для чтения: 
 msgid "could not open file \"%s\" for reading: %s\n"
 msgstr "не удалось открыть файл \"%s\" для чтения: %s\n"
 
-#. +> 18 17 16
-#: exec.c:270
+#. +> 19 18 17 16
+#: exec.c:271
 #, c-format
 msgid "You must have read and write access in the current directory."
 msgstr "У вас должны быть права на чтение и запись в текущем каталоге."
@@ -2687,8 +2901,8 @@ msgstr "У вас должны быть права на чтение и запи
 msgid "You must have read and write access in the current directory.\n"
 msgstr "У вас должны быть права на чтение и запись в текущем каталоге.\n"
 
-#. +> 18 17 16
-#: exec.c:323 exec.c:389 exec.c:439
+#. +> 19 18 17 16
+#: exec.c:324 exec.c:390 exec.c:440
 #, c-format
 msgid "check for \"%s\" failed: %m"
 msgstr "файл \"%s\" не прошёл проверку: %m"
@@ -2705,8 +2919,8 @@ msgstr "проверка существования \"%s\" не пройдена
 msgid "check for \"%s\" failed: %s\n"
 msgstr "проверка существования \"%s\" не пройдена: %s\n"
 
-#. +> 18 17 16
-#: exec.c:326 exec.c:392
+#. +> 19 18 17 16
+#: exec.c:327 exec.c:393
 #, c-format
 msgid "\"%s\" is not a directory"
 msgstr "\"%s\" не является каталогом"
@@ -2717,8 +2931,8 @@ msgstr "\"%s\" не является каталогом"
 msgid "\"%s\" is not a directory\n"
 msgstr "\"%s\" не является каталогом\n"
 
-#. +> 18 17 16
-#: exec.c:444
+#. +> 19 18 17 16
+#: exec.c:445
 #, c-format
 msgid "check for \"%s\" failed: cannot execute"
 msgstr "программа \"%s\" не прошла проверку: ошибка выполнения"
@@ -2741,8 +2955,8 @@ msgstr "программа \"%s\" не прошла проверку: ошибк
 msgid "check for \"%s\" failed: cannot execute\n"
 msgstr "программа \"%s\" не прошла проверку: ошибка выполнения\n"
 
-#. +> 18 17 16
-#: exec.c:454
+#. +> 19 18 17 16
+#: exec.c:455
 #, c-format
 msgid ""
 "check for \"%s\" failed: incorrect version: found \"%s\", expected \"%s\""
@@ -2759,13 +2973,13 @@ msgstr ""
 "программа \"%s\" не прошла проверку: получена некорректная версия \"%s\", "
 "ожидалась \"%s\"\n"
 
-#. +> 18 17
+#. +> 19 18 17
 #: file.c:44
 #, c-format
 msgid "error while cloning relation \"%s.%s\" (\"%s\" to \"%s\"): %m"
 msgstr "ошибка при клонировании отношения \"%s.%s\" (из \"%s\" в \"%s\"): %m"
 
-#. +> 18 17
+#. +> 19 18 17
 #: file.c:51
 #, c-format
 msgid "error while cloning relation \"%s.%s\": could not open file \"%s\": %m"
@@ -2790,7 +3004,7 @@ msgstr ""
 "ошибка при клонировании отношения \"%s.%s\": не удалось открыть файл \"%s\": "
 "%s\n"
 
-#. +> 18 17
+#. +> 19 18 17
 #: file.c:56
 #, c-format
 msgid ""
@@ -2817,7 +3031,7 @@ msgstr ""
 "ошибка при клонировании отношения \"%s.%s\": не удалось создать файл \"%s\": "
 "%s\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: file.c:65
 #, c-format
 msgid "error while cloning relation \"%s.%s\" (\"%s\" to \"%s\"): %s"
@@ -2829,7 +3043,7 @@ msgstr "ошибка при клонировании отношения \"%s.%s\
 msgid "error while cloning relation \"%s.%s\" (\"%s\" to \"%s\"): %s\n"
 msgstr "ошибка при клонировании отношения \"%s.%s\" (из \"%s\" в \"%s\"): %s\n"
 
-#. +> 18 17
+#. +> 19 18 17
 #: file.c:91 file.c:160 file.c:233
 #, c-format
 msgid "error while copying relation \"%s.%s\": could not open file \"%s\": %m"
@@ -2854,7 +3068,7 @@ msgstr ""
 "ошибка при копировании отношения \"%s.%s\": не удалось открыть файл \"%s\": "
 "%s\n"
 
-#. +> 18 17
+#. +> 19 18 17
 #: file.c:96 file.c:165 file.c:242
 #, c-format
 msgid ""
@@ -2881,7 +3095,7 @@ msgstr ""
 "ошибка при копировании отношения \"%s.%s\": не удалось создать файл \"%s\": "
 "%s\n"
 
-#. +> 18 17
+#. +> 19 18 17
 #: file.c:110 file.c:266
 #, c-format
 msgid "error while copying relation \"%s.%s\": could not read file \"%s\": %m"
@@ -2906,7 +3120,7 @@ msgstr ""
 "ошибка при копировании отношения \"%s.%s\": не удалось прочитать файл "
 "\"%s\": %s\n"
 
-#. +> 18 17
+#. +> 19 18 17
 #: file.c:122 file.c:344
 #, c-format
 msgid "error while copying relation \"%s.%s\": could not write file \"%s\": %m"
@@ -2931,7 +3145,7 @@ msgstr ""
 "ошибка при копировании отношения \"%s.%s\": не удалось записать файл \"%s\": "
 "%s\n"
 
-#. +> 18 17
+#. +> 19 18 17
 #: file.c:136
 #, c-format
 msgid "error while copying relation \"%s.%s\" (\"%s\" to \"%s\"): %m"
@@ -2949,7 +3163,7 @@ msgstr "ошибка при копировании отношения \"%s.%s\" 
 msgid "error while copying relation \"%s.%s\" (\"%s\" to \"%s\"): %s\n"
 msgstr "ошибка при копировании отношения \"%s.%s\" (из \"%s\" в \"%s\"): %s\n"
 
-#. +> 18 17
+#. +> 19 18 17
 #: file.c:172
 #, c-format
 msgid ""
@@ -2959,7 +3173,7 @@ msgstr ""
 "ошибка при копировании отношения \"%s.%s\": не удалось скопировать фрагмент "
 "файла \"%s\" в \"%s\": %m"
 
-#. +> 18 17
+#. +> 19 18 17
 #: file.c:194
 #, c-format
 msgid "error while creating link for relation \"%s.%s\" (\"%s\" to \"%s\"): %m"
@@ -2981,7 +3195,7 @@ msgid ""
 msgstr ""
 "ошибка при создании ссылки для отношения \"%s.%s\" (из \"%s\" в \"%s\"): %s\n"
 
-#. +> 18 17
+#. +> 19 18 17
 #: file.c:237
 #, c-format
 msgid "error while copying relation \"%s.%s\": could not stat file \"%s\": %m"
@@ -3006,7 +3220,7 @@ msgstr ""
 "ошибка при копировании отношения \"%s.%s\": не удалось получить информацию о "
 "файле \"%s\": %s\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: file.c:269
 #, c-format
 msgid ""
@@ -3024,7 +3238,7 @@ msgstr ""
 "ошибка при копировании отношения \"%s.%s\": в файле \"%s\" обнаружена "
 "неполная страница\n"
 
-#. +> 18 17
+#. +> 19 18 17
 #: file.c:371 file.c:387
 #, c-format
 msgid "could not clone file between old and new data directories: %m"
@@ -3042,8 +3256,8 @@ msgstr "не удалось клонировать файл из старого 
 msgid "could not clone file between old and new data directories: %s\n"
 msgstr "не удалось клонировать файл из старого каталога данных в новый: %s\n"
 
-#. +> 18 17
-#: file.c:383 file.c:420
+#. +> 19 18 17
+#: file.c:383 file.c:420 slru_io.c:221
 #, c-format
 msgid "could not create file \"%s\": %m"
 msgstr "не удалось создать файл \"%s\": %m"
@@ -3060,7 +3274,7 @@ msgstr "не удалось создать файл \"%s\": %s"
 msgid "could not create file \"%s\": %s\n"
 msgstr "не удалось создать файл \"%s\": %s\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: file.c:393
 #, c-format
 msgid "file cloning not supported on this platform"
@@ -3072,20 +3286,20 @@ msgstr "клонирование файлов не поддерживается 
 msgid "file cloning not supported on this platform\n"
 msgstr "клонирование файлов не поддерживается в этой ОС\n"
 
-#. +> 18 17
+#. +> 19 18 17
 #: file.c:424
 #, c-format
 msgid "could not copy file range between old and new data directories: %m"
 msgstr ""
 "не удалось скопировать фрагмент файла из старого каталога данных в новый: %m"
 
-#. +> 18 17
+#. +> 19 18 17
 #: file.c:430
 #, c-format
 msgid "copy_file_range not supported on this platform"
 msgstr "copy_file_range не поддерживается в этой ОС"
 
-#. +> 18 17
+#. +> 19 18 17
 #: file.c:449
 #, c-format
 msgid ""
@@ -3124,7 +3338,7 @@ msgstr ""
 "В режиме \"ссылок\" старый и новый каталоги данных должны находиться в одной "
 "файловой системе.\n"
 
-#. +> 18
+#. +> 19 18
 #: file.c:452
 #, c-format
 msgid ""
@@ -3192,26 +3406,26 @@ msgstr "    %s\n"
 msgid "Remove the problem functions from the old cluster to continue.\n"
 msgstr "Удалите проблемные функции из старого кластера для продолжения.\n"
 
-#. +> 18 17 16 15 14
-#: function.c:173
+#. +> 19 18 17 16 15 14
+#: function.c:179
 #, c-format
 msgid "Checking for presence of required libraries"
 msgstr "Проверка наличия требуемых библиотек"
 
-#. +> 18 17 16 15 14
-#: function.c:209
+#. +> 19 18 17 16 15 14
+#: function.c:215
 #, c-format
 msgid "could not load library \"%s\": %s"
 msgstr "загрузить библиотеку \"%s\" не удалось: %s"
 
-#. +> 18 17 16 15 14
-#: function.c:220
+#. +> 19 18 17 16 15 14
+#: function.c:226
 #, c-format
 msgid "In database: %s\n"
 msgstr "В базе данных: %s\n"
 
-#. +> 18 17 16
-#: function.c:230
+#. +> 19 18 17 16
+#: function.c:236
 #, c-format
 msgid ""
 "Your installation references loadable libraries that are missing from the\n"
@@ -3244,8 +3458,8 @@ msgstr ""
 "    %s\n"
 "\n"
 
-#. +> 18 17 16
-#: info.c:131
+#. +> 19 18 17 16
+#: info.c:130
 #, c-format
 msgid ""
 "Relation names for OID %u in database \"%s\" do not match: old name \"%s."
@@ -3264,8 +3478,8 @@ msgstr ""
 "Имена отношения с OID %u в базе данных \"%s\" различаются: старое имя - \"%s."
 "%s\", новое - \"%s.%s\"\n"
 
-#. +> 18 17 16
-#: info.c:151
+#. +> 19 18 17 16
+#: info.c:150
 #, c-format
 msgid "Failed to match up old and new tables in database \"%s\""
 msgstr "Не удалось сопоставить старые таблицы с новыми в базе данных \"%s\""
@@ -3276,32 +3490,32 @@ msgstr "Не удалось сопоставить старые таблицы �
 msgid "Failed to match up old and new tables in database \"%s\"\n"
 msgstr "Не удалось сопоставить старые таблицы с новыми в базе данных \"%s\"\n"
 
-#. +> 18 17 16 15 14
-#: info.c:232
+#. +> 19 18 17 16 15 14
+#: info.c:231
 #, c-format
 msgid " which is an index on \"%s.%s\""
 msgstr " это индекс в \"%s.%s\""
 
-#. +> 18 17 16 15 14
-#: info.c:242
+#. +> 19 18 17 16 15 14
+#: info.c:241
 #, c-format
 msgid " which is an index on OID %u"
 msgstr " это индекс в отношении с OID %u"
 
-#. +> 18 17 16 15 14
-#: info.c:254
+#. +> 19 18 17 16 15 14
+#: info.c:253
 #, c-format
 msgid " which is the TOAST table for \"%s.%s\""
 msgstr " это TOAST-таблица для \"%s.%s\""
 
-#. +> 18 17 16 15 14
-#: info.c:262
+#. +> 19 18 17 16 15 14
+#: info.c:261
 #, c-format
 msgid " which is the TOAST table for OID %u"
 msgstr " это TOAST-таблица для отношения с OID %u"
 
-#. +> 18 17 16
-#: info.c:266
+#. +> 19 18 17 16
+#: info.c:265
 #, c-format
 msgid ""
 "No match found in old cluster for new relation with OID %u in database "
@@ -3320,8 +3534,8 @@ msgstr ""
 "В старом кластере не нашлось соответствия для нового отношения с OID %u в "
 "базе данных \"%s\": %s\n"
 
-#. +> 18 17 16
-#: info.c:269
+#. +> 19 18 17 16
+#: info.c:268
 #, c-format
 msgid ""
 "No match found in new cluster for old relation with OID %u in database "
@@ -3346,8 +3560,8 @@ msgstr ""
 msgid "%s.%s: %u to %u\n"
 msgstr "%s.%s: %u в %u\n"
 
-#. +> 18 17 16
-#: info.c:325
+#. +> 19 18 17 16
+#: info.c:318
 #, c-format
 msgid ""
 "\n"
@@ -3372,8 +3586,8 @@ msgstr ""
 msgid "mappings for database \"%s\":\n"
 msgstr "отображения для базы данных \"%s\":\n"
 
-#. +> 18 17 16
-#: info.c:327
+#. +> 19 18 17 16
+#: info.c:320
 #, c-format
 msgid ""
 "\n"
@@ -3392,8 +3606,8 @@ msgstr ""
 "\n"
 "целевые базы данных:\n"
 
-#. +> 18 17 16
-#: info.c:371
+#. +> 19 18 17 16
+#: info.c:364
 #, c-format
 msgid "template0 not found"
 msgstr "база template0 не найдена"
@@ -3408,8 +3622,8 @@ msgstr ""
 "\n"
 "\n"
 
-#. +> 18 17
-#: info.c:817
+#. +> 19 18 17
+#: info.c:911
 #, c-format
 msgid "Database: \"%s\""
 msgstr "База данных: \"%s\""
@@ -3426,8 +3640,8 @@ msgstr "База данных: %s"
 msgid "Database: %s\n"
 msgstr "База данных: %s\n"
 
-#. +> 18 17
-#: info.c:830
+#. +> 19 18 17
+#: info.c:924
 #, c-format
 msgid "relname: \"%s.%s\", reloid: %u, reltblspace: \"%s\""
 msgstr "имя_отношения: \"%s.%s\", oid_отношения: %u, табл_пространство: %s\""
@@ -3444,19 +3658,31 @@ msgstr "имя_отношения: %s.%s: oid_отношения: %u табл_п
 msgid "relname: %s.%s: reloid: %u reltblspace: %s\n"
 msgstr "имя_отношения: %s.%s: oid_отношения: %u табл_пространство: %s\n"
 
-#. +> 18 17
-#: info.c:844
+#. +> 19 18 17
+#: info.c:938
 #, c-format
 msgid "Logical replication slots in the database:"
 msgstr "Слоты логической репликации в базе данных:"
 
-#. +> 18 17
-#: info.c:850
+#. +> 19 18 17
+#: info.c:944
 #, c-format
 msgid "slot name: \"%s\", output plugin: \"%s\", two_phase: %s"
 msgstr "слот: \"%s\", модуль вывода: \"%s\", двухфазный: %s"
 
-#. +> 18 17 16
+#. +> 19
+#: multixact_read_v18.c:264
+#, c-format
+msgid "multixact %u has an invalid length (%d)"
+msgstr ""
+
+#. +> 19
+#: multixact_read_v18.c:335
+#, c-format
+msgid "multixact %u has more than one updating member"
+msgstr ""
+
+#. +> 19 18 17 16
 #: option.c:110
 #, c-format
 msgid "%s: cannot be run as root"
@@ -3468,7 +3694,7 @@ msgstr "%s: программу не должен запускать root"
 msgid "%s: cannot be run as root\n"
 msgstr "%s: программу не должен запускать root\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: option.c:177
 #, c-format
 msgid "invalid old port number"
@@ -3480,7 +3706,7 @@ msgstr "неверный старый номер порта"
 msgid "invalid old port number\n"
 msgstr "неверный старый номер порта\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: option.c:182
 #, c-format
 msgid "invalid new port number"
@@ -3492,19 +3718,19 @@ msgstr "неверный новый номер порта"
 msgid "invalid new port number\n"
 msgstr "неверный новый номер порта\n"
 
-#. +> 18
+#. +> 19 18
 #: option.c:230
 #, c-format
 msgid "invalid argument for option %s"
 msgstr "недопустимый аргумент параметра %s"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: option.c:238
 #, c-format
 msgid "Try \"%s --help\" for more information.\n"
 msgstr "Для дополнительной информации попробуйте \"%s --help\".\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: option.c:245
 #, c-format
 msgid "too many command-line arguments (first is \"%s\")"
@@ -3516,7 +3742,7 @@ msgstr "слишком много аргументов командной стр
 msgid "too many command-line arguments (first is \"%s\")\n"
 msgstr "слишком много аргументов командной строки (первый: \"%s\")\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: option.c:251
 #, c-format
 msgid "Running in verbose mode"
@@ -3528,32 +3754,32 @@ msgstr "Программа запущена в режиме подробных �
 msgid "Running in verbose mode\n"
 msgstr "Программа запущена в режиме подробных сообщений\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: option.c:269
 msgid "old cluster binaries reside"
 msgstr "расположение исполняемых файлов старого кластера"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: option.c:271
 msgid "new cluster binaries reside"
 msgstr "расположение исполняемых файлов нового кластера"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: option.c:273
 msgid "old cluster data resides"
 msgstr "расположение данных старого кластера"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: option.c:275
 msgid "new cluster data resides"
 msgstr "расположение данных нового кластера"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: option.c:277
 msgid "sockets will be created"
 msgstr "расположение сокетов"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: option.c:294 option.c:400
 #, c-format
 msgid "could not determine current directory"
@@ -3565,7 +3791,7 @@ msgstr "не удалось определить текущий каталог"
 msgid "could not determine current directory\n"
 msgstr "не удалось определить текущий каталог\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: option.c:297
 #, c-format
 msgid ""
@@ -3582,7 +3808,7 @@ msgstr ""
 "в Windows нельзя запустить pg_upgrade внутри каталога данных нового "
 "кластера\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: option.c:306
 #, c-format
 msgid ""
@@ -3592,13 +3818,13 @@ msgstr ""
 "pg_upgrade обновляет кластер PostgreSQL до другой основной версии.\n"
 "\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: option.c:307
 #, c-format
 msgid "Usage:\n"
 msgstr "Использование:\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: option.c:308
 #, c-format
 msgid ""
@@ -3608,20 +3834,20 @@ msgstr ""
 "  pg_upgrade [ПАРАМЕТР]...\n"
 "\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: option.c:309
 #, c-format
 msgid "Options:\n"
 msgstr "Параметры:\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: option.c:310
 #, c-format
 msgid "  -b, --old-bindir=BINDIR       old cluster executable directory\n"
 msgstr ""
 "  -b, --old-bindir=КАТ_BIN      каталог исполняемых файлов старого кластера\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: option.c:311
 #, c-format
 msgid ""
@@ -3631,7 +3857,7 @@ msgstr ""
 "  -B, --new-bindir=КАТ_BIN      каталог исполняемых файлов нового кластера\n"
 "                                (по умолчанию каталог программы pg_upgrade)\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: option.c:313
 #, c-format
 msgid ""
@@ -3640,19 +3866,19 @@ msgstr ""
 "  -c, --check                   только проверить кластеры, не меняя никакие "
 "данные\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: option.c:314
 #, c-format
 msgid "  -d, --old-datadir=DATADIR     old cluster data directory\n"
 msgstr "  -d, --old-datadir=КАТ_ДАННЫХ  каталог данных старого кластера\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: option.c:315
 #, c-format
 msgid "  -D, --new-datadir=DATADIR     new cluster data directory\n"
 msgstr "  -D, --new-datadir=КАТ_ДАННЫХ  каталог данных нового кластера\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: option.c:316
 #, c-format
 msgid ""
@@ -3663,7 +3889,7 @@ msgstr ""
 "или\n"
 "                                потоков\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: option.c:317
 #, c-format
 msgid ""
@@ -3674,7 +3900,7 @@ msgstr ""
 "файлов\n"
 "                                в новый кластер\n"
 
-#. +> 18 17 16 15
+#. +> 19 18 17 16 15
 #: option.c:318
 #, c-format
 msgid ""
@@ -3684,7 +3910,7 @@ msgstr ""
 "  -N, --no-sync                 не ждать завершения сохранения данных на "
 "диске\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: option.c:319
 #, c-format
 msgid ""
@@ -3693,7 +3919,7 @@ msgstr ""
 "  -o, --old-options=ПАРАМЕТРЫ   параметры старого кластера, передаваемые "
 "серверу\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: option.c:320
 #, c-format
 msgid ""
@@ -3702,7 +3928,7 @@ msgstr ""
 "  -O, --new-options=ПАРАМЕТРЫ   параметры нового кластера, передаваемые "
 "серверу\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: option.c:321
 #, c-format
 msgid "  -p, --old-port=PORT           old cluster port number (default %d)\n"
@@ -3710,7 +3936,7 @@ msgstr ""
 "  -p, --old-port=ПОРТ           номер порта старого кластера (по умолчанию "
 "%d)\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: option.c:322
 #, c-format
 msgid "  -P, --new-port=PORT           new cluster port number (default %d)\n"
@@ -3718,7 +3944,7 @@ msgstr ""
 "  -P, --new-port=ПОРТ           номер порта нового кластера (по умолчанию "
 "%d)\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: option.c:323
 #, c-format
 msgid ""
@@ -3727,7 +3953,7 @@ msgstr ""
 "  -r, --retain                  сохранить файлы журналов и SQL в случае "
 "успеха\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: option.c:324
 #, c-format
 msgid ""
@@ -3736,7 +3962,7 @@ msgid ""
 msgstr ""
 "  -s, --socketdir=КАТАЛОГ       каталог сокетов (по умолчанию текущий)\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: option.c:325
 #, c-format
 msgid "  -U, --username=NAME           cluster superuser (default \"%s\")\n"
@@ -3744,7 +3970,7 @@ msgstr ""
 "  -U, --username=ИМЯ            суперпользователь кластера (по умолчанию "
 "\"%s\")\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: option.c:326
 #, c-format
 msgid "  -v, --verbose                 enable verbose internal logging\n"
@@ -3752,14 +3978,14 @@ msgstr ""
 "  -v, --verbose                 включить вывод подробных внутренних "
 "сообщений\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: option.c:327
 #, c-format
 msgid ""
 "  -V, --version                 display version information, then exit\n"
 msgstr "  -V, --version                 показать версию и выйти\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: option.c:328
 #, c-format
 msgid ""
@@ -3769,7 +3995,7 @@ msgstr ""
 "  --clone                       клонировать, а не копировать файлы в новый "
 "кластер\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: option.c:329
 #, c-format
 msgid "  --copy                        copy files to new cluster (default)\n"
@@ -3777,7 +4003,7 @@ msgstr ""
 "  --copy                        копировать файлы в новый кластер (по "
 "умолчанию)\n"
 
-#. +> 18 17
+#. +> 19 18 17
 #: option.c:330
 #, c-format
 msgid ""
@@ -3787,7 +4013,7 @@ msgstr ""
 "  --copy-file-range             копировать файлы в новый кластер, используя\n"
 "                                функцию copy_file_range\n"
 
-#. +> 18
+#. +> 19 18
 #: option.c:331
 #, c-format
 msgid ""
@@ -3796,7 +4022,7 @@ msgstr ""
 "  --no-statistics               не импортировать статистику из старого "
 "кластера\n"
 
-#. +> 18
+#. +> 19 18
 #: option.c:332
 #, c-format
 msgid ""
@@ -3808,26 +4034,26 @@ msgstr ""
 "char\n"
 "                                по умолчанию: \"signed\" или \"unsigned\"\n"
 
-#. +> 18
+#. +> 19 18
 #: option.c:334
 #, c-format
 msgid "  --swap                        move data directories to new cluster\n"
 msgstr ""
 "  --swap                        перенести каталоги данных в новый кластер\n"
 
-#. +> 18 17
+#. +> 19 18 17
 #: option.c:335
 #, c-format
 msgid "  --sync-method=METHOD          set method for syncing files to disk\n"
 msgstr "  --sync-method=МЕТОД           метод синхронизации файлов с ФС\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: option.c:336
 #, c-format
 msgid "  -?, --help                    show this help, then exit\n"
 msgstr "  -?, --help                    показать эту справку и выйти\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: option.c:337
 #, c-format
 msgid ""
@@ -3843,7 +4069,7 @@ msgstr ""
 "  остановить процесс postmaster, обслуживающий старый кластер\n"
 "  остановить процесс postmaster, обслуживающий новый кластер\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: option.c:342
 #, c-format
 msgid ""
@@ -3861,7 +4087,7 @@ msgstr ""
 "  путь к каталогу \"bin\" старой версии (-b КАТ_BIN)\n"
 "  путь к каталогу \"bin\" новой версии (-B КАТ_BIN)\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: option.c:348
 #, c-format
 msgid ""
@@ -3877,7 +4103,7 @@ msgstr ""
 "bin -B новый_кластер/bin\n"
 "или\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: option.c:353
 #, c-format
 msgid ""
@@ -3893,7 +4119,7 @@ msgstr ""
 "  $ export PGBINNEW=новый_кластер/bin\n"
 "  $ pg_upgrade\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: option.c:359
 #, c-format
 msgid ""
@@ -3909,7 +4135,7 @@ msgstr ""
 "  C:\\> set PGBINNEW=новый_кластер/bin\n"
 "  C:\\> pg_upgrade\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: option.c:365
 #, c-format
 msgid ""
@@ -3919,13 +4145,13 @@ msgstr ""
 "\n"
 "Об ошибках сообщайте по адресу <%s>.\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: option.c:366
 #, c-format
 msgid "%s home page: <%s>\n"
 msgstr "Домашняя страница %s: <%s>\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: option.c:406
 #, c-format
 msgid ""
@@ -3947,25 +4173,25 @@ msgstr ""
 "Воспользуйтесь для этого ключом командной строки %s или переменной окружения "
 "%s.\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: option.c:459
 #, c-format
 msgid "Finding the real data directory for the source cluster"
 msgstr "Поиск фактического каталога данных для исходного кластера"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: option.c:461
 #, c-format
 msgid "Finding the real data directory for the target cluster"
 msgstr "Поиск фактического каталога данных для целевого кластера"
 
-#. +> 18 17
+#. +> 19 18 17
 #: option.c:474
 #, c-format
 msgid "could not get data directory using %s: %m"
 msgstr "не удалось получить каталог данных, выполнив %s: %m"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: option.c:478
 #, c-format
 msgid "could not get data directory using %s: %s"
@@ -3977,7 +4203,7 @@ msgstr "не удалось получить каталог данных, вып
 msgid "could not get data directory using %s: %s\n"
 msgstr "не удалось получить каталог данных, выполнив %s: %s\n"
 
-#. +> 18 17
+#. +> 19 18 17
 #: option.c:526
 #, c-format
 msgid "could not read line %d from file \"%s\": %m"
@@ -3995,7 +4221,7 @@ msgstr "не удалось прочитать строку %d из файла \
 msgid "could not read line %d from file \"%s\": %s\n"
 msgstr "не удалось прочитать строку %d из файла \"%s\": %s\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: option.c:543
 #, c-format
 msgid "user-supplied old port number %hu corrected to %hu"
@@ -4007,8 +4233,8 @@ msgstr "заданный пользователем старый номер по
 msgid "user-supplied old port number %hu corrected to %hu\n"
 msgstr "заданный пользователем старый номер порта %hu изменён на %hu\n"
 
-#. +> 18 17
-#: parallel.c:127 parallel.c:235
+#. +> 19 18 17
+#: parallel.c:128 parallel.c:236
 #, c-format
 msgid "could not create worker process: %m"
 msgstr "не удалось создать рабочий процесс: %m"
@@ -4025,8 +4251,8 @@ msgstr "не удалось создать рабочий процесс: %s"
 msgid "could not create worker process: %s\n"
 msgstr "не удалось создать рабочий процесс: %s\n"
 
-#. +> 18 17
-#: parallel.c:143 parallel.c:253
+#. +> 19 18 17
+#: parallel.c:144 parallel.c:255
 #, c-format
 msgid "could not create worker thread: %m"
 msgstr "не удалось создать рабочий поток: %m"
@@ -4043,8 +4269,8 @@ msgstr "не удалось создать рабочий поток: %s"
 msgid "could not create worker thread: %s\n"
 msgstr "не удалось создать рабочий поток: %s\n"
 
-#. +> 18 17
-#: parallel.c:294 task.c:406
+#. +> 19 18 17
+#: parallel.c:297 task.c:406
 #, c-format
 msgid "%s() failed: %m"
 msgstr "ошибка в %s(): %m"
@@ -4061,8 +4287,8 @@ msgstr "ошибка в %s(): %s"
 msgid "%s() failed: %s\n"
 msgstr "ошибка в %s(): %s\n"
 
-#. +> 18 17 16
-#: parallel.c:298
+#. +> 19 18 17 16
+#: parallel.c:301
 #, c-format
 msgid "child process exited abnormally: status %d"
 msgstr "дочерний процесс завершился нештатно с ошибкой %d"
@@ -4073,8 +4299,8 @@ msgstr "дочерний процесс завершился нештатно с
 msgid "child process exited abnormally: status %d\n"
 msgstr "дочерний процесс завершился нештатно с ошибкой %d\n"
 
-#. +> 18 17
-#: parallel.c:313
+#. +> 19 18 17
+#: parallel.c:316
 #, c-format
 msgid "child worker exited abnormally: %m"
 msgstr "дочерний процесс завершился аварийно: %m"
@@ -4091,8 +4317,8 @@ msgstr "дочерний процесс завершился аварийно: %
 msgid "child worker exited abnormally: %s\n"
 msgstr "дочерний процесс завершился аварийно: %s\n"
 
-#. +> 18 17
-#: pg_upgrade.c:114
+#. +> 19 18 17
+#: pg_upgrade.c:117
 #, c-format
 msgid "could not read permissions of directory \"%s\": %m"
 msgstr "не удалось прочитать права на каталог \"%s\": %m"
@@ -4109,8 +4335,8 @@ msgstr "не удалось прочитать права на каталог \"
 msgid "could not read permissions of directory \"%s\": %s\n"
 msgstr "не удалось прочитать права на каталог \"%s\": %s\n"
 
-#. +> 18 17 16
-#: pg_upgrade.c:146
+#. +> 19 18 17 16
+#: pg_upgrade.c:149
 #, c-format
 msgid ""
 "\n"
@@ -4133,20 +4359,20 @@ msgstr ""
 "Выполнение обновления\n"
 "---------------------\n"
 
-#. +> 18 17 16 15 14
-#: pg_upgrade.c:194
+#. +> 19 18 17 16 15 14
+#: pg_upgrade.c:197
 #, c-format
 msgid "Setting next OID for new cluster"
 msgstr "Установка следующего OID для нового кластера"
 
-#. +> 18 17 16 15 14
-#: pg_upgrade.c:218
+#. +> 19 18 17 16 15 14
+#: pg_upgrade.c:242
 #, c-format
 msgid "Sync data directory to disk"
 msgstr "Синхронизация каталога данных с ФС"
 
-#. +> 18 17 16
-#: pg_upgrade.c:234
+#. +> 19 18 17 16
+#: pg_upgrade.c:258
 #, c-format
 msgid ""
 "\n"
@@ -4169,9 +4395,9 @@ msgstr ""
 "Обновление завершено\n"
 "--------------------\n"
 
-#. +> 18 17 16
-#: pg_upgrade.c:267 pg_upgrade.c:280 pg_upgrade.c:287 pg_upgrade.c:294
-#: pg_upgrade.c:312 pg_upgrade.c:323
+#. +> 19 18 17 16
+#: pg_upgrade.c:291 pg_upgrade.c:304 pg_upgrade.c:311 pg_upgrade.c:318
+#: pg_upgrade.c:336 pg_upgrade.c:347
 #, c-format
 msgid "directory path for new cluster is too long"
 msgstr "путь к каталогу данных нового кластера слишком длинный"
@@ -4183,9 +4409,9 @@ msgstr "путь к каталогу данных нового кластера 
 msgid "directory path for new cluster is too long\n"
 msgstr "путь к каталогу данных нового кластера слишком длинный\n"
 
-#. +> 18 17 16
-#: pg_upgrade.c:301 pg_upgrade.c:303 pg_upgrade.c:305 pg_upgrade.c:307
-#: relfilenumber.c:293 relfilenumber.c:297
+#. +> 19 18 17 16
+#: pg_upgrade.c:325 pg_upgrade.c:327 pg_upgrade.c:329 pg_upgrade.c:331
+#: relfilenumber.c:285 relfilenumber.c:289
 #, c-format
 msgid "could not create directory \"%s\": %m"
 msgstr "не удалось создать каталог \"%s\": %m"
@@ -4196,8 +4422,8 @@ msgstr "не удалось создать каталог \"%s\": %m"
 msgid "could not create directory \"%s\": %m\n"
 msgstr "не удалось создать каталог \"%s\": %m\n"
 
-#. +> 18 17 16
-#: pg_upgrade.c:356
+#. +> 19 18 17 16
+#: pg_upgrade.c:380
 #, c-format
 msgid "%s: could not find own program executable"
 msgstr "%s: не удалось найти свой исполняемый файл"
@@ -4208,8 +4434,8 @@ msgstr "%s: не удалось найти свой исполняемый фа�
 msgid "%s: could not find own program executable\n"
 msgstr "%s: не удалось найти свой исполняемый файл\n"
 
-#. +> 18 17 16
-#: pg_upgrade.c:382
+#. +> 19 18 17 16
+#: pg_upgrade.c:406
 #, c-format
 msgid ""
 "There seems to be a postmaster servicing the old cluster.\n"
@@ -4228,8 +4454,8 @@ msgstr ""
 "Видимо, запущен процесс postmaster, обслуживающий старый кластер.\n"
 "Остановите его и попробуйте ещё раз.\n"
 
-#. +> 18 17 16
-#: pg_upgrade.c:395
+#. +> 19 18 17 16
+#: pg_upgrade.c:419
 #, c-format
 msgid ""
 "There seems to be a postmaster servicing the new cluster.\n"
@@ -4248,38 +4474,38 @@ msgstr ""
 "Видимо, запущен процесс postmaster, обслуживающий новый кластер.\n"
 "Остановите его и попробуйте ещё раз.\n"
 
-#. +> 18
-#: pg_upgrade.c:421
+#. +> 19 18
+#: pg_upgrade.c:445
 #, c-format
 msgid "Setting the default char signedness for new cluster"
 msgstr "Установка знаковости char по умолчанию для нового кластера"
 
-#. +> 18 17 16
-#: pg_upgrade.c:449
+#. +> 19 18 17 16
+#: pg_upgrade.c:473
 #, c-format
 msgid "Setting locale and encoding for new cluster"
 msgstr "Установка локали и кодировки для нового кластера"
 
-#. +> 18 17 16 15 14
-#: pg_upgrade.c:527
+#. +> 19 18 17 16 15 14
+#: pg_upgrade.c:551
 #, c-format
 msgid "Analyzing all rows in the new cluster"
 msgstr "Анализ всех строк в новом кластере"
 
-#. +> 18 17 16 15 14
-#: pg_upgrade.c:540
+#. +> 19 18 17 16 15 14
+#: pg_upgrade.c:564
 #, c-format
 msgid "Freezing all rows in the new cluster"
 msgstr "Замораживание всех строк в новом кластере"
 
-#. +> 18 17 16 15 14
-#: pg_upgrade.c:560
+#. +> 19 18 17 16 15 14
+#: pg_upgrade.c:584
 #, c-format
 msgid "Restoring global objects in the new cluster"
 msgstr "Восстановление глобальных объектов в новом кластере"
 
-#. +> 18 17 16 15
-#: pg_upgrade.c:577
+#. +> 19 18 17 16 15
+#: pg_upgrade.c:601
 #, c-format
 msgid "Restoring database schemas in the new cluster"
 msgstr "Восстановление схем баз данных в новом кластере"
@@ -4290,14 +4516,14 @@ msgstr "Восстановление схем баз данных в новом 
 msgid "Restoring database schemas in the new cluster\n"
 msgstr "Восстановление схем баз данных в новом кластере\n"
 
-#. +> 18 17 16 15 14
-#: pg_upgrade.c:712
+#. +> 19 18 17 16 15 14
+#: pg_upgrade.c:736
 #, c-format
 msgid "Deleting files from new %s"
 msgstr "Удаление файлов из нового каталога %s"
 
-#. +> 18 17 16
-#: pg_upgrade.c:716
+#. +> 19 18 17 16
+#: pg_upgrade.c:740
 #, c-format
 msgid "could not delete directory \"%s\""
 msgstr "ошибка при удалении каталога \"%s\""
@@ -4308,32 +4534,17 @@ msgstr "ошибка при удалении каталога \"%s\""
 msgid "could not delete directory \"%s\"\n"
 msgstr "ошибка при удалении каталога \"%s\"\n"
 
-#. +> 18 17 16 15 14
-#: pg_upgrade.c:735
+#. +> 19 18 17 16 15 14
+#: pg_upgrade.c:759
 #, c-format
 msgid "Copying old %s to new server"
 msgstr "Копирование старого каталога %s на новый сервер"
 
-#. +> 18 17 16 15 14
-#: pg_upgrade.c:761
+#. +> 19 18 17 16 15 14
+#: pg_upgrade.c:785
 #, c-format
 msgid "Setting oldest XID for new cluster"
 msgstr "Установка старейшего OID для нового кластера"
-
-#. +> 18 17 16 15 14
-#: pg_upgrade.c:769
-#, c-format
-msgid "Setting next transaction ID and epoch for new cluster"
-msgstr ""
-"Установка следующего идентификатора транзакции и эпохи для нового кластера"
-
-#. +> 18 17 16 15 14
-#: pg_upgrade.c:799
-#, c-format
-msgid "Setting next multixact ID and offset for new cluster"
-msgstr ""
-"Установка следующего идентификатора и смещения мультитранзакции для нового "
-"кластера"
 
 #. +> 18 17 16 15 14
 #: pg_upgrade.c:823
@@ -4341,69 +4552,97 @@ msgstr ""
 msgid "Setting oldest multixact ID in new cluster"
 msgstr "Установка старейшего идентификатора мультитранзакции в новом кластере"
 
-#. +> 18 17 16 15 14
-#: pg_upgrade.c:843
+#. +> 19 18 17 16 15 14
+#: pg_upgrade.c:793
+#, c-format
+msgid "Setting next transaction ID and epoch for new cluster"
+msgstr ""
+"Установка следующего идентификатора транзакции и эпохи для нового кластера"
+
+#. +> 19 18 17 16 15 14
+#: pg_upgrade.c:823 pg_upgrade.c:886
+#, c-format
+msgid "Setting next multixact ID and offset for new cluster"
+msgstr ""
+"Установка следующего идентификатора и смещения мультитранзакции для нового "
+"кластера"
+
+#. +> 19
+#: pg_upgrade.c:882
+#, fuzzy, c-format
+#| msgid "Cloning user relation files"
+msgid "Converting pg_multixact files"
+msgstr "Клонирование файлов пользовательских отношений"
+
+#. +> 19 18 17 16 15 14
+#: pg_upgrade.c:896
 #, c-format
 msgid "Resetting WAL archives"
 msgstr "Сброс архивов WAL"
 
-#. +> 18 17 16 15 14
-#: pg_upgrade.c:886
+#. +> 19 18 17 16 15 14
+#: pg_upgrade.c:939
 #, c-format
 msgid "Setting frozenxid and minmxid counters in new cluster"
 msgstr "Установка счётчиков frozenxid и minmxid в новом кластере"
 
-#. +> 18 17 16 15 14
-#: pg_upgrade.c:888
+#. +> 19 18 17 16 15 14
+#: pg_upgrade.c:941
 #, c-format
 msgid "Setting minmxid counter in new cluster"
 msgstr "Установка счётчика minmxid в новом кластере"
 
-#. +> 18 17
-#: pg_upgrade.c:979
+#. +> 19 18 17
+#: pg_upgrade.c:1032
 #, c-format
 msgid "Restoring logical replication slots in the new cluster"
 msgstr "Восстановление слотов логической репликации в новом кластере"
 
-#. +> 18
+#. +> 19
+#: pg_upgrade.c:1094
+#, c-format
+msgid "Creating the replication conflict detection slot"
+msgstr ""
+
+#. +> 19 18
 #: relfilenumber.c:68
 #, c-format
 msgid "could not synchronize file \"%s\": %m"
 msgstr "не удалось синхронизировать файл \"%s\": %m"
 
-#. +> 18 17 16 15
+#. +> 19 18 17 16 15
 #: relfilenumber.c:114
 #, c-format
 msgid "Cloning user relation files"
 msgstr "Клонирование файлов пользовательских отношений"
 
-#. +> 18 17 16 15
+#. +> 19 18 17 16 15
 #: relfilenumber.c:117
 #, c-format
 msgid "Copying user relation files"
 msgstr "Копирование файлов пользовательских отношений"
 
-#. +> 18 17
+#. +> 19 18 17
 #: relfilenumber.c:120
 #, c-format
 msgid "Copying user relation files with copy_file_range"
 msgstr ""
 "Копирование файлов пользовательских отношений с помощью copy_file_range"
 
-#. +> 18 17 16 15
+#. +> 19 18 17 16 15
 #: relfilenumber.c:123
 #, c-format
 msgid "Linking user relation files"
 msgstr "Подключение файлов пользовательских отношений ссылками"
 
-#. +> 18
+#. +> 19 18
 #: relfilenumber.c:126
 #, c-format
 msgid "Swapping data directories"
 msgstr "Подмена каталогов данных"
 
-#. +> 18 17 16
-#: relfilenumber.c:200
+#. +> 19 18 17 16
+#: relfilenumber.c:202
 #, c-format
 msgid "old database \"%s\" not found in the new cluster"
 msgstr "старая база данных \"%s\" не найдена в новом кластере"
@@ -4414,44 +4653,38 @@ msgstr "старая база данных \"%s\" не найдена в нов�
 msgid "old database \"%s\" not found in the new cluster\n"
 msgstr "старая база данных \"%s\" не найдена в новом кластере\n"
 
-#. +> 18
-#: relfilenumber.c:287
-#, c-format
-msgid "could not stat file \"%s\": %m"
-msgstr "не удалось получить информацию о файле \"%s\": %m"
-
-#. +> 18
-#: relfilenumber.c:301 relfilenumber.c:305
+#. +> 19 18
+#: relfilenumber.c:293 relfilenumber.c:297
 #, c-format
 msgid "could not rename directory \"%s\" to \"%s\": %m"
 msgstr "не удалось переименовать каталог \"%s\" в \"%s\": %m"
 
-#. +> 18
-#: relfilenumber.c:375 relfilenumber.c:402
+#. +> 19 18
+#: relfilenumber.c:367 relfilenumber.c:394
 #, c-format
 msgid "could not open directory \"%s\": %m"
 msgstr "не удалось открыть каталог \"%s\": %m"
 
-#. +> 18
-#: relfilenumber.c:396 relfilenumber.c:434
+#. +> 19 18
+#: relfilenumber.c:388 relfilenumber.c:426
 #, c-format
 msgid "could not read directory \"%s\": %m"
 msgstr "не удалось прочитать каталог \"%s\": %m"
 
-#. +> 18
-#: relfilenumber.c:439
+#. +> 19 18
+#: relfilenumber.c:431
 #, c-format
 msgid "could not synchronize directory \"%s\": %m"
 msgstr "не удалось синхронизировать каталог \"%s\": %m"
 
-#. +> 18
-#: relfilenumber.c:441
+#. +> 19 18
+#: relfilenumber.c:433
 #, c-format
 msgid "could not synchronize parent directory of \"%s\": %m"
 msgstr "не удалось синхронизировать родительский каталог \"%s\": %m"
 
-#. +> 18 17
-#: relfilenumber.c:598
+#. +> 19 18 17
+#: relfilenumber.c:593
 #, c-format
 msgid ""
 "error while checking for file existence \"%s.%s\" (\"%s\" to \"%s\"): %m"
@@ -4477,8 +4710,8 @@ msgstr ""
 "ошибка при проверке существования файла отношения \"%s.%s\" (перенос \"%s\" "
 "в \"%s\"): %s\n"
 
-#. +> 18 17 16
-#: relfilenumber.c:615
+#. +> 19 18 17 16
+#: relfilenumber.c:610
 #, c-format
 msgid "rewriting \"%s\" to \"%s\""
 msgstr "переписывание \"%s\" в \"%s\""
@@ -4489,8 +4722,8 @@ msgstr "переписывание \"%s\" в \"%s\""
 msgid "rewriting \"%s\" to \"%s\"\n"
 msgstr "переписывание \"%s\" в \"%s\"\n"
 
-#. +> 18 17 16
-#: relfilenumber.c:623
+#. +> 19 18 17 16
+#: relfilenumber.c:618
 #, c-format
 msgid "cloning \"%s\" to \"%s\""
 msgstr "клонирование \"%s\" в \"%s\""
@@ -4507,8 +4740,8 @@ msgstr "клонирование \"%s\" в \"%s\"\n"
 msgid "Cloning user relation files\n"
 msgstr "Клонирование файлов пользовательских отношений\n"
 
-#. +> 18 17 16
-#: relfilenumber.c:628
+#. +> 19 18 17 16
+#: relfilenumber.c:623
 #, c-format
 msgid "copying \"%s\" to \"%s\""
 msgstr "копирование \"%s\" в \"%s\""
@@ -4525,14 +4758,14 @@ msgstr "копирование \"%s\" в \"%s\"\n"
 msgid "Copying user relation files\n"
 msgstr "Копирование файлов пользовательских отношений\n"
 
-#. +> 18 17
-#: relfilenumber.c:633
+#. +> 19 18 17
+#: relfilenumber.c:628
 #, c-format
 msgid "copying \"%s\" to \"%s\" with copy_file_range"
 msgstr "копирование \"%s\" в \"%s\" с помощью copy_file_range"
 
-#. +> 18 17 16
-#: relfilenumber.c:638
+#. +> 19 18 17 16
+#: relfilenumber.c:633
 #, c-format
 msgid "linking \"%s\" to \"%s\""
 msgstr "создание ссылки на \"%s\" в \"%s\""
@@ -4549,19 +4782,19 @@ msgstr "создание ссылки на \"%s\" в \"%s\"\n"
 msgid "Linking user relation files\n"
 msgstr "Подключение файлов пользовательских отношений ссылками\n"
 
-#. +> 18
-#: relfilenumber.c:644
+#. +> 19 18
+#: relfilenumber.c:639
 #, c-format
 msgid "should never happen"
 msgstr "невозможный случай"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: server.c:39 server.c:145 util.c:248 util.c:278
 #, c-format
 msgid "Failure, exiting\n"
 msgstr "Ошибка, выполняется выход\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: server.c:135
 #, c-format
 msgid "executing: %s"
@@ -4573,7 +4806,7 @@ msgstr "выполняется: %s"
 msgid "executing: %s\n"
 msgstr "выполняется: %s\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: server.c:141
 #, c-format
 msgid ""
@@ -4585,23 +4818,11 @@ msgstr ""
 "%s\n"
 "%s"
 
-#. +> 18 17 16
-#: server.c:171
-#, c-format
-msgid "could not open version file \"%s\": %m"
-msgstr "не удалось открыть файл с версией \"%s\": %m"
-
 #. +> 15 14
 #: server.c:171
 #, c-format
 msgid "could not open version file \"%s\": %m\n"
 msgstr "не удалось открыть файл с версией \"%s\": %m\n"
-
-#. +> 18 17 16
-#: server.c:175
-#, c-format
-msgid "could not parse version file \"%s\""
-msgstr "не удалось разобрать файл с версией \"%s\""
 
 #. +> 15 14
 #: server.c:175
@@ -4609,8 +4830,8 @@ msgstr "не удалось разобрать файл с версией \"%s\"
 msgid "could not parse version file \"%s\"\n"
 msgstr "не удалось разобрать файл с версией \"%s\"\n"
 
-#. +> 18 17 16 15 14
-#: server.c:301
+#. +> 19 18 17 16 15 14
+#: server.c:262
 #, c-format
 msgid ""
 "\n"
@@ -4619,8 +4840,8 @@ msgstr ""
 "\n"
 "%s"
 
-#. +> 18 17 16
-#: server.c:305
+#. +> 19 18 17 16
+#: server.c:266
 #, c-format
 msgid ""
 "could not connect to source postmaster started with the command:\n"
@@ -4641,8 +4862,8 @@ msgstr ""
 "командой:\n"
 "%s\n"
 
-#. +> 18 17 16
-#: server.c:309
+#. +> 19 18 17 16
+#: server.c:270
 #, c-format
 msgid ""
 "could not connect to target postmaster started with the command:\n"
@@ -4663,8 +4884,8 @@ msgstr ""
 "командой:\n"
 "%s\n"
 
-#. +> 18 17 16
-#: server.c:323
+#. +> 19 18 17 16
+#: server.c:284
 #, c-format
 msgid "pg_ctl failed to start the source server, or connection failed"
 msgstr ""
@@ -4679,8 +4900,8 @@ msgstr ""
 "программа pg_ctl не смогла запустить исходный сервер, либо к нему не удалось "
 "подключиться\n"
 
-#. +> 18 17 16
-#: server.c:325
+#. +> 19 18 17 16
+#: server.c:286
 #, c-format
 msgid "pg_ctl failed to start the target server, or connection failed"
 msgstr ""
@@ -4695,14 +4916,14 @@ msgstr ""
 "программа pg_ctl не смогла запустить целевой сервер, либо к нему не удалось "
 "подключиться\n"
 
-#. +> 18 17 16
-#: server.c:370 task.c:197
+#. +> 19 18 17 16
+#: server.c:331 task.c:197
 #, c-format
 msgid "out of memory"
 msgstr "нехватка памяти"
 
-#. +> 18 17 16
-#: server.c:383
+#. +> 19 18 17 16
+#: server.c:344
 #, c-format
 msgid "libpq environment variable %s has a non-local server value: %s"
 msgstr ""
@@ -4715,8 +4936,28 @@ msgid "libpq environment variable %s has a non-local server value: %s\n"
 msgstr ""
 "в переменной окружения %s для libpq указан адрес не локального сервера: %s\n"
 
-#. +> 18 17 16
-#: tablespace.c:28
+#. +> 19
+#: slru_io.c:131
+#, fuzzy, c-format
+#| msgid "could not create file \"%s\": %m"
+msgid "could not read file \"%s\": %m"
+msgstr "не удалось создать файл \"%s\": %m"
+
+#. +> 19
+#: slru_io.c:136
+#, c-format
+msgid "unexpected EOF reading file \"%s\" at offset %u, reading as zeros"
+msgstr ""
+
+#. +> 19
+#: slru_io.c:229 slru_io.c:253
+#, fuzzy, c-format
+#| msgid "could not create file \"%s\": %m"
+msgid "could not write file \"%s\": %m"
+msgstr "не удалось создать файл \"%s\": %m"
+
+#. +> 19 18 17 16
+#: tablespace.c:36
 #, c-format
 msgid ""
 "Cannot upgrade to/from the same system catalog version when\n"
@@ -4735,8 +4976,8 @@ msgstr ""
 "Обновление в рамках одной версии системного каталога невозможно,\n"
 "если используются табличные пространства.\n"
 
-#. +> 18 17 16
-#: tablespace.c:83
+#. +> 19 18 17 16
+#: tablespace.c:122
 #, c-format
 msgid "tablespace directory \"%s\" does not exist"
 msgstr "каталог табличного пространства \"%s\" не существует"
@@ -4747,8 +4988,8 @@ msgstr "каталог табличного пространства \"%s\" не
 msgid "tablespace directory \"%s\" does not exist\n"
 msgstr "каталог табличного пространства \"%s\" не существует\n"
 
-#. +> 18 17
-#: tablespace.c:87
+#. +> 19 18 17
+#: tablespace.c:126
 #, c-format
 msgid "could not stat tablespace directory \"%s\": %m"
 msgstr ""
@@ -4769,8 +5010,8 @@ msgstr ""
 "не удалось получить информацию о каталоге табличного пространства \"%s\": "
 "%s\n"
 
-#. +> 18 17 16
-#: tablespace.c:92
+#. +> 19 18 17 16
+#: tablespace.c:131
 #, c-format
 msgid "tablespace path \"%s\" is not a directory"
 msgstr "путь табличного пространства \"%s\" не указывает на каталог"
@@ -4781,13 +5022,13 @@ msgstr "путь табличного пространства \"%s\" не ук�
 msgid "tablespace path \"%s\" is not a directory\n"
 msgstr "путь табличного пространства \"%s\" не указывает на каталог\n"
 
-#. +> 18
+#. +> 19 18
 #: task.c:218 task.c:269 task.c:284 task.c:295
 #, c-format
 msgid "connection failure: %s"
 msgstr "ошибка подключения: %s"
 
-#. +> 18
+#. +> 19 18
 #: task.c:397
 #, c-format
 msgid "invalid socket"
@@ -4799,7 +5040,7 @@ msgstr "неверный сокет"
 msgid " "
 msgstr " "
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: util.c:53 util.c:56 util.c:139 util.c:170 util.c:172
 #, c-format
 msgid "%-*s"
@@ -4811,7 +5052,7 @@ msgstr "%-*s"
 msgid "%-*s\n"
 msgstr "%-*s\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: util.c:107
 #, c-format
 msgid "could not access directory \"%s\": %m"
@@ -4823,13 +5064,13 @@ msgstr "ошибка при обращении к каталогу \"%s\": %m"
 msgid "could not access directory \"%s\": %m\n"
 msgstr "ошибка при обращении к каталогу \"%s\": %m\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: util.c:287
 #, c-format
 msgid "ok"
 msgstr "ок"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: version.c:62
 #, c-format
 msgid "Checking for hash indexes"
@@ -4882,7 +5123,7 @@ msgstr ""
 "по умолчанию.\n"
 "\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: version.c:141
 #, c-format
 msgid ""
@@ -4916,7 +5157,7 @@ msgstr ""
 "инструкции по выполнению REINDEX.\n"
 "\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: version.c:147
 #, c-format
 msgid ""
@@ -5004,20 +5245,20 @@ msgstr ""
 "    %s\n"
 "\n"
 
-#. +> 18 17 16 15 14
-#: version.c:205
+#. +> 19 18 17 16 15 14
+#: version.c:203
 #, c-format
 msgid "Checking for extension updates"
 msgstr "Проверка обновлённых расширений"
 
-#. +> 18 17 16 15 14
-#: version.c:219
+#. +> 19 18 17 16 15 14
+#: version.c:217
 #, c-format
 msgid "notice"
 msgstr "замечание"
 
-#. +> 18 17 16
-#: version.c:220
+#. +> 19 18 17 16
+#: version.c:218
 #, c-format
 msgid ""
 "\n"

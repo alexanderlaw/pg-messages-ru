@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pgscripts (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
-"POT-Creation-Date: 2026-09-25 22:34+0300\n"
+"POT-Creation-Date: 2026-09-25 22:48+0300\n"
 "PO-Revision-Date: 2026-08-05 07:51+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
@@ -20,20 +20,20 @@ msgstr ""
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Lokalize 23.08.5\n"
 
-#. +> 18 17 16 15 14
-#: ../../../src/common/logging.c:279
+#. +> 19 18 17 16 15 14
+#: ../../../src/common/logging.c:293 ../../../src/common/logging.c:295
 #, c-format
 msgid "error: "
 msgstr "ошибка: "
 
-#. +> 18 17 16 15 14
-#: ../../../src/common/logging.c:286
+#. +> 19 18 17 16 15 14
+#: ../../../src/common/logging.c:302 ../../../src/common/logging.c:304
 #, c-format
 msgid "warning: "
 msgstr "предупреждение: "
 
-#. +> 18 17 16 15
-#: ../../../src/common/logging.c:297
+#. +> 19 18 17 16 15
+#: ../../../src/common/logging.c:315 ../../../src/common/logging.c:317
 #, c-format
 msgid "detail: "
 msgstr "подробности: "
@@ -44,175 +44,181 @@ msgstr "подробности: "
 msgid "fatal: "
 msgstr "важно: "
 
-#. +> 18 17 16 15
-#: ../../../src/common/logging.c:304
+#. +> 19 18 17 16 15
+#: ../../../src/common/logging.c:324 ../../../src/common/logging.c:326
 #, c-format
 msgid "hint: "
 msgstr "подсказка: "
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: ../../common/fe_memutils.c:41 ../../common/fe_memutils.c:81
 #: ../../common/fe_memutils.c:104 ../../common/fe_memutils.c:167
 #, c-format
 msgid "out of memory\n"
 msgstr "нехватка памяти\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: ../../common/fe_memutils.c:98 ../../common/fe_memutils.c:159
 #, c-format
 msgid "cannot duplicate null pointer (internal error)\n"
 msgstr "попытка дублирования нулевого указателя (внутренняя ошибка)\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: ../../common/fe_memutils.c:209
 #, c-format
 msgid "invalid memory allocation request size %zu + %zu\n"
 msgstr "недопустимый размер в запросе на выделение памяти: %zu + %zu\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: ../../common/fe_memutils.c:228
 #, c-format
 msgid "invalid memory allocation request size %zu * %zu\n"
 msgstr "недопустимый размер в запросе на выделение памяти: %zu * %zu\n"
 
-#. +> 18 17
+#. +> 19 18 17
 #: ../../common/file_utils.c:69 ../../common/file_utils.c:370
 #: ../../common/file_utils.c:428 ../../common/file_utils.c:502
 #, c-format
 msgid "could not open file \"%s\": %m"
 msgstr "не удалось открыть файл \"%s\": %m"
 
-#. +> 18 17
+#. +> 19 18 17
 #: ../../common/file_utils.c:75
 #, c-format
 msgid "could not synchronize file system for file \"%s\": %m"
 msgstr "не удалось синхронизировать с ФС файл \"%s\": %m"
 
-#. +> 18 17
+#. +> 19 18 17
 #: ../../common/file_utils.c:123 ../../common/file_utils.c:588
 #, c-format
 msgid "could not stat file \"%s\": %m"
 msgstr "не удалось получить информацию о файле \"%s\": %m"
 
-#. +> 18 17
+#. +> 19 18 17
 #: ../../common/file_utils.c:133 ../../common/file_utils.c:243
 #: ../../fe_utils/option_utils.c:99
 #, c-format
 msgid "this build does not support sync method \"%s\""
 msgstr "эта сборка программы не поддерживает метод синхронизации \"%s\""
 
-#. +> 18 17
+#. +> 19 18 17
 #: ../../common/file_utils.c:156 ../../common/file_utils.c:304
 #, c-format
 msgid "could not open directory \"%s\": %m"
 msgstr "не удалось открыть каталог \"%s\": %m"
 
-#. +> 18 17
+#. +> 19 18 17
 #: ../../common/file_utils.c:174 ../../common/file_utils.c:338
 #, c-format
 msgid "could not read directory \"%s\": %m"
 msgstr "не удалось прочитать каталог \"%s\": %m"
 
-#. +> 18 17
+#. +> 19 18 17
 #: ../../common/file_utils.c:440 ../../common/file_utils.c:510
 #, c-format
 msgid "could not fsync file \"%s\": %m"
 msgstr "не удалось синхронизировать с ФС файл \"%s\": %m"
 
-#. +> 18 17
+#. +> 19 18 17
 #: ../../common/file_utils.c:520
 #, c-format
 msgid "could not rename file \"%s\" to \"%s\": %m"
 msgstr "не удалось переименовать файл \"%s\" в \"%s\": %m"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: ../../common/username.c:43
 #, c-format
 msgid "could not look up effective user ID %ld: %s"
 msgstr "выяснить эффективный идентификатор пользователя (%ld) не удалось: %s"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: ../../common/username.c:45
 msgid "user does not exist"
 msgstr "пользователь не существует"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: ../../common/username.c:60
 #, c-format
 msgid "user name lookup failure: error code %lu"
 msgstr "распознать имя пользователя не удалось (код ошибки: %lu)"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: ../../fe_utils/cancel.c:186 ../../fe_utils/cancel.c:235
 msgid "Cancel request sent\n"
 msgstr "Сигнал отмены отправлен\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: ../../fe_utils/cancel.c:187 ../../fe_utils/cancel.c:236
 msgid "Could not send cancel request: "
 msgstr "Отправить сигнал отмены не удалось: "
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: ../../fe_utils/connect_utils.c:49 ../../fe_utils/connect_utils.c:103
 msgid "Password: "
 msgstr "Пароль: "
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: ../../fe_utils/connect_utils.c:91
 #, c-format
 msgid "could not connect to database %s: out of memory"
 msgstr "не удалось подключиться к базе %s (нехватка памяти)"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: ../../fe_utils/connect_utils.c:116 pg_isready.c:146
 #, c-format
 msgid "%s"
 msgstr "%s"
 
-#. +> 18 17 16 15
+#. +> 19 18 17 16 15
 #: ../../fe_utils/option_utils.c:69
 #, c-format
 msgid "invalid value \"%s\" for option %s"
 msgstr "неверное значение \"%s\" для параметра %s"
 
-#. +> 18 17 16 15
+#. +> 19 18 17 16 15
 #: ../../fe_utils/option_utils.c:76
 #, c-format
 msgid "%s must be in range %d..%d"
 msgstr "значение %s должно быть в диапазоне %d..%d"
 
-#. +> 18 17
+#. +> 19 18 17
 #: ../../fe_utils/option_utils.c:106
 #, c-format
 msgid "unrecognized sync method: %s"
 msgstr "нераспознанный метод синхронизации: %s"
 
-#. +> 18 17 16 15 14
-#: ../../fe_utils/parallel_slot.c:317
+#. +> 19
+#: ../../fe_utils/option_utils.c:139
+#, c-format
+msgid "options %s and %s cannot be used together"
+msgstr ""
+
+#. +> 19 18 17 16 15 14
+#: ../../fe_utils/parallel_slot.c:316
 #, c-format
 msgid "too many jobs for this platform: %d"
 msgstr "слишком много заданий для этой платформы: %d"
 
-#. +> 18 17 16 15 14
-#: ../../fe_utils/parallel_slot.c:326
+#. +> 19 18 17 16 15 14
+#: ../../fe_utils/parallel_slot.c:325
 #, c-format
 msgid "socket file descriptor out of range for select(): %d"
 msgstr "дескриптор файла сокета вне диапазона, допустимого для select(): %d"
 
-#. +> 18 17 16 15
-#: ../../fe_utils/parallel_slot.c:328
+#. +> 19 18 17 16 15
+#: ../../fe_utils/parallel_slot.c:327
 #, c-format
 msgid "Try fewer jobs."
 msgstr "Попробуйте уменьшить количество заданий."
 
-#. +> 18 17 16 15 14
-#: ../../fe_utils/parallel_slot.c:553
+#. +> 19 18 17 16 15 14
+#: ../../fe_utils/parallel_slot.c:551
 #, c-format
 msgid "processing of database \"%s\" failed: %s"
 msgstr "ошибка при обработке базы \"%s\": %s"
 
-#. +> 18 17 16 15 14
-#: ../../fe_utils/print.c:406
+#. +> 19 18 17 16 15 14
+#: ../../fe_utils/print.c:422
 #, c-format
 msgid "(%lu row)"
 msgid_plural "(%lu rows)"
@@ -220,14 +226,14 @@ msgstr[0] "(%lu строка)"
 msgstr[1] "(%lu строки)"
 msgstr[2] "(%lu строк)"
 
-#. +> 18 17 16 15 14
-#: ../../fe_utils/print.c:3155
+#. +> 19 18 17 16 15 14
+#: ../../fe_utils/print.c:3191
 #, c-format
 msgid "Interrupted\n"
 msgstr "Прервано\n"
 
-#. +> 18
-#: ../../fe_utils/print.c:3189
+#. +> 19 18
+#: ../../fe_utils/print.c:3225
 #, c-format
 msgid ""
 "Cannot print table contents: number of cells %<PRIu64> is equal to or "
@@ -246,15 +252,15 @@ msgstr ""
 "Вывести содержимое таблицы нельзя: число ячеек %lld достигло максимума "
 "%lld.\n"
 
-#. +> 18 17 16 15 14
-#: ../../fe_utils/print.c:3230
+#. +> 19 18 17 16 15 14
+#: ../../fe_utils/print.c:3266
 #, c-format
 msgid "Cannot add header to table content: column count of %d exceeded.\n"
 msgstr ""
 "Ошибка добавления заголовка таблицы: превышен предел числа столбцов (%d).\n"
 
-#. +> 18
-#: ../../fe_utils/print.c:3273
+#. +> 19 18
+#: ../../fe_utils/print.c:3309
 #, c-format
 msgid ""
 "Cannot add cell to table content: total cell count of %<PRIu64> exceeded.\n"
@@ -276,19 +282,19 @@ msgid "Cannot add cell to table content: total cell count of %d exceeded.\n"
 msgstr ""
 "Ошибка добавления ячейки в таблицу: превышен предел числа ячеек (%d).\n"
 
-#. +> 18 17 16 15 14
-#: ../../fe_utils/print.c:3531
+#. +> 19 18 17 16 15 14
+#: ../../fe_utils/print.c:3737
 #, c-format
 msgid "invalid output format (internal error): %d"
 msgstr "неверный формат вывода (внутренняя ошибка): %d"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: ../../fe_utils/query_utils.c:33 ../../fe_utils/query_utils.c:58
 #, c-format
 msgid "query failed: %s"
 msgstr "ошибка при выполнении запроса: %s"
 
-#. +> 18 17 16 15
+#. +> 19 18 17 16 15
 #: ../../fe_utils/query_utils.c:34 ../../fe_utils/query_utils.c:59
 #, c-format
 msgid "Query was: %s"
@@ -300,26 +306,26 @@ msgstr "Выполнялся запрос: %s"
 msgid "query was: %s"
 msgstr "запрос: %s"
 
-#. +> 18 17
-#: ../../fe_utils/string_utils.c:587
+#. +> 19 18 17
+#: ../../fe_utils/string_utils.c:585
 #, c-format
 msgid "shell command argument contains a newline or carriage return: \"%s\"\n"
 msgstr ""
 "аргумент команды оболочки содержит символ новой строки или перевода каретки: "
 "\"%s\"\n"
 
-#. +> 18 17
-#: ../../fe_utils/string_utils.c:760
+#. +> 19 18 17
+#: ../../fe_utils/string_utils.c:758
 #, c-format
 msgid "database name contains a newline or carriage return: \"%s\"\n"
 msgstr ""
 "имя базы данных содержит символ новой строки или перевода каретки: \"%s\"\n"
 
-#. +> 18 17 16 15
+#. +> 19 18 17 16 15
 #: clusterdb.c:113 clusterdb.c:132 createdb.c:149 createdb.c:168
 #: createuser.c:195 createuser.c:210 dropdb.c:104 dropdb.c:113 dropdb.c:121
 #: dropuser.c:95 dropuser.c:110 dropuser.c:123 pg_isready.c:97 pg_isready.c:111
-#: reindexdb.c:184 reindexdb.c:203 vacuumdb.c:292 vacuumdb.c:312
+#: reindexdb.c:184 reindexdb.c:203 vacuumdb.c:216 vacuumdb.c:236
 #, c-format
 msgid "Try \"%s --help\" for more information."
 msgstr "Для дополнительной информации попробуйте \"%s --help\"."
@@ -333,38 +339,38 @@ msgstr "Для дополнительной информации попробу�
 msgid "Try \"%s --help\" for more information.\n"
 msgstr "Для дополнительной информации попробуйте \"%s --help\".\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: clusterdb.c:130 createdb.c:166 createuser.c:208 dropdb.c:119 dropuser.c:108
-#: pg_isready.c:109 reindexdb.c:201 vacuumdb.c:310
+#: pg_isready.c:109 reindexdb.c:201 vacuumdb.c:234
 #, c-format
 msgid "too many command-line arguments (first is \"%s\")"
 msgstr "слишком много аргументов командной строки (первый: \"%s\")"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: clusterdb.c:148
 #, c-format
 msgid "cannot cluster all databases and a specific one at the same time"
 msgstr "нельзя кластеризовать все базы и одну конкретную одновременно"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: clusterdb.c:213
 #, c-format
 msgid "clustering of table \"%s\" in database \"%s\" failed: %s"
 msgstr "кластеризовать таблицу \"%s\" в базе \"%s\" не удалось: %s"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: clusterdb.c:216
 #, c-format
 msgid "clustering of database \"%s\" failed: %s"
 msgstr "кластеризовать базу \"%s\" не удалось: %s"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: clusterdb.c:247
 #, c-format
 msgid "%s: clustering database \"%s\"\n"
 msgstr "%s: кластеризация базы \"%s\"\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: clusterdb.c:273
 #, c-format
 msgid ""
@@ -380,22 +386,22 @@ msgstr ""
 msgid "cannot cluster specific table(s) in all databases"
 msgstr "нельзя кластеризовать указанную таблицу(ы) во всех базах"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: clusterdb.c:274 createdb.c:300 createuser.c:417 dropdb.c:171 dropuser.c:171
-#: pg_isready.c:226 reindexdb.c:898 vacuumdb.c:1337
+#: pg_isready.c:226 reindexdb.c:898 vacuumdb.c:351
 #, c-format
 msgid "Usage:\n"
 msgstr "Использование:\n"
 
-#. +> 18 17 16 15 14
-#: clusterdb.c:275 reindexdb.c:899 vacuumdb.c:1338
+#. +> 19 18 17 16 15 14
+#: clusterdb.c:275 reindexdb.c:899 vacuumdb.c:352
 #, c-format
 msgid "  %s [OPTION]... [DBNAME]\n"
 msgstr "  %s [ПАРАМЕТР]... [ИМЯ_БД]\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: clusterdb.c:276 createdb.c:302 createuser.c:419 dropdb.c:173 dropuser.c:173
-#: pg_isready.c:229 reindexdb.c:900 vacuumdb.c:1339
+#: pg_isready.c:229 reindexdb.c:900 vacuumdb.c:353
 #, c-format
 msgid ""
 "\n"
@@ -404,59 +410,59 @@ msgstr ""
 "\n"
 "Параметры:\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: clusterdb.c:277
 #, c-format
 msgid "  -a, --all                 cluster all databases\n"
 msgstr "  -a, --all                 кластеризовать все базы\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: clusterdb.c:278
 #, c-format
 msgid "  -d, --dbname=DBNAME       database to cluster\n"
 msgstr "  -d, --dbname=ИМЯ_БД       имя базы данных для кластеризации\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: clusterdb.c:279 createuser.c:425 dropdb.c:174 dropuser.c:174
 #, c-format
 msgid ""
 "  -e, --echo                show the commands being sent to the server\n"
 msgstr "  -e, --echo                отображать команды, отправляемые серверу\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: clusterdb.c:280
 #, c-format
 msgid "  -q, --quiet               don't write any messages\n"
 msgstr "  -q, --quiet               не выводить никакие сообщения\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: clusterdb.c:281
 #, c-format
 msgid "  -t, --table=TABLE         cluster specific table(s) only\n"
 msgstr ""
 "  -t, --table=ТАБЛИЦА       кластеризовать только указанную таблицу(ы)\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: clusterdb.c:282
 #, c-format
 msgid "  -v, --verbose             write a lot of output\n"
 msgstr "  -v, --verbose             выводить исчерпывающие сообщения\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: clusterdb.c:283 createuser.c:441 dropdb.c:177 dropuser.c:177
 #, c-format
 msgid "  -V, --version             output version information, then exit\n"
 msgstr "  -V, --version             показать версию и выйти\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: clusterdb.c:284 createuser.c:449 dropdb.c:179 dropuser.c:179
 #, c-format
 msgid "  -?, --help                show this help, then exit\n"
 msgstr "  -?, --help                показать эту справку и выйти\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: clusterdb.c:285 createdb.c:319 createuser.c:450 dropdb.c:180 dropuser.c:180
-#: pg_isready.c:235 reindexdb.c:915 vacuumdb.c:1369
+#: pg_isready.c:235 reindexdb.c:915 vacuumdb.c:384
 #, c-format
 msgid ""
 "\n"
@@ -465,46 +471,46 @@ msgstr ""
 "\n"
 "Параметры подключения:\n"
 
-#. +> 18 17 16 15 14
-#: clusterdb.c:286 createuser.c:451 dropdb.c:181 dropuser.c:181 vacuumdb.c:1370
+#. +> 19 18 17 16 15 14
+#: clusterdb.c:286 createuser.c:451 dropdb.c:181 dropuser.c:181 vacuumdb.c:385
 #, c-format
 msgid "  -h, --host=HOSTNAME       database server host or socket directory\n"
 msgstr ""
 "  -h, --host=ИМЯ            компьютер с сервером баз данных или каталог "
 "сокетов\n"
 
-#. +> 18 17 16 15 14
-#: clusterdb.c:287 createuser.c:452 dropdb.c:182 dropuser.c:182 vacuumdb.c:1371
+#. +> 19 18 17 16 15 14
+#: clusterdb.c:287 createuser.c:452 dropdb.c:182 dropuser.c:182 vacuumdb.c:386
 #, c-format
 msgid "  -p, --port=PORT           database server port\n"
 msgstr "  -p, --port=ПОРТ           порт сервера баз данных\n"
 
-#. +> 18 17 16 15 14
-#: clusterdb.c:288 dropdb.c:183 vacuumdb.c:1372
+#. +> 19 18 17 16 15 14
+#: clusterdb.c:288 dropdb.c:183 vacuumdb.c:387
 #, c-format
 msgid "  -U, --username=USERNAME   user name to connect as\n"
 msgstr ""
 "  -U, --username=ИМЯ        имя пользователя для подключения к серверу\n"
 
-#. +> 18 17 16 15 14
-#: clusterdb.c:289 createuser.c:454 dropdb.c:184 dropuser.c:184 vacuumdb.c:1373
+#. +> 19 18 17 16 15 14
+#: clusterdb.c:289 createuser.c:454 dropdb.c:184 dropuser.c:184 vacuumdb.c:388
 #, c-format
 msgid "  -w, --no-password         never prompt for password\n"
 msgstr "  -w, --no-password         не запрашивать пароль\n"
 
-#. +> 18 17 16 15 14
-#: clusterdb.c:290 createuser.c:455 dropdb.c:185 dropuser.c:185 vacuumdb.c:1374
+#. +> 19 18 17 16 15 14
+#: clusterdb.c:290 createuser.c:455 dropdb.c:185 dropuser.c:185 vacuumdb.c:389
 #, c-format
 msgid "  -W, --password            force password prompt\n"
 msgstr "  -W, --password            запросить пароль\n"
 
-#. +> 18 17 16 15 14
-#: clusterdb.c:291 dropdb.c:186 vacuumdb.c:1375
+#. +> 19 18 17 16 15 14
+#: clusterdb.c:291 dropdb.c:186 vacuumdb.c:390
 #, c-format
 msgid "  --maintenance-db=DBNAME   alternate maintenance database\n"
 msgstr "  --maintenance-db=ИМЯ_БД   сменить опорную базу данных\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: clusterdb.c:292
 #, c-format
 msgid ""
@@ -514,9 +520,9 @@ msgstr ""
 "\n"
 "Подробнее о кластеризации вы можете узнать в описании SQL-команды CLUSTER.\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: clusterdb.c:293 createdb.c:327 createuser.c:456 dropdb.c:187 dropuser.c:186
-#: pg_isready.c:240 reindexdb.c:923 vacuumdb.c:1377
+#: pg_isready.c:240 reindexdb.c:923 vacuumdb.c:392
 #, c-format
 msgid ""
 "\n"
@@ -525,14 +531,14 @@ msgstr ""
 "\n"
 "Об ошибках сообщайте по адресу <%s>.\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: clusterdb.c:294 createdb.c:328 createuser.c:457 dropdb.c:188 dropuser.c:187
-#: pg_isready.c:241 reindexdb.c:924 vacuumdb.c:1378
+#: pg_isready.c:241 reindexdb.c:924 vacuumdb.c:393
 #, c-format
 msgid "%s home page: <%s>\n"
 msgstr "Домашняя страница %s: <%s>\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: common.c:106
 #, c-format
 msgid "query returned %d row instead of one: %s"
@@ -542,26 +548,26 @@ msgstr[1] "запрос вернул %d строки вместо одной: %s
 msgstr[2] "запрос вернул %d строк вместо одной: %s"
 
 #. translator: abbreviation for "yes"
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: common.c:131
 msgid "y"
 msgstr "y"
 
 #. translator: abbreviation for "no"
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: common.c:133
 msgid "n"
 msgstr "n"
 
 #. translator: This is a question followed by the translated options for
 #. "yes" and "no".
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: common.c:143
 #, c-format
 msgid "%s (%s/%s) "
 msgstr "%s (%s - да/%s - нет) "
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: common.c:164
 #, c-format
 msgid "Please answer \"%s\" or \"%s\".\n"
@@ -579,25 +585,25 @@ msgstr "можно указать только --locale или --lc-ctype"
 msgid "only one of --locale and --lc-collate can be specified"
 msgstr "можно указать только --locale и --lc-collate"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createdb.c:175
 #, c-format
 msgid "\"%s\" is not a valid encoding name"
 msgstr "\"%s\" не является верным названием кодировки"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createdb.c:262
 #, c-format
 msgid "database creation failed: %s"
 msgstr "создать базу данных не удалось: %s"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createdb.c:281
 #, c-format
 msgid "comment creation failed (database was created): %s"
 msgstr "создать комментарий не удалось (база данных была создана): %s"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createdb.c:299
 #, c-format
 msgid ""
@@ -607,14 +613,14 @@ msgstr ""
 "%s создаёт базу данных PostgreSQL.\n"
 "\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createdb.c:301
 #, c-format
 msgid "  %s [OPTION]... [DBNAME] [DESCRIPTION]\n"
 msgstr "  %s [ПАРАМЕТР]... [ИМЯ_БД] [ОПИСАНИЕ]\n"
 
 # well-spelled: ПРОСТР
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createdb.c:303
 #, c-format
 msgid "  -D, --tablespace=TABLESPACE  default tablespace for the database\n"
@@ -622,7 +628,7 @@ msgstr ""
 "  -D, --tablespace=ТАБЛ_ПРОСТР табличное пространство по умолчанию для базы "
 "данных\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createdb.c:304 reindexdb.c:904
 #, c-format
 msgid ""
@@ -630,44 +636,44 @@ msgid ""
 msgstr ""
 "  -e, --echo                   отображать команды, отправляемые серверу\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createdb.c:305
 #, c-format
 msgid "  -E, --encoding=ENCODING      encoding for the database\n"
 msgstr "  -E, --encoding=КОДИРОВКА     кодировка базы данных\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createdb.c:306
 #, c-format
 msgid "  -l, --locale=LOCALE          locale settings for the database\n"
 msgstr "  -l, --locale=ЛОКАЛЬ          локаль для базы данных\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createdb.c:307
 #, c-format
 msgid "      --lc-collate=LOCALE      LC_COLLATE setting for the database\n"
 msgstr "      --lc-collate=ЛОКАЛЬ      параметр LC_COLLATE для базы данных\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createdb.c:308
 #, c-format
 msgid "      --lc-ctype=LOCALE        LC_CTYPE setting for the database\n"
 msgstr "      --lc-ctype=ЛОКАЛЬ        параметр LC_CTYPE для базы данных\n"
 
-#. +> 18 17
+#. +> 19 18 17
 #: createdb.c:309
 #, c-format
 msgid ""
 "      --builtin-locale=LOCALE  builtin locale setting for the database\n"
 msgstr "      --builtin-locale=ЛОКАЛЬ  имя встроенной локали для базы данных\n"
 
-#. +> 18 17 16 15
+#. +> 19 18 17 16 15
 #: createdb.c:310
 #, c-format
 msgid "      --icu-locale=LOCALE      ICU locale setting for the database\n"
 msgstr "      --icu-locale=ЛОКАЛЬ      локаль ICU для базы данных\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: createdb.c:311
 #, c-format
 msgid "      --icu-rules=RULES        ICU rules setting for the database\n"
@@ -675,7 +681,7 @@ msgstr ""
 "      --icu-rules=ПРАВИЛА      настройка правил сортировки ICU для базы "
 "данных\n"
 
-#. +> 18 17
+#. +> 19 18 17
 #: createdb.c:312
 #, c-format
 msgid ""
@@ -699,14 +705,14 @@ msgstr ""
 "                               провайдер локали для основного правила "
 "сортировки БД\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createdb.c:314
 #, c-format
 msgid "  -O, --owner=OWNER            database user to own the new database\n"
 msgstr ""
 "  -O, --owner=ВЛАДЕЛЕЦ         пользователь-владелец новой базы данных\n"
 
-#. +> 18 17 16 15
+#. +> 19 18 17 16 15
 #: createdb.c:315
 #, c-format
 msgid ""
@@ -716,25 +722,25 @@ msgstr ""
 "  -S, --strategy=STRATEGY      стратегия создания базы данных: wal_log или "
 "file_copy\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createdb.c:316
 #, c-format
 msgid "  -T, --template=TEMPLATE      template database to copy\n"
 msgstr "  -T, --template=ШАБЛОН        исходная база данных для копирования\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createdb.c:317 reindexdb.c:913
 #, c-format
 msgid "  -V, --version                output version information, then exit\n"
 msgstr "  -V, --version                показать версию и выйти\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createdb.c:318 reindexdb.c:914
 #, c-format
 msgid "  -?, --help                   show this help, then exit\n"
 msgstr "  -?, --help                   показать эту справку и выйти\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createdb.c:320 reindexdb.c:916
 #, c-format
 msgid ""
@@ -743,38 +749,38 @@ msgstr ""
 "  -h, --host=ИМЯ               компьютер с сервером баз данных или каталог "
 "сокетов\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createdb.c:321 reindexdb.c:917
 #, c-format
 msgid "  -p, --port=PORT              database server port\n"
 msgstr "  -p, --port=ПОРТ              порт сервера баз данных\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createdb.c:322 reindexdb.c:918
 #, c-format
 msgid "  -U, --username=USERNAME      user name to connect as\n"
 msgstr ""
 "  -U, --username=ИМЯ           имя пользователя для подключения к серверу\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createdb.c:323 reindexdb.c:919
 #, c-format
 msgid "  -w, --no-password            never prompt for password\n"
 msgstr "  -w, --no-password            не запрашивать пароль\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createdb.c:324 reindexdb.c:920
 #, c-format
 msgid "  -W, --password               force password prompt\n"
 msgstr "  -W, --password               запросить пароль\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createdb.c:325 reindexdb.c:921
 #, c-format
 msgid "  --maintenance-db=DBNAME      alternate maintenance database\n"
 msgstr "  --maintenance-db=ИМЯ_БД      сменить опорную базу данных\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createdb.c:326
 #, c-format
 msgid ""
@@ -790,55 +796,55 @@ msgstr ""
 msgid "invalid value for --connection-limit: %s"
 msgstr "неверное значение параметра --connection-limit: %s"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createuser.c:218
 msgid "Enter name of role to add: "
 msgstr "Введите имя новой роли: "
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createuser.c:233
 msgid "Enter password for new role: "
 msgstr "Введите пароль для новой роли: "
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createuser.c:234
 msgid "Enter it again: "
 msgstr "Повторите его: "
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createuser.c:237
 #, c-format
 msgid "Passwords didn't match.\n"
 msgstr "Пароли не совпадают.\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createuser.c:245
 msgid "Shall the new role be a superuser?"
 msgstr "Должна ли новая роль иметь полномочия суперпользователя?"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createuser.c:260
 msgid "Shall the new role be allowed to create databases?"
 msgstr "Новая роль должна иметь право создавать базы данных?"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createuser.c:268
 msgid "Shall the new role be allowed to create more new roles?"
 msgstr "Новая роль должна иметь право создавать другие роли?"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createuser.c:311
 #, c-format
 msgid "password encryption failed: %s"
 msgstr "ошибка при шифровании пароля: %s"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createuser.c:402
 #, c-format
 msgid "creation of new role failed: %s"
 msgstr "создать роль не удалось: %s"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createuser.c:416
 #, c-format
 msgid ""
@@ -848,13 +854,13 @@ msgstr ""
 "%s создаёт роль пользователя PostgreSQL.\n"
 "\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createuser.c:418 dropuser.c:172
 #, c-format
 msgid "  %s [OPTION]... [ROLENAME]\n"
 msgstr "  %s [ПАРАМЕТР]... [ИМЯ_РОЛИ]\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: createuser.c:420
 #, c-format
 msgid ""
@@ -865,7 +871,7 @@ msgstr ""
 "привилегией\n"
 "                            ADMIN\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createuser.c:422
 #, c-format
 msgid ""
@@ -874,13 +880,13 @@ msgstr ""
 "  -c, --connection-limit=N  предел подключений для роли\n"
 "                            (по умолчанию предела нет)\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createuser.c:423
 #, c-format
 msgid "  -d, --createdb            role can create new databases\n"
 msgstr "  -d, --createdb            роль с правом создания баз данных\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createuser.c:424
 #, c-format
 msgid "  -D, --no-createdb         role cannot create databases (default)\n"
@@ -888,7 +894,7 @@ msgstr ""
 "  -D, --no-createdb         роль без права создания баз данных (по "
 "умолчанию)\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: createuser.c:426
 #, c-format
 msgid "  -g, --member-of=ROLE      new role will be a member of ROLE\n"
@@ -900,13 +906,13 @@ msgstr "  -g, --member-of=РОЛЬ      новая роль будет член�
 msgid "  -g, --role=ROLE           new role will be a member of this role\n"
 msgstr "  -g, --role=РОЛЬ           новая роль будет включена в эту роль\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: createuser.c:427
 #, c-format
 msgid "  --role=ROLE               (same as --member-of, deprecated)\n"
 msgstr "  --role=РОЛЬ               (устаревшая альтернатива --member-of)\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createuser.c:428
 #, c-format
 msgid ""
@@ -917,13 +923,13 @@ msgstr ""
 "она\n"
 "                            включена (по умолчанию)\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createuser.c:430
 #, c-format
 msgid "  -I, --no-inherit          role does not inherit privileges\n"
 msgstr "  -I, --no-inherit          роль не наследует права\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createuser.c:431
 #, c-format
 msgid "  -l, --login               role can login (default)\n"
@@ -931,44 +937,44 @@ msgstr ""
 "  -l, --login               роль с правом подключения к серверу (по "
 "умолчанию)\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createuser.c:432
 #, c-format
 msgid "  -L, --no-login            role cannot login\n"
 msgstr "  -L, --no-login            роль без права подключения\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: createuser.c:433
 #, c-format
 msgid "  -m, --with-member=ROLE    ROLE will be a member of new role\n"
 msgstr "  -m, --with-member=РОЛЬ    заданная роль будет членом новой роли\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createuser.c:434
 #, c-format
 msgid "  -P, --pwprompt            assign a password to new role\n"
 msgstr "  -P, --pwprompt            назначить пароль новой роли\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createuser.c:435
 #, c-format
 msgid "  -r, --createrole          role can create new roles\n"
 msgstr "  -r, --createrole          роль с правом создания других ролей\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createuser.c:436
 #, c-format
 msgid "  -R, --no-createrole       role cannot create roles (default)\n"
 msgstr ""
 "  -R, --no-createrole       роль без права создания ролей (по умолчанию)\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createuser.c:437
 #, c-format
 msgid "  -s, --superuser           role will be superuser\n"
 msgstr "  -s, --superuser           роль с полномочиями суперпользователя\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createuser.c:438
 #, c-format
 msgid "  -S, --no-superuser        role will not be superuser (default)\n"
@@ -976,7 +982,7 @@ msgstr ""
 "  -S, --no-superuser        роль без полномочий суперпользователя (по "
 "умолчанию)\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: createuser.c:439
 #, c-format
 msgid ""
@@ -986,7 +992,7 @@ msgstr ""
 "  -v, --valid-until=ДАТА_ВРЕМЯ\n"
 "                            дата и время истечения срока пароля для роли\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createuser.c:442
 #, c-format
 msgid ""
@@ -997,7 +1003,7 @@ msgstr ""
 "  --interactive             запрашивать отсутствующие атрибуты и имя роли,\n"
 "                            а не использовать значения по умолчанию\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: createuser.c:444
 #, c-format
 msgid ""
@@ -1006,7 +1012,7 @@ msgstr ""
 "  --bypassrls               роль не будет подчиняться политикам защиты на\n"
 "                            уровне строк (RLS)\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: createuser.c:445
 #, c-format
 msgid ""
@@ -1017,7 +1023,7 @@ msgstr ""
 "  --no-bypassrls            роль будет подчиняться политикам защиты на\n"
 "                            уровне строк (по умолчанию)\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createuser.c:447
 #, c-format
 msgid "  --replication             role can initiate replication\n"
@@ -1029,7 +1035,7 @@ msgstr "  --replication             роль может инициировать
 msgid "  --no-replication          role cannot initiate replication\n"
 msgstr "  --no-replication          роль не может инициировать репликацию\n"
 
-#. +> 18 17 16
+#. +> 19 18 17 16
 #: createuser.c:448
 #, c-format
 msgid ""
@@ -1038,7 +1044,7 @@ msgstr ""
 "  --no-replication          роль не может инициировать репликацию\n"
 "                            (по умолчанию)\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: createuser.c:453
 #, c-format
 msgid ""
@@ -1047,30 +1053,30 @@ msgstr ""
 "  -U, --username=ИМЯ        имя пользователя для выполнения операции\n"
 "                            (но не имя новой роли)\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: dropdb.c:112
 #, c-format
 msgid "missing required argument database name"
 msgstr "отсутствует необходимый аргумент: имя базы данных"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: dropdb.c:127
 #, c-format
 msgid "Database \"%s\" will be permanently removed.\n"
 msgstr "База данных \"%s\" будет удалена безвозвратно.\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: dropdb.c:128 dropuser.c:131
 msgid "Are you sure?"
 msgstr "Вы уверены? (y/n)"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: dropdb.c:156
 #, c-format
 msgid "database removal failed: %s"
 msgstr "ошибка при удалении базы данных: %s"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: dropdb.c:170
 #, c-format
 msgid ""
@@ -1080,13 +1086,13 @@ msgstr ""
 "%s удаляет базу данных PostgreSQL.\n"
 "\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: dropdb.c:172
 #, c-format
 msgid "  %s [OPTION]... DBNAME\n"
 msgstr "  %s [ПАРАМЕТР]... БД\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: dropdb.c:175
 #, c-format
 msgid ""
@@ -1096,13 +1102,13 @@ msgstr ""
 "  -f, --force               пытаться закрыть другие подключения перед "
 "удалением\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: dropdb.c:176
 #, c-format
 msgid "  -i, --interactive         prompt before deleting anything\n"
 msgstr "  -i, --interactive         подтвердить операцию удаления\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: dropdb.c:178
 #, c-format
 msgid ""
@@ -1110,30 +1116,30 @@ msgid ""
 msgstr ""
 "  --if-exists               не считать ошибкой отсутствие базы данных\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: dropuser.c:118
 msgid "Enter name of role to drop: "
 msgstr "Введите имя удаляемой роли: "
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: dropuser.c:122
 #, c-format
 msgid "missing required argument role name"
 msgstr "отсутствует необходимый аргумент: имя роли"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: dropuser.c:130
 #, c-format
 msgid "Role \"%s\" will be permanently removed.\n"
 msgstr "Роль \"%s\" будет удалена безвозвратно.\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: dropuser.c:155
 #, c-format
 msgid "removal of role \"%s\" failed: %s"
 msgstr "ошибка при удалении роли \"%s\": %s"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: dropuser.c:170
 #, c-format
 msgid ""
@@ -1143,7 +1149,7 @@ msgstr ""
 "%s удаляет роль PostgreSQL.\n"
 "\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: dropuser.c:175
 #, c-format
 msgid ""
@@ -1153,14 +1159,14 @@ msgstr ""
 "  -i, --interactive         подтверждать операцию удаления и запрашивать\n"
 "                            имя роли, если оно не указано\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: dropuser.c:178
 #, c-format
 msgid "  --if-exists               don't report error if user doesn't exist\n"
 msgstr ""
 "  --if-exists               не считать ошибкой отсутствие пользователя\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: dropuser.c:183
 #, c-format
 msgid ""
@@ -1169,43 +1175,43 @@ msgstr ""
 "  -U, --username=ИМЯ        имя пользователя для выполнения операции\n"
 "                            (но не имя удаляемой роли)\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: pg_isready.c:154
 #, c-format
 msgid "could not fetch default options"
 msgstr "не удалось получить параметры по умолчанию"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: pg_isready.c:203
 #, c-format
 msgid "accepting connections\n"
 msgstr "принимает подключения\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: pg_isready.c:206
 #, c-format
 msgid "rejecting connections\n"
 msgstr "отвергает подключения\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: pg_isready.c:209
 #, c-format
 msgid "no response\n"
 msgstr "нет ответа\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: pg_isready.c:212
 #, c-format
 msgid "no attempt\n"
 msgstr "проверка не выполнялась\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: pg_isready.c:215
 #, c-format
 msgid "unknown\n"
 msgstr "неизвестно\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: pg_isready.c:225
 #, c-format
 msgid ""
@@ -1215,37 +1221,37 @@ msgstr ""
 "%s проверяет подключение к базе данных PostgreSQL.\n"
 "\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: pg_isready.c:227
 #, c-format
 msgid "  %s [OPTION]...\n"
 msgstr "  %s [ПАРАМЕТР]...\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: pg_isready.c:230
 #, c-format
 msgid "  -d, --dbname=DBNAME      database name\n"
 msgstr "  -d, --dbname=БД          имя базы\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: pg_isready.c:231
 #, c-format
 msgid "  -q, --quiet              run quietly\n"
 msgstr "  -q, --quiet              не выводить никакие сообщения\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: pg_isready.c:232
 #, c-format
 msgid "  -V, --version            output version information, then exit\n"
 msgstr "  -V, --version            показать версию и выйти\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: pg_isready.c:233
 #, c-format
 msgid "  -?, --help               show this help, then exit\n"
 msgstr "  -?, --help               показать эту справку и выйти\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: pg_isready.c:236
 #, c-format
 msgid "  -h, --host=HOSTNAME      database server host or socket directory\n"
@@ -1253,13 +1259,13 @@ msgstr ""
 "  -h, --host=ИМЯ           компьютер с сервером баз данных или каталог "
 "сокетов\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: pg_isready.c:237
 #, c-format
 msgid "  -p, --port=PORT          database server port\n"
 msgstr "  -p, --port=ПОРТ          порт сервера баз данных\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: pg_isready.c:238
 #, c-format
 msgid ""
@@ -1269,7 +1275,7 @@ msgstr ""
 "  -t, --timeout=СЕК        время ожидания при попытке подключения;\n"
 "                           0 - без ограничения (по умолчанию: %s)\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: pg_isready.c:239
 #, c-format
 msgid "  -U, --username=USERNAME  user name to connect as\n"
@@ -1294,7 +1300,7 @@ msgstr "нельзя переиндексировать указанную сх�
 msgid "cannot reindex specific table(s) in all databases"
 msgstr "нельзя переиндексировать указанную таблицу(ы) во всех базах"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: reindexdb.c:217
 #, c-format
 msgid "cannot use multiple jobs to reindex system catalogs"
@@ -1314,7 +1320,7 @@ msgstr "нельзя переиндексировать указанный ин�
 msgid "cannot use multiple jobs to reindex indexes"
 msgstr "нельзя задействовать несколько заданий для перестроения индексов"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: reindexdb.c:222
 #, c-format
 msgid "cannot reindex all databases and a specific one at the same time"
@@ -1351,10 +1357,11 @@ msgstr ""
 "нельзя переиндексировать указанный индекс(ы) и системные каталоги "
 "одновременно"
 
-#. +> 18 17 16 15 14
-#: reindexdb.c:302 reindexdb.c:309 vacuumdb.c:559 vacuumdb.c:566 vacuumdb.c:573
-#: vacuumdb.c:580 vacuumdb.c:587 vacuumdb.c:594 vacuumdb.c:601 vacuumdb.c:608
-#: vacuumdb.c:615 vacuumdb.c:622 vacuumdb.c:629 vacuumdb.c:636
+#. +> 19 18 17 16 15 14
+#: reindexdb.c:302 reindexdb.c:309 vacuuming.c:211 vacuuming.c:218
+#: vacuuming.c:225 vacuuming.c:232 vacuuming.c:239 vacuuming.c:246
+#: vacuuming.c:253 vacuuming.c:260 vacuuming.c:267 vacuuming.c:274
+#: vacuuming.c:281 vacuuming.c:288
 #, c-format
 msgid ""
 "cannot use the \"%s\" option on server versions older than PostgreSQL %s"
@@ -1369,43 +1376,43 @@ msgstr ""
 "все системные каталоги пропускаются, так как их нельзя переиндексировать "
 "неблокирующим способом"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: reindexdb.c:597
 #, c-format
 msgid "reindexing of database \"%s\" failed: %s"
 msgstr "переиндексировать базу данных \"%s\" не удалось: %s"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: reindexdb.c:601
 #, c-format
 msgid "reindexing of index \"%s\" in database \"%s\" failed: %s"
 msgstr "перестроить индекс \"%s\" в базе \"%s\" не удалось: %s"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: reindexdb.c:605
 #, c-format
 msgid "reindexing of schema \"%s\" in database \"%s\" failed: %s"
 msgstr "переиндексировать схему \"%s\" в базе \"%s\" не удалось: %s"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: reindexdb.c:609
 #, c-format
 msgid "reindexing of system catalogs in database \"%s\" failed: %s"
 msgstr "переиндексировать системные каталоги в базе \"%s\" не удалось: %s"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: reindexdb.c:613
 #, c-format
 msgid "reindexing of table \"%s\" in database \"%s\" failed: %s"
 msgstr "переиндексировать таблицу \"%s\" в базе \"%s\" не удалось: %s"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: reindexdb.c:854
 #, c-format
 msgid "%s: reindexing database \"%s\"\n"
 msgstr "%s: переиндексация базы данных \"%s\"\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: reindexdb.c:897
 #, c-format
 msgid ""
@@ -1415,33 +1422,33 @@ msgstr ""
 "%s переиндексирует базу данных PostgreSQL.\n"
 "\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: reindexdb.c:901
 #, c-format
 msgid "  -a, --all                    reindex all databases\n"
 msgstr "  -a, --all                    переиндексировать все базы данных\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: reindexdb.c:902
 #, c-format
 msgid "      --concurrently           reindex concurrently\n"
 msgstr ""
 "      --concurrently           переиндексировать в неблокирующем режиме\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: reindexdb.c:903
 #, c-format
 msgid "  -d, --dbname=DBNAME          database to reindex\n"
 msgstr "  -d, --dbname=БД              имя базы для переиндексации\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: reindexdb.c:905
 #, c-format
 msgid "  -i, --index=INDEX            recreate specific index(es) only\n"
 msgstr ""
 "  -i, --index=ИНДЕКС           пересоздать только указанный индекс(ы)\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: reindexdb.c:906
 #, c-format
 msgid ""
@@ -1451,27 +1458,27 @@ msgstr ""
 "  -j, --jobs=ЧИСЛО             запускать для переиндексации заданное число\n"
 "                               заданий\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: reindexdb.c:907
 #, c-format
 msgid "  -q, --quiet                  don't write any messages\n"
 msgstr "  -q, --quiet                  не выводить сообщения\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: reindexdb.c:908
 #, c-format
 msgid "  -s, --system                 reindex system catalogs only\n"
 msgstr ""
 "  -s, --system                 переиндексировать только системные каталоги\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: reindexdb.c:909
 #, c-format
 msgid "  -S, --schema=SCHEMA          reindex specific schema(s) only\n"
 msgstr ""
 "  -S, --schema=СХЕМА           переиндексировать только указанную схему(ы)\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: reindexdb.c:910
 #, c-format
 msgid "  -t, --table=TABLE            reindex specific table(s) only\n"
@@ -1480,7 +1487,7 @@ msgstr ""
 "таблицу(ы)\n"
 
 # well-spelled: ПРОСТР
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: reindexdb.c:911
 #, c-format
 msgid "      --tablespace=TABLESPACE  tablespace where indexes are rebuilt\n"
@@ -1488,13 +1495,13 @@ msgstr ""
 "      --tablespace=ТАБЛ_ПРОСТР табличное пространство, в котором будут\n"
 "                               перестраиваться индексы\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: reindexdb.c:912
 #, c-format
 msgid "  -v, --verbose                write a lot of output\n"
 msgstr "  -v, --verbose                выводить исчерпывающие сообщения\n"
 
-#. +> 18 17 16 15 14
+#. +> 19 18 17 16 15 14
 #: reindexdb.c:922
 #, c-format
 msgid ""
@@ -1524,45 +1531,51 @@ msgstr "минимальный возраст транзакций должен 
 msgid "minimum multixact ID age must be at least 1"
 msgstr "минимальный возраст мультитранзакций должен быть не меньше 1"
 
-#. +> 18 17 16 15 14
-#: vacuumdb.c:325 vacuumdb.c:328 vacuumdb.c:331 vacuumdb.c:334 vacuumdb.c:337
-#: vacuumdb.c:340 vacuumdb.c:343 vacuumdb.c:346 vacuumdb.c:355
+#. +> 19 18 17 16 15 14
+#: vacuumdb.c:250 vacuumdb.c:253 vacuumdb.c:256 vacuumdb.c:259 vacuumdb.c:262
+#: vacuumdb.c:265 vacuumdb.c:268 vacuumdb.c:271 vacuumdb.c:281
 #, c-format
 msgid "cannot use the \"%s\" option when performing only analyze"
 msgstr "при выполнении только анализа нельзя использовать параметр \"%s\""
 
-#. +> 18 17 16 15 14
-#: vacuumdb.c:358
+#. +> 19 18 17 16 15 14
+#: vacuumdb.c:284
 #, c-format
 msgid "cannot use the \"%s\" option when performing full vacuum"
 msgstr "при выполнении полной очистки нельзя использовать параметр \"%s\""
 
-#. +> 18 17 16 15 14
-#: vacuumdb.c:364 vacuumdb.c:372
+#. +> 19 18 17 16 15 14
+#: vacuumdb.c:290 vacuumdb.c:298
 #, c-format
 msgid "cannot use the \"%s\" option with the \"%s\" option"
 msgstr "параметр \"%s\" нельзя использовать совместно с \"%s\""
 
-#. +> 18
-#: vacuumdb.c:380
+#. +> 19 18
+#: vacuumdb.c:307
 #, c-format
 msgid "cannot use the \"%s\" option without \"%s\" or \"%s\""
 msgstr "параметр \"%s\" нельзя использовать без \"%s\" или \"%s\""
 
-#. +> 16
-#: vacuumdb.c:442
+#. +> 19
+#: vacuumdb.c:312
 #, c-format
-msgid "cannot exclude specific schema(s) in all databases"
-msgstr "нельзя исключить указанную схему(ы) во всех базах"
+msgid "executing in dry-run mode"
+msgstr ""
 
-#. +> 18 17 16 15 14
-#: vacuumdb.c:454
+#. +> 19
+#: vacuumdb.c:313
+#, c-format
+msgid "No commands will be sent to the server."
+msgstr ""
+
+#. +> 19 18 17 16 15 14
+#: vacuumdb.c:331
 #, c-format
 msgid "cannot vacuum all databases and a specific one at the same time"
 msgstr "нельзя очистить все базы данных и одну конкретную одновременно"
 
-#. +> 18 17 16
-#: vacuumdb.c:458
+#. +> 19 18 17 16
+#: vacuumdb.c:335
 #, c-format
 msgid ""
 "cannot vacuum all tables in schema(s) and specific table(s) at the same time"
@@ -1570,8 +1583,8 @@ msgstr ""
 "нельзя очистить все таблицы в схеме(ах) и одну конкретную таблицу "
 "одновременно"
 
-#. +> 18 17 16
-#: vacuumdb.c:462
+#. +> 19 18 17 16
+#: vacuumdb.c:339
 #, c-format
 msgid "cannot vacuum specific table(s) and exclude schema(s) at the same time"
 msgstr ""
@@ -1589,61 +1602,16 @@ msgstr "нельзя очистить только указанную табли
 msgid "cannot vacuum specific schema(s) in all databases"
 msgstr "нельзя очистить только указанную схему(ы) во всех базах"
 
-#. +> 18 17 16
-#: vacuumdb.c:466
+#. +> 19 18 17 16
+#: vacuumdb.c:343
 #, c-format
 msgid ""
 "cannot vacuum all tables in schema(s) and exclude schema(s) at the same time"
 msgstr ""
 "нельзя очистить все таблицы в схеме(ах) и исключить схему(ы) одновременно"
 
-#. +> 18 17 16
-#: vacuumdb.c:479
-#, c-format
-msgid "out of memory"
-msgstr "нехватка памяти"
-
-#. +> 18 17 16 15 14
-#: vacuumdb.c:546
-msgid "Generating minimal optimizer statistics (1 target)"
-msgstr "Вычисление минимальной статистики для оптимизатора (1 запись)"
-
-#. +> 18 17 16 15 14
-#: vacuumdb.c:547
-msgid "Generating medium optimizer statistics (10 targets)"
-msgstr "Вычисление средней статистики для оптимизатора (10 записей)"
-
-#. +> 18 17 16 15 14
-#: vacuumdb.c:548
-msgid "Generating default (full) optimizer statistics"
-msgstr "Вычисление стандартной (полной) статистики для оптимизатора"
-
-#. +> 18 17 16 15 14
-#: vacuumdb.c:646
-#, c-format
-msgid "%s: processing database \"%s\": %s\n"
-msgstr "%s: обработка базы данных \"%s\": %s\n"
-
-#. +> 18 17 16 15 14
-#: vacuumdb.c:649
-#, c-format
-msgid "%s: vacuuming database \"%s\"\n"
-msgstr "%s: очистка базы данных \"%s\"\n"
-
-#. +> 18 17 16 15 14
-#: vacuumdb.c:1325
-#, c-format
-msgid "vacuuming of table \"%s\" in database \"%s\" failed: %s"
-msgstr "очистить таблицу \"%s\" в базе \"%s\" не удалось: %s"
-
-#. +> 18 17 16 15 14
-#: vacuumdb.c:1328
-#, c-format
-msgid "vacuuming of database \"%s\" failed: %s"
-msgstr "очистить базу данных \"%s\" не удалось: %s"
-
-#. +> 18 17 16 15 14
-#: vacuumdb.c:1336
+#. +> 19 18 17 16 15 14
+#: vacuumdb.c:350
 #, c-format
 msgid ""
 "%s cleans and analyzes a PostgreSQL database.\n"
@@ -1652,14 +1620,14 @@ msgstr ""
 "%s очищает и анализирует базу данных PostgreSQL.\n"
 "\n"
 
-#. +> 18 17 16 15 14
-#: vacuumdb.c:1340
+#. +> 19 18 17 16 15 14
+#: vacuumdb.c:354
 #, c-format
 msgid "  -a, --all                       vacuum all databases\n"
 msgstr "  -a, --all                       очистить все базы данных\n"
 
-#. +> 18 17 16
-#: vacuumdb.c:1341
+#. +> 19 18 17 16
+#: vacuumdb.c:355
 #, c-format
 msgid "      --buffer-usage-limit=SIZE   size of ring buffer used for vacuum\n"
 msgstr ""
@@ -1667,21 +1635,33 @@ msgstr ""
 "при\n"
 "                                  очистке\n"
 
-#. +> 18 17 16 15 14
-#: vacuumdb.c:1342
+#. +> 19 18 17 16 15 14
+#: vacuumdb.c:356
 #, c-format
 msgid "  -d, --dbname=DBNAME             database to vacuum\n"
 msgstr "  -d, --dbname=ИМЯ_БД             очистить указанную базу данных\n"
 
-#. +> 18 17 16 15 14
-#: vacuumdb.c:1343
+#. +> 19 18 17 16 15 14
+#: vacuumdb.c:357
 #, c-format
 msgid "      --disable-page-skipping     disable all page-skipping behavior\n"
 msgstr ""
 "      --disable-page-skipping     исключить все варианты пропуска страниц\n"
 
-#. +> 18 17 16 15 14
-#: vacuumdb.c:1344
+#. +> 19
+#: vacuumdb.c:358
+#, fuzzy, c-format
+#| msgid ""
+#| "  -e, --echo                   show the commands being sent to the "
+#| "server\n"
+msgid ""
+"      --dry-run                   show the commands that would be sent to "
+"the server\n"
+msgstr ""
+"  -e, --echo                   отображать команды, отправляемые серверу\n"
+
+#. +> 19 18 17 16 15 14
+#: vacuumdb.c:359
 #, c-format
 msgid ""
 "  -e, --echo                      show the commands being sent to the "
@@ -1689,22 +1669,22 @@ msgid ""
 msgstr ""
 "  -e, --echo                      отображать команды, отправляемые серверу\n"
 
-#. +> 18 17 16 15 14
-#: vacuumdb.c:1345
+#. +> 19 18 17 16 15 14
+#: vacuumdb.c:360
 #, c-format
 msgid "  -f, --full                      do full vacuuming\n"
 msgstr "  -f, --full                      произвести полную очистку\n"
 
-#. +> 18 17 16 15 14
-#: vacuumdb.c:1346
+#. +> 19 18 17 16 15 14
+#: vacuumdb.c:361
 #, c-format
 msgid "  -F, --freeze                    freeze row transaction information\n"
 msgstr ""
 "  -F, --freeze                    заморозить информацию о транзакциях в "
 "строках\n"
 
-#. +> 18 17 16 15 14
-#: vacuumdb.c:1347
+#. +> 19 18 17 16 15 14
+#: vacuumdb.c:362
 #, c-format
 msgid ""
 "      --force-index-cleanup       always remove index entries that point to "
@@ -1714,8 +1694,8 @@ msgstr ""
 "указывающие\n"
 "                                  на мёртвые кортежи\n"
 
-#. +> 18 17 16 15 14
-#: vacuumdb.c:1348
+#. +> 19 18 17 16 15 14
+#: vacuumdb.c:363
 #, c-format
 msgid ""
 "  -j, --jobs=NUM                  use this many concurrent connections to "
@@ -1724,8 +1704,8 @@ msgstr ""
 "  -j, --jobs=ЧИСЛО                запускать для очистки заданное число "
 "заданий\n"
 
-#. +> 18 17 16 15 14
-#: vacuumdb.c:1349
+#. +> 19 18 17 16 15 14
+#: vacuumdb.c:364
 #, c-format
 msgid ""
 "      --min-mxid-age=MXID_AGE     minimum multixact ID age of tables to "
@@ -1734,8 +1714,8 @@ msgstr ""
 "      --min-mxid-age=ВОЗРАСТ      минимальный возраст мультитранзакций для\n"
 "                                  таблиц, подлежащих очистке\n"
 
-#. +> 18 17 16 15 14
-#: vacuumdb.c:1350
+#. +> 19 18 17 16 15 14
+#: vacuumdb.c:365
 #, c-format
 msgid ""
 "      --min-xid-age=XID_AGE       minimum transaction ID age of tables to "
@@ -1745,8 +1725,8 @@ msgstr ""
 "таблиц,\n"
 "                                  подлежащих очистке\n"
 
-#. +> 18
-#: vacuumdb.c:1351
+#. +> 19 18
+#: vacuumdb.c:366
 #, c-format
 msgid ""
 "      --missing-stats-only        only analyze relations with missing "
@@ -1755,8 +1735,8 @@ msgstr ""
 "      --missing-stats-only        анализировать только отношения без "
 "статистики\n"
 
-#. +> 18 17 16 15 14
-#: vacuumdb.c:1352
+#. +> 19 18 17 16 15 14
+#: vacuumdb.c:367
 #, c-format
 msgid ""
 "      --no-index-cleanup          don't remove index entries that point to "
@@ -1765,14 +1745,14 @@ msgstr ""
 "      --no-index-cleanup          не удалять элементы индекса, указывающие\n"
 "                                  на мёртвые кортежи\n"
 
-#. +> 18 17 16
-#: vacuumdb.c:1353
+#. +> 19 18 17 16
+#: vacuumdb.c:368
 #, c-format
 msgid "      --no-process-main           skip the main relation\n"
 msgstr "      --no-process-main           пропускать основное отношение\n"
 
-#. +> 18 17 16 15 14
-#: vacuumdb.c:1354
+#. +> 19 18 17 16 15 14
+#: vacuumdb.c:369
 #, c-format
 msgid ""
 "      --no-process-toast          skip the TOAST table associated with the "
@@ -1781,8 +1761,8 @@ msgstr ""
 "      --no-process-toast          пропускать TOAST-таблицу, связанную\n"
 "                                  с очищаемой таблицей\n"
 
-#. +> 18 17 16 15 14
-#: vacuumdb.c:1355
+#. +> 19 18 17 16 15 14
+#: vacuumdb.c:370
 #, c-format
 msgid ""
 "      --no-truncate               don't truncate empty pages at the end of "
@@ -1791,8 +1771,8 @@ msgstr ""
 "      --no-truncate               не отсекать пустые страницы в конце "
 "таблицы\n"
 
-#. +> 18 17 16
-#: vacuumdb.c:1356
+#. +> 19 18 17 16
+#: vacuumdb.c:371
 #, c-format
 msgid ""
 "  -n, --schema=SCHEMA             vacuum tables in the specified schema(s) "
@@ -1801,8 +1781,8 @@ msgstr ""
 "  -n, --schema=СХЕМА              очищать таблицы только в указанной "
 "схеме(ах)\n"
 
-#. +> 18 17 16
-#: vacuumdb.c:1357
+#. +> 19 18 17 16
+#: vacuumdb.c:372
 #, c-format
 msgid ""
 "  -N, --exclude-schema=SCHEMA     do not vacuum tables in the specified "
@@ -1810,8 +1790,8 @@ msgid ""
 msgstr ""
 "  -N, --exclude-schema=СХЕМА      не очищать таблицы в указанной схеме(ах)\n"
 
-#. +> 18 17 16 15 14
-#: vacuumdb.c:1358
+#. +> 19 18 17 16 15 14
+#: vacuumdb.c:373
 #, c-format
 msgid ""
 "  -P, --parallel=PARALLEL_WORKERS use this many background workers for "
@@ -1821,14 +1801,14 @@ msgstr ""
 "                                  по возможности использовать для очистки\n"
 "                                  заданное число фоновых процессов\n"
 
-#. +> 18 17 16 15 14
-#: vacuumdb.c:1359
+#. +> 19 18 17 16 15 14
+#: vacuumdb.c:374
 #, c-format
 msgid "  -q, --quiet                     don't write any messages\n"
 msgstr "  -q, --quiet                     не выводить сообщения\n"
 
-#. +> 18 17 16 15 14
-#: vacuumdb.c:1360
+#. +> 19 18 17 16 15 14
+#: vacuumdb.c:375
 #, c-format
 msgid ""
 "      --skip-locked               skip relations that cannot be immediately "
@@ -1837,34 +1817,34 @@ msgstr ""
 "      --skip-locked               пропускать отношения, которые не удаётся\n"
 "                                  заблокировать немедленно\n"
 
-#. +> 18 17 16 15 14
-#: vacuumdb.c:1361
+#. +> 19 18 17 16 15 14
+#: vacuumdb.c:376
 #, c-format
 msgid "  -t, --table='TABLE[(COLUMNS)]'  vacuum specific table(s) only\n"
 msgstr ""
 "  -t, --table='ТАБЛ[(СТОЛБЦЫ)]'   очистить только указанную таблицу(ы)\n"
 
-#. +> 18 17 16 15 14
-#: vacuumdb.c:1362
+#. +> 19 18 17 16 15 14
+#: vacuumdb.c:377
 #, c-format
 msgid "  -v, --verbose                   write a lot of output\n"
 msgstr "  -v, --verbose                   выводить исчерпывающие сообщения\n"
 
-#. +> 18 17 16 15 14
-#: vacuumdb.c:1363
+#. +> 19 18 17 16 15 14
+#: vacuumdb.c:378
 #, c-format
 msgid ""
 "  -V, --version                   output version information, then exit\n"
 msgstr "  -V, --version                   показать версию и выйти\n"
 
-#. +> 18 17 16 15 14
-#: vacuumdb.c:1364
+#. +> 19 18 17 16 15 14
+#: vacuumdb.c:379
 #, c-format
 msgid "  -z, --analyze                   update optimizer statistics\n"
 msgstr "  -z, --analyze                   обновить статистику оптимизатора\n"
 
-#. +> 18 17 16 15 14
-#: vacuumdb.c:1365
+#. +> 19 18 17 16 15 14
+#: vacuumdb.c:380
 #, c-format
 msgid ""
 "  -Z, --analyze-only              only update optimizer statistics; no "
@@ -1873,8 +1853,8 @@ msgstr ""
 "  -Z, --analyze-only              только обновить статистику оптимизатора,\n"
 "                                  не очищать БД\n"
 
-#. +> 18 17 16 15 14
-#: vacuumdb.c:1366
+#. +> 19 18 17 16 15 14
+#: vacuumdb.c:381
 #, c-format
 msgid ""
 "      --analyze-in-stages         only update optimizer statistics, in "
@@ -1886,14 +1866,14 @@ msgstr ""
 "                                  (в несколько проходов для большей "
 "скорости), без очистки\n"
 
-#. +> 18 17 16 15 14
-#: vacuumdb.c:1368
+#. +> 19 18 17 16 15 14
+#: vacuumdb.c:383
 #, c-format
 msgid "  -?, --help                      show this help, then exit\n"
 msgstr "  -?, --help                      показать эту справку и выйти\n"
 
-#. +> 18 17 16 15 14
-#: vacuumdb.c:1376
+#. +> 19 18 17 16 15 14
+#: vacuumdb.c:391
 #, c-format
 msgid ""
 "\n"
@@ -1901,6 +1881,57 @@ msgid ""
 msgstr ""
 "\n"
 "Подробнее об очистке вы можете узнать в описании SQL-команды VACUUM.\n"
+
+#. +> 16
+#: vacuumdb.c:442
+#, c-format
+msgid "cannot exclude specific schema(s) in all databases"
+msgstr "нельзя исключить указанную схему(ы) во всех базах"
+
+#. +> 19 18 17 16 15 14
+#: vacuuming.c:198
+msgid "Generating minimal optimizer statistics (1 target)"
+msgstr "Вычисление минимальной статистики для оптимизатора (1 запись)"
+
+#. +> 19 18 17 16 15 14
+#: vacuuming.c:199
+msgid "Generating medium optimizer statistics (10 targets)"
+msgstr "Вычисление средней статистики для оптимизатора (10 записей)"
+
+#. +> 19 18 17 16 15 14
+#: vacuuming.c:200
+msgid "Generating default (full) optimizer statistics"
+msgstr "Вычисление стандартной (полной) статистики для оптимизатора"
+
+#. +> 19 18 17 16 15 14
+#: vacuuming.c:298
+#, c-format
+msgid "%s: processing database \"%s\": %s\n"
+msgstr "%s: обработка базы данных \"%s\": %s\n"
+
+#. +> 19 18 17 16 15 14
+#: vacuuming.c:301
+#, c-format
+msgid "%s: vacuuming database \"%s\"\n"
+msgstr "%s: очистка базы данных \"%s\"\n"
+
+#. +> 19 18 17 16 15 14
+#: vacuuming.c:1069
+#, c-format
+msgid "vacuuming of table \"%s\" in database \"%s\" failed: %s"
+msgstr "очистить таблицу \"%s\" в базе \"%s\" не удалось: %s"
+
+#. +> 19 18 17 16 15 14
+#: vacuuming.c:1074
+#, c-format
+msgid "vacuuming of database \"%s\" failed: %s"
+msgstr "очистить базу данных \"%s\" не удалось: %s"
+
+#. +> 19 18 17 16
+#: vacuuming.c:1090
+#, c-format
+msgid "out of memory"
+msgstr "нехватка памяти"
 
 #, c-format
 #~ msgid "could not connect to database %s: %s"
