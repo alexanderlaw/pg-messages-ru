@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: pg_resetxlog (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2026-09-25 22:48+0300\n"
-"PO-Revision-Date: 2026-08-05 07:50+0300\n"
+"PO-Revision-Date: 2026-10-10 21:14+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -252,28 +252,25 @@ msgstr "нераспознанный метод синхронизации: %s"
 #: ../../fe_utils/option_utils.c:139
 #, c-format
 msgid "options %s and %s cannot be used together"
-msgstr ""
+msgstr "параметры %s и %s исключают друг друга"
 
 #. +> 19
 #: ../../fe_utils/version.c:57
-#, fuzzy, c-format
-#| msgid "could not open file \"%s\": %m"
+#, c-format
 msgid "could not open version file \"%s\": %m"
-msgstr "не удалось открыть файл \"%s\": %m"
+msgstr "не удалось открыть файл с версией \"%s\": %m"
 
 #. +> 19
 #: ../../fe_utils/version.c:62
-#, fuzzy, c-format
-#| msgid "lock file \"%s\" exists"
+#, c-format
 msgid "file \"%s\" is too large"
-msgstr "файл блокировки \"%s\" существует"
+msgstr "файл \"%s\" слишком большой"
 
 #. +> 19
 #: ../../fe_utils/version.c:66
-#, fuzzy, c-format
-#| msgid "could not open file \"%s\": %m"
+#, c-format
 msgid "could not parse version file \"%s\""
-msgstr "не удалось открыть файл \"%s\": %m"
+msgstr "не удалось разобрать файл с версией \"%s\""
 
 #. translator: %s is a command line argument (-e, etc)
 #. +> 19 18 17 16 15 14
@@ -334,10 +331,9 @@ msgstr "OID (-o) не должен быть равен 0"
 
 #. +> 19
 #: pg_resetwal.c:291
-#, fuzzy, c-format
-#| msgid "multitransaction ID (-m) must not be 0"
+#, c-format
 msgid "next multitransaction ID (-m) must not be 0"
-msgstr "ID мультитранзакции (-m) не должен быть равен 0"
+msgstr "следующий ID мультитранзакции (-m) не должен быть равен 0"
 
 #. +> 14
 #: pg_resetwal.c:267
@@ -365,10 +361,9 @@ msgstr "аргументом --wal-segsize должно быть число"
 
 #. +> 19
 #: pg_resetwal.c:309
-#, fuzzy, c-format
-#| msgid "multitransaction offset (-O) must not be -1"
+#, c-format
 msgid "next multitransaction offset (-O) must not be 0"
-msgstr "смещение мультитранзакции (-O) не должно быть равно -1"
+msgstr "следующее смещение мультитранзакции (-O) не должно быть равно 0"
 
 #. +> 14
 #: pg_resetwal.c:292
@@ -533,7 +528,8 @@ msgid ""
 "File \"%s\" contains \"%s\", which is not compatible with this program's "
 "version \"%s\"."
 msgstr ""
-"Файл \"%s\" содержит строку \"%s\", а ожидается версия программы \"%s\"."
+"Файл \"%s\" содержит версию \"%s\", которая несовместима с версией программы "
+"\"%s\"."
 
 #. +> 19 18 17 16 15 14
 #: pg_resetwal.c:617
@@ -673,10 +669,9 @@ msgstr "NextMultiXactId послед. конт. точки:  %u\n"
 # skip-rule: capital-letter-first
 #. +> 19
 #: pg_resetwal.c:782
-#, fuzzy, c-format
-#| msgid "Latest checkpoint's NextMultiOffset:  %u\n"
+#, c-format
 msgid "Latest checkpoint's NextMultiOffset:  %<PRIu64>\n"
-msgstr "NextMultiOffset послед. конт. точки:  %u\n"
+msgstr "NextMultiOffset послед. конт. точки:  %<PRIu64>\n"
 
 # skip-rule: capital-letter-first
 #. +> 18 17 16 15 14
@@ -755,10 +750,9 @@ msgstr "Блоков в макс. сегменте отношений:    %u\n"
 
 #. +> 19
 #: pg_resetwal.c:805
-#, fuzzy, c-format
-#| msgid "Bytes per WAL segment:                %u\n"
+#, c-format
 msgid "Pages per SLRU segment:               %u\n"
-msgstr "Байт в сегменте WAL:                  %u\n"
+msgstr "Страниц в сегменте SLRU:              %u\n"
 
 #. +> 19 18 17 16 15 14
 #: pg_resetwal.c:807
@@ -885,10 +879,9 @@ msgstr "БД с oldestMultiXid:                  %u\n"
 
 #. +> 19
 #: pg_resetwal.c:858
-#, fuzzy, c-format
-#| msgid "NextMultiOffset:                      %u\n"
+#, c-format
 msgid "NextMultiOffset:                      %<PRIu64>\n"
-msgstr "NextMultiOffset:                      %u\n"
+msgstr "NextMultiOffset:                      %<PRIu64>\n"
 
 #. +> 18 17 16 15 14
 #: pg_resetwal.c:841

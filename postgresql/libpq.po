@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: libpq (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2026-09-25 22:48+0300\n"
-"PO-Revision-Date: 2026-08-05 07:41+0300\n"
+"PO-Revision-Date: 2026-10-11 18:02+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -24,17 +24,16 @@ msgstr ""
 
 #. +> 19
 #: ../libpq-oauth/oauth-curl.c:309
-#, fuzzy, c-format
-#| msgid "libcurl easy handle removal failed: %s"
+#, c-format
 msgid "WARNING: libcurl easy handle removal failed: %s\n"
-msgstr "ошибка при удалении простого указателя libcurl: %s"
+msgstr "ПРЕДУПРЕЖДЕНИЕ: ошибка при удалении простого указателя libcurl: %s\n"
 
 #. +> 19
 #: ../libpq-oauth/oauth-curl.c:329
-#, fuzzy, c-format
-#| msgid "libcurl multi handle cleanup failed: %s"
+#, c-format
 msgid "WARNING: libcurl multi handle cleanup failed: %s\n"
-msgstr "ошибка при очистке множественного указателя libcurl: %s"
+msgstr ""
+"ПРЕДУПРЕЖДЕНИЕ: ошибка при очистке множественного указателя libcurl: %s\n"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:329
@@ -75,10 +74,9 @@ msgstr "нехватка памяти"
 
 #. +> 19
 #: ../libpq-oauth/oauth-curl.c:439 ../libpq-oauth/oauth-curl.c:450
-#, fuzzy, c-format
-#| msgid "failed to set %s on OAuth connection: %s"
+#, c-format
 msgid "could not set libcurl option \"%s\" on OAuth connection: %s"
-msgstr "не удалось задать %s для подключения OAuth: %s"
+msgstr "не удалось задать параметр libcurl \"%s\" для подключения OAuth: %s"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:395 ../libpq-oauth/oauth-curl.c:406
@@ -88,10 +86,9 @@ msgstr "не удалось задать %s для подключения OAuth:
 
 #. +> 19
 #: ../libpq-oauth/oauth-curl.c:461
-#, fuzzy, c-format
-#| msgid "failed to get %s from OAuth response: %s"
+#, c-format
 msgid "could not get libcurl info \"%s\" from OAuth response: %s"
-msgstr "не удалось получить %s из ответа OAuth: %s"
+msgstr "не удалось получить данные libcurl \"%s\" из ответа OAuth: %s"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:417
@@ -158,10 +155,9 @@ msgstr "неожиданный тип содержимого: \"%s\""
 
 #. +> 19
 #: ../libpq-oauth/oauth-curl.c:886
-#, fuzzy, c-format
-#| msgid "response contains embedded NULLs"
+#, c-format
 msgid "response contains embedded null"
-msgstr "ответ содержит в себе NUL"
+msgstr "ответ содержит нулевой символ"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:842
@@ -183,8 +179,6 @@ msgstr "поле \"%s\" отсутствует"
 
 #. +> 19
 #: ../libpq-oauth/oauth-curl.c:1142
-#, fuzzy
-#| msgid "failed to parse token error response"
 msgid "could not parse token error response"
 msgstr "не удалось разобрать ответ с ошибкой токена"
 
@@ -210,10 +204,9 @@ msgstr ""
 
 #. +> 19
 #: ../libpq-oauth/oauth-curl.c:1604
-#, fuzzy, c-format
-#| msgid "checking timer expiration: %m"
+#, c-format
 msgid "could not check timer expiration: %m"
-msgstr "проверка состояния таймера: %m"
+msgstr "не удалось проверить истечение таймера: %m"
 
 #. +> 18
 #: ../libpq-oauth/oauth-curl.c:1560
@@ -223,8 +216,7 @@ msgstr "проверка состояния таймера: %m"
 
 #. +> 19
 #: ../libpq-oauth/oauth-curl.c:1766
-#, fuzzy, c-format
-#| msgid "failed to create libcurl multi handle"
+#, c-format
 msgid "could not create libcurl multi handle"
 msgstr "не удалось создать множественный указатель libcurl"
 
@@ -236,8 +228,7 @@ msgstr "не удалось создать множественный указа
 
 #. +> 19
 #: ../libpq-oauth/oauth-curl.c:1786
-#, fuzzy, c-format
-#| msgid "failed to create libcurl handle"
+#, c-format
 msgid "could not create libcurl handle"
 msgstr "не удалось создать указатель libcurl"
 
@@ -255,8 +246,7 @@ msgstr "ответ слишком большой"
 
 #. +> 19
 #: ../libpq-oauth/oauth-curl.c:1928
-#, fuzzy, c-format
-#| msgid "failed to queue HTTP request: %s"
+#, c-format
 msgid "could not queue HTTP request: %s"
 msgstr "добавить HTTP-запрос в очередь не удалось: %s"
 
@@ -293,8 +283,6 @@ msgstr "неожиданный код ответа %ld"
 
 #. +> 19
 #: ../libpq-oauth/oauth-curl.c:2195
-#, fuzzy
-#| msgid "failed to parse OpenID discovery document"
 msgid "could not parse OpenID discovery document"
 msgstr "не удалось разобрать документ обнаружения OpenID"
 
@@ -305,8 +293,7 @@ msgstr "не удалось разобрать документ обнаруже
 
 #. +> 19
 #: ../libpq-oauth/oauth-curl.c:2260
-#, fuzzy, c-format
-#| msgid "the issuer identifier (%s) does not match oauth_issuer (%s)"
+#, c-format
 msgid "issuer identifier (%s) does not match oauth_issuer (%s)"
 msgstr "идентификатор издателя (%s) не совпадает с oauth_issuer (%s)"
 
@@ -337,8 +324,6 @@ msgstr "конечная точка токенов \"%s\" должна испо�
 
 #. +> 19
 #: ../libpq-oauth/oauth-curl.c:2462
-#, fuzzy
-#| msgid "failed to parse device authorization"
 msgid "could not parse device authorization"
 msgstr "не удалось разобрать сообщение авторизации устройства"
 
@@ -350,8 +335,6 @@ msgstr "не удалось разобрать сообщение авториз
 # well-spelled: токеном
 #. +> 19
 #: ../libpq-oauth/oauth-curl.c:2549
-#, fuzzy
-#| msgid "failed to parse access token response"
 msgid "could not parse access token response"
 msgstr "не удалось разобрать ответ с токеном доступа"
 
@@ -409,8 +392,6 @@ msgstr ""
 
 #. +> 19
 #: ../libpq-oauth/oauth-curl.c:2900
-#, fuzzy
-#| msgid "failed to fetch OpenID discovery document"
 msgid "could not fetch OpenID discovery document"
 msgstr "не удалось получить документ обнаружения OpenID"
 
@@ -426,8 +407,6 @@ msgstr "не удалось запустить авторизацию устро
 
 #. +> 19
 #: ../libpq-oauth/oauth-curl.c:2918
-#, fuzzy
-#| msgid "failed to obtain device authorization"
 msgid "could not obtain device authorization"
 msgstr "не удалось получить авторизацию устройства"
 
@@ -438,8 +417,6 @@ msgstr "не удалось получить авторизацию устрой
 
 #. +> 19
 #: ../libpq-oauth/oauth-curl.c:2929 ../libpq-oauth/oauth-curl.c:2997
-#, fuzzy
-#| msgid "failed to obtain access token"
 msgid "could not obtain access token"
 msgstr "не удалось получить токен доступа"
 
@@ -572,7 +549,7 @@ msgstr "не удалось получить исключительную бло
 #. +> 19
 #: fe-auth-oauth.c:932
 msgid "could not find entry point for libpq-oauth"
-msgstr ""
+msgstr "не удалось найти точку входа для libpq-oauth"
 
 #. +> 19 18
 #: fe-auth-oauth.c:1097
@@ -1648,10 +1625,9 @@ msgstr "не удалось разобрать сетевой адрес \"%s\":
 
 #. +> 19
 #: fe-connect.c:3101
-#, fuzzy, c-format
-#| msgid "Unix-domain socket path \"%s\" is too long (maximum %d bytes)"
+#, c-format
 msgid "Unix-domain socket path \"%s\" is too long (maximum %zu bytes)"
-msgstr "длина пути Unix-сокета \"%s\" превышает предел (%d байт)"
+msgstr "длина пути Unix-сокета \"%s\" превышает предел (%zu байт)"
 
 #. +> 18 17 16
 #: fe-connect.c:3083
@@ -2171,10 +2147,9 @@ msgstr "не удалось создать структуру LDAP\n"
 
 #. +> 19
 #: fe-connect.c:5647
-#, fuzzy, c-format
-#| msgid "could not set minimum SSL protocol version: %s"
+#, c-format
 msgid "could not set LDAP protocol version: %s"
-msgstr "не удалось задать минимальную версию протокола SSL: %s"
+msgstr "не удалось задать версию протокола LDAP: %s"
 
 #. +> 19 18 17 16
 #: fe-connect.c:5724
@@ -2322,16 +2297,13 @@ msgstr "синтаксическая ошибка в файле определе
 
 #. +> 19
 #: fe-connect.c:6156
-#, fuzzy, c-format
-#| msgid ""
-#| "nested service specifications not supported in service file \"%s\", line "
-#| "%d"
+#, c-format
 msgid ""
 "nested \"service\" specifications not supported in service file \"%s\", line "
 "%d"
 msgstr ""
-"рекурсивные определения служб не поддерживаются (файл определения служб "
-"\"%s\", строка %d)"
+"рекурсивные определения \"service\" не поддерживаются (файл определения "
+"служб \"%s\", строка %d)"
 
 #. +> 18 17 16
 #: fe-connect.c:6110
@@ -2353,16 +2325,13 @@ msgstr ""
 
 #. +> 19
 #: fe-connect.c:6166
-#, fuzzy, c-format
-#| msgid ""
-#| "nested service specifications not supported in service file \"%s\", line "
-#| "%d"
+#, c-format
 msgid ""
 "nested \"servicefile\" specifications not supported in service file \"%s\", "
 "line %d"
 msgstr ""
-"рекурсивные определения служб не поддерживаются (файл определения служб "
-"\"%s\", строка %d)"
+"рекурсивные определения \"servicefile\" не поддерживаются (файл определения "
+"служб \"%s\", строка %d)"
 
 #. +> 19 18 17 16
 #: fe-connect.c:6932
@@ -2995,10 +2964,9 @@ msgstr "запрос инициализации функций для больш
 
 #. +> 19
 #: fe-misc.c:241
-#, fuzzy, c-format
-#| msgid "integer of size %lu not supported by pqGetInt"
+#, c-format
 msgid "integer of size %zu not supported by pqGetInt"
-msgstr "функция pqGetInt не поддерживает integer размером %lu байт"
+msgstr "функция pqGetInt не поддерживает integer размером %zu байт"
 
 #. +> 18 17 16 15 14
 #: fe-misc.c:241
@@ -3008,10 +2976,9 @@ msgstr "функция pqGetInt не поддерживает integer разме
 
 #. +> 19
 #: fe-misc.c:274
-#, fuzzy, c-format
-#| msgid "integer of size %lu not supported by pqPutInt"
+#, c-format
 msgid "integer of size %zu not supported by pqPutInt"
-msgstr "функция pqPutInt не поддерживает integer размером %lu байт"
+msgstr "функция pqPutInt не поддерживает integer размером %zu байт"
 
 #. +> 18 17 16 15 14
 #: fe-misc.c:274
@@ -3296,16 +3263,13 @@ msgstr[2] "сервер не поддерживает эти расширени�
 
 #. +> 19
 #: fe-protocol3.c:1464
-#, fuzzy, c-format
-#| msgid ""
-#| "received invalid protocol negotiation message: server requested downgrade "
-#| "to pre-3.0 protocol version"
+#, c-format
 msgid ""
 "received invalid protocol negotiation message: server requested \"grease\" "
 "protocol version 3.9999"
 msgstr ""
 "получено некорректное сообщение согласования протокола: сервер запросил "
-"понижение на версию протокола, предшествующую 3.0"
+"«грязную» версию протокола 3.9999"
 
 #. +> 19 18
 #: fe-protocol3.c:1470

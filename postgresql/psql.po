@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: psql (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2026-09-25 22:48+0300\n"
-"PO-Revision-Date: 2026-08-05 07:52+0300\n"
+"PO-Revision-Date: 2026-10-11 18:01+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -1118,17 +1118,15 @@ msgstr "Разделитель полей для CSV: \"%s\".\n"
 
 #. +> 19
 #: command.c:5516
-#, fuzzy, c-format
-#| msgid "Null display is \"%s\".\n"
+#, c-format
 msgid "Boolean false display is \"%s\".\n"
-msgstr "Null выводится как: \"%s\".\n"
+msgstr "Логическое значение false выводится как: \"%s\".\n"
 
 #. +> 19
 #: command.c:5523
-#, fuzzy, c-format
-#| msgid "Null display is \"%s\".\n"
+#, c-format
 msgid "Boolean true display is \"%s\".\n"
-msgstr "Null выводится как: \"%s\".\n"
+msgstr "Логическое значение true выводится как: \"%s\".\n"
 
 #. +> 19 18 17 16 15 14
 #: command.c:5531 command.c:5539
@@ -1321,19 +1319,14 @@ msgstr "сбой при ожидании сигналов: %m"
 
 #. +> 19
 #: command.c:6181 command.c:6188 common.c:671 common.c:678
-#, fuzzy, c-format
-#| msgid ""
-#| "/******** QUERY *********/\n"
-#| "%s\n"
-#| "/************************/\n"
-#| "\n"
+#, c-format
 msgid ""
 "/**** INTERNAL QUERY ****/\n"
 "%s\n"
 "/************************/\n"
 "\n"
 msgstr ""
-"/******** ЗАПРОС ********/\n"
+"/*** ВНУТРЕННИЙ ЗАПРОС **/\n"
 "%s\n"
 "/************************/\n"
 "\n"
@@ -1354,29 +1347,23 @@ msgstr ""
 
 #. +> 19
 #: command.c:6225
-#, fuzzy
-#| msgid "List of functions"
 msgid "Get function's OID"
-msgstr "Список функций"
+msgstr "Получение OID функции"
 
 #. +> 19
 #: command.c:6239
 msgid "Get view's OID"
-msgstr ""
+msgstr "Получение OID представления"
 
 #. +> 19
 #: command.c:6281
-#, fuzzy
-#| msgid "column_definition"
 msgid "Get function's definition"
-msgstr "определение_столбца"
+msgstr "Получение определения функции"
 
 #. +> 19
 #: command.c:6301
-#, fuzzy
-#| msgid "change the definition of a table"
 msgid "Get view's definition and details"
-msgstr "изменить определение таблицы"
+msgstr "Получение определения и метаданных представления"
 
 #. +> 19 18 17 16 15 14
 #: command.c:6371
@@ -1630,7 +1617,7 @@ msgstr "COPY в конвейерном режиме не поддерживае�
 #: common.c:2012
 #, c-format
 msgid "unexpected COPY_IN result, aborting connection"
-msgstr ""
+msgstr "неожиданный результат COPY_IN, соединение прерывается"
 
 #. +> 19 18 17 16 15 14
 #: copy.c:98
@@ -1772,7 +1759,7 @@ msgstr "\\crosstabview: имя столбца не найдено: \"%s\""
 #. +> 19
 #: describe.c:86
 msgid "Get matching aggregates"
-msgstr ""
+msgstr "Получение подходящих агрегатных функций"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:95 describe.c:347 describe.c:655 describe.c:833 describe.c:1087
@@ -1830,10 +1817,8 @@ msgstr "Сервер (версия %s) не поддерживает метод�
 
 #. +> 19
 #: describe.c:168
-#, fuzzy
-#| msgid "remove an access method"
 msgid "Get matching access methods"
-msgstr "удалить метод доступа"
+msgstr "Получение подходящих методов доступа"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:176
@@ -1857,10 +1842,8 @@ msgstr "Список методов доступа"
 
 #. +> 19
 #: describe.c:232
-#, fuzzy
-#| msgid "List of tablespaces"
 msgid "Get matching tablespaces"
-msgstr "Список табличных пространств"
+msgstr "Получение подходящих табличных пространств"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:238 describe.c:420 describe.c:680 describe.c:967 describe.c:1244
@@ -1906,10 +1889,8 @@ msgstr "\\df не поддерживает параметр \"%c\" с серве
 
 #. +> 19
 #: describe.c:343
-#, fuzzy
-#| msgid "List of functions"
 msgid "Get matching functions"
-msgstr "Список функций"
+msgstr "Получение подходящих функций"
 
 # well-spelled: агр
 #. translator: "agg" is short for "aggregate"
@@ -2030,10 +2011,8 @@ msgstr "Список функций"
 
 #. +> 19
 #: describe.c:651
-#, fuzzy
-#| msgid "Get token types"
 msgid "Get matching types"
-msgstr "Получение типов фрагментов"
+msgstr "Получение подходящих типов"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:679
@@ -2047,10 +2026,8 @@ msgstr "Список типов данных"
 
 #. +> 19
 #: describe.c:826
-#, fuzzy
-#| msgid "remove an operator"
 msgid "Get matching operators"
-msgstr "удалить оператор"
+msgstr "Получение подходящих операторов"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:835
@@ -2080,10 +2057,8 @@ msgstr "Список операторов"
 
 #. +> 19
 #: describe.c:960
-#, fuzzy
-#| msgid "change a database"
 msgid "Get matching databases"
-msgstr "изменить атрибуты базы данных"
+msgstr "Получение подходящих баз данных"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:968
@@ -2134,7 +2109,7 @@ msgstr "Список баз данных"
 #. +> 19
 #: describe.c:1074
 msgid "Get access privileges of matching relations"
-msgstr ""
+msgstr "Получение прав доступа к подходящим отношениям"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:1089 describe.c:1247 describe.c:4205
@@ -2184,7 +2159,7 @@ msgstr "Права доступа"
 #. +> 19
 #: describe.c:1236
 msgid "Get matching default ACLs"
-msgstr ""
+msgstr "Получение подходящих ACL по умолчанию"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:1251
@@ -2214,7 +2189,7 @@ msgstr "Права доступа по умолчанию"
 #. +> 19
 #: describe.c:1318
 msgid "Get matching object comments"
-msgstr ""
+msgstr "Получение комментариев к подходящим объектам"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:1324
@@ -2254,7 +2229,7 @@ msgstr "Описание объекта"
 #. +> 19
 #: describe.c:1512
 msgid "Get matching relations to describe"
-msgstr ""
+msgstr "Получение подходящих отношений для описания"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:1545
@@ -2271,7 +2246,7 @@ msgstr "Отношения не найдены."
 #. +> 19
 #: describe.c:1650
 msgid "Get general information about one relation"
-msgstr ""
+msgstr "Получение общей информации об одном отношении"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:1746
@@ -2281,10 +2256,8 @@ msgstr "Отношение с OID %s не найдено."
 
 #. +> 19
 #: describe.c:1783
-#, fuzzy
-#| msgid "sequence_option"
 msgid "Get sequence information"
-msgstr "параметр_последовательности"
+msgstr "Получение информации о последовательности"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:1795 describe.c:1819
@@ -2319,7 +2292,7 @@ msgstr "Кешируется"
 #. +> 19
 #: describe.c:1838
 msgid "Get the column that owns this sequence"
-msgstr ""
+msgstr "Получение столбца, которому принадлежит эта последовательность"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:1869
@@ -2336,14 +2309,12 @@ msgstr "Последовательность для столбца иденти�
 #. +> 19
 #: describe.c:1884
 msgid "Get publications containing this sequence"
-msgstr ""
+msgstr "Получение публикаций, в которые включена эта последовательность"
 
 #. +> 19
 #: describe.c:1898 describe.c:3192 describe.c:5454
-#, fuzzy
-#| msgid "define a new publication"
 msgid "Included in publications:"
-msgstr "создать публикацию"
+msgstr "В составе публикаций:"
 
 #. +> 19 18 17 16 15
 #: describe.c:1916
@@ -2366,7 +2337,7 @@ msgstr "Специальное отношение \"%s.%s\""
 #. +> 19
 #: describe.c:1955
 msgid "Get per-column information for one relation"
-msgstr ""
+msgstr "Получение информации о столбцах для одного отношения"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:2065
@@ -2502,7 +2473,7 @@ msgstr "Цель для статистики"
 #. +> 19
 #: describe.c:2259
 msgid "Get partitioning information for this partition"
-msgstr ""
+msgstr "Получение сведений о разбиении для этой секции"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:2287
@@ -2524,7 +2495,7 @@ msgstr "Ограничение секции: %s"
 #. +> 19
 #: describe.c:2316
 msgid "Get partitioning information for this table"
-msgstr ""
+msgstr "Получение сведений о разбиении для этой таблицы"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:2328
@@ -2535,7 +2506,7 @@ msgstr "Ключ разбиения: %s"
 #. +> 19
 #: describe.c:2340
 msgid "Get the table that owns this TOAST table"
-msgstr ""
+msgstr "Получение таблицы, к которой относится эта TOAST-таблица"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:2356
@@ -2546,7 +2517,7 @@ msgstr "Принадлежит таблице: \"%s.%s\""
 #. +> 19
 #: describe.c:2369
 msgid "Get index details"
-msgstr ""
+msgstr "Получение сведений об индексе"
 
 #. +> 18 17 16 15
 #: describe.c:2373
@@ -2560,10 +2531,8 @@ msgstr "первичный ключ, "
 
 #. +> 19
 #: describe.c:2434
-#, fuzzy
-#| msgid " nulls not distinct"
 msgid "unique nulls not distinct, "
-msgstr " null не различаются"
+msgstr "значения NULL не различаются, "
 
 #. +> 18 17 16 15
 #: describe.c:2372
@@ -2583,10 +2552,9 @@ msgstr "уникальный"
 #. translator: the first %s is an index AM name (eg. btree)
 #. +> 19
 #: describe.c:2443
-#, fuzzy, c-format
-#| msgid "for table \"%s.%s\""
+#, c-format
 msgid "%s, for table \"%s.%s\""
-msgstr "для таблицы \"%s.%s\""
+msgstr "%s, для таблицы \"%s.%s\""
 
 #. +> 18 17 16 15 14
 #: describe.c:2380
@@ -2627,10 +2595,8 @@ msgstr ", репликационный"
 
 #. +> 19
 #: describe.c:2491
-#, fuzzy
-#| msgid "define a new foreign table"
 msgid "Get indexes for this table"
-msgstr "создать стороннюю таблицу"
+msgstr "Получение индексов для этой таблицы"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:2524
@@ -2640,7 +2606,7 @@ msgstr "Индексы:"
 #. +> 19
 #: describe.c:2597
 msgid "Get check constraints for this table"
-msgstr ""
+msgstr "Получение ограничений-проверок для этой таблицы"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:2614
@@ -2650,10 +2616,8 @@ msgstr "Ограничения-проверки:"
 # TO REWVIEW
 #. +> 19
 #: describe.c:2630
-#, fuzzy
-#| msgid "Foreign-key constraints:"
 msgid "Get foreign key constraints for this table"
-msgstr "Ограничения внешнего ключа:"
+msgstr "Получение ограничений внешнего ключа для этой таблицы"
 
 # TO REWVIEW
 #. +> 19 18 17 16 15 14
@@ -2664,7 +2628,7 @@ msgstr "Ограничения внешнего ключа:"
 #. +> 19
 #: describe.c:2702
 msgid "Get foreign keys referencing this table"
-msgstr ""
+msgstr "Получение внешних ключей, ссылающихся на эту таблицу"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:2738
@@ -2673,10 +2637,8 @@ msgstr "Ссылки извне:"
 
 #. +> 19
 #: describe.c:2755
-#, fuzzy
-#| msgid "define a new row-level security policy for a table"
 msgid "Get row-level policies for this table"
-msgstr "создать новую политику защиты на уровне строк для таблицы"
+msgstr "Получение политик защиты на уровне строк для этой таблицы"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:2789
@@ -2705,10 +2667,8 @@ msgstr "Политики (защита строк выключена):"
 
 #. +> 19
 #: describe.c:2839 describe.c:2939
-#, fuzzy
-#| msgid "define extended statistics"
 msgid "Get extended statistics for this table"
-msgstr "создать расширенную статистику"
+msgstr "Получение расширенной статистики для этой таблицы"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:2863 describe.c:2970
@@ -2718,7 +2678,7 @@ msgstr "Объекты статистики:"
 #. +> 19
 #: describe.c:3020
 msgid "Get rules for this relation"
-msgstr ""
+msgstr "Получение правил для этого отношения"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:3074 describe.c:3340
@@ -2743,26 +2703,22 @@ msgstr "Правила, срабатывающие только в реплик�
 #. +> 19
 #: describe.c:3105
 msgid "Get publications that publish this table"
-msgstr ""
+msgstr "Получение публикаций, публикующих эту таблицу"
 
 #. +> 19
 #: describe.c:3219
 msgid "Get publications that exclude this table"
-msgstr ""
+msgstr "Получение публикаций, из которых исключена эта таблица"
 
 #. +> 19
 #: describe.c:3235
-#, fuzzy
-#| msgid "List of publications"
 msgid "Excluded from publications:"
-msgstr "Список публикаций"
+msgstr "Исключается из публикаций:"
 
 #. +> 19
 #: describe.c:3253
-#, fuzzy
-#| msgid "Not-null constraints:"
 msgid "Get not-null constraints for this table"
-msgstr "Ограничения NOT NULL:"
+msgstr "Получение ограничений NOT NULL для этой таблицы"
 
 #. +> 19 18
 #: describe.c:3273
@@ -2781,10 +2737,8 @@ msgstr " (наследуется)"
 
 #. +> 19
 #: describe.c:3303
-#, fuzzy
-#| msgid "View definition:"
 msgid "Get view's definition"
-msgstr "Определение представления:"
+msgstr "Получение определения представления"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:3322
@@ -2794,12 +2748,12 @@ msgstr "Определение представления:"
 #. +> 19
 #: describe.c:3328
 msgid "Get rules for this view"
-msgstr ""
+msgstr "Получение правил для этого представления"
 
 #. +> 19
 #: describe.c:3367
 msgid "Get triggers for this relation"
-msgstr ""
+msgstr "Получение триггеров для этого отношения"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:3488
@@ -2833,10 +2787,8 @@ msgstr "Триггеры, срабатывающие только в репли�
 
 #. +> 19
 #: describe.c:3552
-#, fuzzy
-#| msgid "List of foreign servers"
 msgid "Get foreign server for this table"
-msgstr "Список сторонних серверов"
+msgstr "Получение стороннего сервера для этой таблицы"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:3573
@@ -2853,10 +2805,8 @@ msgstr "Параметр ОСД: (%s)"
 
 #. +> 19
 #: describe.c:3589
-#, fuzzy
-#| msgid "define a new foreign table"
 msgid "Get inheritance parent tables"
-msgstr "создать стороннюю таблицу"
+msgstr "Получение родительских таблиц в иерархии наследования"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:3604
@@ -2865,10 +2815,8 @@ msgstr "Наследует"
 
 #. +> 19
 #: describe.c:3624
-#, fuzzy
-#| msgid "Child tables"
 msgid "Get child tables"
-msgstr "Дочерние таблицы"
+msgstr "Получение дочерних таблиц"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:3667
@@ -2923,7 +2871,7 @@ msgstr "Метод доступа: %s"
 #. +> 19
 #: describe.c:3819
 msgid "Get tablespace information for this relation"
-msgstr ""
+msgstr "Получение сведений о табличном пространстве для этого отношения"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:3835
@@ -2942,7 +2890,7 @@ msgstr ", табл. пространство \"%s\""
 #. +> 19
 #: describe.c:3881
 msgid "Get matching roles"
-msgstr ""
+msgstr "Получение подходящих ролей"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:3921
@@ -3016,7 +2964,7 @@ msgstr "Пароль действует до "
 #. +> 19
 #: describe.c:4021
 msgid "Get per-database and per-role settings"
-msgstr ""
+msgstr "Получение параметров, установленных на уровне базы данных и роли"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:4027
@@ -3053,10 +3001,8 @@ msgstr "Список параметров"
 
 #. +> 19
 #: describe.c:4089
-#, fuzzy
-#| msgid "List of role grants"
 msgid "Get matching role grants"
-msgstr "Список назначений ролей"
+msgstr "Получение назначений прав для подходящих ролей"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:4094
@@ -3081,10 +3027,8 @@ msgstr "Список назначений ролей"
 
 #. +> 19
 #: describe.c:4187
-#, fuzzy
-#| msgid "List of partitioned relations"
 msgid "Get matching relations"
-msgstr "Список секционированных отношений"
+msgstr "Получение подходящих отношений"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:4208
@@ -3272,10 +3216,8 @@ msgstr "Список секционированных отношений"
 
 #. +> 19
 #: describe.c:4462
-#, fuzzy
-#| msgid "List of partitioned relations"
 msgid "Get matching partitioned relations"
-msgstr "Список секционированных отношений"
+msgstr "Получение подходящих секционированных отношений"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:4488
@@ -3294,10 +3236,8 @@ msgstr "Общий размер"
 
 #. +> 19
 #: describe.c:4638
-#, fuzzy
-#| msgid "remove a procedural language"
 msgid "Get matching procedural languages"
-msgstr "удалить процедурный язык"
+msgstr "Получение подходящих процедурных языков"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:4645
@@ -3332,7 +3272,7 @@ msgstr "Список языков"
 #. +> 19
 #: describe.c:4715
 msgid "Get matching domains"
-msgstr ""
+msgstr "Получение подходящих доменов"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:4733
@@ -3346,10 +3286,8 @@ msgstr "Список доменов"
 
 #. +> 19
 #: describe.c:4801
-#, fuzzy
-#| msgid "List of conversions"
 msgid "Get matching conversions"
-msgstr "Список преобразований"
+msgstr "Получение подходящих преобразований"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:4811
@@ -3373,10 +3311,8 @@ msgstr "Список преобразований"
 
 #. +> 19
 #: describe.c:4882
-#, fuzzy
-#| msgid "List of configuration parameters"
 msgid "Get matching configuration parameters"
-msgstr "Список параметров конфигурации"
+msgstr "Получение подходящих параметров конфигурации"
 
 #. +> 19 18 17 16 15
 #: describe.c:4894
@@ -3419,10 +3355,8 @@ msgstr "Сервер (версия %s) не поддерживает сторо�
 
 #. +> 19
 #: describe.c:4963
-#, fuzzy
-#| msgid "remove an event trigger"
 msgid "Get matching event triggers"
-msgstr "удалить событийный триггер"
+msgstr "Получение подходящих событийных триггеров"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:4976
@@ -3484,10 +3418,8 @@ msgstr "Сервер (версия %s) не поддерживает полно�
 
 #. +> 19
 #: describe.c:5042
-#, fuzzy
-#| msgid "define extended statistics"
 msgid "Get matching extended statistics"
-msgstr "создать расширенную статистику"
+msgstr "Получение подходящих объектов расширенной статистики"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:5073
@@ -3512,7 +3444,7 @@ msgstr "Список расширенных статистик"
 #. +> 19
 #: describe.c:5136
 msgid "Get matching casts"
-msgstr ""
+msgstr "Получение подходящих приведений"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:5140
@@ -3546,10 +3478,8 @@ msgstr "Список приведений типов"
 
 #. +> 19
 #: describe.c:5261
-#, fuzzy
-#| msgid "existing_collation"
 msgid "Get matching collations"
-msgstr "существующее_правило_сортировки"
+msgstr "Получение подходящих правил сортировки"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:5277 describe.c:5281
@@ -3569,7 +3499,7 @@ msgstr "Список правил сортировки"
 #. +> 19
 #: describe.c:5386
 msgid "Get matching schemas"
-msgstr ""
+msgstr "Получение подходящих схем"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:5422
@@ -3579,14 +3509,12 @@ msgstr "Список схем"
 #. +> 19
 #: describe.c:5431
 msgid "Get publications that publish this schema"
-msgstr ""
+msgstr "Получение публикаций, в которых публикуется эта схема"
 
 #. +> 19
 #: describe.c:5512 describe.c:5562
-#, fuzzy
-#| msgid "List of text search parsers"
 msgid "Get matching text search parsers"
-msgstr "Список анализаторов текстового поиска"
+msgstr "Получение подходящих анализаторов текстового поиска"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:5541
@@ -3607,10 +3535,8 @@ msgstr "Никакие анализаторы текстового поиска 
 
 #. +> 19
 #: describe.c:5640
-#, fuzzy
-#| msgid "List of text search parsers"
 msgid "Get text search parser details"
-msgstr "Список анализаторов текстового поиска"
+msgstr "Получение сведений об анализаторе текстового поиска"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:5671
@@ -3656,10 +3582,8 @@ msgstr "Анализатор текстового поиска \"%s\""
 
 #. +> 19
 #: describe.c:5710
-#, fuzzy
-#| msgid "List of text search parsers"
 msgid "Get text search parser token types"
-msgstr "Список анализаторов текстового поиска"
+msgstr "Получение типов фрагментов для анализатора текстового поиска"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:5716
@@ -3680,10 +3604,8 @@ msgstr "Типы фрагментов для анализатора \"%s\""
 
 #. +> 19
 #: describe.c:5761
-#, fuzzy
-#| msgid "List of text search dictionaries"
 msgid "Get matching text search dictionaries"
-msgstr "Список словарей текстового поиска"
+msgstr "Получение подходящих словарей текстового поиска"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:5777
@@ -3702,10 +3624,8 @@ msgstr "Список словарей текстового поиска"
 
 #. +> 19
 #: describe.c:5827
-#, fuzzy
-#| msgid "List of text search templates"
 msgid "Get matching text search templates"
-msgstr "Список шаблонов текстового поиска"
+msgstr "Получение подходящих шаблонов текстового поиска"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:5838
@@ -3724,10 +3644,8 @@ msgstr "Список шаблонов текстового поиска"
 
 #. +> 19
 #: describe.c:5896 describe.c:5943
-#, fuzzy
-#| msgid "List of text search configurations"
 msgid "Get matching text search configurations"
-msgstr "Список конфигураций текстового поиска"
+msgstr "Получение подходящих конфигураций текстового поиска"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:5925
@@ -3748,10 +3666,8 @@ msgstr "Никакие конфигурации текстового поиск�
 
 #. +> 19
 #: describe.c:6030
-#, fuzzy
-#| msgid "List of text search configurations"
 msgid "Get text search configuration details"
-msgstr "Список конфигураций текстового поиска"
+msgstr "Получение сведений о конфигурации текстового поиска"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:6047
@@ -3797,10 +3713,8 @@ msgstr ""
 
 #. +> 19
 #: describe.c:6100
-#, fuzzy
-#| msgid "List of foreign-data wrappers"
 msgid "Get matching foreign-data wrappers"
-msgstr "Список обёрток сторонних данных"
+msgstr "Получение подходящих обёрток сторонних данных"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:6150
@@ -3809,10 +3723,8 @@ msgstr "Список обёрток сторонних данных"
 
 #. +> 19
 #: describe.c:6173
-#, fuzzy
-#| msgid "List of foreign servers"
 msgid "Get matching foreign servers"
-msgstr "Список сторонних серверов"
+msgstr "Получение подходящих сторонних серверов"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:6180
@@ -3831,10 +3743,8 @@ msgstr "Список сторонних серверов"
 
 #. +> 19
 #: describe.c:6251
-#, fuzzy
-#| msgid "List of user mappings"
 msgid "Get matching user mappings"
-msgstr "Список сопоставлений пользователей"
+msgstr "Получение подходящих сопоставлений пользователей"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:6255 describe.c:6315 describe.c:7083
@@ -3853,17 +3763,13 @@ msgstr "Список сопоставлений пользователей"
 
 #. +> 19
 #: describe.c:6308
-#, fuzzy
-#| msgid "List of foreign tables"
 msgid "Get matching foreign tables"
-msgstr "Список сторонних таблиц"
+msgstr "Получение подходящих сторонних таблиц"
 
 #. +> 19
 #: describe.c:6382 describe.c:6438
-#, fuzzy
-#| msgid "List of installed extensions"
 msgid "Get matching installed extensions"
-msgstr "Список установленных расширений"
+msgstr "Получение подходящих установленных расширений"
 
 #. +> 19 18
 #: describe.c:6394
@@ -3889,10 +3795,8 @@ msgstr "Никакие расширения не найдены."
 
 #. +> 19
 #: describe.c:6508
-#, fuzzy
-#| msgid "List of installed extensions"
 msgid "Get installed extension's contents"
-msgstr "Список установленных расширений"
+msgstr "Получение определения установленного расширения"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:6514
@@ -3943,10 +3847,8 @@ msgstr "Сервер (версия %s) не поддерживает расши�
 
 #. +> 19
 #: describe.c:6617
-#, fuzzy
-#| msgid "List of publications"
 msgid "Get matching publications"
-msgstr "Список публикаций"
+msgstr "Получение подходящих публикаций"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:6624 describe.c:6874
@@ -3955,10 +3857,8 @@ msgstr "Все таблицы"
 
 #. +> 19
 #: describe.c:6629 describe.c:6876
-#, fuzzy
-#| msgid "sequence"
 msgid "All sequences"
-msgstr "последовательность"
+msgstr "Все последовательности"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:6635 describe.c:6877
@@ -3997,10 +3897,8 @@ msgstr "Список публикаций"
 
 #. +> 19
 #: describe.c:6769
-#, fuzzy
-#| msgid "define a new publication"
 msgid "Get details about matching publications"
-msgstr "создать публикацию"
+msgstr "Получение сведений о подходящих публикациях"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:6841
@@ -4023,7 +3921,7 @@ msgstr "Публикация %s"
 #. +> 19
 #: describe.c:6907
 msgid "Get tables published by this publication"
-msgstr ""
+msgstr "Получение таблиц, включённых в эту публикацию"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:6938
@@ -4033,7 +3931,7 @@ msgstr "Таблицы:"
 #. +> 19
 #: describe.c:6945
 msgid "Get schemas published by this publication"
-msgstr ""
+msgstr "Получение схем, включённых в эту публикацию"
 
 #. +> 19 18 17 16 15
 #: describe.c:6952
@@ -4043,12 +3941,12 @@ msgstr "Таблицы из схем:"
 #. +> 19
 #: describe.c:6963
 msgid "Get tables excluded by this publication"
-msgstr ""
+msgstr "Получение таблиц, исключённых из этой публикации"
 
 #. +> 19
 #: describe.c:6971
 msgid "Except tables:"
-msgstr ""
+msgstr "Исключённые таблицы:"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:7016
@@ -4064,10 +3962,8 @@ msgstr "Сервер (версия %s) не поддерживает сопос�
 
 #. +> 19
 #: describe.c:7024
-#, fuzzy
-#| msgid "List of subscriptions"
 msgid "Get matching subscriptions"
-msgstr "Список подписок"
+msgstr "Получение подходящих подписок"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:7033
@@ -4122,17 +4018,17 @@ msgstr "Переносимая"
 #. +> 19
 #: describe.c:7087
 msgid "Retain dead tuples"
-msgstr ""
+msgstr "Хранить мёртвые кортежи"
 
 #. +> 19
 #: describe.c:7091
 msgid "Max retention duration"
-msgstr ""
+msgstr "Максимальная длительность хранения"
 
 #. +> 19
 #: describe.c:7095
 msgid "Retention active"
-msgstr ""
+msgstr "Хранение активно"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:7101
@@ -4147,7 +4043,7 @@ msgstr "Строка подключения"
 #. +> 19
 #: describe.c:7107
 msgid "Receiver timeout"
-msgstr ""
+msgstr "Тайм-аут получателя"
 
 #. +> 19 18 17 16 15
 #: describe.c:7113
@@ -4166,10 +4062,8 @@ msgstr "(нет)"
 
 #. +> 19
 #: describe.c:7194
-#, fuzzy
-#| msgid "List of operator classes"
 msgid "Get matching operator classes"
-msgstr "Список классов операторов"
+msgstr "Получение подходящих классов операторов"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:7213 describe.c:7309 describe.c:7402 describe.c:7507
@@ -4203,10 +4097,8 @@ msgstr "Список классов операторов"
 
 #. +> 19
 #: describe.c:7296
-#, fuzzy
-#| msgid "List of operator families"
 msgid "Get matching operator families"
-msgstr "Список семейств операторов"
+msgstr "Получение подходящих семейств операторов"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:7311
@@ -4220,10 +4112,8 @@ msgstr "Список семейств операторов"
 
 #. +> 19
 #: describe.c:7387
-#, fuzzy
-#| msgid "List of operators of operator families"
 msgid "Get operators of matching operator families"
-msgstr "Список операторов из семейств операторов"
+msgstr "Получение операторов из подходящих семейств операторов"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:7404
@@ -4262,10 +4152,8 @@ msgstr "Список операторов из семейств оператор
 
 #. +> 19
 #: describe.c:7495
-#, fuzzy
-#| msgid "List of support functions of operator families"
 msgid "Get support functions of matching operator families"
-msgstr "Список опорных функций из семейств операторов"
+msgstr "Получение опорных функций из подходящих семейств операторов"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:7509
@@ -4289,10 +4177,8 @@ msgstr "Список опорных функций из семейств опе�
 
 #. +> 19
 #: describe.c:7582
-#, fuzzy
-#| msgid "large object"
 msgid "Get large objects"
-msgstr "большой объект"
+msgstr "Получение больших объектов"
 
 #. +> 19 18 17 16 15 14
 #: describe.c:7586
@@ -5576,10 +5462,8 @@ msgstr "  \\dx[+]  [МАСКА]        список расширений\n"
 
 #. +> 19
 #: help.c:270
-#, fuzzy
-#| msgid "  \\dX[x]   [PATTERN]     list extended statistics\n"
 msgid "  \\dX[x+]  [PATTERN]     list extended statistics\n"
-msgstr "  \\dX[x]   [МАСКА]       список расширенных статистик\n"
+msgstr "  \\dX[x+]  [МАСКА]       список расширенных статистик\n"
 
 #. +> 18
 #: help.c:270
@@ -5724,6 +5608,8 @@ msgid ""
 "  \\pset [NAME [VALUE]]   set table output option\n"
 "                         see \"\\? variables\" for valid options\n"
 msgstr ""
+"  \\pset [ИМЯ [ЗНАЧЕНИЕ]] установить параметр вывода таблицы;\n"
+"                         список допустимых параметров: \"\\? variables\"\n"
 
 #. +> 18 17 16
 #: help.c:292
@@ -6447,29 +6333,21 @@ msgstr ""
 
 #. +> 19
 #: help.c:481
-#, fuzzy
-#| msgid ""
-#| "  null\n"
-#| "    set the string to be printed in place of a null value\n"
 msgid ""
 "  display_false\n"
 "    set the string to be printed in place of a Boolean \"false\"\n"
 msgstr ""
-"  null\n"
-"    устанавливает строку, выводимую вместо значения NULL\n"
+"  display_false\n"
+"    устанавливает строку, выводимую вместо логического значения \"false\"\n"
 
 #. +> 19
 #: help.c:483
-#, fuzzy
-#| msgid ""
-#| "  null\n"
-#| "    set the string to be printed in place of a null value\n"
 msgid ""
 "  display_true\n"
 "    set the string to be printed in place of a Boolean \"true\"\n"
 msgstr ""
-"  null\n"
-"    устанавливает строку, выводимую вместо значения NULL\n"
+"  display_true\n"
+"    устанавливает строку, выводимую вместо логического значения \"true\"\n"
 
 #. +> 19 18 17 16 15 14
 #: help.c:485
@@ -7409,10 +7287,8 @@ msgstr "функция_проверки"
 
 #. +> 19
 #: sql_help.c:422 sql_help.c:2390
-#, fuzzy
-#| msgid "gettoken_function"
 msgid "connection_function"
-msgstr "функция_выдачи_фрагмента"
+msgstr "функция_подключения"
 
 #. +> 19 18 17 16 15 14
 #: sql_help.c:470 sql_help.c:549 sql_help.c:693 sql_help.c:885 sql_help.c:1069
@@ -7708,10 +7584,8 @@ msgstr "удаляемый_объект_публикации"
 
 #. +> 19
 #: sql_help.c:956 sql_help.c:2763
-#, fuzzy
-#| msgid "publication_object"
 msgid "publication_all_object"
-msgstr "объект_публикации"
+msgstr "объект_публикации_всех"
 
 #. +> 19 18 17 16 15 14
 #: sql_help.c:958 sql_help.c:2764
@@ -7731,17 +7605,13 @@ msgstr "таблица_и_столбцы"
 
 #. +> 19
 #: sql_help.c:967 sql_help.c:2769
-#, fuzzy
-#| msgid "and publication_drop_object is one of:"
 msgid "and publication_all_object is one of:"
-msgstr "и удаляемый_объект_публикации:"
+msgstr "и объект_публикации_всех:"
 
 #. +> 19
 #: sql_help.c:968 sql_help.c:2770
-#, fuzzy
-#| msgid "member_object"
 msgid "except_table_object"
-msgstr "элемент_объект"
+msgstr "объект_исключаемой_таблицы"
 
 #. +> 19 18 17 16 15
 #: sql_help.c:969
@@ -7750,10 +7620,8 @@ msgstr "и удаляемый_объект_публикации:"
 
 #. +> 19
 #: sql_help.c:970 sql_help.c:973 sql_help.c:977 sql_help.c:2772 sql_help.c:2776
-#, fuzzy
-#| msgid "member_object"
 msgid "table_object"
-msgstr "элемент_объект"
+msgstr "объект_таблицы"
 
 #. +> 19 18 17 16 15 14
 #: sql_help.c:972 sql_help.c:1809 sql_help.c:2771 sql_help.c:4428
@@ -7763,17 +7631,13 @@ msgstr "и таблица_и_столбцы:"
 
 #. +> 19
 #: sql_help.c:976 sql_help.c:2775
-#, fuzzy
-#| msgid "and table_constraint is:"
 msgid "and except_table_object is:"
-msgstr "и ограничение_таблицы:"
+msgstr "и объект_исключаемой_таблицы:"
 
 #. +> 19
 #: sql_help.c:978 sql_help.c:2777
-#, fuzzy
-#| msgid "and table_constraint is:"
 msgid "and table_object is:"
-msgstr "и ограничение_таблицы:"
+msgstr "и объект_таблицы:"
 
 #. +> 19 18 17 16 15 14
 #: sql_help.c:1018 sql_help.c:1722 sql_help.c:2559 sql_help.c:2807
@@ -8554,68 +8418,49 @@ msgstr "имя_подписки"
 
 #. +> 19
 #: sql_help.c:3046 sql_help.c:3066 sql_help.c:3080 sql_help.c:3173
-#, fuzzy
-#| msgid "Persistence"
 msgid "persistence_mode"
-msgstr "Хранение"
+msgstr "режим_хранения"
 
 #. +> 19
 #: sql_help.c:3050
-#, fuzzy
-#| msgid "column_name"
 msgid "column_storage"
-msgstr "имя_столбца"
+msgstr "хранение_столбца"
 
 #. +> 19
 #: sql_help.c:3051
-#, fuzzy
-#| msgid "Compression"
 msgid "column_compression"
-msgstr "Сжатие"
+msgstr "сжатие_столбца"
 
 #. +> 19
 #: sql_help.c:3095 sql_help.c:3181
-#, fuzzy
-#| msgid "where transaction_mode is one of:"
 msgid "where persistence_mode is:"
-msgstr "где допустимый режим_транзакции:"
+msgstr "где режим_хранения:"
 
 #. +> 19
 #: sql_help.c:3096
-#, fuzzy
-#| msgid "and column_constraint is:"
 msgid "and column_storage is:"
-msgstr "и ограничение_столбца:"
+msgstr "и хранение_столбца:"
 
 #. +> 19
 #: sql_help.c:3097
-#, fuzzy
-#| msgid "and column_constraint is:"
 msgid "and column_compression is:"
-msgstr "и ограничение_столбца:"
+msgstr "и сжатие_столбца:"
 
 #. +> 19
 #: sql_help.c:3140
-#, fuzzy
-#| msgid ""
-#| "index_parameters in UNIQUE, PRIMARY KEY, and EXCLUDE constraints are:"
 msgid ""
 "and index_parameters in UNIQUE, PRIMARY KEY, and EXCLUDE constraints are:"
-msgstr "параметры_индекса в ограничениях UNIQUE, PRIMARY KEY и EXCLUDE:"
+msgstr "и параметры_индекса в ограничениях UNIQUE, PRIMARY KEY и EXCLUDE:"
 
 #. +> 19
 #: sql_help.c:3145
-#, fuzzy
-#| msgid "exclude_element in an EXCLUDE constraint is:"
 msgid "and exclude_element in an EXCLUDE constraint is:"
-msgstr "объект_исключения в ограничении EXCLUDE:"
+msgstr "и элемент_исключения в ограничении EXCLUDE:"
 
 #. +> 19
 #: sql_help.c:3152
-#, fuzzy
-#| msgid "referential_action in a FOREIGN KEY/REFERENCES constraint is:"
 msgid "and referential_action in a FOREIGN KEY/REFERENCES constraint is:"
-msgstr "ссылочное действие в ограничении FOREIGN KEY/REFERENCES:"
+msgstr "и ссылочное_действие в ограничении FOREIGN KEY/REFERENCES:"
 
 #. +> 19 18 17 16 15 14
 #: sql_help.c:3194
@@ -9236,26 +9081,22 @@ msgstr "выражение_сортировки"
 #. +> 19
 #: sql_help.c:5249
 msgid "lsn"
-msgstr ""
+msgstr "lsn"
 
 #. +> 19
 #: sql_help.c:5252
-#, fuzzy
-#| msgid "argmode"
 msgid "mode"
-msgstr "режим_аргумента"
+msgstr "режим"
 
 #. +> 19
 #: sql_help.c:5253
-#, fuzzy
-#| msgid "timestamp"
 msgid "timeout"
-msgstr "timestamp"
+msgstr "тайм-аут"
 
 #. +> 19
 #: sql_help.c:5254
 msgid "and mode can be:"
-msgstr ""
+msgstr "и режим:"
 
 #. +> 19 18 17 16 15 14
 #: sql_help.c:5395 sql_help.c:6385
@@ -10045,7 +9886,7 @@ msgstr "удалить ранее определённую точку сохра
 #. +> 19
 #: sql_help.c:6367
 msgid "rewrite a table to reclaim disk space"
-msgstr ""
+msgstr "перезаписать таблицу для освобождения дискового пространства"
 
 #. +> 19 18 17 16 15 14
 #: sql_help.c:6373
@@ -10144,7 +9985,7 @@ msgstr "получить набор строк"
 #. +> 19
 #: sql_help.c:6505
 msgid "wait for WAL to reach a target LSN"
-msgstr ""
+msgstr "ждать, пока WAL достигнет целевого LSN"
 
 #. +> 19 18 17 16 15 14
 #: startup.c:226

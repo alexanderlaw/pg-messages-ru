@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: pg_archivecleanup (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2026-09-25 22:48+0300\n"
-"PO-Revision-Date: 2026-08-05 07:46+0300\n"
+"PO-Revision-Date: 2026-10-10 18:48+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -333,14 +333,13 @@ msgstr "слишком много аргументов командной стр
 #: pg_archivecleanup.c:380
 #, c-format
 msgid "executing in dry-run mode"
-msgstr ""
+msgstr "выполнение в холостом режиме"
 
 #. +> 19
 #: pg_archivecleanup.c:381
-#, fuzzy, c-format
-#| msgid "%s: file \"%s\" would be removed\n"
+#, c-format
 msgid "No files will be removed."
-msgstr "%s: файл \"%s\" не будет удалён\n"
+msgstr "Файлы не будут удалены."
 
 #, c-format
 #~ msgid ""

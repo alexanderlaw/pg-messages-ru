@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: initdb (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2026-09-25 22:48+0300\n"
-"PO-Revision-Date: 2026-08-05 07:32+0300\n"
+"PO-Revision-Date: 2026-10-10 18:19+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -366,10 +366,9 @@ msgstr "нераспознанный метод синхронизации: %s"
 
 #. +> 19
 #: ../../fe_utils/option_utils.c:139
-#, fuzzy, c-format
-#| msgid "password prompt and password file cannot be specified together"
+#, c-format
 msgid "options %s and %s cannot be used together"
-msgstr "нельзя одновременно запросить пароль и прочитать пароль из файла"
+msgstr "параметры %s и %s исключают друг друга"
 
 #. +> 19 18 17
 #: ../../fe_utils/string_utils.c:585

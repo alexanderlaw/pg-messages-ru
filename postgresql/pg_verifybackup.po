@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: pg_verifybackup (PostgreSQL) 13\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2026-09-25 22:48+0300\n"
-"PO-Revision-Date: 2026-08-05 07:51+0300\n"
+"PO-Revision-Date: 2026-10-10 19:20+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -890,16 +890,17 @@ msgstr "pg_waldump не может читать файлы tar"
 #: pg_verifybackup.c:379
 #, c-format
 msgid "WAL archive not found"
-msgstr ""
+msgstr "архив WAL не найден"
 
 #. +> 19
 #: pg_verifybackup.c:380
-#, fuzzy, c-format
-#| msgid "You must use -n/--no-parse-wal when verifying a tar-format backup."
+#, c-format
 msgid ""
 "Specify the correct path using the option -w/--wal-path.  Or you must use -"
 "n/--no-parse-wal when verifying a tar-format backup."
-msgstr "Для проверки копии в tar-формате нужно использовать -n/--no-parse-wal."
+msgstr ""
+"Укажите корректный путь в параметре -w/--wal-path.  Или используйте -n/--no-"
+"parse-wal для проверки копии в tar-формате."
 
 #. +> 18
 #: pg_verifybackup.c:341
@@ -1148,11 +1149,10 @@ msgstr "  -s, --skip-checksums        пропустить проверку ко
 
 #. +> 19
 #: pg_verifybackup.c:1405
-#, fuzzy, c-format
-#| msgid "  -w, --wal-directory=PATH    use specified path for WAL files\n"
+#, c-format
 msgid "  -w, --wal-path=PATH         use specified path for WAL files\n"
 msgstr ""
-"  -w, --wal-directory=ПУТЬ    использовать заданный путь к файлам WAL\n"
+"  -w, --wal-path=ПУТЬ         использовать заданный путь к файлам WAL\n"
 
 #. +> 18 17 16 15 14
 #: pg_verifybackup.c:1379
@@ -1163,11 +1163,9 @@ msgstr ""
 
 #. +> 19
 #: pg_verifybackup.c:1406
-#, fuzzy, c-format
-#| msgid "  -w, --wal-directory=PATH    use specified path for WAL files\n"
+#, c-format
 msgid "      --wal-directory=PATH    (same as --wal-path, deprecated)\n"
-msgstr ""
-"  -w, --wal-directory=ПУТЬ    использовать заданный путь к файлам WAL\n"
+msgstr "      --wal-directory=ПУТЬ    (устаревшая альтернатива --wal-path)\n"
 
 #. +> 19 18 17 16 15 14
 #: pg_verifybackup.c:1407

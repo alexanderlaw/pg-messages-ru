@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: pg_combinebackup (PostgreSQL) 17\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2026-09-25 22:48+0300\n"
-"PO-Revision-Date: 2026-08-05 07:49+0300\n"
+"PO-Revision-Date: 2026-10-10 19:00+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -550,14 +550,13 @@ msgstr "нераспознанный метод синхронизации: %s"
 #: ../../fe_utils/option_utils.c:139
 #, c-format
 msgid "options %s and %s cannot be used together"
-msgstr ""
+msgstr "параметры %s и %s исключают друг друга"
 
 #. +> 19
 #: ../../fe_utils/version.c:57
-#, fuzzy, c-format
-#| msgid "could not open file \"%s\": %m"
+#, c-format
 msgid "could not open version file \"%s\": %m"
-msgstr "не удалось открыть файл \"%s\": %m"
+msgstr "не удалось открыть файл с версией \"%s\": %m"
 
 #. +> 19 18 17
 #: ../../fe_utils/version.c:62 pg_combinebackup.c:1354
@@ -567,10 +566,9 @@ msgstr "файл \"%s\" слишком большой"
 
 #. +> 19
 #: ../../fe_utils/version.c:66
-#, fuzzy, c-format
-#| msgid "could not update checksum of file \"%s\""
+#, c-format
 msgid "could not parse version file \"%s\""
-msgstr "не удалось изменить контекст контрольной суммы файла \"%s\""
+msgstr "не удалось разобрать файл с версией \"%s\""
 
 #. +> 19 18 17
 #: backup_label.c:66 backup_label.c:85 backup_label.c:95
@@ -741,20 +739,19 @@ msgstr "выходной каталог не указан"
 #: pg_combinebackup.c:247
 #, c-format
 msgid "executing in dry-run mode"
-msgstr ""
+msgstr "выполнение в холостом режиме"
 
 #. +> 19
 #: pg_combinebackup.c:248
 #, c-format
 msgid "The target directory will not be modified."
-msgstr ""
+msgstr "Целевой каталог не будет изменён."
 
 #. +> 19
 #: pg_combinebackup.c:284
-#, fuzzy, c-format
-#| msgid "%s: server version too old"
+#, c-format
 msgid "server version too old"
-msgstr "%s: версия сервера слишком старая"
+msgstr "версия сервера слишком старая"
 
 #. +> 18 17
 #: pg_combinebackup.c:1199
@@ -873,10 +870,9 @@ msgstr "копия в \"%s\" начинается с линии времени %
 
 #. +> 19
 #: pg_combinebackup.c:584
-#, fuzzy, c-format
-#| msgid "backup at \"%s\" starts at LSN %X/%X, but expected %X/%X"
+#, c-format
 msgid "backup at \"%s\" starts at LSN %X/%08X, but expected %X/%08X"
-msgstr "копия в \"%s\" начинается с LSN %X/%X, а ожидался %X/%X"
+msgstr "копия в \"%s\" начинается с LSN %X/%08X, а ожидался %X/%08X"
 
 #. +> 18 17
 #: pg_combinebackup.c:572
@@ -1233,7 +1229,6 @@ msgstr ""
 
 #. +> 19
 #: write_manifest.c:262
-#, fuzzy, c-format
-#| msgid "could not write file \"%s\": wrote %d of %d"
+#, c-format
 msgid "could not write file \"%s\": wrote %zd of %d"
-msgstr "не удалось записать файл \"%s\" (записано байт: %d из %d)"
+msgstr "не удалось записать файл \"%s\" (записано байт: %zd из %d)"

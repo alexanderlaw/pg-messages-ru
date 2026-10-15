@@ -1,13 +1,13 @@
 # Russian message translation file for plpgsql
 # Copyright (C) 2012-2016 PostgreSQL Global Development Group
 # This file is distributed under the same license as the PostgreSQL package.
-# Alexander Lakhin <exclusion@gmail.com>, 2012-2017, 2018, 2019, 2020, 2021, 2022, 2024.
+# SPDX-FileCopyrightText: 2012-2017, 2018, 2019, 2020, 2021, 2022, 2024, 2026 Alexander Lakhin <exclusion@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: plpgsql (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2026-09-25 22:48+0300\n"
-"PO-Revision-Date: 2024-09-04 20:00+0300\n"
+"PO-Revision-Date: 2026-10-10 19:56+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #. +> 19 18 17 16 15 14
 #: pl_comp.c:333 pl_handler.c:496
@@ -103,13 +103,13 @@ msgstr "Подразумевается ссылка на переменную PL
 #: pl_comp.c:1231
 #, c-format
 msgid "field name \"%s\" is a reserved key word"
-msgstr ""
+msgstr "имя поля \"%s\" является зарезервированным ключевым словом"
 
 #. +> 19
 #: pl_comp.c:1233
 #, c-format
 msgid "Use double quotes to quote it."
-msgstr ""
+msgstr "Заключите его в двойные кавычки."
 
 #. +> 19 18 17 16 15 14
 #: pl_comp.c:1550 pl_gram.y:665 pl_gram.y:680 pl_gram.y:706
@@ -170,9 +170,9 @@ msgstr "нераспознанное условие исключения \"%s\""
 #, c-format
 msgid "cannot pass more than %d argument to a function"
 msgid_plural "cannot pass more than %d arguments to a function"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "функции нельзя передать больше %d аргумента"
+msgstr[1] "функции нельзя передать больше %d аргументов"
+msgstr[2] "функции нельзя передать больше %d аргументов"
 
 #. +> 19 18 17 16 15 14
 #: pl_exec.c:524 pl_exec.c:964 pl_exec.c:1199
@@ -276,10 +276,9 @@ msgstr "функция PL/pgSQL %s"
 
 #. +> 19
 #: pl_exec.c:1332
-#, fuzzy, c-format
-#| msgid "SQL statement"
+#, c-format
 msgid "SQL statement \"%s\""
-msgstr "SQL-оператор"
+msgstr "SQL-оператор: \"%s\""
 
 #. +> 19 18 17 16 15 14
 #: pl_exec.c:1702
@@ -691,10 +690,9 @@ msgstr ""
 
 #. +> 19 18 17 16 15 14
 #: pl_exec.c:8159
-#, fuzzy, c-format
-#| msgid "cannot assign to system column \"%s\""
+#, c-format
 msgid "cannot cast type %s to %s"
-msgstr "присвоить значение системному столбцу \"%s\" нельзя"
+msgstr "привести тип %s к %s нельзя"
 
 #. +> 19 18 17 16 15 14
 #: pl_exec.c:8681 pl_gram.y:3572

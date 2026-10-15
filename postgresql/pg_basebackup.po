@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: pg_basebackup (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2026-09-25 22:48+0300\n"
-"PO-Revision-Date: 2026-08-05 07:48+0300\n"
+"PO-Revision-Date: 2026-10-11 11:54+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -564,24 +564,21 @@ msgstr ""
 
 #. +> 19
 #: ../../fe_utils/version.c:57
-#, fuzzy, c-format
-#| msgid "could not open log file \"%s\": %m"
+#, c-format
 msgid "could not open version file \"%s\": %m"
-msgstr "не удалось открыть файл протокола \"%s\": %m"
+msgstr "не удалось открыть файл с версией \"%s\": %m"
 
 #. +> 19
 #: ../../fe_utils/version.c:62
-#, fuzzy, c-format
-#| msgid "transfer rate \"%s\" is out of range"
+#, c-format
 msgid "file \"%s\" is too large"
-msgstr "скорость передачи \"%s\" вне диапазона"
+msgstr "файл \"%s\" слишком большой"
 
 #. +> 19
 #: ../../fe_utils/version.c:66
-#, fuzzy, c-format
-#| msgid "could not parse end position \"%s\""
+#, c-format
 msgid "could not parse version file \"%s\""
-msgstr "не удалось разобрать конечную позицию \"%s\""
+msgstr "не удалось разобрать файл с версией \"%s\""
 
 #. +> 19 18 17 16 15
 #: astreamer_inject.c:189
@@ -1766,7 +1763,7 @@ msgstr "не удалось создать сжатый файл \"%s\": %s"
 #: pg_createsubscriber.c:217
 #, c-format
 msgid "A manual removal of the recovery parameters might be required."
-msgstr ""
+msgstr "Возможно, требуется вручную удалить параметры восстановления."
 
 #. +> 19 18 17
 #: pg_createsubscriber.c:231
@@ -1866,13 +1863,9 @@ msgstr ""
 
 #. +> 19
 #: pg_createsubscriber.c:294
-#, fuzzy, c-format
-#| msgid ""
-#| "  -D, --pgdata=DATADIR            location for the subscriber data "
-#| "directory\n"
+#, c-format
 msgid "  -l, --logdir=LOGDIR             location for the log directory\n"
-msgstr ""
-"  -D, --pgdata=КАТ_ДАННЫХ         расположение каталога данных подписчика\n"
+msgstr "  -l, --logdir=КАТ_ЖУРНАЛА        расположение каталога журнала\n"
 
 #. +> 19 18 17
 #: pg_createsubscriber.c:295
@@ -2034,10 +2027,9 @@ msgstr "каталог данных \"%s\" не существует"
 
 #. +> 19
 #: pg_createsubscriber.c:474
-#, fuzzy, c-format
-#| msgid "data directory \"%s\" does not exist"
+#, c-format
 msgid "data directory is of wrong version"
-msgstr "каталог данных \"%s\" не существует"
+msgstr "каталог данных имеет неверную версию"
 
 #. +> 19
 #: pg_createsubscriber.c:475
@@ -2046,6 +2038,8 @@ msgid ""
 "File \"%s\" contains \"%s\", which is not compatible with this program's "
 "version \"%s\"."
 msgstr ""
+"Файл \"%s\" содержит версию \"%s\", которая несовместима с версией программы "
+"\"%s\"."
 
 #. +> 19 18 17
 #: pg_createsubscriber.c:594
@@ -2172,17 +2166,15 @@ msgstr "получить OID базы данных не удалось; полу
 
 #. +> 19
 #: pg_createsubscriber.c:845
-#, fuzzy, c-format
-#| msgid "could not drop publication \"%s\" in database \"%s\": %s"
+#, c-format
 msgid "could not find publication \"%s\" in database \"%s\": %s"
-msgstr "удалить публикацию \"%s\" в базе \"%s\" не получилось: %s"
+msgstr "не удалось найти публикацию \"%s\" в базе \"%s\": %s"
 
 #. +> 19
 #: pg_createsubscriber.c:899
-#, fuzzy, c-format
-#| msgid "creating publication \"%s\" in database \"%s\""
+#, c-format
 msgid "using existing publication \"%s\" in database \"%s\""
-msgstr "создаётся публикация \"%s\" в базе \"%s\""
+msgstr "используется существующая публикация \"%s\" в базе \"%s\""
 
 #. +> 19 18 17
 #: pg_createsubscriber.c:938
@@ -2216,10 +2208,9 @@ msgstr "не удалось получить параметры с сервер�
 
 #. +> 19
 #: pg_createsubscriber.c:1094
-#, fuzzy, c-format
-#| msgid "publisher requires \"wal_level\" >= \"logical\""
+#, c-format
 msgid "publisher requires \"wal_level\" >= \"replica\""
-msgstr "на стороне публикации требуется значение \"wal_level\" >= \"logical\""
+msgstr "на стороне публикации требуется значение \"wal_level\" >= \"replica\""
 
 #. +> 18
 #: pg_createsubscriber.c:955
@@ -2593,17 +2584,16 @@ msgstr "удаление всех существующих публикаций 
 
 #. +> 19
 #: pg_createsubscriber.c:1964
-#, fuzzy, c-format
-#| msgid "dry-run: would create publication \"%s\" in database \"%s\""
+#, c-format
 msgid "dry-run: would preserve existing publication \"%s\" in database \"%s\""
-msgstr "холостой запуск: будет создана публикация \"%s\" в базе \"%s\""
+msgstr ""
+"холостой запуск: существующая публикация \"%s\" в базе \"%s\" будет сохранена"
 
 #. +> 19
 #: pg_createsubscriber.c:1967
-#, fuzzy, c-format
-#| msgid "creating publication \"%s\" in database \"%s\""
+#, c-format
 msgid "preserving existing publication \"%s\" in database \"%s\""
-msgstr "создаётся публикация \"%s\" в базе \"%s\""
+msgstr "существующая публикация \"%s\" в базе \"%s\" сохраняется"
 
 #. +> 19 18
 #: pg_createsubscriber.c:2002
@@ -2777,14 +2767,13 @@ msgstr "не удалось открыть файл протокола \"%s\": %
 #: pg_createsubscriber.c:2518
 #, c-format
 msgid "executing in dry-run mode"
-msgstr ""
+msgstr "выполнение в холостом режиме"
 
 #. +> 19
 #: pg_createsubscriber.c:2519
-#, fuzzy, c-format
-#| msgid "no target directory specified"
+#, c-format
 msgid "The target directory will not be modified."
-msgstr "целевой каталог не указан"
+msgstr "Целевой каталог не будет изменён."
 
 #. +> 19 18 17
 #: pg_createsubscriber.c:2522
@@ -2866,10 +2855,9 @@ msgstr ""
 
 #. +> 19
 #: pg_createsubscriber.c:2598
-#, fuzzy, c-format
-#| msgid "invalid object type \"%s\" specified for %s"
+#, c-format
 msgid "invalid object type \"%s\" specified for option %s"
-msgstr "неправильный тип объекта \"%s\" указан в %s"
+msgstr "неправильный тип объекта \"%s\" указан в параметре %s"
 
 #. +> 18
 #: pg_createsubscriber.c:2385
@@ -3047,10 +3035,9 @@ msgstr ""
 
 #. +> 19
 #: pg_receivewal.c:191
-#, fuzzy, c-format
-#| msgid "finished segment at %X/%X (timeline %u)"
+#, c-format
 msgid "finished segment at %X/%08X (timeline %u)"
-msgstr "завершён сегмент %X/%X (линия времени %u)"
+msgstr "завершён сегмент %X/%08X (линия времени %u)"
 
 #. +> 18 17 16 15 14
 #: pg_receivewal.c:191
@@ -3060,10 +3047,9 @@ msgstr "завершён сегмент %X/%X (линия времени %u)"
 
 #. +> 19
 #: pg_receivewal.c:198
-#, fuzzy, c-format
-#| msgid "stopped log streaming at %X/%X (timeline %u)"
+#, c-format
 msgid "stopped log streaming at %X/%08X (timeline %u)"
-msgstr "завершена передача журнала с позиции %X/%X (линия времени %u)"
+msgstr "завершена передача журнала с позиции %X/%08X (линия времени %u)"
 
 #. +> 18 17 16 15 14
 #: pg_receivewal.c:198
@@ -3073,10 +3059,9 @@ msgstr "завершена передача журнала с позиции %X/
 
 #. +> 19
 #: pg_receivewal.c:214
-#, fuzzy, c-format
-#| msgid "switched to timeline %u at %X/%X"
+#, c-format
 msgid "switched to timeline %u at %X/%08X"
-msgstr "переключение на линию времени %u (позиция %X/%X)"
+msgstr "переключение на линию времени %u (позиция %X/%08X)"
 
 #. +> 18 17 16 15 14
 #: pg_receivewal.c:214
@@ -3179,10 +3164,9 @@ msgstr "неверный номер порта \"%s\""
 
 #. +> 19
 #: pg_receivewal.c:578
-#, fuzzy, c-format
-#| msgid "starting log streaming at %X/%X (timeline %u)"
+#, c-format
 msgid "starting log streaming at %X/%08X (timeline %u)"
-msgstr "начало передачи журнала с позиции %X/%X (линия времени %u)"
+msgstr "начало передачи журнала с позиции %X/%08X (линия времени %u)"
 
 #. +> 18 17 16 15 14
 #: pg_receivewal.c:578
@@ -3386,10 +3370,10 @@ msgstr "  -d, --dbname=ИМЯ_БД    целевая база данных\n"
 
 #. +> 19
 #: pg_recvlogical.c:148
-#, fuzzy, c-format
-#| msgid "confirming write up to %X/%X, flush to %X/%X (slot %s)"
+#, c-format
 msgid "confirming write up to %X/%08X, flush to %X/%08X (slot %s)"
-msgstr "подтверждается запись до %X/%X, синхронизация с ФС до %X/%X (слот %s)"
+msgstr ""
+"подтверждается запись до %X/%08X, синхронизация с ФС до %X/%08X (слот %s)"
 
 #. +> 18 17 16 15 14
 #: pg_recvlogical.c:147
@@ -3405,10 +3389,9 @@ msgstr "не удалось отправить пакет ответа: %s"
 
 #. +> 19
 #: pg_recvlogical.c:245
-#, fuzzy, c-format
-#| msgid "starting log streaming at %X/%X (slot %s)"
+#, c-format
 msgid "starting log streaming at %X/%08X (slot %s)"
-msgstr "начало передачи журнала с позиции %X/%X (слот %s)"
+msgstr "начало передачи журнала с позиции %X/%08X (слот %s)"
 
 #. +> 18 17 16 15 14
 #: pg_recvlogical.c:241
@@ -3546,10 +3529,9 @@ msgstr ""
 
 #. +> 19
 #: pg_recvlogical.c:1089
-#, fuzzy, c-format
-#| msgid "end position %X/%X reached by keepalive"
+#, c-format
 msgid "end position %X/%08X reached by keepalive"
-msgstr "конечная позиция %X/%X достигнута при обработке keepalive"
+msgstr "конечная позиция %X/%08X достигнута при обработке keepalive"
 
 #. +> 18 17 16 15 14
 #: pg_recvlogical.c:1082
@@ -3559,10 +3541,9 @@ msgstr "конечная позиция %X/%X достигнута при обр
 
 #. +> 19
 #: pg_recvlogical.c:1094
-#, fuzzy, c-format
-#| msgid "end position %X/%X reached by WAL record at %X/%X"
+#, c-format
 msgid "end position %X/%08X reached by WAL record at %X/%08X"
-msgstr "конечная позиция %X/%X достигнута при обработке записи WAL %X/%X"
+msgstr "конечная позиция %X/%08X достигнута при обработке записи WAL %X/%08X"
 
 #. +> 18 17 16 15 14
 #: pg_recvlogical.c:1087
@@ -3726,16 +3707,13 @@ msgstr "сервер неожиданно сообщил линию времен
 
 #. +> 19
 #: receivelog.c:638
-#, fuzzy, c-format
-#| msgid ""
-#| "server stopped streaming timeline %u at %X/%X, but reported next timeline "
-#| "%u to begin at %X/%X"
+#, c-format
 msgid ""
 "server stopped streaming timeline %u at %X/%08X, but reported next timeline "
 "%u to begin at %X/%08X"
 msgstr ""
-"сервер прекратил передачу линии времени %u в %X/%X, но сообщил, что "
-"следующая линии времени %u начнётся в %X/%X"
+"сервер прекратил передачу линии времени %u в %X/%08X, но сообщил, что "
+"следующая линия времени %u начнётся в %X/%08X"
 
 #. +> 18 17 16 15 14
 #: receivelog.c:637

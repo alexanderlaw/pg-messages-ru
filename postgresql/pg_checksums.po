@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: pg_verify_checksums (PostgreSQL) 11\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2026-09-25 22:48+0300\n"
-"PO-Revision-Date: 2026-08-05 07:48+0300\n"
+"PO-Revision-Date: 2026-10-10 18:50+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -196,27 +196,27 @@ msgstr "нераспознанный метод синхронизации: %s"
 #: ../../fe_utils/option_utils.c:139
 #, c-format
 msgid "options %s and %s cannot be used together"
-msgstr ""
+msgstr "параметры %s и %s исключают друг друга"
 
 #. +> 19
 #: ../../fe_utils/version.c:57
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not open file \"%s\": %m"
 msgid "could not open version file \"%s\": %m"
-msgstr "не удалось открыть файл \"%s\": %m"
+msgstr "не удалось открыть файл с версией \"%s\": %m"
 
 #. +> 19
 #: ../../fe_utils/version.c:62
 #, c-format
 msgid "file \"%s\" is too large"
-msgstr ""
+msgstr "файл \"%s\" слишком большой"
 
 #. +> 19
 #: ../../fe_utils/version.c:66
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not open file \"%s\": %m"
 msgid "could not parse version file \"%s\""
-msgstr "не удалось открыть файл \"%s\": %m"
+msgstr "не удалось разобрать файл с версией \"%s\""
 
 #. +> 19 18 17 16 15 14
 #: pg_checksums.c:70
@@ -469,7 +469,7 @@ msgstr "параметр -f/--filenode можно использовать то�
 #: pg_checksums.c:557
 #, c-format
 msgid "data directory is of wrong version"
-msgstr ""
+msgstr "каталог данных имеет неверную версию"
 
 #. +> 19
 #: pg_checksums.c:558
@@ -478,6 +478,8 @@ msgid ""
 "File \"%s\" contains \"%s\", which is not compatible with this program's "
 "version \"%s\"."
 msgstr ""
+"Файл \"%s\" содержит версию \"%s\", которая несовместима с версией программы "
+"\"%s\"."
 
 #. +> 19 18 17 16 15 14
 #: pg_checksums.c:566

@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: pg_dump (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2026-09-25 22:48+0300\n"
-"PO-Revision-Date: 2026-08-05 07:50+0300\n"
+"PO-Revision-Date: 2026-10-11 10:10+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -616,10 +616,9 @@ msgstr "чтение подписок"
 
 #. +> 19
 #: common.c:247
-#, fuzzy, c-format
-#| msgid "reading subscription membership of tables"
+#, c-format
 msgid "reading subscription membership of relations"
-msgstr "чтение информации о таблицах, включённых в подписки"
+msgstr "чтение информации об отношениях, включённых в подписки"
 
 #. +> 19 18 17 16 15 14
 #: common.c:311
@@ -649,10 +648,9 @@ msgstr "не удалось разобрать числовой массив \"%
 
 #. +> 19 18 17 16 15 14
 #: common.c:1169 common.c:1239
-#, fuzzy, c-format
-#| msgid "could not parse numeric array \"%s\": too many numbers"
+#, c-format
 msgid "could not parse numeric array \"%s\": too few numbers"
-msgstr "не удалось разобрать числовой массив \"%s\": слишком много чисел"
+msgstr "не удалось разобрать числовой массив \"%s\": слишком мало чисел"
 
 #. +> 19 18 17 16 15 14
 #: compress_gzip.c:78 compress_gzip.c:192
@@ -1368,16 +1366,15 @@ msgstr "не удалось прочитать входной файл: %m"
 
 #. +> 19
 #: pg_backup_archiver.c:2311
-#, fuzzy, c-format
-#| msgid "input file is too short (read %lu, expected 5)"
+#, c-format
 msgid "input file is too short (read %zu, expected 5)"
-msgstr "входной файл слишком короткий (прочитано байт: %lu, ожидалось: 5)"
+msgstr "входной файл слишком мал (прочитано байт: %zu, ожидалось: 5)"
 
 #. +> 18 17 16 15 14
 #: pg_backup_archiver.c:2309
 #, c-format
 msgid "input file is too short (read %lu, expected 5)"
-msgstr "входной файл слишком короткий (прочитано байт: %lu, ожидалось: 5)"
+msgstr "входной файл слишком мал (прочитано байт: %lu, ожидалось: 5)"
 
 #. +> 19 18 17 16 15 14
 #: pg_backup_archiver.c:2342
@@ -1582,10 +1579,9 @@ msgstr "неподдерживаемая версия (%d.%d) в заголов�
 
 #. +> 19
 #: pg_backup_archiver.c:4223
-#, fuzzy, c-format
-#| msgid "sanity check on integer size (%lu) failed"
+#, c-format
 msgid "sanity check on integer size (%zu) failed"
-msgstr "несоответствие размера integer (%lu)"
+msgstr "несоответствие размера integer (%zu)"
 
 #. +> 18 17 16 15 14
 #: pg_backup_archiver.c:4213
@@ -3362,10 +3358,9 @@ msgstr "подписка с OID %u не существует"
 
 #. +> 19
 #: pg_dump.c:5459
-#, fuzzy, c-format
-#| msgid "failed sanity check, table with OID %u not found"
+#, c-format
 msgid "failed sanity check, relation with OID %u not found"
-msgstr "нарушение целостности: таблица с OID %u не найдена"
+msgstr "нарушение целостности: отношение с OID %u не найдено"
 
 #. +> 18 17
 #: pg_dump.c:5228
@@ -3836,7 +3831,7 @@ msgstr ""
 #: pg_dump.c:18912
 #, c-format
 msgid "inherited cannot be NULL"
-msgstr ""
+msgstr "значением inherited не может быть NULL"
 
 #. +> 19 18 17 16 15 14
 #: pg_dump.c:19009

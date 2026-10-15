@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: pg_rewind (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2026-09-25 22:48+0300\n"
-"PO-Revision-Date: 2026-08-05 21:23+0300\n"
+"PO-Revision-Date: 2026-10-11 13:27+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -303,7 +303,7 @@ msgstr "нераспознанный метод синхронизации: %s"
 #: ../../fe_utils/option_utils.c:139
 #, c-format
 msgid "options %s and %s cannot be used together"
-msgstr ""
+msgstr "параметры %s и %s исключают друг друга"
 
 #. +> 19 18 17 16 15 14
 #: ../../fe_utils/recovery_gen.c:40 ../../fe_utils/recovery_gen.c:51
@@ -705,7 +705,7 @@ msgstr "не удалось открыть исходный файл \"%s\": %m"
 
 #. +> 19
 #: local_source.c:115
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "size of source file \"%s\" changed concurrently: %d bytes expected, %d "
 #| "copied"
@@ -713,7 +713,8 @@ msgid ""
 "size of source file \"%s\" changed concurrently: %zu bytes expected, %zu "
 "copied"
 msgstr ""
-"размер исходного файла \"%s\" изменился, ожидалось байт: %d, скопировано: %d"
+"размер исходного файла \"%s\" изменился, ожидалось байт: %zu, скопировано: "
+"%zu"
 
 #. +> 18 17 16 15
 #: local_source.c:115
@@ -743,10 +744,10 @@ msgstr "не удалось выделить память для чтения WA
 
 #. +> 19
 #: parsexlog.c:92 parsexlog.c:146
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not read WAL record at %X/%X: %s"
 msgid "could not read WAL record at %X/%08X: %s"
-msgstr "не удалось прочитать запись WAL в позиции %X/%X: %s"
+msgstr "не удалось прочитать запись WAL в позиции %X/%08X: %s"
 
 #. +> 18 17 16 15 14
 #: parsexlog.c:92 parsexlog.c:146
@@ -756,10 +757,10 @@ msgstr "не удалось прочитать запись WAL в позици�
 
 #. +> 19
 #: parsexlog.c:96 parsexlog.c:149
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not read WAL record at %X/%X"
 msgid "could not read WAL record at %X/%08X"
-msgstr "не удалось прочитать запись WAL в позиции %X/%X"
+msgstr "не удалось прочитать запись WAL в позиции %X/%08X"
 
 #. +> 18 17 16 15 14
 #: parsexlog.c:96 parsexlog.c:149
@@ -769,11 +770,11 @@ msgstr "не удалось прочитать запись WAL в позици�
 
 #. +> 19
 #: parsexlog.c:108
-#, fuzzy, c-format
+#, c-format
 #| msgid "end pointer %X/%X is not a valid end point; expected %X/%X"
 msgid "end pointer %X/%08X is not a valid end point; expected %X/%08X"
 msgstr ""
-"конечный указатель %X/%X неверно задаёт конечную точку; ожидается %X/%X"
+"конечный указатель %X/%08X неверно задаёт конечную точку; ожидается %X/%08X"
 
 #. +> 18 17 16 15 14
 #: parsexlog.c:108
@@ -784,10 +785,10 @@ msgstr ""
 
 #. +> 19
 #: parsexlog.c:214
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not find previous WAL record at %X/%X: %s"
 msgid "could not find previous WAL record at %X/%08X: %s"
-msgstr "не удалось найти предыдущую запись WAL в позиции %X/%X: %s"
+msgstr "не удалось найти предыдущую запись WAL в позиции %X/%08X: %s"
 
 #. +> 18 17 16 15 14
 #: parsexlog.c:214
@@ -797,10 +798,10 @@ msgstr "не удалось найти предыдущую запись WAL в 
 
 #. +> 19
 #: parsexlog.c:218
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not find previous WAL record at %X/%X"
 msgid "could not find previous WAL record at %X/%08X"
-msgstr "не удалось найти предыдущую запись WAL в позиции %X/%X"
+msgstr "не удалось найти предыдущую запись WAL в позиции %X/%08X"
 
 #. +> 18 17 16 15 14
 #: parsexlog.c:218
@@ -816,7 +817,7 @@ msgstr "не удалось переместиться в файле \"%s\": %m"
 
 #. +> 19
 #: parsexlog.c:461
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "WAL record modifies a relation, but record type is not recognized: lsn: "
 #| "%X/%X, rmid: %d, rmgr: %s, info: %02X"
@@ -824,8 +825,8 @@ msgid ""
 "WAL record modifies a relation, but record type is not recognized:\n"
 "lsn: %X/%08X, rmid: %d, rmgr: %s, info: %02X"
 msgstr ""
-"Запись WAL модифицирует отношение, но тип записи не распознан: lsn: %X/%X, "
-"rmid: %d, rmgr: %s, info: %02X"
+"запись WAL модифицирует отношение, но тип записи не распознан:\n"
+"lsn: %X/%08X, rmid: %d, rmgr: %s, info: %02X"
 
 #. +> 18 17 16 15
 #: parsexlog.c:461
@@ -1098,13 +1099,13 @@ msgstr "не удалось прочитать права на каталог \"
 #: pg_rewind.c:306
 #, c-format
 msgid "executing in dry-run mode"
-msgstr ""
+msgstr "выполнение в холостом режиме"
 
 #. +> 19
 #: pg_rewind.c:307
 #, c-format
 msgid "The target directory will not be modified."
-msgstr ""
+msgstr "Целевой каталог не будет изменён."
 
 #. +> 19 18 17 16 15 14
 #: pg_rewind.c:319
@@ -1120,10 +1121,10 @@ msgstr "исходный и целевой кластер уже на одной
 
 #. +> 19
 #: pg_rewind.c:401
-#, fuzzy, c-format
+#, c-format
 #| msgid "servers diverged at WAL location %X/%X on timeline %u"
 msgid "servers diverged at WAL location %X/%08X on timeline %u"
-msgstr "серверы разошлись в позиции WAL %X/%X на линии времени %u"
+msgstr "серверы разошлись в позиции WAL %X/%08X на линии времени %u"
 
 #. +> 18 17 16 15 14
 #: pg_rewind.c:396
@@ -1139,11 +1140,11 @@ msgstr "перемотка не требуется"
 
 #. +> 19
 #: pg_rewind.c:475
-#, fuzzy, c-format
+#, c-format
 #| msgid "rewinding from last common checkpoint at %X/%X on timeline %u"
 msgid "rewinding from last common checkpoint at %X/%08X on timeline %u"
 msgstr ""
-"перемотка от последней общей контрольной точки в позиции %X/%X на линии "
+"перемотка от последней общей контрольной точки в позиции %X/%08X на линии "
 "времени %u"
 
 #. +> 18 17 16 15 14
@@ -1174,10 +1175,12 @@ msgstr "чтение WAL в целевом кластере"
 
 #. +> 19
 #: pg_rewind.c:519
-#, fuzzy, c-format
+#, c-format
 #| msgid "need to copy %lu MB (total source directory size is %lu MB)"
 msgid "need to copy %<PRIu64> MB (total source directory size is %<PRIu64> MB)"
-msgstr "требуется скопировать %lu МБ (общий размер исходного каталога: %lu МБ)"
+msgstr ""
+"требуется скопировать %<PRIu64> МБ (общий размер исходного каталога: "
+"%<PRIu64> МБ)"
 
 #. +> 18 17 16 15 14
 #: pg_rewind.c:508
@@ -1288,10 +1291,10 @@ msgstr "неверный управляющий файл"
 
 #. +> 19
 #: pg_rewind.c:1040
-#, fuzzy, c-format
+#, c-format
 #| msgid "unexpected control file size %d, expected %d"
 msgid "unexpected control file size %zu, expected %d"
-msgstr "неверный размер управляющего файла (%d), ожидался: %d"
+msgstr "неверный размер управляющего файла (%zu), ожидался: %d"
 
 #. +> 18 17 16 15 14
 #: pg_rewind.c:1029
@@ -1464,11 +1467,11 @@ msgstr ""
 
 #. +> 19
 #: xlogreader.c:621
-#, fuzzy, c-format
+#, c-format
 #| msgid "invalid record offset at %X/%X: expected at least %u, got %u"
 msgid "invalid record offset at %X/%08X: expected at least %u, got %u"
 msgstr ""
-"неверное смещение записи в позиции %X/%X: ожидалось минимум %u, получено %u"
+"неверное смещение записи в позиции %X/%08X: ожидалось минимум %u, получено %u"
 
 #. +> 18 17 16
 #: xlogreader.c:620
@@ -1479,10 +1482,10 @@ msgstr ""
 
 #. +> 19
 #: xlogreader.c:630
-#, fuzzy, c-format
+#, c-format
 #| msgid "contrecord is requested by %X/%X"
 msgid "contrecord is requested by %X/%08X"
-msgstr "в позиции %X/%X запрошено продолжение записи"
+msgstr "в позиции %X/%08X запрошено продолжение записи"
 
 #. +> 18 17 16 15 14
 #: xlogreader.c:629
@@ -1492,11 +1495,11 @@ msgstr "в позиции %X/%X запрошено продолжение зап
 
 #. +> 19
 #: xlogreader.c:671 xlogreader.c:1146
-#, fuzzy, c-format
+#, c-format
 #| msgid "invalid record length at %X/%X: expected at least %u, got %u"
 msgid "invalid record length at %X/%08X: expected at least %u, got %u"
 msgstr ""
-"неверная длина записи в позиции %X/%X: ожидалось минимум %u, получено %u"
+"неверная длина записи в позиции %X/%08X: ожидалось минимум %u, получено %u"
 
 #. +> 18 17 16
 #: xlogreader.c:670 xlogreader.c:1145
@@ -1513,10 +1516,10 @@ msgstr "неверная длина записи в позиции %X/%X: ожи
 
 #. +> 19
 #: xlogreader.c:761
-#, fuzzy, c-format
+#, c-format
 #| msgid "there is no contrecord flag at %X/%X"
 msgid "there is no contrecord flag at %X/%08X"
-msgstr "нет флага contrecord в позиции %X/%X"
+msgstr "нет флага contrecord в позиции %X/%08X"
 
 #. +> 18 17 16 15 14
 #: xlogreader.c:760
@@ -1526,10 +1529,10 @@ msgstr "нет флага contrecord в позиции %X/%X"
 
 #. +> 19
 #: xlogreader.c:774
-#, fuzzy, c-format
+#, c-format
 #| msgid "invalid contrecord length %u (expected %lld) at %X/%X"
 msgid "invalid contrecord length %u (expected %lld) at %X/%08X"
-msgstr "неверная длина contrecord: %u (ожидалась %lld) в позиции %X/%X"
+msgstr "неверная длина contrecord: %u (ожидалась %lld) в позиции %X/%08X"
 
 #. +> 18 17 16 15 14
 #: xlogreader.c:773
@@ -1539,10 +1542,10 @@ msgstr "неверная длина contrecord: %u (ожидалась %lld) в 
 
 #. +> 19
 #: xlogreader.c:1154
-#, fuzzy, c-format
+#, c-format
 #| msgid "invalid resource manager ID %u at %X/%X"
 msgid "invalid resource manager ID %u at %X/%08X"
-msgstr "неверный ID менеджера ресурсов %u в позиции %X/%X"
+msgstr "неверный ID менеджера ресурсов %u в позиции %X/%08X"
 
 #. +> 18 17 16 15 14
 #: xlogreader.c:1153
@@ -1552,10 +1555,10 @@ msgstr "неверный ID менеджера ресурсов %u в позиц
 
 #. +> 19
 #: xlogreader.c:1167 xlogreader.c:1183
-#, fuzzy, c-format
+#, c-format
 #| msgid "record with incorrect prev-link %X/%X at %X/%X"
 msgid "record with incorrect prev-link %X/%08X at %X/%08X"
-msgstr "запись с неверной ссылкой назад %X/%X в позиции %X/%X"
+msgstr "запись с неверной ссылкой назад %X/%08X в позиции %X/%08X"
 
 #. +> 18 17 16 15 14
 #: xlogreader.c:1166 xlogreader.c:1182
@@ -1565,12 +1568,12 @@ msgstr "запись с неверной ссылкой назад %X/%X в по
 
 #. +> 19
 #: xlogreader.c:1221
-#, fuzzy, c-format
+#, c-format
 #| msgid "incorrect resource manager data checksum in record at %X/%X"
 msgid "incorrect resource manager data checksum in record at %X/%08X"
 msgstr ""
 "некорректная контрольная сумма данных менеджера ресурсов в записи в позиции "
-"%X/%X"
+"%X/%08X"
 
 #. +> 18 17 16 15 14
 #: xlogreader.c:1220
@@ -1582,11 +1585,11 @@ msgstr ""
 
 #. +> 19
 #: xlogreader.c:1255
-#, fuzzy, c-format
+#, c-format
 #| msgid "invalid magic number %04X in WAL segment %s, LSN %X/%X, offset %u"
 msgid "invalid magic number %04X in WAL segment %s, LSN %X/%08X, offset %u"
 msgstr ""
-"неверное магическое число %04X в сегменте WAL %s, LSN %X/%X, смещение %u"
+"неверное магическое число %04X в сегменте WAL %s, LSN %X/%08X, смещение %u"
 
 #. +> 18 17 16
 #: xlogreader.c:1254
@@ -1603,11 +1606,11 @@ msgstr "неверное магическое число %04X в сегмент�
 
 #. +> 19
 #: xlogreader.c:1270 xlogreader.c:1312
-#, fuzzy, c-format
+#, c-format
 #| msgid "invalid info bits %04X in WAL segment %s, LSN %X/%X, offset %u"
 msgid "invalid info bits %04X in WAL segment %s, LSN %X/%08X, offset %u"
 msgstr ""
-"неверные информационные биты %04X в сегменте WAL %s, LSN %X/%X, смещение %u"
+"неверные информационные биты %04X в сегменте WAL %s, LSN %X/%08X, смещение %u"
 
 #. +> 18 17 16
 #: xlogreader.c:1269 xlogreader.c:1311
@@ -1664,10 +1667,11 @@ msgstr ""
 
 #. +> 19
 #: xlogreader.c:1332
-#, fuzzy, c-format
+#, c-format
 #| msgid "unexpected pageaddr %X/%X in WAL segment %s, LSN %X/%X, offset %u"
 msgid "unexpected pageaddr %X/%08X in WAL segment %s, LSN %X/%08X, offset %u"
-msgstr "неожиданный pageaddr %X/%X в сегменте WAL %s, LSN %X/%X, смещение %u"
+msgstr ""
+"неожиданный pageaddr %X/%08X в сегменте WAL %s, LSN %X/%08X, смещение %u"
 
 #. +> 18 17 16
 #: xlogreader.c:1331
@@ -1683,7 +1687,7 @@ msgstr "неожиданный pageaddr %X/%X в сегменте журнала
 
 #. +> 19
 #: xlogreader.c:1358
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "out-of-sequence timeline ID %u (after %u) in WAL segment %s, LSN %X/%X, "
 #| "offset %u"
@@ -1692,7 +1696,7 @@ msgid ""
 "offset %u"
 msgstr ""
 "нарушение последовательности ID линии времени %u (после %u) в сегменте WAL "
-"%s, LSN %X/%X, смещение %u"
+"%s, LSN %X/%08X, смещение %u"
 
 #. +> 18 17 16
 #: xlogreader.c:1357
@@ -1714,10 +1718,10 @@ msgstr ""
 
 #. +> 19
 #: xlogreader.c:1790
-#, fuzzy, c-format
+#, c-format
 #| msgid "out-of-order block_id %u at %X/%X"
 msgid "out-of-order block_id %u at %X/%08X"
-msgstr "идентификатор блока %u идёт не по порядку в позиции %X/%X"
+msgstr "идентификатор блока %u идёт не по порядку в позиции %X/%08X"
 
 #. +> 18 17 16 15 14
 #: xlogreader.c:1771
@@ -1727,10 +1731,10 @@ msgstr "идентификатор блока %u идёт не по порядк
 
 #. +> 19
 #: xlogreader.c:1814
-#, fuzzy, c-format
+#, c-format
 #| msgid "BKPBLOCK_HAS_DATA set, but no data included at %X/%X"
 msgid "BKPBLOCK_HAS_DATA set, but no data included at %X/%08X"
-msgstr "BKPBLOCK_HAS_DATA установлен, но данных в позиции %X/%X нет"
+msgstr "BKPBLOCK_HAS_DATA установлен, но данных в позиции %X/%08X нет"
 
 #. +> 18 17 16 15 14
 #: xlogreader.c:1795
@@ -1740,11 +1744,11 @@ msgstr "BKPBLOCK_HAS_DATA установлен, но данных в позиц�
 
 #. +> 19
 #: xlogreader.c:1821
-#, fuzzy, c-format
+#, c-format
 #| msgid "BKPBLOCK_HAS_DATA not set, but data length is %u at %X/%X"
 msgid "BKPBLOCK_HAS_DATA not set, but data length is %d at %X/%08X"
 msgstr ""
-"BKPBLOCK_HAS_DATA не установлен, но длина данных равна %u в позиции %X/%X"
+"BKPBLOCK_HAS_DATA не установлен, но длина данных равна %d в позиции %X/%08X"
 
 #. +> 18 17 16 15 14
 #: xlogreader.c:1802
@@ -1755,7 +1759,7 @@ msgstr ""
 
 #. +> 19
 #: xlogreader.c:1857
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "BKPIMAGE_HAS_HOLE set, but hole offset %u length %u block image length %u "
 #| "at %X/%X"
@@ -1763,8 +1767,8 @@ msgid ""
 "BKPIMAGE_HAS_HOLE set, but hole offset %d length %d block image length %d at "
 "%X/%08X"
 msgstr ""
-"BKPIMAGE_HAS_HOLE установлен, но для пропуска заданы смещение %u и длина %u "
-"при длине образа блока %u в позиции %X/%X"
+"BKPIMAGE_HAS_HOLE установлен, но для пропуска заданы смещение %d и длина %d "
+"при длине образа блока %d в позиции %X/%08X"
 
 #. +> 18 17 16 15 14
 #: xlogreader.c:1838
@@ -1778,12 +1782,12 @@ msgstr ""
 
 #. +> 19
 #: xlogreader.c:1873
-#, fuzzy, c-format
+#, c-format
 #| msgid "BKPIMAGE_HAS_HOLE not set, but hole offset %u length %u at %X/%X"
 msgid "BKPIMAGE_HAS_HOLE not set, but hole offset %d length %d at %X/%08X"
 msgstr ""
-"BKPIMAGE_HAS_HOLE не установлен, но для пропуска заданы смещение %u и длина "
-"%u в позиции %X/%X"
+"BKPIMAGE_HAS_HOLE не установлен, но для пропуска заданы смещение %d и длина "
+"%d в позиции %X/%08X"
 
 #. +> 18 17 16 15 14
 #: xlogreader.c:1854
@@ -1795,12 +1799,12 @@ msgstr ""
 
 #. +> 19
 #: xlogreader.c:1887
-#, fuzzy, c-format
+#, c-format
 #| msgid "BKPIMAGE_COMPRESSED set, but block image length %u at %X/%X"
 msgid "BKPIMAGE_COMPRESSED set, but block image length %d at %X/%08X"
 msgstr ""
-"BKPIMAGE_COMPRESSED установлен, но длина образа блока равна %u в позиции %X/"
-"%X"
+"BKPIMAGE_COMPRESSED установлен, но длина образа блока равна %d в позиции %X/"
+"%08X"
 
 #. +> 18 17 16 15
 #: xlogreader.c:1868
@@ -1820,7 +1824,7 @@ msgstr ""
 
 #. +> 19
 #: xlogreader.c:1902
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "neither BKPIMAGE_HAS_HOLE nor BKPIMAGE_COMPRESSED set, but block image "
 #| "length is %u at %X/%X"
@@ -1829,7 +1833,7 @@ msgid ""
 "length is %d at %X/%08X"
 msgstr ""
 "ни BKPIMAGE_HAS_HOLE, ни BKPIMAGE_COMPRESSED не установлены, но длина образа "
-"блока равна %u в позиции %X/%X"
+"блока равна %d в позиции %X/%08X"
 
 #. +> 18 17 16 15
 #: xlogreader.c:1883
@@ -1853,27 +1857,27 @@ msgstr ""
 
 #. +> 19
 #: xlogreader.c:1918
-#, fuzzy, c-format
+#, c-format
 #| msgid "BKPBLOCK_SAME_REL set but no previous rel at %X/%X"
 msgid "BKPBLOCK_SAME_REL set but no previous rel at %X/%08X"
 msgstr ""
-"BKPBLOCK_SAME_REL установлен, но предыдущее значение не задано в позиции %X/"
-"%X"
+"BKPBLOCK_SAME_REL установлен, но предыдущее отношение не задано в позиции %X/"
+"%08X"
 
 #. +> 18 17 16 15 14
 #: xlogreader.c:1899
 #, c-format
 msgid "BKPBLOCK_SAME_REL set but no previous rel at %X/%X"
 msgstr ""
-"BKPBLOCK_SAME_REL установлен, но предыдущее значение не задано в позиции %X/"
+"BKPBLOCK_SAME_REL установлен, но предыдущее отношение не задано в позиции %X/"
 "%X"
 
 #. +> 19
 #: xlogreader.c:1930
-#, fuzzy, c-format
+#, c-format
 #| msgid "invalid block_id %u at %X/%X"
 msgid "invalid block_id %u at %X/%08X"
-msgstr "неверный идентификатор блока %u в позиции %X/%X"
+msgstr "неверный идентификатор блока %u в позиции %X/%08X"
 
 #. +> 18 17 16 15 14
 #: xlogreader.c:1911
@@ -1889,10 +1893,10 @@ msgstr "неверное смещение записи в позиции %X/%X"
 
 #. +> 19
 #: xlogreader.c:1997
-#, fuzzy, c-format
+#, c-format
 #| msgid "record with invalid length at %X/%X"
 msgid "record with invalid length at %X/%08X"
-msgstr "запись с неверной длиной в позиции %X/%X"
+msgstr "запись с неверной длиной в позиции %X/%08X"
 
 #. +> 18 17 16 15 14
 #: xlogreader.c:1978
@@ -1908,11 +1912,12 @@ msgstr "не удалось найти копию блока с ID %d в зап�
 
 #. +> 19
 #: xlogreader.c:2107
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not restore image at %X/%X with invalid block %d specified"
 msgid "could not restore image at %X/%08X with invalid block %d specified"
 msgstr ""
-"не удалось восстановить образ в позиции %X/%X с указанным неверным блоком %d"
+"не удалось восстановить образ в позиции %X/%08X с указанным неверным блоком "
+"%d"
 
 #. +> 18 17 16 15
 #: xlogreader.c:2088
@@ -1923,11 +1928,12 @@ msgstr ""
 
 #. +> 19
 #: xlogreader.c:2114
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not restore image at %X/%X with invalid state, block %d"
 msgid "could not restore image at %X/%08X with invalid state, block %d"
 msgstr ""
-"не удалось восстановить образ в позиции %X/%X с неверным состоянием, блок %d"
+"не удалось восстановить образ в позиции %X/%08X с неверным состоянием, блок "
+"%d"
 
 #. +> 18 17 16 15
 #: xlogreader.c:2095
@@ -1938,7 +1944,7 @@ msgstr ""
 
 #. +> 19
 #: xlogreader.c:2141 xlogreader.c:2158
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "could not restore image at %X/%X compressed with %s not supported by "
 #| "build, block %d"
@@ -1946,8 +1952,8 @@ msgid ""
 "could not restore image at %X/%08X compressed with %s not supported by "
 "build, block %d"
 msgstr ""
-"не удалось восстановить образ в позиции %X/%X, сжатый методом %s, который не "
-"поддерживается этой сборкой, блок %d"
+"не удалось восстановить образ в позиции %X/%08X, сжатый методом %s, который "
+"не поддерживается этой сборкой, блок %d"
 
 #. +> 18 17 16 15
 #: xlogreader.c:2122 xlogreader.c:2139
@@ -1961,13 +1967,13 @@ msgstr ""
 
 #. +> 19
 #: xlogreader.c:2167
-#, fuzzy, c-format
+#, c-format
 #| msgid ""
 #| "could not restore image at %X/%X compressed with unknown method, block %d"
 msgid ""
 "could not restore image at %X/%08X compressed with unknown method, block %d"
 msgstr ""
-"не удалось восстановить образ в позиции %X/%X, сжатый неизвестным методом, "
+"не удалось восстановить образ в позиции %X/%08X, сжатый неизвестным методом, "
 "блок %d"
 
 #. +> 18 17 16 15
@@ -1981,16 +1987,16 @@ msgstr ""
 
 #. +> 19
 #: xlogreader.c:2175
-#, fuzzy, c-format
+#, c-format
 #| msgid "could not decompress image at %X/%X, block %d"
 msgid "could not decompress image at %X/%08X, block %d"
-msgstr "не удалось развернуть образ в позиции %X/%X, блок %d"
+msgstr "не удалось распаковать образ в позиции %X/%08X, блок %d"
 
 #. +> 18 17 16 15
 #: xlogreader.c:2156
 #, c-format
 msgid "could not decompress image at %X/%X, block %d"
-msgstr "не удалось развернуть образ в позиции %X/%X, блок %d"
+msgstr "не удалось распаковать образ в позиции %X/%X, блок %d"
 
 #. +> 14
 #: xlogreader.c:1599

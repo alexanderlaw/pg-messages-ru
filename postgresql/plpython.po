@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: plpython (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2026-09-25 22:48+0300\n"
-"PO-Revision-Date: 2026-08-05 07:51+0300\n"
+"PO-Revision-Date: 2026-10-10 19:52+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -243,10 +243,9 @@ msgstr "принудительное прерывание незавершённ
 
 #. +> 19
 #: plpy_main.c:70 plpy_main.c:90
-#, fuzzy, c-format
-#| msgid "could not import \"plpy\" module"
+#, c-format
 msgid "could not import \"%s\" module"
-msgstr "не удалось импортировать модуль \"plpy\""
+msgstr "не удалось импортировать модуль \"%s\""
 
 #. +> 18 17 16 15 14
 #: plpy_main.c:148
@@ -316,10 +315,9 @@ msgstr "не удалось импортировать модуль \"plpy\""
 
 #. +> 19
 #: plpy_plpymodule.c:201
-#, fuzzy, c-format
-#| msgid "could not add the spiexceptions module"
+#, c-format
 msgid "could not add exception %s"
-msgstr "не удалось добавить модуль spiexceptions"
+msgstr "не удалось добавить исключение %s"
 
 #. +> 19 18 17 16 15 14
 #: plpy_plpymodule.c:228

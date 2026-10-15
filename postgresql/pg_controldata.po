@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: pg_controldata (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2026-09-25 22:48+0300\n"
-"PO-Revision-Date: 2026-08-05 07:49+0300\n"
+"PO-Revision-Date: 2026-10-11 18:20+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -266,18 +266,17 @@ msgid ""
 "control file version (%u) does not match the version understood by this "
 "program (%u)"
 msgstr ""
+"версия управляющего файла (%u) не соответствует версии, поддерживаемой этой "
+"программой (%u)"
 
 #. +> 19
 #: pg_controldata.c:174
-#, fuzzy, c-format
-#| msgid ""
-#| "Either the control file is corrupt, or it has a different layout than "
-#| "this program is expecting.  The results below are untrustworthy."
+#, c-format
 msgid ""
 "Either the control file has been created with a different version of "
 "PostgreSQL, or it is corrupt.  The results below are untrustworthy."
 msgstr ""
-"Либо управляющий файл повреждён, либо его структура отличается от ожидаемой. "
+"Либо управляющий файл создан другой версией PostgreSQL, либо он повреждён.  "
 "Следующая информация может быть недостоверной."
 
 #. +> 19 18 17
@@ -418,10 +417,9 @@ msgstr "Последнее обновление pg_control:      %s\n"
 # skip-rule: capital-letter-first
 #. +> 19
 #: pg_controldata.c:255
-#, fuzzy, c-format
-#| msgid "Latest checkpoint location:           %X/%X\n"
+#, c-format
 msgid "Latest checkpoint location:           %X/%08X\n"
-msgstr "Положение последней конт. точки:      %X/%X\n"
+msgstr "Положение последней конт. точки:      %X/%08X\n"
 
 # skip-rule: capital-letter-first
 #. +> 18 17 16 15 14
@@ -433,10 +431,9 @@ msgstr "Положение последней конт. точки:      %X/%X\n
 # skip-rule: capital-letter-first
 #. +> 19
 #: pg_controldata.c:257
-#, fuzzy, c-format
-#| msgid "Latest checkpoint's REDO location:    %X/%X\n"
+#, c-format
 msgid "Latest checkpoint's REDO location:    %X/%08X\n"
-msgstr "Положение REDO последней конт. точки: %X/%X\n"
+msgstr "Положение REDO последней конт. точки: %X/%08X\n"
 
 # skip-rule: capital-letter-first
 #. +> 18 17 16 15 14
@@ -486,12 +483,12 @@ msgid "on"
 msgstr "вкл."
 
 # skip-rule: capital-letter-first
+# skip-rule: double-space
 #. +> 19
 #: pg_controldata.c:267
-#, fuzzy, c-format
-#| msgid "Latest checkpoint's oldestActiveXID:  %u\n"
+#, c-format
 msgid "Latest checkpoint's logical decoding: %s\n"
-msgstr "oldestActiveXID последней к. т.:      %u\n"
+msgstr "Лог. декодирование в последней к. т.: %s\n"
 
 # skip-rule: capital-letter-first
 #. +> 19 18 17 16 15 14
@@ -517,10 +514,9 @@ msgstr "NextMultiXactId послед. конт. точки:  %u\n"
 # skip-rule: capital-letter-first
 #. +> 19
 #: pg_controldata.c:276
-#, fuzzy, c-format
-#| msgid "Latest checkpoint's NextMultiOffset:  %u\n"
+#, c-format
 msgid "Latest checkpoint's NextMultiOffset:  %<PRIu64>\n"
-msgstr "NextMultiOffset послед. конт. точки:  %u\n"
+msgstr "NextMultiOffset послед. конт. точки:  %<PRIu64>\n"
 
 # skip-rule: capital-letter-first
 #. +> 18 17 16 15 14
@@ -588,10 +584,9 @@ msgstr "Время последней контрольной точки:    %s\n
 # well-spelled: нежурналир
 #. +> 19
 #: pg_controldata.c:294
-#, fuzzy, c-format
-#| msgid "Fake LSN counter for unlogged rels:   %X/%X\n"
+#, c-format
 msgid "Fake LSN counter for unlogged rels:   %X/%08X\n"
-msgstr "Фиктивный LSN для нежурналир. таблиц: %X/%X\n"
+msgstr "Фиктивный LSN для нежурналир. таблиц: %X/%08X\n"
 
 # skip-rule: capital-letter-first
 # well-spelled: нежурналир
@@ -603,10 +598,9 @@ msgstr "Фиктивный LSN для нежурналир. таблиц: %X/%X\
 
 #. +> 19
 #: pg_controldata.c:296
-#, fuzzy, c-format
-#| msgid "Minimum recovery ending location:     %X/%X\n"
+#, c-format
 msgid "Minimum recovery ending location:     %X/%08X\n"
-msgstr "Мин. положение конца восстановления:  %X/%X\n"
+msgstr "Мин. положение конца восстановления:  %X/%08X\n"
 
 #. +> 18 17 16 15 14
 #: pg_controldata.c:287
@@ -623,10 +617,9 @@ msgstr "Линия времени мин. положения к. в.:   %u\n"
 
 #. +> 19
 #: pg_controldata.c:300
-#, fuzzy, c-format
-#| msgid "Backup start location:                %X/%X\n"
+#, c-format
 msgid "Backup start location:                %X/%08X\n"
-msgstr "Положение начала копии:               %X/%X\n"
+msgstr "Положение начала копии:               %X/%08X\n"
 
 #. +> 18 17 16 15 14
 #: pg_controldata.c:291
@@ -636,10 +629,9 @@ msgstr "Положение начала копии:               %X/%X\n"
 
 #. +> 19
 #: pg_controldata.c:302
-#, fuzzy, c-format
-#| msgid "Backup end location:                  %X/%X\n"
+#, c-format
 msgid "Backup end location:                  %X/%08X\n"
-msgstr "Положение конца копии:                %X/%X\n"
+msgstr "Положение конца копии:                %X/%08X\n"
 
 #. +> 18 17 16 15 14
 #: pg_controldata.c:293
@@ -732,10 +724,9 @@ msgstr "Блоков в макс. сегменте отношений:    %u\n"
 
 #. +> 19
 #: pg_controldata.c:329
-#, fuzzy, c-format
-#| msgid "Bytes per WAL segment:                %u\n"
+#, c-format
 msgid "Pages per SLRU segment:               %u\n"
-msgstr "Байт в сегменте WAL:                  %u\n"
+msgstr "Страниц в сегменте SLRU:              %u\n"
 
 #. +> 19 18 17 16 15 14
 #: pg_controldata.c:331

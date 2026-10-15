@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: postgres (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2026-09-25 22:48+0300\n"
-"PO-Revision-Date: 2026-10-05 21:04+0300\n"
+"PO-Revision-Date: 2026-10-15 21:37+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -8731,7 +8731,7 @@ msgstr "Ошибка синтаксиса в списке."
 #: tcop/postgres.c:3724 utils/error/elog.c:2719
 #, c-format
 msgid "Unrecognized key word: \"%s\"."
-msgstr "нераспознанное ключевое слово: \"%s\"."
+msgstr "Нераспознанное ключевое слово: \"%s\"."
 
 #. +> 19 18 17 16 15 14
 #: access/transam/xlog.c:5263
@@ -9145,14 +9145,16 @@ msgstr "режим копирования \"на ходу\" отменён"
 #, c-format
 msgid "unexpected timeline ID %u (should be %u) in shutdown checkpoint record"
 msgstr ""
-"неожиданный ID линии времени %u (должен быть %u) в записи точки выключения"
+"неожиданный ID линии времени %u (должен быть %u) в записи контрольной точки "
+"выключения"
 
 #. +> 19 18 17 16 15
 #: access/transam/xlog.c:8602
 #, c-format
 msgid "unexpected timeline ID %u (should be %u) in online checkpoint record"
 msgstr ""
-"неожиданный ID линии времени %u (должен быть %u) в записи точки активности"
+"неожиданный ID линии времени %u (должен быть %u) в записи контрольной точки "
+"активности"
 
 #. +> 14
 #: access/transam/xlog.c:10608 access/transam/xlog.c:10664
@@ -9160,8 +9162,7 @@ msgstr ""
 #, c-format
 msgid "unexpected timeline ID %u (should be %u) in checkpoint record"
 msgstr ""
-"неожиданный ID линии времени %u (должен быть %u) в записи точки "
-"восстановления"
+"неожиданный ID линии времени %u (должен быть %u) в записи контрольной точки"
 
 #. +> 19 18 17 16 15
 #: access/transam/xlog.c:8639
@@ -41023,7 +41024,7 @@ msgstr "перезапуск передачи WAL с позиции %X/%08X на
 #: replication/walreceiver.c:479
 #, c-format
 msgid "restarted WAL streaming at %X/%X on timeline %u"
-msgstr "перезапуск передачи журнала с позиции %X/%X на линии времени %u"
+msgstr "перезапуск передачи WAL с позиции %X/%X на линии времени %u"
 
 #. +> 19 18 17 16 15 14
 #: replication/walreceiver.c:529
@@ -41047,7 +41048,7 @@ msgstr "На линии времени %u в %X/%08X достигнут коне
 #: replication/walreceiver.c:559
 #, c-format
 msgid "End of WAL reached on timeline %u at %X/%X."
-msgstr "На линии времени %u в %X/%X достигнут конец журнала."
+msgstr "На линии времени %u в %X/%X достигнут конец WAL."
 
 #. +> 19 18 17 16 15 14
 #: replication/walreceiver.c:674
@@ -41187,8 +41188,8 @@ msgid ""
 "requested starting point %X/%X is ahead of the WAL flush position of this "
 "server %X/%X"
 msgstr ""
-"запрошенная начальная точка %X/%X впереди позиции сброшенных данных журнала "
-"на этом сервере (%X/%X)"
+"запрошенная начальная точка %X/%X впереди позиции сброшенных данных WAL на "
+"этом сервере (%X/%X)"
 
 #. +> 17 16 15
 #: replication/walsender.c:1200
@@ -49549,7 +49550,7 @@ msgid ""
 "Target must be \"archiver\", \"bgwriter\", \"checkpointer\", \"io\", "
 "\"recovery_prefetch\", \"slru\", or \"wal\"."
 msgstr ""
-"Допустимые счётчики: \"archiver\", \"bgwriter\", \"io\", "
+"Допустимые счётчики: \"archiver\", \"bgwriter\", \"checkpointer\", \"io\", "
 "\"recovery_prefetch\", \"slru\" и \"wal\"."
 
 #. +> 16

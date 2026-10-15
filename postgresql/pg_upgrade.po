@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: pg_upgrade (PostgreSQL) 10\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2026-09-25 22:48+0300\n"
-"PO-Revision-Date: 2026-08-05 07:50+0300\n"
+"PO-Revision-Date: 2026-10-11 13:16+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -71,7 +71,7 @@ msgstr "распознать имя пользователя не удалось
 #: ../../fe_utils/option_utils.c:139
 #, c-format
 msgid "options %s and %s cannot be used together"
-msgstr ""
+msgstr "параметры %s и %s исключают друг друга"
 
 #. +> 19 18 17
 #: ../../fe_utils/string_utils.c:585
@@ -104,7 +104,7 @@ msgstr "не удалось получить информацию о файле 
 #: ../../fe_utils/version.c:62
 #, c-format
 msgid "file \"%s\" is too large"
-msgstr ""
+msgstr "файл \"%s\" слишком большой"
 
 #. +> 19 18 17 16
 #: ../../fe_utils/version.c:66
@@ -939,8 +939,7 @@ msgstr ""
 
 #. +> 19
 #: check.c:992
-#, fuzzy, c-format
-#| msgid "Checking for new cluster tablespace directories"
+#, c-format
 msgid "Checking new cluster tablespace directories"
 msgstr "Проверка каталогов табличных пространств в новом кластере"
 
@@ -1221,31 +1220,23 @@ msgstr ""
 
 #. +> 19
 #: check.c:1267
-#, fuzzy, c-format
-#| msgid "Checking for prepared transactions"
+#, c-format
 msgid "Checking for unsupported encodings"
-msgstr "Проверка наличия подготовленных транзакций"
+msgstr "Проверка неподдерживаемых кодировок"
 
 #. +> 19
 #: check.c:1301
-#, fuzzy, c-format
-#| msgid ""
-#| "Your installation contains tables declared WITH OIDS, which is not\n"
-#| "supported anymore.  Consider removing the oid column using\n"
-#| "    ALTER TABLE ... SET WITHOUT OIDS;\n"
-#| "A list of tables with the problem is in the file:\n"
-#| "    %s"
+#, c-format
 msgid ""
 "Your installation contains databases using encodings that are\n"
 "no longer supported.  Consider dumping and restoring with UTF8.\n"
 "A list of databases with unsupported encodings is in the file:\n"
 "    %s"
 msgstr ""
-"В вашей инсталляции содержатся таблицы со свойством WITH OIDS, которое "
-"теперь\n"
-"не поддерживается. Отказаться от использования столбцов oid можно так:\n"
-"    ALTER TABLE ... SET WITHOUT OIDS;\n"
-"Список проблемных таблиц приведён в файле:\n"
+"В вашей инсталляции содержатся базы данных с кодировками, которые больше не\n"
+"поддерживаются. Исправить это можно, выгрузив данные и восстановив их с "
+"UTF8.\n"
+"Список баз данных с неподдерживаемыми кодировками приведён в файле:\n"
 "    %s"
 
 #. +> 19 18 17 16 15 14
@@ -1548,10 +1539,9 @@ msgstr ""
 
 #. +> 19
 #: check.c:1850
-#, fuzzy, c-format
-#| msgid "Checking for not-null constraint inconsistencies"
+#, c-format
 msgid "Checking for uses of gist_inet_ops/gist_cidr_ops"
-msgstr "Проверка несогласованных ограничений NOT NULL"
+msgstr "Проверка использования gist_inet_ops/gist_cidr_ops"
 
 #. +> 19
 #: check.c:1866
@@ -1564,6 +1554,12 @@ msgid ""
 "A list of indexes with the problem is in the file:\n"
 "    %s"
 msgstr ""
+"В вашей инсталляции есть индексы, использующие классы операторов\n"
+"gist_inet_ops или gist_cidr_ops расширения btree_gist, которые нельзя\n"
+"обновить двоичным способом.  Замените их индексами, использующими\n"
+"встроенный класс операторов GiST inet_ops.\n"
+"Список проблемных индексов приведён в файле:\n"
+"    %s"
 
 #. +> 19 18 17 16 15 14
 #: check.c:1893
@@ -1659,10 +1655,9 @@ msgstr ""
 
 #. +> 19
 #: check.c:2240
-#, fuzzy, c-format
-#| msgid "Checking for new cluster logical replication slots"
+#, c-format
 msgid "Checking new cluster replication slots"
-msgstr "Проверка слотов логической репликации в новом кластере"
+msgstr "Проверка слотов репликации в новом кластере"
 
 #. +> 18 17
 #: check.c:2076
@@ -1672,10 +1667,9 @@ msgstr "Проверка слотов логической репликации 
 
 #. +> 19
 #: check.c:2252
-#, fuzzy, c-format
-#| msgid "could not count the number of logical replication slots"
+#, c-format
 msgid "could not count the number of replication slots"
-msgstr "не удалось получить количество слотов логической репликации"
+msgstr "не удалось получить количество слотов репликации"
 
 #. +> 18 17
 #: check.c:2084
@@ -1691,10 +1685,9 @@ msgstr "обнаружено слотов логической репликац�
 
 #. +> 19
 #: check.c:2271
-#, fuzzy, c-format
-#| msgid "Restoring logical replication slots in the new cluster"
+#, c-format
 msgid "replication slot \"%s\" already exists in the new cluster"
-msgstr "Восстановление слотов логической репликации в новом кластере"
+msgstr "слот репликации \"%s\" уже существует в новом кластере"
 
 #. +> 19 18 17
 #: check.c:2281 check.c:2418
@@ -1704,10 +1697,11 @@ msgstr "не удалось получить значения параметро
 
 #. +> 19
 #: check.c:2287
-#, fuzzy, c-format
-#| msgid "\"wal_level\" must be \"logical\" but is set to \"%s\""
+#, c-format
 msgid "\"wal_level\" must be \"replica\" or \"logical\" but is set to \"%s\""
-msgstr "\"wal_level\" должен иметь значение \"logical\", а имеет \"%s\""
+msgstr ""
+"\"wal_level\" должен иметь значение \"replica\" или \"logical\", а имеет "
+"\"%s\""
 
 #. +> 18 17
 #: check.c:2104
@@ -1719,19 +1713,11 @@ msgstr "\"wal_level\" должен иметь значение \"logical\", а �
 #: check.c:2309
 #, c-format
 msgid "could not parse \"output_plugin_libraries\" setting '%s'"
-msgstr ""
+msgstr "не удалось разобрать параметр \"output_plugin_libraries\" '%s'"
 
 #. +> 19 18 17
 #: check.c:2356
-#, fuzzy, c-format
-#| msgid ""
-#| "Your installation contains logical replication slots that cannot be "
-#| "upgraded.\n"
-#| "You can remove invalid slots and/or consume the pending WAL for other "
-#| "slots,\n"
-#| "and then restart the upgrade.\n"
-#| "A list of the problematic slots is in the file:\n"
-#| "    %s"
+#, c-format
 msgid ""
 "Your installation contains logical replication slots with plugins\n"
 "that are not allowed by the new cluster's output_plugin_libraries\n"
@@ -1740,33 +1726,28 @@ msgid ""
 "A list of the problematic slots is in the file:\n"
 "    %s"
 msgstr ""
-"В вашей инсталляции используются слоты логической репликации, которые "
-"нельзя\n"
-"обновить. Вы можете удалить неподходящие слоты и/или добиться, чтобы другие\n"
-"слоты прочитали ожидающий обработки WAL, а затем перезапустить обновление.\n"
+"В вашей инсталляции есть слоты логической репликации с модулями,\n"
+"которые не разрешены параметром output_plugin_libraries в новом\n"
+"кластере. Вы можете добавить доверенные модули в output_plugin_libraries\n"
+"и/или удалить такие слоты, а затем перезапустить обновление.\n"
 "Список проблемных слотов приведён в файле:\n"
 "    %s"
 
 #. +> 19
 #: check.c:2372
-#, fuzzy, c-format
-#| msgid ""
-#| "\"max_replication_slots\" (%d) must be greater than or equal to the "
-#| "number of logical replication slots (%d) on the old cluster"
+#, c-format
 msgid ""
 "\"max_replication_slots\" (%d) must be greater than or equal to the number "
 "of logical replication slots in the old cluster plus one additional slot "
 "required for retaining conflict detection information (%d)"
 msgstr ""
 "значение \"max_replication_slots\" (%d) должно быть больше или равно числу "
-"слотов логической репликации (%d) в старом кластере"
+"слотов логической репликации в старом кластере плюс один дополнительный слот "
+"для сохранения информации о конфликтах (%d)"
 
 #. +> 19
 #: check.c:2378
-#, fuzzy, c-format
-#| msgid ""
-#| "\"max_replication_slots\" (%d) must be greater than or equal to the "
-#| "number of logical replication slots (%d) on the old cluster"
+#, c-format
 msgid ""
 "\"max_replication_slots\" (%d) must be greater than or equal to the number "
 "of logical replication slots (%d) in the old cluster"
@@ -1786,8 +1767,7 @@ msgstr ""
 
 #. +> 19
 #: check.c:2410
-#, fuzzy, c-format
-#| msgid "Checking for new cluster configuration for subscriptions"
+#, c-format
 msgid "Checking new cluster configuration for subscriptions"
 msgstr "Проверка конфигурации нового кластера для использования подписок"
 
@@ -1799,10 +1779,7 @@ msgstr "Проверка конфигурации нового кластера 
 
 #. +> 19
 #: check.c:2422
-#, fuzzy, c-format
-#| msgid ""
-#| "\"max_active_replication_origins\" (%d) must be greater than or equal to "
-#| "the number of subscriptions (%d) on the old cluster"
+#, c-format
 msgid ""
 "\"max_active_replication_origins\" (%d) must be greater than or equal to the "
 "number of subscriptions (%d) in the old cluster"
@@ -1832,10 +1809,9 @@ msgstr ""
 
 #. +> 19
 #: check.c:2444
-#, fuzzy, c-format
-#| msgid "Checking for valid logical replication slots"
+#, c-format
 msgid "Checking logical replication slots"
-msgstr "Проверка корректности слотов логической репликации"
+msgstr "Проверка слотов логической репликации"
 
 #. +> 18 17
 #: check.c:2254
@@ -1864,8 +1840,7 @@ msgstr ""
 
 #. +> 19
 #: check.c:2570
-#, fuzzy, c-format
-#| msgid "Checking for subscription state"
+#, c-format
 msgid "Checking subscription state"
 msgstr "Проверка состояния подписок"
 
@@ -1898,7 +1873,7 @@ msgstr ""
 #: check.c:2678
 #, c-format
 msgid "Checking names of databases, roles, and tablespaces"
-msgstr ""
+msgstr "Проверка имён баз данных, ролей и табличных пространств"
 
 #. +> 19
 #: check.c:2721
@@ -1910,12 +1885,18 @@ msgid ""
 "A list of all objects with invalid names is in the file:\n"
 "    %s"
 msgstr ""
+"В вашей инсталляции есть базы данных, роли или табличные пространства, "
+"имена\n"
+"которых содержат недопустимые символы (перевод строки или возврат каретки).\n"
+"Чтобы исправить это, переименуйте эти объекты.\n"
+"Список всех объектов с недопустимыми именами приведён в файле:\n"
+"    %s"
 
 #. +> 19
 #: check.c:2770
 #, c-format
 msgid "Checking oldestXID and oldestMultiXid consistency"
-msgstr ""
+msgstr "Проверка согласованности oldestXID и oldestMultiXid"
 
 #. +> 19
 #: check.c:2791
@@ -1924,6 +1905,8 @@ msgid ""
 "oldestXID (%u) in the control file is newer than the datfrozenxid (%u) of "
 "database \"%s\""
 msgstr ""
+"oldestXID (%u) в управляющем файле новее, чем datfrozenxid (%u) базы данных "
+"\"%s\""
 
 #. +> 19
 #: check.c:2796
@@ -1932,6 +1915,8 @@ msgid ""
 "oldestMultiXid (%u) in control file is newer than the datminmxid (%u) of "
 "database \"%s\""
 msgstr ""
+"oldestMultiXid (%u) в управляющем файле новее, чем datminmxid (%u) базы "
+"данных \"%s\""
 
 #. +> 19 18 17
 #: controldata.c:133 controldata.c:203
@@ -3674,13 +3659,13 @@ msgstr "слот: \"%s\", модуль вывода: \"%s\", двухфазны�
 #: multixact_read_v18.c:264
 #, c-format
 msgid "multixact %u has an invalid length (%d)"
-msgstr ""
+msgstr "мультитранзакция %u имеет недопустимую длину (%d)"
 
 #. +> 19
 #: multixact_read_v18.c:335
 #, c-format
 msgid "multixact %u has more than one updating member"
-msgstr ""
+msgstr "в мультитранзакции %u более одного изменяющего члена"
 
 #. +> 19 18 17 16
 #: option.c:110
@@ -4569,10 +4554,9 @@ msgstr ""
 
 #. +> 19
 #: pg_upgrade.c:882
-#, fuzzy, c-format
-#| msgid "Cloning user relation files"
+#, c-format
 msgid "Converting pg_multixact files"
-msgstr "Клонирование файлов пользовательских отношений"
+msgstr "Преобразование файлов pg_multixact"
 
 #. +> 19 18 17 16 15 14
 #: pg_upgrade.c:896
@@ -4602,7 +4586,7 @@ msgstr "Восстановление слотов логической репл�
 #: pg_upgrade.c:1094
 #, c-format
 msgid "Creating the replication conflict detection slot"
-msgstr ""
+msgstr "Создание слота обнаружения конфликтов репликации"
 
 #. +> 19 18
 #: relfilenumber.c:68
@@ -4938,23 +4922,23 @@ msgstr ""
 
 #. +> 19
 #: slru_io.c:131
-#, fuzzy, c-format
-#| msgid "could not create file \"%s\": %m"
+#, c-format
 msgid "could not read file \"%s\": %m"
-msgstr "не удалось создать файл \"%s\": %m"
+msgstr "не удалось прочитать файл \"%s\": %m"
 
 #. +> 19
 #: slru_io.c:136
 #, c-format
 msgid "unexpected EOF reading file \"%s\" at offset %u, reading as zeros"
 msgstr ""
+"неожиданный конец файла при чтении \"%s\" по смещению %u, недостающие байты "
+"заменены нулями"
 
 #. +> 19
 #: slru_io.c:229 slru_io.c:253
-#, fuzzy, c-format
-#| msgid "could not create file \"%s\": %m"
+#, c-format
 msgid "could not write file \"%s\": %m"
-msgstr "не удалось создать файл \"%s\": %m"
+msgstr "не удалось записать файл \"%s\": %m"
 
 #. +> 19 18 17 16
 #: tablespace.c:36

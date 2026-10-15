@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: pgscripts (PostgreSQL current)\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@lists.postgresql.org\n"
 "POT-Creation-Date: 2026-09-25 22:48+0300\n"
-"PO-Revision-Date: 2026-08-05 07:51+0300\n"
+"PO-Revision-Date: 2026-10-13 19:38+0300\n"
 "Last-Translator: Alexander Lakhin <exclusion@gmail.com>\n"
 "Language-Team: Russian <pgsql-ru-general@postgresql.org>\n"
 "Language: ru\n"
@@ -191,7 +191,7 @@ msgstr "нераспознанный метод синхронизации: %s"
 #: ../../fe_utils/option_utils.c:139
 #, c-format
 msgid "options %s and %s cannot be used together"
-msgstr ""
+msgstr "параметры %s и %s исключают друг друга"
 
 #. +> 19 18 17 16 15 14
 #: ../../fe_utils/parallel_slot.c:316
@@ -427,7 +427,7 @@ msgstr "  -d, --dbname=ИМЯ_БД       имя базы данных для к�
 #, c-format
 msgid ""
 "  -e, --echo                show the commands being sent to the server\n"
-msgstr "  -e, --echo                отображать команды, отправляемые серверу\n"
+msgstr "  -e, --echo                отображать команды, передаваемые серверу\n"
 
 #. +> 19 18 17 16 15 14
 #: clusterdb.c:280
@@ -634,7 +634,7 @@ msgstr ""
 msgid ""
 "  -e, --echo                   show the commands being sent to the server\n"
 msgstr ""
-"  -e, --echo                   отображать команды, отправляемые серверу\n"
+"  -e, --echo                   отображать команды, передаваемые серверу\n"
 
 #. +> 19 18 17 16 15 14
 #: createdb.c:305
@@ -1560,13 +1560,13 @@ msgstr "параметр \"%s\" нельзя использовать без \"%
 #: vacuumdb.c:312
 #, c-format
 msgid "executing in dry-run mode"
-msgstr ""
+msgstr "выполнение в холостом режиме"
 
 #. +> 19
 #: vacuumdb.c:313
 #, c-format
 msgid "No commands will be sent to the server."
-msgstr ""
+msgstr "Команды не будут передаваться серверу."
 
 #. +> 19 18 17 16 15 14
 #: vacuumdb.c:331
@@ -1650,15 +1650,13 @@ msgstr ""
 
 #. +> 19
 #: vacuumdb.c:358
-#, fuzzy, c-format
-#| msgid ""
-#| "  -e, --echo                   show the commands being sent to the "
-#| "server\n"
+#, c-format
 msgid ""
 "      --dry-run                   show the commands that would be sent to "
 "the server\n"
 msgstr ""
-"  -e, --echo                   отображать команды, отправляемые серверу\n"
+"      --dry-run                   показать команды, которые были бы переданы "
+"серверу\n"
 
 #. +> 19 18 17 16 15 14
 #: vacuumdb.c:359
@@ -1667,7 +1665,7 @@ msgid ""
 "  -e, --echo                      show the commands being sent to the "
 "server\n"
 msgstr ""
-"  -e, --echo                      отображать команды, отправляемые серверу\n"
+"  -e, --echo                      отображать команды, передаваемые серверу\n"
 
 #. +> 19 18 17 16 15 14
 #: vacuumdb.c:360
